@@ -1,0 +1,42 @@
+{
+  "name": "StartMenu",
+  "title": "StartMenu specific variables",
+  "description": "Configure variables specific to StartMenu widgets",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-StartMenuWidget-color",
+      "type": "color",
+      "defaultValue": "$theme-primary-background-color"
+    },
+    {
+      "name": "gbc-StartMenuWidget-background-color",
+      "type": "color",
+      "defaultValue": "$theme-secondary-background-color"
+    },
+    {
+      "name": "gbc-StartMenuGroupWidget-hover-color",
+      "type": "color",
+      "defaultValue": "$theme-primary-faded-background-color"
+    },
+    {
+      "name": "gbc-StartMenuCommandWidget-hover-color",
+      "type": "color",
+      "defaultValue": "$theme-primary-faded-background-color"
+    },
+    {
+      "name": "gbc-StartMenuCommandWidget-disabled-color",
+      "type": "color",
+      "defaultValue": "$theme-disabled-background-color"
+    },
+    {
+      "name": "gbc-StartMenuSeparatorWidget-color",
+      "type": "color",
+      "defaultValue": "$theme-separator-color"
+    },
+    {
+      "name": "gbc-StartMenuWidget-maxWidth",
+      "type": "size",
+      "defaultValue": "300px"
+    }
+  ]
+}

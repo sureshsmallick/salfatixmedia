@@ -1,0 +1,320 @@
+---------------------------------------------------------------------------------- 
+-- File created from C:\Users\Christian\FourJs\Developments\localGitRepository\salfatixmedia\lib\campaigns\campaignproposals.4fd by Genero Studio
+-- WARNING! All changes made in this file will be lost!
+----------------------------------------------------------------------------------
+
+SCHEMA salfatixmedia
+
+LAYOUT (text=%"Form", style="centerwindow")
+Grid salfatixmedia1
+{
+[img:                                                                                                                                       :ff_formtitle  :                                                                                                                                       :im1 ]
+
+ <G group1                       > <T salfatixmedia2                                                                                                                                                                                                                                                   >
+ [campaigns_cmp_totalbudget_labe]  [de|vi|ed|usr_inst|usr_firstname       |usr_lastname        |usrmtc|usrmtc_f|cmpprpu_usertotalpri|cmpprpu_salfatixtota|cmpprpu_is|cmpprpu_comment               |cmpprpu_notificationdate |usr_coun|usr_stat|usr_cityname|usr|usr_addre|usr_addr|usr_add1|usr_add2]
+ [cmp_totalbudget           |cur]  [de|vi|ed|usr_inst|usr_firstname       |usr_lastname        |usrmtc|usrmtc_f|cmpprpu_usertotalpri|cmpprpu_salfatixtota|cmpprpu_is|cmpprpu_comment               |cmpprpu_notificationdate |usr_coun|usr_stat|usr_cityname|usr|usr_addre|usr_addr|usr_add1|usr_add2]
+ [campaigns_cmp_wantedusers_labe]  [de|vi|ed|usr_inst|usr_firstname       |usr_lastname        |usrmtc|usrmtc_f|cmpprpu_usertotalpri|cmpprpu_salfatixtota|cmpprpu_is|cmpprpu_comment               |cmpprpu_notificationdate |usr_coun|usr_stat|usr_cityname|usr|usr_addre|usr_addr|usr_add1|usr_add2]
+ [cmp_wantedusers               ]  [de|vi|ed|usr_inst|usr_firstname       |usr_lastname        |usrmtc|usrmtc_f|cmpprpu_usertotalpri|cmpprpu_salfatixtota|cmpprpu_is|cmpprpu_comment               |cmpprpu_notificationdate |usr_coun|usr_stat|usr_cityname|usr|usr_addre|usr_addr|usr_add1|usr_add2]
+ [campaignproposals_cmpprp_comme]  [de|vi|ed|usr_inst|usr_firstname       |usr_lastname        |usrmtc|usrmtc_f|cmpprpu_usertotalpri|cmpprpu_salfatixtota|cmpprpu_is|cmpprpu_comment               |cmpprpu_notificationdate |usr_coun|usr_stat|usr_cityname|usr|usr_addre|usr_addr|usr_add1|usr_add2]
+ [cmpprp_price              |cu1]  [de|vi|ed|usr_inst|usr_firstname       |usr_lastname        |usrmtc|usrmtc_f|cmpprpu_usertotalpri|cmpprpu_salfatixtota|cmpprpu_is|cmpprpu_comment               |cmpprpu_notificationdate |usr_coun|usr_stat|usr_cityname|usr|usr_addre|usr_addr|usr_add1|usr_add2]
+ [campaignproposals_cmpprp_comm1]  [de|vi|ed|usr_inst|usr_firstname       |usr_lastname        |usrmtc|usrmtc_f|cmpprpu_usertotalpri|cmpprpu_salfatixtota|cmpprpu_is|cmpprpu_comment               |cmpprpu_notificationdate |usr_coun|usr_stat|usr_cityname|usr|usr_addre|usr_addr|usr_add1|usr_add2]
+ [cmpprp_selectioncomment       ]  [de|vi|ed|usr_inst|usr_firstname       |usr_lastname        |usrmtc|usrmtc_f|cmpprpu_usertotalpri|cmpprpu_salfatixtota|cmpprpu_is|cmpprpu_comment               |cmpprpu_notificationdate |usr_coun|usr_stat|usr_cityname|usr|usr_addre|usr_addr|usr_add1|usr_add2]
+ [                              ]  [de|vi|ed|usr_inst|usr_firstname       |usr_lastname        |usrmtc|usrmtc_f|cmpprpu_usertotalpri|cmpprpu_salfatixtota|cmpprpu_is|cmpprpu_comment               |cmpprpu_notificationdate |usr_coun|usr_stat|usr_cityname|usr|usr_addre|usr_addr|usr_add1|usr_add2]
+ [                              ]  [de|vi|ed|usr_inst|usr_firstname       |usr_lastname        |usrmtc|usrmtc_f|cmpprpu_usertotalpri|cmpprpu_salfatixtota|cmpprpu_is|cmpprpu_comment               |cmpprpu_notificationdate |usr_coun|usr_stat|usr_cityname|usr|usr_addre|usr_addr|usr_add1|usr_add2]
+ [                              ]                                                                              [influenceraggregate |salfatixaggregate   ]
+ [                              ]
+ [emptylabel                    ]
+ [save                          ]
+ [emptylabel1                   ]
+ [importusers                   ]
+ [emptylabel2                   ]
+ [submit                        ]
+ [emptylabel4                   ]
+ [toggleall                     ]
+ [emptylabel5                   ]
+ [acceptselection               ]
+ [emptylabel6                   ]
+ [rejectselection               ]
+ [emptylabel3                   ]
+ [acceptsalfatixproposal        ]
+ [emptylabel7                   ]
+ [submittosalfatix              ]
+ [emptylabel8                   ]
+ [reviewproposal                ]
+ [emptylabel_exportlist         ]
+ [exportlist                    ]
+ <                               > <                                                                                                                                                                                                                                                                   >
+}
+END -- salfatixmedia1
+END -- form
+
+TABLES
+states,
+users,
+campaignproposals,
+countries,
+usermetrics,
+campaigns,
+campaignproposedusers,
+cities
+ATTRIBUTES
+Image img:img_back, action=backtocampaign, image="fa-arrow-circle-left", autoScale, sizePolicy=fixed, style="no_border", comment=%"Back to campaign";
+LABEL ff_formtitle=formonly.ff_formtitle, justify=center, style="ff_formtitle";
+Image im1:img_fake, autoScale, sizePolicy=fixed, style="no_border";
+Group group1:group1, text=%"SalfatixMedia proposal";
+Label campaigns_cmp_totalbudget_labe:campaigns_cmp_totalbudget_label, text=%"Campaign budget";
+Edit cmp_totalbudget=campaigns.cmp_totalbudget, noEntry;
+LABEL cur=formonly.cur1;
+Label campaigns_cmp_wantedusers_labe:campaigns_cmp_wantedusers_label, text=%"Prefered number of influencers";
+Edit cmp_wantedusers=campaigns.cmp_wantedusers, noEntry;
+Label campaignproposals_cmpprp_comme:campaignproposals_cmpprp_comment_label2, text=%"Proposed budget";
+Edit cmpprp_price=campaignproposals.cmpprp_price, scroll;
+LABEL cu1=formonly.cur;
+Label campaignproposals_cmpprp_comm1:campaignproposals_cmpprp_comment_label1, text=%"Comments";
+TextEdit cmpprp_selectioncomment=campaignproposals.cmpprp_selectioncomment;
+Label emptylabel:emptylabel, text=%"";
+Button save:save, text=%"Save";
+Label emptylabel1:emptylabel1, text=%"";
+Button importusers:importusers, text=%"Refresh list";
+Label emptylabel2:emptylabel2, text=%"";
+Button submit:submit, text=%"Submit to brand";
+Label emptylabel4:emptylabel4, text=%"";
+Button toggleall:toggleall, text=%"Select all influencers";
+Label emptylabel5:emptylabel5, text=%"";
+Button acceptselection:acceptselection, text=%"Accept selected influencer(s)";
+Label emptylabel6:emptylabel6, text=%"";
+Button rejectselection:rejectselection, text=%"Reject selected influencer(s)";
+Label emptylabel3:emptylabel3, text=%"";
+Button acceptsalfatixproposal:acceptsalfatixproposal, text=%"Accept Salfatix Media proposal";
+Label emptylabel7:emptylabel7, text=%"";
+Button submittosalfatix:submittosalfatix, text=%"Submit for review by Salfatix Media";
+Label emptylabel8:emptylabel8, text=%"";
+Button reviewproposal:reviewproposal, text=%"Review proposal";
+Label emptylabel_exportlist:emptylabel_exportlist, text=%"";
+Button exportlist:exportlist, text=%"Export list";
+Table salfatixmedia2:salfatixmedia2, style="campaignproposallist", unsortableColumns, unmovableColumns, unhidableColumns;
+Phantom campaignproposedusers.cmpprpu_campaignproposal_id;
+Phantom campaignproposedusers.cmpprpu_user_id;
+Phantom campaignproposedusers.cmpprpu_uiorder;
+Phantom users.usr_paypal;
+IMAGE de=formonly.delimage, action=delete, title=%"", autoScale, sizePolicy=fixed, style="no_border";
+IMAGE vi=formonly.viewinfluencer, action=viewinfluencer, title=%"", autoScale, sizePolicy=fixed, style="no_border";
+IMAGE ed=formonly.editinfluencer, action=editinfluencer, title=%"", autoScale, sizePolicy=fixed, style="no_border";
+IMAGE usr_inst=formonly.usr_instagram_profilepicture type like users.usr_instagram_profilepicture, action=viewsocialnetwork, title=%"Profile", autoScale, sizePolicy=fixed, style="no_border", height = 2 lines;
+Edit usr_firstname=users.usr_firstname, title=%"First name", scroll;
+Edit usr_lastname=users.usr_lastname, title=%"Last name", scroll;
+Edit usrmtc=usermetrics.usrmtc_reach, title=%"Reach";
+Edit usrmtc_f=usermetrics.usrmtc_followers_count, title=%"Nb Followers";
+Edit cmpprpu_usertotalpri=campaignproposedusers.cmpprpu_usertotalprice, title=%"Influencer total price";
+Aggregate influenceraggregate=formonly.influenceraggregate type like campaignproposedusers.cmpprpu_usertotalprice, aggregateText=%"Influencers Total", aggregateType=sum;
+Edit cmpprpu_salfatixtota=campaignproposedusers.cmpprpu_salfatixtotalprice, title=%"Salfatix Media total price";
+Aggregate salfatixaggregate=formonly.salfatixaggregate type like campaignproposedusers.cmpprpu_salfatixtotalprice, aggregateText=%"Salfatix Media Total", aggregateType=sum;
+ComboBox cmpprpu_is=campaignproposedusers.cmpprpu_isacceptedbybrand, title=%"Validated", items=(("0", %"No"),("1", %"Yes"));
+Edit cmpprpu_comment=campaignproposedusers.cmpprpu_comment, title=%"Comment for Brand", scroll;
+Edit cmpprpu_notificationdate=campaignproposedusers.cmpprpu_notificationdate, title=%"Final notification date", scroll;
+Phantom users.usr_id;
+Phantom users.usr_gender_id;
+Phantom users.usr_birthday;
+Phantom users.usr_email;
+Phantom users.usr_password;
+Phantom users.usr_country_id;
+Phantom users.usr_state_id;
+Phantom users.usr_city_id;
+Edit usr_coun=formonly.usr_countryname type like countries.cntr_name, title=%"Country";
+Edit usr_stat=formonly.usr_statename type like states.stt_name, title=%"State";
+Edit usr_cityname=formonly.usr_cityname type like cities.cts_name, title=%"City";
+Edit usr=users.usr_address_number, title=%"N°";
+Edit usr_addre=users.usr_address_street, title=%"Street";
+Edit usr_addr=users.usr_address_zipcode, title=%"Zipcode";
+Edit usr_add1=users.usr_address_town, title=%"Town", hidden;
+Edit usr_add2=users.usr_address_more, title=%"More";
+Phantom users.usr_mobile_phone;
+Phantom users.usr_instagram_userid;
+Phantom users.usr_instagram_username;
+Phantom users.usr_instagram_fullname;
+Phantom users.usr_instagram_profilepicture;
+Phantom users.usr_instagram_biography;
+Phantom users.usr_instagram_website;
+Phantom users.usr_instagram_is_private;
+Phantom users.usr_instagram_is_verified;
+Phantom users.usr_instagram_is_business;
+Phantom users.usr_bank_name;
+Phantom users.usr_bank_iban;
+Phantom users.usr_bank_swift;
+Phantom users.usr_mobile_notifications;
+Phantom users.usr_notif_style;
+Phantom users.usr_email_notifications;
+Phantom users.usr_email_style;
+Phantom users.usr_currency_id;
+Phantom users.usr_accountstatus_id;
+Phantom users.usr_createdby_id;
+Phantom users.usr_creationdate;
+Phantom users.usr_deletiondate;
+Phantom users.usr_validationdate;
+Phantom users.usr_canceldate;
+Phantom users.usr_suspendeddate;
+Phantom users.usr_stopdate;
+Phantom users.usr_emailvalidationdate;
+Phantom users.usr_lastupdatedate;
+Phantom users.usr_lastlogindate;
+Phantom users.usr_instagram_token;
+Phantom campaignproposedusers.cmpprpu_usergotproduct;
+Phantom campaigns.cmp_id;
+Phantom campaigns.cmp_brand_id;
+Phantom campaigns.cmp_pic_id;
+Phantom campaigns.cmp_title;
+Phantom campaigns.cmp_overview;
+Phantom campaigns.cmp_url;
+Phantom campaigns.cmp_isproductneeded;
+Phantom campaigns.cmp_prd_description;
+Phantom campaigns.cmp_prd_value;
+Phantom campaigns.cmp_issharedonfacebook;
+Phantom campaigns.cmp_sharedfacebooklink;
+Phantom campaigns.cmp_post_guidelines;
+Phantom campaigns.cmp_captionrequirements;
+Phantom campaigns.cmp_post_startdate;
+Phantom campaigns.cmp_post_enddate;
+Phantom campaigns.cmp_post_time_starttime;
+Phantom campaigns.cmp_post_time_endtime;
+Phantom campaigns.cmp_postduration_id;
+Phantom campaigns.cmp_deposit;
+Phantom campaigns.cmp_depositpercent;
+Phantom campaigns.cmp_currency_id;
+Phantom campaigns.cmp_campaignstatus_id;
+Phantom campaigns.cmp_createdby_id;
+Phantom campaigns.cmp_creationdate;
+Phantom campaigns.cmp_publisheddate;
+Phantom campaigns.cmp_selectionstartdate;
+Phantom campaigns.cmp_selectionenddate;
+Phantom campaigns.cmp_selectioncomment;
+Phantom campaigns.cmp_actionstartdate;
+Phantom campaigns.cmp_actionenddate;
+Phantom campaigns.cmp_enddate;
+Phantom campaigns.cmp_lastupdatedate;
+Phantom campaignproposals.cmpprp_id;
+Phantom campaignproposals.cmpprp_campaign_id;
+Phantom campaignproposals.cmpprp_creationdate;
+Phantom campaignproposals.cmpprp_submitteddate;
+Phantom campaignproposals.cmpprp_validationdate;
+Phantom campaignproposals.cmpprp_rejecteddate;
+Phantom campaignproposals.cmpprp_status_id;
+Phantom campaignproposals.cmpprp_islast;
+END -- ATTRIBUTES
+
+INSTRUCTIONS
+SCREEN RECORD scr_campaignproposal(
+campaigns.cmp_id,
+campaigns.cmp_brand_id,
+campaigns.cmp_pic_id,
+campaigns.cmp_title,
+campaigns.cmp_overview,
+campaigns.cmp_url,
+campaigns.cmp_isproductneeded,
+campaigns.cmp_prd_description,
+campaigns.cmp_prd_value,
+campaigns.cmp_issharedonfacebook,
+campaigns.cmp_sharedfacebooklink,
+campaigns.cmp_post_guidelines,
+campaigns.cmp_captionrequirements,
+campaigns.cmp_post_startdate,
+campaigns.cmp_post_enddate,
+campaigns.cmp_post_time_starttime,
+campaigns.cmp_post_time_endtime,
+campaigns.cmp_postduration_id,
+campaigns.cmp_totalbudget,
+campaigns.cmp_deposit,
+campaigns.cmp_depositpercent,
+campaigns.cmp_currency_id,
+campaigns.cmp_wantedusers,
+campaigns.cmp_campaignstatus_id,
+campaigns.cmp_createdby_id,
+campaigns.cmp_creationdate,
+campaigns.cmp_publisheddate,
+campaigns.cmp_selectionstartdate,
+campaigns.cmp_selectionenddate,
+campaigns.cmp_selectioncomment,
+campaigns.cmp_actionstartdate,
+campaigns.cmp_actionenddate,
+campaigns.cmp_enddate,
+campaigns.cmp_lastupdatedate,
+campaignproposals.cmpprp_id,
+campaignproposals.cmpprp_campaign_id,
+campaignproposals.cmpprp_creationdate,
+campaignproposals.cmpprp_submitteddate,
+campaignproposals.cmpprp_validationdate,
+campaignproposals.cmpprp_rejecteddate,
+campaignproposals.cmpprp_status_id,
+campaignproposals.cmpprp_price,
+campaignproposals.cmpprp_selectioncomment,
+campaignproposals.cmpprp_islast,
+formonly.cur,
+formonly.cur1)
+SCREEN RECORD scr_campaignproposedusers(
+campaignproposedusers.cmpprpu_campaignproposal_id,
+campaignproposedusers.cmpprpu_user_id,
+campaignproposedusers.cmpprpu_uiorder,
+campaignproposedusers.cmpprpu_isacceptedbybrand,
+campaignproposedusers.cmpprpu_comment,
+campaignproposedusers.cmpprpu_notificationdate,
+campaignproposedusers.cmpprpu_usertotalprice,
+campaignproposedusers.cmpprpu_salfatixtotalprice,
+campaignproposedusers.cmpprpu_usergotproduct,
+users.usr_id,
+users.usr_gender_id,
+users.usr_firstname,
+users.usr_lastname,
+users.usr_birthday,
+users.usr_email,
+users.usr_password,
+users.usr_country_id,
+users.usr_state_id,
+users.usr_city_id,
+users.usr_address_number,
+users.usr_address_street,
+users.usr_address_zipcode,
+users.usr_address_town,
+users.usr_address_more,
+users.usr_mobile_phone,
+users.usr_instagram_userid,
+users.usr_instagram_username,
+users.usr_instagram_fullname,
+users.usr_instagram_profilepicture,
+users.usr_instagram_biography,
+users.usr_instagram_website,
+users.usr_instagram_is_private,
+users.usr_instagram_is_verified,
+users.usr_instagram_is_business,
+users.usr_bank_name,
+users.usr_bank_iban,
+users.usr_bank_swift,
+users.usr_paypal,
+users.usr_mobile_notifications,
+users.usr_notif_style,
+users.usr_email_notifications,
+users.usr_email_style,
+users.usr_currency_id,
+users.usr_accountstatus_id,
+users.usr_createdby_id,
+users.usr_creationdate,
+users.usr_deletiondate,
+users.usr_validationdate,
+users.usr_canceldate,
+users.usr_suspendeddate,
+users.usr_stopdate,
+users.usr_emailvalidationdate,
+users.usr_lastupdatedate,
+users.usr_lastlogindate,
+users.usr_instagram_token,
+usermetrics.usrmtc_reach,
+usermetrics.usrmtc_followers_count,
+formonly.usr_instagram_profilepicture,
+formonly.usr_countryname,
+formonly.usr_statename,
+formonly.usr_cityname,
+formonly.delimage,
+formonly.viewinfluencer,
+formonly.editinfluencer)
+
+SCREEN RECORD Undefined(formonly.ff_formtitle)
+END -- INSTRUCTIONS
+

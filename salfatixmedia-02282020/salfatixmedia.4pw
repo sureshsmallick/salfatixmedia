@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Project defaultApplication="56860550" gstVersion="31408" version="3.3">
+  <Settings>
+    <DynamicProperties version="2">
+      <DynamicProperty description="Accent color (Android 5.0 and later)" initialValue="#9575CD" isDefaultInherited="false" isHidden="false" label="Accent color" name="gma-accent-color" readOnly="false" type="COLOR"/>
+      <DynamicProperty description="Action bar text color (Android 5.0 and later)" initialValue="#EBEBEB" isDefaultInherited="false" isHidden="false" label="Action bar text color" name="gma-actionbar-color" readOnly="false" type="COLOR"/>
+      <DynamicProperty description="Cordova plugins" editorInfo="isDynamic:true;title:Cordova;description:Cordova plugins;icon:checkbox_checked" initialValue="" isDefaultInherited="false" isHidden="false" label="Cordova Plugins" name="gma-cordova" readOnly="false" type="MULTIPLEBOOLEAN"/>
+      <DynamicProperty description="Navigation bar background color (Android 5.0 and later)" initialValue="#5E35B1" isDefaultInherited="false" isHidden="false" label="Navigation bar background color" name="gma-navigationBarBackground-color" readOnly="false" type="COLOR"/>
+      <DynamicProperty description="Primary color (Android 5.0 and later)" initialValue="#5E35B1" isDefaultInherited="false" isHidden="false" label="Primary color" name="gma-primary-color" readOnly="false" type="COLOR"/>
+      <DynamicProperty description="Primary dark color (Android 5.0 and later)" initialValue="#5E35B1" isDefaultInherited="false" isHidden="false" label="Primary dark color" name="gma-primary-dark-color" readOnly="false" type="COLOR"/>
+      <DynamicProperty description="Primary text color (Android 5.0 and later)" initialValue="#000000" isDefaultInherited="false" isHidden="false" label="Primary text color" name="gma-primaryText-color" readOnly="false" type="COLOR"/>
+      <DynamicProperty description="Window backround color (Android 5.0 and later)" initialValue="#ffffff" isDefaultInherited="false" isHidden="false" label="Window background color" name="gma-windowBackground-color" readOnly="false" type="COLOR"/>
+      <DynamicProperty description="Cordova plugins" editorInfo="isDynamic:true;title:Cordova;description:Cordova plugins;icon:checkbox_checked" initialValue="" isDefaultInherited="false" isHidden="false" label="Cordova Plugins" name="gmi-cordova" readOnly="false" type="MULTIPLEBOOLEAN"/>
+      <DynamicProperty description="High-DPI Icon (72x72 px) path" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon-hdpi (72x72 px)" name="icon-hdpi" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Low-DPI Icon (36x36 px) path" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon-ldpi (36x36 px)" name="icon-ldpi" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Medium-DPI Icon (48x48 px) path" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon-mdpi (48x48 px)" name="icon-mdpi" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Extra High-DPI Icon (96x96 px) path" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon-xhdpi (96x96 px)" name="icon-xhdpi" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Extra Extra High-DPI Icon (144x144 px) path" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon-xxhdpi (144x144 px)" name="icon-xxhdpi" readOnly="false" type="FILE"/>
+      <DynamicProperty description="1024x1024 pixel icon (used for App Store)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (1024x1024 px)" name="icon1024x1024" readOnly="false" type="FILE"/>
+      <DynamicProperty description="120x120 pixel icon (used for home screen)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (120x120 px)" name="icon120x120" readOnly="false" type="FILE"/>
+      <DynamicProperty description="152x152 pixel icon (used for home screen)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (152x152 px)" name="icon152x152" readOnly="false" type="FILE"/>
+      <DynamicProperty description="167x167 pixel icon (used for home screen)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (167x167 px)" name="icon167x167" readOnly="false" type="FILE"/>
+      <DynamicProperty description="180x180 pixel icon (used for home screen)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (180x180 px)" name="icon180x180" readOnly="false" type="FILE"/>
+      <DynamicProperty description="29x29 pixel icon (used for settings)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (29x29 px)" name="icon29x29" readOnly="false" type="FILE"/>
+      <DynamicProperty description="40x40 pixel icon (used for settings)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (40x40 px)" name="icon40x40" readOnly="false" type="FILE"/>
+      <DynamicProperty description="58x58 pixel icon (used for settings)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (58x58 px)" name="icon58x58" readOnly="false" type="FILE"/>
+      <DynamicProperty description="60x60 pixel icon (used for settings)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (60x60 px)" name="icon60x60" readOnly="false" type="FILE"/>
+      <DynamicProperty description="76x76 pixel icon (used for home screen)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (76x76 px)" name="icon76x76" readOnly="false" type="FILE"/>
+      <DynamicProperty description="80x80 pixel icon (used for home screen)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (80x80 px)" name="icon80x80" readOnly="false" type="FILE"/>
+      <DynamicProperty description="87x87 pixel icon (used for home screen)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Icon (87x87 px)" name="icon87x87" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPhone 5/5S/SE (portrait)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (640x1136 px)" name="launchScreen" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPad (landcape)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (1024x768 px)" name="launchScreen1024x768" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPhone X (portrait)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (1125x2436 px)" name="launchScreen1125x2436" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPhone 5/5S/SE (landscape)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (1136x640 px)" name="launchScreen1136x640" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPhone 6+/6s+/7+/8+ (portrait)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (1242x2208 px)" name="launchScreen1242x2208" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPhone 6/6s/7/8 (landscape)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (1334x750 px)" name="launchScreen1334x750" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPad (portrait)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (1536x2048 px)" name="launchScreen1536x2048" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for 10.5&quot; iPad Pro (portrait)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (1668x2224 px)" name="launchScreen1668x2224" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPad (landscape)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (2048x1536 px)" name="launchScreen2048x1536" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for 12.9&quot; iPad Pro (portrait)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (2048x2732 px)" name="launchScreen2048x2732" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPhone 6+/6s+/7+/8+ (landscape)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (2208x1242 px)" name="launchScreen2208x1242" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for 10.5&quot; iPad Pro (landscape)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (2224x1668 px)" name="launchScreen2224x1668" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPhone X (landscape)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (2436x1125 px)" name="launchScreen2436x1125" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for 12.9&quot; iPad Pro (landscape)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (2732x2048 px)" name="launchScreen2732x2048" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPhone 6/6s/7/8 (portrait)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (750x1334 px)" name="launchScreen750x1334" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen for iPad (portrait)" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (768x1024 px)" name="launchScreen768x1024" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Launch screen Storyboard file (Created from Xcode)" editorInfo="filters:*.storyboard *.xib;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Launch Screen (Storyboard file)" name="launchScreenXib" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Package identifier" initialValue="" isDefaultInherited="false" isHidden="false" label="ID" name="packageId" readOnly="false" type="TEXT"/>
+      <DynamicProperty description="Label of the package" initialValue="" isDefaultInherited="false" isHidden="false" label="Label" name="packageLabel" readOnly="false" type="TEXT"/>
+      <DynamicProperty description="Version of the package" initialValue="1" isDefaultInherited="false" isHidden="false" label="Version" name="packageVersion" readOnly="false" type="TEXT"/>
+      <DynamicProperty description="Version of the package displayed to the user" initialValue="1" isDefaultInherited="false" isHidden="false" label="VersionName" name="packageVersionName" readOnly="false" type="TEXT"/>
+      <DynamicProperty editorInfo="title:Permissions;description:Android permissions;icon:checkbox_checked;contains:ACCEPT_HANDOVER|ACCESS_CHECKIN_PROPERTIES|ACCESS_COARSE_LOCATION|ACCESS_FINE_LOCATION|ACCESS_LOCATION_EXTRA_COMMANDS|ACCESS_NETWORK_STATE|ACCESS_NOTIFICATION_POLICY|ACCESS_WIFI_STATE|ACCOUNT_MANAGER|ADD_VOICEMAIL|ANSWER_PHONE_CALLS|BATTERY_STATS|BIND_ACCESSIBILITY_SERVICE|BIND_APPWIDGET|BIND_AUTOFILL_SERVICE|BIND_CARRIER_MESSAGING_SERVICE|BIND_CARRIER_SERVICES|BIND_CHOOSER_TARGET_SERVICE|BIND_CONDITION_PROVIDER_SERVICE|BIND_DEVICE_ADMIN|BIND_DREAM_SERVICE|BIND_INCALL_SERVICE|BIND_INPUT_METHOD|BIND_MIDI_DEVICE_SERVICE|BIND_NFC_SERVICE|BIND_NOTIFICATION_LISTENER_SERVICE|BIND_QUICK_SETTINGS_TILE|BIND_PRINT_SERVICE|BIND_REMOTEVIEWS|BIND_SLICE|BIND_SCREENING_SERVICE|BIND_TELECOM_CONNECTION_SERVICE|BIND_TEXT_SERVICE|BIND_TV_INPUT|BIND_VISUAL_VOICEMAIL_SERVICE|BIND_VOICE_INTERACTION|BIND_VPN_SERVICE|BIND_VR_LISTENER_SERVICE|BIND_WALLPAPER|BLUETOOTH|BLUETOOTH_ADMIN|BLUETOOTH_PRIVILEGED|BODY_SENSORS|BROADCAST_PACKAGE_REMOVED|BROADCAST_SMS|BROADCAST_STICKY|BROADCAST_WAP_PUSH|C2DM_RECEIVE|C2D_MESSAGE|CALL_PHONE|CALL_PRIVILEGED|CAMERA|CAPTURE_AUDIO_OUTPUT|CAPTURE_SECURE_VIDEO_OUTPUT|CAPTURE_VIDEO_OUTPUT|CHANGE_COMPONENT_ENABLED_STATE|CHANGE_CONFIGURATION|CHANGE_NETWORK_STATE|CHANGE_WIFI_MULTICAST_STATE|CHANGE_WIFI_STATE|CLEAR_APP_CACHE|CONTROL_LOCATION_UPDATES|DELETE_CACHE_FILES|DELETE_PACKAGES|DIAGNOSTIC|DISABLE_KEYGUARD|DUMP|EXPAND_STATUS_BAR|FACTORY_TEST|GET_ACCOUNTS|GET_ACCOUNTS_PRIVILEGED|GET_PACKAGE_SIZE|GET_TASKS|GLOBAL_SEARCH|INSTALL_LOCATION_PROVIDER|INSTALL_PACKAGES|INSTALL_SHORTCUT|INSTANT_APP_FOREGROUND_SERVICE|INTERNET|KILL_BACKGROUND_PROCESSES|LOCATION_HARDWARE|MANAGE_DOCUMENTS|MANAGE_OWN_CALLS|MASTER_CLEAR|MEDIA_CONTENT_CONTROL|MODIFY_AUDIO_SETTINGS|MODIFY_PHONE_STATE|MOUNT_FORMAT_FILESYSTEMS|MOUNT_UNMOUNT_FILESYSTEMS|NFC|NFC_TRANSACTION_EVENT|PACKAGE_USAGE_STATS|PERSISTENT_ACTIVITY|PROCESS_OUTGOING_CALLS|READ_CALENDAR|READ_CALL_LOG|READ_CONTACTS|READ_EXTERNAL_STORAGE|READ_FRAME_BUFFER|READ_INPUT_STATE|READ_LOGS|READ_PHONE_NUMBER|READ_PHONE_NUMBERS|READ_PHONE_STATE|READ_SMS|READ_SYNC_SETTINGS|READ_SYNC_STATS|READ_VOICEMAIL|REBOOT|RECEIVE_BOOT_COMPLETED|RECEIVE_MMS|RECEIVE_SMS|RECEIVE_WAP_PUSH|RECORD_AUDIO|REORDER_TASKS|REQUEST_COMPANION_RUN_IN_BACKGROUND|REQUEST_COMPANION_USE_DATA_IN_BACKGROUND|REQUEST_DELETE_PACKAGES|REQUEST_IGNORE_BATTERY_OPTIMIZATIONS|REQUEST_INSTALL_PACKAGES|RESTART_PACKAGES|SEND_RESPOND_VIA_MESSAGE|SEND_SMS|SET_ALARM|SET_ALWAYS_FINISH|SET_ANIMATION_SCALE|SET_DEBUG_APP|SET_PREFERRED_APPLICATIONS|SET_PROCESS_LIMIT|SET_TIME|SET_TIME_ZONE|SET_WALLPAPER|SET_WALLPAPER_HINTS|SIGNAL_PERSISTENT_PROCESSES|STATUS_BAR|SYSTEM_ALERT_WINDOW|TRANSMIT_IR|UNINSTALL_SHORTCUT|UPDATE_DEVICE_STATS|USE_FINGERPRINT|USE_SIP|VIBRATE|WAKE_LOCK|WRITE_APN_SETTINGS|WRITE_CALENDAR|WRITE_CALL_LOG|WRITE_CONTACTS|WRITE_EXTERNAL_STORAGE|WRITE_GSERVICES|WRITE_SECURE_SETTINGS|WRITE_SETTINGS|WRITE_SYNC_SETTINGS|WRITE_VOICEMAIL" initialValue="ACCESS_NETWORK_STATE||ACCESS_WIFI_STATE||CHANGE_NETWORK_STATE||INSTALL_SHORTCUT||INTERNET||MOUNT_FORMAT_FILESYSTEMS||READ_LOGS" isDefaultInherited="false" isHidden="false" label="Permissions" name="permissions" readOnly="false" type="MULTIPLEBOOLEAN"/>
+      <DynamicProperty description="Requirements" editorInfo="title:Requirements;description:iOS Requirements;icon:checkbox_checked;contains:accelerometer|auto-focus-camera|armv6|armv7|bluetooth-le|camera-flash|front-facing-camera|gamekit|gps|gyroscope|healthkit|magnetometer|metal|microphone|location-services|opengles-1|opengles-2|opengles-3|peer-peer|sms|still-camera|telephony|video-camera|wifi" initialValue="wifi" isDefaultInherited="false" isHidden="true" label="Requirements" name="required" readOnly="false" type="MULTIPLEBOOLEAN"/>
+      <DynamicProperty description="High-DPI Status Icon (36x36 px) path" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Status Icon-hdpi (36x36 px)" name="status-icon-hdpi" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Medium-DPI Status Icon (24x24 px) path" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Status Icon-mdpi (24x24 px)" name="status-icon-mdpi" readOnly="false" type="FILE"/>
+      <DynamicProperty description="Extra High-DPI Status Icon (48x48 px) path" editorInfo="filters:*.png;openDirDialog:true;replaceDocPath:$(ProjectDir)" initialValue="" isDefaultInherited="false" isHidden="false" label="Status Icon-xhdpi (48x48 px)" name="status-icon-xhdpi" readOnly="false" type="FILE"/>
+      <DynamicPropertyGroup collapsed="false" description="Android" label="Android" name="AndroidGroup" properties="packageVersionName;gma-primary-color;gma-primary-dark-color;gma-accent-color;gma-actionbar-color;gma-primaryText-color;gma-windowBackground-color;gma-navigationBarBackground-color;icon-ldpi;icon-mdpi;icon-hdpi;icon-xhdpi;icon-xxhdpi;status-icon-mdpi;status-icon-hdpi;status-icon-xhdpi;permissions;gma-cordova"/>
+      <DynamicPropertyGroup collapsed="false" description="Package" label="Package" name="PackageGroup" properties="packageId;packageLabel;packageVersion"/>
+      <DynamicPropertyGroup collapsed="false" description="iOS" label="iOS" name="iOSGroup" properties="launchScreen;launchScreen1136x640;launchScreen750x1334;launchScreen1334x750;launchScreen1242x2208;launchScreen2208x1242;launchScreen1125x2436;launchScreen2436x1125;launchScreen768x1024;launchScreen1024x768;launchScreen1536x2048;launchScreen2048x1536;launchScreen2224x1668;launchScreen1668x2224;launchScreen2048x2732;launchScreen2732x2048;launchScreenXib;icon29x29;icon40x40;icon58x58;icon60x60;icon76x76;icon80x80;icon87x87;icon120x120;icon152x152;icon167x167;icon180x180;icon1024x1024;required;gmi-cordova"/>
+    </DynamicProperties>
+    <NodeInfos version="1">
+      <NodeInfo mimeType="pm/package" properties="packageId;packageLabel;packageVersion;packageVersionName;launchScreen;launchScreen1136x640;launchScreen750x1334;launchScreen1334x750;launchScreen1242x2208;launchScreen2208x1242;launchScreen1125x2436;launchScreen2436x1125;launchScreen768x1024;launchScreen1024x768;launchScreen1536x2048;launchScreen2048x1536;launchScreen2224x1668;launchScreen1668x2224;launchScreen2048x2732;launchScreen2732x2048;launchScreenXib;icon29x29;icon40x40;icon58x58;icon60x60;icon76x76;icon80x80;icon87x87;icon120x120;icon152x152;icon167x167;icon180x180;icon1024x1024;gma-primary-color;gma-primary-dark-color;gma-accent-color;gma-actionbar-color;gma-primaryText-color;gma-windowBackground-color;gma-navigationBarBackground-color;icon-ldpi;icon-mdpi;icon-hdpi;icon-xhdpi;icon-xxhdpi;status-icon-mdpi;status-icon-hdpi;status-icon-xhdpi;permissions;required;gma-cordova;gmi-cordova"/>
+    </NodeInfos>
+  </Settings>
+  <LanguageList version="1.0">
+    <Language name="Genero">
+      <BuildRuleList>
+        <BuildRule additionalDependencies="" commands="$(fglcomp) $(Implicit) $(CompilerOptions) -I &quot;$(GGCDIR)/lib&quot; &quot;$(InputPath)&quot;;$(fglcomp) -m &quot;$(InputPath)&quot; &gt; &quot;$(TargetDir)/$(InputBaseName).str&quot;;$(move) &quot;$(InputDir)/$(InputBaseName).42m&quot; &quot;$(TargetDir)/$(InputBaseName).42m&quot;" description="Genero compiler" enabled="false" fileType="application/genero-4gl" intermediateFiles="" outputFiles="$(TargetDir)/$(InputBaseName).42m"/>
+        <BuildRule additionalDependencies="" commands="$(percomp) $(CompilerOptions) &quot;$(InputPath)&quot;;$(percomp) -m &quot;$(InputPath)&quot; &gt; &quot;$(TargetDir)/$(InputBaseName).str&quot;;$(move) &quot;$(InputDir)/$(InputBaseName).42f&quot; &quot;$(TargetDir)/$(InputBaseName).42f&quot;" description="PER form compiler" enabled="false" fileType="application/genero-per" intermediateFiles="" outputFiles="$(TargetDir)/$(InputBaseName).42f"/>
+        <BuildRule additionalDependencies="" commands="$(4fdcomp) $(CompilerOptions) &quot;$(InputPath)&quot;;$(4fdcomp) -m &quot;$(InputPath)&quot; &gt; &quot;$(TargetDir)/$(InputBaseName).str&quot;;$(move) &quot;$(InputDir)/$(InputBaseName).42f&quot; &quot;$(TargetDir)/$(InputBaseName).42f&quot;" description="4FD form compiler" enabled="false" fileType="application/generostudio-4fd" intermediateFiles="" outputFiles="$(TargetDir)/$(InputBaseName).42f"/>
+      </BuildRuleList>
+      <LinkRuleList/>
+      <VariableList/>
+    </Language>
+  </LanguageList>
+  <PlatformList version="1.0">
+    <Platform name="iOS">
+      <VariableList>
+        <Variable name="GMIUSERDIR" type="dir" value="$(ProjectDir)/GMI/dist"/>
+      </VariableList>
+    </Platform>
+  </PlatformList>
+  <Group id="2009001554" label="app_brand" language="Genero">
+    <Application binaryName="salfatixmedia4brands" dependencies="88974720,101330300,403170810,185983274,187278208,135221490,85828050,74065896,746455668,873632960,40946885,102112180,1011539128" id="241006020" label="salfatixmedia4brands">
+      <File filePath="app_brand/brand_credentials.4fd"/>
+      <File filePath="app_brand/salfatixmedia4brands.4gl"/>
+      <File filePath="xcf/apps/salfatixmedia_1.xcf"/>
+    </Application>
+  </Group>
+  <Group id="2144714052" label="app_emailvalidation" language="Genero">
+    <Application binaryName="emailvalidation" commandLineArguments="1 2 1534152483.0 dsfsdfsd" dependencies="135221490,249030302,88974720,74065896,151179336,40946885,873632960,102112180" id="98932342" label="emailvalidation">
+      <File filePath="app_emailvalidation/emailvalidation.4gl"/>
+    </Application>
+  </Group>
+  <Group id="-1884896438" label="app_influencer" language="Genero">
+    <Group id="-715740312" label="packages" language="Genero">
+      <Package binaryName="AndroidPackage" dependencies="77120190" description="SalfatixMediaPackage" distDirectory="$(ProjectDir)/GMA/distbin" excludeFromBuild="true" id="-1780429004" label="AndroidPackage" platform="Android" rootDirectory="$(ProjectDir)/GMA">
+        <DynamicProperty name="icon-hdpi" value="$(ProjectDir)/res/imgs/salfatixlogo72x72.png"/>
+        <DynamicProperty name="icon-ldpi" value="$(ProjectDir)/res/imgs/salfatixlogo36x36.png"/>
+        <DynamicProperty name="icon-mdpi" value="$(ProjectDir)/res/imgs/salfatixlogo48x48.png"/>
+        <DynamicProperty name="icon-xhdpi" value="$(ProjectDir)/res/imgs/salfatixlogo96x96.png"/>
+        <DynamicProperty name="icon-xxhdpi" value="$(ProjectDir)/res/imgs/salfatixlogo144x144.png"/>
+        <DynamicProperty name="icon1024x1024" value="$(ProjectDir)/res/imgs/salfatixlogo1024x1024.png"/>
+        <DynamicProperty name="icon120x120" value="$(ProjectDir)/res/imgs/salfatixlogo120x120.png"/>
+        <DynamicProperty name="icon152x152" value="$(ProjectDir)/res/imgs/salfatixlogo152x152.png"/>
+        <DynamicProperty name="icon167x167" value="$(ProjectDir)/res/imgs/salfatixlogo167x167.png"/>
+        <DynamicProperty name="icon180x180" value="$(ProjectDir)/res/imgs/salfatixlogo180x180.png"/>
+        <DynamicProperty name="icon29x29" value="$(ProjectDir)/res/imgs/salfatixlogo29x29.png"/>
+        <DynamicProperty name="icon40x40" value="$(ProjectDir)/res/imgs/salfatixlogo40x40.png"/>
+        <DynamicProperty name="icon58x58" value="$(ProjectDir)/res/imgs/salfatixlogo58x58.png"/>
+        <DynamicProperty name="icon60x60" value="$(ProjectDir)/res/imgs/salfatixlogo60x60.png"/>
+        <DynamicProperty name="icon76x76" value="$(ProjectDir)/res/imgs/salfatixlogo76x76.png"/>
+        <DynamicProperty name="icon80x80" value="$(ProjectDir)/res/imgs/salfatixlogo80x80.png"/>
+        <DynamicProperty name="icon87x87" value="$(ProjectDir)/res/imgs/salfatixlogo87x87.png"/>
+        <DynamicProperty name="packageId" value="com.salfatixmedia.influencers"/>
+        <DynamicProperty name="packageLabel" value="Salfatix Media"/>
+        <DynamicProperty name="permissions" value="ACCESS_NETWORK_STATE;ACCESS_NOTIFICATION_POLICY;ACCESS_WIFI_STATE;C2DM_RECEIVE;C2D_MESSAGE;CHANGE_NETWORK_STATE;GET_ACCOUNTS;INSTALL_SHORTCUT;INTERNET;KILL_BACKGROUND_PROCESSES;MOUNT_FORMAT_FILESYSTEMS;READ_EXTERNAL_STORAGE;READ_LOGS;WAKE_LOCK"/>
+        <Directory description="Binaries" includedFiles="salfatixmedia4influencersClient.42r,salfatixmedia4influencersClient.42m,core_os.42m,core_ui.42m,welcome.42f" label="Binaries" recursive="false" sourceDirectory="$(ProjectDir)/bin"/>
+        <Directory includedFiles="fglprofile" label="fglprofile" sourceDirectory="$(ProjectDir)/app_influencer"/>
+        <Directory description="Images" includedFiles="footer*.jpg,header.png" label="Images" sourceDirectory="$(ProjectDir)/res/imgs"/>
+        <Directory description="Project Resources" includedFiles="*.4ad,myimage2font.txt" label="Resources" sourceDirectory="$(ProjectDir)/res"/>
+        <Directory includedFiles="*.4st" label="styles" sourceDirectory="$(ProjectDir)/app_influencer"/>
+      </Package>
+      <Package binaryName="IosPackage" dependencies="77120190" description="SalfatixMediaPackage" distDirectory="$(ProjectDir)/GMI/distbin" excludeFromBuild="true" id="1879691880" label="IosPackage" platform="iOS" rootDirectory="$(ProjectDir)/GMI">
+        <DynamicProperty name="icon-hdpi" value="$(ProjectDir)/res/imgs/salfatixlogo72x72.png"/>
+        <DynamicProperty name="icon-ldpi" value="$(ProjectDir)/res/imgs/salfatixlogo36x36.png"/>
+        <DynamicProperty name="icon-mdpi" value="$(ProjectDir)/res/imgs/salfatixlogo48x48.png"/>
+        <DynamicProperty name="icon-xhdpi" value="$(ProjectDir)/res/imgs/salfatixlogo96x96.png"/>
+        <DynamicProperty name="icon-xxhdpi" value="$(ProjectDir)/res/imgs/salfatixlogo144x144.png"/>
+        <DynamicProperty name="icon1024x1024" value="$(ProjectDir)/res/imgs/salfatixlogo1024x1024-ios.png"/>
+        <DynamicProperty name="icon120x120" value="$(ProjectDir)/res/imgs/salfatixlogo120x120-ios.png"/>
+        <DynamicProperty name="icon152x152" value="$(ProjectDir)/res/imgs/salfatixlogo152x152-ios.png"/>
+        <DynamicProperty name="icon167x167" value="$(ProjectDir)/res/imgs/salfatixlogo167x167-ios.png"/>
+        <DynamicProperty name="icon180x180" value="$(ProjectDir)/res/imgs/salfatixlogo180x180-ios.png"/>
+        <DynamicProperty name="icon29x29" value="$(ProjectDir)/res/imgs/salfatixlogo29x29-ios.png"/>
+        <DynamicProperty name="icon40x40" value="$(ProjectDir)/res/imgs/salfatixlogo40x40-ios.png"/>
+        <DynamicProperty name="icon58x58" value="$(ProjectDir)/res/imgs/salfatixlogo58x58-ios.png"/>
+        <DynamicProperty name="icon60x60" value="$(ProjectDir)/res/imgs/salfatixlogo60x60-ios.png"/>
+        <DynamicProperty name="icon76x76" value="$(ProjectDir)/res/imgs/salfatixlogo76x76-ios.png"/>
+        <DynamicProperty name="icon80x80" value="$(ProjectDir)/res/imgs/salfatixlogo80x80-ios.png"/>
+        <DynamicProperty name="icon87x87" value="$(ProjectDir)/res/imgs/salfatixlogo87x87-ios.png"/>
+        <DynamicProperty name="packageId" value="com.salfatixmedia.influencers"/>
+        <DynamicProperty name="packageLabel" value="Salfatix Media"/>
+        <DynamicProperty name="packageVersion" value="0.76"/>
+        <DynamicProperty name="packageVersionName" value="0.2"/>
+        <DynamicProperty name="permissions" value="ACCESS_NETWORK_STATE;ACCESS_NOTIFICATION_POLICY;ACCESS_WIFI_STATE;C2DM_RECEIVE;C2D_MESSAGE;CHANGE_NETWORK_STATE;GET_ACCOUNTS;INSTALL_SHORTCUT;INTERNET;MOUNT_FORMAT_FILESYSTEMS;READ_LOGS;WAKE_LOCK"/>
+        <Directory description="Binaries" includedFiles="salfatixmedia4influencersClient.42r,salfatixmedia4influencersClient.42m,core_os.42m,core_ui.42m,welcome.42f" label="Binaries" recursive="false" sourceDirectory="$(ProjectDir)/bin"/>
+        <Directory includedFiles="fglprofile" label="fglprofile" sourceDirectory="$(ProjectDir)/app_influencer"/>
+        <Directory description="Images" includedFiles="footer*.jpg,header.png" label="Images" sourceDirectory="$(ProjectDir)/res/imgs"/>
+        <Directory description="Project Resources" includedFiles="*.4ad,myimage2font.txt" label="Resources" sourceDirectory="$(ProjectDir)/res"/>
+        <Directory includedFiles="*.4st" label="styles" sourceDirectory="$(ProjectDir)/app_influencer"/>
+      </Package>
+    </Group>
+    <Application binaryName="salfatixmedia4influencers" commandLineArguments="12345 dev" dependencies="88974720,101330300,60612192,343558768,187278208,403170810,135221490,249030302,43478319,74065896,4864230,746455668,873632960,40946885" id="152295489" label="salfatixmedia4influencers">
+      <File filePath="app_influencer/influencer_credentials.4fd"/>
+      <File filePath="app_influencer/influencer_credentials_instagram_only.4fd"/>
+      <File filePath="app_influencer/salfatixmedia4influencers.4gl"/>
+      <File filePath="../resources/salfatixmedia_2.xcf"/>
+    </Application>
+    <Application binaryName="salfatixmedia4influencersClient" dependencies="312338782,164659525,280830925" environment="filelist:FGLPROFILE=$(ProjectDir)/app_influencer/fglprofile,dirlist:FGLIMAGEPATH=$(ProjectDir)/bin;$(ProjectDir)/res/imgs" id="77120190" label="salfatixmedia4influencersClient">
+      <File filePath="app_influencer/fglprofile"/>
+      <File filePath="app_influencer/influencerclient.4st"/>
+      <File filePath="app_influencer/salfatixmedia4influencersClient.4gl"/>
+      <File filePath="app_influencer/welcome.per"/>
+    </Application>
+  </Group>
+  <Group id="922986473" label="app_resetpassword" language="Genero">
+    <Application binaryName="resetpassword" commandLineArguments="44 0 1534239007 33a27b0e78316651d3fafa3ed091e9573007fb829b815aa882af0002e02f8dff455a2a2b1367b82a3767180bc9152c116d91c458f55653ec162ce3a95988393b" dependencies="187278208,74065896,249030302,135221490,88974720,151179336" id="108583964" label="resetpassword">
+      <File filePath="app_resetpassword/resetpassword.4gl"/>
+    </Application>
+  </Group>
+  <Group environment="file:FGLIMAGEPATH=$(ProjectDir)/res/imgs" id="1729698275" label="app_salfatixmedia" language="Genero">
+    <Application binaryName="salfatixmedia4backoffice" commandLineArguments="dev=xx" dependencies="88974720,403170810,185983274,101330300,73367040,343558768,302050304,249030302,135221490,85828050,74065896,746455668,873632960,40946885,102112180,659598368,950090226,194041604,170427798,167851000,1011539128,861422484,187278208" id="56860550" label="salfatixmedia4backoffice">
+      <File filePath="app_salfatixmedia/salfatix_credentials.4fd"/>
+      <File filePath="app_salfatixmedia/salfatix_credentials.per"/>
+      <File filePath="app_salfatixmedia/salfatixmedia4backoffice.4gl"/>
+      <File filePath="xcf/apps/salfatixmedia_1_1.xcf"/>
+    </Application>
+  </Group>
+  <Group id="1766981532" label="app_socialnetworks" language="Genero">
+    <Application binaryName="socialnetworksauthentication_client" dependencies="43478319" id="529651360" label="socialnetworksauthentication_client">
+      <File filePath="lib/socialnetworksauthentication/login.per"/>
+      <File filePath="lib/socialnetworksauthentication/socialnetworksauthentication_client.4gl"/>
+    </Application>
+    <Application binaryName="socialnetworksauthentication_server" environment="value:OAUTHDEBUG=1" id="157875564" label="socialnetworksauthentication_server">
+      <File filePath="app_socialnetworks/OAuthUser.4gl"/>
+      <File filePath="app_socialnetworks/socialnetworksauthentication_server.4gl"/>
+    </Application>
+  </Group>
+  <Group id="-601620868" label="database" language="Genero">
+    <Library binaryName="database_salfatixmedia" id="60612192" label="database_salfatixmedia">
+      <File filePath="database/salfatixmedia.4db"/>
+    </Library>
+  </Group>
+  <Group excludeFromBuild="true" id="839563953" label="doc" language="Genero">
+    <Library binaryName="doc" id="451024565" label="doc">
+      <File filePath="doc/17-12-06-SalfatixMedia-ProductBacklogMeeting.docx"/>
+      <File filePath="doc/Brand Account Workflow.png"/>
+      <File filePath="doc/Brand Account Workflow.xmind"/>
+      <File filePath="doc/Campaign Workflow.png"/>
+      <File filePath="doc/Campaign Workflow.xmind"/>
+      <File filePath="doc/Companies export - Jan 31, 2018.xlsx"/>
+      <File filePath="doc/Contacts export - Jan 31, 2018.xlsx"/>
+      <File filePath="doc/database_structure_for_4js.xlsx"/>
+      <File filePath="doc/Employee Account Workflow.png"/>
+      <File filePath="doc/Employee Account Workflow.xmind"/>
+      <File filePath="doc/Influencer Account Workflow.xmind"/>
+      <File filePath="doc/Influencers Account Workflow.png"/>
+      <File filePath="doc/Models export - Jan 24, 2018.xlsx"/>
+      <File filePath="doc/SalfatixProject.pptx"/>
+      <File filePath="doc/sandbox.txt"/>
+      <File filePath="doc/SocialNetworkAuthentication.txt"/>
+    </Library>
+  </Group>
+  <Group excludeFromBuild="true" id="1406706432" label="exports" language="Genero"/>
+  <Group excludeFromBuild="true" id="1727186863" label="gbc" language="Genero">
+    <Group id="-1557132096" label="customization">
+      <Group id="881093115" label="salfatixmedia">
+        <Group id="1818116058" label="js">
+          <Library binaryName="js" id="659598368" label="js">
+            <File filePath="gbc/customization/salfatixmedia/js/MyBackOfficeFrontCalls.js"/>
+            <File filePath="gbc/customization/salfatixmedia/js/MyBackOfficeMenu.js"/>
+            <File filePath="gbc/customization/salfatixmedia/js/MyBackOfficeMenu.tpl.html"/>
+            <File filePath="gbc/customization/salfatixmedia/js/MyBrandFrontCalls.js"/>
+            <File filePath="gbc/customization/salfatixmedia/js/MyBrandMenu.js"/>
+            <File filePath="gbc/customization/salfatixmedia/js/MyBrandMenu.tpl.html"/>
+            <File filePath="gbc/customization/salfatixmedia/js/MyMainContainerWidget.js"/>
+            <File filePath="gbc/customization/salfatixmedia/js/MyMainContainerWidget.tpl.html"/>
+            <File filePath="gbc/customization/salfatixmedia/js/MySessionEndWidget.js"/>
+            <File filePath="gbc/customization/salfatixmedia/js/MySessionEndWidget.tpl.html"/>
+          </Library>
+        </Group>
+        <Group id="501415409" label="locales">
+          <Library binaryName="locales" id="170427798" label="locales">
+            <File filePath="gbc/customization/salfatixmedia/locales/en-US.json"/>
+            <File filePath="gbc/customization/salfatixmedia/locales/fr-FR.json"/>
+          </Library>
+        </Group>
+        <Group id="-1730797834" label="resources">
+          <Group id="1334760910" label="img">
+            <Library binaryName="img" id="950090226" label="img">
+              <File filePath="gbc/customization/salfatixmedia/resources/img/gbc_logo.ico"/>
+            </Library>
+          </Group>
+        </Group>
+        <Library binaryName="salfatixmedia" id="167851000" label="salfatixmedia">
+          <File filePath="gbc/customization/salfatixmedia/howto.txt"/>
+          <File filePath="gbc/customization/salfatixmedia/theme.scss.json"/>
+        </Library>
+        <Group id="1428530973" label="sass">
+          <Library binaryName="sass" id="194041604" label="sass">
+            <File filePath="gbc/customization/salfatixmedia/sass/MyMainContainerWidget.scss"/>
+            <File filePath="gbc/customization/salfatixmedia/sass/customization.scss"/>
+            <File filePath="gbc/customization/salfatixmedia/sass/MySessionEndWidget.scss"/>
+          </Library>
+        </Group>
+      </Group>
+    </Group>
+  </Group>
+  <Group id="-1404719931" label="lib" language="Genero">
+    <Group id="1859371484" label="backofficeusers">
+      <Library binaryName="backofficeusers" dependencies="60612192,44960200,249030302,746455668,151179336,135221490,88974720,101330300,3468900,861422484,74065896" id="73367040" label="backofficeusers">
+        <File filePath="lib/backofficeusers/backofficeuser_grid.4fd"/>
+        <File filePath="lib/backofficeusers/backofficeuser_list.4fd"/>
+        <File filePath="lib/backofficeusers/backofficeusers.4gl"/>
+      </Library>
+      <Library binaryName="bomainpanel" dependencies="249030302,135221490,60612192,101330300,151179336,88974720,185983274" id="302050304" label="bomainpanel">
+        <File filePath="lib/backofficeusers/backofficemainpanel.4gl"/>
+        <File filePath="lib/backofficeusers/backofficemainpanel_list.4fd"/>
+        <File filePath="lib/backofficeusers/backofficemainpanel_list.per"/>
+        <File filePath="lib/backofficeusers/salfatix_menu.4fd"/>
+      </Library>
+    </Group>
+    <Group id="1118988481" label="basic">
+      <Library binaryName="combobox" dependencies="249030302,60612192,135221490" id="44960200" label="combobox">
+        <File filePath="lib/basic/combobox.4gl"/>
+      </Library>
+      <Library binaryName="emails" dependencies="60612192,249030302,135221490" id="3468900" label="emails">
+        <File filePath="lib/basic/emails.4gl"/>
+      </Library>
+      <Library binaryName="hash" id="74065896" label="hash">
+        <File filePath="lib/basic/hash.4gl"/>
+      </Library>
+      <Library binaryName="layout" dependencies="249030302,135221490,746455668,151179336" id="861422484" label="layout">
+        <File filePath="lib/basic/layout.4gl"/>
+      </Library>
+      <Library binaryName="setup" dependencies="60612192,249030302,151179336,135221490" id="88974720" label="setup">
+        <File filePath="lib/basic/setup.4gl"/>
+      </Library>
+      <Library binaryName="string" dependencies="60612192,135221490,249030302" id="746455668" label="string">
+        <File filePath="lib/basic/string.4gl"/>
+      </Library>
+    </Group>
+    <Group id="-1651426892" label="brands">
+      <Library binaryName="brands" dependencies="60612192,101330300,44960200,151179336,135221490,88974720,249030302,746455668,254303033,3468900,861422484,64842880,113138172,329362300,74065896" id="185983274" label="brands">
+        <File filePath="lib/brands/brand_grid.4fd"/>
+        <File filePath="lib/brands/brand_list.4fd"/>
+        <File filePath="lib/brands/brand_scrollgrid.4fd"/>
+        <File filePath="lib/brands/brands.4gl"/>
+      </Library>
+      <Library binaryName="brandsocialnetworks" dependencies="88974720,60612192,861422484,151179336,135221490,44960200,249030302,101330300" id="64842880" label="brandsocialnetworks">
+        <File filePath="lib/brands/brandsocialnetwork_empty.4fd"/>
+        <File filePath="lib/brands/brandsocialnetwork_grid.4fd"/>
+        <File filePath="lib/brands/brandsocialnetwork_list.per"/>
+        <File filePath="lib/brands/brandsocialnetworks.4gl"/>
+      </Library>
+    </Group>
+    <Group id="-220779048" label="campaigns">
+      <Library binaryName="campaignlocations" dependencies="249030302,101330300,60612192,151179336,746455668" id="113138172" label="campaignlocations">
+        <File filePath="lib/campaigns/campaignlocations.4gl"/>
+        <File filePath="lib/campaigns/campaignlocations_city.4fd"/>
+        <File filePath="lib/campaigns/campaignlocations_country.4fd"/>
+        <File filePath="lib/campaigns/campaignlocations_state.4fd"/>
+      </Library>
+      <Library binaryName="campaignposts" dependencies="60612192,861422484,329362300,88974720,24404462" id="266333288" label="campaignposts">
+        <File filePath="lib/campaigns/campaignpost_grid.4fd"/>
+        <File filePath="lib/campaigns/campaignpost_list.4fd"/>
+        <File filePath="lib/campaigns/campaignposts.4gl"/>
+        <File filePath="lib/campaigns/campaignposts_commons.4gl"/>
+        <File filePath="lib/campaigns/campaignposts_empty_mobile.4fd"/>
+        <File filePath="lib/campaigns/campaignposts_grid_mobile.4fd"/>
+        <File filePath="lib/campaigns/campaignposts_list_mobile.4fd"/>
+        <File filePath="lib/campaigns/campaignposts_mobile.4gl"/>
+      </Library>
+      <Library binaryName="campaignposttypes" dependencies="746455668,60612192,101330300,249030302,151179336,88974720" id="24404462" label="campaignposttypes">
+        <File filePath="lib/campaigns/campaignposttypes.4fd"/>
+        <File filePath="lib/campaigns/campaignposttypes.4gl"/>
+      </Library>
+      <Library binaryName="campaignprices" dependencies="60612192,249030302,151179336,101330300,861422484,135221490" id="596160057" label="campaignprices">
+        <File filePath="lib/campaigns/campaignprice_grid.4fd"/>
+        <File filePath="lib/campaigns/campaignprices.4gl"/>
+      </Library>
+      <Library binaryName="campaignpublications" dependencies="60612192,249030302,135221490,88974720,151179336,746455668,101330300,343558768,861422484,266333288,596160057,329362300" id="806150350" label="campaignpublications">
+        <File filePath="lib/campaigns/campaignpublications.4gl"/>
+        <File filePath="lib/campaigns/campaignpublications.per"/>
+        <File filePath="lib/campaigns/campaignpublicationsforbrand.per"/>
+        <File filePath="lib/campaigns/campaignuserlist_grid.4fd"/>
+      </Library>
+      <Library binaryName="campaigns" dependencies="60612192,101330300,44960200,151179336,135221490,88974720,249030302,746455668,254303033,32450020,12773510,270843309,5786830,806150350,113138172,24404462,266333288,172258130,329362300,861422484,596160057" id="403170810" label="campaigns">
+        <File filePath="lib/campaigns/campaign_empty.4fd"/>
+        <File filePath="lib/campaigns/campaign_grid.4fd"/>
+        <File filePath="lib/campaigns/campaign_list.4fd"/>
+        <File filePath="lib/campaigns/campaigns.4gl"/>
+      </Library>
+      <Library binaryName="campaigns_mobile" dependencies="60612192" id="511808822" label="campaigns_mobile">
+        <File filePath="lib/campaigns/campaign_grid_mobile.4fd"/>
+        <File filePath="lib/campaigns/campaign_list_empty.4fd"/>
+        <File filePath="lib/campaigns/campaign_list_mobile.4fd"/>
+        <File filePath="lib/campaigns/campaign_productreception_mobile.4fd"/>
+        <File filePath="lib/campaigns/campaigns_mobile.4gl"/>
+      </Library>
+      <Library binaryName="campaignuserprices" dependencies="135221490,101330300,249030302,746455668,88974720,151179336,44960200,60612192,861422484" id="103953877" label="campaignuserprices">
+        <File filePath="lib/campaigns/campaign_apply.4fd"/>
+        <File filePath="lib/campaigns/campaignuserprices.4gl"/>
+      </Library>
+    </Group>
+    <Group id="338005828" label="core">
+      <Library binaryName="core_automaton" id="101330300" label="core_automaton">
+        <File filePath="lib/core/core_automaton.4gl"/>
+      </Library>
+      <Library binaryName="core_cst" id="135221490" label="core_cst">
+        <File filePath="lib/core/core_cst.4gl"/>
+      </Library>
+      <Library binaryName="core_db" dependencies="60612192,135221490" id="249030302" label="core_db">
+        <File filePath="lib/core/core_db.4gl"/>
+      </Library>
+      <Library binaryName="core_os" id="312338782" label="core_os">
+        <File filePath="lib/core/core_os.4gl"/>
+      </Library>
+      <Library binaryName="core_ui" id="151179336" label="core_ui">
+        <File filePath="lib/core/core_ui.4gl"/>
+      </Library>
+    </Group>
+    <Group id="-592309652" label="influencers">
+      <Library binaryName="influencers" dependencies="60612192,44960200,135221490,249030302,101330300,151179336,88974720,746455668,3468900,861422484,207117504,110727936,329362300,24249188,74065896,169642348,4864230,511808822" id="343558768" label="influencers">
+        <File filePath="lib/influencers/user_grid.4fd"/>
+        <File filePath="lib/influencers/user_list.per"/>
+        <File filePath="lib/influencers/user_menu.per"/>
+        <File filePath="lib/influencers/users.4gl"/>
+      </Library>
+      <Library binaryName="userpostprices" dependencies="249030302,135221490,60612192,101330300,44960200,88974720,861422484,151179336" id="207117504" label="userpostprices">
+        <File filePath="lib/influencers/userpostprice_empty.4fd"/>
+        <File filePath="lib/influencers/userpostprice_eurosymbolshelp.per"/>
+        <File filePath="lib/influencers/userpostprice_grid.4fd"/>
+        <File filePath="lib/influencers/userpostprice_list.per"/>
+        <File filePath="lib/influencers/userpostprices.4gl"/>
+      </Library>
+      <Library binaryName="usersocialnetworks" dependencies="88974720,60612192,861422484,151179336,135221490,44960200,249030302,101330300" id="110727936" label="usersocialnetworks">
+        <File filePath="lib/influencers/usersocialnetwork_empty.4fd"/>
+        <File filePath="lib/influencers/usersocialnetwork_list.per"/>
+        <File filePath="lib/influencers/usersocialnetwork_list_mobile.per"/>
+        <File filePath="lib/influencers/usersocialnetworks.4gl"/>
+      </Library>
+    </Group>
+    <Group id="-1799657" label="notifications">
+      <Library binaryName="notificationclient" dependencies="60612192,151179336,88974720" id="24249188" label="notificationclient">
+        <File filePath="lib/notifications/notifications_clients.4gl"/>
+      </Library>
+      <Library binaryName="notifications" dependencies="249030302,135221490,746455668,88974720,74065896" id="329362300" label="notifications">
+        <File filePath="lib/notifications/notifications.4gl"/>
+      </Library>
+    </Group>
+    <Group id="2071946415" label="passwords">
+      <Library binaryName="passwords" dependencies="151179336,60612192,135221490,249030302,3468900,101330300,88974720,74065896,329362300" id="187278208" label="passwords">
+        <File filePath="lib/passwords/forgotpassword.4fd"/>
+        <File filePath="lib/passwords/forgotpassword.per"/>
+        <File filePath="lib/passwords/passwords.4fd"/>
+        <File filePath="lib/passwords/passwords.4gl"/>
+      </Library>
+    </Group>
+    <Group id="1749991225" label="socialnetworks">
+      <Library binaryName="instagram" dependencies="249030302,60612192" id="4864230" label="instagram">
+        <File filePath="lib/socialnetworks/instagram.4gl"/>
+      </Library>
+    </Group>
+    <Group id="-1947021952" label="socialnetworksauthentication">
+      <Library binaryName="socialnetworksauthentication" id="43478319" label="socialnetworksauthentication">
+        <File filePath="lib/socialnetworksauthentication/html.per"/>
+        <File filePath="lib/socialnetworksauthentication/OAuthRequester.4gl"/>
+      </Library>
+    </Group>
+    <Group id="-975848252" label="zoom">
+      <Library binaryName="zoom_category" dependencies="249030302,151179336,60612192" id="254303033" label="zoom_category">
+        <File filePath="lib/zoom/categorygrid.4fd"/>
+        <File filePath="lib/zoom/zoom_category.4fd"/>
+        <File filePath="lib/zoom/zoom_category.4gl"/>
+      </Library>
+      <Library binaryName="zoom_countrystatecity" id="169642348" label="zoom_countrystatecity">
+        <File filePath="lib/zoom/zoom_countrystatecitylist.4gl"/>
+        <File filePath="lib/zoom/zoom_countrystatecitylist.per"/>
+      </Library>
+      <Library binaryName="zoom_gender" dependencies="249030302,60612192,151179336" id="172258130" label="zoom_gender">
+        <File filePath="lib/zoom/zoom_gender.4fd"/>
+        <File filePath="lib/zoom/zoom_gender.4gl"/>
+      </Library>
+      <Library binaryName="zoom_posttype" dependencies="60612192,151179336,249030302" id="32450020" label="zoom_posttype">
+        <File filePath="lib/zoom/zoom_posttype.4fd"/>
+        <File filePath="lib/zoom/zoom_posttype.4gl"/>
+      </Library>
+    </Group>
+  </Group>
+  <Group excludeFromBuild="true" id="-711368096" label="log" language="Genero"/>
+  <Group id="1035855124" label="res" language="Genero">
+    <Library binaryName="fglprofiles" excludeFromBuild="true" id="280830925" label="fglprofiles">
+      <File filePath="res/fglprofile.cg"/>
+      <File filePath="res/fglprofile.dh"/>
+      <File filePath="res/fglprofile.prod"/>
+      <File filePath="res/fglprofile.test"/>
+      <File filePath="res/fglprofiletest.prod"/>
+    </Library>
+    <Library binaryName="fontawesome" excludeFromBuild="true" id="171991050" label="fontawesome">
+      <File filePath="res/myimage2font.txt"/>
+    </Library>
+    <Library binaryName="imgs" excludeFromBuild="true" id="164659525" label="imgs">
+      <File filePath="res/imgs/add_photo.png"/>
+      <File filePath="res/imgs/addprice.png"/>
+      <File filePath="res/imgs/avatar.png"/>
+      <File filePath="res/imgs/blog.png"/>
+      <File filePath="res/imgs/euro-1-0.png"/>
+      <File filePath="res/imgs/euro-1-1.png"/>
+      <File filePath="res/imgs/euro-3-1.png"/>
+      <File filePath="res/imgs/euro-3-2.png"/>
+      <File filePath="res/imgs/euro-3-3.png"/>
+      <File filePath="res/imgs/footer1.jpg"/>
+      <File filePath="res/imgs/footer2.jpg"/>
+      <File filePath="res/imgs/footer3.jpg"/>
+      <File filePath="res/imgs/footer4.jpg"/>
+      <File filePath="res/imgs/footer5.jpg"/>
+      <File filePath="res/imgs/footer6.jpg"/>
+      <File filePath="res/imgs/footer7.jpg"/>
+      <File filePath="res/imgs/footer8.jpg"/>
+      <File filePath="res/imgs/footer9.jpg"/>
+      <File filePath="res/imgs/header.png"/>
+      <File filePath="res/imgs/salfatixlogo.png"/>
+      <File filePath="res/imgs/underconstruction.png"/>
+    </Library>
+    <Group id="1019785951" label="lang" targetDirectory="$(ProjectDir)/res/lang">
+      <Library binaryName="en" id="40946885" label="en" targetDirectory="$(ProjectDir)/res/lang/en">
+        <File filePath="res/lang/en/default.str"/>
+        <File filePath="res/lang/en/salfatixmedia.4ad"/>
+      </Library>
+      <Library binaryName="fr" id="873632960" label="fr" targetDirectory="$(ProjectDir)/res/lang/fr">
+        <File filePath="res/lang/fr/default.str"/>
+        <File filePath="res/lang/fr/salfatixmedia.4ad"/>
+      </Library>
+    </Group>
+    <Library binaryName="styles" excludeFromBuild="true" id="102112180" label="styles">
+      <File filePath="res/salfatixmedia.4st"/>
+    </Library>
+  </Group>
+  <Group excludeFromBuild="true" id="1507371746" label="scripts" language="Genero">
+    <Library binaryName="deployments" id="153242610" label="deployments">
+      <File filePath="scripts/deploy.sh"/>
+      <File filePath="scripts/deployAll.sh"/>
+    </Library>
+    <Library binaryName="sendmail" id="293433634" label="sendmail">
+      <File filePath="scripts/sendmail.sh"/>
+    </Library>
+  </Group>
+  <Group excludeFromBuild="true" id="1926101551" label="sql" language="Genero">
+    <Library binaryName="sql" id="689655321" label="sql">
+      <File filePath="sql/create_database_tables.sql"/>
+      <File filePath="sql/updates.sql"/>
+    </Library>
+  </Group>
+  <Group id="-536365924" label="tools" language="Genero" targetDirectory="$(ProjectDir)/tools">
+    <Group id="8591320" label="db_updates" targetDirectory="$(ProjectDir)/tools/db_updates">
+      <Application binaryName="CountryStateTown" id="173226952" label="CountryStateTown" targetDirectory="$(ProjectDir)/tools/db_updates/countrystatetown">
+        <File filePath="tools/db_updates/countrystatetown/countrystatetown.4gl"/>
+      </Application>
+      <Application binaryName="createdb" compilerOptions="--implicit=42m" environment="value:FGLSQLDEBUG=9" id="271944040" label="createdb">
+        <File filePath="tools/db_updates/createdb.4gl"/>
+        <File filePath="tools/db_updates/createtables.4gl"/>
+        <File filePath="tools/db_updates/insertcities1.4gl"/>
+        <File filePath="tools/db_updates/insertcities10.4gl"/>
+        <File filePath="tools/db_updates/insertcities11.4gl"/>
+        <File filePath="tools/db_updates/insertcities12.4gl"/>
+        <File filePath="tools/db_updates/insertcities2.4gl"/>
+        <File filePath="tools/db_updates/insertcities3.4gl"/>
+        <File filePath="tools/db_updates/insertcities4.4gl"/>
+        <File filePath="tools/db_updates/insertcities5.4gl"/>
+        <File filePath="tools/db_updates/insertcities6.4gl"/>
+        <File filePath="tools/db_updates/insertcities7.4gl"/>
+        <File filePath="tools/db_updates/insertcities8.4gl"/>
+        <File filePath="tools/db_updates/insertcities9.4gl"/>
+        <File filePath="tools/db_updates/insertdb.4gl"/>
+        <File filePath="tools/db_updates/insertdbcountries.4gl"/>
+        <File filePath="tools/db_updates/insertstates.4gl"/>
+        <File filePath="tools/db_updates/load_pics.4gl"/>
+      </Application>
+      <Application binaryName="imports" dependencies="60612192" id="25840332" label="imports" targetDirectory="$(ProjectDir)/tools/imports">
+        <File filePath="tools/imports/brands.csv"/>
+        <File filePath="tools/imports/importBrands.4gl"/>
+        <File filePath="tools/imports/Influencers.csv"/>
+        <File filePath="tools/imports/InfluencersAdditionals.csv"/>
+      </Application>
+      <Application binaryName="load_a_picture" commandLineArguments="2 &quot;../../res/imgs/movie.png&quot;" id="442062478" label="load_a_picture">
+        <File filePath="tools/db_updates/load_a_picture.4gl"/>
+      </Application>
+      <Library binaryName="load_countries_tables" excludeFromBuild="true" id="393685380" label="load_countries_tables">
+        <File filePath="tools/db_updates/load_countries_tables/cities.sql"/>
+        <File filePath="tools/db_updates/load_countries_tables/countries.sql"/>
+        <File filePath="tools/db_updates/load_countries_tables/states.sql"/>
+      </Library>
+      <Application binaryName="sendNotification" dependencies="329362300,60612192" id="323333563" label="sendNotification" targetDirectory="$(ProjectDir)/tools/db_updates/sendnotification">
+        <File filePath="tools/db_updates/sendnotification/sendnotification.4gl"/>
+        <File filePath="tools/db_updates/sendnotification/sendnotification.sh"/>
+      </Application>
+    </Group>
+    <Group id="1439406304" label="qa" targetDirectory="$(ProjectDir)/tools/qa">
+      <Application binaryName="bdtest" dependencies="60612192" id="109442855" label="bdtest">
+        <File filePath="tools/qa/dbtest.4gl"/>
+        <File filePath="tools/qa/img.per"/>
+      </Application>
+      <Application binaryName="buttonedit" id="262080468" label="buttonedit">
+        <File filePath="tools/qa/buttonedit.4gl"/>
+        <File filePath="tools/qa/buttonedit.per"/>
+      </Application>
+      <Application binaryName="imagecolumn" id="727543616" label="imagecolumn">
+        <File filePath="tools/qa/imagecolumn.4gl"/>
+        <File filePath="tools/qa/imagecolumn.per"/>
+      </Application>
+      <Application binaryName="mobileAppLink" id="536160450" label="mobileAppLink">
+        <File filePath="tools/qa/mobileAppLink.4gl"/>
+      </Application>
+      <Application binaryName="photopicker" id="143690800" label="photopicker">
+        <File filePath="tools/qa/photopicker.4gl"/>
+        <File filePath="tools/qa/photopicker.per"/>
+      </Application>
+      <Application binaryName="readpics" dependencies="60612192" id="8178020" label="readpics">
+        <File filePath="tools/qa/readpics.4gl"/>
+        <File filePath="tools/qa/readpics.per"/>
+      </Application>
+      <Group id="-346702884" label="runonserver">
+        <Application binaryName="client" id="24747660" label="client">
+          <File filePath="tools/qa/client.4gl"/>
+        </Application>
+        <Application binaryName="client_mobile" id="157154583" label="client_mobile">
+          <File filePath="tools/qa/client_mobile.4gl"/>
+        </Application>
+        <Application binaryName="server" id="436453800" label="server">
+          <File filePath="tools/qa/server.4gl"/>
+        </Application>
+      </Group>
+      <Application binaryName="scrollgrid" dependencies="85828050" id="342129945" label="scrollgrid">
+        <File filePath="tools/qa/scrollgrid_resizable.4fd"/>
+        <File filePath="tools/qa/scrollgrid_resizable.4gl"/>
+        <File filePath="tools/qa/scrollgrid_resizable.4st"/>
+        <File filePath="tools/qa/scrollgrid_resizable.png"/>
+      </Application>
+      <Application binaryName="stack" dependencies="60612192" id="101176512" label="stack">
+        <File filePath="tools/qa/stack.4gl"/>
+        <File filePath="tools/qa/stack.per"/>
+      </Application>
+    </Group>
+  </Group>
+  <Group id="1931293622" label="xcf" language="Genero">
+    <Library binaryName="apps" id="380317840" label="apps">
+      <File filePath="xcf/apps/backoffice.xcf"/>
+      <File filePath="xcf/apps/backofficetest.xcf"/>
+      <File filePath="xcf/apps/brands.xcf"/>
+      <File filePath="xcf/apps/brandstest.xcf"/>
+      <File filePath="xcf/apps/influencers.xcf"/>
+      <File filePath="xcf/apps/influencerstest.xcf"/>
+      <File filePath="xcf/apps/resetpassword.xcf"/>
+      <File filePath="xcf/apps/resetpasswordtest.xcf"/>
+      <File filePath="xcf/apps/validation.xcf"/>
+      <File filePath="xcf/apps/validationtest.xcf"/>
+    </Library>
+    <Library binaryName="gst_xcf_config" id="85828050" label="gst_xcf_config">
+      <File filePath="xcf/apps/apps.xcf"/>
+    </Library>
+    <Library binaryName="services" id="849238260" label="services">
+      <File filePath="xcf/services/oauth.xcf"/>
+      <File filePath="xcf/services/oauthtest.xcf"/>
+    </Library>
+  </Group>
+</Project>

@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="userpostprice_list" build="3.20.07" sqlDbName="salfatixmedia" text="Form" width="39" height="11">
+  <LStr text="Form"/>
+  <Grid name="grid1" width="39" height="11">
+    <FormField name="formonly.ff_formtitle" colName="ff_formtitle" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Label width="35" justify="center" style="ff_formtitle" posY="1" posX="3" gridWidth="35"/>
+    </FormField>
+    <HBox posY="2" posX="3" gridWidth="35">
+      <Image name="img_back" width="8" height="3" action="cancel" image="fa-arrow-circle-left" autoScale="1" sizePolicy="fixed" style="no_border" comment="Back">
+        <LStr comment="Back"/>
+      </Image>
+      <SpacerItem/>
+      <Image name="addprice" width="8" height="3" action="addprice" image="addprice.png" autoScale="1" sizePolicy="fixed" style="no_border" comment="Add Price">
+        <LStr comment="Add Price"/>
+      </Image>
+    </HBox>
+    <ScrollGrid wantFixedPageSize="0" name="salfatixmedia1" doubleClick="editprice" posY="3" posX="2" gridWidth="36" gridHeight="8" pageSize="1">
+      <Matrix name="posttypes.pstt_name" colName="pstt_name" sqlType="VARCHAR(32)" required="1" notNull="1" fieldId="1" sqlTabName="posttypes" tabIndex="2" pageSize="1" stepY="7">
+        <Edit width="29" scroll="1" posY="1" posX="1" gridWidth="29"/>
+      </Matrix>
+      <Matrix name="formonly.editimage" colName="editimage" fieldId="15" sqlTabName="formonly" noEntry="1" tabIndex="3" pageSize="1" stepY="7">
+        <Image width="3" autoScale="1" sizePolicy="fixed" style="no_border" action="editprice" posY="1" posX="32" gridWidth="3"/>
+      </Matrix>
+      <HBox posY="2" posX="1" gridWidth="34">
+        <PhantomMatrix name="userpostprices.usrpp_usr_id" colName="usrpp_usr_id" sqlType="INTEGER" required="1" notNull="1" fieldId="16" sqlTabName="userpostprices" pageSize="1">
+          <PhantomEdit width="1"/>
+        </PhantomMatrix>
+        <PhantomMatrix name="userpostprices.usrpp_posttype_id" colName="usrpp_posttype_id" sqlType="INTEGER" required="1" notNull="1" fieldId="17" sqlTabName="userpostprices" pageSize="1">
+          <PhantomEdit width="1"/>
+        </PhantomMatrix>
+        <Label name="userpostprices_usrpp_minprice_label1" width="6" text="Between">
+          <LStr text="Between"/>
+        </Label>
+        <Matrix name="userpostprices.usrpp_minprice" colName="usrpp_minprice" sqlType="DECIMAL(10,2)" required="1" notNull="1" fieldId="2" sqlTabName="userpostprices" tabIndex="4" pageSize="1">
+          <Edit width="6" scroll="1"/>
+        </Matrix>
+        <Label name="userpostprices_usrpp_maxprice_label1" width="4" text="and">
+          <LStr text="and"/>
+        </Label>
+        <Matrix name="userpostprices.usrpp_maxprice" colName="usrpp_maxprice" sqlType="DECIMAL(10,2)" required="1" notNull="1" fieldId="3" sqlTabName="userpostprices" tabIndex="5" pageSize="1">
+          <Edit width="6" scroll="1"/>
+        </Matrix>
+        <PhantomMatrix name="userpostprices.usrpp_freeofcharge" colName="usrpp_freeofcharge" sqlType="SMALLINT" required="1" notNull="1" fieldId="4" sqlTabName="userpostprices" pageSize="1">
+          <PhantomEdit width="1"/>
+        </PhantomMatrix>
+        <Matrix name="formonly.cur" colName="cur" fieldId="5" sqlTabName="formonly" noEntry="1" tabIndex="6" pageSize="1">
+          <Label width="6"/>
+        </Matrix>
+        <SpacerItem/>
+      </HBox>
+      <Matrix name="formonly.freeofcharge" colName="freeofcharge" fieldId="6" sqlTabName="formonly" noEntry="1" tabIndex="7" pageSize="1" stepY="7">
+        <Label width="29" posY="3" posX="1" gridWidth="29"/>
+      </Matrix>
+      <Matrix name="formonly.delimage" colName="delimage" fieldId="14" sqlTabName="formonly" noEntry="1" tabIndex="8" pageSize="1" stepY="7">
+        <Image width="3" autoScale="1" sizePolicy="fixed" style="no_border" action="delete" posY="3" posX="32" gridWidth="3"/>
+      </Matrix>
+      <Matrix name="formonly.salfatixlbl" colName="salfatixlbl" fieldId="7" sqlTabName="formonly" noEntry="1" tabIndex="9" pageSize="1" stepY="7">
+        <Label width="34" justify="center" style="brand_label_bold" posY="4" posX="1" gridWidth="34"/>
+      </Matrix>
+      <HBox posY="5" posX="1" gridWidth="34">
+        <Label name="userpostprices_usrpp_salfatixminprice_label" width="6" text="Between">
+          <LStr text="Between"/>
+        </Label>
+        <Matrix name="userpostprices.usrpp_salfatixminprice" colName="usrpp_salfatixminprice" sqlType="DECIMAL(10,2)" fieldId="8" sqlTabName="userpostprices" tabIndex="10" pageSize="1">
+          <Edit width="6" scroll="1"/>
+        </Matrix>
+        <Label name="userpostprices_usrpp_salfatixmaxprice_label" width="4" text="and">
+          <LStr text="and"/>
+        </Label>
+        <Matrix name="userpostprices.usrpp_salfatixmaxprice" colName="usrpp_salfatixmaxprice" sqlType="DECIMAL(10,2)" fieldId="9" sqlTabName="userpostprices" tabIndex="11" pageSize="1">
+          <Edit width="6" scroll="1"/>
+        </Matrix>
+        <PhantomMatrix name="userpostprices.usrpp_salfatixfreeofcharge" colName="usrpp_salfatixfreeofcharge" sqlType="SMALLINT" required="1" notNull="1" fieldId="10" sqlTabName="userpostprices" pageSize="1">
+          <PhantomEdit width="1"/>
+        </PhantomMatrix>
+        <PhantomMatrix name="userpostprices.usrpp_isvalidatedbysalfatix" colName="usrpp_isvalidatedbysalfatix" sqlType="SMALLINT" required="1" notNull="1" fieldId="13" sqlTabName="userpostprices" pageSize="1">
+          <PhantomEdit width="1"/>
+        </PhantomMatrix>
+        <Matrix name="formonly.sur" colName="sur" fieldId="11" sqlTabName="formonly" noEntry="1" tabIndex="12" pageSize="1">
+          <Label width="6"/>
+        </Matrix>
+        <SpacerItem/>
+      </HBox>
+      <Matrix name="formonly.sreeofcharge" colName="sreeofcharge" fieldId="12" sqlTabName="formonly" noEntry="1" tabIndex="13" pageSize="1" stepY="7">
+        <Label width="34" posY="6" posX="1" gridWidth="34"/>
+      </Matrix>
+    </ScrollGrid>
+  </Grid>
+  <RecordView tabName="userpostprices">
+    <Link colName="usrpp_minprice" fieldIdRef="2"/>
+    <Link colName="usrpp_maxprice" fieldIdRef="3"/>
+    <Link colName="usrpp_freeofcharge" fieldIdRef="4"/>
+    <Link colName="usrpp_salfatixminprice" fieldIdRef="8"/>
+    <Link colName="usrpp_salfatixmaxprice" fieldIdRef="9"/>
+    <Link colName="usrpp_salfatixfreeofcharge" fieldIdRef="10"/>
+    <Link colName="usrpp_isvalidatedbysalfatix" fieldIdRef="13"/>
+    <Link colName="usrpp_usr_id" fieldIdRef="16"/>
+    <Link colName="usrpp_posttype_id" fieldIdRef="17"/>
+  </RecordView>
+  <RecordView tabName="posttypes">
+    <Link colName="pstt_name" fieldIdRef="1"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="cur" fieldIdRef="5"/>
+    <Link colName="freeofcharge" fieldIdRef="6"/>
+    <Link colName="salfatixlbl" fieldIdRef="7"/>
+    <Link colName="sur" fieldIdRef="11"/>
+    <Link colName="sreeofcharge" fieldIdRef="12"/>
+    <Link colName="delimage" fieldIdRef="14"/>
+    <Link colName="editimage" fieldIdRef="15"/>
+  </RecordView>
+  <RecordView tabName="scr_userpostprice_list">
+    <Link colName="usrpp_usr_id" fieldIdRef="16"/>
+    <Link colName="usrpp_posttype_id" fieldIdRef="17"/>
+    <Link colName="usrpp_minprice" fieldIdRef="2"/>
+    <Link colName="usrpp_maxprice" fieldIdRef="3"/>
+    <Link colName="usrpp_freeofcharge" fieldIdRef="4"/>
+    <Link colName="usrpp_salfatixminprice" fieldIdRef="8"/>
+    <Link colName="usrpp_salfatixmaxprice" fieldIdRef="9"/>
+    <Link colName="usrpp_salfatixfreeofcharge" fieldIdRef="10"/>
+    <Link colName="usrpp_isvalidatedbysalfatix" fieldIdRef="13"/>
+    <Link colName="pstt_name" fieldIdRef="1"/>
+    <Link colName="cur" fieldIdRef="5"/>
+    <Link colName="delimage" fieldIdRef="14"/>
+    <Link colName="editimage" fieldIdRef="15"/>
+    <Link colName="freeofcharge" fieldIdRef="6"/>
+    <Link colName="salfatixlbl" fieldIdRef="7"/>
+    <Link colName="sur" fieldIdRef="11"/>
+    <Link colName="sreeofcharge" fieldIdRef="12"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+  </RecordView>
+</Form>

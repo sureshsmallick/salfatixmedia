@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation - Configure your compilation</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="reference/index.html">Reference</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="reference/api.html">API reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/theme/index.html">Theme reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_conditions.html">Theme conditions</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_config_json.html">theme.config.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_scss_json_file.html">theme.scss.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_variables.html">Theme variables reference</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/grunt/index.html">Grunt reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar active" href="reference/grunt/configure_compilation.html">Configure your compilation</a>
+            
+            <a class="btn btn-sidebar " href="reference/grunt/fix_configuration_issues.html">Fix configuration issues</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/project/index.html">Project reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/project/project_directory.html">Project directory</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/customization_project.html">Customization project</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets.html">Widgets</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_js_file.html">Widget JavaScript file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_template_file.html">Widget template file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_scss_file.html">Widget scss file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets_with_modelhelper.html">Widgets with Modelhelper</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/deliverables.html">Deliverables</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/upgrading/index.html">Upgrading</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/bootstrap.html">Application bootstrap</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/compatibility.html">Compatibility</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/cookies.html">Use of cookies</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/customization_migration.html">Customization migration</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deploy-runtime-on-gas..html">Deploy runtime on GAS</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deployment-portal.html">Deploy runtime with Portal</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/local_storage.html">Local storage</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.10.html">Upgrade to 3.10</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="reference">
+<header class="page-title">
+  <em>Configure your compilation</em>
+</header>
+<article class="md-content">
+<p>This procedure shows you how to configure your project with a configuration file.</p>
+<h2>Overview</h2>
+<p>When you execute the <code>grunt</code> command, the build process will use information to configure this build. This configuration will be stored in a file, generally:</p>
+<ul>
+<li>in <code>&lt;GBC_PROJECT_DIR&gt;/custom.json</code>, as provided as example in the source package</li>
+<li>alternatively, in any file referenced in argument <code>--configuration=&lt;file&gt;</code> of grunt command</li>
+<li>if neither of previous files exists, grunt will use the file <code>.grunt/defaults.json</code> as a default.</li>
+</ul>
+<blockquote>
+<p>Note that if <code>custom.json</code> or <code>--configuration=</code> file is provided, their values will be merged with default values contained in <code>.grunt/defaults.json</code></p>
+</blockquote>
+<blockquote>
+<p>Options provided for the grunt command overrides the settings in the file provided.</p>
+</blockquote>
+<h2>Compilation configuration contents</h2>
+<p>This file is a JSON file as per in the sample <code>custom.json</code> file provided in the GBC project package.</p>
+<pre class="hljs"><code><span class="hljs-comment">/// sample custom.json file</span>
+{
+  <span class="hljs-string">"compile"</span>: {
+    <span class="hljs-string">"mode"</span>: <span class="hljs-string">"cdev"</span>,
+    <span class="hljs-string">"customization"</span>: <span class="hljs-string">"customization/sample"</span>
+  },
+  <span class="hljs-string">"themes"</span>: [{
+      <span class="hljs-string">"name"</span>: <span class="hljs-string">"default"</span>,
+      <span class="hljs-string">"title"</span>: <span class="hljs-string">"Default"</span>,
+      <span class="hljs-string">"uses"</span>: [<span class="hljs-string">"platform/desktop"</span>]
+    },
+    <span class="hljs-comment">/// […]</span>
+  ]
+}
+</code></pre>
+<p>The JSON object provided in this file has two main entries, <code>compile</code> and <code>themes</code>.</p>
+<h3><code>compile</code> entry</h3>
+<p><code>compile</code> contains general compilation options. It is a JSON object and can have the following properties:</p>
+<ul>
+<li>
+<p><code>mode</code> defines the compilation mode. Possible values are:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&quot;cdev&quot;</code></td>
+<td><strong>Default value</strong>. Compiles the selected customization project for development. It compress all sources files in one file, yet is still human readable as it is not minified. It is possible to debug easily and it's faster than <code>dev</code> mode.</td>
+</tr>
+<tr>
+<td><code>&quot;dev&quot;</code></td>
+<td>Compiles the selected customization project for development. It keeps all source files uncompressed/un-minified, which is easier to use when you want to find a function in a specific file while developing features. The main issue with dev mode is that GBC has many source files; it makes it slower to render.</td>
+</tr>
+<tr>
+<td><code>&quot;prod&quot;</code></td>
+<td>Compiles the selected customization project for production. It compress all sources files in one file, and minifies it. It is optimized for the browser, which makes it faster than either dev and cdev mode. This mode should not be used for developing / debugging as it is not human readable.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><em>TIP</em>: These modes are documented if you type grunt help.</p>
+</blockquote>
+</li>
+<li>
+<p><code>customization</code> defines the customization to compile. Possible values are:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>false</code></td>
+<td><strong>Default value</strong>. No customization is applied, only bare GBC. Generates deliverables in <code>&lt;GBC_PROJECT_DIR&gt;/dist/web</code>. This distribution is equivalent to the standard GBC runtime package.</td>
+</tr>
+<tr>
+<td><code>&quot;NONE&quot;</code></td>
+<td>Same as <code>false</code></td>
+</tr>
+<tr>
+<td><code>true</code></td>
+<td>Generates the sample customization. It is the same as having <code>&quot;customization&quot;:&quot;customization/sample&quot;</code>.</td>
+</tr>
+<tr>
+<td><code>&quot;any/path&quot;</code></td>
+<td>Compiles GBC with cutomization at &quot;any/path&quot; folder relative to <code>&lt;GBC_PROJECT_DIR&gt;</code> or, if not found, to <code>&lt;GBC_PROJECT_DIR&gt;/customization</code>. If an absolute path is set, you must declare <code>buildDist</code> as well. Generates the specified customization project in <code>&lt;GBC_PROJECT_DIR&gt;/dist/&lt;any/path&gt;</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><code>buildDist</code> defines where to put the compilation products. Default will be as defined in <code>customization</code> rule. A path can be set here. If the path is relative, it will be relative to <code>&lt;GBC_PROJECT_DIR&gt;/dist</code></p>
+</li>
+</ul>
+<h3><code>themes</code> entry</h3>
+<p><code>themes</code> is a JSON array containing an array defining the themes needed for the compilation.
+Each theme definition is a JSON object that can have the following properties:</p>
+<ul>
+<li>
+<p><code>name</code> is an identifier for the theme. It must match the regular expression <code>/^[a-z0-9_][a-z0-9_-]*$/i</code>. This identifier must be unique.</p>
+</li>
+<li>
+<p><code>title</code> is the text the user will see as theme identifier</p>
+</li>
+<li>
+<p><code>uses</code> is an array of theme parts available in <code>&lt;GBC_PROJECT_DIR&gt;/theme</code>. For example: <code>&quot;uses&quot;: [&quot;platform/desktop&quot;, &quot;features/context_menu&quot;]</code></p>
+<blockquote>
+<p>If you define <code>themes</code> in your configuration file, it won't merge with <code>.grunt/defaults.json</code> contents, but will replace it.</p>
+</blockquote>
+</li>
+</ul>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

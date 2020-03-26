@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="backofficeuser_list.tmp" build="3.20.07" sqlDbName="salfatixmedia" text="Form" style="centerwindow" width="81" height="19">
+  <LStr text="Form"/>
+  <Grid name="grid1" width="81" height="19">
+    <FormField name="formonly.ff_formtitle" colName="ff_formtitle" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Label width="78" justify="center" style="ff_formtitle" posY="0" posX="2" gridWidth="78"/>
+    </FormField>
+    <Group name="group1" text="Filters" style="no_border" posY="1" posX="2" gridWidth="39" gridHeight="18">
+      <LStr text="Filters"/>
+      <Label name="label1" width="28" text="Sort By" posY="1" posX="1" gridWidth="28">
+        <LStr text="Sort By"/>
+      </Label>
+      <FormField name="formonly.radiogroup1" colName="radiogroup1" fieldId="1" sqlTabName="formonly" tabIndex="2">
+        <RadioGroup width="28" posY="2" posX="1" gridWidth="28" gridHeight="4">
+          <Item name="backofficeusers.bousr_firstname" text="FirstName">
+            <LStr text="FirstName"/>
+          </Item>
+          <Item name="backofficeusers.bousr_lastname" text="LastName">
+            <LStr text="LastName"/>
+          </Item>
+          <Item name="backofficeusers.bousr_email" text="Email">
+            <LStr text="Email"/>
+          </Item>
+          <Item name="accountstatus.accst_name" text="Status">
+            <LStr text="Status"/>
+          </Item>
+        </RadioGroup>
+      </FormField>
+      <Label name="label2" width="20" text="Order" posY="6" posX="1" gridWidth="20">
+        <LStr text="Order"/>
+      </Label>
+      <FormField name="formonly.radiogroup2" colName="radiogroup2" fieldId="2" sqlTabName="formonly" tabIndex="3">
+        <RadioGroup width="20" orientation="horizontal" posY="7" posX="1" gridWidth="20">
+          <Item name="asc" text="Ascending">
+            <LStr text="Ascending"/>
+          </Item>
+          <Item name="desc" text="Descending">
+            <LStr text="Descending"/>
+          </Item>
+        </RadioGroup>
+      </FormField>
+      <Label name="label3" width="28" text="Filter on first name" posY="8" posX="1" gridWidth="28">
+        <LStr text="Filter on first name"/>
+      </Label>
+      <FormField name="backofficeusers1.bousr_firstname" colName="bousr_firstname" sqlType="VARCHAR(128)" fieldId="3" sqlTabName="backofficeusers" tabIndex="4">
+        <Edit width="28" posY="9" posX="1" gridWidth="28"/>
+      </FormField>
+      <Label name="label6" width="28" text="Filter on last name" posY="10" posX="1" gridWidth="28">
+        <LStr text="Filter on last name"/>
+      </Label>
+      <FormField name="backofficeusers1.bousr_lastname" colName="bousr_lastname" sqlType="VARCHAR(128)" fieldId="4" sqlTabName="backofficeusers" tabIndex="5">
+        <Edit width="28" posY="11" posX="1" gridWidth="28"/>
+      </FormField>
+      <Label name="label4" width="28" text="Filter on email" posY="12" posX="1" gridWidth="28">
+        <LStr text="Filter on email"/>
+      </Label>
+      <FormField name="backofficeusers1.bousr_email" colName="bousr_email" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="5" sqlTabName="backofficeusers" tabIndex="6">
+        <Edit width="28" posY="13" posX="1" gridWidth="28"/>
+      </FormField>
+      <Label name="label5" width="28" text="Filter on status" posY="14" posX="1" gridWidth="28">
+        <LStr text="Filter on status"/>
+      </Label>
+      <FormField name="accountstatus1.accst_name" colName="accst_name" sqlType="VARCHAR(32)" required="1" notNull="1" fieldId="6" sqlTabName="accountstatus" tabIndex="7">
+        <Edit width="28" scroll="1" posY="15" posX="1" gridWidth="28"/>
+      </FormField>
+      <Button name="filter" width="7" text="Filter" posY="16" posX="22" gridWidth="7" tabIndex="8">
+        <LStr text="Filter"/>
+      </Button>
+    </Group>
+    <ScrollGrid wantFixedPageSize="0" name="salfatixmedia1" doubleClick="display_bouser" style="bouserlisttable" pageSize="10" posY="1" posX="41" gridWidth="39" gridHeight="18">
+      <PhantomMatrix name="backofficeusers.bousr_id" colName="bousr_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="18" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_password" colName="bousr_password" sqlType="VARCHAR(255)" required="1" notNull="1" fieldId="19" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_pic_id" colName="bousr_pic_id" sqlType="INTEGER" required="1" notNull="1" fieldId="20" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_gender_id" colName="bousr_gender_id" sqlType="INTEGER" fieldId="21" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <Matrix name="pics.pic_value" colName="pic_value" sqlType="BYTE" required="1" notNull="1" fieldId="7" sqlTabName="pics" noEntry="1" tabIndex="9" pageSize="10" stepY="17">
+        <Image width="12" height="4" autoScale="1" sizePolicy="fixed" style="no_border" posY="1" posX="1" gridWidth="12" gridHeight="4"/>
+      </Matrix>
+      <Matrix name="backofficeusers.bousr_firstname" colName="bousr_firstname" sqlType="VARCHAR(128)" fieldId="8" sqlTabName="backofficeusers" tabIndex="10" pageSize="10" stepY="17">
+        <Edit width="23" posY="1" posX="15" gridWidth="23"/>
+      </Matrix>
+      <Matrix name="backofficeusers.bousr_lastname" colName="bousr_lastname" sqlType="VARCHAR(128)" fieldId="9" sqlTabName="backofficeusers" tabIndex="11" pageSize="10" stepY="17">
+        <Edit width="23" posY="2" posX="15" gridWidth="23"/>
+      </Matrix>
+      <Matrix name="backofficeusers.bousr_email" colName="bousr_email" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="10" sqlTabName="backofficeusers" tabIndex="12" pageSize="10" stepY="17">
+        <Edit width="23" posY="3" posX="15" gridWidth="23"/>
+      </Matrix>
+      <PhantomMatrix name="backofficeusers.bousr_email_style" colName="bousr_email_style" sqlType="CHAR(1)" fieldId="12" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_country_id" colName="bousr_country_id" sqlType="INTEGER" required="1" notNull="1" fieldId="22" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_state_id" colName="bousr_state_id" sqlType="INTEGER" fieldId="23" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_city_id" colName="bousr_city_id" sqlType="INTEGER" fieldId="24" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_address_number" colName="bousr_address_number" sqlType="VARCHAR(16)" fieldId="25" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_address_street" colName="bousr_address_street" sqlType="VARCHAR(128)" fieldId="26" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_address_zipcode" colName="bousr_address_zipcode" sqlType="VARCHAR(128)" fieldId="27" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_address_town" colName="bousr_address_town" sqlType="VARCHAR(128)" fieldId="28" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_address_more" colName="bousr_address_more" sqlType="VARCHAR(128)" fieldId="29" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_mobile_phone" colName="bousr_mobile_phone" sqlType="BIGINT" fieldId="30" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_isadmin" colName="bousr_isadmin" sqlType="SMALLINT" required="1" notNull="1" fieldId="31" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_usrrole_id" colName="bousr_usrrole_id" sqlType="INTEGER" fieldId="32" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <Matrix name="backofficeusers.bousr_accountstatus_id" colName="bousr_accountstatus_id" sqlType="INTEGER" required="1" notNull="1" fieldId="11" sqlTabName="backofficeusers" tabIndex="13" pageSize="10" stepY="17">
+        <ComboBox width="21" initializer="bouser_status_combobox_initializer" scroll="1" posY="4" posX="15" gridWidth="23"/>
+      </Matrix>
+      <PhantomMatrix name="backofficeusers.bousr_creationdate" colName="bousr_creationdate" sqlType="DATETIME YEAR TO SECOND" required="1" notNull="1" fieldId="13" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_deletiondate" colName="bousr_deletiondate" sqlType="DATETIME YEAR TO SECOND" fieldId="14" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_stopdate" colName="bousr_stopdate" sqlType="DATETIME YEAR TO SECOND" fieldId="15" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_lastupdatedate" colName="bousr_lastupdatedate" sqlType="DATETIME YEAR TO SECOND" fieldId="16" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="backofficeusers.bousr_lastlogindate" colName="bousr_lastlogindate" sqlType="DATETIME YEAR TO SECOND" fieldId="17" sqlTabName="backofficeusers" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+    </ScrollGrid>
+  </Grid>
+  <RecordView tabName="backofficeusers">
+    <Link colName="bousr_firstname" fieldIdRef="8"/>
+    <Link colName="bousr_lastname" fieldIdRef="9"/>
+    <Link colName="bousr_email" fieldIdRef="10"/>
+    <Link colName="bousr_accountstatus_id" fieldIdRef="11"/>
+    <Link colName="bousr_email_style" fieldIdRef="12"/>
+    <Link colName="bousr_creationdate" fieldIdRef="13"/>
+    <Link colName="bousr_deletiondate" fieldIdRef="14"/>
+    <Link colName="bousr_stopdate" fieldIdRef="15"/>
+    <Link colName="bousr_lastupdatedate" fieldIdRef="16"/>
+    <Link colName="bousr_lastlogindate" fieldIdRef="17"/>
+    <Link colName="bousr_id" fieldIdRef="18"/>
+    <Link colName="bousr_password" fieldIdRef="19"/>
+    <Link colName="bousr_pic_id" fieldIdRef="20"/>
+    <Link colName="bousr_gender_id" fieldIdRef="21"/>
+    <Link colName="bousr_country_id" fieldIdRef="22"/>
+    <Link colName="bousr_state_id" fieldIdRef="23"/>
+    <Link colName="bousr_city_id" fieldIdRef="24"/>
+    <Link colName="bousr_address_number" fieldIdRef="25"/>
+    <Link colName="bousr_address_street" fieldIdRef="26"/>
+    <Link colName="bousr_address_zipcode" fieldIdRef="27"/>
+    <Link colName="bousr_address_town" fieldIdRef="28"/>
+    <Link colName="bousr_address_more" fieldIdRef="29"/>
+    <Link colName="bousr_mobile_phone" fieldIdRef="30"/>
+    <Link colName="bousr_isadmin" fieldIdRef="31"/>
+    <Link colName="bousr_usrrole_id" fieldIdRef="32"/>
+  </RecordView>
+  <RecordView tabName="backofficeusers1">
+    <Link colName="bousr_firstname" fieldIdRef="3"/>
+    <Link colName="bousr_lastname" fieldIdRef="4"/>
+    <Link colName="bousr_email" fieldIdRef="5"/>
+  </RecordView>
+  <RecordView tabName="accountstatus1">
+    <Link colName="accst_name" fieldIdRef="6"/>
+  </RecordView>
+  <RecordView tabName="pics">
+    <Link colName="pic_value" fieldIdRef="7"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="radiogroup1" fieldIdRef="1"/>
+    <Link colName="radiogroup2" fieldIdRef="2"/>
+  </RecordView>
+  <RecordView tabName="scr_backofficeuser_list">
+    <Link colName="bousr_id" fieldIdRef="18"/>
+    <Link colName="bousr_password" fieldIdRef="19"/>
+    <Link colName="bousr_pic_id" fieldIdRef="20"/>
+    <Link colName="bousr_gender_id" fieldIdRef="21"/>
+    <Link colName="bousr_firstname" fieldIdRef="8"/>
+    <Link colName="bousr_lastname" fieldIdRef="9"/>
+    <Link colName="bousr_email" fieldIdRef="10"/>
+    <Link colName="bousr_email_style" fieldIdRef="12"/>
+    <Link colName="bousr_country_id" fieldIdRef="22"/>
+    <Link colName="bousr_state_id" fieldIdRef="23"/>
+    <Link colName="bousr_city_id" fieldIdRef="24"/>
+    <Link colName="bousr_address_number" fieldIdRef="25"/>
+    <Link colName="bousr_address_street" fieldIdRef="26"/>
+    <Link colName="bousr_address_zipcode" fieldIdRef="27"/>
+    <Link colName="bousr_address_town" fieldIdRef="28"/>
+    <Link colName="bousr_address_more" fieldIdRef="29"/>
+    <Link colName="bousr_mobile_phone" fieldIdRef="30"/>
+    <Link colName="bousr_isadmin" fieldIdRef="31"/>
+    <Link colName="bousr_usrrole_id" fieldIdRef="32"/>
+    <Link colName="bousr_accountstatus_id" fieldIdRef="11"/>
+    <Link colName="bousr_creationdate" fieldIdRef="13"/>
+    <Link colName="bousr_deletiondate" fieldIdRef="14"/>
+    <Link colName="bousr_stopdate" fieldIdRef="15"/>
+    <Link colName="bousr_lastupdatedate" fieldIdRef="16"/>
+    <Link colName="bousr_lastlogindate" fieldIdRef="17"/>
+    <Link colName="pic_value" fieldIdRef="7"/>
+  </RecordView>
+  <RecordView tabName="scr_qbeconstruct">
+    <Link colName="bousr_firstname" fieldIdRef="3"/>
+    <Link colName="bousr_lastname" fieldIdRef="4"/>
+    <Link colName="bousr_email" fieldIdRef="5"/>
+    <Link colName="accst_name" fieldIdRef="6"/>
+  </RecordView>
+  <RecordView tabName="scr_qbeinput">
+    <Link colName="radiogroup1" fieldIdRef="1"/>
+    <Link colName="radiogroup2" fieldIdRef="2"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+  </RecordView>
+</Form>

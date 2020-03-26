@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="campaignposts_empty_mobile.tmp" build="3.20.07" text="Posts" style="centerwindow" width="34" height="11">
+  <LStr text="Posts"/>
+  <Grid name="grid1" width="34" height="11">
+    <Label name="label3" width="31" text="There is no post yet." justify="center" style="ff_formtitle" posY="3" posX="2" gridWidth="31">
+      <LStr text="There is no post yet."/>
+    </Label>
+    <Label name="label1" width="31" text=" " justify="center" style="ff_formtitle" posY="4" posX="2" gridWidth="31">
+      <LStr text=" "/>
+    </Label>
+    <Label name="label2" width="31" text=" " justify="center" style="ff_formtitle" posY="5" posX="2" gridWidth="31">
+      <LStr text=" "/>
+    </Label>
+    <Label name="label5" width="31" text=" " justify="center" style="ff_formtitle" posY="6" posX="2" gridWidth="31">
+      <LStr text=" "/>
+    </Label>
+    <Button name="add_post" width="31" text="Add Post" posY="7" posX="2" gridWidth="31" tabIndex="1">
+      <LStr text="Add Post"/>
+    </Button>
+  </Grid>
+</Form>

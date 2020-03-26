@@ -1,0 +1,9 @@
+{
+  "name": "FormWidget",
+  "type": "group",
+  "contents": [{
+    "name": "gbc-FormWidget-font-size-ratio",
+    "type": "number",
+    "defaultValue": "$theme-font-size-ratio"
+  }]
+}

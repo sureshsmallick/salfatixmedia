@@ -1,0 +1,73 @@
+/*
+ * FOURJS_START_COPYRIGHT(D,2018)
+ * Property of Four Js*
+ * (c) Copyright Four Js 2018, 2019. All Rights Reserved.
+ * * Trademark of Four Js Development Tools Europe Ltd
+ *   in the United States and elsewhere
+ * 
+ * This file can be modified by licensees according to the
+ * product manual.
+ * FOURJS_END_COPYRIGHT */
+
+.gbc_GroupWidget {
+  padding: $gbc-GroupWidget-margin-ratio*4px;
+  display: flex;
+  background-color: $gbc-GroupWidget-background-color;
+
+  .g_measuring &.g_measureable {
+    flex-direction: column;
+  }
+  .g_measured &.g_measureable {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .g_measured .g_gridChildrenInParent > &.g_measureable {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.gbc_GroupWidgetContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  @include mt-card-border($gbc-GroupWidget-margin-ratio, $gbc-GroupWidget-font-size-ratio);
+}
+.gbc_NoBorder {
+  .gbc_GroupWidgetContainer {
+     @extend .gbc_NoBorder;
+    background-color: inherit;
+  }
+}
+.gbc_GroupWidgetContent {
+  padding: $gbc-GroupWidget-margin-ratio*6px;
+  flex: 1 1 auto;
+
+  > .gbc_GroupTitleWidget:not(.empty) {
+    padding: $gbc-GroupWidget-margin-ratio*4px 0 $gbc-GroupWidget-margin-ratio*8px 0;
+  }
+}
+.gbc_GroupTitleWidget {
+  position: relative;
+
+  > .gbc-label-text-container {
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  > .group-collapser {
+    position: absolute;
+    right: 0;
+    top:-3px;
+    display: none;
+  }
+
+  &.collapsible .group-collapser {
+    display: inline;
+  }
+  &.empty, .group-collapser {
+    display: none;
+  }
+}
+
+.g_measuring .gbc_FormWidget .gbc_GroupTitleWidget.empty.g_measureable{
+  display: none !important;
+}

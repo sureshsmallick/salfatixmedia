@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation - Migration tips</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="howdoi/index.html">How do I …</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="howdoi/compiledeploy/index.html">Compile &amp; Deploy</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/createruntimezip.html">Create a runtime zip</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/deployongas.html">Deploy on GAS</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/jgas.html">Deploy on JGAS</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/customization/index.html">Customize the UI</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_theme_part.html">Add a theme part</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_theme.html">Add a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/modify_theme.html">Modify a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/delete_theme.html">Delete a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_image_or_logo.html">Header image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_image_with_style_class.html">Header image (style class)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_custom_header_widget.html">Header widget</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_footer_text.html">Footer text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/display-sidebar.html">Sidebar (hide)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/display_icon_or_right_sidebar.html">Sidebar or Icon</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change_favicon.html">Favicon image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-file-load-icon.html">File loading icon (change)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/center-file-load-icon.html">File loading icon (center)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-mttab-bkgd-img.html">Tab background image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-checkbox.html">Checkbox icons</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-pop-up-animation.html">Pop-up animation</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/redirect_application_end.html">Redirect application end</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/customize_theme_settings.html">Customize theme settings</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/customize_user_interface.html">Customize User Interface</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/extend_main_container_widget.html">Extend the MainContainerWidget</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/view_aui_tree.html">View the AUI tree</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/internationalization/index.html">Internationalize my app</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/add_localized_text.html">Add localized text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/configure_right_to_left_languages.html">Right-to-left languages</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/customize_translation_text.html">Translation text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/default_encoding.html">Default encoding</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/migration/index.html">Migrate to GBC</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/evaluate.html">Evaluate your GBC app needs</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/features_limitations.html">Features and limitations</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/from_GWC_HTML5_to_GBC.html">GWC-HTML5 to GBC</a>
+            
+            <a class="btn btn-sidebar active" href="howdoi/migration/migration_tips.html">Migration tips</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="howdoi">
+<header class="page-title">
+  <em>Migration tips</em>
+</header>
+<article class="md-content">
+<h1>Overview</h1>
+<p>When migrating an application from the Genero Desktop Client (GDC) to the Genero Browser Client (GBC), you may encounter issues. Here are some tips that may help.</p>
+<h1>Configuration issues</h1>
+<p>The Genero Application Server (GAS) is likely serving several types of applications, which might use different versions of the Genero Business Development Language and different databases. You need to configure the GAS for the environment your application will be running. This is done through the GAS configuration file.
+If you already have your application configured for GDC-HTTP, you need to enable the rendering for GBC.
+Example of configuration for a GDC application:</p>
+<pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">APPLICATION</span> <span class="hljs-attr">Id</span>=<span class="hljs-string">"my-app"</span> <span class="hljs-attr">Parent</span>=<span class="hljs-string">"defaultgdc"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">EXECUTION</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">PATH</span>&gt;</span>$(res.path.fgldir.demo)<span class="hljs-tag">&lt;/<span class="hljs-name">PATH</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">MODULE</span>&gt;</span>demo.42r<span class="hljs-tag">&lt;/<span class="hljs-name">MODULE</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">EXECUTION</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">APPLICATION</span>&gt;</span>
+</code></pre>
+<p>To allow GBC rendering, replace <code>defaultgdc</code> by <code>defaultgwc</code>, and add the <code>UA_OUTPUT</code> for the public image resources and the GBC customization:</p>
+<pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">APPLICATION</span> <span class="hljs-attr">Id</span>=<span class="hljs-string">"my-app"</span> <span class="hljs-attr">Parent</span>=<span class="hljs-string">"defaultgwc"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">EXECUTION</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">PATH</span>&gt;</span>$(res.path.fgldir.demo)<span class="hljs-tag">&lt;/<span class="hljs-name">PATH</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">MODULE</span>&gt;</span>demo.42r<span class="hljs-tag">&lt;/<span class="hljs-name">MODULE</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">EXECUTION</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">UA_OUTPUT</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">PUBLIC_IMAGEPATH</span>&gt;</span>$(res.public.resources)<span class="hljs-tag">&lt;/<span class="hljs-name">PUBLIC_IMAGEPATH</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">GBC</span>&gt;</span>gwc-dev<span class="hljs-tag">&lt;/<span class="hljs-name">GBC</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">UA_OUTPUT</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">APPLICATION</span>&gt;</span>
+</code></pre>
+<p>See the <em>Configuring Applications on GAS</em> topic in the <em>Genero Application Server User Guide</em> to configure your execution environment, the database access and the resource deployment (pictures, reports, and so on).</p>
+<p>If the application fails to start:</p>
+<ol>
+<li>Look in the dispatcher log for error messages. See <em>Logging</em> in the <em>Genero Application Server User Guide</em>.</li>
+<li>Start a debug console as explained in the <em>What if the application doesn't start?</em> topic in the <em>Genero Application Server User Guide</em>.
+With a console, the GAS does not launch the application, but instead launches a console with the application environment set up. You can then compare the environment variables to your GDC working environment.</li>
+<li>With a console started you can run commands to check and update your environment variables.</li>
+<li>You can also display the application on the GDC by changing the FGLSERVER environment variable to verify that the application runs properly with GDC.</li>
+</ol>
+<h1>Rendering issues</h1>
+<p>Graphical widgets that are not rendered properly or displayed with a different style are considered rendering issues. Try to identify the source of the rendering issue. This could be the browser, your code, or some GBC customization. For help with troubleshooting see <a href="howdoi/migration/evaluate.html">Evaluate your GBC app needs</a>.</p>
+<h1>Application issues</h1>
+<p>Application issues are behavior related. Most of the time you need to contact your local support center. But you can first check for:</p>
+<ul>
+<li>Relevant messages in the logs</li>
+<li>JavaScript errors
+If clues are provided in either the logs or in the errors, try to build a simple test program that replicates the issue and contact your local support center.</li>
+</ul>
+<h1>Network issues</h1>
+<p>Once the migration is almost done and you are in load tests phase, you might encounter sporadic disconnections. Carefully read the chapters on GAS installation for your Web server and verify the Web servers and GAS timeouts are compatible. You can also have a look at:</p>
+<ul>
+<li>Web server log (error/access log)</li>
+<li>The Genero Application Server logs</li>
+<li>Network sniffer (like Wireshark)</li>
+</ul>
+<h1>Web Components</h1>
+<p>The default path for a Web component is <code>appdir/webcomponents</code>, where &quot;appdir&quot; is the application directory. See the <em>WEB_COMPONENT_DIRECTORY</em> element in your <code>FGLASDIR/etc/as.xcf</code> configuration file:</p>
+<pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">WEB_APPLICATION_EXECUTION_COMPONENT</span> <span class="hljs-attr">Id</span>=<span class="hljs-string">"cpn.wa.execution.local"</span>&gt;</span>
+   […]
+   <span class="hljs-tag">&lt;<span class="hljs-name">DVM</span>&gt;</span>$(res.dvm.wa)<span class="hljs-tag">&lt;/<span class="hljs-name">DVM</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">WEB_COMPONENT_DIRECTORY</span>&gt;</span>$(application.path)/webcomponents;
+                             $(res.path.as)/webcomponents<span class="hljs-tag">&lt;/<span class="hljs-name">WEB_COMPONENT_DIRECTORY</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">WEB_APPLICATION_EXECUTION_COMPONENT</span>&gt;</span>
+
+</code></pre>
+<p>You can change the default Web components location by configuring a <code>WEB_COMPONENT_DIRECTORY</code> element in your application's configuration. In this example, the Web component is no longer located in <code>appdir/webcomponents</code> but in <code>appdir/mycomponents</code>.</p>
+<pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">APPLICATION</span> <span class="hljs-attr">Parent</span>=<span class="hljs-string">"defaultgwc"</span> …&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">EXECUTION</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">PATH</span>&gt;</span>/home/myapp<span class="hljs-tag">&lt;/<span class="hljs-name">PATH</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">MODULE</span>&gt;</span>myapp<span class="hljs-tag">&lt;/<span class="hljs-name">MODULE</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">WEB_COMPONENT_DIRECTORY</span>&gt;</span>/home/myapp/mycomponents<span class="hljs-tag">&lt;/<span class="hljs-name">WEB_COMPONENT_DIRECTORY</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">EXECUTION</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">APPLICATION</span>&gt;</span>
+</code></pre>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

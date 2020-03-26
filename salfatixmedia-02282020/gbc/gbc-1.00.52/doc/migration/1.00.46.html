@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation - GBC 1.00.46</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="migration/index.html">What&#x27;s New</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="migration/1.00.52.html">GBC 1.00.52</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.51.html">GBC 1.00.51</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.50.html">GBC 1.00.50</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.49.html">GBC 1.00.49</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.48.html">GBC 1.00.48</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.47.html">GBC 1.00.47</a>
+          
+          <a class="btn btn-sidebar active" href="migration/1.00.46.html">GBC 1.00.46</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.45.html">GBC 1.00.45</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.44.html">GBC 1.00.44</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.43.html">GBC 1.00.43</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.41.html">GBC 1.00.41</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.40.html">GBC 1.00.40</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.39.html">GBC 1.00.39</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.38.html">GBC 1.00.38</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="migration">
+<header class="page-title">
+  <em>GBC 1.00.46</em>
+</header>
+<article class="md-content">
+<p>GBC 1.00.46 was released July 13th, 2018.</p>
+<p>This page provides information about new features, as well as changes you need to take
+care of when migrating your customization to this version.</p>
+<h1>New theme variable to customize calendar dropdown</h1>
+<p>Added a new theme variable <a class="theme-variable-link" href="reference/theme/theme_variables.html#gbc-DateEdit-daysOff-color"><code>gbc-DateEdit-daysOff-color</code></a> to set the (faded) color of the Pikaday calendar disabled days defined in the presentation style attribute <code>daysOff</code></p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#gbc-DateEdit-daysOff-color"><code>gbc-DateEdit-daysOff-color</code></a></td>
+<td>color</td>
+<td>default value is <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-secondary-faded-color"><code>theme-secondary-faded-color</code></a></td>
+</tr>
+</tbody>
+</table>
+<h1>New theme variable to customize CommandLinkWidget</h1>
+<p>Added a new theme variable <a class="theme-variable-link" href="reference/theme/theme_variables.html#gbc-CommandLinkWidget-ttf-color"><code>gbc-CommandLinkWidget-ttf-color</code></a> to set the color of the ttf icon in Button widget with style <code>commandLink</code></p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#gbc-CommandLinkWidget-ttf-color"><code>gbc-CommandLinkWidget-ttf-color</code></a></td>
+<td>color</td>
+<td>default value is <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-secondary-color"><code>theme-secondary-color</code></a></td>
+</tr>
+</tbody>
+</table>
+<h1>New css classes for client-side field validation</h1>
+<p>2 classes have been added to formfield widgets to help one to customize the client-side field validation:</p>
+<ul>
+<li><code>gbc_Required</code> for any field widget with a mandatory value</li>
+<li><code>gbc_NotNull</code> for any field widget with a value that cannot be null</li>
+</ul>
+<p>The method <code>getAllowedValues()</code> on any field widget can be called to get values defined in .per with attribute INCLUDE</p>
+<h1>StartMenu Widget html structure</h1>
+<p>Please note the minor change in the StartMenuWidget html structure: a new <code>div</code>
+with the class <code>wrapper</code> has been added around the widget container element.</p>
+<h1>CommandLink Widget html structure</h1>
+<p>Image container and text container have been separated in CommandLinkWidget html template.
+Please refer to the <code>CommandLinkWidget.tpl.html</code> source for better understanding.</p>
+<h1>Typo fix in class names</h1>
+<table>
+<thead>
+<tr>
+<th>Old Classname</th>
+<th>Renamed to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gbc_startMenuText</code></td>
+<td><code>gbc_StartMenuText</code></td>
+</tr>
+</tbody>
+</table>
+<h1>Themes</h1>
+<p>Starting from GBC 1.00.46, you will be able to define more than one theme within
+a compilation. Until now, you were able to define theme variables in a
+customization, with <code>theme.scss.json</code> file, and add custom scss in adjacent files.</p>
+<blockquote>
+<p>MIGRATION: Your existing customizations will continue to work after some minor
+modifications from your part. See below for details.</p>
+</blockquote>
+<h2>New concepts</h2>
+<h3>Multiple theme in one runtime</h3>
+<p>Until this version, GBC compilation meant:</p>
+<blockquote>
+<p>GBC code base + ONE customization (including theme) = ONE runtime</p>
+</blockquote>
+<p>Now with GBC 1.00.46, customization and theme are split in two concepts, permitting multiple themes available per runtime</p>
+<blockquote>
+<p>GBC code base + ONE customization + <em>n</em> theme definitions = ONE runtime including <em>n</em> themes</p>
+</blockquote>
+<p>The first available theme will be the active one at the first run. The end user may switch the theme from the GBC settings
+dialog. The end user selection is stored for the subsequent run.</p>
+<h3>Source theme parts</h3>
+<p>As per in the project package, you will now have a <code>theme</code> folder which will contain several sub folders. You will find:</p>
+<ul>
+<li><code>theme/platform/desktop</code></li>
+<li><code>theme/platform/mobile</code></li>
+<li><code>theme/colors/highcontrast</code></li>
+</ul>
+<p>These folders are not themes, strictly speaking, but are <strong>theme parts</strong>, which can be combined to generate runtime themes.</p>
+<p>A <strong>theme part</strong> can contain several compounds, described here:</p>
+<ul>
+<li><code>theme.config.json</code> file (optional)
+This json file will contain theme applicable conditions<pre class="hljs"><code>  <span class="hljs-comment">// sample: theme/platform/mobile/theme.config.json</span>
+  {
+    <span class="hljs-comment">// optional</span>
+    <span class="hljs-comment">// array of conditions that filters applicable themes (see theme conditions below)</span>
+    <span class="hljs-string">"conditions"</span>: [<span class="hljs-string">"isMobile"</span>]
+ }
+</code></pre>
+</li>
+<li><code>theme.scss.json</code> file (optional)
+This file can be used to set theme variables (as it was already done in customizations)</li>
+<li><code>sass/</code> folder (optional)
+This folder can contain scss definitions <code>themeVariables.scss</code> (as you have <code>customVariables.scss</code> in customization),
+<code>theme.scss</code> (as you have <code>customization.scss</code> in customization), and other scss files that can be imported by the first two.</li>
+<li><code>resources/</code> folder (optional)
+This folder can contain theme parts resource files.</li>
+</ul>
+<h3>Theme definition</h3>
+<p>As said before, theme parts will be able to be combined to produce runtime themes. To do that, these themes will have to be defined.</p>
+<p>These definitions can be set in optional <code>custom.json</code> or the configuration file given by <code>grunt</code>'s option <code>--configuration=</code> as a <code>themes</code> entry.</p>
+<pre class="hljs"><code><span class="hljs-comment">// sample: custom.json </span>
+{
+ <span class="hljs-string">"compile"</span>: {
+   <span class="hljs-string">"mode"</span>: <span class="hljs-string">"cdev"</span>
+ },
+ <span class="hljs-comment">//here we have the theme definitions</span>
+ <span class="hljs-comment">// it is an array of definitions</span>
+ <span class="hljs-string">"themes"</span>: [{
+     <span class="hljs-comment">// name of the theme</span>
+     <span class="hljs-comment">// this one should be unique, only contain [a-z0-9_-] characters as </span>
+     <span class="hljs-comment">// it will be the name of the folder in the runtime themes/ folder</span>
+     <span class="hljs-string">"name"</span>: <span class="hljs-string">"default"</span>,
+     <span class="hljs-comment">// title that will be displayed in the theme selector </span>
+     <span class="hljs-string">"title"</span>: <span class="hljs-string">"Default"</span>,
+     <span class="hljs-comment">// optional</span>
+     <span class="hljs-comment">// ordered list of theme parts to combine in this theme</span>
+     <span class="hljs-string">"uses"</span>: [<span class="hljs-string">"platform/desktop"</span>],
+     <span class="hljs-comment">// optional</span>
+     <span class="hljs-comment">// conditions to add to the theme parts' ones</span>
+     <span class="hljs-string">"conditions"</span>: […]
+   },
+   {
+     <span class="hljs-string">"name"</span>: <span class="hljs-string">"highcontrast"</span>,
+     <span class="hljs-string">"title"</span>: <span class="hljs-string">"High contrast"</span>,
+     <span class="hljs-string">"uses"</span>: [<span class="hljs-string">"platform/desktop"</span>, <span class="hljs-string">"colors/highcontrast"</span>]
+   },
+   {
+     <span class="hljs-string">"name"</span>: <span class="hljs-string">"default_mobile"</span>,
+     <span class="hljs-string">"title"</span>: <span class="hljs-string">"Default"</span>,
+     <span class="hljs-string">"uses"</span>: [<span class="hljs-string">"platform/mobile"</span>]
+   },
+   {
+     <span class="hljs-string">"name"</span>: <span class="hljs-string">"highcontrast_mobile"</span>,
+     <span class="hljs-string">"title"</span>: <span class="hljs-string">"High contrast"</span>,
+     <span class="hljs-string">"uses"</span>: [<span class="hljs-string">"platform/mobile"</span>, <span class="hljs-string">"colors/highcontrast"</span>]
+   }
+ ]
+}
+
+</code></pre>
+<p>It is possible to force these definition for a particular customization in a <code>config.json</code> file, then it will supersede other theme definitions.</p>
+<blockquote>
+<p>MIGRATION: By default, we provide <code>custom.json</code> defining the 4 themes as defined above (<em>default</em>, <em>highcontrast</em>, <em>default_mobile</em> and
+<em>highcontrast_mobile</em>). If you have defined your own <code>custom.json</code>, be sure to merge it with the new delivery to benefit from the theme feature.</p>
+</blockquote>
+<h3>Compilation overrides</h3>
+<p>Orders of precedence are set to produce coherent runtimes. Themes variables and resources will be compiled in a deterministic way,
+this is why order of theme parts in theme definitions is important.</p>
+<ul>
+<li>
+<p><strong>Theme variables</strong>
+For a given theme, theme variables defined in GBC codebase will be superseded by customization overrides,
+then superseded by each theme part in order.</p>
+</li>
+<li>
+<p><strong>Resources</strong>
+Resource management changes with this new feature. GBC own resources (including fonts, see below) and customization resources
+are now considered as <strong>global resources</strong> at runtime. Resources existing in customization will supersede GBC codebase ones,
+if they exist in both. Each theme part can add or override resources, considered then as <strong>theme resources</strong>. Same rule applies here,
+last supersede wins.</p>
+</li>
+<li>
+<p><strong>Theme conditions</strong>
+Each theme part or theme definition can declare conditions. At build time, these conditions will be combined as the produced
+theme will have to fit all conditions possible in the execution context.</p>
+<p>Possible values for theme conditions are:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>isDesktop</code></td>
+<td>the running platform is a desktop (e.g. Windows, Linux)</td>
+</tr>
+<tr>
+<td><code>isTouchDevice</code></td>
+<td>the running platform has touch abilities (e.g. mobile device, Microsoft Surface)</td>
+</tr>
+<tr>
+<td><code>isMobile</code></td>
+<td>the running platform is a mobile (e.g. Android, IOS)</td>
+</tr>
+<tr>
+<td><code>isAndroid</code></td>
+<td>the running platform is Android</td>
+</tr>
+<tr>
+<td><code>isIOS</code></td>
+<td>the running platform is IOS</td>
+</tr>
+<tr>
+<td><code>isChrome</code></td>
+<td>the running browser is Google Chrome</td>
+</tr>
+<tr>
+<td><code>isEdge</code></td>
+<td>the running browser is Microsoft Edge</td>
+</tr>
+<tr>
+<td><code>isFirefox</code></td>
+<td>the running browser is Mozilla Firefox</td>
+</tr>
+<tr>
+<td><code>isIE</code></td>
+<td>the running browser is Microsoft Internet Explorer</td>
+</tr>
+<tr>
+<td><code>isOpera</code></td>
+<td>the running browser is Opera</td>
+</tr>
+<tr>
+<td><code>isSafari</code></td>
+<td>the running browser is Safari</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<blockquote>
+<p>Beware of conflicting conditions! If a theme gets for example &quot;isDesktop&quot; and &quot;isMobile&quot; conditions, this theme won't be usable in any case.</p>
+</blockquote>
+<h3>Font files</h3>
+<p>Font files are now considered a resource.</p>
+<blockquote>
+<p>MIGRATION: In your existing customizations, just move your <code>fonts</code> folders to <code>resources/fonts</code>.</p>
+</blockquote>
+<h2>Runtime file structure changes</h2>
+<p>Several changes occured in the file structure of the runtime packages. It should not impact you directly as it is not recommended
+to modify these files directly.</p>
+<ul>
+<li><code>lib/js/</code> was renamed <code>js/third-party/</code></li>
+<li><code>lib/fonts/</code> was renamed <code>resources/fonts/</code> (See <code>Font files</code> above)</li>
+<li><code>css/</code>, containing only <code>main.css</code>, is replaced by <code>themes/</code>, which contain a folder per compiled theme, each containing its own
+<code>main.css</code>, plus theme specific resources, if any.</li>
+</ul>
+<h2>Theme resources API</h2>
+<p>In order to ease resource linking, a new resource access mechanism has been defined.</p>
+<ul>
+<li>In <strong>SCSS files</strong>
+Resources up to this had been linked by some relative paths like <code>../resources/img/logo.png</code>. Starting from 1.00.46,
+resources will be linked with special variable <code>$$RES</code>, e.g. <code>$$RES/img/logo.png</code>. This will permit the
+grunt process to point to the correct path of <strong>global resource</strong> or <strong>theme resource</strong>.
+<blockquote>
+<p>MIGRATION: Review your resources paths (including fonts links) in your SCSS sources to use <code>$$RES</code> variable.</p>
+</blockquote>
+</li>
+<li>In <strong>JS files</strong>
+In javascript too, one can link resources. For the same reason as accessing <strong>global resource</strong> / <strong>theme resource</strong>, this:<pre class="hljs"><code><span class="hljs-keyword">this</span>._productInformation.setLogo(<span class="hljs-string">"resources/img/logo.png"</span>)
+</code></pre>
+becomes this in 1.00.46:<pre class="hljs"><code><span class="hljs-keyword">this</span>._productInformation.setLogo(context.ThemeService.getResource(<span class="hljs-string">"img/logo.png"</span>));
+</code></pre>
+<blockquote>
+<p>MIGRATION: Review your resources paths (including fonts links) in your JS sources to use <code>gbc.ThemeService.getResource()</code>.</p>
+</blockquote>
+</li>
+<li>In <strong>tpl.html files</strong>
+In tpl.html files, however, the $$RES variable can not be used.
+Therefore, you probably do not need to change the way you reference an image in your project's <code>resources</code> directory by setting the path
+relative to your <code>&lt;GBC_PROJECT_DIR&gt;/customization/&lt;customization_project_dir&gt;</code> directory,
+( for example, <code>&lt;img src=&quot;./resources/img/logo.png&quot;/&gt;</code>). See <a href="howdoi/customization/add_image_or_logo.html">Header image</a>.
+But alternatively, you can achieve the same result by setting the HTML file part with<pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">""</span>/&gt;</span>
+</code></pre>
+and in the JS file part:
+Set the img path via JavaScript in the <code>_initElement</code> method of your widget:<pre class="hljs"><code>_initElement: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ 
+  $<span class="hljs-keyword">super</span>._initElement.call(<span class="hljs-keyword">this</span>); 
+  <span class="hljs-keyword">this</span>._element.querySelector(<span class="hljs-string">"img"</span>).src = context.ThemeService.getResource(<span class="hljs-string">"img/logo.png"</span>);
+},
+</code></pre>
+</li>
+</ul>
+<h2>Theme variables API</h2>
+<p>The same as with resources, theme variables access has changed. This:</p>
+<pre class="hljs"><code>context.constants.theme[<span class="hljs-string">"theme-grid-inner-gutter"</span>]
+</code></pre>
+<p>becomes this in 1.00.46:</p>
+<pre class="hljs"><code>context.ThemeService.getValue(<span class="hljs-string">"theme-grid-inner-gutter"</span>)
+</code></pre>
+<blockquote>
+<p>MIGRATION: Review your theme value accesses in your JS sources to use <code>gbc.ThemeService.getValue()</code>.</p>
+</blockquote>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

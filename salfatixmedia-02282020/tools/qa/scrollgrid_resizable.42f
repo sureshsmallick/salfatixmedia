@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Form name="scrollgrid_resizable.tmp" build="3.20.08" text="Form" style="centerwindow" width="85" height="16">
+  <LStr text="Form"/>
+  <Grid name="grid1" width="85" height="16">
+    <FormField name="formonly.ff_formtitle" colName="ff_formtitle" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Label width="82" justify="center" style="ff_formtitle" posY="0" posX="2" gridWidth="82"/>
+    </FormField>
+    <Group name="filtergroup" text="Filters" posY="1" posX="1" gridWidth="39" gridHeight="14">
+      <LStr text="Filters"/>
+      <Label name="label1" width="28" text="Sort By" posY="1" posX="1" gridWidth="28">
+        <LStr text="Sort By"/>
+      </Label>
+      <FormField name="formonly.radiogroup1" colName="radiogroup1" fieldId="1" sqlTabName="formonly" tabIndex="2">
+        <RadioGroup width="28" orientation="horizontal" posY="2" posX="1" gridWidth="28">
+          <Item name="brands.brnd_name" text="Brand name">
+            <LStr text="Brand name"/>
+          </Item>
+          <Item name="campaigns.cmp_title" text="Title">
+            <LStr text="Title"/>
+          </Item>
+          <Item name="campaignstatus.cmpst_name" text="Status">
+            <LStr text="Status"/>
+          </Item>
+        </RadioGroup>
+      </FormField>
+      <Label name="label2" width="20" text="Order" posY="4" posX="1" gridWidth="20">
+        <LStr text="Order"/>
+      </Label>
+      <FormField name="formonly.radiogroup2" colName="radiogroup2" fieldId="2" sqlTabName="formonly" tabIndex="3">
+        <RadioGroup width="20" orientation="horizontal" posY="5" posX="1" gridWidth="20">
+          <Item name="asc" text="Ascending">
+            <LStr text="Ascending"/>
+          </Item>
+          <Item name="desc" text="Descending">
+            <LStr text="Descending"/>
+          </Item>
+        </RadioGroup>
+      </FormField>
+      <Label name="label3" width="28" text="Filter on Brand name" posY="6" posX="1" gridWidth="28">
+        <LStr text="Filter on Brand name"/>
+      </Label>
+      <FormField name="formonly.brnd_name2" colName="brnd_name2" sqlType="CHAR" fieldId="3" sqlTabName="formonly" tabIndex="4">
+        <Edit width="28" posY="7" posX="1" gridWidth="28"/>
+      </FormField>
+      <Label name="label4" width="28" text="Filter on title" posY="8" posX="1" gridWidth="28">
+        <LStr text="Filter on title"/>
+      </Label>
+      <FormField name="formonly.cmp_title2" colName="cmp_title2" sqlType="CHAR" fieldId="4" sqlTabName="formonly" tabIndex="5">
+        <Edit width="28" posY="9" posX="1" gridWidth="28"/>
+      </FormField>
+      <Label name="label5" width="28" text="Filter on status" posY="10" posX="1" gridWidth="28">
+        <LStr text="Filter on status"/>
+      </Label>
+      <FormField name="formonly.cmpst_name2" colName="cmpst_name2" sqlType="CHAR" fieldId="5" sqlTabName="formonly" tabIndex="6">
+        <Edit width="28" scroll="1" posY="11" posX="1" gridWidth="28"/>
+      </FormField>
+      <Button name="filter" width="7" text="Filter" posY="12" posX="22" gridWidth="7" tabIndex="7">
+        <LStr text="Filter"/>
+      </Button>
+    </Group>
+    <ScrollGrid wantFixedPageSize="0" name="salfatixmedia1" doubleClick="dbl_click" style="campaignlisttable" pageSize="10" posY="1" posX="41" gridWidth="43" gridHeight="14">
+      <Matrix name="formonly.pic_value" colName="pic_value" sqlType="CHAR" fieldId="6" sqlTabName="formonly" noEntry="1" tabIndex="8" pageSize="10" stepY="13">
+        <Image width="17" height="6" autoScale="1" sizePolicy="fixed" posY="1" posX="3" gridWidth="17" gridHeight="6"/>
+      </Matrix>
+      <Matrix name="formonly.brnd_name" colName="brnd_name" sqlType="CHAR" fieldId="7" sqlTabName="formonly" tabIndex="9" pageSize="10" stepY="13">
+        <Edit width="20" posY="1" posX="22" gridWidth="20"/>
+      </Matrix>
+      <Matrix name="formonly.cmp_title" colName="cmp_title" sqlType="CHAR" fieldId="8" sqlTabName="formonly" tabIndex="10" pageSize="10" stepY="13">
+        <TextEdit width="20" height="4" scrollBars="none" wantReturns="1" posY="2" posX="22" gridWidth="20" gridHeight="4"/>
+      </Matrix>
+      <Matrix name="formonly.cmpst_name" colName="cmpst_name" sqlType="CHAR" fieldId="9" sqlTabName="formonly" tabIndex="11" pageSize="10" stepY="13">
+        <Edit width="20" posY="6" posX="22" gridWidth="20"/>
+      </Matrix>
+    </ScrollGrid>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="radiogroup1" fieldIdRef="1"/>
+    <Link colName="radiogroup2" fieldIdRef="2"/>
+    <Link colName="brnd_name2" fieldIdRef="3"/>
+    <Link colName="cmp_title2" fieldIdRef="4"/>
+    <Link colName="cmpst_name2" fieldIdRef="5"/>
+    <Link colName="pic_value" fieldIdRef="6"/>
+    <Link colName="brnd_name" fieldIdRef="7"/>
+    <Link colName="cmp_title" fieldIdRef="8"/>
+    <Link colName="cmpst_name" fieldIdRef="9"/>
+  </RecordView>
+  <RecordView tabName="scr_list">
+    <Link colName="cmp_title" fieldIdRef="8"/>
+    <Link colName="pic_value" fieldIdRef="6"/>
+    <Link colName="brnd_name" fieldIdRef="7"/>
+    <Link colName="cmpst_name" fieldIdRef="9"/>
+  </RecordView>
+  <RecordView tabName="scr_qbeinput">
+    <Link colName="radiogroup1" fieldIdRef="1"/>
+    <Link colName="radiogroup2" fieldIdRef="2"/>
+  </RecordView>
+  <RecordView tabName="scr_qbeconstruct">
+    <Link colName="brnd_name2" fieldIdRef="3"/>
+    <Link colName="cmp_title2" fieldIdRef="4"/>
+    <Link colName="cmpst_name2" fieldIdRef="5"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+  </RecordView>
+</Form>

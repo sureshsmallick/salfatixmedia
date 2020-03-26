@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyleList>
+  <Style name="Image.center">
+     <StyleAttribute name="alignment" value="horizontalCenter" />
+     <StyleAttribute name="border" value="none" />
+  </Style>
+  <Style name="Button.highvisible">
+     <StyleAttribute name="alignment" value="center" />
+     <StyleAttribute name="fontSize" value="x-large" />
+     <StyleAttribute name="fontWeight" value="bold" />
+     <StyleAttribute name="textColor" value="#007AFF" />
+     <StyleAttribute name="backgroundColor" value="#bfbfff" />
+  </Style>
+</StyleList>

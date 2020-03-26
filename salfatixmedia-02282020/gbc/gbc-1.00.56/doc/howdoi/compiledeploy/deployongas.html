@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Deploy on GAS</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="howdoi/index.html">How do I …</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="howdoi/compiledeploy/index.html">Compile &amp; Deploy</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/createruntimezip.html">Create a runtime zip</a>
+            
+            <a class="btn btn-sidebar active" href="howdoi/compiledeploy/deployongas.html">Deploy on GAS</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/jgas.html">Deploy on JGAS</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/change-cust-ver-suffix.html">Change the version customization suffix</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/themes/index.html">Manage themes</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/themes/add_theme_part.html">Add a theme part</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/themes/add_theme.html">Add a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/themes/modify_theme.html">Modify a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/themes/delete_theme.html">Delete a theme</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/customization.html">Customize the UI</a>
+          
+          <a class="btn btn-sidebar " href="howdoi/customize-file-replace/index.html">Replace an image</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/customize-file-replace/change_favicon.html">Change the favicon</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customize-file-replace/change-mttab-bkgd-img.html">Change background image for empty tabbed container</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/customize-theme-vars/index.html">Customize theme variables</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/display-sidebar.html">Display or hide the sidebar</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customize-theme-vars/change-checkbox.html">Change checkbox icons</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customize-theme-vars/genero-context-menu.html">Display the Genero context menu</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customize-theme-vars/change-relog-prompt.html">Change relog prompt</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/customize-scss/index.html">Customize style sheets</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/customize-scss/center-file-load-icon.html">Center loading icon</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/customization/index.html">Customize using widgets</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_image_or_logo.html">Add header image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_image_with_style_class.html">Add header image using style class</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_custom_header_widget.html">Add header text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_footer_text.html">Add footer text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-file-load-icon.html">Change file loading icon</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/redirect_application_end.html">Redirect application end</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/extend_main_container_widget.html">Extend the MainContainerWidget</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/debug/index.html">Debug</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/debug/start_debug_mode.html">Start in Debug Mode</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/debug/record_gbc_log.html">Record a GBC log</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/debug/replay_gbc_log.html">Replay a GBC log</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/debug/view_aui_tree.html">View the AUI tree</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/internationalization/index.html">Internationalize my app</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/add_localized_text.html">Add localized text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/configure_right_to_left_languages.html">Configure right-to-left languages</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/customize_translation_text.html">Customize translation text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/default_encoding.html">Default encoding</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="howdoi">
+<header class="page-title">
+  <em>Deploy on GAS</em>
+</header>
+<article class="md-content">
+<h2 id="Before_you_begin">Before you begin <a class="header-anchor" href="howdoi/compiledeploy/deployongas.html#Before_you_begin" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>You have created the runtime zip of your customization project. See <a href="howdoi/compiledeploy/createruntimezip.html">Create a runtime zip</a></p>
+<blockquote>
+<p><em>NOTE</em>: In this procedure, the full name of the created runtime zip file is used. You can, however, rename the file to a shorter, simpler name once it is created. It can be much easier to manage a file renamed as <code>myCust.zip</code> than to use the default runtime zip file name!</p>
+</blockquote>
+<h2 id="Deployment_options">Deployment options <a class="header-anchor" href="howdoi/compiledeploy/deployongas.html#Deployment_options" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>There are two options for deploying the runtime:</p>
+<ul>
+<li>
+<p>Use your web browser to navigate to the deployment page (typically located at <code>http[s]://</code><em><code>server</code></em><code>:</code><em><code>port</code></em><code>&gt;[/</code><em><code>gas</code></em><code>]/ua/r/admin/DeploymentApp</code>) and upload the
+<code>fjs-gbc-</code><em><code>version</code></em><code>.</code><em><code>suffix</code></em><code>-build</code><em><code>build</code></em><code>-customization_</code><em><code>customName</code></em><code>.zip</code> file. This option
+is only available if you have access to the DeploymentApp.</p>
+</li>
+<li>
+<p>If the DeploymentApp is not accessible, you need to have console access to
+the server and a way to transfer the
+<code>fjs-gbc-</code><em><code>version</code></em><code>[.</code><em><code>suffix</code></em><code>]-build</code><em><code>build</code></em><code>-customization_</code><em><code>customName</code></em><code>.zip</code> file to the
+server. Once the file is on the server, you need to execute the following
+command from the server console to deploy the GBC:</p>
+</li>
+</ul>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> gasadmin gbc --deploy fjs-gbc-&lt;version&gt;[.&lt;suffix&gt;]-build&lt;build&gt;-customization_&lt;customName&gt;.zip</span>
+</code></pre>
+<h2 id="Using_the_deployed_customization">Using the deployed customization <a class="header-anchor" href="howdoi/compiledeploy/deployongas.html#Using_the_deployed_customization" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>When the GBC is deployed, you can render your application using the deployed GBC with
+the following URL:
+<code>http://my.server.com:6394/ua/r/</code><em><code>appName</code></em><code>?gbc=fjs-gbc-</code><em><code>version</code></em><code>[.</code><em><code>suffix</code></em><code>]-build</code><em><code>build</code></em><code>-customization_</code><em><code>customName</code></em></p>
+<p>Or you can set it as the default:</p>
+<pre class="hljs"><code>gasadmin gbc --default fjs-gbc-&lt;version&gt;[.&lt;suffix&gt;]-build&lt;build&gt;-customization_&lt;customName&gt;
+</code></pre>
+<p>The default GBC will be used if one uses no query string parameter, as in this example URL:
+<code>http://my.server.com:6394/ua/r/</code><em><code>appName</code></em></p>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

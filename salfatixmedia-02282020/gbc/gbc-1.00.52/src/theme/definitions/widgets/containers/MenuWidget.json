@@ -1,0 +1,20 @@
+{
+  "name": "MenuWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-MenuWidget-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "gbc-MenuWidget-item-height-ratio",
+      "type": "number",
+      "defaultValue": "$theme-field-height-ratio"
+    },
+    {
+      "name": "gbc-MenuWidget-tabbed-z-index",
+      "type": "number",
+      "defaultValue": "$z-index-Tabbed-Modal"
+    }
+  ]
+}

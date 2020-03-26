@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="30a00" gstVersion="30a0a" name="managedform" uid="{7a90ebe7-6ed8-409f-a939-6454ffc48b1f}">
+  <AGSettings/>
+  <Record name="Undefined" uid="{e59c6e01-7023-4a31-9564-4a914e7495f5}">
+    <RecordField fieldIdRef="1" name="ffimage1" uid="{a5db8fbf-4845-4e0b-b6d6-e70cabde3c8e}"/>
+    <RecordField fieldIdRef="2" name="ffimage2" uid="{bc22e895-c2c2-4e55-951a-059b78614cd4}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" name="form" style="centerwindow">
+    <ToolBar name="toolbar1">
+      <ToolBarItem name="infl_viewopencampaigns"/>
+      <ToolBarSeparator name="toolbarseparator1" style="myiosseparator"/>
+      <ToolBarItem name="infl_viewappliedcampaigns"/>
+      <ToolBarSeparator name="toolbarseparator2" style="myiosseparator"/>
+      <ToolBarItem name="infl_viewworkablecampaigns"/>
+    </ToolBar>
+    <Grid gridHeight="15" gridWidth="33" name="grid1" posX="8" posY="3">
+      <Label gridHeight="1" gridWidth="25" name="label8" posX="1" posY="1" text=" "/>
+      <Label gridHeight="1" gridWidth="25" name="label9" posX="1" posY="2" text=" "/>
+      <Label gridHeight="1" gridWidth="25" name="label2" posX="1" posY="3" text=" "/>
+      <Label gridHeight="1" gridWidth="25" name="label1" posX="1" posY="4" text=" "/>
+      <Label gridHeight="1" gridWidth="25" name="label4" posX="1" posY="5" text=" "/>
+      <FFImage fieldId="1" gridHeight="1" gridWidth="3" name="ffimage1" posX="1" posY="6" title="ffimage1" widget="FFImage"/>
+      <Label gridHeight="1" gridWidth="17" justify="center" lstrtext="true" name="label7" posX="5" posY="6" sizePolicy="dynamic" text="Nothing available here yet."/>
+      <FFImage fieldId="2" gridHeight="1" gridWidth="3" name="ffimage2" posX="23" posY="6" title="ffimage1" widget="FFImage"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlADUAOQBjADYAZQAwADEALQA3ADAAMgAzAC0ANABhADMAMQAtADkANQA2ADQALQA0AGEAOQAxADQAZQA3ADQAOQA1AGYANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

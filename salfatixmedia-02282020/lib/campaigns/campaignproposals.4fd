@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a06" name="managedform" uid="{7c7e7672-9945-41dc-a5ff-0d77e49fd879}">
+  <AGSettings/>
+  <Record joinLeft="campaigns.cmp_id" joinOperator="INNER" joinRight="campaignproposals.cmpprp_campaign_id" masterTable="campaignproposals" name="scr_campaignproposal" uid="{59fe10a7-8e3f-41df-b0c5-d37c40b6c1cb}">
+    <RecordField colName="cmp_id" fieldIdRef="1" fieldType="TABLE_COLUMN" name="campaigns.cmp_id" sqlTabName="campaigns" uid="{3754bdad-564b-413e-a849-bdf3ae7abb8b}"/>
+    <RecordField colName="cmp_brand_id" fieldIdRef="2" fieldType="TABLE_COLUMN" name="campaigns.cmp_brand_id" sqlTabName="campaigns" uid="{80f4a49f-a38d-4baf-88fe-a014fefa3ea2}"/>
+    <RecordField colName="cmp_pic_id" fieldIdRef="3" fieldType="TABLE_COLUMN" name="campaigns.cmp_pic_id" sqlTabName="campaigns" uid="{00ecdfcf-d4a5-4841-89a3-a78ca4aacbf2}"/>
+    <RecordField colName="cmp_title" fieldIdRef="4" fieldType="TABLE_COLUMN" name="campaigns.cmp_title" sqlTabName="campaigns" uid="{d4b613b3-f63e-431e-819a-60f1c51b407b}"/>
+    <RecordField colName="cmp_overview" fieldIdRef="5" fieldType="TABLE_COLUMN" name="campaigns.cmp_overview" sqlTabName="campaigns" uid="{e2b7de1b-42b9-4c5f-9319-4ae74a23c3d1}"/>
+    <RecordField colName="cmp_url" fieldIdRef="6" fieldType="TABLE_COLUMN" name="campaigns.cmp_url" sqlTabName="campaigns" uid="{2401c9f5-70cb-4cdd-8661-73c09865fd39}"/>
+    <RecordField colName="cmp_prd_description" fieldIdRef="8" fieldType="TABLE_COLUMN" name="campaigns.cmp_prd_description" sqlTabName="campaigns" uid="{ce9d5971-bb84-47b2-9a69-94ab4d915e08}"/>
+    <RecordField colName="cmp_prd_value" fieldIdRef="9" fieldType="TABLE_COLUMN" name="campaigns.cmp_prd_value" sqlTabName="campaigns" uid="{2781dba1-532e-4cc1-b317-b9b8b8646e85}"/>
+    <RecordField colName="cmp_post_guidelines" fieldIdRef="10" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_guidelines" sqlTabName="campaigns" uid="{c8d00371-539b-452f-af67-bef6d7f8032c}"/>
+    <RecordField colName="cmp_captionrequirements" fieldIdRef="11" fieldType="TABLE_COLUMN" name="campaigns.cmp_captionrequirements" sqlTabName="campaigns" uid="{1ae38fbc-c1e1-4406-b9b2-29c9bdb0c6be}"/>
+    <RecordField colName="cmp_post_startdate" fieldIdRef="12" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_startdate" sqlTabName="campaigns" uid="{3527ca02-8a59-40ee-8c2a-9eb301978e83}"/>
+    <RecordField colName="cmp_post_enddate" fieldIdRef="13" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_enddate" sqlTabName="campaigns" uid="{af9cfa19-4bee-4123-b27a-f1ca3da0f294}"/>
+    <RecordField colName="cmp_post_time_starttime" fieldIdRef="14" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_time_starttime" sqlTabName="campaigns" uid="{8c79fd78-126c-4354-8294-ef8d8f383610}"/>
+    <RecordField colName="cmp_post_time_endtime" fieldIdRef="15" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_time_endtime" sqlTabName="campaigns" uid="{39ecdcc8-a997-434e-9c99-70bf906120dd}"/>
+    <RecordField colName="cmp_postduration_id" fieldIdRef="16" fieldType="TABLE_COLUMN" name="campaigns.cmp_postduration_id" sqlTabName="campaigns" uid="{a79271d6-bdd8-43c4-92a4-12110a66a76f}"/>
+    <RecordField colName="cmp_totalbudget" fieldIdRef="17" fieldType="TABLE_COLUMN" name="campaigns.cmp_totalbudget" sqlTabName="campaigns" uid="{a5cc8f56-3fda-408d-9ba4-42f7646e4e24}"/>
+    <RecordField colName="cmp_deposit" fieldIdRef="18" fieldType="TABLE_COLUMN" name="campaigns.cmp_deposit" sqlTabName="campaigns" uid="{c2a117ba-3250-4d5e-8120-52d18688e674}"/>
+    <RecordField colName="cmp_depositpercent" fieldIdRef="19" fieldType="TABLE_COLUMN" name="campaigns.cmp_depositpercent" sqlTabName="campaigns" uid="{86379b16-a89b-4b03-bdc0-d8865dca00f8}"/>
+    <RecordField colName="cmp_currency_id" fieldIdRef="20" fieldType="TABLE_COLUMN" name="campaigns.cmp_currency_id" sqlTabName="campaigns" uid="{9f5fabe9-342c-4878-bf51-20f680d55809}"/>
+    <RecordField colName="cmp_wantedusers" fieldIdRef="21" fieldType="TABLE_COLUMN" name="campaigns.cmp_wantedusers" sqlTabName="campaigns" uid="{aa9cacfe-3914-4e1f-a0b2-8626c0e055e7}"/>
+    <RecordField colName="cmp_campaignstatus_id" fieldIdRef="24" fieldType="TABLE_COLUMN" name="campaigns.cmp_campaignstatus_id" sqlTabName="campaigns" uid="{27ffa1a2-9091-4e33-bc26-2a568be08785}"/>
+    <RecordField colName="cmp_createdby_id" fieldIdRef="25" fieldType="TABLE_COLUMN" name="campaigns.cmp_createdby_id" sqlTabName="campaigns" uid="{4f6d10ea-3f60-4133-8e97-e15202a5bdd3}"/>
+    <RecordField colName="cmp_creationdate" fieldIdRef="26" fieldType="TABLE_COLUMN" name="campaigns.cmp_creationdate" sqlTabName="campaigns" uid="{1297ac01-9086-448d-a533-df74ac500c23}"/>
+    <RecordField colName="cmp_publisheddate" fieldIdRef="33" fieldType="TABLE_COLUMN" name="campaigns.cmp_publisheddate" sqlTabName="campaigns" uid="{7f380d91-ef46-4f61-9de0-1d9bf9cc1997}"/>
+    <RecordField colName="cmp_selectionstartdate" fieldIdRef="34" fieldType="TABLE_COLUMN" name="campaigns.cmp_selectionstartdate" sqlTabName="campaigns" uid="{a0705172-2714-4b17-a04a-d6f597e7f28f}"/>
+    <RecordField colName="cmp_selectionenddate" fieldIdRef="35" fieldType="TABLE_COLUMN" name="campaigns.cmp_selectionenddate" sqlTabName="campaigns" uid="{9d002412-d86b-4632-a81b-7e4a9c695cd5}"/>
+    <RecordField colName="cmp_selectioncomment" fieldIdRef="36" fieldType="TABLE_COLUMN" name="campaigns.cmp_selectioncomment" sqlTabName="campaigns" uid="{589db714-563e-4762-a326-27645a8f5d38}"/>
+    <RecordField colName="cmp_actionstartdate" fieldIdRef="37" fieldType="TABLE_COLUMN" name="campaigns.cmp_actionstartdate" sqlTabName="campaigns" uid="{f05c2b87-950c-4e89-bee0-ced15505d16f}"/>
+    <RecordField colName="cmp_actionenddate" fieldIdRef="38" fieldType="TABLE_COLUMN" name="campaigns.cmp_actionenddate" sqlTabName="campaigns" uid="{3bff58f4-a8d4-4f94-a48e-a541e537569e}"/>
+    <RecordField colName="cmp_enddate" fieldIdRef="39" fieldType="TABLE_COLUMN" name="campaigns.cmp_enddate" sqlTabName="campaigns" uid="{5a05fc95-1ecf-4292-b415-dbc5df69c3f8}"/>
+    <RecordField colName="cmp_lastupdatedate" fieldIdRef="40" fieldType="TABLE_COLUMN" name="campaigns.cmp_lastupdatedate" sqlTabName="campaigns" uid="{3649effa-1471-43e7-ae39-6f326d365abc}"/>
+    <RecordField colName="cmpprp_id" fieldIdRef="41" fieldType="TABLE_COLUMN" lookup="LOOKUP_u278_931" name="campaignproposals.cmpprp_id" sqlTabName="campaignproposals" uid="{7a95b2d4-119b-4374-bb23-b9670c289fee}"/>
+    <RecordField colName="cmpprp_campaign_id" fieldIdRef="42" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_campaign_id" sqlTabName="campaignproposals" uid="{582482cf-46e2-4471-92cc-c6b86460c428}"/>
+    <RecordField colName="cmpprp_creationdate" fieldIdRef="43" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_creationdate" sqlTabName="campaignproposals" uid="{4b9060b8-75dc-4d5a-95b3-8db2c6e149f4}"/>
+    <RecordField colName="cmpprp_submitteddate" fieldIdRef="44" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_submitteddate" sqlTabName="campaignproposals" uid="{5a3232aa-6c5e-4485-aab7-479eab729379}"/>
+    <RecordField colName="cmpprp_validationdate" fieldIdRef="45" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_validationdate" sqlTabName="campaignproposals" uid="{667648ec-30c6-4d83-ad7c-c22605f16e83}"/>
+    <RecordField colName="cmpprp_rejecteddate" fieldIdRef="46" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_rejecteddate" sqlTabName="campaignproposals" uid="{11d7c9f3-4726-46e3-8b64-5a528a91c3b6}"/>
+    <RecordField colName="cmpprp_status_id" fieldIdRef="47" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_status_id" sqlTabName="campaignproposals" uid="{6d11d30e-26a6-4618-abd3-7406ca5652f5}"/>
+    <RecordField colName="cmpprp_price" fieldIdRef="48" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_price" sqlTabName="campaignproposals" uid="{6e6d7129-5e60-4c53-a876-f248f662a531}"/>
+    <RecordField colName="cmpprp_selectioncomment" fieldIdRef="49" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_selectioncomment" sqlTabName="campaignproposals" uid="{c87ffeab-3561-4150-be90-bfa8c5fe8961}"/>
+    <RecordField colName="cmpprp_islast" fieldIdRef="101" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_islast" sqlTabName="campaignproposals" uid="{cb8586ba-4730-460e-a59d-d74237df590b}"/>
+    <RecordField fieldIdRef="50" name="cur" uid="{3bf12c43-57fe-4238-9ff1-70dd6f835c8b}"/>
+    <RecordField fieldIdRef="107" name="cur1" uid="{289e00e2-2e06-4898-b843-f75e8dc04ee1}"/>
+  </Record>
+  <Record joinLeft="campaignproposedusers.cmpprpu_user_id" joinOperator="INNER" joinRight="users.usr_id" masterTable="campaignproposedusers" name="scr_campaignproposedusers" uid="{5d6426c8-97fc-43c9-9680-5350ba163d4b}">
+    <RecordField colName="cmpprpu_campaignproposal_id" fieldIdRef="51" fieldType="TABLE_COLUMN" name="campaignproposedusers.cmpprpu_campaignproposal_id" sqlTabName="campaignproposedusers" uid="{dd97e984-8a2e-4a66-b3c1-c82a0681febb}"/>
+    <RecordField colName="cmpprpu_user_id" fieldIdRef="52" fieldType="TABLE_COLUMN" name="campaignproposedusers.cmpprpu_user_id" sqlTabName="campaignproposedusers" uid="{4ef90b9c-6b5b-44e1-a791-5698d6b71bac}"/>
+    <RecordField colName="cmpprpu_uiorder" fieldIdRef="53" fieldType="TABLE_COLUMN" name="campaignproposedusers.cmpprpu_uiorder" sqlTabName="campaignproposedusers" uid="{86cee95c-b1e2-45a9-aa83-72f247a2d7d5}"/>
+    <RecordField colName="cmpprpu_isacceptedbybrand" fieldIdRef="54" fieldType="TABLE_COLUMN" name="campaignproposedusers.cmpprpu_isacceptedbybrand" sqlTabName="campaignproposedusers" uid="{07b8f884-79da-4ef6-81fa-cbe9e85317df}"/>
+    <RecordField colName="cmpprpu_comment" fieldIdRef="55" fieldType="TABLE_COLUMN" name="campaignproposedusers.cmpprpu_comment" sqlTabName="campaignproposedusers" uid="{94fadf1c-38c6-47c2-a19b-7540ed5c651c}"/>
+    <RecordField colName="cmpprpu_notificationdate" fieldIdRef="56" fieldType="TABLE_COLUMN" name="campaignproposedusers.cmpprpu_notificationdate" sqlTabName="campaignproposedusers" uid="{5108cf13-f97f-4a15-a9a8-2f336a94c9e5}"/>
+    <RecordField colName="cmpprpu_usertotalprice" fieldIdRef="105" fieldType="TABLE_COLUMN" name="campaignproposedusers.cmpprpu_usertotalprice" sqlTabName="campaignproposedusers" uid="{d8ac1c81-86f2-4f89-a2cd-f056b71faa0a}"/>
+    <RecordField colName="cmpprpu_salfatixtotalprice" fieldIdRef="106" fieldType="TABLE_COLUMN" name="campaignproposedusers.cmpprpu_salfatixtotalprice" sqlTabName="campaignproposedusers" uid="{61d269d3-773a-4e7a-965a-bd62a89242d3}"/>
+    <RecordField colName="cmpprpu_usergotproduct" fieldIdRef="113" fieldType="TABLE_COLUMN" name="campaignproposedusers.cmpprpu_usergotproduct" sqlTabName="campaignproposedusers" uid="{9ced1737-536f-493a-916d-41af5cc8a4da}"/>
+    <RecordField colName="usr_id" fieldIdRef="57" fieldType="TABLE_COLUMN" lookup="LOOKUP_u261_715" name="users.usr_id" sqlTabName="users" uid="{3fb58c21-a559-4021-8d2a-ec0faa4f1c6b}"/>
+    <RecordField colName="usr_gender_id" fieldIdRef="58" fieldType="TABLE_COLUMN" name="users.usr_gender_id" sqlTabName="users" uid="{d80d88c0-1b7f-4da1-8cf8-d04757a7df4a}"/>
+    <RecordField colName="usr_firstname" fieldIdRef="59" fieldType="TABLE_COLUMN" name="users.usr_firstname" sqlTabName="users" uid="{9be49664-2a61-439f-b096-bec20fb1162f}"/>
+    <RecordField colName="usr_lastname" fieldIdRef="60" fieldType="TABLE_COLUMN" name="users.usr_lastname" sqlTabName="users" uid="{6e7443f7-65ed-47ae-b304-01daafaa810e}"/>
+    <RecordField colName="usr_birthday" fieldIdRef="61" fieldType="TABLE_COLUMN" name="users.usr_birthday" sqlTabName="users" uid="{57975f28-c590-45d3-a816-34cf034eaec3}"/>
+    <RecordField colName="usr_email" fieldIdRef="62" fieldType="TABLE_COLUMN" name="users.usr_email" sqlTabName="users" uid="{a12e0d0a-8ea1-4698-91d2-8782ff12fd93}"/>
+    <RecordField colName="usr_password" fieldIdRef="63" fieldType="TABLE_COLUMN" name="users.usr_password" sqlTabName="users" uid="{8ee26e0f-980f-4a64-96d6-368ffdd1e7a7}"/>
+    <RecordField colName="usr_country_id" fieldIdRef="64" fieldType="TABLE_COLUMN" name="users.usr_country_id" sqlTabName="users" uid="{0f7079ae-1f1a-4561-85f4-0d0c5b6b07ec}"/>
+    <RecordField colName="usr_state_id" fieldIdRef="65" fieldType="TABLE_COLUMN" name="users.usr_state_id" sqlTabName="users" uid="{5cd5a68a-ef77-45c3-9360-08eef1ea460c}"/>
+    <RecordField colName="usr_city_id" fieldIdRef="66" fieldType="TABLE_COLUMN" name="users.usr_city_id" sqlTabName="users" uid="{f10b10e5-dbb4-448b-a29b-8271c356be10}"/>
+    <RecordField colName="usr_address_number" fieldIdRef="67" fieldType="TABLE_COLUMN" name="users.usr_address_number" sqlTabName="users" uid="{38758614-2014-4244-ab4d-f29f1d9bdf44}"/>
+    <RecordField colName="usr_address_street" fieldIdRef="68" fieldType="TABLE_COLUMN" name="users.usr_address_street" sqlTabName="users" uid="{8760cc30-76fc-4a24-9bcb-6e8ee8de7c60}"/>
+    <RecordField colName="usr_address_zipcode" fieldIdRef="69" fieldType="TABLE_COLUMN" name="users.usr_address_zipcode" sqlTabName="users" uid="{789de38a-7810-45b7-bb97-3ec82faf6ffb}"/>
+    <RecordField colName="usr_address_town" fieldIdRef="70" fieldType="TABLE_COLUMN" name="users.usr_address_town" sqlTabName="users" uid="{35f64beb-1ca3-46cc-a962-f7997e9806a8}"/>
+    <RecordField colName="usr_address_more" fieldIdRef="71" fieldType="TABLE_COLUMN" name="users.usr_address_more" sqlTabName="users" uid="{b8d1d6da-cc45-4b39-addc-1a59c6180507}"/>
+    <RecordField colName="usr_mobile_phone" fieldIdRef="72" fieldType="TABLE_COLUMN" name="users.usr_mobile_phone" sqlTabName="users" uid="{6d723701-8c16-42be-8ff4-b072221d351a}"/>
+    <RecordField colName="usr_instagram_userid" fieldIdRef="73" fieldType="TABLE_COLUMN" name="users.usr_instagram_userid" sqlTabName="users" uid="{6e6d1164-d1ab-4f33-946a-bd4f4ad84489}"/>
+    <RecordField colName="usr_instagram_username" fieldIdRef="74" fieldType="TABLE_COLUMN" name="users.usr_instagram_username" sqlTabName="users" uid="{f192da5b-ae09-4460-81bb-0a977dea6c78}"/>
+    <RecordField colName="usr_instagram_fullname" fieldIdRef="75" fieldType="TABLE_COLUMN" name="users.usr_instagram_fullname" sqlTabName="users" uid="{636d43fb-3727-426b-861d-d8ebd1ba729b}"/>
+    <RecordField colName="usr_instagram_profilepicture" fieldIdRef="76" fieldType="TABLE_COLUMN" name="users.usr_instagram_profilepicture" sqlTabName="users" uid="{990cf333-55ed-4880-93df-706f117adc90}"/>
+    <RecordField colName="usr_instagram_biography" fieldIdRef="77" fieldType="TABLE_COLUMN" name="users.usr_instagram_biography" sqlTabName="users" uid="{f91861be-3b82-4ca6-8e45-64500c6ff27d}"/>
+    <RecordField colName="usr_instagram_website" fieldIdRef="78" fieldType="TABLE_COLUMN" name="users.usr_instagram_website" sqlTabName="users" uid="{d1ee7623-645d-4353-9bb1-8125c5c6112a}"/>
+    <RecordField colName="usr_instagram_is_private" fieldIdRef="79" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_private" sqlTabName="users" uid="{1c678ef2-f4b2-481b-84a3-2931bca37862}"/>
+    <RecordField colName="usr_instagram_is_verified" fieldIdRef="80" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_verified" sqlTabName="users" uid="{2f9e680e-098d-46ba-9d5e-2a65176ef2e7}"/>
+    <RecordField colName="usr_instagram_is_business" fieldIdRef="81" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_business" sqlTabName="users" uid="{612c2714-d66e-470b-9c7d-3829bbdf8084}"/>
+    <RecordField colName="usr_bank_name" fieldIdRef="82" fieldType="TABLE_COLUMN" name="users.usr_bank_name" sqlTabName="users" uid="{0fc0111e-05e5-4201-91da-efc6afce87ba}"/>
+    <RecordField colName="usr_bank_iban" fieldIdRef="83" fieldType="TABLE_COLUMN" name="users.usr_bank_iban" sqlTabName="users" uid="{bf63e38a-6fe4-4eb2-b091-8236f348618b}"/>
+    <RecordField colName="usr_bank_swift" fieldIdRef="84" fieldType="TABLE_COLUMN" name="users.usr_bank_swift" sqlTabName="users" uid="{51fffdd5-c1dd-4211-b0e9-f1a459918816}"/>
+    <RecordField colName="usr_paypal" fieldIdRef="114" fieldType="TABLE_COLUMN" name="users.usr_paypal" sqlTabName="users" uid="{2042017e-6861-4db6-8044-39e0f6f98cff}"/>
+    <RecordField colName="usr_mobile_notifications" fieldIdRef="85" fieldType="TABLE_COLUMN" name="users.usr_mobile_notifications" sqlTabName="users" uid="{d3ac081f-ccd5-434d-8270-b58f74b05b84}"/>
+    <RecordField colName="usr_email_notifications" fieldIdRef="86" fieldType="TABLE_COLUMN" name="users.usr_email_notifications" sqlTabName="users" uid="{db88a038-fc05-4726-bc43-895b0185939f}"/>
+    <RecordField colName="usr_currency_id" fieldIdRef="87" fieldType="TABLE_COLUMN" name="users.usr_currency_id" sqlTabName="users" uid="{0e2f58aa-fbc5-42a6-9064-306a62be8b01}"/>
+    <RecordField colName="usr_accountstatus_id" fieldIdRef="88" fieldType="TABLE_COLUMN" name="users.usr_accountstatus_id" sqlTabName="users" uid="{75c15abe-de76-489b-8e26-26a02537525a}"/>
+    <RecordField colName="usr_createdby_id" fieldIdRef="89" fieldType="TABLE_COLUMN" name="users.usr_createdby_id" sqlTabName="users" uid="{0fb760b8-732d-4c1b-9aa5-62b40d054d17}"/>
+    <RecordField colName="usr_creationdate" fieldIdRef="90" fieldType="TABLE_COLUMN" name="users.usr_creationdate" sqlTabName="users" uid="{aaac819e-55d8-498d-a728-9329024ff562}"/>
+    <RecordField colName="usr_deletiondate" fieldIdRef="91" fieldType="TABLE_COLUMN" name="users.usr_deletiondate" sqlTabName="users" uid="{e7ddf4e6-1736-44d2-b385-83d00dc40cd4}"/>
+    <RecordField colName="usr_validationdate" fieldIdRef="92" fieldType="TABLE_COLUMN" name="users.usr_validationdate" sqlTabName="users" uid="{1316cc68-43ce-4b59-9ddb-579c8167fd5c}"/>
+    <RecordField colName="usr_canceldate" fieldIdRef="93" fieldType="TABLE_COLUMN" name="users.usr_canceldate" sqlTabName="users" uid="{577849d1-a8e8-45c9-87ea-3138d5c20be9}"/>
+    <RecordField colName="usr_suspendeddate" fieldIdRef="94" fieldType="TABLE_COLUMN" name="users.usr_suspendeddate" sqlTabName="users" uid="{57f88ce3-0ff6-49b4-ba0b-e2ac9e75dc78}"/>
+    <RecordField colName="usr_stopdate" fieldIdRef="95" fieldType="TABLE_COLUMN" name="users.usr_stopdate" sqlTabName="users" uid="{abd290e1-cc3e-4b64-9986-b80b535c2fb1}"/>
+    <RecordField colName="usr_emailvalidationdate" fieldIdRef="96" fieldType="TABLE_COLUMN" name="users.usr_emailvalidationdate" sqlTabName="users" uid="{c87dbb9e-911f-4664-98e7-b6d4964be7ae}"/>
+    <RecordField colName="usr_lastupdatedate" fieldIdRef="97" fieldType="TABLE_COLUMN" name="users.usr_lastupdatedate" sqlTabName="users" uid="{d7cb4ddd-882f-46e9-92d8-f846b9f1cea4}"/>
+    <RecordField colName="usr_lastlogindate" fieldIdRef="98" fieldType="TABLE_COLUMN" name="users.usr_lastlogindate" sqlTabName="users" uid="{917d77b8-4548-45ce-b5f2-709b6f86e622}"/>
+    <RecordField colName="usrmtc_reach" fieldIdRef="7" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_reach" sqlTabName="usermetrics" uid="{f8a28062-7d37-469b-bdb9-9b6bf50b1c73}"/>
+    <RecordField colName="usrmtc_followers_count" fieldIdRef="115" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_followers_count" sqlTabName="usermetrics" uid="{1b69534f-51e5-41d5-b319-38b9948aefa1}"/>
+    <RecordField colName="usr_instagram_profilepicture" fieldIdRef="99" fieldType="COLUMN_LIKE" name="usr_instagram_profilepicture" sqlTabName="users" uid="{1eb1f576-80c4-423d-8304-6ecd0157961b}"/>
+    <RecordField colName="cntr_name" fieldIdRef="111" fieldType="COLUMN_LIKE" name="usr_countryname" sqlTabName="countries" uid="{06b76ac1-3df1-416f-a632-f6a7b8969dff}"/>
+    <RecordField colName="stt_name" fieldIdRef="110" fieldType="COLUMN_LIKE" name="usr_statename" sqlTabName="states" uid="{2006e5ec-5ad4-4f37-b15f-52cbc8826284}"/>
+    <RecordField colName="cts_name" fieldIdRef="109" fieldType="COLUMN_LIKE" name="usr_cityname" sqlTabName="cities" uid="{4d00c3d4-ee7a-40fa-9f04-2e9bf5b596ef}"/>
+    <RecordField fieldIdRef="104" name="delimage" uid="{112a141f-9fa3-4b84-bdd6-1d9882cd6922}"/>
+    <RecordField fieldIdRef="103" name="viewinfluencer" uid="{5f39aefb-f568-40f7-90a7-1662e7dbd222}"/>
+    <RecordField fieldIdRef="102" name="editinfluencer" uid="{fd091c5b-a7a4-4ef5-91ff-17e59c726068}"/>
+  </Record>
+  <Record name="Undefined" uid="{e919200e-14b2-46ad-8a6b-e63153ca4e13}">
+    <RecordField fieldIdRef="100" name="ff_formtitle" uid="{3fa36fd5-e7f8-43c1-a9f0-79596e29342d}"/>
+  </Record>
+  <Form gridHeight="44" gridWidth="296" name="form" style="centerwindow" text="Form">
+    <Grid gridHeight="44" gridWidth="296" name="salfatixmedia1" posX="0" posY="0">
+      <HRec gridHeight="1" gridWidth="295" name="hrec1" posX="1" posY="8">
+        <Image action="backtocampaign" autoScale="true" comment="Back to campaign" gridHeight="1" gridWidth="3" image="fa-arrow-circle-left" lstrcomment="true" name="img_back" posX="0" posY="0" sizePolicy="fixed" style="no_border"/>
+        <Spacer gridWidth="135" name="spacer2" posX="4" posY="0"/>
+        <FFLabel fieldId="100" gridHeight="1" gridWidth="14" justify="center" name="ff_formtitle" posX="140" posY="0" style="ff_formtitle" title="fflabel1" widget="FFLabel"/>
+        <Spacer gridWidth="135" name="spacer1" posX="155" posY="0"/>
+        <Image autoScale="true" gridHeight="1" gridWidth="3" name="img_fake" posX="291" posY="0" sizePolicy="fixed" style="no_border"/>
+      </HRec>
+      <Group gridHeight="34" gridWidth="33" lstrtext="true" name="group1" posX="1" posY="10" text="SalfatixMedia proposal">
+        <Label gridHeight="1" gridWidth="30" name="campaigns_cmp_totalbudget_label" posX="1" posY="1" text="Campaign budget">
+          <Initializer text="dbschema:campaignproposals.cmpprp_selectioncomment/@label"/>
+        </Label>
+        <Edit colName="cmp_totalbudget" fieldId="17" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" name="campaigns.cmp_totalbudget" noEntry="true" posX="1" posY="2" sqlTabName="campaigns" tabIndex="-1" title="cmp_totalbudget" widget="Edit"/>
+        <FFLabel fieldId="107" gridHeight="1" gridWidth="3" name="cur1" posX="28" posY="2" title="fflabel1" widget="FFLabel"/>
+        <Label gridHeight="1" gridWidth="30" name="campaigns_cmp_wantedusers_label" posX="1" posY="3" text="Prefered number of influencers">
+          <Initializer text="dbschema:campaignproposals.cmpprp_selectioncomment/@label"/>
+        </Label>
+        <Edit colName="cmp_wantedusers" fieldId="21" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="campaigns.cmp_wantedusers" noEntry="true" posX="1" posY="4" sqlTabName="campaigns" tabIndex="-1" title="cmp_wantedusers" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="30" name="campaignproposals_cmpprp_comment_label2" posX="1" posY="5" text="Proposed budget">
+          <Initializer text="dbschema:campaignproposals.cmpprp_selectioncomment/@label"/>
+        </Label>
+        <Edit colName="cmpprp_price" fieldId="48" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="26" name="campaignproposals.cmpprp_price" posX="1" posY="6" scroll="true" sqlTabName="campaignproposals" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <FFLabel fieldId="50" gridHeight="1" gridWidth="3" name="cur" posX="28" posY="6" title="fflabel1" widget="FFLabel"/>
+        <Label gridHeight="1" gridWidth="30" name="campaignproposals_cmpprp_comment_label1" posX="1" posY="7" text="Comments">
+          <Initializer text="dbschema:campaignproposals.cmpprp_selectioncomment/@label"/>
+        </Label>
+        <TextEdit colName="cmpprp_selectioncomment" fieldId="49" fieldType="TABLE_COLUMN" gridHeight="5" gridWidth="30" name="campaignproposals.cmpprp_selectioncomment" posX="1" posY="8" sqlTabName="campaignproposals" tabIndex="-1" widget="TextEdit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </TextEdit>
+        <Label gridHeight="1" gridWidth="30" name="emptylabel" posX="1" posY="13" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="save" posX="1" posY="14" tabIndex="-1" text="Save"/>
+        <Label gridHeight="1" gridWidth="30" name="emptylabel1" posX="1" posY="15" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="importusers" posX="1" posY="16" tabIndex="-1" text="Refresh list"/>
+        <Label gridHeight="1" gridWidth="30" name="emptylabel2" posX="1" posY="17" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="submit" posX="1" posY="18" tabIndex="-1" text="Submit to brand"/>
+        <Label gridHeight="1" gridWidth="30" name="emptylabel4" posX="1" posY="19" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="toggleall" posX="1" posY="20" tabIndex="-1" text="Select all influencers"/>
+        <Label gridHeight="1" gridWidth="30" name="emptylabel5" posX="1" posY="21" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="acceptselection" posX="1" posY="22" tabIndex="-1" text="Accept selected influencer(s)"/>
+        <Label gridHeight="1" gridWidth="30" name="emptylabel6" posX="1" posY="23" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="rejectselection" posX="1" posY="24" tabIndex="-1" text="Reject selected influencer(s)"/>
+        <Label gridHeight="1" gridWidth="30" name="emptylabel3" posX="1" posY="25" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="acceptsalfatixproposal" posX="1" posY="26" tabIndex="-1" text="Accept Salfatix Media proposal"/>
+        <Label gridHeight="1" gridWidth="30" name="emptylabel7" posX="1" posY="27" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="submittosalfatix" posX="1" posY="28" tabIndex="-1" text="Submit for review by Salfatix Media"/>
+        <Label gridHeight="1" gridWidth="30" name="emptylabel8" posX="1" posY="29" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="reviewproposal" posX="1" posY="30" tabIndex="-1" text="Review proposal"/>
+        <Label gridHeight="1" gridWidth="30" name="emptylabel_exportlist" posX="1" posY="31" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="exportlist" posX="1" posY="32" tabIndex="-1" text="Export list"/>
+      </Group>
+      <Table gridHeight="34" gridWidth="261" name="salfatixmedia2" posX="35" posY="10" style="campaignproposallist" totalRows="10" unhidableColumns="true" unmovableColumns="true" unsortableColumns="true">
+        <Phantom colName="cmpprpu_campaignproposal_id" fieldId="51" fieldType="TABLE_COLUMN" name="campaignproposedusers.cmpprpu_campaignproposal_id" sqlTabName="campaignproposedusers" widget="Phantom"/>
+        <Phantom colName="cmpprpu_user_id" fieldId="52" fieldType="TABLE_COLUMN" name="campaignproposedusers.cmpprpu_user_id" sqlTabName="campaignproposedusers" widget="Phantom"/>
+        <Phantom colName="cmpprpu_uiorder" fieldId="53" fieldType="TABLE_COLUMN" name="campaignproposedusers.cmpprpu_uiorder" sqlTabName="campaignproposedusers" widget="Phantom"/>
+        <Phantom colName="usr_paypal" fieldId="114" fieldType="TABLE_COLUMN" name="users.usr_paypal" sqlTabName="users" widget="Phantom"/>
+        <FFImage action="delete" autoScale="true" fieldId="104" gridHeight="1" gridWidth="2" name="delimage" posX="0" posY="0" sizePolicy="fixed" style="no_border" title="" widget="FFImage"/>
+        <FFImage action="viewinfluencer" autoScale="true" fieldId="103" gridHeight="1" gridWidth="2" name="viewinfluencer" posX="2" posY="0" sizePolicy="fixed" style="no_border" title="" widget="FFImage"/>
+        <FFImage action="editinfluencer" autoScale="true" fieldId="102" gridHeight="1" gridWidth="2" name="editinfluencer" posX="4" posY="0" sizePolicy="fixed" style="no_border" title="" widget="FFImage"/>
+        <FFImage action="viewsocialnetwork" autoScale="true" colName="usr_instagram_profilepicture" fieldId="99" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" height="2" lstrtitle="true" name="usr_instagram_profilepicture" posX="6" posY="0" sizePolicy="fixed" sqlTabName="users" style="no_border" title="Profile" unitHeight="lines" widget="FFImage"/>
+        <Edit colName="usr_firstname" fieldId="59" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="users.usr_firstname" posX="14" posY="0" scroll="true" sqlTabName="users" tabIndex="-1" title="First name" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Edit colName="usr_lastname" fieldId="60" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="users.usr_lastname" posX="34" posY="0" scroll="true" sqlTabName="users" tabIndex="-1" title="Last name" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Edit colName="usrmtc_reach" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="usermetrics.usrmtc_reach" posX="54" posY="0" sqlTabName="usermetrics" tabIndex="-1" title="Reach" widget="Edit"/>
+        <Edit colName="usrmtc_followers_count" fieldId="115" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="usermetrics.usrmtc_followers_count" posX="60" posY="0" sqlTabName="usermetrics" tabIndex="-1" title="Nb Followers" widget="Edit"/>
+        <Edit aggregate="true" aggregateColName="cmpprpu_usertotalprice" aggregateFieldType="COLUMN_LIKE" aggregateName="influenceraggregate" aggregatePrecisionDecimal="10" aggregateScaleDecimal="2" aggregateSqlType="DECIMAL" aggregateTableName="campaignproposedusers" aggregateText="Influencers Total" aggregateType="sum" colName="cmpprpu_usertotalprice" fieldId="105" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstraggregateText="true" name="campaignproposedusers.cmpprpu_usertotalprice" posX="68" posY="0" sqlTabName="campaignproposedusers" tabIndex="-1" title="Influencer total price" widget="Edit"/>
+        <Edit aggregate="true" aggregateColName="cmpprpu_salfatixtotalprice" aggregateFieldType="COLUMN_LIKE" aggregateName="salfatixaggregate" aggregatePrecisionDecimal="10" aggregateScaleDecimal="2" aggregateSqlType="DECIMAL" aggregateTableName="campaignproposedusers" aggregateText="Salfatix Media Total" aggregateType="sum" colName="cmpprpu_salfatixtotalprice" fieldId="106" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" lstraggregateText="true" name="campaignproposedusers.cmpprpu_salfatixtotalprice" posX="88" posY="0" sqlTabName="campaignproposedusers" tabIndex="-1" title="Salfatix Media total price" widget="Edit"/>
+        <ComboBox colName="cmpprpu_isacceptedbybrand" fieldId="54" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="No, Yes" name="campaignproposedusers.cmpprpu_isacceptedbybrand" posX="108" posY="0" sqlTabName="campaignproposedusers" tabIndex="-1" title="Validated" widget="ComboBox">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+          <Item lstrtext="true" name="0" text="No"/>
+          <Item lstrtext="true" name="1" text="Yes"/>
+        </ComboBox>
+        <Edit colName="cmpprpu_comment" fieldId="55" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="campaignproposedusers.cmpprpu_comment" posX="118" posY="0" scroll="true" sqlTabName="campaignproposedusers" tabIndex="-1" title="Comment for Brand" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Edit colName="cmpprpu_notificationdate" fieldId="56" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" name="campaignproposedusers.cmpprpu_notificationdate" posX="148" posY="0" scroll="true" sqlTabName="campaignproposedusers" tabIndex="-1" title="Final notification date" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Phantom colName="usr_id" fieldId="57" fieldType="TABLE_COLUMN" name="users.usr_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_gender_id" fieldId="58" fieldType="TABLE_COLUMN" name="users.usr_gender_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_birthday" fieldId="61" fieldType="TABLE_COLUMN" name="users.usr_birthday" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_email" fieldId="62" fieldType="TABLE_COLUMN" name="users.usr_email" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_password" fieldId="63" fieldType="TABLE_COLUMN" name="users.usr_password" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_country_id" fieldId="64" fieldType="TABLE_COLUMN" name="users.usr_country_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_state_id" fieldId="65" fieldType="TABLE_COLUMN" name="users.usr_state_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_city_id" fieldId="66" fieldType="TABLE_COLUMN" name="users.usr_city_id" sqlTabName="users" widget="Phantom"/>
+        <Edit colName="cntr_name" fieldId="111" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="usr_countryname" posX="173" posY="0" sqlTabName="countries" tabIndex="-1" title="Country" widget="Edit"/>
+        <Edit colName="stt_name" fieldId="110" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="usr_statename" posX="181" posY="0" sqlTabName="states" tabIndex="-1" title="State" widget="Edit"/>
+        <Edit colName="cts_name" fieldId="109" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="12" name="usr_cityname" posX="189" posY="0" sqlTabName="cities" tabIndex="-1" title="City" widget="Edit"/>
+        <Edit colName="usr_address_number" fieldId="67" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="3" name="users.usr_address_number" posX="201" posY="0" sqlTabName="users" tabIndex="-1" title="N°" widget="Edit"/>
+        <Edit colName="usr_address_street" fieldId="68" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" name="users.usr_address_street" posX="204" posY="0" sqlTabName="users" tabIndex="-1" title="Street" widget="Edit"/>
+        <Edit colName="usr_address_zipcode" fieldId="69" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="users.usr_address_zipcode" posX="213" posY="0" sqlTabName="users" tabIndex="-1" title="Zipcode" widget="Edit"/>
+        <Edit colName="usr_address_town" fieldId="70" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="users.usr_address_town" posX="221" posY="0" sqlTabName="users" tabIndex="-1" title="Town" widget="Edit"/>
+        <Edit colName="usr_address_more" fieldId="71" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="users.usr_address_more" posX="229" posY="0" sqlTabName="users" tabIndex="-1" title="More" widget="Edit"/>
+        <Phantom colName="usr_mobile_phone" fieldId="72" fieldType="TABLE_COLUMN" name="users.usr_mobile_phone" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_userid" fieldId="73" fieldType="TABLE_COLUMN" name="users.usr_instagram_userid" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_username" fieldId="74" fieldType="TABLE_COLUMN" name="users.usr_instagram_username" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_fullname" fieldId="75" fieldType="TABLE_COLUMN" name="users.usr_instagram_fullname" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_profilepicture" fieldId="76" fieldType="TABLE_COLUMN" name="users.usr_instagram_profilepicture" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_biography" fieldId="77" fieldType="TABLE_COLUMN" name="users.usr_instagram_biography" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_website" fieldId="78" fieldType="TABLE_COLUMN" name="users.usr_instagram_website" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_is_private" fieldId="79" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_private" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_is_verified" fieldId="80" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_verified" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_is_business" fieldId="81" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_business" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_bank_name" fieldId="82" fieldType="TABLE_COLUMN" name="users.usr_bank_name" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_bank_iban" fieldId="83" fieldType="TABLE_COLUMN" name="users.usr_bank_iban" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_bank_swift" fieldId="84" fieldType="TABLE_COLUMN" name="users.usr_bank_swift" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_mobile_notifications" fieldId="85" fieldType="TABLE_COLUMN" name="users.usr_mobile_notifications" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_email_notifications" fieldId="86" fieldType="TABLE_COLUMN" name="users.usr_email_notifications" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_currency_id" fieldId="87" fieldType="TABLE_COLUMN" name="users.usr_currency_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_accountstatus_id" fieldId="88" fieldType="TABLE_COLUMN" name="users.usr_accountstatus_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_createdby_id" fieldId="89" fieldType="TABLE_COLUMN" name="users.usr_createdby_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_creationdate" fieldId="90" fieldType="TABLE_COLUMN" name="users.usr_creationdate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_deletiondate" fieldId="91" fieldType="TABLE_COLUMN" name="users.usr_deletiondate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_validationdate" fieldId="92" fieldType="TABLE_COLUMN" name="users.usr_validationdate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_canceldate" fieldId="93" fieldType="TABLE_COLUMN" name="users.usr_canceldate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_suspendeddate" fieldId="94" fieldType="TABLE_COLUMN" name="users.usr_suspendeddate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_stopdate" fieldId="95" fieldType="TABLE_COLUMN" name="users.usr_stopdate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_emailvalidationdate" fieldId="96" fieldType="TABLE_COLUMN" name="users.usr_emailvalidationdate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_lastupdatedate" fieldId="97" fieldType="TABLE_COLUMN" name="users.usr_lastupdatedate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_lastlogindate" fieldId="98" fieldType="TABLE_COLUMN" name="users.usr_lastlogindate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="cmpprpu_usergotproduct" fieldId="113" fieldType="TABLE_COLUMN" name="campaignproposedusers.cmpprpu_usergotproduct" sqlTabName="campaignproposedusers" widget="Phantom"/>
+      </Table>
+      <Phantom colName="cmp_id" fieldId="1" fieldType="TABLE_COLUMN" name="campaigns.cmp_id" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_brand_id" fieldId="2" fieldType="TABLE_COLUMN" name="campaigns.cmp_brand_id" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_pic_id" fieldId="3" fieldType="TABLE_COLUMN" name="campaigns.cmp_pic_id" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_title" fieldId="4" fieldType="TABLE_COLUMN" name="campaigns.cmp_title" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_overview" fieldId="5" fieldType="TABLE_COLUMN" name="campaigns.cmp_overview" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_url" fieldId="6" fieldType="TABLE_COLUMN" name="campaigns.cmp_url" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_prd_description" fieldId="8" fieldType="TABLE_COLUMN" name="campaigns.cmp_prd_description" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_prd_value" fieldId="9" fieldType="TABLE_COLUMN" name="campaigns.cmp_prd_value" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_post_guidelines" fieldId="10" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_guidelines" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_captionrequirements" fieldId="11" fieldType="TABLE_COLUMN" name="campaigns.cmp_captionrequirements" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_post_startdate" fieldId="12" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_startdate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_post_enddate" fieldId="13" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_enddate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_post_time_starttime" fieldId="14" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_time_starttime" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_post_time_endtime" fieldId="15" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_time_endtime" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_postduration_id" fieldId="16" fieldType="TABLE_COLUMN" name="campaigns.cmp_postduration_id" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_deposit" fieldId="18" fieldType="TABLE_COLUMN" name="campaigns.cmp_deposit" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_depositpercent" fieldId="19" fieldType="TABLE_COLUMN" name="campaigns.cmp_depositpercent" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_currency_id" fieldId="20" fieldType="TABLE_COLUMN" name="campaigns.cmp_currency_id" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_campaignstatus_id" fieldId="24" fieldType="TABLE_COLUMN" name="campaigns.cmp_campaignstatus_id" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_createdby_id" fieldId="25" fieldType="TABLE_COLUMN" name="campaigns.cmp_createdby_id" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_creationdate" fieldId="26" fieldType="TABLE_COLUMN" name="campaigns.cmp_creationdate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_publisheddate" fieldId="33" fieldType="TABLE_COLUMN" name="campaigns.cmp_publisheddate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_selectionstartdate" fieldId="34" fieldType="TABLE_COLUMN" name="campaigns.cmp_selectionstartdate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_selectionenddate" fieldId="35" fieldType="TABLE_COLUMN" name="campaigns.cmp_selectionenddate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_selectioncomment" fieldId="36" fieldType="TABLE_COLUMN" name="campaigns.cmp_selectioncomment" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_actionstartdate" fieldId="37" fieldType="TABLE_COLUMN" name="campaigns.cmp_actionstartdate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_actionenddate" fieldId="38" fieldType="TABLE_COLUMN" name="campaigns.cmp_actionenddate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_enddate" fieldId="39" fieldType="TABLE_COLUMN" name="campaigns.cmp_enddate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_lastupdatedate" fieldId="40" fieldType="TABLE_COLUMN" name="campaigns.cmp_lastupdatedate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmpprp_id" fieldId="41" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_id" sqlTabName="campaignproposals" widget="Phantom"/>
+      <Phantom colName="cmpprp_campaign_id" fieldId="42" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_campaign_id" sqlTabName="campaignproposals" widget="Phantom"/>
+      <Phantom colName="cmpprp_creationdate" fieldId="43" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_creationdate" sqlTabName="campaignproposals" widget="Phantom"/>
+      <Phantom colName="cmpprp_submitteddate" fieldId="44" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_submitteddate" sqlTabName="campaignproposals" widget="Phantom"/>
+      <Phantom colName="cmpprp_validationdate" fieldId="45" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_validationdate" sqlTabName="campaignproposals" widget="Phantom"/>
+      <Phantom colName="cmpprp_rejecteddate" fieldId="46" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_rejecteddate" sqlTabName="campaignproposals" widget="Phantom"/>
+      <Phantom colName="cmpprp_status_id" fieldId="47" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_status_id" sqlTabName="campaignproposals" widget="Phantom"/>
+      <Phantom colName="cmpprp_islast" fieldId="101" fieldType="TABLE_COLUMN" name="campaignproposals.cmpprp_islast" sqlTabName="campaignproposals" widget="Phantom"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA1AGQANgA0ADIANgBjADgALQA5ADcAZgBjAC0ANAAzAGMAOQAtADkANgA4ADAALQA1ADMANQAwAGIAYQAxADYAMwBkADQAYgB9QHTQAAAAAABACAAAAAAAAD+EeuFHrhR8AQAAAEwAewA1ADkAZgBlADEAMABhADcALQA4AGUAMwBmAC0ANAAxAGQAZgAtAGIAMABjADUALQBkADMANwBjADQAMABiADYAYwAxAGMAYgB9AAAAAAAAAAAAAAAAAAAAAD+AYk3S8an8AQAAAEwAewBlADkAMQA5ADIAMAAwAGUALQAxADQAYgAyAC0ANAA2AGEAZAAtADgAYQA2AGIALQBlADYAMwAxADUAMwBjAGEANABlADEAMwB9QEQAAAAAAABARAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="campaignlocations_country.tmp" build="3.20.07" sqlDbName="salfatixmedia" text="Country List" style="popup" width="36" height="21">
+  <LStr text="Country List"/>
+  <Grid name="grid1" width="36" height="21">
+    <Image name="img_back" width="5" height="3" action="close" image="fa-arrow-circle-left" autoScale="1" sizePolicy="fixed" style="no_border" comment="Back" posY="1" posX="3" gridWidth="5" gridHeight="3">
+      <LStr comment="Back"/>
+    </Image>
+    <Image name="img_accept" width="5" height="3" action="accept" image="fa-check-circle-green" autoScale="1" sizePolicy="fixed" style="no_border" comment="Validate" posY="1" posX="30" gridWidth="5" gridHeight="3">
+      <LStr comment="Validate"/>
+    </Image>
+    <FormField name="formonly.selection_lbl" colName="selection_lbl" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Label width="32" justify="center" posY="4" posX="3" gridWidth="32"/>
+    </FormField>
+    <Table pageSize="15" name="salfatixmedia2" style="zoomtable" doubleClick="selectrow" width="32" posY="5" posX="3" gridWidth="32" gridHeight="16" tabName="scrlist_country">
+      <PhantomColumn name="countries.cntr_id" colName="cntr_id" sqlType="INTEGER" required="1" notNull="1" fieldId="1" sqlTabName="countries">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="countries.cntr_sortname" colName="cntr_sortname" sqlType="VARCHAR(4)" required="1" notNull="1" fieldId="2" sqlTabName="countries">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <TableColumn name="countries.cntr_name" colName="cntr_name" sqlType="VARCHAR(64)" required="1" notNull="1" fieldId="3" sqlTabName="countries" text="Country" imageColumn="myimage" unsortable="1" unmovable="1" unhidable="1" unsizable="1" tabIndex="2">
+        <Edit width="30" scroll="1"/>
+        <LStr text="Country"/>
+      </TableColumn>
+      <PhantomColumn name="countries.cntr_phonecode" colName="cntr_phonecode" sqlType="INTEGER" required="1" notNull="1" fieldId="4" sqlTabName="countries">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="countries1.cntr_id" colName="cntr_id" sqlType="INTEGER" required="1" notNull="1" fieldId="6" sqlTabName="countries">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="formonly.myimage" colName="myimage" fieldId="5" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+    </Table>
+  </Grid>
+  <RecordView tabName="countries1">
+    <Link colName="cntr_id" fieldIdRef="6"/>
+  </RecordView>
+  <RecordView tabName="countries">
+    <Link colName="cntr_id" fieldIdRef="1"/>
+    <Link colName="cntr_sortname" fieldIdRef="2"/>
+    <Link colName="cntr_name" fieldIdRef="3"/>
+    <Link colName="cntr_phonecode" fieldIdRef="4"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="selection_lbl" fieldIdRef="0"/>
+    <Link colName="myimage" fieldIdRef="5"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="selection_lbl" fieldIdRef="0"/>
+  </RecordView>
+</Form>

@@ -1,0 +1,132 @@
+---------------------------------------------------------------------------------- 
+-- File created from /home/suresh/Documents/I2GEN_BACKUP/Bangalore_Team/Documents/salfatixmedia-02282020/lib/backofficeusers/backofficeuser_grid.4fd by Genero Studio
+-- WARNING! All changes made in this file will be lost!
+----------------------------------------------------------------------------------
+
+SCHEMA salfatixmedia
+
+ACTION DEFAULTS
+  ACTION zoomcountry(image="font:FontAwesome.ttf:f150", contextMenu=no)
+  ACTION zoomstate(image="font:FontAwesome.ttf:f150")
+  ACTION zoomcity(image="font:FontAwesome.ttf:f150")
+END -- ACTION DEFAULTS
+
+LAYOUT (text=%"Form", style="centerwindow")
+GRID salfatixmedia1
+{
+
+[ff_formtitle                     ]
+[pic_value   ]              [ffima]
+[            ]              [     ]
+[            ]              [     ]
+[            ]
+[            ]
+[upload_photo:                    ]
+[label3                           ]
+[label1                           ]
+[backofficeus|bousr_gender_id     ]
+[backofficeu1|bousr_firstname     ]
+[backofficeu2|bousr_lastname      ]
+[backofficeu3|bousr_email         ]
+[bousers_bous|bousr_password      ]
+[bousers_bou1|bousr_passwor1      ]
+[backofficeu4|phon|bousr_mobile_ph]
+[label2                           ]
+[label4                           ]
+[backofficeu5|cntr_name           ]
+[backofficeu6|stt_name            ]
+[backofficeu7|cts_name            ]
+[backofficeu8|bousr_address_number]
+[backofficeu9|bousr_address_street]
+[backofficeu0|bousr_address_zipcod]
+[backofficeua|bousr_address_town  ]
+[backofficeub|bousr_address_more  ]
+[label5                           ]
+[label6                           ]
+[backofficeuc|bousr_isadmin       ]
+
+[backofficeud|bousr_accountstatus_]
+[label7                           ]
+[account_actions_label            ]
+[stop_b:delet:                    ]
+}
+END -- salfatixmedia1
+END -- form
+
+TABLES
+backofficeusers,
+states,
+pics,
+backofficeusers1=backofficeusers,
+cities,
+countries
+ATTRIBUTES
+LABEL ff_formtitle=formonly.ff_formtitle, justify=center, style="ff_formtitle";
+IMAGE pic_value=pics.pic_value, action=upload_photo, autoScale, sizePolicy=fixed, style="no_border";
+IMAGE ffima=formonly.ffimage_value, action=save, autoScale, justify=center, sizePolicy=fixed, style="no_border", comment=%"Save";
+BUTTON upload_photo:upload_photo, text=%"Change Photo", style="brand_html";
+LABEL label3:label3, text=%" ";
+LABEL label1:label1, text=%"User Information", style="bouser_label_bold";
+LABEL backofficeus:backofficeusers_bousr_gender_id_label1, text=%"Gender";
+COMBOBOX bousr_gender_id=backofficeusers.bousr_gender_id, items=(("1", %"Other"),("2", %"Male"),("3", %"Female"));
+LABEL backofficeu1:backofficeusers_bousr_firstname_label1, text=%"First Name";
+EDIT bousr_firstname=backofficeusers.bousr_firstname, scroll;
+LABEL backofficeu2:backofficeusers_bousr_lastname_label1, text=%"Last Name";
+EDIT bousr_lastname=backofficeusers.bousr_lastname, scroll;
+LABEL backofficeu3:backofficeusers_bousr_email_label1, text=%"Email";
+EDIT bousr_email=backofficeusers.bousr_email, keyboardHint=email, scroll;
+LABEL bousers_bous:bousers_bouser_password_label1, text=%"Password";
+EDIT bousr_password=backofficeusers.bousr_password, invisible, scroll;
+LABEL bousers_bou1:bousers_bouser_password, text=%"Confirm Password";
+EDIT bousr_passwor1=backofficeusers1.bousr_password, invisible, scroll;
+LABEL backofficeu4:backofficeusers_bousr_mobile_phone_label1, text=%"Phone Number";
+LABEL phon=formonly.phonenumberprefix_label, justify=right;
+EDIT bousr_mobile_ph=backofficeusers.bousr_mobile_phone, scroll;
+LABEL label2:label2, text=%" ";
+LABEL label4:label4, text=%"Address", style="bouser_label_bold";
+LABEL backofficeu5:backofficeusers_bousr_country_id_label1, text=%"Country";
+BUTTONEDIT cntr_name=countries.cntr_name, action=zoomcountry, scroll, completer;
+LABEL backofficeu6:backofficeusers_bousr_state_id_label1, text=%"State";
+BUTTONEDIT stt_name=states.stt_name, action=zoomstate, scroll, completer;
+LABEL backofficeu7:backofficeusers_bousr_city_id_label1, text=%"City";
+BUTTONEDIT cts_name=cities.cts_name, action=zoomcity, scroll, completer;
+LABEL backofficeu8:backofficeusers_bousr_address_number_label1, text=%"Number";
+EDIT bousr_address_number=backofficeusers.bousr_address_number, scroll;
+LABEL backofficeu9:backofficeusers_bousr_address_street_label1, text=%"Street";
+EDIT bousr_address_street=backofficeusers.bousr_address_street, scroll;
+LABEL backofficeu0:backofficeusers_bousr_address_zipcode_label1, text=%"Zipcode";
+EDIT bousr_address_zipcod=backofficeusers.bousr_address_zipcode, scroll;
+LABEL backofficeua:backofficeusers_bousr_address_town_label1, text=%"Town", hidden;
+EDIT bousr_address_town=backofficeusers.bousr_address_town, hidden, scroll;
+LABEL backofficeub:backofficeusers_bousr_address_more_label1, text=%"More";
+EDIT bousr_address_more=backofficeusers.bousr_address_more, scroll;
+LABEL label5:label5, text=%" ";
+LABEL label6:label6, text=%"Other", style="bouser_label_bold";
+LABEL backofficeuc:backofficeusers_bousr_isadmin_label1, text=%"Is Administrator";
+CHECKBOX bousr_isadmin=backofficeusers.bousr_isadmin, text=%"";
+LABEL backofficeud:backofficeusers_bousr_accountstatus_id_label1, text=%"Status";
+COMBOBOX bousr_accountstatus_=backofficeusers.bousr_accountstatus_id, noEntry, initializer=bouser_status_combobox_initializer, scroll;
+LABEL label7:label7, text=%" ";
+LABEL account_actions_label:account_actions_label, text=%"Account Actions", style="brand_label_bold";
+BUTTON stop_b:stop_bouser, text=%"Stop";
+BUTTON delet:delete_bouser, text=%"Forget";
+PHANTOM backofficeusers.bousr_email_style;
+PHANTOM backofficeusers.bousr_country_id;
+PHANTOM backofficeusers.bousr_state_id;
+PHANTOM backofficeusers.bousr_city_id;
+PHANTOM backofficeusers.bousr_usrrole_id;
+PHANTOM backofficeusers.bousr_creationdate;
+PHANTOM backofficeusers.bousr_deletiondate;
+PHANTOM backofficeusers.bousr_id;
+PHANTOM backofficeusers.bousr_pic_id;
+PHANTOM backofficeusers.bousr_lastupdatedate;
+PHANTOM backofficeusers.bousr_lastlogindate;
+PHANTOM backofficeusers.bousr_stopdate;
+END -- ATTRIBUTES
+
+INSTRUCTIONS
+SCREEN RECORD scr_bouser_grid(backofficeusers.bousr_id,backofficeusers.bousr_password,backofficeusers.bousr_pic_id,backofficeusers.bousr_gender_id,backofficeusers.bousr_firstname,backofficeusers.bousr_lastname,backofficeusers.bousr_email,backofficeusers.bousr_email_style,backofficeusers.bousr_country_id,backofficeusers.bousr_state_id,backofficeusers.bousr_city_id,backofficeusers.bousr_address_number,backofficeusers.bousr_address_street,backofficeusers.bousr_address_zipcode,backofficeusers.bousr_address_town,backofficeusers.bousr_address_more,backofficeusers.bousr_mobile_phone,backofficeusers.bousr_isadmin,backofficeusers.bousr_usrrole_id,backofficeusers.bousr_accountstatus_id,backofficeusers.bousr_creationdate,backofficeusers.bousr_deletiondate,backofficeusers.bousr_stopdate,backofficeusers.bousr_lastupdatedate,backofficeusers.bousr_lastlogindate,pics.pic_value,backofficeusers1.bousr_password)
+SCREEN RECORD src_loc(countries.cntr_name,states.stt_name,cities.cts_name)
+SCREEN RECORD Undefined(formonly.ff_formtitle,formonly.ffimage_value,formonly.phonenumberprefix_label)
+END -- INSTRUCTIONS
+

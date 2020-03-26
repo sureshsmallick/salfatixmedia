@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Form name="img" build="3.20.08" width="28" height="4">
+  <Grid width="28" height="4">
+    <FormField name="formonly.img" colName="img" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Image width="25" height="4" posY="0" posX="2" gridWidth="25" gridHeight="4"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="img" fieldIdRef="0"/>
+  </RecordView>
+</Form>

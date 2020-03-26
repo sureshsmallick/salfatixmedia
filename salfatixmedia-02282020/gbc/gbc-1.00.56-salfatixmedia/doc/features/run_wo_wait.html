@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Run without waiting</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="features/index.html">Concepts &amp; Features</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="features/stack_win.html">Stacked windows</a>
+          
+          <a class="btn btn-sidebar active" href="features/run_wo_wait.html">Run without waiting</a>
+          
+          <a class="btn btn-sidebar " href="features/bootstrap.html">Application bootstrap</a>
+          
+          <a class="btn btn-sidebar " href="features/cookies.html">Use of cookies</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="features">
+<header class="page-title">
+  <em>Run without waiting</em>
+</header>
+<article class="md-content">
+<p>The Genero Browser Client (GBC) provides a mechanism for applications to be run as child programs that execute in the background, that is the parent program can continue to run without waiting for the child program to finish. To present this feature, we are providing you with this demonstration.</p>
+<h1 id="Before_you_begin">Before you begin <a class="header-anchor" href="features/run_wo_wait.html#Before_you_begin" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>It is recommended you complete the topic regarding <a href="features/stack_win.html">Stacked windows</a> prior to completing this demonstration.</p>
+<p>Start the standalone dispatcher from the command line using <code>httpdispatch</code>.</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> httpdispatch</span>
+</code></pre>
+<blockquote>
+<ul>
+<li>Launch the Genero Workplace Window to ensure an environment suitable for Genero commands.</li>
+</ul>
+</blockquote>
+<p>Open the demos application in your browser by entering the URL:
+http://localhost:6394/ua/r/gwc-demo.</p>
+<h1 id="Run_without_waiting_demonstration">Run without waiting demonstration <a class="header-anchor" href="features/run_wo_wait.html#Run_without_waiting_demonstration" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>For this demonstration, you will need to write and compile a Genero application.</p>
+<p>This example starts an application with stacked windows. It gives you the option to use a RUN WITHOUT WAITING command to start another instance of the application as a background process.</p>
+<h3 id="1__Create_the_Navigation_app_source">1. Create the Navigation app source <a class="header-anchor" href="features/run_wo_wait.html#1__Create_the_Navigation_app_source" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h3>
+<p>Copy and save the following Genero source as a file named <code>Navigation.4gl</code>.</p>
+<pre><code class="language-genero"># Property of Four Js*
+# (c) Copyright Four Js 1995, 2015. All Rights Reserved.
+# * Trademark of Four Js Development Tools Europe Ltd
+#   in the United States and elsewhere
+# 
+# Four Js and its suppliers do not warrant or guarantee that these
+# samples are accurate and suitable for your purposes. Their inclusion is
+# purely for information purposes only.
+
+MAIN
+  DEFINE cw STRING
+  DEFINE i INT
+
+  IF num_args() = 0 THEN LET i=1 ELSE LET i=arg_val(1) END IF
+  
+  OPEN FORM f FROM &quot;Navigation&quot;
+  DISPLAY FORM f
+  DISPLAY &quot;screen&quot; TO fname
+  
+  OPEN WINDOW w1 WITH FORM &quot;Navigation&quot;
+  CALL fgl_setTitle(&quot;Window w1 - &quot; || i)
+  DISPLAY &quot;w1&quot; TO fname
+
+  OPEN WINDOW w2 WITH FORM &quot;Navigation&quot;
+  CALL fgl_setTitle(&quot;Window w2 - &quot; || i)
+  DISPLAY &quot;w2&quot; TO fname
+
+  OPEN WINDOW w3 WITH FORM &quot;Navigation&quot;
+  CALL fgl_setTitle(&quot;Window w3 - &quot; || i)
+  DISPLAY &quot;w3&quot; TO fname
+  
+  WHILE 1
+    DISPLAY &quot;YES&quot; TO info
+    MENU &quot;Test&quot;
+      COMMAND &quot;w1&quot;      LET cw=&quot;w1&quot; EXIT MENU
+      COMMAND &quot;w2&quot;      LET cw=&quot;w2&quot; EXIT MENU
+      COMMAND &quot;w3&quot;      LET cw=&quot;w3&quot; EXIT MENU
+      COMMAND &quot;screen&quot;  LET cw=&quot;screen&quot; EXIT MENU
+      COMMAND &quot;RWW&quot;     RUN &quot;fglrun Navigation &quot; || i+1  WITHOUT WAITING
+      COMMAND KEY(INTERRUPT) &quot;Exit&quot; EXIT PROGRAM
+    END MENU
+    DISPLAY &quot;NO&quot; TO info
+    CASE cw
+      WHEN &quot;w1&quot; CURRENT WINDOW IS w1 
+      WHEN &quot;w2&quot; CURRENT WINDOW IS w2
+      WHEN &quot;w3&quot; CURRENT WINDOW IS w3
+      OTHERWISE CURRENT WINDOW IS SCREEN
+    END CASE
+    DISPLAY &quot;YES&quot; TO info
+  END WHILE
+END MAIN
+</code></pre>
+<blockquote>
+<p><em>NOTE</em>: The &quot;RWW&quot; menu command contains the instruction which allows you to start another instance of the application:</p>
+</blockquote>
+<pre><code class="language-genero">COMMAND &quot;RWW&quot; RUN &quot;fglrun Navigation &quot; || i+1  WITHOUT WAITING
+</code></pre>
+<h3 id="2__Create_the_Navigation_app_form">2. Create the Navigation app form <a class="header-anchor" href="features/run_wo_wait.html#2__Create_the_Navigation_app_form" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h3>
+<p>Copy and save the following Genero form definition as a file named <code>Navigation.per</code>.</p>
+<pre><code class="language-genero"># Property of Four Js*
+# (c) Copyright Four Js 1995, 2015. All Rights Reserved.
+# * Trademark of Four Js Development Tools Europe Ltd
+#   in the United States and elsewhere
+# 
+# Four Js and its suppliers do not warrant or guarantee that these
+# samples are accurate and suitable for your purposes. Their inclusion is
+# purely for information purposes only.
+
+LAYOUT
+GROUP(text=&quot;Test Current Window&quot;)
+GRID 
+{
+Window name [fw         ]
+Is current  [info       ]
+}
+END 
+END
+ATTRIBUTES
+  LABEL fw=formonly.fname;
+  EDIT info=formonly.info;
+END
+</code></pre>
+<h3 id="3__Compile_the_Navigation_app">3. Compile the Navigation app <a class="header-anchor" href="features/run_wo_wait.html#3__Compile_the_Navigation_app" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h3>
+<p>From the command line, compile the source code modules you have created (<code>Navigation.4gl</code> and <code>Navigation.per</code>) by typing the following commands:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> fglcomp Navigation.4gl</span>
+<span class="hljs-meta">$</span><span class="bash"> fglform Navigation.per</span>
+</code></pre>
+<p>Compiled files are created, <code>Navigation.42m</code> and <code>Navigation.42f</code>.</p>
+<h3 id="4__Create_the_Navigation_app_configuration_file">4. Create the Navigation app configuration file <a class="header-anchor" href="features/run_wo_wait.html#4__Create_the_Navigation_app_configuration_file" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h3>
+<p>Create an application configuration file for your application. Save the configuration file (named <code>Navigation.xcf</code>) in your <code>$(res.appdata.path)/app</code> directory.</p>
+<pre class="hljs"><code><span class="hljs-meta">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">APPLICATION</span> <span class="hljs-attr">Parent</span>=<span class="hljs-string">"defaultgwc"</span> <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span> 
+      <span class="hljs-attr">xsi:noNamespaceSchemaLocation</span>=<span class="hljs-string">"http://www.4js.com/ns/gas/3.00/cfextwa.xsd"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">EXECUTION</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">PATH</span>&gt;</span>*path_to_your_directory*<span class="hljs-tag">&lt;/<span class="hljs-name">PATH</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">MODULE</span>&gt;</span>Navigation.42m<span class="hljs-tag">&lt;/<span class="hljs-name">MODULE</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">EXECUTION</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">UA_OUTPUT</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">PUBLIC_IMAGEPATH</span>&gt;</span>$(res.public.resources)<span class="hljs-tag">&lt;/<span class="hljs-name">PUBLIC_IMAGEPATH</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">GBC</span>&gt;</span>_default<span class="hljs-tag">&lt;/<span class="hljs-name">GBC</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">UA_OUTPUT</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">APPLICATION</span>&gt;</span>
+</code></pre>
+<h3 id="5__Run_the_Navigation_app">5. Run the Navigation app <a class="header-anchor" href="features/run_wo_wait.html#5__Run_the_Navigation_app" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h3>
+<p>Request the Navigation application in your browser by entering the URL:
+http://localhost:6394/ua/r/Navigation</p>
+<p><img src="features/run-wo-wait.png" alt="Navigation application"></p>
+<p>The current window at the top of the stack (<strong>w3-1</strong>) is displayed.</p>
+<p>The current window's menu button options are: <strong>w1</strong>, <strong>w2</strong>, <strong>w3</strong>, <strong>screen</strong>, <strong>RWW</strong>, and <strong>Exit</strong>.</p>
+<p>The Window name field displays <strong>w3</strong> for the current window.</p>
+<p>The <strong>Is current</strong> field displays &quot;YES&quot; for the current window.</p>
+<p>The sidebar panel is updated with the Navigation tree, which has the following links to windows in the stack:</p>
+<ul>
+<li>Navigation
+<ul>
+<li>Screen</li>
+<li>Window w1 - 1</li>
+<li>Window w2 - 1</li>
+<li>Window w3 - 1</li>
+</ul>
+</li>
+</ul>
+<h3 id="6__Run_another_instance_of_the_Navigation_app">6. Run another instance of the Navigation app <a class="header-anchor" href="features/run_wo_wait.html#6__Run_another_instance_of_the_Navigation_app" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h3>
+<p>To have another instance of the Navigation application running at the same time:
+In the current window's <strong>Test</strong> menu panel, click <strong>RWW</strong>.
+The sidebar view is updated with another Navigation tree.</p>
+<p><img src="features/run-wo-wait-2.png" alt="Navigation application"></p>
+<p>From the sidebar view, select the current windows in each running instance of the Navigation application. For example:</p>
+<ul>
+<li>Select <strong>Window w3 - 1</strong></li>
+<li>Select <strong>Window w3 - 2</strong></li>
+</ul>
+<p>You should see that both applications have current windows. The first instance of the Navigation application you started (the parent program) continues to run without waiting for the second instance of Navigation (the child program) to finish.</p>
+<p>Select the different windows in the Navigation panel. The result of your selection will depend on the following:</p>
+<ul>
+<li>If the selected window is the current window, the <strong>Is current</strong> field value is &quot;YES&quot; and the <strong>Test</strong> menu panel is displayed.</li>
+<li>If the selected window is not current, the <strong>Is current</strong> field value is &quot;NO&quot; and the <strong>Test</strong> menu panel is not displayed.</li>
+</ul>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

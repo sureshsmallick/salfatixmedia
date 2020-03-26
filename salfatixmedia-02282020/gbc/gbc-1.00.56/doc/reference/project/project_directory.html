@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Project directory</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="reference/index.html">Reference</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="reference/url.html">URL reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/api.html">API reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/grunt/index.html">Grunt reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/grunt/configure_compilation.html">Configure your compilation</a>
+            
+            <a class="btn btn-sidebar " href="reference/grunt/fix_configuration_issues.html">Fix configuration issues</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/theme/index.html">Theme reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_conditions.html">Theme conditions</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_config_json.html">theme.config.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_scss_json_file.html">theme.scss.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_variables.html">Theme variables reference</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/project/index.html">Project reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar active" href="reference/project/project_directory.html">Project directory</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/customization_project.html">Customization project</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets.html">Widgets</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_js_file.html">Widget JavaScript file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_template_file.html">Widget template file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_scss_file.html">Widget scss file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets_with_modelhelper.html">Widgets with Modelhelper</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/deliverables.html">Deliverables</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/upgrading/index.html">Upgrading</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/compatibility.html">Compatibility</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/customization_migration.html">Customization migration</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deploy-runtime-on-gas.html">Deploy runtime on GAS</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.20.html">Upgrade to 3.20</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.10.html">Upgrade to 3.10</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="reference">
+<header class="page-title">
+  <em>Project directory</em>
+</header>
+<article class="md-content">
+<p>Before you can customize your GBC Web client, you need to unzip the GBC project zip file to a directory. See <a href="quickstarts/prep_gbc.html">Getting started with GBC</a>.</p>
+<p>A project directory (<em><code>gbc-project-dir</code></em>) serves as the GBC project root directory. Amongst its directories and files you will find the following:</p>
+<table>
+<thead>
+<tr>
+<th>Directory or file</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><code>gbc-project-dir</code></em><code>/archive/</code> (folder)</td>
+<td>The <code>archive</code> directory is created when you first package a customization for deployment. Each package contained within is saved as a compressed file and is named (by default) to include a reference to the project directory, a build number comprised of a timestamp, and the customization name.</td>
+</tr>
+<tr>
+<td><em><code>gbc-project-dir</code></em><code>/customization/</code> (folder)</td>
+<td>The customization directory is the root directory to your customization projects. You can have as many customization projects as you wish within this directory. Each customization project has its own customization project directory (<em><code>customization-project-dir</code></em>). For details about the <em><code>customization-project-dir</code></em>, see <a href="reference/project/customization_project.html">Customization project</a>.</td>
+</tr>
+<tr>
+<td><em><code>gbc-project-dir</code></em><code>/customization/sample</code> (folder)</td>
+<td>At installation, the customization directory contains a single customization directory. The <code>sample</code> directory is provided as the sample customization.</td>
+</tr>
+<tr>
+<td><em><code>gbc-project-dir</code></em><code>/dist/customization/</code> (folder)</td>
+<td>The <code>dist/customization</code> directory is created when you first build any customization project. It contains the generated deliverables, organized by customization. A directory is created for each compiled customization project. The name of the directory is taken from the name of the customization project, resulting in <code>dist/customization/</code><em><code>customization-project-dir</code></em>. See <a href="reference/project/deliverables.html">Deliverables</a>.</td>
+</tr>
+<tr>
+<td><em><code>gbc-project-dir</code></em><code>/dist/customization/sample</code> (folder)</td>
+<td>The generated deliverables for the sample customization. This directory is created the first time you build the sample customization.</td>
+</tr>
+<tr>
+<td><em><code>gbc-project-dir</code></em><code>/doc</code> (folder)</td>
+<td>The <code>doc</code> directory contains the GBC API reference documentation you are reading. This is intended to help you with the advanced GBC customization of the front-end. You can launch it by opening the <code>/doc/index.html</code> file in your browser. See <a href="fundamentals/view_gbc_doc.html">View the documentation</a>.</td>
+</tr>
+<tr>
+<td><em><code>gbc-project-dir</code></em><code>/license</code> (folder)</td>
+<td>This folder contains text documents with the end user license agreement.</td>
+</tr>
+<tr>
+<td><em><code>gbc-project-dir</code></em><code>/node_modules</code> (folder)</td>
+<td>The contents of this folder are used by npm and grunt when building a customization project. <em><strong>IMPORTANT</strong>: Do not modify the contents of this folder.</em></td>
+</tr>
+<tr>
+<td><em><code>gbc-project-dir</code></em><code>/release</code> (folder)</td>
+<td>This folder contains text documents with copyright information and the release notes.</td>
+</tr>
+<tr>
+<td><em><code>gbc-project-dir</code></em><code>/src</code> (folder)</td>
+<td>The <code>src</code> directory contains all the core source files that make up the default GBC front-end, to include JavaScript, HTML, CSS, and locale files. Examine the source files to familiarize yourself with how the front-end is implemented. <em><strong>IMPORTANT</strong>: We recommend that you leave the core sources untouched.</em></td>
+</tr>
+<tr>
+<td><em><code>gbc-project-dir</code></em><code>/theme</code> (folder)</td>
+<td>The <code>theme</code> directory contains the default global theme parts, such as the highcontrast theme. While you can create new theme parts at a global level, it is recommended that you create your theme parts at the local level. This will ease migration efforts for new releases of the GBC. See <a href="howdoi/themes/add_theme_part.html">Add a theme part</a>.</td>
+</tr>
+<tr>
+<td><em><code>gbc-project-dir</code></em><code>/custom.json</code> (file)</td>
+<td>This file contains the default compilation and theme instructions. For more information, see <a href="reference/grunt/configure_compilation.html">Configure your compilation</a></td>
+</tr>
+</tbody>
+</table>
+<p>There are other files located at the root of <em><code>gbc-project-dir</code></em>, however you will never be asked to modify these files.</p>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

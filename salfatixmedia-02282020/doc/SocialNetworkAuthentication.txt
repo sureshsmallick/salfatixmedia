@@ -1,0 +1,100 @@
+Action schema:
+--------------
+
+     +--------+                               +---------------+
+     |        |--(1)- Authorization Request ->|   Resource    |            
+     |        |                               |     Owner     |            
+     |        |<-(2)----- Redirect Url -------|               |                
+     |        |                               +---------------+             
+     |        |                                                            
+     |        |                               +---------------+            
+     |        |--(3)----- Code Request ------>|   Instagram   |            
+     |   GM   |<-(4)------ Redirection -------|     Server    |               
+     |        |--(5)---- Login Pwd Right ---->|(identity prov)|----------(8) 
+     | Code --|-------------------------------+---------------+<- Token   | 
+     |  |     |                                                  Request  | 
+     | (6)----|------------------------------>+---------------+   |       | 
+     |        |                               |    Resource   |--(7)    Token
+     |        |                               |     Server    |<----------+
+     |        |--(9)--- Request resource ---->|               |
+     +--------+<--(10)- Send resource --------+---------------+
+
+
+
+(1)  Requester tells Resource Owner it wants to connect to the application.
+
+(2)  Resource Owner sends to requester the URL, client_id and redirect_uri 
+     (Url to connect to resource owner).
+
+(3)  Requester sends to Instagram Server (Identity provider) a request for a
+     transaction code.
+
+(4)  Instagram server requests a redirection to a new URL.
+     
+(5)  Requester opens a browser tab or local app with the URL.
+     Requester enters the login and password and validate the rights (if not
+     already done)
+
+(6)  The browser or app sends the authorization request to the resource owner
+     through the requester (no direct connection, the web service redirects
+     the request automatically to "Location").
+
+(7)  Resource owner request the token from Instagram server.
+     
+(8)  Instagram server issues a token code to the resource owner.
+
+(9)  The requester asks for the token code.
+
+(10) Resource owner sends the resource to the requester.
+
+Can be simplified as all client requests get data needed but sould not be done.
+The client_secret should not be stored on the requester side.
+
+Notes:
+------
+redirect_uri is defined as following: https://name_of_resource_owner?id=some_value.
+Needs to be https for security reason (not needed for testing)
+
+To do:
+------
+Go to: https://api.instagram.com/
+Create your developer account
+Reference your application
+Copy the client_id and client_secret
+Define the redirect_uri (https://my.web.site/?this=that - name of query doesn't matter)
+Save the configuration
+If you're using an IP address, don't forget to update the redirect_uri each time your IP changes.
+
+
+http://sandilands.info/sgordon/diffie-hellman-secret-key-exchange-with-openssl
+
+Juste pour moi
+Pour transformer un x509 en rsa:
+openssl x509 -inform DER -outform PEM -in server.crt -out server.crt.pem
+
+Attention: 
+Ouvrir une fenetre terminal et positionner PATH pour utiliser openssl délivré
+avec la version de Genero utilisée
+
+Server Authority:
+Become a key administrator (certificate authority)
+openssl req -new -x509 -keyout ca.key -out ca.crt
+Certify the key
+openssl ca -in ..\Provider\ssoserver.csr -out ..\Provider\ssoserver.crt -cert ca.crt -keyfile ca.key
+
+To create the keys:
+SSO Server:
+Create your Diffie Hellman certificate (private / public key paire)
+openssl genpkey -genparam -algorithm DH -out dhSsoServerParam.pem -pkeyopt dh_paramgen_prime_len:1024
+openssl genpkey -paramfile dhSsoServerParam.pem -out ssoserver.key.pem
+openssl pkey -in ssoserver.key.pem -pubout -out ssoserver.pub.pem
+
+Consumer:
+Create your Diffie Hellman certificate (private / public key paire)
+openssl genpkey -genparam -algorithm DH -out dhConsumer1Param.pem -pkeyopt dh_paramgen_prime_len:1024
+openssl genpkey -paramfile dhConsumer1Param.pem -out Consumer1.key.pem
+openssl pkey -in Consumer1.key.pem -pubout -out Consumer1.pub.pem
+
+Send consumer1.pub.pem to SSO Server
+Send ssoserver.pub.pem to consumer
+

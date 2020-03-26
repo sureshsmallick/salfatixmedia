@@ -1,0 +1,20 @@
+Schema formonly
+
+Layout
+  Grid
+  {
+  [btn][bts][btq]
+  [im1          ]
+  [             ]
+  [             ]
+  [             ]
+  }
+  End
+End
+
+Attributes
+  Button btn : next, Text="";
+  Button bts : accept, Text="", Image="accept";
+  Button btq : cancel, Text="", Image="cancel";
+  Image  im1 = formonly.pic_value, SizePolicy=Fixed,Stretch=Both, Autoscale;
+End

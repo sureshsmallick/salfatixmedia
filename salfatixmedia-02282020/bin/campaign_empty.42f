@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="campaign_empty.tmp" build="3.20.07" text="Salfatixmedia Back-office" style="centerwindow" width="34" height="11">
+  <LStr text="Salfatixmedia Back-office"/>
+  <Grid name="grid1" width="34" height="11">
+    <Label name="label3" width="31" text="There is no created campaign" justify="center" style="ff_formtitle" posY="3" posX="2" gridWidth="31">
+      <LStr text="There is no created campaign"/>
+    </Label>
+    <Label name="label2" width="31" text=" " posY="4" posX="2" gridWidth="31">
+      <LStr text=" "/>
+    </Label>
+    <Label name="label4" width="31" text="Click the button to start creating a campaign" posY="5" posX="2" gridWidth="31">
+      <LStr text="Click the button to start creating a campaign"/>
+    </Label>
+    <Label name="label6" width="31" text=" " posY="6" posX="2" gridWidth="31">
+      <LStr text=" "/>
+    </Label>
+    <HBox posY="7" posX="2" gridWidth="31">
+      <SpacerItem/>
+      <Button name="addcampaign" width="11" text="" image="startcampaign" style="highvisible" tabIndex="1">
+        <LStr text=""/>
+      </Button>
+      <SpacerItem/>
+    </HBox>
+  </Grid>
+</Form>

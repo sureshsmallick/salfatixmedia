@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<APPLICATION Parent="defaultsalfatixmedia" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.4js.com/ns/gas/3.10/cfextwa.xsd">
+  <RESOURCE Id="res.salfatixmedia" Source="INTERNAL">$(res.salfatixmedia.app)</RESOURCE>
+  <RESOURCE Id="res.fgldir" Source="INTERNAL">$(res.salfatixmedia.fgldir)</RESOURCE>
+  <RESOURCE Id="res.gredir" Source="INTERNAL">$(res.salfatixmedia.gredir)</RESOURCE>
+  <EXECUTION AllowUrlParameters="TRUE">
+    <ENVIRONMENT_VARIABLE Id="INFORMIXSERVER">$(res.salfatixmedia.dbserver)</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="INFORMIXDIR">$(res.salfatixmedia.dbdir)</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="INFORMIXSQLHOSTS">$(res.salfatixmedia.dbdir)/etc/sqlhosts.$(res.salfatixmedia.dbserver)</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="LD_LIBRARY_PATH">$(res.fgldir)/lib:$(res.fgldir)/bin:$(res.salfatixmedia.dbdir)/lib:$(res.salfatixmedia.dbdir)/lib/esql:$(res.salfatixmedia.dbdir)/lib/tools:$(res.salfatixmedia.dbdir)/lib/cli</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="GL_USEGLU">1</ENVIRONMENT_VARIABLE>
+
+    <ENVIRONMENT_VARIABLE Id="FGLDIR">$(res.salfatixmedia.fgldir)</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="GREDIR">$(res.salfatixmedia.gredir)</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="LANG">en_US.utf8</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="CLIENT_LOCALE">en_us.utf8</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="DB_LOCALE">en_us.utf8</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="FGL_LENGTH_SEMANTICS">CHAR</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="DBDATE">DMY4/</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="FGLPROFILE">$(res.salfatixmedia.app.profile)</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="FGLRESOURCEPATH">$(res.salfatixmedia)/res:$(res.salfatixmedia)/bin</ENVIRONMENT_VARIABLE>
+    <ENVIRONMENT_VARIABLE Id="FGLIMAGEPATH">$(res.salfatixmedia)/res/imgs:$(res.salfatixmedia)/res/myimage2font.txt:$(res.fgldir)/lib/image2font.txt:$(res.fgldir)/lib</ENVIRONMENT_VARIABLE>
+    <!--ENVIRONMENT_VARIABLE Id="FGLSQLDEBUG">3</ENVIRONMENT_VARIABLE-->
+    <PATH>$(res.salfatixmedia)/bin</PATH>
+    <MODULE>salfatixmedia4backoffice.42r</MODULE>
+  </EXECUTION>
+  <AUTO_LOGOUT>
+    <TIMEOUT>28800</TIMEOUT>
+  </AUTO_LOGOUT>
+  <UA_OUTPUT>
+    <PUBLIC_IMAGEPATH>$(res.public.resources)</PUBLIC_IMAGEPATH>
+    <GWC-JS>$(res.salfatixmedia.gbc)</GWC-JS>
+  </UA_OUTPUT>
+</APPLICATION>

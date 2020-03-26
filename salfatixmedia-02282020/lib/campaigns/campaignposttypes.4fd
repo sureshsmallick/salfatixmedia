@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a0a" name="managedform" uid="{bad0f66a-5fef-486b-82f1-4f5d0283b578}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record joinLeft="campaignposttypes.cmppst_posttype_id" joinOperator="INNER" joinRight="posttypes.pstt_id" masterTable="campaignposttypes" name="scrlist_campaignposttypes" uid="{77eda45c-5299-4da8-ad96-f2cae0b897b7}">
+    <RecordField colName="cmppst_campaign_id" fieldIdRef="1" fieldType="TABLE_COLUMN" name="campaignposttypes.cmppst_campaign_id" sqlTabName="campaignposttypes" uid="{a98f88cd-ea3a-44d8-8f33-adc3afe88539}"/>
+    <RecordField colName="cmppst_posttype_id" fieldIdRef="2" fieldType="TABLE_COLUMN" name="campaignposttypes.cmppst_posttype_id" sqlTabName="campaignposttypes" uid="{9740233a-7334-4bea-9fba-97c82e572c28}"/>
+    <RecordField colName="cmppst_quantity" fieldIdRef="3" fieldType="TABLE_COLUMN" name="campaignposttypes.cmppst_quantity" sqlTabName="campaignposttypes" uid="{d3423007-4068-4952-a3f7-41707f7dc741}"/>
+    <RecordField colName="cmppst_tovalidate" fieldIdRef="7" fieldType="TABLE_COLUMN" name="campaignposttypes.cmppst_tovalidate" sqlTabName="campaignposttypes" uid="{eb805b0d-2bcc-4374-8efc-a17ba9347875}"/>
+    <RecordField colName="pstt_id" fieldIdRef="4" fieldType="TABLE_COLUMN" lookup="LOOKUP_u232_681" name="posttypes.pstt_id" sqlTabName="posttypes" uid="{5a3404e2-2345-48ca-9be5-20b9eb20b18d}"/>
+    <RecordField colName="pstt_name" fieldIdRef="5" fieldType="TABLE_COLUMN" name="posttypes.pstt_name" sqlTabName="posttypes" uid="{d11fb068-66c7-4327-8684-0949668aee6a}"/>
+    <RecordField colName="pstt_uiorder" fieldIdRef="6" fieldType="TABLE_COLUMN" name="posttypes.pstt_uiorder" sqlTabName="posttypes" uid="{ba9ce646-2181-4d7a-a3d2-c80708987f12}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="83" name="form" style="popup" text="Campaign post types">
+    <Grid gridHeight="21" gridWidth="56" name="grid1" posX="1" posY="0">
+      <Image action="close" autoScale="true" comment="Back" gridHeight="3" gridWidth="5" image="fa-arrow-circle-left" name="img_back" posX="3" posY="1" sizePolicy="fixed" style="no_border"/>
+      <Image action="accept" autoScale="true" comment="Validate" gridHeight="3" gridWidth="5" image="fa-check-circle-green" name="img_accept" posX="50" posY="1" sizePolicy="fixed" style="no_border"/>
+      <Table gridHeight="6" gridWidth="53" name="salfatixmedia1" posX="3" posY="4" style="zoomtable" totalRows="5">
+        <Phantom colName="cmppst_campaign_id" fieldId="1" fieldType="TABLE_COLUMN" name="campaignposttypes.cmppst_campaign_id" sqlTabName="campaignposttypes" widget="Phantom"/>
+        <Phantom colName="cmppst_posttype_id" fieldId="2" fieldType="TABLE_COLUMN" name="campaignposttypes.cmppst_posttype_id" sqlTabName="campaignposttypes" widget="Phantom"/>
+        <SpinEdit colName="cmppst_quantity" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="campaignposttypes.cmppst_quantity" posX="0" posY="0" scroll="true" sqlTabName="campaignposttypes" step="1" style="spineditarrowsize" tabIndex="-1" title="Quantity" valueMax="30" valueMin="0" widget="SpinEdit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </SpinEdit>
+        <Phantom colName="pstt_id" fieldId="4" fieldType="TABLE_COLUMN" name="posttypes.pstt_id" sqlTabName="posttypes" widget="Phantom"/>
+        <Edit colName="pstt_name" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="posttypes.pstt_name" noEntry="true" posX="7" posY="0" scroll="true" sqlTabName="posttypes" tabIndex="-1" title="Post type" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Phantom colName="pstt_uiorder" fieldId="6" fieldType="TABLE_COLUMN" name="posttypes.pstt_uiorder" sqlTabName="posttypes" widget="Phantom"/>
+        <ComboBox colName="cmppst_tovalidate" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" hidden="true" items="Yes, No" name="campaignposttypes.cmppst_tovalidate" notNull="true" posX="37" posY="0" sqlTabName="campaignposttypes" tabIndex="-1" title="Approval" widget="ComboBox">
+          <Item lstrtext="true" name="1" text="Yes"/>
+          <Item lstrtext="true" name="0" text="No"/>
+        </ComboBox>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA3ADcAZQBkAGEANAA1AGMALQA1ADIAOQA5AC0ANABkAGEAOAAtAGEAZAA5ADYALQBmADIAYwBhAGUAMABiADgAOQA3AGIANwB9QCQAAAAAAABAJAAAAAAAAD9QYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

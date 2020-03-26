@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="campaignposts_list_mobile.tmp" build="3.20.07" sqlDbName="salfatixmedia" text="Form" style="centerwindow" width="29" height="17">
+  <LStr text="Form"/>
+  <Grid name="grid1" width="29" height="17">
+    <ScrollGrid wantFixedPageSize="0" name="salfatixmedia1" doubleClick="editpost" style="campaignlisttable" pageSize="10" posY="1" posX="2" gridWidth="27" gridHeight="16">
+      <PhantomMatrix name="campaignposts.cmppost_id" colName="cmppost_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="5" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_campaign_id" colName="cmppost_campaign_id" sqlType="INTEGER" required="1" notNull="1" fieldId="6" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_usr_id" colName="cmppost_usr_id" sqlType="INTEGER" required="1" notNull="1" fieldId="7" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <Matrix name="campaignposts.cmppost_posttype_id" colName="cmppost_posttype_id" sqlType="INTEGER" required="1" notNull="1" fieldId="0" sqlTabName="campaignposts" tabIndex="1" pageSize="10" stepY="15">
+        <ComboBox width="18" justify="center" scroll="1" posY="1" posX="3" gridWidth="20"/>
+      </Matrix>
+      <PhantomMatrix name="campaignposts.cmppost_url" colName="cmppost_url" sqlType="VARCHAR(255)" fieldId="4" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_ispublic" colName="cmppost_ispublic" sqlType="SMALLINT" fieldId="3" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_status_id" colName="cmppost_status_id" sqlType="INTEGER" required="1" notNull="1" fieldId="8" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_screenshot_post" colName="cmppost_screenshot_post" sqlType="VARCHAR(255)" fieldId="9" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_screenshot_stat" colName="cmppost_screenshot_stat" sqlType="VARCHAR(255)" fieldId="10" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_creationdate" colName="cmppost_creationdate" sqlType="DATETIME YEAR TO SECOND" required="1" notNull="1" fieldId="11" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_onlinedate" colName="cmppost_onlinedate" sqlType="DATETIME YEAR TO SECOND" fieldId="38" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_lastmetricsdate" colName="cmppost_lastmetricsdate" sqlType="DATETIME YEAR TO SECOND" fieldId="39" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_youtube_viewcount" colName="cmppost_youtube_viewcount" sqlType="INTEGER" fieldId="12" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_youtube_likecount" colName="cmppost_youtube_likecount" sqlType="INTEGER" fieldId="13" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_youtube_dislikecount" colName="cmppost_youtube_dislikecount" sqlType="INTEGER" fieldId="14" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_youtube_favoritecount" colName="cmppost_youtube_favoritecount" sqlType="INTEGER" fieldId="15" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_youtube_commentcount" colName="cmppost_youtube_commentcount" sqlType="INTEGER" fieldId="16" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_ig_likes" colName="cmppost_ig_likes" sqlType="INTEGER" fieldId="17" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_ig_comments" colName="cmppost_ig_comments" sqlType="INTEGER" fieldId="18" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_ig_saved" colName="cmppost_ig_saved" sqlType="INTEGER" fieldId="19" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_ig_profilevisits" colName="cmppost_ig_profilevisits" sqlType="INTEGER" fieldId="20" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_ig_follows" colName="cmppost_ig_follows" sqlType="INTEGER" fieldId="21" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_ig_websiteclicks" colName="cmppost_ig_websiteclicks" sqlType="INTEGER" fieldId="22" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_ig_discovery" colName="cmppost_ig_discovery" sqlType="DECIMAL(5,2)" fieldId="23" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_ig_reach" colName="cmppost_ig_reach" sqlType="INTEGER" fieldId="24" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_ig_impressions" colName="cmppost_ig_impressions" sqlType="INTEGER" fieldId="25" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_instastory_impressions" colName="cmppost_instastory_impressions" sqlType="INTEGER" fieldId="26" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_instastory_reach" colName="cmppost_instastory_reach" sqlType="INTEGER" fieldId="27" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_instastory_tapsforward" colName="cmppost_instastory_tapsforward" sqlType="INTEGER" fieldId="28" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_instastory_tapsback" colName="cmppost_instastory_tapsback" sqlType="INTEGER" fieldId="29" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_instastory_replies" colName="cmppost_instastory_replies" sqlType="INTEGER" fieldId="30" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_instastory_swipeaway" colName="cmppost_instastory_swipeaway" sqlType="INTEGER" fieldId="31" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_instastory_exists" colName="cmppost_instastory_exists" sqlType="INTEGER" fieldId="32" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_isacceptedbysalfatix" colName="cmppost_isacceptedbysalfatix" sqlType="SMALLINT" fieldId="33" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_isacceptedbybrand" colName="cmppost_isacceptedbybrand" sqlType="SMALLINT" fieldId="34" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_filename" colName="cmppost_filename" sqlType="VARCHAR(255)" fieldId="35" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_postno" colName="cmppost_postno" sqlType="SMALLINT" fieldId="36" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaignposts.cmppost_uiorder" colName="cmppost_uiorder" sqlType="SMALLINT" fieldId="37" sqlTabName="campaignposts" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <Matrix name="pics.pic_value" colName="pic_value" sqlType="BYTE" required="1" notNull="1" fieldId="1" sqlTabName="pics" noEntry="1" tabIndex="2" pageSize="10" stepY="15">
+        <Image width="20" height="6" autoScale="1" stretch="both" sizePolicy="fixed" style="no_border center" posY="2" posX="3" gridWidth="20" gridHeight="6"/>
+      </Matrix>
+      <Matrix name="formonly.status_label" colName="status_label" fieldId="2" sqlTabName="formonly" noEntry="1" tabIndex="3" pageSize="10" stepY="15">
+        <Label width="20" justify="center" posY="8" posX="3" gridWidth="20"/>
+      </Matrix>
+    </ScrollGrid>
+  </Grid>
+  <RecordView tabName="campaignposts">
+    <Link colName="cmppost_posttype_id" fieldIdRef="0"/>
+    <Link colName="cmppost_ispublic" fieldIdRef="3"/>
+    <Link colName="cmppost_url" fieldIdRef="4"/>
+    <Link colName="cmppost_id" fieldIdRef="5"/>
+    <Link colName="cmppost_campaign_id" fieldIdRef="6"/>
+    <Link colName="cmppost_usr_id" fieldIdRef="7"/>
+    <Link colName="cmppost_status_id" fieldIdRef="8"/>
+    <Link colName="cmppost_screenshot_post" fieldIdRef="9"/>
+    <Link colName="cmppost_screenshot_stat" fieldIdRef="10"/>
+    <Link colName="cmppost_creationdate" fieldIdRef="11"/>
+    <Link colName="cmppost_youtube_viewcount" fieldIdRef="12"/>
+    <Link colName="cmppost_youtube_likecount" fieldIdRef="13"/>
+    <Link colName="cmppost_youtube_dislikecount" fieldIdRef="14"/>
+    <Link colName="cmppost_youtube_favoritecount" fieldIdRef="15"/>
+    <Link colName="cmppost_youtube_commentcount" fieldIdRef="16"/>
+    <Link colName="cmppost_ig_likes" fieldIdRef="17"/>
+    <Link colName="cmppost_ig_comments" fieldIdRef="18"/>
+    <Link colName="cmppost_ig_saved" fieldIdRef="19"/>
+    <Link colName="cmppost_ig_profilevisits" fieldIdRef="20"/>
+    <Link colName="cmppost_ig_follows" fieldIdRef="21"/>
+    <Link colName="cmppost_ig_websiteclicks" fieldIdRef="22"/>
+    <Link colName="cmppost_ig_discovery" fieldIdRef="23"/>
+    <Link colName="cmppost_ig_reach" fieldIdRef="24"/>
+    <Link colName="cmppost_ig_impressions" fieldIdRef="25"/>
+    <Link colName="cmppost_instastory_impressions" fieldIdRef="26"/>
+    <Link colName="cmppost_instastory_reach" fieldIdRef="27"/>
+    <Link colName="cmppost_instastory_tapsforward" fieldIdRef="28"/>
+    <Link colName="cmppost_instastory_tapsback" fieldIdRef="29"/>
+    <Link colName="cmppost_instastory_replies" fieldIdRef="30"/>
+    <Link colName="cmppost_instastory_swipeaway" fieldIdRef="31"/>
+    <Link colName="cmppost_instastory_exists" fieldIdRef="32"/>
+    <Link colName="cmppost_isacceptedbysalfatix" fieldIdRef="33"/>
+    <Link colName="cmppost_isacceptedbybrand" fieldIdRef="34"/>
+    <Link colName="cmppost_filename" fieldIdRef="35"/>
+    <Link colName="cmppost_postno" fieldIdRef="36"/>
+    <Link colName="cmppost_uiorder" fieldIdRef="37"/>
+    <Link colName="cmppost_onlinedate" fieldIdRef="38"/>
+    <Link colName="cmppost_lastmetricsdate" fieldIdRef="39"/>
+  </RecordView>
+  <RecordView tabName="pics">
+    <Link colName="pic_value" fieldIdRef="1"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="status_label" fieldIdRef="2"/>
+  </RecordView>
+  <RecordView tabName="scr_campaignpost_list">
+    <Link colName="cmppost_id" fieldIdRef="5"/>
+    <Link colName="cmppost_campaign_id" fieldIdRef="6"/>
+    <Link colName="cmppost_usr_id" fieldIdRef="7"/>
+    <Link colName="cmppost_posttype_id" fieldIdRef="0"/>
+    <Link colName="cmppost_url" fieldIdRef="4"/>
+    <Link colName="cmppost_ispublic" fieldIdRef="3"/>
+    <Link colName="cmppost_status_id" fieldIdRef="8"/>
+    <Link colName="cmppost_screenshot_post" fieldIdRef="9"/>
+    <Link colName="cmppost_screenshot_stat" fieldIdRef="10"/>
+    <Link colName="cmppost_creationdate" fieldIdRef="11"/>
+    <Link colName="cmppost_onlinedate" fieldIdRef="38"/>
+    <Link colName="cmppost_lastmetricsdate" fieldIdRef="39"/>
+    <Link colName="cmppost_youtube_viewcount" fieldIdRef="12"/>
+    <Link colName="cmppost_youtube_likecount" fieldIdRef="13"/>
+    <Link colName="cmppost_youtube_dislikecount" fieldIdRef="14"/>
+    <Link colName="cmppost_youtube_favoritecount" fieldIdRef="15"/>
+    <Link colName="cmppost_youtube_commentcount" fieldIdRef="16"/>
+    <Link colName="cmppost_ig_likes" fieldIdRef="17"/>
+    <Link colName="cmppost_ig_comments" fieldIdRef="18"/>
+    <Link colName="cmppost_ig_saved" fieldIdRef="19"/>
+    <Link colName="cmppost_ig_profilevisits" fieldIdRef="20"/>
+    <Link colName="cmppost_ig_follows" fieldIdRef="21"/>
+    <Link colName="cmppost_ig_websiteclicks" fieldIdRef="22"/>
+    <Link colName="cmppost_ig_discovery" fieldIdRef="23"/>
+    <Link colName="cmppost_ig_reach" fieldIdRef="24"/>
+    <Link colName="cmppost_ig_impressions" fieldIdRef="25"/>
+    <Link colName="cmppost_instastory_impressions" fieldIdRef="26"/>
+    <Link colName="cmppost_instastory_reach" fieldIdRef="27"/>
+    <Link colName="cmppost_instastory_tapsforward" fieldIdRef="28"/>
+    <Link colName="cmppost_instastory_tapsback" fieldIdRef="29"/>
+    <Link colName="cmppost_instastory_replies" fieldIdRef="30"/>
+    <Link colName="cmppost_instastory_swipeaway" fieldIdRef="31"/>
+    <Link colName="cmppost_instastory_exists" fieldIdRef="32"/>
+    <Link colName="cmppost_isacceptedbysalfatix" fieldIdRef="33"/>
+    <Link colName="cmppost_isacceptedbybrand" fieldIdRef="34"/>
+    <Link colName="cmppost_filename" fieldIdRef="35"/>
+    <Link colName="cmppost_postno" fieldIdRef="36"/>
+    <Link colName="cmppost_uiorder" fieldIdRef="37"/>
+    <Link colName="pic_value" fieldIdRef="1"/>
+    <Link colName="status_label" fieldIdRef="2"/>
+  </RecordView>
+</Form>

@@ -1,0 +1,1199 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="campaignpublications" build="3.20.07" sqlDbName="salfatixmedia" style="centerwindow" width="418" height="34">
+  <Folder>
+    <Page text="Influencers selection" action="refreshselected">
+      <LStr text="Influencers selection"/>
+      <Grid width="418" height="34">
+        <HBox posY="0" posX="1" gridWidth="416">
+          <Image name="img_back" width="9" action="backtocampaign" image="fa-arrow-circle-left" autoScale="1" sizePolicy="fixed" style="no_border" comment="Back to campaign">
+            <LStr comment="Back to campaign"/>
+          </Image>
+          <SpacerItem/>
+          <FormField name="formonly.ff_formtitle2" colName="ff_formtitle2" fieldId="8" sqlTabName="formonly" noEntry="1" tabIndex="1">
+            <Label width="13" justify="center" style="ff_formtitle"/>
+          </FormField>
+          <SpacerItem/>
+          <Image name="img_fak" width="8" autoScale="1" sizePolicy="fixed" style="no_border"/>
+        </HBox>
+        <Group name="group2" text="Campaign publication" style="no_border" posY="2" posX="0" gridWidth="24" gridHeight="27">
+          <PhantomFormField name="campaigns.cmp_id" colName="cmp_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="16" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_brand_id" colName="cmp_brand_id" sqlType="INTEGER" required="1" notNull="1" fieldId="17" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_pic_id" colName="cmp_pic_id" sqlType="INTEGER" required="1" notNull="1" fieldId="18" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_title" colName="cmp_title" sqlType="VARCHAR(64)" fieldId="19" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_overview" colName="cmp_overview" sqlType="VARCHAR(255)" fieldId="20" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_url" colName="cmp_url" sqlType="VARCHAR(255)" fieldId="21" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_isproductneeded" colName="cmp_isproductneeded" sqlType="SMALLINT" required="1" notNull="1" fieldId="22" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_prd_description" colName="cmp_prd_description" sqlType="VARCHAR(255)" fieldId="23" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_prd_value" colName="cmp_prd_value" sqlType="DECIMAL(10,2)" fieldId="24" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_issharedonfacebook" colName="cmp_issharedonfacebook" sqlType="SMALLINT" required="1" notNull="1" fieldId="25" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_sharedfacebooklink" colName="cmp_sharedfacebooklink" sqlType="VARCHAR(255)" fieldId="26" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_post_guidelines" colName="cmp_post_guidelines" sqlType="VARCHAR(128)" fieldId="27" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_captionrequirements" colName="cmp_captionrequirements" sqlType="VARCHAR(255)" fieldId="28" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_post_startdate" colName="cmp_post_startdate" sqlType="DATE" fieldId="29" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_post_enddate" colName="cmp_post_enddate" sqlType="DATE" fieldId="30" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_post_time_starttime" colName="cmp_post_time_starttime" sqlType="INTEGER" fieldId="31" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_post_time_endtime" colName="cmp_post_time_endtime" sqlType="INTEGER" fieldId="32" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_postduration_id" colName="cmp_postduration_id" sqlType="INTEGER" fieldId="33" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <LStr text="Campaign publication"/>
+          <HBox posY="1" posX="1" gridWidth="22">
+            <Label name="campaigns_cmp_totalbudget_label" width="14" text="Campaign budget">
+              <LStr text="Campaign budget"/>
+            </Label>
+            <SpacerItem/>
+            <Button name="viewprice" width="5" text="Prices" tabIndex="2">
+              <LStr text="Prices"/>
+            </Button>
+          </HBox>
+          <FormField name="campaigns.cmp_totalbudget" colName="cmp_totalbudget" sqlType="DECIMAL(10,2)" fieldId="9" sqlTabName="campaigns" noEntry="1" tabIndex="3">
+            <Edit width="18" posY="2" posX="1" gridWidth="18"/>
+          </FormField>
+          <PhantomFormField name="campaigns.cmp_deposit" colName="cmp_deposit" sqlType="DECIMAL(10,2)" fieldId="34" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_depositpercent" colName="cmp_depositpercent" sqlType="DECIMAL(6,2)" fieldId="35" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_currency_id" colName="cmp_currency_id" sqlType="INTEGER" fieldId="36" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <FormField name="formonly.cur" colName="cur" fieldId="10" sqlTabName="formonly" noEntry="1" tabIndex="4">
+            <Label width="3" posY="2" posX="20" gridWidth="3"/>
+          </FormField>
+          <Label name="campaigns_cmp_wantedusers_label" width="22" text="Prefered number of influencers" posY="3" posX="1" gridWidth="22">
+            <LStr text="Prefered number of influencers"/>
+          </Label>
+          <FormField name="campaigns.cmp_wantedusers" colName="cmp_wantedusers" sqlType="INTEGER" fieldId="11" sqlTabName="campaigns" noEntry="1" tabIndex="5">
+            <Edit width="22" posY="4" posX="1" gridWidth="22"/>
+          </FormField>
+          <PhantomFormField name="campaigns.cmp_campaignstatus_id" colName="cmp_campaignstatus_id" sqlType="INTEGER" required="1" notNull="1" fieldId="37" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_createdby_id" colName="cmp_createdby_id" sqlType="INTEGER" required="1" notNull="1" fieldId="38" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_creationdate" colName="cmp_creationdate" sqlType="DATETIME YEAR TO SECOND" required="1" notNull="1" fieldId="39" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <Label name="lbl_20" width="22" text="Influencers can see campaign from" posY="5" posX="1" gridWidth="22">
+            <LStr text="Influencers can see campaign from"/>
+          </Label>
+          <FormField name="campaigns.cmp_publisheddate" colName="cmp_publisheddate" sqlType="DATE" fieldId="12" sqlTabName="campaigns" tabIndex="6">
+            <DateEdit width="20" posY="6" posX="1" gridWidth="22"/>
+          </FormField>
+          <Label name="lbl_21" width="22" text="Influencers can apply from" posY="7" posX="1" gridWidth="22">
+            <LStr text="Influencers can apply from"/>
+          </Label>
+          <FormField name="campaigns.cmp_selectionstartdate" colName="cmp_selectionstartdate" sqlType="DATE" fieldId="13" sqlTabName="campaigns" tabIndex="7">
+            <DateEdit width="20" posY="8" posX="1" gridWidth="22"/>
+          </FormField>
+          <Label name="lbl_22" width="22" text="To" posY="9" posX="1" gridWidth="22">
+            <LStr text="To"/>
+          </Label>
+          <FormField name="campaigns.cmp_selectionenddate" colName="cmp_selectionenddate" sqlType="DATE" fieldId="14" sqlTabName="campaigns" tabIndex="8">
+            <DateEdit width="20" posY="10" posX="1" gridWidth="22"/>
+          </FormField>
+          <Label name="lbl_23" width="22" text="Internal comment" posY="11" posX="1" gridWidth="22">
+            <LStr text="Internal comment"/>
+          </Label>
+          <FormField name="campaigns.cmp_selectioncomment" colName="cmp_selectioncomment" sqlType="VARCHAR(128)" fieldId="15" sqlTabName="campaigns" tabIndex="9">
+            <TextEdit width="22" height="3" wantReturns="1" scroll="1" posY="12" posX="1" gridWidth="22" gridHeight="3"/>
+          </FormField>
+          <PhantomFormField name="campaigns.cmp_actionstartdate" colName="cmp_actionstartdate" sqlType="DATETIME YEAR TO SECOND" fieldId="40" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_actionenddate" colName="cmp_actionenddate" sqlType="DATETIME YEAR TO SECOND" fieldId="41" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_enddate" colName="cmp_enddate" sqlType="DATETIME YEAR TO SECOND" fieldId="42" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <PhantomFormField name="campaigns.cmp_lastupdatedate" colName="cmp_lastupdatedate" sqlType="DATETIME YEAR TO SECOND" fieldId="43" sqlTabName="campaigns">
+            <PhantomEdit width="1"/>
+          </PhantomFormField>
+          <Button name="refreshselected" width="22" text="Refresh list" posY="15" posX="1" gridWidth="22" tabIndex="10">
+            <LStr text="Refresh list"/>
+          </Button>
+          <FormField name="formonly.emptylabel0" colName="emptylabel0" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="11">
+            <Label width="22" posY="16" posX="1" gridWidth="22"/>
+          </FormField>
+          <Button name="save" width="22" text="Save" posY="17" posX="1" gridWidth="22" tabIndex="12">
+            <LStr text="Save"/>
+          </Button>
+          <FormField name="formonly.emptylabel1" colName="emptylabel1" fieldId="1" sqlTabName="formonly" noEntry="1" tabIndex="13">
+            <Label width="22" posY="18" posX="1" gridWidth="22"/>
+          </FormField>
+          <Button name="clearselected" width="22" text="Clear selection" posY="19" posX="1" gridWidth="22" tabIndex="14">
+            <LStr text="Clear selection"/>
+          </Button>
+          <FormField name="formonly.label_publish" colName="label_publish" fieldId="2" sqlTabName="formonly" noEntry="1" tabIndex="15">
+            <Label width="22" posY="20" posX="1" gridWidth="22"/>
+          </FormField>
+          <Button name="publish" width="22" text="Publish campaign" posY="21" posX="1" gridWidth="22" tabIndex="16">
+            <LStr text="Publish campaign"/>
+          </Button>
+          <FormField name="formonly.label_proposeall" colName="label_proposeall" fieldId="3" sqlTabName="formonly" noEntry="1" tabIndex="17">
+            <Label width="22" posY="22" posX="1" gridWidth="22"/>
+          </FormField>
+          <Button name="validateallbysalfatix" width="22" text="Propose all to brand" posY="23" posX="1" gridWidth="22" tabIndex="18">
+            <LStr text="Propose all to brand"/>
+          </Button>
+          <FormField name="formonly.emptylabel3" colName="emptylabel3" fieldId="4" sqlTabName="formonly" noEntry="1" tabIndex="19">
+            <Label width="22" posY="24" posX="1" gridWidth="22"/>
+          </FormField>
+          <Button name="exportlist" width="22" text="Export proposed influencers" posY="25" posX="1" gridWidth="22" tabIndex="20">
+            <LStr text="Export proposed influencers"/>
+          </Button>
+        </Group>
+        <Table pageSize="1" name="salfatixmedia2" doubleClick="deselect_influencer" height="10ln" style="campaignselectedlist" unhidableColumns="1" unmovableColumns="1" width="393" posY="2" posX="25" gridWidth="393" gridHeight="32" tabName="+tn_0">
+          <PhantomColumn name="campaignuserlist.cmpusrl_id" colName="cmpusrl_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="154" sqlTabName="campaignuserlist">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="campaignuserlist.cmpusrl_campaign_id" colName="cmpusrl_campaign_id" sqlType="INTEGER" required="1" notNull="1" fieldId="155" sqlTabName="campaignuserlist">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="campaignuserlist.cmpusrl_user_id" colName="cmpusrl_user_id" sqlType="INTEGER" required="1" notNull="1" fieldId="156" sqlTabName="campaignuserlist">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <TableColumn name="formonly.delimage" colName="delimage" fieldId="180" sqlTabName="formonly" noEntry="1" tabIndex="21">
+            <Image width="2" autoScale="1" sizePolicy="fixed" style="no_border" action="delete"/>
+          </TableColumn>
+          <TableColumn name="formonly.viewinfluencer2" colName="viewinfluencer2" fieldId="181" sqlTabName="formonly" noEntry="1" tabIndex="22">
+            <Image width="2" autoScale="1" sizePolicy="fixed" style="no_border" action="viewinfluencer"/>
+          </TableColumn>
+          <TableColumn name="formonly.editimage" colName="editimage" fieldId="182" sqlTabName="formonly" noEntry="1" tabIndex="23">
+            <Image width="2" autoScale="1" sizePolicy="fixed" style="no_border" action="editinfluencerselection"/>
+          </TableColumn>
+          <TableColumn name="formonly.usr_instagram_profilepicture2" colName="usr_instagram_profilepicture2" sqlType="VARCHAR" fieldId="106" sqlTabName="formonly" text="Profile" noEntry="1" tabIndex="24">
+            <Image width="12" autoScale="1" sizePolicy="fixed" style="no_border" height="2ln" action="viewsocialnetwork"/>
+            <LStr text="Profile"/>
+          </TableColumn>
+          <PhantomColumn name="formonly.user_phonenumber2" colName="user_phonenumber2" fieldId="112" sqlTabName="formonly">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="formonly.user_nb_followers2" colName="user_nb_followers2" fieldId="113" sqlTabName="formonly">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <TableColumn name="formonly.imganswer" colName="imganswer" fieldId="168" sqlTabName="formonly" text="Answer" noEntry="1" tabIndex="25">
+            <Image width="6" autoScale="1" sizePolicy="fixed" style="no_border"/>
+            <LStr text="Answer"/>
+          </TableColumn>
+          <TableColumn name="formonly.acceptedbysalfatiximage" colName="acceptedbysalfatiximage" fieldId="178" sqlTabName="formonly" text="Proposed" noEntry="1" tabIndex="26">
+            <Image width="7" autoScale="1" sizePolicy="fixed" style="no_border"/>
+            <LStr text="Proposed"/>
+          </TableColumn>
+          <TableColumn name="formonly.acceptedbybrandimage" colName="acceptedbybrandimage" fieldId="179" sqlTabName="formonly" text="Accepted" noEntry="1" tabIndex="27">
+            <Image width="7" autoScale="1" sizePolicy="fixed" style="no_border"/>
+            <LStr text="Accepted"/>
+          </TableColumn>
+          <TableColumn name="users2.usr_instagram_username" colName="usr_instagram_username" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="107" sqlTabName="users" text="User Name" tabIndex="28">
+            <Edit width="12" scroll="1"/>
+            <LStr text="User Name"/>
+          </TableColumn>
+          <PhantomColumn name="users2.usr_instagram_fullname" colName="usr_instagram_fullname" sqlType="VARCHAR(128)" fieldId="127" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_instagram_profilepicture" colName="usr_instagram_profilepicture" sqlType="VARCHAR(255)" fieldId="105" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_instagram_biography" colName="usr_instagram_biography" sqlType="VARCHAR(255)" fieldId="128" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_instagram_website" colName="usr_instagram_website" sqlType="VARCHAR(255)" fieldId="129" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_instagram_is_private" colName="usr_instagram_is_private" sqlType="SMALLINT" fieldId="130" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_instagram_is_verified" colName="usr_instagram_is_verified" sqlType="SMALLINT" fieldId="131" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_instagram_is_business" colName="usr_instagram_is_business" sqlType="SMALLINT" fieldId="132" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_bank_name" colName="usr_bank_name" sqlType="VARCHAR(128)" fieldId="133" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_bank_iban" colName="usr_bank_iban" sqlType="VARCHAR(64)" fieldId="134" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_bank_swift" colName="usr_bank_swift" sqlType="VARCHAR(64)" fieldId="135" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_paypal" colName="usr_paypal" sqlType="VARCHAR(128)" fieldId="136" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_mobile_notifications" colName="usr_mobile_notifications" sqlType="SMALLINT" fieldId="137" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_notif_style" colName="usr_notif_style" sqlType="CHAR(1)" fieldId="138" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_email_notifications" colName="usr_email_notifications" sqlType="SMALLINT" fieldId="139" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_email_style" colName="usr_email_style" sqlType="CHAR(1)" fieldId="140" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_currency_id" colName="usr_currency_id" sqlType="INTEGER" fieldId="141" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_accountstatus_id" colName="usr_accountstatus_id" sqlType="INTEGER" required="1" notNull="1" fieldId="142" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_createdby_id" colName="usr_createdby_id" sqlType="INTEGER" required="1" notNull="1" fieldId="143" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_creationdate" colName="usr_creationdate" sqlType="DATETIME YEAR TO SECOND" required="1" notNull="1" fieldId="144" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_deletiondate" colName="usr_deletiondate" sqlType="DATETIME YEAR TO SECOND" fieldId="145" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_validationdate" colName="usr_validationdate" sqlType="DATETIME YEAR TO SECOND" fieldId="146" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_canceldate" colName="usr_canceldate" sqlType="DATETIME YEAR TO SECOND" fieldId="147" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_suspendeddate" colName="usr_suspendeddate" sqlType="DATETIME YEAR TO SECOND" fieldId="148" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_stopdate" colName="usr_stopdate" sqlType="DATETIME YEAR TO SECOND" fieldId="149" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_emailvalidationdate" colName="usr_emailvalidationdate" sqlType="DATETIME YEAR TO SECOND" fieldId="150" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_lastupdatedate" colName="usr_lastupdatedate" sqlType="DATETIME YEAR TO SECOND" fieldId="151" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_lastlogindate" colName="usr_lastlogindate" sqlType="DATETIME YEAR TO SECOND" fieldId="152" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_instagram_token" colName="usr_instagram_token" sqlType="VARCHAR(255)" fieldId="153" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <TableColumn name="users2.usr_firstname" colName="usr_firstname" sqlType="VARCHAR(128)" fieldId="110" sqlTabName="users" text="First name" tabIndex="29">
+            <Edit width="13" scroll="1"/>
+            <LStr text="First name"/>
+          </TableColumn>
+          <TableColumn name="users2.usr_lastname" colName="usr_lastname" sqlType="VARCHAR(128)" fieldId="111" sqlTabName="users" text="Last name" tabIndex="30">
+            <Edit width="12" scroll="1"/>
+            <LStr text="Last name"/>
+          </TableColumn>
+          <PhantomColumn name="users2.usr_birthday" colName="usr_birthday" sqlType="DATE" fieldId="114" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_email" colName="usr_email" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="115" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_password" colName="usr_password" sqlType="VARCHAR(255)" required="1" notNull="1" fieldId="116" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_country_id" colName="usr_country_id" sqlType="INTEGER" required="1" notNull="1" fieldId="117" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_state_id" colName="usr_state_id" sqlType="INTEGER" fieldId="118" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_city_id" colName="usr_city_id" sqlType="INTEGER" fieldId="119" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_visibilitydate" colName="cmpusrl_visibilitydate" sqlType="DATE" required="1" notNull="1" fieldId="157" sqlTabName="campaignuserlist" text="See campaign from" tabIndex="31">
+            <DateEdit width="10"/>
+            <LStr text="See campaign from"/>
+          </TableColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_previewuser" colName="cmpusrl_previewuser" sqlType="SMALLINT" required="1" notNull="1" fieldId="158" sqlTabName="campaignuserlist" text="Preview" hidden="1" tabIndex="32" numAlign="1">
+            <ComboBox width="5" scroll="1">
+              <Item name="0" text="No">
+                <LStr text="No"/>
+              </Item>
+              <Item name="1" text="Yes">
+                <LStr text="Yes"/>
+              </Item>
+            </ComboBox>
+            <LStr text="Preview"/>
+          </TableColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_wantedbybrand" colName="cmpusrl_wantedbybrand" sqlType="SMALLINT" required="1" notNull="1" fieldId="159" sqlTabName="campaignuserlist" text="Required" tabIndex="33" numAlign="1">
+            <ComboBox width="6" scroll="1">
+              <Item name="0" text="No">
+                <LStr text="No"/>
+              </Item>
+              <Item name="1" text="Yes">
+                <LStr text="Yes"/>
+              </Item>
+            </ComboBox>
+            <LStr text="Required"/>
+          </TableColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_selectionstartdate" colName="cmpusrl_selectionstartdate" sqlType="DATE" required="1" notNull="1" fieldId="160" sqlTabName="campaignuserlist" text="Can apply from" tabIndex="34">
+            <DateEdit width="15"/>
+            <LStr text="Can apply from"/>
+          </TableColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_selectionenddate" colName="cmpusrl_selectionenddate" sqlType="DATE" required="1" notNull="1" fieldId="161" sqlTabName="campaignuserlist" text="To" tabIndex="35">
+            <DateEdit width="15"/>
+            <LStr text="To"/>
+          </TableColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_usertotalprice" colName="cmpusrl_usertotalprice" sqlType="DECIMAL(10,2)" required="1" notNull="1" fieldId="162" sqlTabName="campaignuserlist" text="Influencer Proposed Price" aggregateText="Influencers Total" aggregateType="sum" tabIndex="36" numAlign="1">
+            <Edit width="20"/>
+            <LStr text="Influencer Proposed Price" aggregateText="Influencers Total"/>
+          </TableColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_userwantedprice" colName="cmpusrl_userwantedprice" sqlType="DECIMAL(10,2)" fieldId="170" sqlTabName="campaignuserlist" text="Influencer wanted price" tabIndex="37" numAlign="1">
+            <Edit width="14" scroll="1"/>
+            <LStr text="Influencer wanted price"/>
+          </TableColumn>
+          <PhantomColumn name="campaignuserlist.cmpusrl_uiorder" colName="cmpusrl_uiorder" sqlType="INTEGER" fieldId="171" sqlTabName="campaignuserlist">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="campaignuserlist.cmpusrl_isacceptedbysalfatix" colName="cmpusrl_isacceptedbysalfatix" sqlType="SMALLINT" fieldId="172" sqlTabName="campaignuserlist">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="campaignuserlist.cmpusrl_isacceptedbybrand" colName="cmpusrl_isacceptedbybrand" sqlType="SMALLINT" fieldId="173" sqlTabName="campaignuserlist">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_salfatixtotalprice" colName="cmpusrl_salfatixtotalprice" sqlType="DECIMAL(10,2)" required="1" notNull="1" fieldId="163" sqlTabName="campaignuserlist" text="Brand Cost" aggregateText="Total" aggregateType="sum" tabIndex="38" numAlign="1">
+            <Edit width="20"/>
+            <LStr text="Brand Cost" aggregateText="Total"/>
+          </TableColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_tonotify" colName="cmpusrl_tonotify" sqlType="SMALLINT" required="1" notNull="1" fieldId="165" sqlTabName="campaignuserlist" text="To notify" hidden="1" tabIndex="39" numAlign="1">
+            <ComboBox width="7" scroll="1">
+              <Item name="0" text="No">
+                <LStr text="No"/>
+              </Item>
+              <Item name="1" text="Yes">
+                <LStr text="Yes"/>
+              </Item>
+            </ComboBox>
+            <LStr text="To notify"/>
+          </TableColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_notificationdate" colName="cmpusrl_notificationdate" sqlType="DATETIME YEAR TO SECOND" fieldId="166" sqlTabName="campaignuserlist" text="Notification date" hidden="1" tabIndex="40">
+            <DateEdit width="11"/>
+            <LStr text="Notification date"/>
+          </TableColumn>
+          <PhantomColumn name="campaignuserlist.cmpusrl_isacceptbyuser" colName="cmpusrl_isacceptbyuser" sqlType="SMALLINT" fieldId="167" sqlTabName="campaignuserlist">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_useranswerdate" colName="cmpusrl_useranswerdate" sqlType="DATETIME YEAR TO SECOND" fieldId="169" sqlTabName="campaignuserlist" text="Answer date" tabIndex="41">
+            <DateEdit width="8"/>
+            <LStr text="Answer date"/>
+          </TableColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_selectioncomment" colName="cmpusrl_selectioncomment" sqlType="VARCHAR(128)" fieldId="164" sqlTabName="campaignuserlist" text="Internal comment" tabIndex="42">
+            <Edit width="10" scroll="1"/>
+            <LStr text="Internal comment"/>
+          </TableColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_commentforbrand" colName="cmpusrl_commentforbrand" sqlType="VARCHAR(128)" fieldId="174" sqlTabName="campaignuserlist" text="Comment for brand" tabIndex="43">
+            <Edit width="14" scroll="1"/>
+            <LStr text="Comment for brand"/>
+          </TableColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_usergotproduct" colName="cmpusrl_usergotproduct" sqlType="SMALLINT" fieldId="175" sqlTabName="campaignuserlist" text="Influencer got product" tabIndex="44" numAlign="1">
+            <ComboBox width="12" scroll="1">
+              <Item name="0" text="No">
+                <LStr text="No"/>
+              </Item>
+              <Item name="1" text="Yes">
+                <LStr text="Yes"/>
+              </Item>
+            </ComboBox>
+            <LStr text="Influencer got product"/>
+          </TableColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_isuserpaid" colName="cmpusrl_isuserpaid" sqlType="SMALLINT" fieldId="176" sqlTabName="campaignuserlist" text="Influencer paid ?" tabIndex="45" numAlign="1">
+            <Edit width="10" scroll="1"/>
+            <LStr text="Influencer paid ?"/>
+          </TableColumn>
+          <TableColumn name="campaignuserlist.cmpusrl_userpaid" colName="cmpusrl_userpaid" sqlType="DECIMAL(10,2)" fieldId="177" sqlTabName="campaignuserlist" text="Paid to influencer" aggregateText="Total" aggregateType="sum" tabIndex="46" numAlign="1">
+            <Edit width="8" scroll="1"/>
+            <LStr text="Paid to influencer" aggregateText="Total"/>
+          </TableColumn>
+          <PhantomColumn name="users2.usr_id" colName="usr_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="108" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_gender_id" colName="usr_gender_id" sqlType="INTEGER" fieldId="109" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <TableColumn name="usermetrics.usrmtc_reach" colName="usrmtc_reach" sqlType="INTEGER" fieldId="186" sqlTabName="usermetrics" text="Reach" tabIndex="47" numAlign="1">
+            <Edit width="6"/>
+            <LStr text="Reach"/>
+          </TableColumn>
+          <TableColumn name="usermetrics.usrmtc_followers_count" colName="usrmtc_followers_count" sqlType="INTEGER" fieldId="187" sqlTabName="usermetrics" text="Nb Followers" tabIndex="48" numAlign="1">
+            <Edit width="8"/>
+            <LStr text="Nb Followers"/>
+          </TableColumn>
+          <TableColumn name="formonly.usr_countryname" colName="usr_countryname" sqlType="VARCHAR(64)" required="1" notNull="1" fieldId="188" sqlTabName="formonly" text="Country" tabIndex="49">
+            <Edit width="8"/>
+            <LStr text="Country"/>
+          </TableColumn>
+          <TableColumn name="formonly.usr_statename" colName="usr_statename" sqlType="VARCHAR(60)" required="1" notNull="1" fieldId="189" sqlTabName="formonly" text="State" tabIndex="50">
+            <Edit width="8"/>
+            <LStr text="State"/>
+          </TableColumn>
+          <TableColumn name="formonly.usr_cityname" colName="usr_cityname" sqlType="VARCHAR(60)" required="1" notNull="1" fieldId="190" sqlTabName="formonly" text="City" tabIndex="51">
+            <Edit width="12"/>
+            <LStr text="City"/>
+          </TableColumn>
+          <TableColumn name="users2.usr_address_number" colName="usr_address_number" sqlType="VARCHAR(16)" fieldId="120" sqlTabName="users" text="N°" tabIndex="52">
+            <Edit width="3"/>
+            <LStr text="N°"/>
+          </TableColumn>
+          <TableColumn name="users2.usr_address_street" colName="usr_address_street" sqlType="VARCHAR(128)" fieldId="121" sqlTabName="users" text="Street" tabIndex="53">
+            <Edit width="9"/>
+            <LStr text="Street"/>
+          </TableColumn>
+          <TableColumn name="users2.usr_address_zipcode" colName="usr_address_zipcode" sqlType="VARCHAR(128)" fieldId="122" sqlTabName="users" text="Zipcode" tabIndex="54">
+            <Edit width="8"/>
+            <LStr text="Zipcode"/>
+          </TableColumn>
+          <TableColumn name="users2.usr_address_town" colName="usr_address_town" sqlType="VARCHAR(128)" fieldId="123" sqlTabName="users" text="Town" hidden="1" tabIndex="55">
+            <Edit width="8"/>
+            <LStr text="Town"/>
+          </TableColumn>
+          <TableColumn name="users2.usr_address_more" colName="usr_address_more" sqlType="VARCHAR(128)" fieldId="124" sqlTabName="users" text="More" tabIndex="56">
+            <Edit width="8"/>
+            <LStr text="More"/>
+          </TableColumn>
+          <PhantomColumn name="users2.usr_mobile_phone" colName="usr_mobile_phone" sqlType="BIGINT" fieldId="125" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+          <PhantomColumn name="users2.usr_instagram_userid" colName="usr_instagram_userid" sqlType="BIGINT" fieldId="126" sqlTabName="users">
+            <PhantomEdit width="1"/>
+          </PhantomColumn>
+        </Table>
+        <PhantomFormField name="formonly.aggregate_usertotalprice" colName="aggregate_usertotalprice" sqlType="DECIMAL(10,2)" required="1" notNull="1" fieldId="183" sqlTabName="formonly">
+          <Aggregate width="20" fieldIdRef="162"/>
+        </PhantomFormField>
+        <PhantomFormField name="formonly.aggregate_salfatixtotalprice" colName="aggregate_salfatixtotalprice" sqlType="DECIMAL(10,2)" required="1" notNull="1" fieldId="184" sqlTabName="formonly">
+          <Aggregate width="20" fieldIdRef="163"/>
+        </PhantomFormField>
+        <PhantomFormField name="formonly.aggregate_cmpusrl_userpaid" colName="aggregate_cmpusrl_userpaid" sqlType="DECIMAL(10,2)" fieldId="185" sqlTabName="formonly">
+          <Aggregate width="8" fieldIdRef="177"/>
+        </PhantomFormField>
+        <Group name="group4" text="Actions on influencer" style="no_border" posY="29" posX="0" gridWidth="24" gridHeight="5">
+          <LStr text="Actions on influencer"/>
+          <Button name="validatedbysalfatix" width="22" text="Propose to brand" posY="1" posX="1" gridWidth="22" tabIndex="57">
+            <LStr text="Propose to brand"/>
+          </Button>
+          <Button name="rejectedbysalfatix" width="22" text="Reject" posY="2" posX="1" gridWidth="22" tabIndex="58">
+            <LStr text="Reject"/>
+          </Button>
+          <Button name="manageposts" width="22" text="Influencer posts" posY="3" posX="1" gridWidth="22" tabIndex="59">
+            <LStr text="Influencer posts"/>
+          </Button>
+        </Group>
+      </Grid>
+    </Page>
+    <Page name="p_search" text="Search influencers" action="refreshselectable">
+      <LStr text="Search influencers"/>
+      <Grid width="70" height="25">
+        <HBox posY="0" posX="1" gridWidth="68">
+          <Image name="img_back" width="9" action="backtocampaign" image="fa-arrow-circle-left" autoScale="1" sizePolicy="fixed" style="no_border" comment="Back to campaign">
+            <LStr comment="Back to campaign"/>
+          </Image>
+          <SpacerItem/>
+          <FormField name="formonly.ff_formtitle" colName="ff_formtitle" fieldId="7" sqlTabName="formonly" noEntry="1" tabIndex="60">
+            <Label width="12" justify="center" style="ff_formtitle"/>
+          </FormField>
+          <SpacerItem/>
+          <Image name="img_fak" width="8" autoScale="1" sizePolicy="fixed" style="no_border"/>
+        </HBox>
+        <Group name="group1" text="Search filters" style="no_border" posY="1" posX="0" gridWidth="30" gridHeight="24">
+          <LStr text="Search filters"/>
+          <Label name="label1" width="22" text="Sort By" posY="1" posX="1" gridWidth="22">
+            <LStr text="Sort By"/>
+          </Label>
+          <FormField name="formonly.radiogroup1" colName="radiogroup1" fieldId="44" sqlTabName="formonly" tabIndex="61">
+            <RadioGroup width="22" posY="2" posX="1" gridWidth="22">
+              <Item name="users.usr_firstname" text="FirstName">
+                <LStr text="FirstName"/>
+              </Item>
+              <Item name="users.usr_lastname" text="LastName">
+                <LStr text="LastName"/>
+              </Item>
+              <Item name="users.usr_email" text="Email">
+                <LStr text="Email"/>
+              </Item>
+              <Item name="users.usr_instagram_username" text="Instagram Account">
+                <LStr text="Instagram Account"/>
+              </Item>
+              <Item name="usermetrics.usrmtc_followers_count" text="Number of followers">
+                <LStr text="Number of followers"/>
+              </Item>
+              <Item name="usermetrics.usrmtc_reach" text="Reach">
+                <LStr text="Reach"/>
+              </Item>
+            </RadioGroup>
+          </FormField>
+          <Label name="label2" width="20" text="Order" posY="4" posX="1" gridWidth="20">
+            <LStr text="Order"/>
+          </Label>
+          <FormField name="formonly.radiogroup2" colName="radiogroup2" fieldId="45" sqlTabName="formonly" tabIndex="62">
+            <RadioGroup width="20" orientation="horizontal" posY="5" posX="1" gridWidth="20">
+              <Item name="asc" text="Ascending">
+                <LStr text="Ascending"/>
+              </Item>
+              <Item name="desc" text="Descending">
+                <LStr text="Descending"/>
+              </Item>
+            </RadioGroup>
+          </FormField>
+          <Label name="label3" width="22" text="Filter on first name" posY="6" posX="1" gridWidth="22">
+            <LStr text="Filter on first name"/>
+          </Label>
+          <FormField name="users1.usr_firstname" colName="usr_firstname" sqlType="VARCHAR(128)" fieldId="46" sqlTabName="users" tabIndex="63">
+            <Edit width="22" posY="7" posX="1" gridWidth="22"/>
+          </FormField>
+          <Label name="label4" width="22" text="Filter on last name" posY="8" posX="1" gridWidth="22">
+            <LStr text="Filter on last name"/>
+          </Label>
+          <FormField name="users1.usr_lastname" colName="usr_lastname" sqlType="VARCHAR(128)" fieldId="47" sqlTabName="users" tabIndex="64">
+            <Edit width="22" posY="9" posX="1" gridWidth="22"/>
+          </FormField>
+          <Label name="label5" width="22" text="Filter on email" posY="10" posX="1" gridWidth="22">
+            <LStr text="Filter on email"/>
+          </Label>
+          <FormField name="users1.usr_email" colName="usr_email" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="48" sqlTabName="users" tabIndex="65">
+            <Edit width="22" scroll="1" posY="11" posX="1" gridWidth="22"/>
+          </FormField>
+          <Label name="label7" width="22" text="Filter on Instagram account" posY="12" posX="1" gridWidth="22">
+            <LStr text="Filter on Instagram account"/>
+          </Label>
+          <FormField name="users1.usr_instagram_username" colName="usr_instagram_username" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="49" sqlTabName="users" tabIndex="66">
+            <Edit width="22" scroll="1" posY="13" posX="1" gridWidth="22"/>
+          </FormField>
+          <Label name="label6" width="22" text="Filter on number of followers" posY="14" posX="1" gridWidth="22">
+            <LStr text="Filter on number of followers"/>
+          </Label>
+          <FormField name="usermetrics1.usrmtc_followers_count" colName="usrmtc_followers_count" sqlType="INTEGER" fieldId="50" sqlTabName="usermetrics" tabIndex="67">
+            <Edit width="22" scroll="1" posY="15" posX="1" gridWidth="22"/>
+          </FormField>
+          <Label name="label8" width="22" text="Filter on reach" posY="16" posX="1" gridWidth="22">
+            <LStr text="Filter on reach"/>
+          </Label>
+          <FormField name="usermetrics1.usrmtc_reach" colName="usrmtc_reach" sqlType="INTEGER" fieldId="51" sqlTabName="usermetrics" tabIndex="68">
+            <Edit width="22" scroll="1" posY="17" posX="1" gridWidth="22"/>
+          </FormField>
+          <Button name="filter" width="22" text="Filter" posY="18" posX="1" gridWidth="22" tabIndex="69">
+            <LStr text="Filter"/>
+          </Button>
+          <FormField name="formonly.emptylabel5" colName="emptylabel5" fieldId="6" sqlTabName="formonly" noEntry="1" tabIndex="70">
+            <Label width="22" posY="19" posX="1" gridWidth="22"/>
+          </FormField>
+          <Button name="refreshselectable" width="22" text="Refresh list" posY="20" posX="1" gridWidth="22" tabIndex="71">
+            <LStr text="Refresh list"/>
+          </Button>
+          <FormField name="formonly.emptylabel4" colName="emptylabel4" fieldId="5" sqlTabName="formonly" noEntry="1" tabIndex="72">
+            <Label width="22" posY="21" posX="1" gridWidth="22"/>
+          </FormField>
+          <Button name="selectallselectable" width="22" text="Select All" posY="22" posX="1" gridWidth="22" tabIndex="73">
+            <LStr text="Select All"/>
+          </Button>
+        </Group>
+        <ScrollGrid wantFixedPageSize="0" name="salfatixmedia1" doubleClick="select_influencer" style="influencerlisttable" posY="1" posX="31" gridWidth="39" gridHeight="24" pageSize="1">
+          <PhantomMatrix name="users.usr_id" colName="usr_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="55" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_gender_id" colName="usr_gender_id" sqlType="INTEGER" fieldId="56" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <HBox posY="1" posX="1" gridWidth="37">
+            <Matrix name="formonly.viewinfluencer" colName="viewinfluencer" fieldId="103" sqlTabName="formonly" noEntry="1" tabIndex="74" pageSize="1">
+              <Image width="2" autoScale="1" sizePolicy="fixed" style="no_border" action="viewinfluencer"/>
+            </Matrix>
+            <Matrix name="formonly.selectinfluencer" colName="selectinfluencer" fieldId="102" sqlTabName="formonly" noEntry="1" tabIndex="75" pageSize="1">
+              <Image width="3" autoScale="1" sizePolicy="fixed" style="no_border" action="selectinfluencer"/>
+            </Matrix>
+            <SpacerItem/>
+            <Matrix name="formonly.deleteimage" colName="deleteimage" fieldId="104" sqlTabName="formonly" noEntry="1" tabIndex="76" pageSize="1">
+              <Image width="2" autoScale="1" sizePolicy="fixed" style="no_border" action="delete"/>
+            </Matrix>
+          </HBox>
+          <Matrix name="formonly.usr_instagram_profilepicture" colName="usr_instagram_profilepicture" sqlType="VARCHAR" fieldId="53" sqlTabName="formonly" noEntry="1" tabIndex="77" pageSize="1" stepY="23">
+            <Image width="12" height="4" autoScale="1" sizePolicy="fixed" style="no_border" action="viewsocialnetwork" posY="2" posX="1" gridWidth="12" gridHeight="4"/>
+          </Matrix>
+          <Matrix name="users.usr_firstname" colName="usr_firstname" sqlType="VARCHAR(128)" fieldId="57" sqlTabName="users" tabIndex="78" pageSize="1" stepY="23">
+            <Edit width="23" scroll="1" posY="2" posX="15" gridWidth="23"/>
+          </Matrix>
+          <Matrix name="users.usr_lastname" colName="usr_lastname" sqlType="VARCHAR(128)" fieldId="58" sqlTabName="users" tabIndex="79" pageSize="1" stepY="23">
+            <Edit width="23" scroll="1" posY="3" posX="15" gridWidth="23"/>
+          </Matrix>
+          <PhantomMatrix name="users.usr_birthday" colName="usr_birthday" sqlType="DATE" fieldId="62" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <Matrix name="users.usr_email" colName="usr_email" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="63" sqlTabName="users" tabIndex="80" pageSize="1" stepY="23">
+            <Edit width="23" scroll="1" posY="4" posX="15" gridWidth="23"/>
+          </Matrix>
+          <PhantomMatrix name="users.usr_password" colName="usr_password" sqlType="VARCHAR(255)" required="1" notNull="1" fieldId="64" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_country_id" colName="usr_country_id" sqlType="INTEGER" required="1" notNull="1" fieldId="65" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_state_id" colName="usr_state_id" sqlType="INTEGER" fieldId="66" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_city_id" colName="usr_city_id" sqlType="INTEGER" fieldId="67" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_address_number" colName="usr_address_number" sqlType="VARCHAR(16)" fieldId="68" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_address_street" colName="usr_address_street" sqlType="VARCHAR(128)" fieldId="69" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_address_zipcode" colName="usr_address_zipcode" sqlType="VARCHAR(128)" fieldId="70" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_address_town" colName="usr_address_town" sqlType="VARCHAR(128)" fieldId="71" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_address_more" colName="usr_address_more" sqlType="VARCHAR(128)" fieldId="72" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_mobile_phone" colName="usr_mobile_phone" sqlType="BIGINT" fieldId="73" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_instagram_userid" colName="usr_instagram_userid" sqlType="BIGINT" fieldId="74" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <Matrix name="formonly.user_phonenumber" colName="user_phonenumber" sqlType="VARCHAR" fieldId="59" sqlTabName="formonly" tabIndex="81" pageSize="1" stepY="23">
+            <Edit width="23" posY="5" posX="15" gridWidth="23"/>
+          </Matrix>
+          <Label name="lbl_insta" width="12" text="Instagram" posY="6" posX="1" gridWidth="12">
+            <LStr text="Instagram"/>
+          </Label>
+          <Matrix name="users.usr_instagram_username" colName="usr_instagram_username" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="54" sqlTabName="users" tabIndex="82" pageSize="1" stepY="23">
+            <Edit width="23" posY="6" posX="15" gridWidth="23"/>
+          </Matrix>
+          <PhantomMatrix name="users.usr_instagram_fullname" colName="usr_instagram_fullname" sqlType="VARCHAR(128)" fieldId="75" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_instagram_profilepicture" colName="usr_instagram_profilepicture" sqlType="VARCHAR(255)" fieldId="52" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_instagram_biography" colName="usr_instagram_biography" sqlType="VARCHAR(255)" fieldId="76" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_instagram_website" colName="usr_instagram_website" sqlType="VARCHAR(255)" fieldId="77" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_instagram_is_private" colName="usr_instagram_is_private" sqlType="SMALLINT" fieldId="78" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_instagram_is_verified" colName="usr_instagram_is_verified" sqlType="SMALLINT" fieldId="79" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_instagram_is_business" colName="usr_instagram_is_business" sqlType="SMALLINT" fieldId="80" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_bank_name" colName="usr_bank_name" sqlType="VARCHAR(128)" fieldId="81" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_bank_iban" colName="usr_bank_iban" sqlType="VARCHAR(64)" fieldId="82" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_bank_swift" colName="usr_bank_swift" sqlType="VARCHAR(64)" fieldId="83" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_paypal" colName="usr_paypal" sqlType="VARCHAR(128)" fieldId="84" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_mobile_notifications" colName="usr_mobile_notifications" sqlType="SMALLINT" fieldId="85" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_notif_style" colName="usr_notif_style" sqlType="CHAR(1)" fieldId="86" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_email_notifications" colName="usr_email_notifications" sqlType="SMALLINT" fieldId="87" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_email_style" colName="usr_email_style" sqlType="CHAR(1)" fieldId="88" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_currency_id" colName="usr_currency_id" sqlType="INTEGER" fieldId="89" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_accountstatus_id" colName="usr_accountstatus_id" sqlType="INTEGER" required="1" notNull="1" fieldId="90" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_createdby_id" colName="usr_createdby_id" sqlType="INTEGER" required="1" notNull="1" fieldId="91" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_creationdate" colName="usr_creationdate" sqlType="DATETIME YEAR TO SECOND" required="1" notNull="1" fieldId="92" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_deletiondate" colName="usr_deletiondate" sqlType="DATETIME YEAR TO SECOND" fieldId="93" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_validationdate" colName="usr_validationdate" sqlType="DATETIME YEAR TO SECOND" fieldId="94" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_canceldate" colName="usr_canceldate" sqlType="DATETIME YEAR TO SECOND" fieldId="95" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_suspendeddate" colName="usr_suspendeddate" sqlType="DATETIME YEAR TO SECOND" fieldId="96" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_stopdate" colName="usr_stopdate" sqlType="DATETIME YEAR TO SECOND" fieldId="97" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_emailvalidationdate" colName="usr_emailvalidationdate" sqlType="DATETIME YEAR TO SECOND" fieldId="98" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_lastupdatedate" colName="usr_lastupdatedate" sqlType="DATETIME YEAR TO SECOND" fieldId="99" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_lastlogindate" colName="usr_lastlogindate" sqlType="DATETIME YEAR TO SECOND" fieldId="100" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <PhantomMatrix name="users.usr_instagram_token" colName="usr_instagram_token" sqlType="VARCHAR(255)" fieldId="101" sqlTabName="users" pageSize="1">
+            <PhantomEdit width="1"/>
+          </PhantomMatrix>
+          <Label name="lbl_nbfollow" width="12" text="Followers" posY="7" posX="1" gridWidth="12">
+            <LStr text="Followers"/>
+          </Label>
+          <Matrix name="formonly.user_nb_followers" colName="user_nb_followers" sqlType="VARCHAR" fieldId="60" sqlTabName="formonly" tabIndex="83" pageSize="1" stepY="23">
+            <Edit width="23" posY="7" posX="15" gridWidth="23"/>
+          </Matrix>
+          <Label name="lbl_reach" width="12" text="Reach" posY="8" posX="1" gridWidth="12">
+            <LStr text="Reach"/>
+          </Label>
+          <Matrix name="formonly.user_reach" colName="user_reach" sqlType="VARCHAR" fieldId="61" sqlTabName="formonly" tabIndex="84" pageSize="1" stepY="23">
+            <Edit width="23" posY="8" posX="15" gridWidth="23"/>
+          </Matrix>
+        </ScrollGrid>
+      </Grid>
+    </Page>
+  </Folder>
+  <RecordView tabName="users1">
+    <Link colName="usr_firstname" fieldIdRef="46"/>
+    <Link colName="usr_lastname" fieldIdRef="47"/>
+    <Link colName="usr_email" fieldIdRef="48"/>
+    <Link colName="usr_instagram_username" fieldIdRef="49"/>
+  </RecordView>
+  <RecordView tabName="usermetrics1">
+    <Link colName="usrmtc_followers_count" fieldIdRef="50"/>
+    <Link colName="usrmtc_reach" fieldIdRef="51"/>
+  </RecordView>
+  <RecordView tabName="users">
+    <Link colName="usr_instagram_profilepicture" fieldIdRef="52"/>
+    <Link colName="usr_instagram_username" fieldIdRef="54"/>
+    <Link colName="usr_id" fieldIdRef="55"/>
+    <Link colName="usr_gender_id" fieldIdRef="56"/>
+    <Link colName="usr_firstname" fieldIdRef="57"/>
+    <Link colName="usr_lastname" fieldIdRef="58"/>
+    <Link colName="usr_birthday" fieldIdRef="62"/>
+    <Link colName="usr_email" fieldIdRef="63"/>
+    <Link colName="usr_password" fieldIdRef="64"/>
+    <Link colName="usr_country_id" fieldIdRef="65"/>
+    <Link colName="usr_state_id" fieldIdRef="66"/>
+    <Link colName="usr_city_id" fieldIdRef="67"/>
+    <Link colName="usr_address_number" fieldIdRef="68"/>
+    <Link colName="usr_address_street" fieldIdRef="69"/>
+    <Link colName="usr_address_zipcode" fieldIdRef="70"/>
+    <Link colName="usr_address_town" fieldIdRef="71"/>
+    <Link colName="usr_address_more" fieldIdRef="72"/>
+    <Link colName="usr_mobile_phone" fieldIdRef="73"/>
+    <Link colName="usr_instagram_userid" fieldIdRef="74"/>
+    <Link colName="usr_instagram_fullname" fieldIdRef="75"/>
+    <Link colName="usr_instagram_biography" fieldIdRef="76"/>
+    <Link colName="usr_instagram_website" fieldIdRef="77"/>
+    <Link colName="usr_instagram_is_private" fieldIdRef="78"/>
+    <Link colName="usr_instagram_is_verified" fieldIdRef="79"/>
+    <Link colName="usr_instagram_is_business" fieldIdRef="80"/>
+    <Link colName="usr_bank_name" fieldIdRef="81"/>
+    <Link colName="usr_bank_iban" fieldIdRef="82"/>
+    <Link colName="usr_bank_swift" fieldIdRef="83"/>
+    <Link colName="usr_paypal" fieldIdRef="84"/>
+    <Link colName="usr_mobile_notifications" fieldIdRef="85"/>
+    <Link colName="usr_notif_style" fieldIdRef="86"/>
+    <Link colName="usr_email_notifications" fieldIdRef="87"/>
+    <Link colName="usr_email_style" fieldIdRef="88"/>
+    <Link colName="usr_currency_id" fieldIdRef="89"/>
+    <Link colName="usr_accountstatus_id" fieldIdRef="90"/>
+    <Link colName="usr_createdby_id" fieldIdRef="91"/>
+    <Link colName="usr_creationdate" fieldIdRef="92"/>
+    <Link colName="usr_deletiondate" fieldIdRef="93"/>
+    <Link colName="usr_validationdate" fieldIdRef="94"/>
+    <Link colName="usr_canceldate" fieldIdRef="95"/>
+    <Link colName="usr_suspendeddate" fieldIdRef="96"/>
+    <Link colName="usr_stopdate" fieldIdRef="97"/>
+    <Link colName="usr_emailvalidationdate" fieldIdRef="98"/>
+    <Link colName="usr_lastupdatedate" fieldIdRef="99"/>
+    <Link colName="usr_lastlogindate" fieldIdRef="100"/>
+    <Link colName="usr_instagram_token" fieldIdRef="101"/>
+  </RecordView>
+  <RecordView tabName="usermetrics">
+    <Link colName="usrmtc_reach" fieldIdRef="186"/>
+    <Link colName="usrmtc_followers_count" fieldIdRef="187"/>
+  </RecordView>
+  <RecordView tabName="users2">
+    <Link colName="usr_instagram_profilepicture" fieldIdRef="105"/>
+    <Link colName="usr_instagram_username" fieldIdRef="107"/>
+    <Link colName="usr_id" fieldIdRef="108"/>
+    <Link colName="usr_gender_id" fieldIdRef="109"/>
+    <Link colName="usr_firstname" fieldIdRef="110"/>
+    <Link colName="usr_lastname" fieldIdRef="111"/>
+    <Link colName="usr_birthday" fieldIdRef="114"/>
+    <Link colName="usr_email" fieldIdRef="115"/>
+    <Link colName="usr_password" fieldIdRef="116"/>
+    <Link colName="usr_country_id" fieldIdRef="117"/>
+    <Link colName="usr_state_id" fieldIdRef="118"/>
+    <Link colName="usr_city_id" fieldIdRef="119"/>
+    <Link colName="usr_address_number" fieldIdRef="120"/>
+    <Link colName="usr_address_street" fieldIdRef="121"/>
+    <Link colName="usr_address_zipcode" fieldIdRef="122"/>
+    <Link colName="usr_address_town" fieldIdRef="123"/>
+    <Link colName="usr_address_more" fieldIdRef="124"/>
+    <Link colName="usr_mobile_phone" fieldIdRef="125"/>
+    <Link colName="usr_instagram_userid" fieldIdRef="126"/>
+    <Link colName="usr_instagram_fullname" fieldIdRef="127"/>
+    <Link colName="usr_instagram_biography" fieldIdRef="128"/>
+    <Link colName="usr_instagram_website" fieldIdRef="129"/>
+    <Link colName="usr_instagram_is_private" fieldIdRef="130"/>
+    <Link colName="usr_instagram_is_verified" fieldIdRef="131"/>
+    <Link colName="usr_instagram_is_business" fieldIdRef="132"/>
+    <Link colName="usr_bank_name" fieldIdRef="133"/>
+    <Link colName="usr_bank_iban" fieldIdRef="134"/>
+    <Link colName="usr_bank_swift" fieldIdRef="135"/>
+    <Link colName="usr_paypal" fieldIdRef="136"/>
+    <Link colName="usr_mobile_notifications" fieldIdRef="137"/>
+    <Link colName="usr_notif_style" fieldIdRef="138"/>
+    <Link colName="usr_email_notifications" fieldIdRef="139"/>
+    <Link colName="usr_email_style" fieldIdRef="140"/>
+    <Link colName="usr_currency_id" fieldIdRef="141"/>
+    <Link colName="usr_accountstatus_id" fieldIdRef="142"/>
+    <Link colName="usr_createdby_id" fieldIdRef="143"/>
+    <Link colName="usr_creationdate" fieldIdRef="144"/>
+    <Link colName="usr_deletiondate" fieldIdRef="145"/>
+    <Link colName="usr_validationdate" fieldIdRef="146"/>
+    <Link colName="usr_canceldate" fieldIdRef="147"/>
+    <Link colName="usr_suspendeddate" fieldIdRef="148"/>
+    <Link colName="usr_stopdate" fieldIdRef="149"/>
+    <Link colName="usr_emailvalidationdate" fieldIdRef="150"/>
+    <Link colName="usr_lastupdatedate" fieldIdRef="151"/>
+    <Link colName="usr_lastlogindate" fieldIdRef="152"/>
+    <Link colName="usr_instagram_token" fieldIdRef="153"/>
+  </RecordView>
+  <RecordView tabName="campaigns">
+    <Link colName="cmp_totalbudget" fieldIdRef="9"/>
+    <Link colName="cmp_wantedusers" fieldIdRef="11"/>
+    <Link colName="cmp_publisheddate" fieldIdRef="12"/>
+    <Link colName="cmp_selectionstartdate" fieldIdRef="13"/>
+    <Link colName="cmp_selectionenddate" fieldIdRef="14"/>
+    <Link colName="cmp_selectioncomment" fieldIdRef="15"/>
+    <Link colName="cmp_id" fieldIdRef="16"/>
+    <Link colName="cmp_brand_id" fieldIdRef="17"/>
+    <Link colName="cmp_pic_id" fieldIdRef="18"/>
+    <Link colName="cmp_title" fieldIdRef="19"/>
+    <Link colName="cmp_overview" fieldIdRef="20"/>
+    <Link colName="cmp_url" fieldIdRef="21"/>
+    <Link colName="cmp_isproductneeded" fieldIdRef="22"/>
+    <Link colName="cmp_prd_description" fieldIdRef="23"/>
+    <Link colName="cmp_prd_value" fieldIdRef="24"/>
+    <Link colName="cmp_issharedonfacebook" fieldIdRef="25"/>
+    <Link colName="cmp_sharedfacebooklink" fieldIdRef="26"/>
+    <Link colName="cmp_post_guidelines" fieldIdRef="27"/>
+    <Link colName="cmp_captionrequirements" fieldIdRef="28"/>
+    <Link colName="cmp_post_startdate" fieldIdRef="29"/>
+    <Link colName="cmp_post_enddate" fieldIdRef="30"/>
+    <Link colName="cmp_post_time_starttime" fieldIdRef="31"/>
+    <Link colName="cmp_post_time_endtime" fieldIdRef="32"/>
+    <Link colName="cmp_postduration_id" fieldIdRef="33"/>
+    <Link colName="cmp_deposit" fieldIdRef="34"/>
+    <Link colName="cmp_depositpercent" fieldIdRef="35"/>
+    <Link colName="cmp_currency_id" fieldIdRef="36"/>
+    <Link colName="cmp_campaignstatus_id" fieldIdRef="37"/>
+    <Link colName="cmp_createdby_id" fieldIdRef="38"/>
+    <Link colName="cmp_creationdate" fieldIdRef="39"/>
+    <Link colName="cmp_actionstartdate" fieldIdRef="40"/>
+    <Link colName="cmp_actionenddate" fieldIdRef="41"/>
+    <Link colName="cmp_enddate" fieldIdRef="42"/>
+    <Link colName="cmp_lastupdatedate" fieldIdRef="43"/>
+  </RecordView>
+  <RecordView tabName="campaignuserlist">
+    <Link colName="cmpusrl_id" fieldIdRef="154"/>
+    <Link colName="cmpusrl_campaign_id" fieldIdRef="155"/>
+    <Link colName="cmpusrl_user_id" fieldIdRef="156"/>
+    <Link colName="cmpusrl_visibilitydate" fieldIdRef="157"/>
+    <Link colName="cmpusrl_previewuser" fieldIdRef="158"/>
+    <Link colName="cmpusrl_wantedbybrand" fieldIdRef="159"/>
+    <Link colName="cmpusrl_selectionstartdate" fieldIdRef="160"/>
+    <Link colName="cmpusrl_selectionenddate" fieldIdRef="161"/>
+    <Link colName="cmpusrl_usertotalprice" fieldIdRef="162"/>
+    <Link colName="cmpusrl_salfatixtotalprice" fieldIdRef="163"/>
+    <Link colName="cmpusrl_selectioncomment" fieldIdRef="164"/>
+    <Link colName="cmpusrl_tonotify" fieldIdRef="165"/>
+    <Link colName="cmpusrl_notificationdate" fieldIdRef="166"/>
+    <Link colName="cmpusrl_isacceptbyuser" fieldIdRef="167"/>
+    <Link colName="cmpusrl_useranswerdate" fieldIdRef="169"/>
+    <Link colName="cmpusrl_userwantedprice" fieldIdRef="170"/>
+    <Link colName="cmpusrl_uiorder" fieldIdRef="171"/>
+    <Link colName="cmpusrl_isacceptedbysalfatix" fieldIdRef="172"/>
+    <Link colName="cmpusrl_isacceptedbybrand" fieldIdRef="173"/>
+    <Link colName="cmpusrl_commentforbrand" fieldIdRef="174"/>
+    <Link colName="cmpusrl_usergotproduct" fieldIdRef="175"/>
+    <Link colName="cmpusrl_isuserpaid" fieldIdRef="176"/>
+    <Link colName="cmpusrl_userpaid" fieldIdRef="177"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="emptylabel0" fieldIdRef="0"/>
+    <Link colName="emptylabel1" fieldIdRef="1"/>
+    <Link colName="label_publish" fieldIdRef="2"/>
+    <Link colName="label_proposeall" fieldIdRef="3"/>
+    <Link colName="emptylabel3" fieldIdRef="4"/>
+    <Link colName="emptylabel4" fieldIdRef="5"/>
+    <Link colName="emptylabel5" fieldIdRef="6"/>
+    <Link colName="ff_formtitle" fieldIdRef="7"/>
+    <Link colName="ff_formtitle2" fieldIdRef="8"/>
+    <Link colName="cur" fieldIdRef="10"/>
+    <Link colName="radiogroup1" fieldIdRef="44"/>
+    <Link colName="radiogroup2" fieldIdRef="45"/>
+    <Link colName="usr_instagram_profilepicture" fieldIdRef="53"/>
+    <Link colName="user_phonenumber" fieldIdRef="59"/>
+    <Link colName="user_nb_followers" fieldIdRef="60"/>
+    <Link colName="user_reach" fieldIdRef="61"/>
+    <Link colName="selectinfluencer" fieldIdRef="102"/>
+    <Link colName="viewinfluencer" fieldIdRef="103"/>
+    <Link colName="deleteimage" fieldIdRef="104"/>
+    <Link colName="usr_instagram_profilepicture2" fieldIdRef="106"/>
+    <Link colName="user_phonenumber2" fieldIdRef="112"/>
+    <Link colName="user_nb_followers2" fieldIdRef="113"/>
+    <Link colName="imganswer" fieldIdRef="168"/>
+    <Link colName="acceptedbysalfatiximage" fieldIdRef="178"/>
+    <Link colName="acceptedbybrandimage" fieldIdRef="179"/>
+    <Link colName="delimage" fieldIdRef="180"/>
+    <Link colName="viewinfluencer2" fieldIdRef="181"/>
+    <Link colName="editimage" fieldIdRef="182"/>
+    <Link colName="aggregate_usertotalprice" fieldIdRef="183"/>
+    <Link colName="aggregate_salfatixtotalprice" fieldIdRef="184"/>
+    <Link colName="aggregate_cmpusrl_userpaid" fieldIdRef="185"/>
+    <Link colName="usr_countryname" fieldIdRef="188"/>
+    <Link colName="usr_statename" fieldIdRef="189"/>
+    <Link colName="usr_cityname" fieldIdRef="190"/>
+  </RecordView>
+  <RecordView tabName="scr_influencer_list">
+    <Link colName="usr_id" fieldIdRef="55"/>
+    <Link colName="usr_gender_id" fieldIdRef="56"/>
+    <Link colName="usr_firstname" fieldIdRef="57"/>
+    <Link colName="usr_lastname" fieldIdRef="58"/>
+    <Link colName="usr_birthday" fieldIdRef="62"/>
+    <Link colName="usr_email" fieldIdRef="63"/>
+    <Link colName="usr_password" fieldIdRef="64"/>
+    <Link colName="usr_country_id" fieldIdRef="65"/>
+    <Link colName="usr_state_id" fieldIdRef="66"/>
+    <Link colName="usr_city_id" fieldIdRef="67"/>
+    <Link colName="usr_address_number" fieldIdRef="68"/>
+    <Link colName="usr_address_street" fieldIdRef="69"/>
+    <Link colName="usr_address_zipcode" fieldIdRef="70"/>
+    <Link colName="usr_address_town" fieldIdRef="71"/>
+    <Link colName="usr_address_more" fieldIdRef="72"/>
+    <Link colName="usr_mobile_phone" fieldIdRef="73"/>
+    <Link colName="usr_instagram_userid" fieldIdRef="74"/>
+    <Link colName="usr_instagram_username" fieldIdRef="54"/>
+    <Link colName="usr_instagram_fullname" fieldIdRef="75"/>
+    <Link colName="usr_instagram_profilepicture" fieldIdRef="52"/>
+    <Link colName="usr_instagram_biography" fieldIdRef="76"/>
+    <Link colName="usr_instagram_website" fieldIdRef="77"/>
+    <Link colName="usr_instagram_is_private" fieldIdRef="78"/>
+    <Link colName="usr_instagram_is_verified" fieldIdRef="79"/>
+    <Link colName="usr_instagram_is_business" fieldIdRef="80"/>
+    <Link colName="usr_bank_name" fieldIdRef="81"/>
+    <Link colName="usr_bank_iban" fieldIdRef="82"/>
+    <Link colName="usr_bank_swift" fieldIdRef="83"/>
+    <Link colName="usr_paypal" fieldIdRef="84"/>
+    <Link colName="usr_mobile_notifications" fieldIdRef="85"/>
+    <Link colName="usr_notif_style" fieldIdRef="86"/>
+    <Link colName="usr_email_notifications" fieldIdRef="87"/>
+    <Link colName="usr_email_style" fieldIdRef="88"/>
+    <Link colName="usr_currency_id" fieldIdRef="89"/>
+    <Link colName="usr_accountstatus_id" fieldIdRef="90"/>
+    <Link colName="usr_createdby_id" fieldIdRef="91"/>
+    <Link colName="usr_creationdate" fieldIdRef="92"/>
+    <Link colName="usr_deletiondate" fieldIdRef="93"/>
+    <Link colName="usr_validationdate" fieldIdRef="94"/>
+    <Link colName="usr_canceldate" fieldIdRef="95"/>
+    <Link colName="usr_suspendeddate" fieldIdRef="96"/>
+    <Link colName="usr_stopdate" fieldIdRef="97"/>
+    <Link colName="usr_emailvalidationdate" fieldIdRef="98"/>
+    <Link colName="usr_lastupdatedate" fieldIdRef="99"/>
+    <Link colName="usr_lastlogindate" fieldIdRef="100"/>
+    <Link colName="usr_instagram_token" fieldIdRef="101"/>
+    <Link colName="usr_instagram_profilepicture" fieldIdRef="53"/>
+    <Link colName="user_phonenumber" fieldIdRef="59"/>
+    <Link colName="user_nb_followers" fieldIdRef="60"/>
+    <Link colName="user_reach" fieldIdRef="61"/>
+    <Link colName="selectinfluencer" fieldIdRef="102"/>
+    <Link colName="viewinfluencer" fieldIdRef="103"/>
+    <Link colName="deleteimage" fieldIdRef="104"/>
+  </RecordView>
+  <RecordView tabName="scr_qbeinput">
+    <Link colName="radiogroup1" fieldIdRef="44"/>
+    <Link colName="radiogroup2" fieldIdRef="45"/>
+  </RecordView>
+  <RecordView tabName="scr_qbeconstruct">
+    <Link colName="usr_firstname" fieldIdRef="46"/>
+    <Link colName="usr_lastname" fieldIdRef="47"/>
+    <Link colName="usr_email" fieldIdRef="48"/>
+    <Link colName="usr_instagram_username" fieldIdRef="49"/>
+    <Link colName="usrmtc_followers_count" fieldIdRef="50"/>
+    <Link colName="usrmtc_reach" fieldIdRef="51"/>
+  </RecordView>
+  <RecordView tabName="scr_selected_list">
+    <Link colName="cmpusrl_id" fieldIdRef="154"/>
+    <Link colName="cmpusrl_campaign_id" fieldIdRef="155"/>
+    <Link colName="cmpusrl_user_id" fieldIdRef="156"/>
+    <Link colName="cmpusrl_visibilitydate" fieldIdRef="157"/>
+    <Link colName="cmpusrl_previewuser" fieldIdRef="158"/>
+    <Link colName="cmpusrl_wantedbybrand" fieldIdRef="159"/>
+    <Link colName="cmpusrl_selectionstartdate" fieldIdRef="160"/>
+    <Link colName="cmpusrl_selectionenddate" fieldIdRef="161"/>
+    <Link colName="cmpusrl_selectioncomment" fieldIdRef="164"/>
+    <Link colName="cmpusrl_tonotify" fieldIdRef="165"/>
+    <Link colName="cmpusrl_notificationdate" fieldIdRef="166"/>
+    <Link colName="cmpusrl_isacceptbyuser" fieldIdRef="167"/>
+    <Link colName="cmpusrl_useranswerdate" fieldIdRef="169"/>
+    <Link colName="cmpusrl_usertotalprice" fieldIdRef="162"/>
+    <Link colName="cmpusrl_salfatixtotalprice" fieldIdRef="163"/>
+    <Link colName="cmpusrl_userwantedprice" fieldIdRef="170"/>
+    <Link colName="cmpusrl_uiorder" fieldIdRef="171"/>
+    <Link colName="cmpusrl_isacceptedbysalfatix" fieldIdRef="172"/>
+    <Link colName="cmpusrl_isacceptedbybrand" fieldIdRef="173"/>
+    <Link colName="cmpusrl_commentforbrand" fieldIdRef="174"/>
+    <Link colName="cmpusrl_usergotproduct" fieldIdRef="175"/>
+    <Link colName="cmpusrl_isuserpaid" fieldIdRef="176"/>
+    <Link colName="cmpusrl_userpaid" fieldIdRef="177"/>
+    <Link colName="usr_id" fieldIdRef="108"/>
+    <Link colName="usr_gender_id" fieldIdRef="109"/>
+    <Link colName="usr_firstname" fieldIdRef="110"/>
+    <Link colName="usr_lastname" fieldIdRef="111"/>
+    <Link colName="usr_birthday" fieldIdRef="114"/>
+    <Link colName="usr_email" fieldIdRef="115"/>
+    <Link colName="usr_password" fieldIdRef="116"/>
+    <Link colName="usr_country_id" fieldIdRef="117"/>
+    <Link colName="usr_state_id" fieldIdRef="118"/>
+    <Link colName="usr_city_id" fieldIdRef="119"/>
+    <Link colName="usr_address_number" fieldIdRef="120"/>
+    <Link colName="usr_address_street" fieldIdRef="121"/>
+    <Link colName="usr_address_zipcode" fieldIdRef="122"/>
+    <Link colName="usr_address_town" fieldIdRef="123"/>
+    <Link colName="usr_address_more" fieldIdRef="124"/>
+    <Link colName="usr_mobile_phone" fieldIdRef="125"/>
+    <Link colName="usr_instagram_userid" fieldIdRef="126"/>
+    <Link colName="usr_instagram_username" fieldIdRef="107"/>
+    <Link colName="usr_instagram_fullname" fieldIdRef="127"/>
+    <Link colName="usr_instagram_profilepicture" fieldIdRef="105"/>
+    <Link colName="usr_instagram_biography" fieldIdRef="128"/>
+    <Link colName="usr_instagram_website" fieldIdRef="129"/>
+    <Link colName="usr_instagram_is_private" fieldIdRef="130"/>
+    <Link colName="usr_instagram_is_verified" fieldIdRef="131"/>
+    <Link colName="usr_instagram_is_business" fieldIdRef="132"/>
+    <Link colName="usr_bank_name" fieldIdRef="133"/>
+    <Link colName="usr_bank_iban" fieldIdRef="134"/>
+    <Link colName="usr_bank_swift" fieldIdRef="135"/>
+    <Link colName="usr_paypal" fieldIdRef="136"/>
+    <Link colName="usr_mobile_notifications" fieldIdRef="137"/>
+    <Link colName="usr_notif_style" fieldIdRef="138"/>
+    <Link colName="usr_email_notifications" fieldIdRef="139"/>
+    <Link colName="usr_email_style" fieldIdRef="140"/>
+    <Link colName="usr_currency_id" fieldIdRef="141"/>
+    <Link colName="usr_accountstatus_id" fieldIdRef="142"/>
+    <Link colName="usr_createdby_id" fieldIdRef="143"/>
+    <Link colName="usr_creationdate" fieldIdRef="144"/>
+    <Link colName="usr_deletiondate" fieldIdRef="145"/>
+    <Link colName="usr_validationdate" fieldIdRef="146"/>
+    <Link colName="usr_canceldate" fieldIdRef="147"/>
+    <Link colName="usr_suspendeddate" fieldIdRef="148"/>
+    <Link colName="usr_stopdate" fieldIdRef="149"/>
+    <Link colName="usr_emailvalidationdate" fieldIdRef="150"/>
+    <Link colName="usr_lastupdatedate" fieldIdRef="151"/>
+    <Link colName="usr_lastlogindate" fieldIdRef="152"/>
+    <Link colName="usr_instagram_token" fieldIdRef="153"/>
+    <Link colName="usr_instagram_profilepicture2" fieldIdRef="106"/>
+    <Link colName="user_phonenumber2" fieldIdRef="112"/>
+    <Link colName="user_nb_followers2" fieldIdRef="113"/>
+    <Link colName="delimage" fieldIdRef="180"/>
+    <Link colName="viewinfluencer2" fieldIdRef="181"/>
+    <Link colName="editimage" fieldIdRef="182"/>
+    <Link colName="imganswer" fieldIdRef="168"/>
+    <Link colName="acceptedbysalfatiximage" fieldIdRef="178"/>
+    <Link colName="acceptedbybrandimage" fieldIdRef="179"/>
+    <Link colName="usrmtc_reach" fieldIdRef="186"/>
+    <Link colName="usrmtc_followers_count" fieldIdRef="187"/>
+    <Link colName="usr_countryname" fieldIdRef="188"/>
+    <Link colName="usr_statename" fieldIdRef="189"/>
+    <Link colName="usr_cityname" fieldIdRef="190"/>
+  </RecordView>
+  <RecordView tabName="scr_campaign">
+    <Link colName="cmp_id" fieldIdRef="16"/>
+    <Link colName="cmp_brand_id" fieldIdRef="17"/>
+    <Link colName="cmp_pic_id" fieldIdRef="18"/>
+    <Link colName="cmp_title" fieldIdRef="19"/>
+    <Link colName="cmp_overview" fieldIdRef="20"/>
+    <Link colName="cmp_url" fieldIdRef="21"/>
+    <Link colName="cmp_isproductneeded" fieldIdRef="22"/>
+    <Link colName="cmp_prd_description" fieldIdRef="23"/>
+    <Link colName="cmp_prd_value" fieldIdRef="24"/>
+    <Link colName="cmp_issharedonfacebook" fieldIdRef="25"/>
+    <Link colName="cmp_sharedfacebooklink" fieldIdRef="26"/>
+    <Link colName="cmp_post_guidelines" fieldIdRef="27"/>
+    <Link colName="cmp_captionrequirements" fieldIdRef="28"/>
+    <Link colName="cmp_post_startdate" fieldIdRef="29"/>
+    <Link colName="cmp_post_enddate" fieldIdRef="30"/>
+    <Link colName="cmp_post_time_starttime" fieldIdRef="31"/>
+    <Link colName="cmp_post_time_endtime" fieldIdRef="32"/>
+    <Link colName="cmp_postduration_id" fieldIdRef="33"/>
+    <Link colName="cmp_totalbudget" fieldIdRef="9"/>
+    <Link colName="cmp_deposit" fieldIdRef="34"/>
+    <Link colName="cmp_depositpercent" fieldIdRef="35"/>
+    <Link colName="cmp_currency_id" fieldIdRef="36"/>
+    <Link colName="cmp_wantedusers" fieldIdRef="11"/>
+    <Link colName="cmp_campaignstatus_id" fieldIdRef="37"/>
+    <Link colName="cmp_createdby_id" fieldIdRef="38"/>
+    <Link colName="cmp_creationdate" fieldIdRef="39"/>
+    <Link colName="cmp_publisheddate" fieldIdRef="12"/>
+    <Link colName="cmp_selectionstartdate" fieldIdRef="13"/>
+    <Link colName="cmp_selectionenddate" fieldIdRef="14"/>
+    <Link colName="cmp_selectioncomment" fieldIdRef="15"/>
+    <Link colName="cmp_actionstartdate" fieldIdRef="40"/>
+    <Link colName="cmp_actionenddate" fieldIdRef="41"/>
+    <Link colName="cmp_enddate" fieldIdRef="42"/>
+    <Link colName="cmp_lastupdatedate" fieldIdRef="43"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="ff_formtitle" fieldIdRef="7"/>
+    <Link colName="ff_formtitle2" fieldIdRef="8"/>
+  </RecordView>
+</Form>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation - Redirect application end</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="howdoi/index.html">How do I …</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="howdoi/compiledeploy/index.html">Compile &amp; Deploy</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/createruntimezip.html">Create a runtime zip</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/deployongas.html">Deploy on GAS</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/jgas.html">Deploy on JGAS</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/customization/index.html">Customize the UI</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_theme_part.html">Add a theme part</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_theme.html">Add a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/modify_theme.html">Modify a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/delete_theme.html">Delete a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_image_or_logo.html">Header image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_image_with_style_class.html">Header image (style class)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_custom_header_widget.html">Header widget</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_footer_text.html">Footer text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/display-sidebar.html">Sidebar (hide)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/display_icon_or_right_sidebar.html">Sidebar or Icon</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change_favicon.html">Favicon image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-file-load-icon.html">File loading icon (change)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/center-file-load-icon.html">File loading icon (center)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-mttab-bkgd-img.html">Tab background image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-checkbox.html">Checkbox icons</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-pop-up-animation.html">Pop-up animation</a>
+            
+            <a class="btn btn-sidebar active" href="howdoi/customization/redirect_application_end.html">Redirect application end</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/customize_theme_settings.html">Customize theme settings</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/customize_user_interface.html">Customize User Interface</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/extend_main_container_widget.html">Extend the MainContainerWidget</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/view_aui_tree.html">View the AUI tree</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/internationalization/index.html">Internationalize my app</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/add_localized_text.html">Add localized text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/configure_right_to_left_languages.html">Right-to-left languages</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/customize_translation_text.html">Translation text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/default_encoding.html">Default encoding</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/migration/index.html">Migrate to GBC</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/evaluate.html">Evaluate your GBC app needs</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/features_limitations.html">Features and limitations</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/from_GWC_HTML5_to_GBC.html">GWC-HTML5 to GBC</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/migration_tips.html">Migration tips</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="howdoi">
+<header class="page-title">
+  <em>Redirect application end</em>
+</header>
+<article class="md-content">
+<p>This procedure shows you how to specify a redirection URL when the application ends.</p>
+<h2>Overview</h2>
+<p>This customization sample extends the SessionEndWidget to automatically redirect the user to a specified URL after a set number of milliseconds.</p>
+<h2>Create the necessary files</h2>
+<p>The files needed for this procedure are:</p>
+<ul>
+<li>MySessionEndWidget.js</li>
+<li>MySessionEndWidget.tpl.html</li>
+<li>MySessionEndWidget.scss</li>
+</ul>
+<h3>Create MySessionEndWidget JavaScript and template files</h3>
+<p>Create and edit file <code>&lt;GBC_PROJECT_DIR&gt;/customization/&lt;customization_project_dir&gt;/js/MySessionEndWidget.js</code>:</p>
+<pre class="hljs"><code><span class="hljs-meta">"use strict"</span>;
+
+modulum(<span class="hljs-string">'MySessionEndWidget'</span>, [<span class="hljs-string">'WidgetBase'</span>, <span class="hljs-string">'WidgetFactory'</span>],
+<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context, cls</span>) </span>{
+
+ <span class="hljs-comment">/**
+  * @class MySessionEndWidget
+  * @memberOf classes
+  * @extends classes.WidgetBase
+  */</span>
+ cls.MySessionEndWidget = context.oo.Class(cls.SessionEndWidget, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$super</span>) </span>{
+   <span class="hljs-keyword">return</span> <span class="hljs-comment">/** @lends classes.MySessionEndWidget.prototype */</span> {
+     <span class="hljs-attr">__name</span>: <span class="hljs-string">"MySessionEndWidget"</span>,
+
+     <span class="hljs-attr">setHeader</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">message</span>) </span>{
+       <span class="hljs-keyword">this</span>._element.getElementsByClassName(<span class="hljs-string">"myHeaderText"</span>)[<span class="hljs-number">0</span>].innerHTML = message;
+     },
+
+     <span class="hljs-attr">setSessionLinks</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">base, session</span>) </span>{
+       $<span class="hljs-keyword">super</span>.setSessionLinks.call(<span class="hljs-keyword">this</span>, base, session);
+
+       <span class="hljs-comment">// update redirection link url of the template</span>
+       <span class="hljs-keyword">var</span> redirectionLink = <span class="hljs-keyword">this</span>._element.getElementsByClassName(<span class="hljs-string">"redirectionLink"</span>)[<span class="hljs-number">0</span>];
+       redirectionLink.title = <span class="hljs-string">"Redirection to www.google.com in 10 seconds. Click here to go now."</span>;
+       <span class="hljs-keyword">var</span> url = <span class="hljs-string">"http://www.google.com"</span>;
+       redirectionLink.href = url;
+
+       <span class="hljs-keyword">var</span> modelHelper = <span class="hljs-keyword">new</span> cls.ModelHelper(<span class="hljs-keyword">this</span>);
+
+       <span class="hljs-comment">// launch the redirection after a delay of 10 seconds</span>
+       <span class="hljs-comment">// to remove the delay, remove the _registerTimeout function</span>
+       <span class="hljs-keyword">this</span>._registerTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+         <span class="hljs-comment">// check if an application is running in the current session before reloading</span>
+         <span class="hljs-keyword">if</span>(!modelHelper.getCurrentApplication()) {
+           <span class="hljs-built_in">window</span>.location = url;
+         }
+       }.bind(<span class="hljs-keyword">this</span>), <span class="hljs-number">10000</span>); <span class="hljs-comment">// 10000ms</span>
+     }
+   };
+ });
+
+  cls.WidgetFactory.registerBuilder(<span class="hljs-string">'SessionEnd'</span>, cls.MySessionEndWidget);
+});
+
+</code></pre>
+<p>Create and edit file <code>&lt;GBC_PROJECT_DIR&gt;/customization/&lt;customization_project_dir&gt;/js//MySessionEndWidget.tpl.html</code>:</p>
+<pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-card"</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-card-richhead"</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-card-header-text"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"myHeaderText"</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"redirectionLink"</span> <span class="hljs-attr">data-i18n</span>=<span class="hljs-string">"mycusto.session.redirectionText"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-card-header-rightpic"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"zmdi zmdi-close-circle"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-card-body"</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"message hidden"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"session hidden"</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sessionTitle"</span> <span class="hljs-attr">data-i18n</span>=<span class="hljs-string">"gwc.app.ending.session"</span>&gt;</span>Session ID<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> :
+       <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sessionID"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-actions"</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-action vmLink from-session hidden"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Virtual Machine log"</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"zmdi zmdi-file-text"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sessionVMLog"</span>
+                                                     <span class="hljs-attr">data-i18n</span>=<span class="hljs-string">"gwc.app.logs.vm"</span>&gt;</span>Get the VM Log<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-action uaLink from-session hidden"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">target</span>=<span class="hljs-string">"_blank"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Proxy log"</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"zmdi zmdi-file-text"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sessionVMLog"</span> <span class="hljs-attr">data-i18n</span>=<span class="hljs-string">"gwc.app.logs.proxy"</span>&gt;</span>Get the Proxy Log<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-action auiLink mt-as-link from-session_ hidden"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Aui log"</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"zmdi zmdi-file-text"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> Get the AUI log
+         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-action restartApp from-ua hidden"</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Restart the app"</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"zmdi zmdi-repeat"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sessionVMLog"</span> <span class="hljs-attr">data-i18n</span>=<span class="hljs-string">"gwc.app.restart"</span>&gt;</span>Restart the same application<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-card-actions"</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-button mt-button-flat closeApplicationEnd"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Close"</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">data-i18n</span>=<span class="hljs-string">"gwc.app.close"</span>&gt;</span>CLOSE<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+</code></pre>
+<h3>Create MySessionEndWidget.scss</h3>
+<p>Create and edit file <code>&lt;GBC_PROJECT_DIR&gt;/customization/&lt;customization_project&gt;/scss/MySessionEndWidget.scss</code>:</p>
+<pre class="hljs"><code>
+<span class="hljs-selector-class">.gbc_MySessionEndWidget</span> {
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">5px</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">5px</span>;
+  <span class="hljs-attribute">bottom</span>: <span class="hljs-number">5px</span>;
+  <span class="hljs-attribute">right</span>: <span class="hljs-number">5px</span>;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: column;
+}
+<span class="hljs-selector-attr">[__MySessionEndWidget]</span><span class="hljs-selector-class">.mt-card</span> {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">16px</span>;
+}
+<span class="hljs-selector-attr">[__MySessionEndWidget]</span><span class="hljs-selector-class">.mt-card-richhead</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">align-items</span>: center;
+}
+<span class="hljs-selector-attr">[__MySessionEndWidget]</span><span class="hljs-selector-class">.mt-card-header-text</span> {
+  <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">32px</span>;
+}
+<span class="hljs-selector-attr">[__MySessionEndWidget]</span><span class="hljs-selector-class">.session</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">32px</span> <span class="hljs-number">16px</span> <span class="hljs-number">16px</span> <span class="hljs-number">16px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-attr">[__MySessionEndWidget]</span><span class="hljs-selector-class">.message</span> {
+  <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$theme-separator-color</span>;
+}
+<span class="hljs-selector-attr">[__MySessionEndWidget]</span><span class="hljs-selector-class">.message</span>, <span class="hljs-selector-attr">[__MySessionEndWidget]</span><span class="hljs-selector-class">.mt-actions</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span> <span class="hljs-number">32px</span>;
+}
+<span class="hljs-selector-attr">[__MySessionEndWidget]</span><span class="hljs-selector-class">.mt-action</span> {
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">4px</span>;
+}
+<span class="hljs-selector-attr">[__MySessionEndWidget]</span><span class="hljs-selector-class">.mt-card-actions</span> {
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">16px</span>;
+}
+<span class="hljs-selector-attr">[__MySessionEndWidget]</span><span class="hljs-selector-class">.redirectionLink</span> {
+  <span class="hljs-attribute">font-size</span>:<span class="hljs-number">60%</span>;
+}
+</code></pre>
+<blockquote>
+<p><em>NOTE</em>: you can define the custom style you want here for your widget.</p>
+</blockquote>
+<h2>Update customization.scss</h2>
+<p>Open the <code>&lt;GBC_PROJECT_DIR&gt;/customization/&lt;customization_project&gt;/sass/customization.scss</code> file for editing.</p>
+<p>Copy the code shown in the example to import the MySessionEndWidget.scss file and save.</p>
+<pre class="hljs"><code>@<span class="hljs-keyword">import</span> <span class="hljs-string">"MyMainContainerWidget"</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"MySessionEndWidget"</span>;
+</code></pre>
+<h2>Edit MySessionEndWidget.js</h2>
+<p>Open <code>&lt;GBC_PROJECT_DIR&gt;/customization/&lt;customization_project_dir&gt;/js/MySessionEndWidget.js</code> with a text editor.</p>
+<p>To change the redirect URL, replace &quot;<code>http://www.google.com</code>&quot; with the desired URL.</p>
+<pre class="hljs"><code>{
+  <span class="hljs-comment">// update redirection link url of the template</span>
+<span class="hljs-keyword">var</span> redirectionLink = <span class="hljs-keyword">this</span>._element.getElementsByClassName(<span class="hljs-string">"redirectionLink"</span>)[<span class="hljs-number">0</span>];
+redirectionLink.title = <span class="hljs-string">"Redirection to www.google.com in 10 seconds. Click here to go now."</span>;
+<span class="hljs-keyword">var</span> url = <span class="hljs-string">"http://www.google.com"</span>;
+redirectionLink.href = url;
+}
+</code></pre>
+<p>To change the length of the delay before redirecting, replace &quot;<code>10000</code>&quot; with the number of milliseconds to delay.</p>
+<pre class="hljs"><code>{
+  <span class="hljs-keyword">var</span> modelHelper = <span class="hljs-keyword">new</span> cls.ModelHelper(<span class="hljs-keyword">this</span>);
+<span class="hljs-comment">// Launch the redirection after a delay of 10 seconds</span>
+<span class="hljs-comment">// To remove the delay, remove the setTimeout, but keep the 'if' block</span>
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// check if an application is running in the current session before reloading</span>
+    <span class="hljs-keyword">if</span>(!modelHelper.getCurrentApplication()) {
+        <span class="hljs-built_in">window</span>.location = url;
+    }
+}.bind(<span class="hljs-keyword">this</span>), <span class="hljs-number">10000</span>); <span class="hljs-comment">// 10000ms</span>
+
+}
+</code></pre>
+<p>To eliminate the delay, remove the setTimeout function code surrounding <code>window.location = url</code>.</p>
+<pre class="hljs"><code>{
+  <span class="hljs-keyword">var</span> modelHelper = <span class="hljs-keyword">new</span> cls.ModelHelper(<span class="hljs-keyword">this</span>);
+    <span class="hljs-comment">// check if an application is running in the current session before reloading</span>
+    <span class="hljs-keyword">if</span>(!modelHelper.getCurrentApplication()) {
+        <span class="hljs-built_in">window</span>.location = url;
+    }
+}
+</code></pre>
+<blockquote>
+<p><em>NOTE:</em> This does not completely halt the display of the end page. The ending page flashes briefly, as redirection occurs only after the ending page displays.</p>
+</blockquote>
+<h2>Rebuild using grunt.</h2>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> grunt --customization=&lt;customization_project_dir&gt;</span>
+</code></pre>
+<h2>Test</h2>
+<p>Test the redirection works as expected by reopening and closing your application.</p>
+<blockquote>
+<p><em>TIP</em>: You may need to use CTRL + F5 to clear the browser cache before you see your changes.</p>
+</blockquote>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

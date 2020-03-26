@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a0a" name="managedform" uid="{b7ea217b-0cc2-450e-bdf3-118226aebdfc}">
+  <AGSettings/>
+  <Record masterTable="users" name="scr_user_grid" uid="{b8773de5-af12-4c83-aa32-625479ddef75}">
+    <RecordField colName="usr_id" fieldIdRef="27" fieldType="TABLE_COLUMN" name="users.usr_id" sqlTabName="users" uid="{1363f9bb-31c8-430b-9a68-6ccf2de440e7}"/>
+    <RecordField colName="usr_gender_id" fieldIdRef="28" fieldType="TABLE_COLUMN" name="users.usr_gender_id" sqlTabName="users" uid="{d67a9f8e-fe69-4841-90f9-a480e92e791e}"/>
+    <RecordField colName="usr_firstname" fieldIdRef="29" fieldType="TABLE_COLUMN" name="users.usr_firstname" sqlTabName="users" uid="{5bf6520e-2d4b-4ebf-8489-f0d9b6e84d4f}"/>
+    <RecordField colName="usr_lastname" fieldIdRef="30" fieldType="TABLE_COLUMN" name="users.usr_lastname" sqlTabName="users" uid="{e19ed5db-53e0-47c5-885f-fdc8238f9ec1}"/>
+    <RecordField colName="usr_birthday" fieldIdRef="31" fieldType="TABLE_COLUMN" name="users.usr_birthday" sqlTabName="users" uid="{4f71e25c-4196-4442-9f63-8b94577cd32b}"/>
+    <RecordField colName="usr_email" fieldIdRef="32" fieldType="TABLE_COLUMN" name="users.usr_email" sqlTabName="users" uid="{d8630c7b-fdfe-4600-bdc9-8246fb6491a5}"/>
+    <RecordField colName="usr_password" fieldIdRef="33" fieldType="TABLE_COLUMN" name="users.usr_password" sqlTabName="users" uid="{c3b07303-3627-49bf-9d00-b172decba150}"/>
+    <RecordField colName="usr_country_id" fieldIdRef="34" fieldType="TABLE_COLUMN" name="users.usr_country_id" sqlTabName="users" uid="{b42e2bd3-36f6-428c-bc9b-96c0642dfd18}"/>
+    <RecordField colName="usr_state_id" fieldIdRef="35" fieldType="TABLE_COLUMN" name="users.usr_state_id" sqlTabName="users" uid="{2255146f-c76b-450d-8723-379053f92064}"/>
+    <RecordField colName="usr_city_id" fieldIdRef="36" fieldType="TABLE_COLUMN" name="users.usr_city_id" sqlTabName="users" uid="{55a4ff85-cf6a-44b4-96bf-d1330eb354e6}"/>
+    <RecordField colName="usr_address_number" fieldIdRef="37" fieldType="TABLE_COLUMN" name="users.usr_address_number" sqlTabName="users" uid="{698bc8a9-f4e0-48d3-ad87-b504f79adbb0}"/>
+    <RecordField colName="usr_address_street" fieldIdRef="38" fieldType="TABLE_COLUMN" name="users.usr_address_street" sqlTabName="users" uid="{73444014-7968-4c7e-b7e9-d24dec0a8f5e}"/>
+    <RecordField colName="usr_address_zipcode" fieldIdRef="39" fieldType="TABLE_COLUMN" name="users.usr_address_zipcode" sqlTabName="users" uid="{fcfb33eb-fc52-4aab-a61b-611445e6eead}"/>
+    <RecordField colName="usr_address_town" fieldIdRef="40" fieldType="TABLE_COLUMN" name="users.usr_address_town" sqlTabName="users" uid="{db841ad5-ecec-4424-bff4-391f59265095}"/>
+    <RecordField colName="usr_address_more" fieldIdRef="41" fieldType="TABLE_COLUMN" name="users.usr_address_more" sqlTabName="users" uid="{6300d663-63bc-49e8-b16b-fe9e258b55ef}"/>
+    <RecordField colName="usr_mobile_phone" fieldIdRef="42" fieldType="TABLE_COLUMN" name="users.usr_mobile_phone" sqlTabName="users" uid="{adc42536-1157-4839-a300-7d7d67b698e9}"/>
+    <RecordField colName="usr_instagram_userid" fieldIdRef="43" fieldType="TABLE_COLUMN" name="users.usr_instagram_userid" sqlTabName="users" uid="{757c2a28-b1f3-4383-9741-b594fddb69e4}"/>
+    <RecordField colName="usr_instagram_username" fieldIdRef="44" fieldType="TABLE_COLUMN" name="users.usr_instagram_username" sqlTabName="users" uid="{638393d9-6e19-40b9-a23b-a87bfa2a642c}"/>
+    <RecordField colName="usr_instagram_fullname" fieldIdRef="45" fieldType="TABLE_COLUMN" name="users.usr_instagram_fullname" sqlTabName="users" uid="{75cfb0ff-77dd-4712-9f18-a3d8c7eef583}"/>
+    <RecordField colName="usr_instagram_profilepicture" fieldIdRef="2" fieldType="TABLE_COLUMN" name="users.usr_instagram_profilepicture" sqlTabName="users" uid="{e9a3deb4-8fae-4fb5-9bd7-e39fafcaf684}"/>
+    <RecordField colName="usr_instagram_biography" fieldIdRef="47" fieldType="TABLE_COLUMN" name="users.usr_instagram_biography" sqlTabName="users" uid="{e57cfcf5-cadd-4ae2-bd5f-c77963e05fe4}"/>
+    <RecordField colName="usr_instagram_website" fieldIdRef="48" fieldType="TABLE_COLUMN" name="users.usr_instagram_website" sqlTabName="users" uid="{9b802309-47b6-4536-b82b-3dd456abc833}"/>
+    <RecordField colName="usr_instagram_is_private" fieldIdRef="49" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_private" sqlTabName="users" uid="{96923113-8979-43b6-9055-433b8747fa27}"/>
+    <RecordField colName="usr_instagram_is_verified" fieldIdRef="50" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_verified" sqlTabName="users" uid="{dbbeae93-1b10-4cb4-9e0d-2a874f96f8c0}"/>
+    <RecordField colName="usr_instagram_is_business" fieldIdRef="51" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_business" sqlTabName="users" uid="{57995c00-c67c-4027-8b59-79eb7ed72e44}"/>
+    <RecordField colName="usr_bank_name" fieldIdRef="52" fieldType="TABLE_COLUMN" name="users.usr_bank_name" sqlTabName="users" uid="{ac9f5eea-5d05-4c83-b33c-61488438a1eb}"/>
+    <RecordField colName="usr_bank_iban" fieldIdRef="53" fieldType="TABLE_COLUMN" name="users.usr_bank_iban" sqlTabName="users" uid="{e7f307d6-7440-489f-a2e8-2126721ac99a}"/>
+    <RecordField colName="usr_bank_swift" fieldIdRef="54" fieldType="TABLE_COLUMN" name="users.usr_bank_swift" sqlTabName="users" uid="{b15ab4fe-cc13-4c66-9613-aa42e2258e85}"/>
+    <RecordField colName="usr_paypal" fieldIdRef="9" fieldType="TABLE_COLUMN" name="users.usr_paypal" sqlTabName="users" uid="{343fd314-dc55-479a-9ca6-dbc18839937d}"/>
+    <RecordField colName="usr_mobile_notifications" fieldIdRef="55" fieldType="TABLE_COLUMN" name="users.usr_mobile_notifications" sqlTabName="users" uid="{878efd7b-4291-464e-9fa5-596d97e56557}"/>
+    <RecordField colName="usr_notif_style" fieldIdRef="16" fieldType="TABLE_COLUMN" name="users.usr_notif_style" sqlTabName="users" uid="{cde5f943-65a1-4d39-88b5-6afd633e6317}"/>
+    <RecordField colName="usr_email_notifications" fieldIdRef="57" fieldType="TABLE_COLUMN" name="users.usr_email_notifications" sqlTabName="users" uid="{5af6b490-cd4c-4bcb-8427-0702ee364d87}"/>
+    <RecordField colName="usr_email_style" fieldIdRef="15" fieldType="TABLE_COLUMN" name="users.usr_email_style" sqlTabName="users" uid="{33bacad9-476e-48d1-83a6-251820cbb813}"/>
+    <RecordField colName="usr_currency_id" fieldIdRef="58" fieldType="TABLE_COLUMN" name="users.usr_currency_id" sqlTabName="users" uid="{94fbadb2-2b96-4a7f-b689-a6fc665e5f76}"/>
+    <RecordField colName="usr_accountstatus_id" fieldIdRef="8" fieldType="TABLE_COLUMN" name="users.usr_accountstatus_id" sqlTabName="users" uid="{aa48ce93-2b2b-4752-b5cf-76af0b623677}"/>
+    <RecordField colName="usr_createdby_id" fieldIdRef="3" fieldType="TABLE_COLUMN" name="users.usr_createdby_id" sqlTabName="users" uid="{140cfdbd-f7a9-41c2-90f9-2cd68f086209}"/>
+    <RecordField colName="usr_creationdate" fieldIdRef="60" fieldType="TABLE_COLUMN" name="users.usr_creationdate" sqlTabName="users" uid="{ee478f91-9d94-41ff-b5d9-bd251c6602f7}"/>
+    <RecordField colName="usr_deletiondate" fieldIdRef="62" fieldType="TABLE_COLUMN" name="users.usr_deletiondate" sqlTabName="users" uid="{f9f14b29-64cd-4ed3-9ee3-830ea501528f}"/>
+    <RecordField colName="usr_validationdate" fieldIdRef="63" fieldType="TABLE_COLUMN" name="users.usr_validationdate" sqlTabName="users" uid="{64d2df0a-a31b-4f2d-b444-224f9a074baf}"/>
+    <RecordField colName="usr_canceldate" fieldIdRef="64" fieldType="TABLE_COLUMN" name="users.usr_canceldate" sqlTabName="users" uid="{485431ab-eaa1-49b7-a2ec-4c41cff05735}"/>
+    <RecordField colName="usr_suspendeddate" fieldIdRef="65" fieldType="TABLE_COLUMN" name="users.usr_suspendeddate" sqlTabName="users" uid="{b7683ec1-b8d7-46be-990e-7b7a2e9e7fff}"/>
+    <RecordField colName="usr_stopdate" fieldIdRef="66" fieldType="TABLE_COLUMN" name="users.usr_stopdate" sqlTabName="users" uid="{77bc0c62-361f-499c-bcb5-38c3ead56e83}"/>
+    <RecordField colName="usr_emailvalidationdate" fieldIdRef="67" fieldType="TABLE_COLUMN" name="users.usr_emailvalidationdate" sqlTabName="users" uid="{fdbc1a4d-343c-40e3-9b3c-e7c7f1158865}"/>
+    <RecordField colName="usr_lastupdatedate" fieldIdRef="68" fieldType="TABLE_COLUMN" name="users.usr_lastupdatedate" sqlTabName="users" uid="{b25c2d0f-d64f-4854-960d-0ca79e33f439}"/>
+    <RecordField colName="usr_lastlogindate" fieldIdRef="69" fieldType="TABLE_COLUMN" name="users.usr_lastlogindate" sqlTabName="users" uid="{7197d826-0c2c-4633-9328-584cb595a4f2}"/>
+    <RecordField colName="usr_instagram_token" fieldIdRef="10" fieldType="TABLE_COLUMN" name="users.usr_instagram_token" sqlTabName="users" uid="{01d4fbd7-1cfe-48c5-bf75-e91b907d170c}"/>
+    <RecordField colName="usrmtc_id" fieldIdRef="17" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_id" sqlTabName="usermetrics" uid="{5f7cebfe-3a5e-4811-b317-9f473e15ae22}"/>
+    <RecordField colName="usrmtc_usr_id" fieldIdRef="18" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_usr_id" sqlTabName="usermetrics" uid="{9ba37cc0-bd28-4393-a14b-92b3693298eb}"/>
+    <RecordField colName="usrmtc_instagram_userid" fieldIdRef="19" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_instagram_userid" sqlTabName="usermetrics" uid="{95067dae-a52a-44ae-947e-6c1b3fde0a33}"/>
+    <RecordField colName="usrmtc_instagram_username" fieldIdRef="20" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_instagram_username" sqlTabName="usermetrics" uid="{ff1302cd-6cec-487a-9717-5e1b9ef8bac0}"/>
+    <RecordField colName="usrmtc_geomedia_count" fieldIdRef="21" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_geomedia_count" sqlTabName="usermetrics" uid="{20d003c8-3ccc-4c12-9fdf-38f52d639de0}"/>
+    <RecordField colName="usrmtc_media_count" fieldIdRef="22" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_media_count" sqlTabName="usermetrics" uid="{d03d7788-a864-416a-bd34-a97556128cac}"/>
+    <RecordField colName="usrmtc_follows_count" fieldIdRef="23" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_follows_count" sqlTabName="usermetrics" uid="{fac2db8f-7f7f-4d0e-8dda-318e8095b6fc}"/>
+    <RecordField colName="usrmtc_followers_count" fieldIdRef="24" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_followers_count" sqlTabName="usermetrics" uid="{a52d9fab-1855-43d3-9a74-9c625c8b2043}"/>
+    <RecordField colName="usrmtc_comments_count" fieldIdRef="25" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_comments_count" sqlTabName="usermetrics" uid="{18210599-0b59-46fb-b20b-f214f8bb3d4a}"/>
+    <RecordField colName="usrmtc_likes_count" fieldIdRef="26" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_likes_count" sqlTabName="usermetrics" uid="{27069372-f2f1-4bc5-be2a-a2470962d051}"/>
+    <RecordField colName="usrmtc_usertags_count" fieldIdRef="46" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_usertags_count" sqlTabName="usermetrics" uid="{470b2ffa-ef47-4e4b-a2ab-5936f935c90b}"/>
+    <RecordField colName="usrmtc_reach" fieldIdRef="56" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_reach" sqlTabName="usermetrics" uid="{16a52892-c286-4a10-ab42-233927b8106c}"/>
+    <RecordField colName="usrmtc_bdate" fieldIdRef="59" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_bdate" sqlTabName="usermetrics" uid="{30af2000-0dfc-4f1e-9d7c-ad19346564da}"/>
+    <RecordField colName="usrmtc_edate" fieldIdRef="61" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_edate" sqlTabName="usermetrics" uid="{728b6861-e233-41ee-b0a9-5b6952995837}"/>
+    <RecordField colName="usr_password" fieldIdRef="1" fieldType="TABLE_ALIAS" name="users1.usr_password" sqlTabName="users" table_alias_name="users1" uid="{d7c5b916-a541-49a9-bd73-c952e4bdfc6f}"/>
+    <RecordField colName="usr_instagram_profilepicture" fieldIdRef="6" fieldType="NON_DATABASE" name="usr_instagram_profilepicture" sqlTabName="users" uid="{0b197856-7892-4ab4-8723-9e10eaf2960c}"/>
+  </Record>
+  <Record name="scr_loc" uid="{c3a1d65b-b89a-4fc3-9213-0696206359f9}">
+    <RecordField colName="cntr_name" fieldIdRef="12" fieldType="TABLE_COLUMN" name="countries.cntr_name" sqlTabName="countries" uid="{58ad2c82-ebf5-4738-bd5c-8854d56437c9}"/>
+    <RecordField colName="stt_name" fieldIdRef="13" fieldType="TABLE_COLUMN" name="states.stt_name" sqlTabName="states" uid="{b6691e12-7ca5-4566-8868-0b3137ab8c46}"/>
+    <RecordField colName="cts_name" fieldIdRef="14" fieldType="TABLE_COLUMN" name="cities.cts_name" sqlTabName="cities" uid="{f9369a2f-2895-4d82-b165-024e4d611c0c}"/>
+  </Record>
+  <Record masterTable="usermetrics" name="record1" uid="{17200dec-f674-46ed-9a7b-255e996e8960}"/>
+  <Record name="Undefined" uid="{2e7d1f22-c683-4d73-8847-2ed7fdb1ffa2}">
+    <RecordField fieldIdRef="4" name="ff_formtitle" uid="{133e1cd9-af9c-4391-9cce-e5c6362dce86}"/>
+    <RecordField fieldIdRef="5" name="ffimage_value" uid="{7f10cc9e-64fb-41f2-a886-7ae9a5648e88}"/>
+    <RecordField fieldIdRef="7" name="phonenumberprefix_label" uid="{dda7af55-d472-41f9-94c2-b5bcb7400c92}"/>
+    <RecordField fieldIdRef="11" name="viewimage" uid="{426e3900-bb5d-400e-b53d-440312194456}"/>
+  </Record>
+  <Form gridHeight="78" gridWidth="109" name="form" text="Form">
+    <ActionDefaultList name="actiondefaultlist1">
+      <ActionDefault image="font:FontAwesome.ttf:f150" name="zoomcountry"/>
+      <ActionDefault image="font:FontAwesome.ttf:f150" name="zoomstate"/>
+      <ActionDefault image="font:FontAwesome.ttf:f150" name="zoomcity"/>
+    </ActionDefaultList>
+    <Grid gridHeight="77" gridWidth="53" name="salfatixmedia2" posX="6" posY="1">
+      <FFLabel fieldId="4" gridHeight="1" gridWidth="36" justify="center" name="ff_formtitle" posX="1" posY="0" style="ff_formtitle" title="fflabel1" widget="FFLabel"/>
+      <Phantom colName="usr_instagram_profilepicture" fieldId="2" fieldType="TABLE_COLUMN" name="users.usr_instagram_profilepicture" sqlTabName="users" widget="Phantom"/>
+      <FFImage action="upload_photo" autoScale="true" colName="usr_instagram_profilepicture" fieldId="6" fieldType="NON_DATABASE" gridHeight="5" gridWidth="12" length="255" name="usr_instagram_profilepicture" posX="1" posY="1" sizePolicy="fixed" sqlTabName="users" sqlType="VARCHAR" style="no_border" widget="FFImage">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </FFImage>
+      <FFImage action="save" autoScale="true" comment="Save" fieldId="5" gridHeight="3" gridWidth="5" justify="center" name="ffimage_value" posX="32" posY="1" sizePolicy="fixed" style="no_border" title="ffimage1" widget="FFImage"/>
+      <Group gridHeight="15" gridWidth="38" name="group_influencer_detail" posX="1" posY="6" text="Profile details">
+        <Phantom colName="usr_instagram_token" fieldId="10" fieldType="TABLE_COLUMN" name="users.usr_instagram_token" sqlTabName="users" widget="Phantom"/>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_gender_id_label" posX="1" posY="1" text="Gender">
+          <Initializer text="dbschema:users.usr_gender_id/@label"/>
+        </Label>
+        <ComboBox colName="usr_gender_id" fieldId="28" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="" name="users.usr_gender_id" posX="14" posY="1" sqlTabName="users" tabIndex="-1" title="Gender" widget="ComboBox">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </ComboBox>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_firstname_label" posX="1" posY="2" text="First Name">
+          <Initializer text="dbschema:users.usr_firstname/@label"/>
+        </Label>
+        <Edit colName="usr_firstname" fieldId="29" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="users.usr_firstname" posX="14" posY="2" scroll="true" sqlTabName="users" tabIndex="-1" title="First Name" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_lastname_label" posX="1" posY="3" text="Last Name">
+          <Initializer text="dbschema:users.usr_lastname/@label"/>
+        </Label>
+        <Edit colName="usr_lastname" fieldId="30" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="users.usr_lastname" posX="14" posY="3" scroll="true" sqlTabName="users" tabIndex="-1" title="Last Name" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_birthday_label" posX="1" posY="4" text="Date Of Birth">
+          <Initializer text="dbschema:users.usr_birthday/@label"/>
+        </Label>
+        <DateEdit colName="usr_birthday" fieldId="31" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="users.usr_birthday" posX="14" posY="4" sqlTabName="users" tabIndex="-1" title="Date Of Birth" widget="DateEdit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </DateEdit>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_email_label" posX="1" posY="5" text="Email">
+          <Initializer text="dbschema:users.usr_email/@label"/>
+        </Label>
+        <Edit colName="usr_email" fieldId="32" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" keyboardHint="email" name="users.usr_email" posX="14" posY="5" scroll="true" sqlTabName="users" tabIndex="-1" title="Email" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="users_emailvalidationdate_label" posX="1" posY="6" text="Email Validation">
+          <Initializer text="dbschema:users.usr_email/@label"/>
+        </Label>
+        <DateTimeEdit colName="usr_emailvalidationdate" fieldId="67" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="users.usr_emailvalidationdate" noEntry="true" posX="14" posY="6" sqlTabName="users" tabIndex="-1" title="usr_emailvalidationdate" widget="DateTimeEdit"/>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_password" posX="1" posY="7" text="Password">
+          <Initializer text="dbschema:users.usr_password/@label"/>
+        </Label>
+        <Edit colName="usr_password" fieldId="33" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" invisible="true" name="users.usr_password" posX="14" posY="7" scroll="true" sqlTabName="users" tabIndex="-1" title="Password" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="users1_usr_password" posX="1" posY="8" text="Confirm Password">
+          <Initializer text="dbschema:users.usr_password/@label"/>
+        </Label>
+        <Edit colName="usr_password" fieldId="1" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="20" invisible="true" name="users1.usr_password" posX="14" posY="8" scroll="true" sqlTabName="users" tabIndex="-1" table_alias_name="users1" title="Password" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_mobile_phone_label" posX="1" posY="9" text="Phone Number">
+          <Initializer text="dbschema:users.usr_mobile_phone/@label"/>
+        </Label>
+        <FFLabel fieldId="7" gridHeight="1" gridWidth="4" justify="right" name="phonenumberprefix_label" posX="14" posY="9" title="fflabel1" widget="FFLabel"/>
+        <Edit colName="usr_mobile_phone" fieldId="42" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" keyboardHint="phone" name="users.usr_mobile_phone" posX="19" posY="9" scroll="true" sqlTabName="users" tabIndex="-1" title="Phone Number" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="user_accountstatus_id_label" posX="1" posY="10" text="Account Status">
+          <Initializer text="dbschema:brands.brnd_mobile_phonenumber/@label"/>
+        </Label>
+        <ComboBox colName="usr_accountstatus_id" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="" name="users.usr_accountstatus_id" noEntry="true" posX="14" posY="10" scroll="true" sqlTabName="users" tabIndex="-1" title="brnd_accountstatus_id" widget="ComboBox"/>
+        <Label gridHeight="1" gridWidth="33" name="account_actions_label" posX="1" posY="12" style="brand_label_bold" text="Account Actions"/>
+        <HRec gridHeight="1" gridWidth="36" name="hrec2" posX="1" posY="13">
+          <Button gridHeight="1" gridWidth="6" name="validate_influencer" posX="0" posY="0" tabIndex="-1" text="Validate"/>
+          <Button gridHeight="1" gridWidth="6" name="cancel_influencer" posX="7" posY="0" tabIndex="-1" text="Is Spam"/>
+          <Button gridHeight="1" gridWidth="6" name="reject_influencer" posX="14" posY="0" tabIndex="-1" text="Reject"/>
+          <Button gridHeight="1" gridWidth="6" name="suspend_influencer" posX="21" posY="0" tabIndex="-1" text="Suspend"/>
+          <Button gridHeight="1" gridWidth="5" name="delete_influencer" posX="28" posY="0" tabIndex="-1" text="Forget"/>
+          <Spacer gridWidth="1" name="spacer5" posX="34" posY="0"/>
+        </HRec>
+        <Phantom colName="usr_id" fieldId="27" fieldType="TABLE_COLUMN" name="users.usr_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_userid" fieldId="43" fieldType="TABLE_COLUMN" name="users.usr_instagram_userid" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_is_private" fieldId="49" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_private" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_is_verified" fieldId="50" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_verified" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_is_business" fieldId="51" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_business" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_creationdate" fieldId="60" fieldType="TABLE_COLUMN" name="users.usr_creationdate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_deletiondate" fieldId="62" fieldType="TABLE_COLUMN" name="users.usr_deletiondate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_validationdate" fieldId="63" fieldType="TABLE_COLUMN" name="users.usr_validationdate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_canceldate" fieldId="64" fieldType="TABLE_COLUMN" name="users.usr_canceldate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_suspendeddate" fieldId="65" fieldType="TABLE_COLUMN" name="users.usr_suspendeddate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_stopdate" fieldId="66" fieldType="TABLE_COLUMN" name="users.usr_stopdate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_lastupdatedate" fieldId="68" fieldType="TABLE_COLUMN" name="users.usr_lastupdatedate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_lastlogindate" fieldId="69" fieldType="TABLE_COLUMN" name="users.usr_lastlogindate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_createdby_id" fieldId="3" fieldType="TABLE_COLUMN" name="users.usr_createdby_id" sqlTabName="users" widget="Phantom"/>
+      </Group>
+      <Group gridHeight="10" gridWidth="36" name="group_influencer_address" posX="1" posY="22" text="Your address">
+        <Label gridHeight="1" gridWidth="12" name="users_usr_country_id_label" posX="1" posY="1" text="Country">
+          <Initializer text="dbschema:users.usr_country_id/@label"/>
+        </Label>
+        <ButtonEdit action="zoomcountry" colName="cntr_name" completer="true" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="countries.cntr_name" posX="14" posY="1" scroll="true" sqlTabName="countries" tabIndex="-1" title="buttonedit1" widget="ButtonEdit"/>
+        <Phantom colName="usr_country_id" fieldId="34" fieldType="TABLE_COLUMN" name="users.usr_country_id" sqlTabName="users" widget="Phantom"/>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_state_id_label" posX="1" posY="2" text="State">
+          <Initializer text="dbschema:users.usr_state_id/@label"/>
+        </Label>
+        <ButtonEdit action="zoomstate" colName="stt_name" completer="true" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="states.stt_name" posX="14" posY="2" scroll="true" sqlTabName="states" tabIndex="-1" title="buttonedit1" widget="ButtonEdit"/>
+        <Phantom colName="usr_state_id" fieldId="35" fieldType="TABLE_COLUMN" name="users.usr_state_id" sqlTabName="users" widget="Phantom"/>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_city_id_label" posX="1" posY="3" text="City">
+          <Initializer text="dbschema:users.usr_city_id/@label"/>
+        </Label>
+        <ButtonEdit action="zoomcity" colName="cts_name" completer="true" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="cities.cts_name" posX="14" posY="3" scroll="true" sqlTabName="cities" tabIndex="-1" title="buttonedit1" widget="ButtonEdit"/>
+        <Phantom colName="usr_city_id" fieldId="36" fieldType="TABLE_COLUMN" name="users.usr_city_id" sqlTabName="users" widget="Phantom"/>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_address_number_label" posX="1" posY="4" text="Number">
+          <Initializer text="dbschema:users.usr_address_number/@label"/>
+        </Label>
+        <Edit colName="usr_address_number" fieldId="37" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="users.usr_address_number" posX="14" posY="4" scroll="true" sqlTabName="users" tabIndex="-1" title="Address Number" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_address_street_label" posX="1" posY="5" text="Street">
+          <Initializer text="dbschema:users.usr_address_street/@label"/>
+        </Label>
+        <Edit colName="usr_address_street" fieldId="38" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="users.usr_address_street" posX="14" posY="5" scroll="true" sqlTabName="users" tabIndex="-1" title="Street" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_address_zipcode_label" posX="1" posY="6" text="Zipcode">
+          <Initializer text="dbschema:users.usr_address_zipcode/@label"/>
+        </Label>
+        <Edit colName="usr_address_zipcode" fieldId="39" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="users.usr_address_zipcode" posX="14" posY="6" scroll="true" sqlTabName="users" tabIndex="-1" title="Zipcode" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" hidden="true" name="users_usr_address_town_label" posX="1" posY="7" text="Town">
+          <Initializer text="dbschema:users.usr_address_town/@label"/>
+        </Label>
+        <Edit colName="usr_address_town" fieldId="40" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" hidden="true" name="users.usr_address_town" posX="14" posY="7" scroll="true" sqlTabName="users" tabIndex="-1" title="Town" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_address_more_label" posX="1" posY="8" text="More">
+          <Initializer text="dbschema:users.usr_address_more/@label"/>
+        </Label>
+        <Edit colName="usr_address_more" fieldId="41" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="users.usr_address_more" posX="14" posY="8" scroll="true" sqlTabName="users" tabIndex="-1" title="More" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+      </Group>
+      <Group gridHeight="8" gridWidth="36" name="group_influencer_instagram" posX="1" posY="34" text="Social Networks Accounts">
+        <Label gridHeight="1" gridWidth="12" name="users_usr_instagram_username_label" posX="1" posY="1" text="Instagram">
+          <Initializer text="dbschema:users.usr_instagram_username/@label"/>
+        </Label>
+        <HRec gridHeight="1" gridWidth="20" name="hrec1" posX="14" posY="1">
+          <Edit colName="usr_instagram_username" fieldId="44" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" name="users.usr_instagram_username" posX="0" posY="0" scroll="true" sqlTabName="users" tabIndex="-1" title="Instagram Username" widget="Edit">
+            <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+          </Edit>
+          <FFImage action="viewsocialnetwork" autoScale="true" fieldId="11" gridHeight="1" gridWidth="2" name="viewimage" posX="16" posY="0" sizePolicy="fixed" style="no_border" title="" widget="FFImage"/>
+          <Spacer gridWidth="0" name="spacer1" posX="19" posY="0"/>
+        </HRec>
+        <Button gridHeight="1" gridWidth="13" name="infl_socialnetworks" posX="14" posY="2" tabIndex="-1" text="Other social networks"/>
+        <Phantom colName="usr_instagram_fullname" fieldId="45" fieldType="TABLE_COLUMN" name="users.usr_instagram_fullname" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_biography" fieldId="47" fieldType="TABLE_COLUMN" name="users.usr_instagram_biography" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_website" fieldId="48" fieldType="TABLE_COLUMN" name="users.usr_instagram_website" sqlTabName="users" widget="Phantom"/>
+      </Group>
+      <Group gridHeight="5" gridWidth="36" hidden="true" name="group_influencer_notifications" posX="1" posY="45" text="Notifications">
+        <Label gridHeight="1" gridWidth="12" name="users_usr_mobile_notifications_label" posX="1" posY="1" text="Mobile">
+          <Initializer text="dbschema:users.usr_mobile_notifications/@label"/>
+        </Label>
+        <CheckBox colName="usr_mobile_notifications" fieldId="55" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="users.usr_mobile_notifications" posX="14" posY="1" sqlTabName="users" tabIndex="-1" text="" title="Mobile" widget="CheckBox">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </CheckBox>
+        <Phantom colName="usr_email_notifications" fieldId="57" fieldType="TABLE_COLUMN" name="users.usr_email_notifications" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_email_style" fieldId="15" fieldType="TABLE_COLUMN" name="users.usr_email_style" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_notif_style" fieldId="16" fieldType="TABLE_COLUMN" name="users.usr_notif_style" sqlTabName="users" widget="Phantom"/>
+      </Group>
+      <Group gridHeight="4" gridWidth="36" name="group_influencer_rates" posX="1" posY="53" text="Currency">
+        <Label gridHeight="1" gridWidth="12" name="users_usr_currency_id_label" posX="1" posY="1" text="Currency">
+          <Initializer text="dbschema:users.usr_currency_id/@label"/>
+        </Label>
+        <ComboBox colName="usr_currency_id" fieldId="58" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" initializer="user_currency_combobox_initializer" items="" name="users.usr_currency_id" posX="14" posY="1" scroll="true" sqlTabName="users" tabIndex="-1" title="Currency" widget="ComboBox">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </ComboBox>
+        <Button gridHeight="1" gridWidth="13" hidden="false" name="infl_postprices" posX="14" posY="2" tabIndex="-1" text="Edit price per post"/>
+      </Group>
+      <Group gridHeight="6" gridWidth="36" name="group_influencer_bank" posX="1" posY="57" text="Bank information">
+        <Label gridHeight="1" gridWidth="12" name="users_usr_bank_name_label" posX="1" posY="1" text="Bank Name">
+          <Initializer text="dbschema:users.usr_bank_name/@label"/>
+        </Label>
+        <Edit colName="usr_bank_name" fieldId="52" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="users.usr_bank_name" posX="14" posY="1" scroll="true" sqlTabName="users" tabIndex="-1" title="Bank Name" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_bank_iban_label" posX="1" posY="2" text="Bank IBAN">
+          <Initializer text="dbschema:users.usr_bank_iban/@label"/>
+        </Label>
+        <Edit colName="usr_bank_iban" fieldId="53" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="users.usr_bank_iban" posX="14" posY="2" scroll="true" sqlTabName="users" tabIndex="-1" title="IBAN" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_bank_swift_label" posX="1" posY="3" text="Bank SWIFT">
+          <Initializer text="dbschema:users.usr_bank_swift/@label"/>
+        </Label>
+        <Edit colName="usr_bank_swift" fieldId="54" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="users.usr_bank_swift" posX="14" posY="3" scroll="true" sqlTabName="users" tabIndex="-1" title="SWIFT" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="users_usr_paypal_label" posX="1" posY="4" text="Paypal">
+          <Initializer text="dbschema:users.usr_bank_swift/@label"/>
+        </Label>
+        <Edit colName="usr_paypal" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="users.usr_paypal" posX="14" posY="4" scroll="true" sqlTabName="users" tabIndex="-1" title="SWIFT" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+      </Group>
+      <Group gridHeight="10" gridWidth="36" name="group_influencer_metrics" posX="1" posY="63" text="Metrics">
+        <Label gridHeight="1" gridWidth="12" name="usermetrics_usrmtc_geomedia_count_label1" posX="1" posY="1" text="Geomedia count">
+          <Initializer text="dbschema:usermetrics.usrmtc_geomedia_count/@label"/>
+        </Label>
+        <Edit colName="usrmtc_geomedia_count" fieldId="21" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" name="usermetrics.usrmtc_geomedia_count" posX="14" posY="1" scroll="true" sqlTabName="usermetrics" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="usermetrics_usrmtc_media_count_label1" posX="1" posY="2" text="Media count">
+          <Initializer text="dbschema:usermetrics.usrmtc_media_count/@label"/>
+        </Label>
+        <Edit colName="usrmtc_media_count" fieldId="22" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" name="usermetrics.usrmtc_media_count" posX="14" posY="2" scroll="true" sqlTabName="usermetrics" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="usermetrics_usrmtc_follows_count_label1" posX="1" posY="3" text="Follows count">
+          <Initializer text="dbschema:usermetrics.usrmtc_follows_count/@label"/>
+        </Label>
+        <Edit colName="usrmtc_follows_count" fieldId="23" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" name="usermetrics.usrmtc_follows_count" posX="14" posY="3" scroll="true" sqlTabName="usermetrics" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="usermetrics_usrmtc_followers_count_label1" posX="1" posY="4" text="Followers count">
+          <Initializer text="dbschema:usermetrics.usrmtc_followers_count/@label"/>
+        </Label>
+        <Edit colName="usrmtc_followers_count" fieldId="24" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" name="usermetrics.usrmtc_followers_count" posX="14" posY="4" scroll="true" sqlTabName="usermetrics" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="usermetrics_usrmtc_comments_count_label1" posX="1" posY="5" text="Comments count">
+          <Initializer text="dbschema:usermetrics.usrmtc_comments_count/@label"/>
+        </Label>
+        <Edit colName="usrmtc_comments_count" fieldId="25" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" name="usermetrics.usrmtc_comments_count" posX="14" posY="5" scroll="true" sqlTabName="usermetrics" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="usermetrics_usrmtc_likes_count_label1" posX="1" posY="6" text="Likes count">
+          <Initializer text="dbschema:usermetrics.usrmtc_likes_count/@label"/>
+        </Label>
+        <Edit colName="usrmtc_likes_count" fieldId="26" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" name="usermetrics.usrmtc_likes_count" posX="14" posY="6" scroll="true" sqlTabName="usermetrics" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="usermetrics_usrmtc_usertags_count_label1" posX="1" posY="7" text="Usertags count">
+          <Initializer text="dbschema:usermetrics.usrmtc_usertags_count/@label"/>
+        </Label>
+        <Edit colName="usrmtc_usertags_count" fieldId="46" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" name="usermetrics.usrmtc_usertags_count" posX="14" posY="7" scroll="true" sqlTabName="usermetrics" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="12" name="usermetrics_usrmtc_reach_label1" posX="1" posY="8" text="Reach">
+          <Initializer text="dbschema:usermetrics.usrmtc_reach/@label"/>
+        </Label>
+        <Edit colName="usrmtc_reach" fieldId="56" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" name="usermetrics.usrmtc_reach" posX="14" posY="8" scroll="true" sqlTabName="usermetrics" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Phantom colName="usrmtc_id" fieldId="17" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_id" sqlTabName="usermetrics" widget="Phantom"/>
+        <Phantom colName="usrmtc_usr_id" fieldId="18" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_usr_id" sqlTabName="usermetrics" widget="Phantom"/>
+        <Phantom colName="usrmtc_instagram_userid" fieldId="19" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_instagram_userid" sqlTabName="usermetrics" widget="Phantom"/>
+        <Phantom colName="usrmtc_instagram_username" fieldId="20" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_instagram_username" sqlTabName="usermetrics" widget="Phantom"/>
+        <Phantom colName="usrmtc_bdate" fieldId="59" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_bdate" sqlTabName="usermetrics" widget="Phantom"/>
+        <Phantom colName="usrmtc_edate" fieldId="61" fieldType="TABLE_COLUMN" name="usermetrics.usrmtc_edate" sqlTabName="usermetrics" widget="Phantom"/>
+      </Group>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyAGUANwBkADEAZgAyADIALQBjADYAOAAzAC0ANABkADcAMwAtADgAOAA0ADcALQAyAGUAZAA3AGYAZABiADEAZgBmAGEAMgB9QHKzM1OyWMFASgAALbu7uj9ok3S8an76AQAAAEwAewBiADgANwA3ADMAZABlADUALQBhAGYAMQAyAC0ANABjADgAMwAtAGEAYQAzADIALQA2ADIANQA0ADcAOQBkAGQAZQBmADcANQB9QEQAACVVVU5ARAAAJVVVTj+Kn752yLQ8AQAAAEwAewBjADMAYQAxAGQANgA1AGIALQBiADgAOQBhAC0ANABmAGMAMwAtADkAMgAxADMALQAwADYAOQA2ADIAMAA2ADMANQA5AGYAOQB9QHLTM0TFHrdAatmZsqj1wT+CbpeNT988AQAAAEwAewAxADcAMgAwADAAZABlAGMALQBmADYANwA0AC0ANAA2AGUAZAAtADkAYQA3AGIALQAyADUANQBlADkAOQA2AGUAOAA5ADYAMAB9QD4AAAAAAABAPgAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

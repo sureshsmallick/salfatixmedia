@@ -1,0 +1,20 @@
+{
+  "name": "mt-card",
+  "type": "group",
+  "contents": [{
+      "name": "mt-card-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "mt-card-font-size-ratio",
+      "type": "number",
+      "defaultValue": "$theme-font-size-ratio"
+    },
+    {
+      "name": "mt-card-separator-color",
+      "type": "color",
+      "defaultValue": "$theme-separator-color"
+    }
+  ]
+}

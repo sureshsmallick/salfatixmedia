@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="campaign_list.tmp" build="3.20.07" sqlDbName="salfatixmedia" text="Form" style="centerwindow" width="85" height="16">
+  <LStr text="Form"/>
+  <Grid name="grid1" width="85" height="16">
+    <FormField name="formonly.ff_formtitle" colName="ff_formtitle" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Label width="82" justify="center" style="ff_formtitle" posY="0" posX="2" gridWidth="82"/>
+    </FormField>
+    <Group name="filtergroup" text="Filters" style="no_border" posY="1" posX="1" gridWidth="39" gridHeight="14">
+      <LStr text="Filters"/>
+      <Label name="label1" width="28" text="Sort By" posY="1" posX="1" gridWidth="28">
+        <LStr text="Sort By"/>
+      </Label>
+      <FormField name="formonly.radiogroup1" colName="radiogroup1" fieldId="1" sqlTabName="formonly" tabIndex="2">
+        <RadioGroup width="28" orientation="horizontal" posY="2" posX="1" gridWidth="28">
+          <Item name="brands.brnd_name" text="Brand name">
+            <LStr text="Brand name"/>
+          </Item>
+          <Item name="campaigns.cmp_title" text="Title">
+            <LStr text="Title"/>
+          </Item>
+          <Item name="campaignstatus.cmpst_name" text="Status">
+            <LStr text="Status"/>
+          </Item>
+        </RadioGroup>
+      </FormField>
+      <Label name="label2" width="20" text="Order" posY="4" posX="1" gridWidth="20">
+        <LStr text="Order"/>
+      </Label>
+      <FormField name="formonly.radiogroup2" colName="radiogroup2" fieldId="2" sqlTabName="formonly" tabIndex="3">
+        <RadioGroup width="20" orientation="horizontal" posY="5" posX="1" gridWidth="20">
+          <Item name="asc" text="Ascending">
+            <LStr text="Ascending"/>
+          </Item>
+          <Item name="desc" text="Descending">
+            <LStr text="Descending"/>
+          </Item>
+        </RadioGroup>
+      </FormField>
+      <Label name="label3" width="28" text="Filter on Brand name" posY="6" posX="1" gridWidth="28">
+        <LStr text="Filter on Brand name"/>
+      </Label>
+      <FormField name="brands1.brnd_name" colName="brnd_name" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="3" sqlTabName="brands" tabIndex="4">
+        <Edit width="28" posY="7" posX="1" gridWidth="28"/>
+      </FormField>
+      <Label name="label4" width="28" text="Filter on title" posY="8" posX="1" gridWidth="28">
+        <LStr text="Filter on title"/>
+      </Label>
+      <FormField name="campaigns1.cmp_title" colName="cmp_title" sqlType="VARCHAR(64)" fieldId="4" sqlTabName="campaigns" tabIndex="5">
+        <Edit width="28" posY="9" posX="1" gridWidth="28"/>
+      </FormField>
+      <Label name="label5" width="28" text="Filter on status" posY="10" posX="1" gridWidth="28">
+        <LStr text="Filter on status"/>
+      </Label>
+      <FormField name="campaignstatus1.cmpst_name" colName="cmpst_name" sqlType="VARCHAR(32)" required="1" notNull="1" fieldId="5" sqlTabName="campaignstatus" tabIndex="6">
+        <Edit width="28" scroll="1" posY="11" posX="1" gridWidth="28"/>
+      </FormField>
+      <Button name="filter" width="7" text="Filter" posY="12" posX="22" gridWidth="7" tabIndex="7">
+        <LStr text="Filter"/>
+      </Button>
+    </Group>
+    <ScrollGrid wantFixedPageSize="0" name="salfatixmedia1" doubleClick="display_campaign" style="campaignlisttable" pageSize="10" posY="1" posX="41" gridWidth="43" gridHeight="14">
+      <PhantomMatrix name="campaigns.cmp_id" colName="cmp_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="12" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_brand_id" colName="cmp_brand_id" sqlType="INTEGER" required="1" notNull="1" fieldId="10" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_pic_id" colName="cmp_pic_id" sqlType="INTEGER" required="1" notNull="1" fieldId="13" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <Matrix name="pics.pic_value" colName="pic_value" sqlType="BYTE" required="1" notNull="1" fieldId="6" sqlTabName="pics" noEntry="1" tabIndex="8" pageSize="10" stepY="13">
+        <Image width="17" height="6" autoScale="1" sizePolicy="fixed" style="no_border" posY="1" posX="3" gridWidth="17" gridHeight="6"/>
+      </Matrix>
+      <Matrix name="brands.brnd_name" colName="brnd_name" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="7" sqlTabName="brands" tabIndex="9" pageSize="10" stepY="13">
+        <Edit width="20" posY="1" posX="22" gridWidth="20"/>
+      </Matrix>
+      <Matrix name="campaigns.cmp_title" colName="cmp_title" sqlType="VARCHAR(64)" fieldId="8" sqlTabName="campaigns" tabIndex="10" pageSize="10" stepY="13">
+        <TextEdit width="20" height="4" scrollBars="none" wantReturns="1" posY="2" posX="22" gridWidth="20" gridHeight="4"/>
+      </Matrix>
+      <PhantomMatrix name="campaigns.cmp_overview" colName="cmp_overview" sqlType="VARCHAR(255)" fieldId="14" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_url" colName="cmp_url" sqlType="VARCHAR(255)" fieldId="15" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_isproductneeded" colName="cmp_isproductneeded" sqlType="SMALLINT" required="1" notNull="1" fieldId="42" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_prd_description" colName="cmp_prd_description" sqlType="VARCHAR(255)" fieldId="16" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_prd_value" colName="cmp_prd_value" sqlType="DECIMAL(10,2)" fieldId="17" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_issharedonfacebook" colName="cmp_issharedonfacebook" sqlType="SMALLINT" required="1" notNull="1" fieldId="40" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_sharedfacebooklink" colName="cmp_sharedfacebooklink" sqlType="VARCHAR(255)" fieldId="41" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_post_guidelines" colName="cmp_post_guidelines" sqlType="VARCHAR(128)" fieldId="18" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_captionrequirements" colName="cmp_captionrequirements" sqlType="VARCHAR(255)" fieldId="19" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_post_startdate" colName="cmp_post_startdate" sqlType="DATE" fieldId="20" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_post_enddate" colName="cmp_post_enddate" sqlType="DATE" fieldId="21" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_post_time_starttime" colName="cmp_post_time_starttime" sqlType="INTEGER" fieldId="22" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_post_time_endtime" colName="cmp_post_time_endtime" sqlType="INTEGER" fieldId="23" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_postduration_id" colName="cmp_postduration_id" sqlType="INTEGER" fieldId="24" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_totalbudget" colName="cmp_totalbudget" sqlType="DECIMAL(10,2)" fieldId="25" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_deposit" colName="cmp_deposit" sqlType="DECIMAL(10,2)" fieldId="26" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_depositpercent" colName="cmp_depositpercent" sqlType="DECIMAL(6,2)" fieldId="27" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_currency_id" colName="cmp_currency_id" sqlType="INTEGER" fieldId="28" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_wantedusers" colName="cmp_wantedusers" sqlType="INTEGER" fieldId="37" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_campaignstatus_id" colName="cmp_campaignstatus_id" sqlType="INTEGER" required="1" notNull="1" fieldId="11" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_createdby_id" colName="cmp_createdby_id" sqlType="INTEGER" required="1" notNull="1" fieldId="29" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_creationdate" colName="cmp_creationdate" sqlType="DATETIME YEAR TO SECOND" required="1" notNull="1" fieldId="30" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_publisheddate" colName="cmp_publisheddate" sqlType="DATE" fieldId="38" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_selectionstartdate" colName="cmp_selectionstartdate" sqlType="DATE" fieldId="31" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_selectionenddate" colName="cmp_selectionenddate" sqlType="DATE" fieldId="32" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_selectioncomment" colName="cmp_selectioncomment" sqlType="VARCHAR(128)" fieldId="39" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_actionstartdate" colName="cmp_actionstartdate" sqlType="DATETIME YEAR TO SECOND" fieldId="33" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_actionenddate" colName="cmp_actionenddate" sqlType="DATETIME YEAR TO SECOND" fieldId="34" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_enddate" colName="cmp_enddate" sqlType="DATETIME YEAR TO SECOND" fieldId="35" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="campaigns.cmp_lastupdatedate" colName="cmp_lastupdatedate" sqlType="DATETIME YEAR TO SECOND" fieldId="36" sqlTabName="campaigns" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <Matrix name="campaignstatus.cmpst_name" colName="cmpst_name" sqlType="VARCHAR(32)" required="1" notNull="1" fieldId="9" sqlTabName="campaignstatus" tabIndex="11" pageSize="10" stepY="13">
+        <Edit width="20" posY="6" posX="22" gridWidth="20"/>
+      </Matrix>
+    </ScrollGrid>
+  </Grid>
+  <RecordView tabName="brands1">
+    <Link colName="brnd_name" fieldIdRef="3"/>
+  </RecordView>
+  <RecordView tabName="campaigns1">
+    <Link colName="cmp_title" fieldIdRef="4"/>
+  </RecordView>
+  <RecordView tabName="campaignstatus1">
+    <Link colName="cmpst_name" fieldIdRef="5"/>
+  </RecordView>
+  <RecordView tabName="campaigns">
+    <Link colName="cmp_title" fieldIdRef="8"/>
+    <Link colName="cmp_brand_id" fieldIdRef="10"/>
+    <Link colName="cmp_campaignstatus_id" fieldIdRef="11"/>
+    <Link colName="cmp_id" fieldIdRef="12"/>
+    <Link colName="cmp_pic_id" fieldIdRef="13"/>
+    <Link colName="cmp_overview" fieldIdRef="14"/>
+    <Link colName="cmp_url" fieldIdRef="15"/>
+    <Link colName="cmp_prd_description" fieldIdRef="16"/>
+    <Link colName="cmp_prd_value" fieldIdRef="17"/>
+    <Link colName="cmp_post_guidelines" fieldIdRef="18"/>
+    <Link colName="cmp_captionrequirements" fieldIdRef="19"/>
+    <Link colName="cmp_post_startdate" fieldIdRef="20"/>
+    <Link colName="cmp_post_enddate" fieldIdRef="21"/>
+    <Link colName="cmp_post_time_starttime" fieldIdRef="22"/>
+    <Link colName="cmp_post_time_endtime" fieldIdRef="23"/>
+    <Link colName="cmp_postduration_id" fieldIdRef="24"/>
+    <Link colName="cmp_totalbudget" fieldIdRef="25"/>
+    <Link colName="cmp_deposit" fieldIdRef="26"/>
+    <Link colName="cmp_depositpercent" fieldIdRef="27"/>
+    <Link colName="cmp_currency_id" fieldIdRef="28"/>
+    <Link colName="cmp_createdby_id" fieldIdRef="29"/>
+    <Link colName="cmp_creationdate" fieldIdRef="30"/>
+    <Link colName="cmp_selectionstartdate" fieldIdRef="31"/>
+    <Link colName="cmp_selectionenddate" fieldIdRef="32"/>
+    <Link colName="cmp_actionstartdate" fieldIdRef="33"/>
+    <Link colName="cmp_actionenddate" fieldIdRef="34"/>
+    <Link colName="cmp_enddate" fieldIdRef="35"/>
+    <Link colName="cmp_lastupdatedate" fieldIdRef="36"/>
+    <Link colName="cmp_wantedusers" fieldIdRef="37"/>
+    <Link colName="cmp_publisheddate" fieldIdRef="38"/>
+    <Link colName="cmp_selectioncomment" fieldIdRef="39"/>
+    <Link colName="cmp_issharedonfacebook" fieldIdRef="40"/>
+    <Link colName="cmp_sharedfacebooklink" fieldIdRef="41"/>
+    <Link colName="cmp_isproductneeded" fieldIdRef="42"/>
+  </RecordView>
+  <RecordView tabName="pics">
+    <Link colName="pic_value" fieldIdRef="6"/>
+  </RecordView>
+  <RecordView tabName="brands">
+    <Link colName="brnd_name" fieldIdRef="7"/>
+  </RecordView>
+  <RecordView tabName="campaignstatus">
+    <Link colName="cmpst_name" fieldIdRef="9"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="radiogroup1" fieldIdRef="1"/>
+    <Link colName="radiogroup2" fieldIdRef="2"/>
+  </RecordView>
+  <RecordView tabName="scr_campaign_list">
+    <Link colName="cmp_id" fieldIdRef="12"/>
+    <Link colName="cmp_brand_id" fieldIdRef="10"/>
+    <Link colName="cmp_pic_id" fieldIdRef="13"/>
+    <Link colName="cmp_title" fieldIdRef="8"/>
+    <Link colName="cmp_overview" fieldIdRef="14"/>
+    <Link colName="cmp_url" fieldIdRef="15"/>
+    <Link colName="cmp_isproductneeded" fieldIdRef="42"/>
+    <Link colName="cmp_prd_description" fieldIdRef="16"/>
+    <Link colName="cmp_prd_value" fieldIdRef="17"/>
+    <Link colName="cmp_issharedonfacebook" fieldIdRef="40"/>
+    <Link colName="cmp_sharedfacebooklink" fieldIdRef="41"/>
+    <Link colName="cmp_post_guidelines" fieldIdRef="18"/>
+    <Link colName="cmp_captionrequirements" fieldIdRef="19"/>
+    <Link colName="cmp_post_startdate" fieldIdRef="20"/>
+    <Link colName="cmp_post_enddate" fieldIdRef="21"/>
+    <Link colName="cmp_post_time_starttime" fieldIdRef="22"/>
+    <Link colName="cmp_post_time_endtime" fieldIdRef="23"/>
+    <Link colName="cmp_postduration_id" fieldIdRef="24"/>
+    <Link colName="cmp_totalbudget" fieldIdRef="25"/>
+    <Link colName="cmp_deposit" fieldIdRef="26"/>
+    <Link colName="cmp_depositpercent" fieldIdRef="27"/>
+    <Link colName="cmp_currency_id" fieldIdRef="28"/>
+    <Link colName="cmp_wantedusers" fieldIdRef="37"/>
+    <Link colName="cmp_campaignstatus_id" fieldIdRef="11"/>
+    <Link colName="cmp_createdby_id" fieldIdRef="29"/>
+    <Link colName="cmp_creationdate" fieldIdRef="30"/>
+    <Link colName="cmp_publisheddate" fieldIdRef="38"/>
+    <Link colName="cmp_selectionstartdate" fieldIdRef="31"/>
+    <Link colName="cmp_selectionenddate" fieldIdRef="32"/>
+    <Link colName="cmp_selectioncomment" fieldIdRef="39"/>
+    <Link colName="cmp_actionstartdate" fieldIdRef="33"/>
+    <Link colName="cmp_actionenddate" fieldIdRef="34"/>
+    <Link colName="cmp_enddate" fieldIdRef="35"/>
+    <Link colName="cmp_lastupdatedate" fieldIdRef="36"/>
+    <Link colName="pic_value" fieldIdRef="6"/>
+    <Link colName="brnd_name" fieldIdRef="7"/>
+    <Link colName="cmpst_name" fieldIdRef="9"/>
+  </RecordView>
+  <RecordView tabName="scr_qbeinput">
+    <Link colName="radiogroup1" fieldIdRef="1"/>
+    <Link colName="radiogroup2" fieldIdRef="2"/>
+  </RecordView>
+  <RecordView tabName="scr_qbeconstruct">
+    <Link colName="brnd_name" fieldIdRef="3"/>
+    <Link colName="cmp_title" fieldIdRef="4"/>
+    <Link colName="cmpst_name" fieldIdRef="5"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+  </RecordView>
+</Form>

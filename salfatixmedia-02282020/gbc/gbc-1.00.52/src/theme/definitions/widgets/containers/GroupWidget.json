@@ -1,0 +1,20 @@
+{
+  "name": "GroupWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-GroupWidget-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "gbc-GroupWidget-font-size-ratio",
+      "type": "number",
+      "defaultValue": "$theme-font-size-ratio"
+    },
+    {
+      "name": "gbc-GroupWidget-background-color",
+      "type": "color",
+      "defaultValue": "$theme-secondary-alternative-background-color"
+    }
+  ]
+}

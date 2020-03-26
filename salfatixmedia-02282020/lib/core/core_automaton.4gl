@@ -1,0 +1,149 @@
+PUBLIC CONSTANT --constants for automatons
+  C_APPSTATE_UNDEFINED SMALLINT = 0,
+  C_APPSTATE_EXIT_FORM SMALLINT = 1,
+  C_APPSTATE_EXIT SMALLINT = 2,
+  C_APPSTATE_DISPLAY SMALLINT = 3,
+  C_APPSTATE_ADD SMALLINT = 4,
+  C_APPSTATE_UPDATE SMALLINT = 5
+
+PUBLIC CONSTANT --constants for standard dialog actions
+  C_APPACTION_UNDEFINED SMALLINT = 0,
+  C_APPACTION_ACCEPT SMALLINT = 1,
+  C_APPACTION_AUTOACCEPT SMALLINT = 2,
+  C_APPACTION_CANCEL SMALLINT = 3,
+  C_APPACTION_CLOSE SMALLINT = 4,
+  C_APPACTION_EXIT_FORM SMALLINT = 5,
+  C_APPACTION_EXIT SMALLINT = 6,
+  C_APPACTION_QUERY SMALLINT = 7,
+  C_APPACTION_NEW SMALLINT = 8,
+  C_APPACTION_INSERT SMALLINT = 9,
+  C_APPACTION_APPEND SMALLINT = 10,
+  C_APPACTION_UPDATE SMALLINT = 11,
+  C_APPACTION_DELETE SMALLINT = 12,
+  C_APPACTION_DIALOGTOUCHED SMALLINT = 13,
+  C_APPACTION_VIEWLIST SMALLINT = 14,
+  C_APPACTION_VIEWEMPTY SMALLINT = 15,
+  C_APPACTION_CAMPAIGN_SUBMIT SMALLINT = 20,
+  C_APPACTION_CAMPAIGN_DELETE SMALLINT = 21,
+  C_APPACTION_CAMPAIGN_REVIEW SMALLINT = 22,
+  C_APPACTION_CAMPAIGN_VALIDATE SMALLINT = 23,
+  --C_APPACTION_CAMPAIGN_DEPOSITPAID SMALLINT = 24,
+  --C_APPACTION_CAMPAIGN_FULLYPAID SMALLINT = 25,
+  --C_APPACTION_CAMPAIGN_INFLUENCERSPAID SMALLINT = 26,
+  --C_APPACTION_CAMPAIGN_ASKINFLUENCERSSTATISTICS SMALLINT = 27,
+  C_APPACTION_CAMPAIGN_CLOSED SMALLINT = 28,
+  C_APPACTION_CAMPAIGN_PUBLISH SMALLINT = 29,
+  C_APPACTION_BRAND_VALIDATE SMALLINT = 30,
+  C_APPACTION_BRAND_CANCEL SMALLINT = 31,
+  C_APPACTION_BRAND_REJECT SMALLINT = 32,
+  C_APPACTION_BRAND_SUSPEND SMALLINT = 33,
+  C_APPACTION_BRAND_DELETE SMALLINT = 34,
+  C_APPACTION_BRAND_WANTTOLEAVE SMALLINT = 35,
+  C_APPACTION_BRAND_REJECTREQUESTCANCELACCOUNT SMALLINT = 36,
+  C_APPACTION_INFLUENCER_VALIDATE SMALLINT = 40,
+  C_APPACTION_INFLUENCER_CANCEL SMALLINT = 41,
+  C_APPACTION_INFLUENCER_REJECT SMALLINT = 42,
+  C_APPACTION_INFLUENCER_SUSPEND SMALLINT = 43,
+  C_APPACTION_INFLUENCER_DELETE SMALLINT = 44,
+  C_APPACTION_CAMPAIGNPOST_SFMD_VALIDATE SMALLINT = 50,
+  C_APPACTION_CAMPAIGNPOST_SFMD_REJECT SMALLINT = 51,
+  C_APPACTION_CAMPAIGNPOST_BRAND_VALIDATE SMALLINT = 52,
+  C_APPACTION_CAMPAIGNPOST_BRAND_REJECT SMALLINT = 53,
+  C_APPACTION_CAMPAIGNPOST_SFMD_POSTISPUBLIC SMALLINT = 54,
+  C_APPACTION_CAMPAIGNPOST_SFMD_REVIEWPOSTPRIVACY SMALLINT = 55,
+  C_APPACTION_CAMPAIGNPOST_STATISTICSREQUESTED SMALLINT = 56,
+  C_APPACTION_BOUSER_STOP SMALLINT = 60,
+  C_APPACTION_BOUSER_DELETE SMALLINT = 61,
+
+  --ui web actions
+  C_APPACTION_SIGNIN SMALLINT = 100,
+  C_APPACTION_LOGOUT SMALLINT = 101,
+  C_APPACTION_EDITPROFILE SMALLINT = 102,
+  C_APPACTION_BACKOFFICE_MAINPANEL SMALLINT = 103,
+  C_APPACTION_VIEWBRANDS SMALLINT = 110,
+  C_APPACTION_ADDBRAND SMALLINT = 111,
+  C_APPACTION_VIEWCAMPAIGNS SMALLINT = 120,
+  C_APPACTION_ADDCAMPAIGN SMALLINT = 121,
+  C_APPACTION_SUBMITCAMPAIGN SMALLINT = 122,
+  C_APPACTION_VIEWINFLUENCERS SMALLINT = 130,
+  C_APPACTION_ADDINFLUENCER SMALLINT = 131,
+  C_APPACTION_INFLUENCER_MAINPANEL SMALLINT = 132,
+  C_APPACTION_VIEWBOUSERS SMALLINT = 140,
+  C_APPACTION_ADDBOUSER SMALLINT = 141
+
+PUBLIC CONSTANT
+  C_DIALOGSTATE_ADD SMALLINT = 1,
+  C_DIALOGSTATE_UPDATE SMALLINT = 2,
+  C_DIALOGSTATE_DISPLAY SMALLINT = 3
+
+#+ Dialog of the brand input
+#+
+#+ @param pstr_frontcall_module front call module to use
+#+
+#+ @returnType INTEGER, SMALLINT
+#+ @return     0|error, next performed action id
+FUNCTION get_action_from_ui(pstr_frontcall_module)
+  DEFINE
+    pstr_frontcall_module STRING,
+    lint_ret INTEGER,
+    lstr_frontcall_action STRING
+
+  IF ui.Interface.getFrontEndName() == "GBC" THEN
+    CALL update_webmenu(pstr_frontcall_module,"getclickedaction", NULL) RETURNING lstr_frontcall_action
+    CASE lstr_frontcall_action
+      WHEN "slftxaction_viewmainpanel"
+        LET lint_ret = C_APPACTION_BACKOFFICE_MAINPANEL
+      WHEN "slftxaction_viewbrands"
+        LET lint_ret = C_APPACTION_VIEWBRANDS
+      WHEN "slftxaction_addbrand"
+        LET lint_ret = C_APPACTION_ADDBRAND
+      WHEN "slftxaction_viewcampaigns"
+        LET lint_ret = C_APPACTION_VIEWCAMPAIGNS
+      WHEN "slftxaction_addcampaign"
+        LET lint_ret = C_APPACTION_ADDCAMPAIGN
+      WHEN "slftxaction_submitcampaign"
+        LET lint_ret = C_APPACTION_SUBMITCAMPAIGN
+      WHEN "slftxaction_viewinfluencers"
+        LET lint_ret = C_APPACTION_VIEWINFLUENCERS
+      WHEN "slftxaction_addinfluencer"
+        LET lint_ret = C_APPACTION_ADDINFLUENCER
+      WHEN "slftxaction_viewbousers"
+        LET lint_ret = C_APPACTION_VIEWBOUSERS
+      WHEN "slftxaction_addbouser"
+        LET lint_ret = C_APPACTION_ADDBOUSER
+      WHEN "slftxaction_signin"
+        LET lint_ret = C_APPACTION_SIGNIN
+      WHEN "slftxaction_editprofile"
+        LET lint_ret = C_APPACTION_EDITPROFILE
+      WHEN "slftxaction_logout"
+        LET lint_ret = C_APPACTION_LOGOUT
+    END CASE
+  END IF
+  RETURN lint_ret
+END FUNCTION
+
+#+ Call a javascript method for the customized webmenu 
+#+
+#+ Used to encapsulate front-calls aimed for GBC
+#+
+#+ @param pstr_frontcall_module front call module to use
+#+ @param pstr_frontcall_method front call module to use
+#+ @param pstr_loggedin_name name of the logged-in user
+#+
+FUNCTION update_webmenu(pstr_frontcall_module, pstr_frontcall_method, pstr_loggedin_name)
+  DEFINE
+    pstr_frontcall_module STRING,
+    pstr_frontcall_method STRING,
+    pstr_loggedin_name STRING,
+    frontcall_return STRING,
+    version STRING
+
+  --specific front-call which only with a customized GBC
+  IF ui.Interface.getFrontEndName() == "GBC" THEN
+    LET version = ui.Interface.getFrontEndVersion()
+    IF version MATCHES "*.c" THEN --customized GBC
+      CALL ui.Interface.frontcall(pstr_frontcall_module, pstr_frontcall_method, [pstr_loggedin_name] , [frontcall_return])
+    END IF
+  END IF
+  RETURN frontcall_return
+END FUNCTION

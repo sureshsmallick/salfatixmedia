@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation - GBC 1.00.43</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="migration/index.html">What&#x27;s New</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="migration/1.00.52.html">GBC 1.00.52</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.51.html">GBC 1.00.51</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.50.html">GBC 1.00.50</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.49.html">GBC 1.00.49</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.48.html">GBC 1.00.48</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.47.html">GBC 1.00.47</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.46.html">GBC 1.00.46</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.45.html">GBC 1.00.45</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.44.html">GBC 1.00.44</a>
+          
+          <a class="btn btn-sidebar active" href="migration/1.00.43.html">GBC 1.00.43</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.41.html">GBC 1.00.41</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.40.html">GBC 1.00.40</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.39.html">GBC 1.00.39</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.38.html">GBC 1.00.38</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="migration">
+<header class="page-title">
+  <em>GBC 1.00.43</em>
+</header>
+<article class="md-content">
+<p>GBC 1.00.43 was released January 25th, 2018</p>
+<p>This page provides information about new features, as well as changes you need to take
+care of when migrating your customization to this version.</p>
+<h1>New theme engine</h1>
+<p>This New theme engine is changing how theme variables are named and how they
+interact. We advice to use the new naming for the theme variables as described
+below but your current customization should work without making these changes.</p>
+<h2>Concepts</h2>
+<p>New concepts were introduced with this new theme framework. See <a href="reference/theme/index.html">Theme reference</a> for a complete variable reference.</p>
+<h3>Generated palettes</h3>
+<p>Colors palettes (like <code>mt-blue-*</code>) are now generated from a base color (they were previously hardcoded). As it follows an
+algorithm, colors tint may have slightly changed.</p>
+<h3>Color variables naming consistency</h3>
+<p>In previous versions of GBC, some inconsistency exists in variables naming (e.g. <code>gbc-secondary-text-color</code> was used with
+<code>gbc-primary-[medium-]color</code> and <code>gbc-primary-text-color</code> with <code>gbc-secondary-background-color</code>).</p>
+<p>Starting from 1.00.41, we renamed some variables to have more consistency, so that</p>
+<ul>
+<li><code>palette-*</code> are for color palette variables (with generated variants)</li>
+<li><code>theme-*</code> are for theme wide variables</li>
+<li><code>gbc-*Widget-*</code> are for specific widget/widget family variables</li>
+<li><code>*-primary-*-color</code> aims featured elements like buttons, topbar, highlighted table lines</li>
+<li><code>*-secondary-*-color</code> aims standard elements like containers, labels</li>
+<li><code>*-field-*-color</code> aims field elements</li>
+</ul>
+<h2>What is changing</h2>
+<p>Previous customizations should not be affected by this new framework, as every old theme variable has been kept as an alias.</p>
+<blockquote>
+<p>old variables are still valid, but they are <strong>deprecated</strong> and will be subject to disappear. If you have customizations, don't hesitate to change variables names to fit the new ones.</p>
+</blockquote>
+<h3>Renamed variables</h3>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Old variable</th>
+<th>Renamed to</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>primary-*</code></td>
+<td><code>palette-primary-*</code></td>
+<td>generated as a color palette from base color <code>palette-primary</code></td>
+</tr>
+<tr>
+<td><code>text-light-*</code></td>
+<td><code>palette-text-primary-*</code></td>
+<td>generated as a color palette from base color <code>palette-text-primary</code></td>
+</tr>
+<tr>
+<td><code>text-dark-*</code></td>
+<td><code>palette-text-secondary-*</code></td>
+<td>generated as a color palette from base color <code>palette-text-secondary</code></td>
+</tr>
+<tr>
+<td><code>gbc-secondary-text-color</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-primary-color"><code>theme-primary-color</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-primary-color</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-primary-background-color"><code>theme-primary-background-color</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-primary-medium-color</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-primary-emphasis-background-color"><code>theme-primary-emphasis-background-color</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-primary-light-color</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-primary-faded-background-color"><code>theme-primary-faded-background-color</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-primary-text-color</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-secondary-color"><code>theme-secondary-color</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-primary-background-color</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-secondary-background-color"><code>theme-secondary-background-color</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-secondary-background-color</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-secondary-alternative-background-color"><code>theme-secondary-alternative-background-color</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-field-background-color</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-field-background-color"><code>theme-field-background-color</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-field-disabled-background-color</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-field-disabled-background-color"><code>theme-field-disabled-background-color</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-field-readonly-background-color</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-field-readonly-background-color"><code>theme-field-readonly-background-color</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-disabled-color</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-disabled-color"><code>theme-disabled-color</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-separator-color</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-separator-color"><code>theme-separator-color</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-header-color</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-header-color"><code>theme-header-color</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-message-color</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-message-background-color"><code>theme-message-background-color</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-error-color</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-error-background-color"><code>theme-error-background-color</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>traditional-mode-letter-spacing</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-traditional-mode-letter-spacing"><code>theme-traditional-mode-letter-spacing</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>table-min-width</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-table-min-width"><code>theme-table-min-width</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>table-min-pageSize</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-table-min-page-size"><code>theme-table-min-page-size</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-checkbox-size</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-checkbox-size"><code>theme-checkbox-size</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-radiobutton-size</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-radiobutton-size"><code>theme-radiobutton-size</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>field-default-height</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-field-default-height"><code>theme-field-default-height</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-field-height-ratio</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-field-height-ratio"><code>theme-field-height-ratio</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-font-size-ratio</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-font-size-ratio"><code>theme-font-size-ratio</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-margin-ratio</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-margin-ratio"><code>theme-margin-ratio</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-max-icon-size</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-max-icon-size"><code>theme-max-icon-size</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-table-margin</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-table-margin"><code>theme-table-margin</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-combobox-margin</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-combobox-margin"><code>theme-combobox-margin</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-grid-inner-gutter</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-grid-inner-gutter"><code>theme-grid-inner-gutter</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>button-default-width</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-button-default-width"><code>theme-button-default-width</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>group-separation-size</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-group-separation-size"><code>theme-group-separation-size</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>splitter-size</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-splitter-size"><code>theme-splitter-size</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-sidebar-always-visible-min-width</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-sidebar-always-visible-min-width"><code>theme-sidebar-always-visible-min-width</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-sidebar-default-width</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-sidebar-default-width"><code>theme-sidebar-default-width</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-sidebar-max-width</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-sidebar-max-width"><code>theme-sidebar-max-width</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-toggle-right-sidebar-min-width</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-toggle-right-sidebar-min-width"><code>theme-toggle-right-sidebar-min-width</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-disable-ending-popup</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-disable-ending-popup"><code>theme-disable-ending-popup</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-disable-context-menu</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-disable-context-menu"><code>theme-disable-context-menu</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-scrollers-speed</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-scrollers-speed"><code>theme-scrollers-speed</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-scrollers-clickonly</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-scrollers-clickonly"><code>theme-scrollers-clickonly</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-message-display-time</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-message-display-time"><code>theme-message-display-time</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-message-position</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-message-display-position"><code>theme-message-display-position</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-error-display-time</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-error-display-time"><code>theme-error-display-time</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-error-position</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-error-display-position"><code>theme-error-display-position</code></a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gbc-animation-duration</code></td>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-animation-duration"><code>theme-animation-duration</code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Value changed variables</h3>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mt-[color]</code>, <code>mt-[color]-*</code></td>
+<td>generated via color palette algorithm, colors tint may have slightly changed</td>
+</tr>
+<tr>
+<td><code>gbc-genero-[color]</code></td>
+<td><code>mt-[color]</code> based values, generated via color palette algorithm, same tint changes</td>
+</tr>
+<tr>
+<td><code>gbc-genero-appWorkSpace</code></td>
+<td>using <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-secondary-background-color"><code>theme-secondary-background-color</code></a> rather than <code>gbc-primary-background-color</code></td>
+</tr>
+<tr>
+<td><code>gbc-genero-background</code></td>
+<td>using <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-secondary-background-color"><code>theme-secondary-background-color</code></a> rather than <code>gbc-secondary-background-color</code></td>
+</tr>
+<tr>
+<td><code>gbc-genero-buttonFace</code></td>
+<td>using <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-primary-background-color"><code>theme-primary-background-color</code></a> rather than <code>gbc-primary-color</code></td>
+</tr>
+<tr>
+<td><code>gbc-genero-buttonText</code></td>
+<td>using <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-primary-color"><code>theme-primary-color</code></a> rather than <code>gbc-secondary-text-color</code></td>
+</tr>
+<tr>
+<td><code>gbc-genero-grayText</code></td>
+<td>using <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-disabled-color"><code>theme-disabled-color</code></a> rather than <code>gbc-disabled-color</code></td>
+</tr>
+<tr>
+<td><code>gbc-genero-highLight</code></td>
+<td>using <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-primary-emphasis-background-color"><code>theme-primary-emphasis-background-color</code></a> rather than <code>gbc-primary-medium-color</code></td>
+</tr>
+<tr>
+<td><code>gbc-genero-highLightText</code></td>
+<td>using <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-primary-color"><code>theme-primary-color</code></a> rather than <code>gbc-secondary-text-color</code></td>
+</tr>
+<tr>
+<td><code>gbc-genero-infoBackground</code></td>
+<td>using <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-secondary-background-color"><code>theme-secondary-background-color</code></a> rather than <code>gbc-primary-background-color</code></td>
+</tr>
+<tr>
+<td><code>gbc-genero-infoText</code></td>
+<td>using <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-secondary-color"><code>theme-secondary-color</code></a> rather than <code>gbc-primary-text-color</code></td>
+</tr>
+<tr>
+<td><code>gbc-genero-systemAlternateBackground</code></td>
+<td>using <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-primary-faded-background-color"><code>theme-primary-faded-background-color</code></a> rather than <code>gbc-primary-light-color</code></td>
+</tr>
+<tr>
+<td><code>gbc-genero-window</code></td>
+<td>using <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-secondary-background-color"><code>theme-secondary-background-color</code></a> rather than <code>gbc-primary-background-color</code></td>
+</tr>
+<tr>
+<td><code>gbc-genero-windowText</code></td>
+<td>using <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-secondary-color"><code>theme-secondary-color</code></a> rather than <code>gbc-primary-text-color</code></td>
+</tr>
+</tbody>
+</table>
+<h3>New variables</h3>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#palette-primary"><code>palette-primary</code></a></td>
+<td>base color for palette <code>palette-primary-*</code></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#palette-secondary"><code>palette-secondary</code></a></td>
+<td>base color for palette <code>palette-secondary-*</code></td>
+</tr>
+<tr>
+<td><code>palette-secondary-*</code></td>
+<td>color palette based on <a class="theme-variable-link" href="reference/theme/theme_variables.html#palette-secondary"><code>palette-secondary</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#palette-disabled"><code>palette-disabled</code></a></td>
+<td>base color for palette <code>palette-disabled-*</code></td>
+</tr>
+<tr>
+<td><code>palette-disabled-*</code></td>
+<td>color palette based on <a class="theme-variable-link" href="reference/theme/theme_variables.html#palette-disabled"><code>palette-disabled</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#palette-text-primary"><code>palette-text-primary</code></a></td>
+<td>base color for palette <code>palette-text-primary-*</code></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#palette-text-secondary"><code>palette-text-secondary</code></a></td>
+<td>base color for palette <code>palette-text-secondary-*</code></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-secondary-faded-color"><code>theme-secondary-faded-color</code></a></td>
+<td>color for less important text</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-placeholder-color"><code>theme-placeholder-color</code></a></td>
+<td>color for placeholder text</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-overlay-background-color"><code>theme-overlay-background-color</code></a></td>
+<td>color for overlays (semi-transparent by default)</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-message-color"><code>theme-message-color</code></a></td>
+<td>color for message text</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-input-padding-top"><code>theme-input-padding-top</code></a></td>
+<td>padding top for inputs</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-input-padding-right"><code>theme-input-padding-right</code></a></td>
+<td>padding right for inputs</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-input-padding-bottom"><code>theme-input-padding-bottom</code></a></td>
+<td>padding bottom for inputs</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-input-padding-left"><code>theme-input-padding-left</code></a></td>
+<td>padding left for inputs</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-textarea-padding-top"><code>theme-textarea-padding-top</code></a></td>
+<td>padding top for textareas</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-textarea-padding-right"><code>theme-textarea-padding-right</code></a></td>
+<td>padding right for textareas</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-textarea-padding-bottom"><code>theme-textarea-padding-bottom</code></a></td>
+<td>padding bottom for textareas</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-textarea-padding-left"><code>theme-textarea-padding-left</code></a></td>
+<td>padding left for textareas</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-font-family"><code>theme-font-family</code></a></td>
+<td>theme's font-family</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-font-family-monospace"><code>theme-font-family-monospace</code></a></td>
+<td>theme's font-family for monospace fonts</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#mdi-cust-icons"><code>mdi-cust-icons</code></a></td>
+<td>additional font icon characters to include (see your local node_modules/@mdi/font/preview.html)</td>
+</tr>
+</tbody>
+</table>
+<h3>Deleted variables</h3>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>z-index-under-Normal</code></td>
+<td>unused variable</td>
+</tr>
+<tr>
+<td><code>z-index-Window</code></td>
+<td>unused variable</td>
+</tr>
+<tr>
+<td><code>___gbc-sidebar-default-width</code></td>
+<td>old commented value</td>
+</tr>
+<tr>
+<td><code>gbc-primary-strong-color</code></td>
+<td>unused variable</td>
+</tr>
+<tr>
+<td><code>gbc-secondary-color</code></td>
+<td>using <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-secondary-color"><code>theme-secondary-color</code></a> rather</td>
+</tr>
+</tbody>
+</table>
+<h3>Unchanged variables</h3>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#z-index-Normal"><code>z-index-Normal</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#z-index-above-Normal"><code>z-index-above-Normal</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#z-index-TopMenu"><code>z-index-TopMenu</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#z-index-Toolbar"><code>z-index-Toolbar</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#z-index-Dialog"><code>z-index-Dialog</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#z-index-Modal"><code>z-index-Modal</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#z-index-BarsContainer"><code>z-index-BarsContainer</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#z-index-DropDown"><code>z-index-DropDown</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#z-index-above-DropDown"><code>z-index-above-DropDown</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#z-index-Message"><code>z-index-Message</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#z-index-LogPrompt"><code>z-index-LogPrompt</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#host-menu-order-upload-icon"><code>host-menu-order-upload-icon</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#host-menu-order-runtime-status"><code>host-menu-order-runtime-status</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#host-menu-order-about"><code>host-menu-order-about</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#host-menu-order-debug"><code>host-menu-order-debug</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#host-menu-order-run-gwc"><code>host-menu-order-run-gwc</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#host-menu-order-run-gdc"><code>host-menu-order-run-gdc</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#host-menu-order-log-proxy"><code>host-menu-order-log-proxy</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#host-menu-order-log-vm"><code>host-menu-order-log-vm</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#host-menu-order-settings"><code>host-menu-order-settings</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#host-menu-order-bookmark"><code>host-menu-order-bookmark</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#host-menu-order-close"><code>host-menu-order-close</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#aui-mutation-watch"><code>aui-mutation-watch</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#droid-font-path"><code>droid-font-path</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#mdi-css-prefix"><code>mdi-css-prefix</code></a></td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#mdi-font-path"><code>mdi-font-path</code></a></td>
+</tr>
+</tbody>
+</table>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

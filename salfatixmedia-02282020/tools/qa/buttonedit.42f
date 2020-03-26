@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Form name="buttonedit" build="3.20.08" width="50" height="3">
+  <Grid width="50" height="3">
+    <Label text="Edit" posY="0" posX="1" gridWidth="4"/>
+    <FormField name="formonly.a" colName="a" fieldId="0" sqlTabName="formonly" tabIndex="1">
+      <Edit width="21" posY="0" posX="28" gridWidth="21"/>
+    </FormField>
+    <Label text="ButtonEdit Editable :" posY="1" posX="1" gridWidth="21"/>
+    <FormField name="formonly.b" colName="b" fieldId="1" sqlTabName="formonly" tabIndex="2">
+      <ButtonEdit width="19" scroll="1" action="zoom" image="fa-check" posY="1" posX="28" gridWidth="21"/>
+    </FormField>
+    <Label text="ButtonEdit Not Editable :" posY="2" posX="1" gridWidth="26"/>
+    <FormField name="formonly.c" colName="c" fieldId="2" sqlTabName="formonly" tabIndex="3">
+      <ButtonEdit width="19" notEditable="1" scroll="1" action="zoom" image="fa-check" posY="2" posX="28" gridWidth="21"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="a" fieldIdRef="0"/>
+    <Link colName="b" fieldIdRef="1"/>
+    <Link colName="c" fieldIdRef="2"/>
+  </RecordView>
+  <RecordView tabName="s">
+    <Link colName="a" fieldIdRef="0"/>
+    <Link colName="b" fieldIdRef="1"/>
+    <Link colName="c" fieldIdRef="2"/>
+  </RecordView>
+</Form>

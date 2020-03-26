@@ -1,0 +1,27 @@
+{
+  "compile": {
+    "mode": "cdev",
+    "customization": "customization/sample"
+  },
+  "themes": [{
+      "name": "default",
+      "title": "Default",
+      "uses": ["platform/desktop"]
+    },
+    {
+      "name": "highcontrast",
+      "title": "High contrast",
+      "uses": ["platform/desktop", "colors/highcontrast"]
+    },
+    {
+      "name": "default_mobile",
+      "title": "Default",
+      "uses": ["platform/mobile"]
+    },
+    {
+      "name": "highcontrast_mobile",
+      "title": "High contrast",
+      "uses": ["platform/mobile", "colors/highcontrast"]
+    }
+  ]
+}

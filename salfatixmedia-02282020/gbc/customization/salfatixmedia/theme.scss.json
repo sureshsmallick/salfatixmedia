@@ -1,0 +1,11 @@
+{
+  "palette-primary": "$mt-purple",
+  "theme-field-disabled-background-color": "rgba(0,0,0,0.04)",
+  "theme-primary-background-color": "$palette-primary-300",
+  "theme-primary-emphasis-background-color": "$palette-primary-300",
+  "theme-primary-faded-background-color": "$palette-primary-100",
+  "theme-secondary-background-color": "#FFFFFF",
+  "theme-message-display-time": 30,
+  "theme-error-display-time": 30,
+  "theme-sidebar-always-visible-min-width": "9999px"
+}

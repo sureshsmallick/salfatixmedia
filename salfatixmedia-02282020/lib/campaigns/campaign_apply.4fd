@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a0a" name="managedform" uid="{a7e27293-674b-4df7-83ea-ed74c2818fe8}">
+  <AGSettings/>
+  <Record masterTable="campaignuserlist" name="scr_campaignuserprice_grid" uid="{d12e3126-5bca-4a5d-91d6-93fd949989bb}">
+    <RecordField colName="cmpusrl_id" fieldIdRef="1" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_id" sqlTabName="campaignuserlist" uid="{b37a3d8e-acd6-4367-97c5-8982a89ace34}"/>
+    <RecordField colName="cmpusrl_campaign_id" fieldIdRef="2" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_campaign_id" sqlTabName="campaignuserlist" uid="{cb802555-ad60-45c0-a625-984990eaac7d}"/>
+    <RecordField colName="cmpusrl_user_id" fieldIdRef="3" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_user_id" sqlTabName="campaignuserlist" uid="{6af133df-5513-4cb4-98be-55572f27e097}"/>
+    <RecordField colName="cmpusrl_visibilitydate" fieldIdRef="4" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_visibilitydate" sqlTabName="campaignuserlist" uid="{d2b0c0c9-6555-4bb5-8a37-5e09a8ad0d77}"/>
+    <RecordField colName="cmpusrl_previewuser" fieldIdRef="5" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_previewuser" sqlTabName="campaignuserlist" uid="{ed5aa8de-d04d-4f2f-8bea-48fc567bf62c}"/>
+    <RecordField colName="cmpusrl_wantedbybrand" fieldIdRef="6" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_wantedbybrand" sqlTabName="campaignuserlist" uid="{c20f1712-a9bf-45ce-928c-73ec18aaf721}"/>
+    <RecordField colName="cmpusrl_selectionstartdate" fieldIdRef="7" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_selectionstartdate" sqlTabName="campaignuserlist" uid="{cee3b443-cd63-4502-8862-304dcc45bec5}"/>
+    <RecordField colName="cmpusrl_selectionenddate" fieldIdRef="8" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_selectionenddate" sqlTabName="campaignuserlist" uid="{609ec6f1-fcd3-4443-90e8-0b0cb8b4486e}"/>
+    <RecordField colName="cmpusrl_selectioncomment" fieldIdRef="9" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_selectioncomment" sqlTabName="campaignuserlist" uid="{b7cd272d-cdad-42d9-87e5-5de0ff85218d}"/>
+    <RecordField colName="cmpusrl_tonotify" fieldIdRef="10" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_tonotify" sqlTabName="campaignuserlist" uid="{6c5889ab-cd32-43f7-9f04-6fb2eb420e3b}"/>
+    <RecordField colName="cmpusrl_notificationdate" fieldIdRef="11" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_notificationdate" sqlTabName="campaignuserlist" uid="{434e16a7-8762-4a16-9b55-e0960327dac9}"/>
+    <RecordField colName="cmpusrl_isacceptbyuser" fieldIdRef="12" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_isacceptbyuser" sqlTabName="campaignuserlist" uid="{1af7175c-c4da-41a1-8fb4-083ebdf5c9d8}"/>
+    <RecordField colName="cmpusrl_useranswerdate" fieldIdRef="13" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_useranswerdate" sqlTabName="campaignuserlist" uid="{2a7d60fc-68dd-4b69-bff3-5152142dd57e}"/>
+    <RecordField colName="cmpusrl_usertotalprice" fieldIdRef="14" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_usertotalprice" sqlTabName="campaignuserlist" uid="{8ec7893b-79ad-4f1a-b927-f37fa1d35fb6}"/>
+    <RecordField colName="cmpusrl_salfatixtotalprice" fieldIdRef="15" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_salfatixtotalprice" sqlTabName="campaignuserlist" uid="{997ceeac-778e-4436-8969-934ab1898816}"/>
+    <RecordField colName="cmpusrl_userwantedprice" fieldIdRef="16" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_userwantedprice" sqlTabName="campaignuserlist" uid="{9acbdcf4-aa1f-4690-b9bd-d3b0a536184c}"/>
+    <RecordField colName="cmpusrl_uiorder" fieldIdRef="17" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_uiorder" sqlTabName="campaignuserlist" uid="{471a5bc9-7bd1-457c-9f32-f598a18c4d61}"/>
+    <RecordField colName="cmpusrl_isacceptedbysalfatix" fieldIdRef="18" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_isacceptedbysalfatix" sqlTabName="campaignuserlist" uid="{48d25bdd-7222-4dcb-b6ae-94308f87e2be}"/>
+    <RecordField colName="cmpusrl_isacceptedbybrand" fieldIdRef="19" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_isacceptedbybrand" sqlTabName="campaignuserlist" uid="{6da2158d-702a-45fd-b8cc-856aa3822a5b}"/>
+    <RecordField colName="cmpusrl_commentforbrand" fieldIdRef="20" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_commentforbrand" sqlTabName="campaignuserlist" uid="{2183e975-b2f4-4e5d-80df-eb7e2d9b604d}"/>
+    <RecordField colName="cmpusrl_usergotproduct" fieldIdRef="21" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_usergotproduct" sqlTabName="campaignuserlist" uid="{f51a93ad-a0d6-49f5-93b7-536c98967921}"/>
+    <RecordField colName="cmpusrl_isuserpaid" fieldIdRef="25" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_isuserpaid" sqlTabName="campaignuserlist" uid="{1ac1e4f4-80ec-4437-8cb1-51217c58964b}"/>
+    <RecordField colName="cmpusrl_userpaid" fieldIdRef="26" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_userpaid" sqlTabName="campaignuserlist" uid="{aab423f6-67e5-40d8-8c72-fc392955cad7}"/>
+    <RecordField colName="cmpusrp_freeofcharge" fieldIdRef="22" fieldType="COLUMN_LIKE" name="generalterms" sqlTabName="campaignuserprices" uid="{a656efb8-1e51-40cb-b5c6-a7b71247bdae}"/>
+  </Record>
+  <Record name="Undefined" uid="{a26482d2-2f82-4bea-a67e-029fb71911c4}">
+    <RecordField fieldIdRef="23" name="cur" uid="{3542af38-c224-4907-98e4-cb442cfdda6a}"/>
+    <RecordField fieldIdRef="24" name="cur1" uid="{5f29eac5-3562-4a0b-8b2e-5f32dfce865c}"/>
+  </Record>
+  <Form gridHeight="27" gridWidth="102" name="form" style="centerwindowpopup" text="Offer for this deal">
+    <Grid gridHeight="19" gridWidth="39" name="salfatixmedia1" posX="1" posY="1">
+      <Label gridHeight="1" gridWidth="30" justify="center" name="campaignuserlist_cmpusrl_usertotalprice_label1" posX="1" posY="1" text="Your remuneration for this deal :">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_usertotalprice/@label"/>
+      </Label>
+      <HRec gridHeight="1" gridWidth="30" name="hrec2" posX="1" posY="2">
+        <Spacer gridWidth="6" name="spacer4" posX="0" posY="0"/>
+        <FFLabel colName="cmpusrl_usertotalprice" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" name="campaignuserlist.cmpusrl_usertotalprice" posX="7" posY="0" sqlTabName="campaignuserlist" widget="FFLabel">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </FFLabel>
+        <FFLabel fieldId="23" gridHeight="1" gridWidth="3" name="cur" posX="26" posY="0" title="fflabel1" widget="FFLabel"/>
+      </HRec>
+      <Label gridHeight="1" gridWidth="30" name="campaignuserlist_cmpusrl_userwantedprice_label2" posX="1" posY="3" text=" ">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_userwantedprice/@label"/>
+      </Label>
+      <Label gridHeight="1" gridWidth="30" justify="center" name="campaignuserlist_cmpusrl_userwantedprice_label4" posX="1" posY="4" text="You can propose another">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_userwantedprice/@label"/>
+      </Label>
+      <Label gridHeight="1" gridWidth="30" justify="center" name="campaignuserlist_cmpusrl_userwantedprice_label3" posX="1" posY="5" text="remuneration for this campaign.">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_userwantedprice/@label"/>
+      </Label>
+      <Label gridHeight="1" gridWidth="30" justify="center" name="campaignuserlist_cmpusrl_userwantedprice_label1" posX="1" posY="6" text="Leave empty otherwise.">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_userwantedprice/@label"/>
+      </Label>
+      <HRec gridHeight="1" gridWidth="30" name="hrec3" posX="1" posY="7">
+        <Spacer gridWidth="6" name="spacer5" posX="0" posY="0"/>
+        <Edit colName="cmpusrl_userwantedprice" fieldId="16" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" keyboardHint="number" name="campaignuserlist.cmpusrl_userwantedprice" placeholder="Proposed remuneration" posX="7" posY="0" scroll="true" sqlTabName="campaignuserlist" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <FFLabel fieldId="24" gridHeight="1" gridWidth="3" name="cur1" posX="26" posY="0" title="fflabel1" widget="FFLabel"/>
+      </HRec>
+      <HRec gridHeight="1" gridWidth="30" name="hrec1" posX="1" posY="9">
+        <Spacer gridWidth="12" name="spacer2" posX="0" posY="0"/>
+        <CheckBox colName="cmpusrp_freeofcharge" fieldId="22" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="3" name="generalterms" notNull="true" posX="13" posY="0" sqlTabName="campaignuserprices" tabIndex="-1" text="" widget="CheckBox">
+          <Initializer text="dbschema:$(sqlTabName).$(colName)/@label" title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </CheckBox>
+        <Spacer gridWidth="12" name="spacer1" posX="17" posY="0"/>
+      </HRec>
+      <Label gridHeight="1" gridWidth="30" justify="center" name="label1" posX="1" posY="10" text="I have read and agree to the"/>
+      <Button gridHeight="1" gridWidth="30" name="generalterms" posX="1" posY="11" style="credentials" tabIndex="-1" text="General Terms of Business"/>
+      <Button gridHeight="1" gridWidth="30" name="accept" posX="1" posY="12" tabIndex="-1" text="Accept"/>
+      <Phantom colName="cmpusrl_id" fieldId="1" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_id" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_campaign_id" fieldId="2" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_campaign_id" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_user_id" fieldId="3" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_user_id" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_visibilitydate" fieldId="4" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_visibilitydate" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_previewuser" fieldId="5" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_previewuser" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_wantedbybrand" fieldId="6" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_wantedbybrand" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_selectionstartdate" fieldId="7" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_selectionstartdate" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_selectionenddate" fieldId="8" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_selectionenddate" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_selectioncomment" fieldId="9" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_selectioncomment" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_tonotify" fieldId="10" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_tonotify" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_notificationdate" fieldId="11" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_notificationdate" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_isacceptbyuser" fieldId="12" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_isacceptbyuser" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_useranswerdate" fieldId="13" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_useranswerdate" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_salfatixtotalprice" fieldId="15" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_salfatixtotalprice" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_uiorder" fieldId="17" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_uiorder" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_isacceptedbysalfatix" fieldId="18" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_isacceptedbysalfatix" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_isacceptedbybrand" fieldId="19" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_isacceptedbybrand" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_commentforbrand" fieldId="20" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_commentforbrand" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_usergotproduct" fieldId="21" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_usergotproduct" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_isuserpaid" fieldId="25" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_isuserpaid" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_userpaid" fieldId="26" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_userpaid" sqlTabName="campaignuserlist" widget="Phantom"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBhADIANgA0ADgAMgBkADIALQAyAGYAOAAyAC0ANABiAGUAYQAtAGEANgA3AGUALQAwADIAOQBmAGIANwAxADkAMQAxAGMANAB9QD4AAAAAAABAPgAAAAAAAAAAAAAAAAAAAQAAAEwAewBkADEAMgBlADMAMQAyADYALQA1AGIAYwBhAC0ANABhADUAZAAtADkAMQBkADYALQA5ADMAZgBkADkANAA5ADkAOAA5AGIAYgB9QDQAAAAAAABANAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

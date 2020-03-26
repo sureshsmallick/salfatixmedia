@@ -1,0 +1,31 @@
+{
+  "name": "MessageWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-MessageWidget-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "gbc-MessageWidget-z-index",
+      "title": "MessageWidget z-index",
+      "type": "number",
+      "defaultValue": "$z-index-Message"
+    },
+    {
+      "name": "gbc-MessageWidget-color",
+      "type": "color",
+      "defaultValue": "$theme-message-color"
+    },
+    {
+      "name": "gbc-MessageWidget-background-color",
+      "type": "color",
+      "defaultValue": "$theme-message-background-color"
+    },
+    {
+      "name": "gbc-MessageWidget-shadow-color",
+      "type": "color",
+      "defaultValue": "$theme-overlay-background-color"
+    }
+  ]
+}

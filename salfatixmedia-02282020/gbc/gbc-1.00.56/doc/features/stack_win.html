@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Stacked windows</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="features/index.html">Concepts &amp; Features</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar active" href="features/stack_win.html">Stacked windows</a>
+          
+          <a class="btn btn-sidebar " href="features/run_wo_wait.html">Run without waiting</a>
+          
+          <a class="btn btn-sidebar " href="features/bootstrap.html">Application bootstrap</a>
+          
+          <a class="btn btn-sidebar " href="features/cookies.html">Use of cookies</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="features">
+<header class="page-title">
+  <em>Stacked windows</em>
+</header>
+<article class="md-content">
+<p>The Genero Browser Client (GBC) user interface provides a mechanism for working with applications that use stacked windows. To present this feature, we are providing you with this demonstration.</p>
+<h1 id="Before_you_begin">Before you begin <a class="header-anchor" href="features/stack_win.html#Before_you_begin" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>Start the standalone dispatcher from the command line using <code>httpdispatch</code>.</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> httpdispatch</span>
+</code></pre>
+<blockquote>
+<ul>
+<li>Launch the Genero Workplace Window to ensure an environment suitable for Genero commands.</li>
+</ul>
+</blockquote>
+<p>Open the demos application in your browser by entering the URL:
+http://localhost:6394/ua/r/gwc-demo.</p>
+<h1 id="Stacked_windows_demonstration">Stacked windows demonstration <a class="header-anchor" href="features/stack_win.html#Stacked_windows_demonstration" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>This demonstration provides you with the steps to explore working with stacked windows in GBC, using the Demos application.</p>
+<p>Imagine an application's window stack is composed of several windows, W1, W2, ..., Wn. The GBC only displays the window at the top of the stack - the current window. The other windows are not displayed, but you can access them from the GBC navigation panel (side bar).</p>
+<p>In the Topic tree of the demo directory, navigate to <strong>User Interface &gt;&gt; UI Basics&gt;&gt; Windows</strong>. Double-click on the demo <strong>CurrentWindow1</strong> in the right-hand panel. The window at the top of the stack (<strong>Window w3</strong>) is displayed.</p>
+<p><img src="features/stacked-windows.png" alt="The CurrentWindow1 demo application"></p>
+<p>The sidebar or navigation panel is updated with the <strong>CurrentWindow1</strong> application tree, which has the following links to windows in the stack:</p>
+<ul>
+<li>demo
+<ul>
+<li>Demos</li>
+</ul>
+</li>
+<li>CurrentWindow1
+<ul>
+<li>screen</li>
+<li>Window w1</li>
+<li>Window w2</li>
+<li>Window w3</li>
+</ul>
+</li>
+</ul>
+<p>To set an active window, click on one of the <strong>Test</strong> menu buttons (<strong>w1</strong>, <strong>w2</strong>, <strong>w3</strong>, or <strong>screen</strong>).
+The selected window is made current and brought to the top of the stack.
+The <strong>Is current</strong> field displays &quot;YES&quot; for the current window, and the window name is displayed in the application title bar.
+The window name is highlighted in the GBC navigation panel.</p>
+<p>In the sidebar panel, click on one of the links in the <strong>CurrentWindow1</strong> tree to set the focus to another window in the stack. Although you can switch to windows other than the current window in the <strong>CurrentWindow1</strong> stack, their functions are disabled and their menus invisible. In this example, you only have one current window in the stack.</p>
+<ul>
+<li>If the selected window is the current window, the <strong>Is current</strong> field value is &quot;YES&quot; and the <strong>Test</strong> menu panel is displayed.</li>
+<li>If the selected window is not the current window, the <strong>Is current</strong> field value is &quot;NO&quot; and the <strong>Test</strong> menu panel is <em>not</em> displayed.</li>
+</ul>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

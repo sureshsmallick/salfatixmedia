@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Form name="photopicker" build="3.20.08" width="26" height="8">
+  <Grid width="26" height="8">
+    <FormField name="formonly.posttype" colName="posttype" fieldId="0" sqlTabName="formonly" tabIndex="1">
+      <ComboBox width="22" posY="0" posX="1" gridWidth="24">
+        <Item name="1" text="Instagram Picture"/>
+        <Item name="2" text="Instastory"/>
+        <Item name="3" text="Youtube Video"/>
+      </ComboBox>
+    </FormField>
+    <Button name="selectvid" width="11" text="Pick Video" posY="1" posX="1" gridWidth="11" tabIndex="2">
+      <LStr text="Pick Video"/>
+    </Button>
+    <Button name="selectpic" width="11" text="Pick Photo" posY="1" posX="14" gridWidth="11" tabIndex="3">
+      <LStr text="Pick Photo"/>
+    </Button>
+    <Table pageSize="4" name="postsent" hidden="1" width="26" posY="2" posX="0" gridWidth="26" gridHeight="6" tabName="srdoneposts">
+      <TableColumn name="formonly.lastpost" colName="lastpost" fieldId="1" sqlTabName="formonly" tabIndex="4">
+        <ButtonEdit width="22" action="delete"/>
+      </TableColumn>
+    </Table>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="posttype" fieldIdRef="0"/>
+    <Link colName="lastpost" fieldIdRef="1"/>
+  </RecordView>
+</Form>

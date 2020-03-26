@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="30a00" gstVersion="30a0a" name="managedform" uid="{7a90ebe7-6ed8-409f-a939-6454ffc48b1f}">
+  <AGSettings/>
+  <Record name="Undefined" uid="{e59c6e01-7023-4a31-9564-4a914e7495f5}"/>
+  <Form gridHeight="25" gridWidth="80" name="form" style="centerwindow" text="Posts">
+    <Grid gridHeight="11" gridWidth="37" name="grid1" posX="8" posY="3">
+      <Label gridHeight="1" gridWidth="31" justify="center" name="label3" posX="2" posY="3" style="ff_formtitle" text="There is no post yet.">
+        <Initializer text="dbschema:brands.brnd_password/@label"/>
+      </Label>
+      <Label gridHeight="1" gridWidth="31" justify="center" name="label1" posX="2" posY="4" style="ff_formtitle" text=" ">
+        <Initializer text="dbschema:brands.brnd_password/@label"/>
+      </Label>
+      <Label gridHeight="1" gridWidth="31" justify="center" name="label2" posX="2" posY="5" style="ff_formtitle" text=" ">
+        <Initializer text="dbschema:brands.brnd_password/@label"/>
+      </Label>
+      <Label gridHeight="1" gridWidth="31" justify="center" name="label5" posX="2" posY="6" style="ff_formtitle" text=" ">
+        <Initializer text="dbschema:brands.brnd_password/@label"/>
+      </Label>
+      <Button gridHeight="1" gridWidth="31" name="add_post" posX="2" posY="7" tabIndex="-1" text="Add Post"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlADUAOQBjADYAZQAwADEALQA3ADAAMgAzAC0ANABhADMAMQAtADkANQA2ADQALQA0AGEAOQAxADQAZQA3ADQAOQA1AGYANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

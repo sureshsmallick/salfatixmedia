@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="campaign_productreception_mobile.tmp" build="3.20.07" sqlDbName="salfatixmedia" text="Product reception" style="centerwindowpopup" width="33" height="5">
+  <LStr text="Product reception"/>
+  <Grid name="salfatixmedia1" width="33" height="5">
+    <Label name="label1" width="30" text="I confirm the product reception" justify="center" posY="1" posX="2" gridWidth="30">
+      <LStr text="I confirm the product reception"/>
+    </Label>
+    <Label name="label2" width="30" text="for this campaign" justify="center" posY="2" posX="2" gridWidth="30">
+      <LStr text="for this campaign"/>
+    </Label>
+    <HBox posY="3" posX="2" gridWidth="30">
+      <PhantomFormField name="campaignuserlist.cmpusrl_id" colName="cmpusrl_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="1" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_campaign_id" colName="cmpusrl_campaign_id" sqlType="INTEGER" required="1" notNull="1" fieldId="2" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_user_id" colName="cmpusrl_user_id" sqlType="INTEGER" required="1" notNull="1" fieldId="3" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_visibilitydate" colName="cmpusrl_visibilitydate" sqlType="DATE" required="1" notNull="1" fieldId="4" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_previewuser" colName="cmpusrl_previewuser" sqlType="SMALLINT" required="1" notNull="1" fieldId="5" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_wantedbybrand" colName="cmpusrl_wantedbybrand" sqlType="SMALLINT" required="1" notNull="1" fieldId="6" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_selectionstartdate" colName="cmpusrl_selectionstartdate" sqlType="DATE" required="1" notNull="1" fieldId="7" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_selectionenddate" colName="cmpusrl_selectionenddate" sqlType="DATE" required="1" notNull="1" fieldId="8" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_selectioncomment" colName="cmpusrl_selectioncomment" sqlType="VARCHAR(128)" fieldId="9" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_tonotify" colName="cmpusrl_tonotify" sqlType="SMALLINT" required="1" notNull="1" fieldId="10" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_notificationdate" colName="cmpusrl_notificationdate" sqlType="DATETIME YEAR TO SECOND" fieldId="11" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_isacceptbyuser" colName="cmpusrl_isacceptbyuser" sqlType="SMALLINT" fieldId="12" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_useranswerdate" colName="cmpusrl_useranswerdate" sqlType="DATETIME YEAR TO SECOND" fieldId="13" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_usertotalprice" colName="cmpusrl_usertotalprice" sqlType="DECIMAL(10,2)" required="1" notNull="1" fieldId="14" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_salfatixtotalprice" colName="cmpusrl_salfatixtotalprice" sqlType="DECIMAL(10,2)" required="1" notNull="1" fieldId="15" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_userwantedprice" colName="cmpusrl_userwantedprice" sqlType="DECIMAL(10,2)" fieldId="16" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_uiorder" colName="cmpusrl_uiorder" sqlType="INTEGER" fieldId="17" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_isacceptedbysalfatix" colName="cmpusrl_isacceptedbysalfatix" sqlType="SMALLINT" fieldId="18" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_isacceptedbybrand" colName="cmpusrl_isacceptedbybrand" sqlType="SMALLINT" fieldId="19" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_commentforbrand" colName="cmpusrl_commentforbrand" sqlType="VARCHAR(128)" fieldId="20" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <SpacerItem/>
+      <FormField name="campaignuserlist.cmpusrl_usergotproduct" colName="cmpusrl_usergotproduct" sqlType="SMALLINT" fieldId="0" sqlTabName="campaignuserlist" notNull="1" required="1" tabIndex="1">
+        <CheckBox width="3"/>
+      </FormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_isuserpaid" colName="cmpusrl_isuserpaid" sqlType="SMALLINT" fieldId="21" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignuserlist.cmpusrl_userpaid" colName="cmpusrl_userpaid" sqlType="DECIMAL(10,2)" fieldId="22" sqlTabName="campaignuserlist">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <SpacerItem/>
+    </HBox>
+  </Grid>
+  <RecordView tabName="campaignuserlist">
+    <Link colName="cmpusrl_usergotproduct" fieldIdRef="0"/>
+    <Link colName="cmpusrl_id" fieldIdRef="1"/>
+    <Link colName="cmpusrl_campaign_id" fieldIdRef="2"/>
+    <Link colName="cmpusrl_user_id" fieldIdRef="3"/>
+    <Link colName="cmpusrl_visibilitydate" fieldIdRef="4"/>
+    <Link colName="cmpusrl_previewuser" fieldIdRef="5"/>
+    <Link colName="cmpusrl_wantedbybrand" fieldIdRef="6"/>
+    <Link colName="cmpusrl_selectionstartdate" fieldIdRef="7"/>
+    <Link colName="cmpusrl_selectionenddate" fieldIdRef="8"/>
+    <Link colName="cmpusrl_selectioncomment" fieldIdRef="9"/>
+    <Link colName="cmpusrl_tonotify" fieldIdRef="10"/>
+    <Link colName="cmpusrl_notificationdate" fieldIdRef="11"/>
+    <Link colName="cmpusrl_isacceptbyuser" fieldIdRef="12"/>
+    <Link colName="cmpusrl_useranswerdate" fieldIdRef="13"/>
+    <Link colName="cmpusrl_usertotalprice" fieldIdRef="14"/>
+    <Link colName="cmpusrl_salfatixtotalprice" fieldIdRef="15"/>
+    <Link colName="cmpusrl_userwantedprice" fieldIdRef="16"/>
+    <Link colName="cmpusrl_uiorder" fieldIdRef="17"/>
+    <Link colName="cmpusrl_isacceptedbysalfatix" fieldIdRef="18"/>
+    <Link colName="cmpusrl_isacceptedbybrand" fieldIdRef="19"/>
+    <Link colName="cmpusrl_commentforbrand" fieldIdRef="20"/>
+    <Link colName="cmpusrl_isuserpaid" fieldIdRef="21"/>
+    <Link colName="cmpusrl_userpaid" fieldIdRef="22"/>
+  </RecordView>
+  <RecordView tabName="scr_productreception_grid">
+    <Link colName="cmpusrl_id" fieldIdRef="1"/>
+    <Link colName="cmpusrl_campaign_id" fieldIdRef="2"/>
+    <Link colName="cmpusrl_user_id" fieldIdRef="3"/>
+    <Link colName="cmpusrl_visibilitydate" fieldIdRef="4"/>
+    <Link colName="cmpusrl_previewuser" fieldIdRef="5"/>
+    <Link colName="cmpusrl_wantedbybrand" fieldIdRef="6"/>
+    <Link colName="cmpusrl_selectionstartdate" fieldIdRef="7"/>
+    <Link colName="cmpusrl_selectionenddate" fieldIdRef="8"/>
+    <Link colName="cmpusrl_selectioncomment" fieldIdRef="9"/>
+    <Link colName="cmpusrl_tonotify" fieldIdRef="10"/>
+    <Link colName="cmpusrl_notificationdate" fieldIdRef="11"/>
+    <Link colName="cmpusrl_isacceptbyuser" fieldIdRef="12"/>
+    <Link colName="cmpusrl_useranswerdate" fieldIdRef="13"/>
+    <Link colName="cmpusrl_usertotalprice" fieldIdRef="14"/>
+    <Link colName="cmpusrl_salfatixtotalprice" fieldIdRef="15"/>
+    <Link colName="cmpusrl_userwantedprice" fieldIdRef="16"/>
+    <Link colName="cmpusrl_uiorder" fieldIdRef="17"/>
+    <Link colName="cmpusrl_isacceptedbysalfatix" fieldIdRef="18"/>
+    <Link colName="cmpusrl_isacceptedbybrand" fieldIdRef="19"/>
+    <Link colName="cmpusrl_commentforbrand" fieldIdRef="20"/>
+    <Link colName="cmpusrl_usergotproduct" fieldIdRef="0"/>
+    <Link colName="cmpusrl_isuserpaid" fieldIdRef="21"/>
+    <Link colName="cmpusrl_userpaid" fieldIdRef="22"/>
+  </RecordView>
+</Form>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a0a" name="managedform" uid="{f0ce716f-9184-4a9a-9dc2-0dfd7c39c027}">
+  <AGSettings/>
+  <Record masterTable="campaigns" name="scr_campaignprice_grid" uid="{1ad0d019-359d-41dc-abd5-665d94bc6934}">
+    <RecordField colName="cmp_id" fieldIdRef="1" fieldType="TABLE_COLUMN" name="campaigns.cmp_id" sqlTabName="campaigns" uid="{5c45ee2b-043f-48ee-ac9f-20fcea5d9ab7}"/>
+    <RecordField colName="cmp_brand_id" fieldIdRef="2" fieldType="TABLE_COLUMN" name="campaigns.cmp_brand_id" sqlTabName="campaigns" uid="{a83a5b0f-5341-4bf5-84f5-388ec87e3280}"/>
+    <RecordField colName="cmp_pic_id" fieldIdRef="3" fieldType="TABLE_COLUMN" name="campaigns.cmp_pic_id" sqlTabName="campaigns" uid="{ca313431-d84c-4b24-80ff-45cd0f221524}"/>
+    <RecordField colName="cmp_title" fieldIdRef="4" fieldType="TABLE_COLUMN" name="campaigns.cmp_title" sqlTabName="campaigns" uid="{aef6c1fc-edc2-4762-868b-b75ba60ef8af}"/>
+    <RecordField colName="cmp_overview" fieldIdRef="5" fieldType="TABLE_COLUMN" name="campaigns.cmp_overview" sqlTabName="campaigns" uid="{47f5a624-a4b6-40e5-a848-66818b0461d0}"/>
+    <RecordField colName="cmp_url" fieldIdRef="6" fieldType="TABLE_COLUMN" name="campaigns.cmp_url" sqlTabName="campaigns" uid="{33c04b91-2e9e-4084-a10e-8496c59eaeb5}"/>
+    <RecordField colName="cmp_isproductneeded" fieldIdRef="7" fieldType="TABLE_COLUMN" name="campaigns.cmp_isproductneeded" sqlTabName="campaigns" uid="{fc4c7b64-385e-4f6e-9c27-8abd36eee25e}"/>
+    <RecordField colName="cmp_prd_description" fieldIdRef="8" fieldType="TABLE_COLUMN" name="campaigns.cmp_prd_description" sqlTabName="campaigns" uid="{f5b75bf0-d63a-455e-9a32-62d2160ae03a}"/>
+    <RecordField colName="cmp_prd_value" fieldIdRef="9" fieldType="TABLE_COLUMN" name="campaigns.cmp_prd_value" sqlTabName="campaigns" uid="{a26962e1-563f-4c4f-94ae-ead7c7280d49}"/>
+    <RecordField colName="cmp_issharedonfacebook" fieldIdRef="10" fieldType="TABLE_COLUMN" name="campaigns.cmp_issharedonfacebook" sqlTabName="campaigns" uid="{70f55e5a-7ccf-4720-a10d-60ffc2c1e5d5}"/>
+    <RecordField colName="cmp_sharedfacebooklink" fieldIdRef="11" fieldType="TABLE_COLUMN" name="campaigns.cmp_sharedfacebooklink" sqlTabName="campaigns" uid="{b01f6d82-fc26-4250-a345-d4c476314f2b}"/>
+    <RecordField colName="cmp_post_guidelines" fieldIdRef="12" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_guidelines" sqlTabName="campaigns" uid="{e510f9c5-4f31-4c0a-b137-33ef15555661}"/>
+    <RecordField colName="cmp_captionrequirements" fieldIdRef="13" fieldType="TABLE_COLUMN" name="campaigns.cmp_captionrequirements" sqlTabName="campaigns" uid="{82a75f34-8cae-40e2-841b-a1e87fdd693a}"/>
+    <RecordField colName="cmp_post_startdate" fieldIdRef="14" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_startdate" sqlTabName="campaigns" uid="{43d6f0c6-01b3-4b24-86b8-7b21fc28782f}"/>
+    <RecordField colName="cmp_post_enddate" fieldIdRef="15" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_enddate" sqlTabName="campaigns" uid="{656d8c8a-1ab7-4724-8514-c2cec73c4e45}"/>
+    <RecordField colName="cmp_post_time_starttime" fieldIdRef="16" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_time_starttime" sqlTabName="campaigns" uid="{23df9a7d-ec46-417f-bf6f-358d5536ef3e}"/>
+    <RecordField colName="cmp_post_time_endtime" fieldIdRef="17" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_time_endtime" sqlTabName="campaigns" uid="{00c36ec2-b040-49a5-b8b5-82a77c1b3847}"/>
+    <RecordField colName="cmp_postduration_id" fieldIdRef="18" fieldType="TABLE_COLUMN" name="campaigns.cmp_postduration_id" sqlTabName="campaigns" uid="{09d902f9-c5ed-4443-abdd-0e1a394396f6}"/>
+    <RecordField colName="cmp_totalbudget" fieldIdRef="19" fieldType="TABLE_COLUMN" name="campaigns.cmp_totalbudget" sqlTabName="campaigns" uid="{c73aa353-b109-4cd3-9bdf-687e69904507}"/>
+    <RecordField colName="cmp_deposit" fieldIdRef="20" fieldType="TABLE_COLUMN" name="campaigns.cmp_deposit" sqlTabName="campaigns" uid="{f6276e19-277c-43fe-8ca1-4ed322998b52}"/>
+    <RecordField colName="cmp_depositpercent" fieldIdRef="21" fieldType="TABLE_COLUMN" name="campaigns.cmp_depositpercent" sqlTabName="campaigns" uid="{8db2ce1f-e59a-4ef8-8d51-9bad094d8ad9}"/>
+    <RecordField colName="cmp_currency_id" fieldIdRef="22" fieldType="TABLE_COLUMN" name="campaigns.cmp_currency_id" sqlTabName="campaigns" uid="{d2ce156f-558f-4d6e-b782-09d0873173de}"/>
+    <RecordField colName="cmp_wantedusers" fieldIdRef="23" fieldType="TABLE_COLUMN" name="campaigns.cmp_wantedusers" sqlTabName="campaigns" uid="{c881c2b0-185c-4229-8388-d1dc79ce9a5e}"/>
+    <RecordField colName="cmp_campaignstatus_id" fieldIdRef="24" fieldType="TABLE_COLUMN" name="campaigns.cmp_campaignstatus_id" sqlTabName="campaigns" uid="{45677714-ef21-47d2-972a-4bb05d16dfa0}"/>
+    <RecordField colName="cmp_createdby_id" fieldIdRef="25" fieldType="TABLE_COLUMN" name="campaigns.cmp_createdby_id" sqlTabName="campaigns" uid="{678b23f3-b086-4780-8135-4808efe6f869}"/>
+    <RecordField colName="cmp_creationdate" fieldIdRef="26" fieldType="TABLE_COLUMN" name="campaigns.cmp_creationdate" sqlTabName="campaigns" uid="{6b70c860-3ee4-408a-896c-6f67ffb9e076}"/>
+    <RecordField colName="cmp_publisheddate" fieldIdRef="27" fieldType="TABLE_COLUMN" name="campaigns.cmp_publisheddate" sqlTabName="campaigns" uid="{3ef9cedb-0336-4af3-a9b7-9d613a49eaa7}"/>
+    <RecordField colName="cmp_selectionstartdate" fieldIdRef="28" fieldType="TABLE_COLUMN" name="campaigns.cmp_selectionstartdate" sqlTabName="campaigns" uid="{25a2f7cc-2c5a-4726-8fed-ebcc502f3975}"/>
+    <RecordField colName="cmp_selectionenddate" fieldIdRef="29" fieldType="TABLE_COLUMN" name="campaigns.cmp_selectionenddate" sqlTabName="campaigns" uid="{50ad0c28-fd3b-4d08-a104-d119a10bae05}"/>
+    <RecordField colName="cmp_selectioncomment" fieldIdRef="30" fieldType="TABLE_COLUMN" name="campaigns.cmp_selectioncomment" sqlTabName="campaigns" uid="{f8a372cc-8b15-40e9-9708-81c2d1685d73}"/>
+    <RecordField colName="cmp_actionstartdate" fieldIdRef="31" fieldType="TABLE_COLUMN" name="campaigns.cmp_actionstartdate" sqlTabName="campaigns" uid="{6db6fca5-755e-4cb2-96a9-f46b2ce3fadf}"/>
+    <RecordField colName="cmp_actionenddate" fieldIdRef="32" fieldType="TABLE_COLUMN" name="campaigns.cmp_actionenddate" sqlTabName="campaigns" uid="{2d0b19de-9558-4e61-8a94-57e4ac583a3c}"/>
+    <RecordField colName="cmp_enddate" fieldIdRef="33" fieldType="TABLE_COLUMN" name="campaigns.cmp_enddate" sqlTabName="campaigns" uid="{452efe56-f6f7-40b1-9f30-8df3cbdd1287}"/>
+    <RecordField colName="cmp_lastupdatedate" fieldIdRef="34" fieldType="TABLE_COLUMN" name="campaigns.cmp_lastupdatedate" sqlTabName="campaigns" uid="{797dce6b-acfc-4a7d-bcc0-e8d9d7167468}"/>
+    <RecordField fieldIdRef="39" fieldType="NON_DATABASE" name="influencersestimatedcost" precisionDecimal="10" scaleDecimal="2" sqlType="DECIMAL" uid="{8f42c8f8-649a-4c6f-a4cf-002a0cd13782}"/>
+    <RecordField fieldIdRef="41" fieldType="NON_DATABASE" name="brandestimatedcost" precisionDecimal="10" scaleDecimal="2" sqlType="DECIMAL" uid="{b6808b8c-7b1f-4254-a22c-c060beb93161}"/>
+    <RecordField fieldIdRef="43" fieldType="NON_DATABASE" name="influencerscost" precisionDecimal="10" scaleDecimal="2" sqlType="DECIMAL" uid="{b6410361-f551-454a-8330-d568822f1973}"/>
+    <RecordField fieldIdRef="45" fieldType="NON_DATABASE" name="brandcost" precisionDecimal="10" scaleDecimal="2" sqlType="DECIMAL" uid="{671f4e34-be4f-4617-8ac3-c870d3c44185}"/>
+    <RecordField fieldIdRef="47" fieldType="NON_DATABASE" name="alreadypaidtoinfluencers" precisionDecimal="10" scaleDecimal="2" sqlType="DECIMAL" uid="{bce83f77-f3aa-4665-99ea-8030deee3444}"/>
+  </Record>
+  <Record name="Undefined" uid="{2002d614-03f8-41d6-a471-e38c1dcb2c1c}">
+    <RecordField fieldIdRef="35" name="cur" uid="{7021b75c-41b6-4503-bbb0-2c2b272486ac}"/>
+    <RecordField fieldIdRef="36" name="cur1" uid="{856e8740-3399-46a5-9da0-1cf01bbcf451}"/>
+    <RecordField fieldIdRef="37" name="ff_formtitle" uid="{c915004c-01f8-4561-b5bd-5fd5b9f8b09f}"/>
+    <RecordField fieldIdRef="38" name="ffimage_value" uid="{dc279ab1-0c20-4ce7-b9ec-d964ca8a5948}"/>
+    <RecordField fieldIdRef="40" name="cur2" uid="{67f5ce8d-c5b8-4242-9f0c-59a868b9db1f}"/>
+    <RecordField fieldIdRef="42" name="cur3" uid="{a4e02b64-5d6a-4735-a25b-254f38fcc4de}"/>
+    <RecordField fieldIdRef="44" name="cur4" uid="{fd9d0ea5-0ace-4a56-88bd-58d25ef25c80}"/>
+    <RecordField fieldIdRef="46" name="cur5" uid="{8470b34f-22ca-4b87-859c-82a2c88e919e}"/>
+    <RecordField fieldIdRef="48" name="cur6" uid="{4d857ef0-0e3c-4877-b764-b0b1ca8f6713}"/>
+  </Record>
+  <Form gridHeight="19" gridWidth="57" name="form" style="centerwindowpopup">
+    <Grid gridHeight="18" gridWidth="48" name="salfatixmedia1" posX="1" posY="1">
+      <FFLabel fieldId="37" gridHeight="1" gridWidth="39" justify="center" name="ff_formtitle" posX="1" posY="2" style="ff_formtitle" title="fflabel1" widget="FFLabel"/>
+      <Image action="cancel" autoScale="true" comment="Back" gridHeight="3" gridWidth="5" image="fa-arrow-circle-left" name="img_back" posX="1" posY="3" sizePolicy="fixed" style="no_border"/>
+      <FFImage action="save" autoScale="true" comment="Save" fieldId="38" gridHeight="3" gridWidth="5" name="ffimage_value" posX="35" posY="3" sizePolicy="fixed" style="no_border" title="ffimage1" widget="FFImage"/>
+      <Label gridHeight="1" gridWidth="20" name="campaigns_cmp_totalbudget_label1" posX="1" posY="6" text="Campaign budget">
+        <Initializer text="dbschema:campaigns.cmp_totalbudget/@label"/>
+      </Label>
+      <HRec gridHeight="1" gridWidth="18" name="hrec1" posX="22" posY="6">
+        <Edit colName="cmp_totalbudget" fieldId="19" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="campaigns.cmp_totalbudget" noEntry="true" posX="0" posY="0" scroll="true" sqlTabName="campaigns" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <FFLabel fieldId="35" gridHeight="1" gridWidth="3" name="cur" posX="13" posY="0" title="fflabel1" widget="FFLabel"/>
+        <Spacer gridWidth="0" name="spacer1" posX="17" posY="0"/>
+      </HRec>
+      <HLine gridWidth="39" name="hline1" posX="1" posY="7"/>
+      <Label gridHeight="1" gridWidth="20" name="campaigns_cmp_deposit_label2" posX="1" posY="8" text="SalfatixMedia estimated cost">
+        <Initializer text="dbschema:campaigns.cmp_deposit/@label"/>
+      </Label>
+      <HRec gridHeight="1" gridWidth="18" name="hrec3" posX="22" posY="8">
+        <Edit fieldId="39" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" length="1" name="influencersestimatedcost" noEntry="true" posX="0" posY="0" precisionDecimal="10" scaleDecimal="2" scroll="true" sqlType="DECIMAL" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <FFLabel fieldId="40" gridHeight="1" gridWidth="3" name="cur2" posX="13" posY="0" title="fflabel1" widget="FFLabel"/>
+        <Spacer gridWidth="0" name="spacer3" posX="17" posY="0"/>
+      </HRec>
+      <Label gridHeight="1" gridWidth="20" name="campaigns_cmp_deposit_label3" posX="1" posY="9" text="Brand estimated cost">
+        <Initializer text="dbschema:campaigns.cmp_deposit/@label"/>
+      </Label>
+      <HRec gridHeight="1" gridWidth="18" name="hrec4" posX="22" posY="9">
+        <Edit fieldId="41" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" length="1" name="brandestimatedcost" noEntry="true" posX="0" posY="0" precisionDecimal="10" scaleDecimal="2" scroll="true" sqlType="DECIMAL" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <FFLabel fieldId="42" gridHeight="1" gridWidth="3" name="cur3" posX="13" posY="0" title="fflabel1" widget="FFLabel"/>
+        <Spacer gridWidth="0" name="spacer4" posX="17" posY="0"/>
+      </HRec>
+      <HLine gridWidth="39" name="hline2" posX="1" posY="10"/>
+      <Label gridHeight="1" gridWidth="20" name="campaigns_cmp_deposit_label5" posX="1" posY="11" text="SalfatixMedia cost">
+        <Initializer text="dbschema:campaigns.cmp_deposit/@label"/>
+      </Label>
+      <HRec gridHeight="1" gridWidth="18" name="hrec5" posX="22" posY="11">
+        <Edit fieldId="43" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" length="1" name="influencerscost" noEntry="true" posX="0" posY="0" precisionDecimal="10" scaleDecimal="2" scroll="true" sqlType="DECIMAL" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <FFLabel fieldId="44" gridHeight="1" gridWidth="3" name="cur4" posX="13" posY="0" title="fflabel1" widget="FFLabel"/>
+        <Spacer gridWidth="0" name="spacer5" posX="17" posY="0"/>
+      </HRec>
+      <Label gridHeight="1" gridWidth="20" name="campaigns_cmp_deposit_label6" posX="1" posY="12" text="Brand cost">
+        <Initializer text="dbschema:campaigns.cmp_deposit/@label"/>
+      </Label>
+      <HRec gridHeight="1" gridWidth="18" name="hrec6" posX="22" posY="12">
+        <Edit fieldId="45" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" length="1" name="brandcost" noEntry="true" posX="0" posY="0" precisionDecimal="10" scaleDecimal="2" scroll="true" sqlType="DECIMAL" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <FFLabel fieldId="46" gridHeight="1" gridWidth="3" name="cur5" posX="13" posY="0" title="fflabel1" widget="FFLabel"/>
+        <Spacer gridWidth="0" name="spacer6" posX="17" posY="0"/>
+      </HRec>
+      <HLine gridWidth="39" name="hline3" posX="1" posY="13"/>
+      <Label gridHeight="1" gridWidth="20" name="campaigns_cmp_deposit_label4" posX="1" posY="14" text="SalfatixMedia already paid">
+        <Initializer text="dbschema:campaigns.cmp_deposit/@label"/>
+      </Label>
+      <HRec gridHeight="1" gridWidth="18" name="hrec7" posX="22" posY="14">
+        <Edit fieldId="47" fieldType="NON_DATABASE" gridHeight="1" gridWidth="12" length="1" name="alreadypaidtoinfluencers" noEntry="true" posX="0" posY="0" precisionDecimal="10" scaleDecimal="2" scroll="true" sqlType="DECIMAL" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <FFLabel fieldId="48" gridHeight="1" gridWidth="3" name="cur6" posX="13" posY="0" title="fflabel1" widget="FFLabel"/>
+        <Spacer gridWidth="0" name="spacer7" posX="17" posY="0"/>
+      </HRec>
+      <Label gridHeight="1" gridWidth="20" name="campaigns_cmp_deposit_label1" posX="1" posY="15" text="Brand already paid">
+        <Initializer text="dbschema:campaigns.cmp_deposit/@label"/>
+      </Label>
+      <HRec gridHeight="1" gridWidth="18" name="hrec2" posX="22" posY="15">
+        <Edit colName="cmp_deposit" fieldId="20" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="campaigns.cmp_deposit" posX="0" posY="0" scroll="true" sqlTabName="campaigns" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <FFLabel fieldId="36" gridHeight="1" gridWidth="3" name="cur1" posX="13" posY="0" title="fflabel1" widget="FFLabel"/>
+        <Spacer gridWidth="0" name="spacer2" posX="17" posY="0"/>
+      </HRec>
+      <Phantom colName="cmp_id" fieldId="1" fieldType="TABLE_COLUMN" name="campaigns.cmp_id" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_brand_id" fieldId="2" fieldType="TABLE_COLUMN" name="campaigns.cmp_brand_id" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_pic_id" fieldId="3" fieldType="TABLE_COLUMN" name="campaigns.cmp_pic_id" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_title" fieldId="4" fieldType="TABLE_COLUMN" name="campaigns.cmp_title" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_overview" fieldId="5" fieldType="TABLE_COLUMN" name="campaigns.cmp_overview" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_url" fieldId="6" fieldType="TABLE_COLUMN" name="campaigns.cmp_url" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_isproductneeded" fieldId="7" fieldType="TABLE_COLUMN" name="campaigns.cmp_isproductneeded" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_prd_description" fieldId="8" fieldType="TABLE_COLUMN" name="campaigns.cmp_prd_description" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_prd_value" fieldId="9" fieldType="TABLE_COLUMN" name="campaigns.cmp_prd_value" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_issharedonfacebook" fieldId="10" fieldType="TABLE_COLUMN" name="campaigns.cmp_issharedonfacebook" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_sharedfacebooklink" fieldId="11" fieldType="TABLE_COLUMN" name="campaigns.cmp_sharedfacebooklink" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_post_guidelines" fieldId="12" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_guidelines" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_captionrequirements" fieldId="13" fieldType="TABLE_COLUMN" name="campaigns.cmp_captionrequirements" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_post_startdate" fieldId="14" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_startdate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_post_enddate" fieldId="15" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_enddate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_post_time_starttime" fieldId="16" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_time_starttime" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_post_time_endtime" fieldId="17" fieldType="TABLE_COLUMN" name="campaigns.cmp_post_time_endtime" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_postduration_id" fieldId="18" fieldType="TABLE_COLUMN" name="campaigns.cmp_postduration_id" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_depositpercent" fieldId="21" fieldType="TABLE_COLUMN" name="campaigns.cmp_depositpercent" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_currency_id" fieldId="22" fieldType="TABLE_COLUMN" name="campaigns.cmp_currency_id" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_wantedusers" fieldId="23" fieldType="TABLE_COLUMN" name="campaigns.cmp_wantedusers" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_campaignstatus_id" fieldId="24" fieldType="TABLE_COLUMN" name="campaigns.cmp_campaignstatus_id" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_createdby_id" fieldId="25" fieldType="TABLE_COLUMN" name="campaigns.cmp_createdby_id" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_creationdate" fieldId="26" fieldType="TABLE_COLUMN" name="campaigns.cmp_creationdate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_publisheddate" fieldId="27" fieldType="TABLE_COLUMN" name="campaigns.cmp_publisheddate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_selectionstartdate" fieldId="28" fieldType="TABLE_COLUMN" name="campaigns.cmp_selectionstartdate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_selectionenddate" fieldId="29" fieldType="TABLE_COLUMN" name="campaigns.cmp_selectionenddate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_selectioncomment" fieldId="30" fieldType="TABLE_COLUMN" name="campaigns.cmp_selectioncomment" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_actionstartdate" fieldId="31" fieldType="TABLE_COLUMN" name="campaigns.cmp_actionstartdate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_actionenddate" fieldId="32" fieldType="TABLE_COLUMN" name="campaigns.cmp_actionenddate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_enddate" fieldId="33" fieldType="TABLE_COLUMN" name="campaigns.cmp_enddate" sqlTabName="campaigns" widget="Phantom"/>
+      <Phantom colName="cmp_lastupdatedate" fieldId="34" fieldType="TABLE_COLUMN" name="campaigns.cmp_lastupdatedate" sqlTabName="campaigns" widget="Phantom"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAxAGEAZAAwAGQAMAAxADkALQAzADUAOQBkAC0ANAAxAGQAYwAtAGEAYgBkADUALQA2ADYANQBkADkANABiAGMANgA5ADMANAB9AAAAAAAAAAAAAAAAAAAAAD9wYk3S8an8AQAAAEwAewAyADAAMAAyAGQANgAxADQALQAwADMAZgA4AC0ANAAxAGQANgAtAGEANAA3ADEALQBlADMAOABjADEAZABjAGIAMgBjADEAYwB9QCQAAAAAAABAJAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

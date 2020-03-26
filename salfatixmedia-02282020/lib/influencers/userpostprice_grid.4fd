@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a06" name="managedform" uid="{a7e27293-674b-4df7-83ea-ed74c2818fe8}">
+  <AGSettings/>
+  <Record masterTable="userpostprices" name="scr_userpostprice_grid" uid="{36ff4dca-f81e-4511-8655-abcaea3545c2}">
+    <RecordField colName="usrpp_usr_id" fieldIdRef="1" fieldType="TABLE_COLUMN" name="userpostprices.usrpp_usr_id" sqlTabName="userpostprices" uid="{9d3bb1a6-6e97-4caa-9807-6146094310a2}"/>
+    <RecordField colName="usrpp_posttype_id" fieldIdRef="2" fieldType="TABLE_COLUMN" name="userpostprices.usrpp_posttype_id" sqlTabName="userpostprices" uid="{51d15991-a4e8-45e1-b250-4d1258f83b6c}"/>
+    <RecordField colName="usrpp_minprice" fieldIdRef="3" fieldType="TABLE_COLUMN" name="userpostprices.usrpp_minprice" sqlTabName="userpostprices" uid="{985d2fa7-e211-4e69-89d8-4a1b7df02e23}"/>
+    <RecordField colName="usrpp_maxprice" fieldIdRef="4" fieldType="TABLE_COLUMN" name="userpostprices.usrpp_maxprice" sqlTabName="userpostprices" uid="{73197dba-0a76-45f5-9beb-cc630023dcf7}"/>
+    <RecordField colName="usrpp_freeofcharge" fieldIdRef="5" fieldType="TABLE_COLUMN" name="userpostprices.usrpp_freeofcharge" sqlTabName="userpostprices" uid="{d805dfec-cdcd-4b60-aaff-cd13e9f7afc8}"/>
+    <RecordField colName="usrpp_salfatixminprice" fieldIdRef="9" fieldType="TABLE_COLUMN" name="userpostprices.usrpp_salfatixminprice" sqlTabName="userpostprices" uid="{5ca5e784-3e78-4897-90a5-9270e2226bdd}"/>
+    <RecordField colName="usrpp_salfatixmaxprice" fieldIdRef="10" fieldType="TABLE_COLUMN" name="userpostprices.usrpp_salfatixmaxprice" sqlTabName="userpostprices" uid="{97ed7ebe-cad7-4089-b552-ea06b9acf978}"/>
+    <RecordField colName="usrpp_salfatixfreeofcharge" fieldIdRef="12" fieldType="TABLE_COLUMN" name="userpostprices.usrpp_salfatixfreeofcharge" sqlTabName="userpostprices" uid="{ca0a8962-f544-4fdc-9bb8-9050237d4b90}"/>
+    <RecordField colName="usrpp_isvalidatedbysalfatix" fieldIdRef="13" fieldType="TABLE_COLUMN" name="userpostprices.usrpp_isvalidatedbysalfatix" sqlTabName="userpostprices" uid="{5a25a1ca-5559-4e13-a676-ad6c4b21d117}"/>
+    <RecordField fieldIdRef="8" name="cur" uid="{3bee2c39-e5f8-4f22-bcb2-81f99f489a58}"/>
+    <RecordField fieldIdRef="14" name="salfatixlbl" uid="{4518c395-72fa-46a8-9069-13c9d1c3e752}"/>
+    <RecordField fieldIdRef="11" name="sur" uid="{25bccbb7-e0d7-42f4-a9cf-1ab6b926a7db}"/>
+  </Record>
+  <Record name="Undefined" uid="{be23cb5f-d6f3-4b17-b17a-be4a4f9fa905}">
+    <RecordField fieldIdRef="6" name="ff_formtitle" uid="{e68ebf9c-4ad5-4e5c-9c6b-fb61380817c5}"/>
+    <RecordField fieldIdRef="7" name="ffimage_value" uid="{0642906f-1823-403a-b761-2cd4c3b342b5}"/>
+  </Record>
+  <Form gridHeight="27" gridWidth="102" name="form" style="centerwindow" text="Form">
+    <Grid gridHeight="11" gridWidth="37" name="salfatixmedia1" posX="1" posY="1">
+      <FFLabel fieldId="6" gridHeight="1" gridWidth="35" justify="center" name="ff_formtitle" posX="1" posY="0" style="ff_formtitle" title="fflabel1" widget="FFLabel"/>
+      <Image action="cancel" autoScale="true" comment="Back" gridHeight="3" gridWidth="5" image="fa-arrow-circle-left" name="img_back" posX="1" posY="1" sizePolicy="fixed" style="no_border"/>
+      <FFImage action="save" autoScale="true" comment="Save" fieldId="7" gridHeight="3" gridWidth="5" name="ffimage_value" posX="31" posY="1" sizePolicy="fixed" style="no_border" title="ffimage1" widget="FFImage"/>
+      <HRec gridHeight="1" gridWidth="35" name="hrec2" posX="1" posY="4">
+        <Label gridHeight="1" gridWidth="8" name="userpostprices_usrpp_posttype_id_label1" posX="0" posY="0" text="Post Type">
+          <Initializer text="dbschema:userpostprices.usrpp_posttype_id/@label"/>
+        </Label>
+        <ComboBox colName="usrpp_posttype_id" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="23" items="" name="userpostprices.usrpp_posttype_id" posX="9" posY="0" scroll="true" sqlTabName="userpostprices" tabIndex="-1" title="Post Type" widget="ComboBox">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </ComboBox>
+        <Spacer gridWidth="1" name="spacer2" posX="33" posY="0"/>
+      </HRec>
+      <HRec gridHeight="1" gridWidth="35" name="hrec1" posX="1" posY="5">
+        <Label gridHeight="1" gridWidth="8" name="userpostprices_usrpp_minprice_label1" posX="0" posY="0" text="Between">
+          <Initializer text="dbschema:userpostprices.usrpp_minprice/@label"/>
+        </Label>
+        <Edit colName="usrpp_minprice" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="userpostprices.usrpp_minprice" posX="9" posY="0" scroll="true" sqlTabName="userpostprices" tabIndex="-1" title="Between" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="3" name="userpostprices_usrpp_maxprice_label1" posX="17" posY="0" text="and">
+          <Initializer text="dbschema:userpostprices.usrpp_maxprice/@label"/>
+        </Label>
+        <Edit colName="usrpp_maxprice" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="userpostprices.usrpp_maxprice" posX="21" posY="0" scroll="true" sqlTabName="userpostprices" tabIndex="-1" title="and" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <FFLabel fieldId="8" gridHeight="1" gridWidth="3" name="cur" posX="29" posY="0" title="fflabel1" widget="FFLabel"/>
+        <Spacer gridWidth="1" name="spacer1" posX="33" posY="0"/>
+      </HRec>
+      <HRec gridHeight="1" gridWidth="35" name="hrec3" posX="1" posY="6">
+        <Label gridHeight="1" gridWidth="15" name="userpostprices_usrpp_freeofcharge_label" posX="0" posY="0" text="Accept free of charge">
+          <Initializer text="dbschema:userpostprices.usrpp_posttype_id/@label"/>
+        </Label>
+        <CheckBox colName="usrpp_freeofcharge" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="3" name="userpostprices.usrpp_freeofcharge" posX="16" posY="0" sqlTabName="userpostprices" tabIndex="-1" text="" title="Free Of Charge" widget="CheckBox">
+          <Initializer text="dbschema:$(sqlTabName).$(colName)/@label" title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </CheckBox>
+        <Spacer gridWidth="14" name="spacer3" posX="20" posY="0"/>
+      </HRec>
+      <FFLabel fieldId="14" gridHeight="1" gridWidth="35" justify="center" name="salfatixlbl" posX="1" posY="7" style="brand_label_bold" title="fflabel1" widget="FFLabel"/>
+      <HRec gridHeight="1" gridWidth="35" name="hrec4" posX="1" posY="8">
+        <Label gridHeight="1" gridWidth="8" name="userpostprices_usrpp_salfatixminprice_label" posX="0" posY="0" text="Between">
+          <Initializer text="dbschema:userpostprices.usrpp_minprice/@label"/>
+        </Label>
+        <Edit colName="usrpp_salfatixminprice" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="userpostprices.usrpp_salfatixminprice" posX="9" posY="0" scroll="true" sqlTabName="userpostprices" tabIndex="-1" title="Between" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Label gridHeight="1" gridWidth="3" name="userpostprices_usrpp_salfatixmaxprice_label" posX="17" posY="0" text="and">
+          <Initializer text="dbschema:userpostprices.usrpp_maxprice/@label"/>
+        </Label>
+        <Edit colName="usrpp_salfatixmaxprice" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="userpostprices.usrpp_salfatixmaxprice" posX="21" posY="0" scroll="true" sqlTabName="userpostprices" tabIndex="-1" title="and" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <FFLabel fieldId="11" gridHeight="1" gridWidth="3" name="sur" posX="29" posY="0" title="fflabel1" widget="FFLabel"/>
+        <Spacer gridWidth="1" name="spacer4" posX="33" posY="0"/>
+      </HRec>
+      <HRec gridHeight="1" gridWidth="35" name="hrec5" posX="1" posY="9">
+        <Label gridHeight="1" gridWidth="28" name="userpostprices_usrpp_salfatixfreeofcharge_label" posX="0" posY="0" text="Free when influencer&apos;s service has no price">
+          <Initializer text="dbschema:userpostprices.usrpp_posttype_id/@label"/>
+        </Label>
+        <CheckBox colName="usrpp_salfatixfreeofcharge" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="3" name="userpostprices.usrpp_salfatixfreeofcharge" posX="29" posY="0" sqlTabName="userpostprices" tabIndex="-1" text="" title="Free Of Charge" widget="CheckBox">
+          <Initializer text="dbschema:$(sqlTabName).$(colName)/@label" title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </CheckBox>
+        <Spacer gridWidth="1" name="spacer5" posX="33" posY="0"/>
+      </HRec>
+      <Phantom colName="usrpp_usr_id" fieldId="1" fieldType="TABLE_COLUMN" name="userpostprices.usrpp_usr_id" sqlTabName="userpostprices" widget="Phantom"/>
+      <Phantom colName="usrpp_isvalidatedbysalfatix" fieldId="13" fieldType="TABLE_COLUMN" name="userpostprices.usrpp_isvalidatedbysalfatix" sqlTabName="userpostprices" widget="Phantom"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBiAGUAMgAzAGMAYgA1AGYALQBkADYAZgAzAC0ANABiADEANwAtAGIAMQA3AGEALQBiAGUANABhADQAZgA5AGYAYQA5ADAANQB9wGlAAAAAAABAIAAAAAAAAD9QYk3S8an8AQAAAEwAewAzADYAZgBmADQAZABjAGEALQBmADgAMQBlAC0ANAA1ADEAMQAtADgANgA1ADUALQBhAGIAYwBhAGUAYQAzADUANAA1AGMAMgB9AAAAAAAAAAAAAAAAAAAAAD9ok3S8an76AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

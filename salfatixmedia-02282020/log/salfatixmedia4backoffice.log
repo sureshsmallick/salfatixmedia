@@ -1,0 +1,75 @@
+
+Date: 02/27/2020    Time: 09:45:27
+Program error at 'setup.4gl', line number 116.
+FORMS statement error number -8014.
+The resource file 'salfatixmedia' can not be read.
+Date: 02/27/2020    Time: 09:48:12
+Program error at 'setup.4gl', line number 116.
+FORMS statement error number -8014.
+The resource file 'salfatixmedia' can not be read.
+Date: 02/28/2020    Time: 07:30:09
+Erreur =32256 - Message =send_message_to() - RUN ../scripts/sendmail.sh '../exports/sendmail/mail_brand_20200228_073009459_87382.txt' Failed  n#0 error_log() at setup.4gl:147
+#1 send_message_to() at notifications.4gl:207
+#2 sendmail_brand_creation() at notifications.4gl:231
+#3 brandgrid_process_data() at brands.4gl:1484
+#4 brandgrid_input() at brands.4gl:1077
+#5 brandgrid_create() at brands.4gl:496
+#6 brandgrid_open_form_by_key() at brands.4gl:431
+#7 brandlist_display() at brands.4gl:258
+#8 brandlist_open_form() at brands.4gl:106
+#9 main() at salfatixmedia4backoffice.4gl:58
+
+Date: 02/28/2020    Time: 07:30:09
+Erreur =32256 - Message =sendmail_brand_creation(3) - Error with sendmail script   n#0 error_log() at setup.4gl:147
+#1 sendmail_brand_creation() at notifications.4gl:234
+#2 brandgrid_process_data() at brands.4gl:1484
+#3 brandgrid_input() at brands.4gl:1077
+#4 brandgrid_create() at brands.4gl:496
+#5 brandgrid_open_form_by_key() at brands.4gl:431
+#6 brandlist_display() at brands.4gl:258
+#7 brandlist_open_form() at brands.4gl:106
+#8 main() at salfatixmedia4backoffice.4gl:58
+
+Date: 02/28/2020    Time: 07:40:26
+Erreur =32256 - Message =send_message_to() - RUN ../scripts/sendmail.sh '../exports/sendmail/mail_influencer_20200228_074026801_87630.txt' Failed  n#0 error_log() at setup.4gl:147
+#1 send_message_to() at notifications.4gl:207
+#2 sendmail_influencer_creation() at notifications.4gl:339
+#3 usergrid_process_data() at users.4gl:1737
+#4 usergrid_input() at users.4gl:1236
+#5 usergrid_create() at users.4gl:720
+#6 usergrid_open_form_by_key() at users.4gl:658
+#7 userlist_display() at users.4gl:207
+#8 userlist_open_form() at users.4gl:102
+#9 main() at salfatixmedia4backoffice.4gl:182
+
+Date: 02/28/2020    Time: 07:40:26
+Erreur =32256 - Message =sendmail_influencer_creation(3) - Error with sendmail script   n#0 error_log() at setup.4gl:147
+#1 sendmail_influencer_creation() at notifications.4gl:342
+#2 usergrid_process_data() at users.4gl:1737
+#3 usergrid_input() at users.4gl:1236
+#4 usergrid_create() at users.4gl:720
+#5 usergrid_open_form_by_key() at users.4gl:658
+#6 userlist_display() at users.4gl:207
+#7 userlist_open_form() at users.4gl:102
+#8 main() at salfatixmedia4backoffice.4gl:182
+
+Date: 03/25/2020    Time: 13:57:44
+Program error at 'salfatixmedia4backoffice.4gl', line number 225.
+FORMS statement error number -1108.
+Record (scr_credentials) not in form.
+Date: 03/25/2020    Time: 14:00:01
+Program error at 'salfatixmedia4backoffice.4gl', line number 225.
+FORMS statement error number -1108.
+Record (scr_credentials) not in form.
+Date: 03/25/2020    Time: 14:00:39
+Program error at 'salfatixmedia4backoffice.4gl', line number 225.
+FORMS statement error number -1108.
+Record (scr_credentials) not in form.
+Date: 03/25/2020    Time: 14:00:57
+Program error at 'salfatixmedia4backoffice.4gl', line number 225.
+FORMS statement error number -1108.
+Record (scr_credentials) not in form.
+Date: 03/25/2020    Time: 14:02:38
+Program error at 'salfatixmedia4backoffice.4gl', line number 225.
+FORMS statement error number -1108.
+Record (scr_credentials) not in form.

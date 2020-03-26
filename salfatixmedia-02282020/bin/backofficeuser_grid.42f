@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="backofficeuser_grid.tmp" build="3.20.07" sqlDbName="salfatixmedia" text="Form" style="centerwindow" width="35" height="35">
+  <ActionDefaultList>
+    <ActionDefault name="zoomcountry" image="font:FontAwesome.ttf:f150" contextMenu="no"/>
+    <ActionDefault name="zoomstate" image="font:FontAwesome.ttf:f150"/>
+    <ActionDefault name="zoomcity" image="font:FontAwesome.ttf:f150"/>
+  </ActionDefaultList>
+  <LStr text="Form"/>
+  <Grid name="salfatixmedia1" width="35" height="35">
+    <PhantomFormField name="backofficeusers.bousr_id" colName="bousr_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="28" sqlTabName="backofficeusers">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <FormField name="formonly.ff_formtitle" colName="ff_formtitle" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Label width="33" justify="center" style="ff_formtitle" posY="1" posX="1" gridWidth="33"/>
+    </FormField>
+    <FormField name="pics.pic_value" colName="pic_value" sqlType="BYTE" required="1" notNull="1" fieldId="1" sqlTabName="pics" noEntry="1" tabIndex="2">
+      <Image width="12" height="5" action="upload_photo" autoScale="1" sizePolicy="fixed" style="no_border" posY="2" posX="1" gridWidth="12" gridHeight="5"/>
+    </FormField>
+    <FormField name="formonly.ffimage_value" colName="ffimage_value" fieldId="2" sqlTabName="formonly" noEntry="1" tabIndex="3">
+      <Image width="5" height="3" action="save" autoScale="1" justify="center" sizePolicy="fixed" style="no_border" comment="Save" posY="2" posX="29" gridWidth="5" gridHeight="3">
+        <LStr comment="Save"/>
+      </Image>
+    </FormField>
+    <HBox posY="7" posX="1" gridWidth="33">
+      <Button name="upload_photo" width="12" text="Change Photo" style="brand_html" tabIndex="4">
+        <LStr text="Change Photo"/>
+      </Button>
+      <SpacerItem/>
+    </HBox>
+    <Label name="label3" width="33" text=" " posY="8" posX="1" gridWidth="33">
+      <LStr text=" "/>
+    </Label>
+    <Label name="label1" width="33" text="User Information" style="bouser_label_bold" posY="9" posX="1" gridWidth="33">
+      <LStr text="User Information"/>
+    </Label>
+    <Label name="backofficeusers_bousr_gender_id_label1" width="12" text="Gender" posY="10" posX="1" gridWidth="12">
+      <LStr text="Gender"/>
+    </Label>
+    <FormField name="backofficeusers.bousr_gender_id" colName="bousr_gender_id" sqlType="INTEGER" fieldId="3" sqlTabName="backofficeusers" tabIndex="5">
+      <ComboBox width="18" posY="10" posX="14" gridWidth="20">
+        <Item name="1" text="Other">
+          <LStr text="Other"/>
+        </Item>
+        <Item name="2" text="Male">
+          <LStr text="Male"/>
+        </Item>
+        <Item name="3" text="Female">
+          <LStr text="Female"/>
+        </Item>
+      </ComboBox>
+    </FormField>
+    <Label name="backofficeusers_bousr_firstname_label1" width="12" text="First Name" posY="11" posX="1" gridWidth="12">
+      <LStr text="First Name"/>
+    </Label>
+    <FormField name="backofficeusers.bousr_firstname" colName="bousr_firstname" sqlType="VARCHAR(128)" fieldId="4" sqlTabName="backofficeusers" tabIndex="6">
+      <Edit width="20" scroll="1" posY="11" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="backofficeusers_bousr_lastname_label1" width="12" text="Last Name" posY="12" posX="1" gridWidth="12">
+      <LStr text="Last Name"/>
+    </Label>
+    <FormField name="backofficeusers.bousr_lastname" colName="bousr_lastname" sqlType="VARCHAR(128)" fieldId="5" sqlTabName="backofficeusers" tabIndex="7">
+      <Edit width="20" scroll="1" posY="12" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="backofficeusers_bousr_email_label1" width="12" text="Email" posY="13" posX="1" gridWidth="12">
+      <LStr text="Email"/>
+    </Label>
+    <FormField name="backofficeusers.bousr_email" colName="bousr_email" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="6" sqlTabName="backofficeusers" tabIndex="8">
+      <Edit width="20" keyboardHint="email" scroll="1" posY="13" posX="14" gridWidth="20"/>
+    </FormField>
+    <PhantomFormField name="backofficeusers.bousr_email_style" colName="bousr_email_style" sqlType="CHAR(1)" fieldId="21" sqlTabName="backofficeusers">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="backofficeusers.bousr_country_id" colName="bousr_country_id" sqlType="INTEGER" required="1" notNull="1" fieldId="22" sqlTabName="backofficeusers">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="backofficeusers.bousr_state_id" colName="bousr_state_id" sqlType="INTEGER" fieldId="23" sqlTabName="backofficeusers">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="backofficeusers.bousr_city_id" colName="bousr_city_id" sqlType="INTEGER" fieldId="24" sqlTabName="backofficeusers">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <Label name="bousers_bouser_password_label1" width="12" text="Password" posY="14" posX="1" gridWidth="12">
+      <LStr text="Password"/>
+    </Label>
+    <FormField name="backofficeusers.bousr_password" colName="bousr_password" sqlType="VARCHAR(255)" required="1" notNull="1" fieldId="7" sqlTabName="backofficeusers" tabIndex="9">
+      <Edit width="20" isPassword="1" scroll="1" posY="14" posX="14" gridWidth="20"/>
+    </FormField>
+    <PhantomFormField name="backofficeusers.bousr_pic_id" colName="bousr_pic_id" sqlType="INTEGER" required="1" notNull="1" fieldId="29" sqlTabName="backofficeusers">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <Label name="bousers_bouser_password" width="12" text="Confirm Password" posY="15" posX="1" gridWidth="12">
+      <LStr text="Confirm Password"/>
+    </Label>
+    <FormField name="backofficeusers1.bousr_password" colName="bousr_password" sqlType="VARCHAR(255)" required="1" notNull="1" fieldId="8" sqlTabName="backofficeusers" tabIndex="10">
+      <Edit width="20" isPassword="1" scroll="1" posY="15" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="backofficeusers_bousr_mobile_phone_label1" width="12" text="Phone Number" posY="16" posX="1" gridWidth="12">
+      <LStr text="Phone Number"/>
+    </Label>
+    <FormField name="formonly.phonenumberprefix_label" colName="phonenumberprefix_label" fieldId="9" sqlTabName="formonly" noEntry="1" tabIndex="11">
+      <Label width="4" justify="right" posY="16" posX="14" gridWidth="4"/>
+    </FormField>
+    <FormField name="backofficeusers.bousr_mobile_phone" colName="bousr_mobile_phone" sqlType="BIGINT" fieldId="10" sqlTabName="backofficeusers" tabIndex="12">
+      <Edit width="15" scroll="1" posY="16" posX="19" gridWidth="15"/>
+    </FormField>
+    <Label name="label2" width="33" text=" " posY="17" posX="1" gridWidth="33">
+      <LStr text=" "/>
+    </Label>
+    <Label name="label4" width="33" text="Address" style="bouser_label_bold" posY="18" posX="1" gridWidth="33">
+      <LStr text="Address"/>
+    </Label>
+    <Label name="backofficeusers_bousr_country_id_label1" width="12" text="Country" posY="19" posX="1" gridWidth="12">
+      <LStr text="Country"/>
+    </Label>
+    <FormField name="countries.cntr_name" colName="cntr_name" sqlType="VARCHAR(64)" required="1" notNull="1" fieldId="11" sqlTabName="countries" tabIndex="13">
+      <ButtonEdit width="18" action="zoomcountry" scroll="1" posY="19" posX="14" gridWidth="20">
+        <Completer/>
+      </ButtonEdit>
+    </FormField>
+    <Label name="backofficeusers_bousr_state_id_label1" width="12" text="State" posY="20" posX="1" gridWidth="12">
+      <LStr text="State"/>
+    </Label>
+    <FormField name="states.stt_name" colName="stt_name" sqlType="VARCHAR(60)" required="1" notNull="1" fieldId="12" sqlTabName="states" tabIndex="14">
+      <ButtonEdit width="18" action="zoomstate" scroll="1" posY="20" posX="14" gridWidth="20">
+        <Completer/>
+      </ButtonEdit>
+    </FormField>
+    <Label name="backofficeusers_bousr_city_id_label1" width="12" text="City" posY="21" posX="1" gridWidth="12">
+      <LStr text="City"/>
+    </Label>
+    <FormField name="cities.cts_name" colName="cts_name" sqlType="VARCHAR(60)" required="1" notNull="1" fieldId="13" sqlTabName="cities" tabIndex="15">
+      <ButtonEdit width="18" action="zoomcity" scroll="1" posY="21" posX="14" gridWidth="20">
+        <Completer/>
+      </ButtonEdit>
+    </FormField>
+    <Label name="backofficeusers_bousr_address_number_label1" width="12" text="Number" posY="22" posX="1" gridWidth="12">
+      <LStr text="Number"/>
+    </Label>
+    <FormField name="backofficeusers.bousr_address_number" colName="bousr_address_number" sqlType="VARCHAR(16)" fieldId="14" sqlTabName="backofficeusers" tabIndex="16">
+      <Edit width="20" scroll="1" posY="22" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="backofficeusers_bousr_address_street_label1" width="12" text="Street" posY="23" posX="1" gridWidth="12">
+      <LStr text="Street"/>
+    </Label>
+    <FormField name="backofficeusers.bousr_address_street" colName="bousr_address_street" sqlType="VARCHAR(128)" fieldId="15" sqlTabName="backofficeusers" tabIndex="17">
+      <Edit width="20" scroll="1" posY="23" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="backofficeusers_bousr_address_zipcode_label1" width="12" text="Zipcode" posY="24" posX="1" gridWidth="12">
+      <LStr text="Zipcode"/>
+    </Label>
+    <FormField name="backofficeusers.bousr_address_zipcode" colName="bousr_address_zipcode" sqlType="VARCHAR(128)" fieldId="16" sqlTabName="backofficeusers" tabIndex="18">
+      <Edit width="20" scroll="1" posY="24" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="backofficeusers_bousr_address_town_label1" width="12" text="Town" hidden="1" posY="25" posX="1" gridWidth="12">
+      <LStr text="Town"/>
+    </Label>
+    <FormField name="backofficeusers.bousr_address_town" colName="bousr_address_town" sqlType="VARCHAR(128)" fieldId="17" sqlTabName="backofficeusers" hidden="1" tabIndex="19">
+      <Edit width="20" scroll="1" posY="25" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="backofficeusers_bousr_address_more_label1" width="12" text="More" posY="26" posX="1" gridWidth="12">
+      <LStr text="More"/>
+    </Label>
+    <FormField name="backofficeusers.bousr_address_more" colName="bousr_address_more" sqlType="VARCHAR(128)" fieldId="18" sqlTabName="backofficeusers" tabIndex="20">
+      <Edit width="20" scroll="1" posY="26" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="label5" width="33" text=" " posY="27" posX="1" gridWidth="33">
+      <LStr text=" "/>
+    </Label>
+    <Label name="label6" width="33" text="Other" style="bouser_label_bold" posY="28" posX="1" gridWidth="33">
+      <LStr text="Other"/>
+    </Label>
+    <Label name="backofficeusers_bousr_isadmin_label1" width="12" text="Is Administrator" posY="29" posX="1" gridWidth="12">
+      <LStr text="Is Administrator"/>
+    </Label>
+    <FormField name="backofficeusers.bousr_isadmin" colName="bousr_isadmin" sqlType="SMALLINT" required="1" notNull="1" fieldId="19" sqlTabName="backofficeusers" tabIndex="21">
+      <CheckBox width="20" text="" posY="29" posX="14" gridWidth="20">
+        <LStr text=""/>
+      </CheckBox>
+    </FormField>
+    <PhantomFormField name="backofficeusers.bousr_usrrole_id" colName="bousr_usrrole_id" sqlType="INTEGER" fieldId="25" sqlTabName="backofficeusers">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <Label name="backofficeusers_bousr_accountstatus_id_label1" width="12" text="Status" posY="31" posX="1" gridWidth="12">
+      <LStr text="Status"/>
+    </Label>
+    <FormField name="backofficeusers.bousr_accountstatus_id" colName="bousr_accountstatus_id" sqlType="INTEGER" required="1" notNull="1" fieldId="20" sqlTabName="backofficeusers" noEntry="1" tabIndex="22">
+      <ComboBox width="18" initializer="bouser_status_combobox_initializer" scroll="1" posY="31" posX="14" gridWidth="20"/>
+    </FormField>
+    <PhantomFormField name="backofficeusers.bousr_creationdate" colName="bousr_creationdate" sqlType="DATETIME YEAR TO SECOND" required="1" notNull="1" fieldId="26" sqlTabName="backofficeusers">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="backofficeusers.bousr_deletiondate" colName="bousr_deletiondate" sqlType="DATETIME YEAR TO SECOND" fieldId="27" sqlTabName="backofficeusers">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="backofficeusers.bousr_stopdate" colName="bousr_stopdate" sqlType="DATETIME YEAR TO SECOND" fieldId="32" sqlTabName="backofficeusers">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="backofficeusers.bousr_lastupdatedate" colName="bousr_lastupdatedate" sqlType="DATETIME YEAR TO SECOND" fieldId="30" sqlTabName="backofficeusers">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="backofficeusers.bousr_lastlogindate" colName="bousr_lastlogindate" sqlType="DATETIME YEAR TO SECOND" fieldId="31" sqlTabName="backofficeusers">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <Label name="label7" width="33" text=" " posY="32" posX="1" gridWidth="33">
+      <LStr text=" "/>
+    </Label>
+    <Label name="account_actions_label" width="33" text="Account Actions" style="brand_label_bold" posY="33" posX="1" gridWidth="33">
+      <LStr text="Account Actions"/>
+    </Label>
+    <HBox posY="34" posX="1" gridWidth="33">
+      <Button name="stop_bouser" width="6" text="Stop" tabIndex="23">
+        <LStr text="Stop"/>
+      </Button>
+      <Button name="delete_bouser" width="5" text="Forget" tabIndex="24">
+        <LStr text="Forget"/>
+      </Button>
+      <SpacerItem/>
+    </HBox>
+  </Grid>
+  <RecordView tabName="backofficeusers">
+    <Link colName="bousr_gender_id" fieldIdRef="3"/>
+    <Link colName="bousr_firstname" fieldIdRef="4"/>
+    <Link colName="bousr_lastname" fieldIdRef="5"/>
+    <Link colName="bousr_email" fieldIdRef="6"/>
+    <Link colName="bousr_password" fieldIdRef="7"/>
+    <Link colName="bousr_mobile_phone" fieldIdRef="10"/>
+    <Link colName="bousr_address_number" fieldIdRef="14"/>
+    <Link colName="bousr_address_street" fieldIdRef="15"/>
+    <Link colName="bousr_address_zipcode" fieldIdRef="16"/>
+    <Link colName="bousr_address_town" fieldIdRef="17"/>
+    <Link colName="bousr_address_more" fieldIdRef="18"/>
+    <Link colName="bousr_isadmin" fieldIdRef="19"/>
+    <Link colName="bousr_accountstatus_id" fieldIdRef="20"/>
+    <Link colName="bousr_email_style" fieldIdRef="21"/>
+    <Link colName="bousr_country_id" fieldIdRef="22"/>
+    <Link colName="bousr_state_id" fieldIdRef="23"/>
+    <Link colName="bousr_city_id" fieldIdRef="24"/>
+    <Link colName="bousr_usrrole_id" fieldIdRef="25"/>
+    <Link colName="bousr_creationdate" fieldIdRef="26"/>
+    <Link colName="bousr_deletiondate" fieldIdRef="27"/>
+    <Link colName="bousr_id" fieldIdRef="28"/>
+    <Link colName="bousr_pic_id" fieldIdRef="29"/>
+    <Link colName="bousr_lastupdatedate" fieldIdRef="30"/>
+    <Link colName="bousr_lastlogindate" fieldIdRef="31"/>
+    <Link colName="bousr_stopdate" fieldIdRef="32"/>
+  </RecordView>
+  <RecordView tabName="backofficeusers1">
+    <Link colName="bousr_password" fieldIdRef="8"/>
+  </RecordView>
+  <RecordView tabName="states">
+    <Link colName="stt_name" fieldIdRef="12"/>
+  </RecordView>
+  <RecordView tabName="pics">
+    <Link colName="pic_value" fieldIdRef="1"/>
+  </RecordView>
+  <RecordView tabName="countries">
+    <Link colName="cntr_name" fieldIdRef="11"/>
+  </RecordView>
+  <RecordView tabName="cities">
+    <Link colName="cts_name" fieldIdRef="13"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="ffimage_value" fieldIdRef="2"/>
+    <Link colName="phonenumberprefix_label" fieldIdRef="9"/>
+  </RecordView>
+  <RecordView tabName="scr_bouser_grid">
+    <Link colName="bousr_id" fieldIdRef="28"/>
+    <Link colName="bousr_password" fieldIdRef="7"/>
+    <Link colName="bousr_pic_id" fieldIdRef="29"/>
+    <Link colName="bousr_gender_id" fieldIdRef="3"/>
+    <Link colName="bousr_firstname" fieldIdRef="4"/>
+    <Link colName="bousr_lastname" fieldIdRef="5"/>
+    <Link colName="bousr_email" fieldIdRef="6"/>
+    <Link colName="bousr_email_style" fieldIdRef="21"/>
+    <Link colName="bousr_country_id" fieldIdRef="22"/>
+    <Link colName="bousr_state_id" fieldIdRef="23"/>
+    <Link colName="bousr_city_id" fieldIdRef="24"/>
+    <Link colName="bousr_address_number" fieldIdRef="14"/>
+    <Link colName="bousr_address_street" fieldIdRef="15"/>
+    <Link colName="bousr_address_zipcode" fieldIdRef="16"/>
+    <Link colName="bousr_address_town" fieldIdRef="17"/>
+    <Link colName="bousr_address_more" fieldIdRef="18"/>
+    <Link colName="bousr_mobile_phone" fieldIdRef="10"/>
+    <Link colName="bousr_isadmin" fieldIdRef="19"/>
+    <Link colName="bousr_usrrole_id" fieldIdRef="25"/>
+    <Link colName="bousr_accountstatus_id" fieldIdRef="20"/>
+    <Link colName="bousr_creationdate" fieldIdRef="26"/>
+    <Link colName="bousr_deletiondate" fieldIdRef="27"/>
+    <Link colName="bousr_stopdate" fieldIdRef="32"/>
+    <Link colName="bousr_lastupdatedate" fieldIdRef="30"/>
+    <Link colName="bousr_lastlogindate" fieldIdRef="31"/>
+    <Link colName="pic_value" fieldIdRef="1"/>
+    <Link colName="bousr_password" fieldIdRef="8"/>
+  </RecordView>
+  <RecordView tabName="src_loc">
+    <Link colName="cntr_name" fieldIdRef="11"/>
+    <Link colName="stt_name" fieldIdRef="12"/>
+    <Link colName="cts_name" fieldIdRef="13"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="ffimage_value" fieldIdRef="2"/>
+    <Link colName="phonenumberprefix_label" fieldIdRef="9"/>
+  </RecordView>
+</Form>

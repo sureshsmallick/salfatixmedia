@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - theme.scss.json file</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="reference/index.html">Reference</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="reference/url.html">URL reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/api.html">API reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/grunt/index.html">Grunt reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/grunt/configure_compilation.html">Configure your compilation</a>
+            
+            <a class="btn btn-sidebar " href="reference/grunt/fix_configuration_issues.html">Fix configuration issues</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/theme/index.html">Theme reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_conditions.html">Theme conditions</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_config_json.html">theme.config.json file</a>
+            
+            <a class="btn btn-sidebar active" href="reference/theme/theme_scss_json_file.html">theme.scss.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_variables.html">Theme variables reference</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/project/index.html">Project reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/project/project_directory.html">Project directory</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/customization_project.html">Customization project</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets.html">Widgets</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_js_file.html">Widget JavaScript file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_template_file.html">Widget template file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_scss_file.html">Widget scss file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets_with_modelhelper.html">Widgets with Modelhelper</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/deliverables.html">Deliverables</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/upgrading/index.html">Upgrading</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/compatibility.html">Compatibility</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/customization_migration.html">Customization migration</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deploy-runtime-on-gas.html">Deploy runtime on GAS</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.20.html">Upgrade to 3.20</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.10.html">Upgrade to 3.10</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="reference">
+<header class="page-title">
+  <em>theme.scss.json file</em>
+</header>
+<article class="md-content">
+<p>This procedure shows you how to use the <code>theme.scss.json</code> file to apply style changes.</p>
+<h2 id="Overview">Overview <a class="header-anchor" href="reference/theme/theme_scss_json_file.html#Overview" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>The <code>theme.scss.json</code> file contains a list of theme styles. Changing a theme style is an easy way to modify the user interface.</p>
+<blockquote>
+<p><em>NOTE</em>: If you make a change to <code>theme.scss.json</code>, you must rebuild your customization project before the changes take effect.</p>
+</blockquote>
+<p>You can use this file in two places:</p>
+<ul>
+<li>in the root folder of your theme part</li>
+<li>in the root folder of your customization</li>
+</ul>
+<blockquote>
+<p><em>NOTE</em>: It is recommended that you use the file in the theme part, rather than in the root folder of the customization.</p>
+</blockquote>
+<h1 id="Color_variables_naming_convention">Color variables naming convention <a class="header-anchor" href="reference/theme/theme_scss_json_file.html#Color_variables_naming_convention" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>Variables that define colors follow this naming convention:</p>
+<pre class="hljs"><code>{
+<span class="hljs-meta">  $</span><span class="bash">mt-colorname[-intensity]</span>
+}
+</code></pre>
+<ul>
+<li><code>colorname</code> is the name of the color as defined in the material color palette.</li>
+<li><code>intensity</code> (optional) is the number for the gradient. For example, <a class="theme-variable-link" href="reference/theme/theme_variables.html#mt-grey"><code>mt-grey-200</code></a> defines an intensity of light grey. For more information on material color, go to <a href="https://www.google.com/design" title="Google design">Google design</a> and navigate to the &quot;Color palette&quot; page.</li>
+</ul>
+<h2 id="Example_of_customized_theme_styles">Example of customized theme styles <a class="header-anchor" href="reference/theme/theme_scss_json_file.html#Example_of_customized_theme_styles" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<pre class="hljs"><code>// in theme.scss.json
+{
+ 
+  <span class="hljs-attr">"theme-font-size-ratio"</span>                  : <span class="hljs-string">"0.9"</span>,
+  <span class="hljs-attr">"theme-margin-ratio"</span>                     : <span class="hljs-string">"0.6"</span>,
+  <span class="hljs-attr">"theme-field-height-ratio"</span>               : <span class="hljs-string">"0.7"</span>,
+  <span class="hljs-attr">"theme-radiobutton-size"</span>                 : <span class="hljs-string">"14px"</span>,
+  <span class="hljs-attr">"theme-checkbox-size"</span>                    : <span class="hljs-string">"14px"</span>,
+
+  <span class="hljs-attr">"theme-primary-background-color"</span>         : <span class="hljs-string">"$mt-grey-50"</span>,
+  <span class="hljs-attr">"theme-secondary-background-color"</span>       : <span class="hljs-string">"$mt-white"</span>,
+  <span class="hljs-attr">"theme-field-background-color"</span>           : <span class="hljs-string">"$mt-white"</span>,
+  <span class="hljs-attr">"theme-field-disabled-background-color"</span>  : <span class="hljs-string">"rgba(0,0,0,0.04)"</span>,
+  <span class="hljs-attr">"theme-primary-color"</span>                    : <span class="hljs-string">"$mt-blue-700"</span>,
+  <span class="hljs-attr">"theme-primary-emphasis-background-color"</span>: <span class="hljs-string">"$mt-blue-500"</span>,
+  <span class="hljs-attr">"theme-primary-faded-background-color"</span>   : <span class="hljs-string">"$mt-blue-100"</span>,
+  <span class="hljs-attr">"theme-secondary-color"</span>                  : <span class="hljs-string">"$mt-grey-600"</span>,
+  <span class="hljs-attr">"theme-disabled-color"</span>                   : <span class="hljs-string">"$mt-grey-400"</span>,
+  <span class="hljs-attr">"theme-separator-color"</span>                  : <span class="hljs-string">"$mt-grey-400"</span>,
+  <span class="hljs-attr">"theme-header-color"</span>                     : <span class="hljs-string">"$mt-grey-100"</span>,
+  <span class="hljs-attr">"theme-message-color"</span>                    : <span class="hljs-string">"$mt-grey-800"</span>,
+  <span class="hljs-attr">"theme-error-background-color"</span>           : <span class="hljs-string">"$mt-red-800"</span>,
+  <span class="hljs-attr">"theme-sidebar-always-visible-min-width"</span> : <span class="hljs-string">"1400px"</span>,
+  <span class="hljs-attr">"theme-sidebar-default-width"</span>            : <span class="hljs-string">"300px"</span>,
+  <span class="hljs-attr">"theme-toggle-chromebar-min-width"</span>       : <span class="hljs-string">"720px"</span>,
+  <span class="hljs-attr">"theme-animation-duration"</span>               : <span class="hljs-string">"0.7s"</span>,
+  <span class="hljs-attr">"theme-disable-ending-popup"</span>             : <span class="hljs-literal">true</span>
+}
+
+</code></pre>
+<h2 id="Reference_a_color_variable">Reference a color variable <a class="header-anchor" href="reference/theme/theme_scss_json_file.html#Reference_a_color_variable" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>You can reference a color variable setting from a <code>.scss</code> file by prefacing the color variable name with <code>$</code>. For example:</p>
+<pre class="hljs"><code><span class="hljs-comment">// in scss file</span>
+{
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$theme-primary-emphasis-background-color</span>;
+}
+...
+</code></pre>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

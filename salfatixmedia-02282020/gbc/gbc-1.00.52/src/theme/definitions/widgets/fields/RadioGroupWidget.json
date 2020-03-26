@@ -1,0 +1,45 @@
+{
+  "name": "RadioGroupWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-RadioGroupWidget-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "gbc-RadioGroupWidget-radiobutton-size",
+      "type": "size",
+      "defaultValue": "$theme-radiobutton-size"
+    },
+    {
+      "name": "gbc-RadioGroupWidget-unchecked-color",
+      "type": "color",
+      "defaultValue": "$theme-secondary-color"
+    },
+    {
+      "name": "gbc-RadioGroupWidget-checked-color",
+      "type": "color",
+      "defaultValue": "$theme-primary-background-color"
+    },
+    {
+      "name": "gbc-RadioGroupWidget-unchecked-icon",
+      "type": "string",
+      "defaultValue": "radiobox-blank"
+    },
+    {
+      "name": "gbc-RadioGroupWidget-checked-icon",
+      "type": "string",
+      "defaultValue": "radiobox-marked"
+    },
+    {
+      "name": "gbc-RadioGroupWidget-disabled-color",
+      "type": "color",
+      "defaultValue": "$theme-disabled-background-color"
+    },
+    {
+      "name": "gbc-RadioGroupWidget-focus-border-color",
+      "type": "color",
+      "defaultValue": "$theme-separator-color"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+---------------------------------------------------------------------------------- 
+-- File created from C:\work\SalfatixMedia\salfatixmedia\lib\influencers\user_list.4fd by Genero Studio
+-- WARNING! All changes made in this file will be lost!
+----------------------------------------------------------------------------------
+
+SCHEMA salfatixmedia
+
+LAYOUT (text=%"Form", style="centerwindow")
+Grid grid1
+{
+
+ [ff_formtitle                                                                    ]
+ <G group1                             > <S salfatixmedia1                       >
+ [label1                      ]          [usr_instagra][usr_firstnam1          ]
+ [radiogroup1                 ]          [            ][usr_lastnam1           ]
+                                         [            ][usr_emai1              ]
+ [label2              ]                  [            ][user_phonenumber       ]
+ [radiogroup2         ]                  [lbl_statu   ][usr_status_txt         ]
+ [label3                      ]          [lbl_insta   ][usr_instagram_usernam1 ]
+ [usr_firstname               ]          [lbl_nbfollow][user_nb_followers      ]
+ [label4                      ]          [lbl_reach   ][user_reach             ]
+ [usr_lastname                ]
+ [label5                      ]
+ [usr_email                   ]
+ [label7                      ]
+ [usr_instagram_username      ]
+ [label6                      ]
+ [usrmtc_followers_count      ]
+ [label8                      ]
+ [usrmtc_reach                ]
+                      [filter ]          
+ <                                     > <                                       >
+}
+END -- grid1
+END -- form
+
+TABLES
+users1=users,
+usermetrics1=usermetrics,
+users,
+usermetrics,
+accountstatus
+END
+
+ATTRIBUTES
+Label lbl_statu:lbl_statu, text=%"Status";
+Label lbl_insta:lbl_insta, text=%"Instagram";
+Label lbl_nbfollow:lbl_nbfollow, text=%"Followers";
+Label lbl_reach:lbl_reach, text=%"Reach";
+LABEL ff_formtitle=formonly.ff_formtitle, justify=center, style="ff_formtitle";
+Group group1:group1, text=%"Filters", style="no_border";
+Label label1:label1, text=%"Sort By";
+RadioGroup radiogroup1=formonly.radiogroup1, items=(("users.usr_firstname", %"FirstName"),("users.usr_lastname", %"LastName"),("users.usr_email", %"Email"),("users.usr_instagram_username", %"Instagram Account"),("usermetrics.usrmtc_followers_count", %"Number of followers"),("usermetrics.usrmtc_reach", %"Reach"));
+Label label2:label2, text=%"Order";
+RadioGroup radiogroup2=formonly.radiogroup2, orientation=horizontal, items=(("asc", %"Ascending"),("desc", %"Descending"));
+Label label3:label3, text=%"Filter on first name";
+Edit usr_firstname=users1.usr_firstname;
+Label label4:label4, text=%"Filter on last name";
+Edit usr_lastname=users1.usr_lastname;
+Label label5:label5, text=%"Filter on email";
+Edit usr_email=users1.usr_email, scroll;
+Label label7:label7, text=%"Filter on Instagram account";
+Edit usr_instagram_username=users1.usr_instagram_username, scroll;
+Label label6:label6, text=%"Filter on number of followers";
+Edit usrmtc_followers_count=usermetrics1.usrmtc_followers_count, SCROLL;
+Label label8:label8, text=%"Filter on reach";
+Edit usrmtc_reach=usermetrics1.usrmtc_reach, scroll;
+Button filter:filter, text=%"Filter";
+ScrollGrid salfatixmedia1:salfatixmedia1, doubleClick=display_influencer, style="influencerlisttable", wantFixedPageSize=NO;
+Phantom users.usr_instagram_profilepicture;
+IMAGE usr_instagra=formonly.usr_instagram_profilepicture type VARCHAR, autoScale, sizePolicy=fixed, style="no_border";
+Edit usr_status_txt=accountstatus.accst_name;
+Edit usr_instagram_usernam1=users.usr_instagram_username;
+Phantom users.usr_id;
+Phantom users.usr_gender_id;
+Edit usr_firstnam1=users.usr_firstname, scroll;
+Edit usr_lastnam1=users.usr_lastname, scroll;
+Edit user_phonenumber=formonly.user_phonenumber type VARCHAR;
+Edit user_nb_followers=formonly.user_nb_followers type VARCHAR;
+Edit user_reach=formonly.user_reach type VARCHAR;
+Phantom users.usr_birthday;
+Edit usr_emai1=users.usr_email, scroll;
+Phantom users.usr_password;
+Phantom users.usr_country_id;
+Phantom users.usr_state_id;
+Phantom users.usr_city_id;
+Phantom users.usr_address_number;
+Phantom users.usr_address_street;
+Phantom users.usr_address_zipcode;
+Phantom users.usr_address_town;
+Phantom users.usr_address_more;
+Phantom users.usr_mobile_phone;
+Phantom users.usr_instagram_userid;
+Phantom users.usr_instagram_fullname;
+Phantom users.usr_instagram_biography;
+Phantom users.usr_instagram_website;
+Phantom users.usr_instagram_is_private;
+Phantom users.usr_instagram_is_verified;
+Phantom users.usr_instagram_is_business;
+Phantom users.usr_bank_name;
+Phantom users.usr_bank_iban;
+Phantom users.usr_bank_swift;
+Phantom users.usr_paypal;
+Phantom users.usr_mobile_notifications;
+Phantom users.usr_notif_style;
+Phantom users.usr_email_notifications;
+Phantom users.usr_email_style;
+Phantom users.usr_currency_id;
+Phantom users.usr_accountstatus_id;
+Phantom users.usr_createdby_id;
+Phantom users.usr_creationdate;
+Phantom users.usr_deletiondate;
+Phantom users.usr_validationdate;
+Phantom users.usr_canceldate;
+Phantom users.usr_suspendeddate;
+Phantom users.usr_stopdate;
+Phantom users.usr_emailvalidationdate;
+Phantom users.usr_lastupdatedate;
+Phantom users.usr_lastlogindate;
+Phantom users.usr_instagram_token;
+END -- ATTRIBUTES
+
+INSTRUCTIONS
+SCREEN RECORD scr_influencer_list(users.usr_id,
+users.usr_gender_id,
+users.usr_firstname,
+users.usr_lastname,
+users.usr_birthday,
+users.usr_email,
+users.usr_password,
+users.usr_country_id,
+users.usr_state_id,
+users.usr_city_id,
+users.usr_address_number,
+users.usr_address_street,
+users.usr_address_zipcode,
+users.usr_address_town,
+users.usr_address_more,
+users.usr_mobile_phone,
+users.usr_instagram_userid,
+users.usr_instagram_username,
+users.usr_instagram_fullname,
+users.usr_instagram_profilepicture,
+users.usr_instagram_biography,
+users.usr_instagram_website,
+users.usr_instagram_is_private,
+users.usr_instagram_is_verified,
+users.usr_instagram_is_business,
+users.usr_bank_name,
+users.usr_bank_iban,
+users.usr_bank_swift,
+users.usr_paypal,
+users.usr_mobile_notifications,
+users.usr_notif_style,
+users.usr_email_notifications,
+users.usr_email_style,
+users.usr_currency_id,
+users.usr_accountstatus_id,
+users.usr_createdby_id,
+users.usr_creationdate,
+users.usr_deletiondate,
+users.usr_validationdate,
+users.usr_canceldate,
+users.usr_suspendeddate,
+users.usr_stopdate,
+users.usr_emailvalidationdate,
+users.usr_lastupdatedate,
+users.usr_lastlogindate,
+users.usr_instagram_token,
+formonly.usr_instagram_profilepicture,
+formonly.user_phonenumber,
+formonly.user_nb_followers,
+formonly.user_reach,
+accountstatus.accst_name)
+
+SCREEN RECORD scr_qbeinput(formonly.radiogroup1,formonly.radiogroup2)
+SCREEN RECORD scr_qbeconstruct(users1.usr_firstname,users1.usr_lastname,users1.usr_email,users1.usr_instagram_username,usermetrics1.usrmtc_followers_count,usermetrics1.usrmtc_reach)
+SCREEN RECORD Undefined(formonly.ff_formtitle)
+END -- INSTRUCTIONS
+

@@ -1,0 +1,54 @@
+SCHEMA salfatixmedia
+
+LAYOUT (text=%"Form")
+Grid grid1
+{
+  [ff_formtitle                            ]
+  [img_back:                      :add     ]
+  <S salfatixmedia1                        >
+  [scl_img][accname                   ][upt]
+  [       ][brndscl_comment           ][vie]
+  [       ][                          ]
+  [       ][                          ][del]
+  <                                        >
+  
+}
+END -- grid1
+END -- form
+
+TABLES
+brandsocialnetworks,
+socialnetworks
+ATTRIBUTES
+LABEL ff_formtitle=formonly.ff_formtitle, justify=center, style="ff_formtitle";
+IMAGE img_back:img_back, HEIGHT=3 CHARACTERS, action=cancel, image="fa-arrow-circle-left", autoScale, sizePolicy=fixed, style="no_border", comment=%"Back";
+IMAGE add:addsocialnetwork, HEIGHT=3 CHARACTERS, action=addsocialnetwork, image="fa-plus", autoScale, sizePolicy=fixed, style="no_border", comment=%"Add Social Network";
+ScrollGrid salfatixmedia1:salfatixmedia1, wantFixedPageSize=NO,DOUBLECLICK=editsocialnetwork,STYLE="socialnetworks";
+Phantom brandsocialnetworks.brndscl_id;
+Phantom brandsocialnetworks.brndscl_brand_id;
+Phantom brandsocialnetworks.brndscl_socialnetwork_id;
+IMAGE scl_img=socialnetworks.scl_img, autoScale, sizePolicy=fixed, style="no_border", HEIGHT= 2 LINES;
+IMAGE upt=formonly.editimage, autoScale, sizePolicy=fixed, style="no_border",ACTION=editsocialnetwork;
+Edit accname=brandsocialnetworks.brndscl_accountname, SCROLL;
+TEXTEDIT brndscl_comment=brandsocialnetworks.brndscl_comment, scrollBars=NONE;
+
+IMAGE del=formonly.delimage, autoScale, sizePolicy=fixed, style="no_border",ACTION=delete;
+
+IMAGE vie=formonly.viewimage, autoScale, sizePolicy=fixed, style="no_border",ACTION=viewsocialnetwork;
+
+END -- ATTRIBUTES
+
+INSTRUCTIONS
+SCREEN RECORD scr_brandsocialnetwork_list(
+brandsocialnetworks.brndscl_id,
+brandsocialnetworks.brndscl_brand_id,
+brandsocialnetworks.brndscl_socialnetwork_id,
+brandsocialnetworks.brndscl_accountname,
+brandsocialnetworks.brndscl_comment,
+socialnetworks.scl_img,
+formonly.delimage,
+formonly.editimage,
+formonly.viewimage)
+SCREEN RECORD Undefined(formonly.ff_formtitle)
+END -- INSTRUCTIONS
+

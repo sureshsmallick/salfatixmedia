@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="user_menu" build="3.20.07" text="Menu" width="9" height="20">
+  <LStr text="Menu"/>
+  <Grid width="9" height="20">
+    <Table pageSize="6" name="tbl1" doubleClick="domenu" style="socialnetworksmobile" height="6ln" wantFixedPageSize="1" width="9" posY="0" posX="0" gridWidth="9" gridHeight="8" tabName="srmenu">
+      <TableColumn name="formonly.menuname" colName="menuname" fieldId="0" sqlTabName="formonly" imageColumn="menuimg" tabIndex="1">
+        <Edit width="7" scroll="1"/>
+      </TableColumn>
+      <PhantomColumn name="formonly.menuimg" colName="menuimg" fieldId="1" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="formonly.menuact" colName="menuact" fieldId="2" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+    </Table>
+    <FormField name="formonly.foot" colName="foot" fieldId="3" sqlTabName="formonly" noEntry="1" tabIndex="2">
+      <Image width="7" height="12" autoScale="1" stretch="both" style="center" sizePolicy="fixed" posY="8" posX="1" gridWidth="7" gridHeight="12"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="menuname" fieldIdRef="0"/>
+    <Link colName="menuimg" fieldIdRef="1"/>
+    <Link colName="menuact" fieldIdRef="2"/>
+    <Link colName="foot" fieldIdRef="3"/>
+  </RecordView>
+</Form>

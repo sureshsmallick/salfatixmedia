@@ -1,0 +1,15 @@
+{
+  "name": "PageWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-PageWidget-background-color",
+      "type": "color",
+      "defaultValue": "$theme-secondary-alternative-background-color"
+    },
+    {
+      "name": "gbc-PageTitleWidget-icon-size",
+      "type": "size",
+      "defaultValue": "$theme-small-icon-size"
+    }
+  ]
+}

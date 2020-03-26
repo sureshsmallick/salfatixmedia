@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="../">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="reference/index.html">Reference</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="reference/api.html">API reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/theme/index.html">Theme reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_conditions.html">Theme conditions</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_config_json.html">theme.config.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_scss_json_file.html">theme.scss.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_variables.html">Theme variables reference</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/grunt/index.html">Grunt reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/grunt/configure_compilation.html">Configure your compilation</a>
+            
+            <a class="btn btn-sidebar " href="reference/grunt/fix_configuration_issues.html">Fix configuration issues</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/project/index.html">Project reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/project/project_directory.html">Project directory</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/customization_project.html">Customization project</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets.html">Widgets</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_js_file.html">Widget JavaScript file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_template_file.html">Widget template file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_scss_file.html">Widget scss file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets_with_modelhelper.html">Widgets with Modelhelper</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/deliverables.html">Deliverables</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/upgrading/index.html">Upgrading</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/bootstrap.html">Application bootstrap</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/compatibility.html">Compatibility</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/cookies.html">Use of cookies</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/customization_migration.html">Customization migration</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deploy-runtime-on-gas..html">Deploy runtime on GAS</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deployment-portal.html">Deploy runtime with Portal</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/local_storage.html">Local storage</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.10.html">Upgrade to 3.10</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="source">
+
+  <a class="btn btn-default btn-xs" href="classes/classes.GbcImageWidget.html"><i class="glyphicon glyphicon-link"></i> view class doc</a>
+<section class="source-code">
+    <article>
+        <pre class="hljs"><span class="line-number"><span class="number" id="line_1">1</span><span class="number" id="line_2">2</span><span class="number" id="line_3">3</span><span class="number" id="line_4">4</span><span class="number" id="line_5">5</span><span class="number" id="line_6">6</span><span class="number" id="line_7">7</span><span class="number" id="line_8">8</span><span class="number" id="line_9">9</span><span class="number" id="line_10">10</span><span class="number" id="line_11">11</span><span class="number" id="line_12">12</span><span class="number" id="line_13">13</span><span class="number" id="line_14">14</span><span class="number" id="line_15">15</span><span class="number" id="line_16">16</span><span class="number" id="line_17">17</span><span class="number" id="line_18">18</span><span class="number" id="line_19">19</span><span class="number" id="line_20">20</span><span class="number" id="line_21">21</span><span class="number" id="line_22">22</span><span class="number" id="line_23">23</span><span class="number" id="line_24">24</span><span class="number" id="line_25">25</span><span class="number" id="line_26">26</span><span class="number" id="line_27">27</span><span class="number" id="line_28">28</span><span class="number" id="line_29">29</span><span class="number" id="line_30">30</span><span class="number" id="line_31">31</span><span class="number" id="line_32">32</span><span class="number" id="line_33">33</span><span class="number" id="line_34">34</span><span class="number" id="line_35">35</span><span class="number" id="line_36">36</span><span class="number" id="line_37">37</span><span class="number" id="line_38">38</span><span class="number" id="line_39">39</span><span class="number" id="line_40">40</span><span class="number" id="line_41">41</span><span class="number" id="line_42">42</span><span class="number" id="line_43">43</span><span class="number" id="line_44">44</span><span class="number" id="line_45">45</span><span class="number" id="line_46">46</span><span class="number" id="line_47">47</span><span class="number" id="line_48">48</span><span class="number" id="line_49">49</span><span class="number" id="line_50">50</span><span class="number" id="line_51">51</span><span class="number" id="line_52">52</span><span class="number" id="line_53">53</span><span class="number" id="line_54">54</span><span class="number" id="line_55">55</span><span class="number" id="line_56">56</span><span class="number" id="line_57">57</span><span class="number" id="line_58">58</span><span class="number" id="line_59">59</span><span class="number" id="line_60">60</span><span class="number" id="line_61">61</span><span class="number" id="line_62">62</span><span class="number" id="line_63">63</span><span class="number" id="line_64">64</span><span class="number" id="line_65">65</span><span class="number" id="line_66">66</span><span class="number" id="line_67">67</span><span class="number" id="line_68">68</span><span class="number" id="line_69">69</span><span class="number" id="line_70">70</span><span class="number" id="line_71">71</span><span class="number" id="line_72">72</span><span class="number" id="line_73">73</span><span class="number" id="line_74">74</span><span class="number" id="line_75">75</span><span class="number" id="line_76">76</span><span class="number" id="line_77">77</span><span class="number" id="line_78">78</span><span class="number" id="line_79">79</span><span class="number" id="line_80">80</span><span class="number" id="line_81">81</span><span class="number" id="line_82">82</span><span class="number" id="line_83">83</span></span><code><span class="hljs-comment">/// FOURJS_START_COPYRIGHT(D,2015)</span>
+<span class="hljs-comment">/// Property of Four Js*</span>
+<span class="hljs-comment">/// (c) Copyright Four Js 2015, 2019. All Rights Reserved.</span>
+<span class="hljs-comment">/// * Trademark of Four Js Development Tools Europe Ltd</span>
+<span class="hljs-comment">///   in the United States and elsewhere</span>
+<span class="hljs-comment">/// </span>
+<span class="hljs-comment">/// This file can be modified by licensees according to the</span>
+<span class="hljs-comment">/// product manual.</span>
+<span class="hljs-comment">/// FOURJS_END_COPYRIGHT</span>
+<span class="hljs-meta">
+'use strict'</span>;
+
+modulum(<span class="hljs-string">'GbcImageWidget'</span>, [<span class="hljs-string">'ImageWidget'</span>, <span class="hljs-string">'WidgetFactory'</span>],
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context, cls</span>) </span>{
+
+    <span class="hljs-comment">/**
+     * GBC Image widget to create internal images (i.e: with zmdi)
+     * @class GbcImageWidget
+     * @memberOf classes
+     * @extends classes.ImageWidget
+     * @publicdoc Widgets
+     */</span>
+    cls.GbcImageWidget = context.oo.Class(cls.ImageWidget, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$super</span>) </span>{
+      <span class="hljs-keyword">return</span> <span class="hljs-comment">/** @lends classes.GbcImageWidget.prototype */</span> {
+        <span class="hljs-attr">__name</span>: <span class="hljs-string">'GbcImageWidget'</span>,
+        <span class="hljs-attr">__templateName</span>: <span class="hljs-string">"ImageWidget"</span>,
+
+        <span class="hljs-comment">/**
+         * Update image according to several pre-set parameters
+         * @private
+         */</span>
+        _updateImage: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>._element) {
+            <span class="hljs-keyword">return</span>;
+          }
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._hasContent) {
+            <span class="hljs-keyword">this</span>._element.empty();
+            <span class="hljs-keyword">this</span>._hasContent = <span class="hljs-literal">false</span>;
+          }
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._img) {
+            <span class="hljs-keyword">this</span>._img.off(<span class="hljs-string">'error.ImageWidget'</span>);
+            <span class="hljs-keyword">this</span>._img.off(<span class="hljs-string">'load.ImageWidget'</span>);
+            <span class="hljs-keyword">this</span>._img = <span class="hljs-literal">null</span>;
+          }
+          <span class="hljs-keyword">var</span> backgroundImage = <span class="hljs-literal">null</span>;
+          <span class="hljs-keyword">var</span> backgroundSize = <span class="hljs-literal">null</span>;
+          <span class="hljs-keyword">var</span> backgroundRepeat = <span class="hljs-literal">null</span>;
+          <span class="hljs-keyword">var</span> backgroundPosition = <span class="hljs-literal">null</span>;
+          <span class="hljs-keyword">var</span> width = <span class="hljs-literal">null</span>;
+
+          <span class="hljs-keyword">if</span> (!!<span class="hljs-keyword">this</span>._src) {
+
+            <span class="hljs-keyword">this</span>._img = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'i'</span>);
+            <span class="hljs-keyword">this</span>._img.on(<span class="hljs-string">'error.ImageWidget'</span>, <span class="hljs-keyword">this</span>._onError.bind(<span class="hljs-keyword">this</span>));
+            <span class="hljs-keyword">this</span>._img.setAttribute(<span class="hljs-string">'class'</span>, <span class="hljs-string">"zmdi "</span> + <span class="hljs-keyword">this</span>._src);
+            <span class="hljs-keyword">this</span>._img.on(<span class="hljs-string">'load.ImageWidget'</span>, <span class="hljs-keyword">this</span>._onLoad.bind(<span class="hljs-keyword">this</span>));
+            <span class="hljs-keyword">this</span>._element.appendChild(<span class="hljs-keyword">this</span>._img);
+
+            <span class="hljs-keyword">this</span>._element.toggleClass(<span class="hljs-string">'gbc_autoScale'</span>, <span class="hljs-keyword">this</span>._autoScale);
+          }
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._standalone) {
+            <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>._border) {
+              <span class="hljs-keyword">this</span>._border = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>);
+              <span class="hljs-keyword">this</span>._border.addClass(<span class="hljs-string">'gbc_ImageWidget_border'</span>);
+            }
+            <span class="hljs-keyword">this</span>._element.appendChild(<span class="hljs-keyword">this</span>._border);
+          }
+          <span class="hljs-keyword">this</span>.setStyle({
+            <span class="hljs-string">'background-image'</span>: backgroundImage,
+            <span class="hljs-string">'background-size'</span>: backgroundSize,
+            <span class="hljs-string">'background-repeat'</span>: backgroundRepeat,
+            <span class="hljs-string">'background-position'</span>: backgroundPosition,
+            <span class="hljs-string">'width'</span>: width
+          });
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.__charMeasurer) {
+            <span class="hljs-keyword">this</span>._element.appendChild(<span class="hljs-keyword">this</span>.__charMeasurer);
+          }
+        },
+      };
+    });
+    cls.WidgetFactory.registerBuilder(<span class="hljs-string">'GbcImage'</span>, cls.GbcImageWidget);
+  });
+</code><span class="line-number-clear"></span></pre>
+    </article>
+</section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+---------------------------------------------------------------------------------- 
+-- File created from /home/suresh/Documents/I2GEN_BACKUP/Bangalore_Team/Documents/salfatixmedia-02282020/lib/backofficeusers/backofficemainpanel_list.4fd by Genero Studio
+-- WARNING! All changes made in this file will be lost!
+----------------------------------------------------------------------------------
+
+SCHEMA salfatixmedia
+
+LAYOUT (text=%"Form", style="centerwindow")
+GRID grid1
+{
+ [ff_formtitle                                           ]
+ [refre]<S salfatixmedia1                                         >
+         [job_description]
+         [               ]
+         [               ]
+         [               ]
+         [               ]
+
+
+
+
+
+
+
+
+        <                                                         >
+}
+END -- grid1
+END -- form
+
+ATTRIBUTES
+LABEL ff_formtitle=formonly.ff_formtitle, justify=center, style="ff_formtitle";
+BUTTON refre:refresh, text=%"", image="refresh";
+SCROLLGRID salfatixmedia1:salfatixmedia1, doubleClick=open_job, style="mainpanellist", wantFixedPageSize=NO, initialPageSize=10;
+TEXTEDIT job_description=formonly.job_description type VARCHAR, stretch=none, scrollBars=none, sizePolicy=initial, style="htmlnobox";
+PHANTOM formonly.job_category;
+PHANTOM formonly.job_amount type INTEGER;
+PHANTOM formonly.job_id type INTEGER;
+END -- ATTRIBUTES
+
+INSTRUCTIONS
+SCREEN RECORD scr_mainpanel_list(formonly.job_id,formonly.job_category,formonly.job_amount,formonly.job_description)
+SCREEN RECORD Undefined(formonly.ff_formtitle)
+END -- INSTRUCTIONS
+

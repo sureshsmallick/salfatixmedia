@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation - theme.config.json file</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="reference/index.html">Reference</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="reference/api.html">API reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/theme/index.html">Theme reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_conditions.html">Theme conditions</a>
+            
+            <a class="btn btn-sidebar active" href="reference/theme/theme_config_json.html">theme.config.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_scss_json_file.html">theme.scss.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_variables.html">Theme variables reference</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/grunt/index.html">Grunt reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/grunt/configure_compilation.html">Configure your compilation</a>
+            
+            <a class="btn btn-sidebar " href="reference/grunt/fix_configuration_issues.html">Fix configuration issues</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/project/index.html">Project reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/project/project_directory.html">Project directory</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/customization_project.html">Customization project</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets.html">Widgets</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_js_file.html">Widget JavaScript file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_template_file.html">Widget template file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_scss_file.html">Widget scss file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets_with_modelhelper.html">Widgets with Modelhelper</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/deliverables.html">Deliverables</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/upgrading/index.html">Upgrading</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/bootstrap.html">Application bootstrap</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/compatibility.html">Compatibility</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/cookies.html">Use of cookies</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/customization_migration.html">Customization migration</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deploy-runtime-on-gas..html">Deploy runtime on GAS</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deployment-portal.html">Deploy runtime with Portal</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/local_storage.html">Local storage</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.10.html">Upgrade to 3.10</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="reference">
+<header class="page-title">
+  <em>theme.config.json file</em>
+</header>
+<article class="md-content">
+<h2>Overview</h2>
+<p>The <code>theme.config.json</code> file contains configuration of a theme part. This file is optional and can be set in the root folder of theme part, for example <code>&lt;GBC_PROJECT_DIR&gt;/theme/platform/mobile/theme.config.json</code>.</p>
+<h2>Contents</h2>
+<p>The JSON object provided in this file has two main entries, <code>conditions</code> and <code>widgetFactory</code>.</p>
+<h3><code>conditions</code> entry</h3>
+<p>The <code>conditions</code> entry is a JSON array containing theme part's conditions as described in <a href="reference/theme/theme_conditions.html">Theme conditions</a>.</p>
+<h3><code>widgetFactory</code> entry</h3>
+<p>The <code>widgetFactory</code> entry is a JSON object that defines overrides to apply in <code>cls.WidgetFactory</code>. It replaces registrations made with <code>cls.WidgetFactory.registerBuilder</code>, and means every subsequent widget instantiation will use the class defined by this override rather than the one defined in javascript code.</p>
+<pre class="hljs"><code><span class="hljs-comment">// sample theme/platform/mobile/theme.config.json</span>
+{
+  <span class="hljs-string">"conditions"</span>: [<span class="hljs-string">"isMobile"</span>],
+  <span class="hljs-string">"widgetFactory"</span>: {
+    <span class="hljs-string">"DateEdit"</span>: <span class="hljs-string">"cls.DateEditMobileWidget"</span>,
+    <span class="hljs-string">"DateTimeEdit"</span>: <span class="hljs-string">"cls.DateTimeEditMobileWidget"</span>,
+    <span class="hljs-string">"TimeEdit"</span>: <span class="hljs-string">"cls.TimeEditMobileWidget"</span>,
+    <span class="hljs-string">"SpinEdit"</span>: <span class="hljs-string">"cls.SpinEditMobileWidget"</span>
+  }
+}
+</code></pre>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

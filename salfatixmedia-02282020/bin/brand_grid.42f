@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="brand_grid.tmp" build="3.20.07" sqlDbName="salfatixmedia" text="Form" style="centerwindow" width="53" height="38">
+  <ActionDefaultList>
+    <ActionDefault name="zoomcountry" image="font:FontAwesome.ttf:f150"/>
+    <ActionDefault name="zoomstate" image="font:FontAwesome.ttf:f150"/>
+    <ActionDefault name="zoomcity" image="font:FontAwesome.ttf:f150"/>
+  </ActionDefaultList>
+  <LStr text="Form"/>
+  <Grid name="salfatixmedia1" width="53" height="38">
+    <PhantomFormField name="brands.brnd_id" colName="brnd_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="31" sqlTabName="brands">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="brands.brnd_pic_id" colName="brnd_pic_id" sqlType="INTEGER" required="1" notNull="1" fieldId="39" sqlTabName="brands">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <FormField name="formonly.ff_formtitle" colName="ff_formtitle" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Label width="33" justify="center" style="ff_formtitle" posY="0" posX="1" gridWidth="33"/>
+    </FormField>
+    <FormField name="pics.pic_value" colName="pic_value" sqlType="BYTE" required="1" notNull="1" fieldId="1" sqlTabName="pics" noEntry="1" tabIndex="2">
+      <Image width="12" height="5" action="upload_photo" autoScale="1" sizePolicy="fixed" style="no_border" posY="1" posX="1" gridWidth="12" gridHeight="5"/>
+    </FormField>
+    <FormField name="formonly.ffimage_value" colName="ffimage_value" fieldId="2" sqlTabName="formonly" noEntry="1" tabIndex="3">
+      <Image width="5" height="3" action="save" autoScale="1" justify="center" sizePolicy="fixed" style="no_border" comment="Save" posY="1" posX="29" gridWidth="5" gridHeight="3">
+        <LStr comment="Save"/>
+      </Image>
+    </FormField>
+    <HBox posY="6" posX="1" gridWidth="33">
+      <Button name="upload_photo" width="12" text="Change Photo" style="brand_html" tabIndex="4">
+        <LStr text="Change Photo"/>
+      </Button>
+      <SpacerItem/>
+      <Button name="edit_brandsocialnetworks" width="14" text="Edit social networks" tabIndex="5">
+        <LStr text="Edit social networks"/>
+      </Button>
+    </HBox>
+    <Label name="label3" width="33" text=" " posY="7" posX="1" gridWidth="33">
+      <LStr text=" "/>
+    </Label>
+    <Label name="label1" width="33" text="Brand Information" style="brand_label_bold" posY="8" posX="1" gridWidth="33">
+      <LStr text="Brand Information"/>
+    </Label>
+    <Label name="brands_brnd_name_label1" width="12" text="Brand" posY="9" posX="1" gridWidth="12">
+      <LStr text="Brand"/>
+    </Label>
+    <FormField name="brands.brnd_name" colName="brnd_name" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="3" sqlTabName="brands" tabIndex="6">
+      <Edit width="20" scroll="1" posY="9" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="brands_brnd_website_label1" width="12" text="Website" posY="10" posX="1" gridWidth="12">
+      <LStr text="Website"/>
+    </Label>
+    <FormField name="brands.brnd_website" colName="brnd_website" sqlType="VARCHAR(255)" fieldId="4" sqlTabName="brands" tabIndex="7">
+      <Edit width="20" scroll="1" posY="10" posX="14" gridWidth="20"/>
+    </FormField>
+    <PhantomFormField name="brands.brnd_country_id" colName="brnd_country_id" sqlType="INTEGER" required="1" notNull="1" fieldId="28" sqlTabName="brands">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="brands.brnd_state_id" colName="brnd_state_id" sqlType="INTEGER" fieldId="29" sqlTabName="brands">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="brands.brnd_city_id" colName="brnd_city_id" sqlType="INTEGER" fieldId="30" sqlTabName="brands">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <Label name="brands_brnd_country_id_label1" width="12" text="Country" posY="11" posX="1" gridWidth="12">
+      <LStr text="Country"/>
+    </Label>
+    <FormField name="countries.cntr_name" colName="cntr_name" sqlType="VARCHAR(64)" required="1" notNull="1" fieldId="5" sqlTabName="countries" tabIndex="8">
+      <ButtonEdit width="18" action="zoomcountry" scroll="1" posY="11" posX="14" gridWidth="20">
+        <Completer/>
+      </ButtonEdit>
+    </FormField>
+    <Label name="brands_brnd_state_id_label1" width="12" text="State" posY="12" posX="1" gridWidth="12">
+      <LStr text="State"/>
+    </Label>
+    <FormField name="states.stt_name" colName="stt_name" sqlType="VARCHAR(60)" required="1" notNull="1" fieldId="6" sqlTabName="states" tabIndex="9">
+      <ButtonEdit width="18" action="zoomstate" scroll="1" posY="12" posX="14" gridWidth="20">
+        <Completer/>
+      </ButtonEdit>
+    </FormField>
+    <Label name="brands_brnd_city_id_label1" width="12" text="City" posY="13" posX="1" gridWidth="12">
+      <LStr text="City"/>
+    </Label>
+    <FormField name="cities.cts_name" colName="cts_name" sqlType="VARCHAR(60)" required="1" notNull="1" fieldId="7" sqlTabName="cities" tabIndex="10">
+      <ButtonEdit width="18" action="zoomcity" scroll="1" posY="13" posX="14" gridWidth="20">
+        <Completer/>
+      </ButtonEdit>
+    </FormField>
+    <Label name="brands_brnd_address_number_label" width="12" text="Number" posY="14" posX="1" gridWidth="12">
+      <LStr text="Number"/>
+    </Label>
+    <FormField name="brands.brnd_address_number" colName="brnd_address_number" sqlType="VARCHAR(16)" fieldId="8" sqlTabName="brands" tabIndex="11">
+      <Edit width="20" scroll="1" posY="14" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="brands_brnd_address_street_label" width="12" text="Street" posY="15" posX="1" gridWidth="12">
+      <LStr text="Street"/>
+    </Label>
+    <FormField name="brands.brnd_address_street" colName="brnd_address_street" sqlType="VARCHAR(128)" fieldId="9" sqlTabName="brands" tabIndex="12">
+      <Edit width="20" scroll="1" posY="15" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="brands_brnd_address_zipcode_label" width="12" text="Zipcode" posY="16" posX="1" gridWidth="12">
+      <LStr text="Zipcode"/>
+    </Label>
+    <FormField name="brands.brnd_address_zipcode" colName="brnd_address_zipcode" sqlType="VARCHAR(128)" fieldId="10" sqlTabName="brands" tabIndex="13">
+      <Edit width="20" scroll="1" posY="16" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="brands_brnd_address_town_label" width="12" text="Town" hidden="1" posY="17" posX="1" gridWidth="12">
+      <LStr text="Town"/>
+    </Label>
+    <FormField name="brands.brnd_address_town" colName="brnd_address_town" sqlType="VARCHAR(128)" fieldId="11" sqlTabName="brands" hidden="1" tabIndex="14">
+      <Edit width="20" scroll="1" posY="17" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="brands_brnd_address_more_label" width="12" text="More" posY="18" posX="1" gridWidth="12">
+      <LStr text="More"/>
+    </Label>
+    <FormField name="brands.brnd_address_more" colName="brnd_address_more" sqlType="VARCHAR(128)" fieldId="12" sqlTabName="brands" tabIndex="15">
+      <Edit width="20" scroll="1" posY="18" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="brands_primarycategory_label" width="12" text="Main category" posY="19" posX="1" gridWidth="12">
+      <LStr text="Main category"/>
+    </Label>
+    <FormField name="formonly.brands_primarycategory" colName="brands_primarycategory" sqlType="VARCHAR" fieldId="13" sqlTabName="formonly" tabIndex="16">
+      <ButtonEdit width="18" action="zoom" notEditable="1" image="fa-angle-right" scroll="1" posY="19" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="brands_categories_label" width="12" text="Sub categories" posY="20" posX="1" gridWidth="12">
+      <LStr text="Sub categories"/>
+    </Label>
+    <FormField name="formonly.brands_othercategories" colName="brands_othercategories" sqlType="VARCHAR" fieldId="14" sqlTabName="formonly" tabIndex="17">
+      <ButtonEdit width="18" action="zoom" notEditable="1" image="fa-angle-right" scroll="1" posY="20" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="brands_currency_label" width="12" text="Currency" posY="21" posX="1" gridWidth="12">
+      <LStr text="Currency"/>
+    </Label>
+    <FormField name="brands.brnd_currency_id" colName="brnd_currency_id" sqlType="INTEGER" required="1" notNull="1" fieldId="15" sqlTabName="brands" tabIndex="18">
+      <ComboBox width="18" scroll="1" posY="21" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="label4" width="33" text=" " posY="22" posX="1" gridWidth="33">
+      <LStr text=" "/>
+    </Label>
+    <Label name="label2" width="33" text="Contact Details" style="brand_label_bold" posY="23" posX="1" gridWidth="33">
+      <LStr text="Contact Details"/>
+    </Label>
+    <Label name="brands_brnd_gender_id_label1" width="12" text="Gender" posY="24" posX="1" gridWidth="12">
+      <LStr text="Gender"/>
+    </Label>
+    <FormField name="brands.brnd_gender_id" colName="brnd_gender_id" sqlType="INTEGER" fieldId="16" sqlTabName="brands" tabIndex="19">
+      <ComboBox width="18" posY="24" posX="14" gridWidth="20">
+        <Item name="1" text="Other">
+          <LStr text="Other"/>
+        </Item>
+        <Item name="2" text="Male">
+          <LStr text="Male"/>
+        </Item>
+        <Item name="3" text="Female">
+          <LStr text="Female"/>
+        </Item>
+      </ComboBox>
+    </FormField>
+    <Label name="brands_brnd_firstname_label1" width="12" text="First Name" posY="25" posX="1" gridWidth="12">
+      <LStr text="First Name"/>
+    </Label>
+    <FormField name="brands.brnd_firstname" colName="brnd_firstname" sqlType="VARCHAR(128)" fieldId="17" sqlTabName="brands" tabIndex="20">
+      <Edit width="20" scroll="1" posY="25" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="brands_brnd_lastname_label1" width="12" text="Last Name" posY="26" posX="1" gridWidth="12">
+      <LStr text="Last Name"/>
+    </Label>
+    <FormField name="brands.brnd_lastname" colName="brnd_lastname" sqlType="VARCHAR(128)" fieldId="18" sqlTabName="brands" tabIndex="21">
+      <Edit width="20" scroll="1" posY="26" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="brands_brnd_contact_rank_label" width="12" text="Position" posY="27" posX="1" gridWidth="12">
+      <LStr text="Position"/>
+    </Label>
+    <FormField name="brands.brnd_contact_rank" colName="brnd_contact_rank" sqlType="VARCHAR(128)" fieldId="19" sqlTabName="brands" tabIndex="22">
+      <Edit width="20" keyboardHint="email" scroll="1" posY="27" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="brands_brnd_email_label1" width="12" text="Email" posY="28" posX="1" gridWidth="12">
+      <LStr text="Email"/>
+    </Label>
+    <FormField name="brands.brnd_email" colName="brnd_email" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="20" sqlTabName="brands" tabIndex="23">
+      <Edit width="20" keyboardHint="email" scroll="1" posY="28" posX="14" gridWidth="20"/>
+    </FormField>
+    <PhantomFormField name="brands.brnd_email_style" colName="brnd_email_style" sqlType="CHAR(1)" fieldId="27" sqlTabName="brands">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <Label name="brnd_emailvalidationdate_label" width="12" text="Email Validation" posY="29" posX="1" gridWidth="12">
+      <LStr text="Email Validation"/>
+    </Label>
+    <FormField name="brands.brnd_emailvalidationdate" colName="brnd_emailvalidationdate" sqlType="DATETIME YEAR TO SECOND" fieldId="21" sqlTabName="brands" noEntry="1" tabIndex="24">
+      <DateEdit width="18" posY="29" posX="14" gridWidth="20"/>
+    </FormField>
+    <PhantomFormField name="brands.brnd_lastupdatedate" colName="brnd_lastupdatedate" sqlType="DATETIME YEAR TO SECOND" fieldId="37" sqlTabName="brands">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="brands.brnd_lastlogindate" colName="brnd_lastlogindate" sqlType="DATETIME YEAR TO SECOND" fieldId="38" sqlTabName="brands">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <Label name="brands_brnd_password_label1" width="12" text="Password" posY="30" posX="1" gridWidth="12">
+      <LStr text="Password"/>
+    </Label>
+    <FormField name="brands.brnd_password" colName="brnd_password" sqlType="VARCHAR(255)" required="1" notNull="1" fieldId="22" sqlTabName="brands" tabIndex="25">
+      <Edit width="20" isPassword="1" scroll="1" posY="30" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="brands1_brnd_password" width="12" text="Confirm Password" posY="31" posX="1" gridWidth="12">
+      <LStr text="Confirm Password"/>
+    </Label>
+    <FormField name="brands1.brnd_password" colName="brnd_password" sqlType="VARCHAR(255)" required="1" notNull="1" fieldId="23" sqlTabName="brands" tabIndex="26">
+      <Edit width="20" isPassword="1" scroll="1" posY="31" posX="14" gridWidth="20"/>
+    </FormField>
+    <Label name="brands_brnd_mobile_phonenumber_label1" width="12" text="Phone Number" posY="32" posX="1" gridWidth="12">
+      <LStr text="Phone Number"/>
+    </Label>
+    <FormField name="formonly.phonenumberprefix_label" colName="phonenumberprefix_label" fieldId="24" sqlTabName="formonly" noEntry="1" tabIndex="27">
+      <Label width="4" justify="right" posY="32" posX="14" gridWidth="4"/>
+    </FormField>
+    <FormField name="brands.brnd_mobile_phonenumber" colName="brnd_mobile_phonenumber" sqlType="BIGINT" fieldId="25" sqlTabName="brands" tabIndex="28">
+      <Edit width="15" keyboardHint="phone" scroll="1" posY="32" posX="19" gridWidth="15"/>
+    </FormField>
+    <Label name="brnd_accountstatus_id_label" width="12" text="Account Status" posY="33" posX="1" gridWidth="12">
+      <LStr text="Account Status"/>
+    </Label>
+    <FormField name="brands.brnd_accountstatus_id" colName="brnd_accountstatus_id" sqlType="INTEGER" required="1" notNull="1" fieldId="26" sqlTabName="brands" noEntry="1" tabIndex="29">
+      <ComboBox width="18" scroll="1" posY="33" posX="14" gridWidth="20"/>
+    </FormField>
+    <PhantomFormField name="brands.brnd_createdby_id" colName="brnd_createdby_id" sqlType="INTEGER" required="1" notNull="1" fieldId="40" sqlTabName="brands">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="brands.brnd_creationdate" colName="brnd_creationdate" sqlType="DATETIME YEAR TO SECOND" required="1" notNull="1" fieldId="32" sqlTabName="brands">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="brands.brnd_deletiondate" colName="brnd_deletiondate" sqlType="DATETIME YEAR TO SECOND" fieldId="33" sqlTabName="brands">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="brands.brnd_validationdate" colName="brnd_validationdate" sqlType="DATETIME YEAR TO SECOND" fieldId="34" sqlTabName="brands">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="brands.brnd_canceldate" colName="brnd_canceldate" sqlType="DATETIME YEAR TO SECOND" fieldId="35" sqlTabName="brands">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="brands.brnd_suspendeddate" colName="brnd_suspendeddate" sqlType="DATETIME YEAR TO SECOND" fieldId="36" sqlTabName="brands">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="brands.brnd_stopdate" colName="brnd_stopdate" sqlType="DATETIME YEAR TO SECOND" fieldId="41" sqlTabName="brands">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <Label name="label5" width="33" text=" " posY="34" posX="1" gridWidth="33">
+      <LStr text=" "/>
+    </Label>
+    <Button name="requestcancelaccount" width="33" text="Cancel my account" posY="35" posX="1" gridWidth="33" tabIndex="30">
+      <LStr text="Cancel my account"/>
+    </Button>
+    <Label name="account_actions_label" width="33" text="Account Actions" style="brand_label_bold" posY="36" posX="1" gridWidth="33">
+      <LStr text="Account Actions"/>
+    </Label>
+    <HBox posY="37" posX="1" gridWidth="51">
+      <Button name="validate_brand" width="6" text="Validate" tabIndex="31">
+        <LStr text="Validate"/>
+      </Button>
+      <Button name="cancel_brand" width="6" text="Is Spam" tabIndex="32">
+        <LStr text="Is Spam"/>
+      </Button>
+      <Button name="reject_brand" width="6" text="Reject" tabIndex="33">
+        <LStr text="Reject"/>
+      </Button>
+      <Button name="suspend_brand" width="6" text="Suspend" tabIndex="34">
+        <LStr text="Suspend"/>
+      </Button>
+      <Button name="delete_brand" width="5" text="Forget" tabIndex="35">
+        <LStr text="Forget"/>
+      </Button>
+      <Button name="acceptrequestcancelaccount" width="5" text="Accept cancel account" tabIndex="36">
+        <LStr text="Accept cancel account"/>
+      </Button>
+      <Button name="rejectrequestcancelaccount" width="4" text="Reject cancel account" tabIndex="37">
+        <LStr text="Reject cancel account"/>
+      </Button>
+      <Button name="exportaccount" width="3" text="Export" tabIndex="38">
+        <LStr text="Export"/>
+      </Button>
+      <SpacerItem/>
+    </HBox>
+  </Grid>
+  <RecordView tabName="brands1">
+    <Link colName="brnd_password" fieldIdRef="23"/>
+  </RecordView>
+  <RecordView tabName="states">
+    <Link colName="stt_name" fieldIdRef="6"/>
+  </RecordView>
+  <RecordView tabName="pics">
+    <Link colName="pic_value" fieldIdRef="1"/>
+  </RecordView>
+  <RecordView tabName="countries">
+    <Link colName="cntr_name" fieldIdRef="5"/>
+  </RecordView>
+  <RecordView tabName="brands">
+    <Link colName="brnd_name" fieldIdRef="3"/>
+    <Link colName="brnd_website" fieldIdRef="4"/>
+    <Link colName="brnd_address_number" fieldIdRef="8"/>
+    <Link colName="brnd_address_street" fieldIdRef="9"/>
+    <Link colName="brnd_address_zipcode" fieldIdRef="10"/>
+    <Link colName="brnd_address_town" fieldIdRef="11"/>
+    <Link colName="brnd_address_more" fieldIdRef="12"/>
+    <Link colName="brnd_currency_id" fieldIdRef="15"/>
+    <Link colName="brnd_gender_id" fieldIdRef="16"/>
+    <Link colName="brnd_firstname" fieldIdRef="17"/>
+    <Link colName="brnd_lastname" fieldIdRef="18"/>
+    <Link colName="brnd_contact_rank" fieldIdRef="19"/>
+    <Link colName="brnd_email" fieldIdRef="20"/>
+    <Link colName="brnd_emailvalidationdate" fieldIdRef="21"/>
+    <Link colName="brnd_password" fieldIdRef="22"/>
+    <Link colName="brnd_mobile_phonenumber" fieldIdRef="25"/>
+    <Link colName="brnd_accountstatus_id" fieldIdRef="26"/>
+    <Link colName="brnd_email_style" fieldIdRef="27"/>
+    <Link colName="brnd_country_id" fieldIdRef="28"/>
+    <Link colName="brnd_state_id" fieldIdRef="29"/>
+    <Link colName="brnd_city_id" fieldIdRef="30"/>
+    <Link colName="brnd_id" fieldIdRef="31"/>
+    <Link colName="brnd_creationdate" fieldIdRef="32"/>
+    <Link colName="brnd_deletiondate" fieldIdRef="33"/>
+    <Link colName="brnd_validationdate" fieldIdRef="34"/>
+    <Link colName="brnd_canceldate" fieldIdRef="35"/>
+    <Link colName="brnd_suspendeddate" fieldIdRef="36"/>
+    <Link colName="brnd_lastupdatedate" fieldIdRef="37"/>
+    <Link colName="brnd_lastlogindate" fieldIdRef="38"/>
+    <Link colName="brnd_pic_id" fieldIdRef="39"/>
+    <Link colName="brnd_createdby_id" fieldIdRef="40"/>
+    <Link colName="brnd_stopdate" fieldIdRef="41"/>
+  </RecordView>
+  <RecordView tabName="cities">
+    <Link colName="cts_name" fieldIdRef="7"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="ffimage_value" fieldIdRef="2"/>
+    <Link colName="brands_primarycategory" fieldIdRef="13"/>
+    <Link colName="brands_othercategories" fieldIdRef="14"/>
+    <Link colName="phonenumberprefix_label" fieldIdRef="24"/>
+  </RecordView>
+  <RecordView tabName="scr_brand_grid">
+    <Link colName="brnd_id" fieldIdRef="31"/>
+    <Link colName="brnd_pic_id" fieldIdRef="39"/>
+    <Link colName="brnd_name" fieldIdRef="3"/>
+    <Link colName="brnd_website" fieldIdRef="4"/>
+    <Link colName="brnd_country_id" fieldIdRef="28"/>
+    <Link colName="brnd_state_id" fieldIdRef="29"/>
+    <Link colName="brnd_city_id" fieldIdRef="30"/>
+    <Link colName="brnd_address_number" fieldIdRef="8"/>
+    <Link colName="brnd_address_street" fieldIdRef="9"/>
+    <Link colName="brnd_address_zipcode" fieldIdRef="10"/>
+    <Link colName="brnd_address_town" fieldIdRef="11"/>
+    <Link colName="brnd_address_more" fieldIdRef="12"/>
+    <Link colName="brnd_currency_id" fieldIdRef="15"/>
+    <Link colName="brnd_gender_id" fieldIdRef="16"/>
+    <Link colName="brnd_firstname" fieldIdRef="17"/>
+    <Link colName="brnd_lastname" fieldIdRef="18"/>
+    <Link colName="brnd_contact_rank" fieldIdRef="19"/>
+    <Link colName="brnd_email" fieldIdRef="20"/>
+    <Link colName="brnd_email_style" fieldIdRef="27"/>
+    <Link colName="brnd_password" fieldIdRef="22"/>
+    <Link colName="brnd_mobile_phonenumber" fieldIdRef="25"/>
+    <Link colName="brnd_accountstatus_id" fieldIdRef="26"/>
+    <Link colName="brnd_createdby_id" fieldIdRef="40"/>
+    <Link colName="brnd_creationdate" fieldIdRef="32"/>
+    <Link colName="brnd_deletiondate" fieldIdRef="33"/>
+    <Link colName="brnd_validationdate" fieldIdRef="34"/>
+    <Link colName="brnd_canceldate" fieldIdRef="35"/>
+    <Link colName="brnd_suspendeddate" fieldIdRef="36"/>
+    <Link colName="brnd_stopdate" fieldIdRef="41"/>
+    <Link colName="brnd_emailvalidationdate" fieldIdRef="21"/>
+    <Link colName="brnd_lastupdatedate" fieldIdRef="37"/>
+    <Link colName="brnd_lastlogindate" fieldIdRef="38"/>
+    <Link colName="pic_value" fieldIdRef="1"/>
+    <Link colName="brnd_password" fieldIdRef="23"/>
+    <Link colName="brands_primarycategory" fieldIdRef="13"/>
+    <Link colName="brands_othercategories" fieldIdRef="14"/>
+  </RecordView>
+  <RecordView tabName="scr_loc">
+    <Link colName="cntr_name" fieldIdRef="5"/>
+    <Link colName="stt_name" fieldIdRef="6"/>
+    <Link colName="cts_name" fieldIdRef="7"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="ffimage_value" fieldIdRef="2"/>
+    <Link colName="phonenumberprefix_label" fieldIdRef="24"/>
+  </RecordView>
+</Form>

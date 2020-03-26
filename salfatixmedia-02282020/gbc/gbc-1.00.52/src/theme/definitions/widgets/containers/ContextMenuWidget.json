@@ -1,0 +1,9 @@
+{
+  "name": "ContextMenuWidget",
+  "type": "group",
+  "contents": [{
+    "name": "gbc-ContextMenuWidget-separator-color",
+    "type": "color",
+    "defaultValue": "$theme-separator-color"
+  }]
+}

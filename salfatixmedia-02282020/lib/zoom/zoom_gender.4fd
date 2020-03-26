@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a06" name="managedform" uid="{bad0f66a-5fef-486b-82f1-4f5d0283b578}">
+  <AGSettings/>
+  <Record masterTable="categories" name="scrlist_gender" uid="{910231e6-b890-40dc-845c-52d42f365928}">
+    <RecordField colName="gnd_id" fieldIdRef="1" fieldType="TABLE_COLUMN" name="genders.gnd_id" sqlTabName="genders" uid="{442e50b9-4358-486f-b0f1-f7957e659629}"/>
+    <RecordField colName="gnd_name" fieldIdRef="2" fieldType="TABLE_COLUMN" name="genders.gnd_name" sqlTabName="genders" uid="{bbd84b97-28b3-4722-83a3-7f5a49f685ac}"/>
+    <RecordField colName="gnd_uiorder" fieldIdRef="4" fieldType="TABLE_COLUMN" name="genders.gnd_uiorder" sqlTabName="genders" uid="{6ee0f9f7-92fb-4885-a93a-a5671152ba18}"/>
+    <RecordField fieldIdRef="3" name="myimage" uid="{d0dbd22e-13f6-4ac6-a9eb-38da9329ba1c}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="56" name="form" style="popup" text="Category List">
+    <Grid gridHeight="21" gridWidth="47" name="grid1" posX="1" posY="0">
+      <Image action="close" autoScale="true" comment="Back" gridHeight="3" gridWidth="5" image="fa-arrow-circle-left" name="img_back" posX="3" posY="1" sizePolicy="fixed" style="no_border"/>
+      <Image action="accept" autoScale="true" comment="Validate" gridHeight="3" gridWidth="5" image="fa-check-circle-green" name="img_accept" posX="30" posY="1" sizePolicy="fixed" style="no_border"/>
+      <Table doubleClick="selectrow" gridHeight="16" gridWidth="32" name="salfatixmedia1" posX="3" posY="4" style="zoomtable" totalRows="15">
+        <Phantom fieldId="3" name="myimage" widget="Phantom"/>
+        <Phantom colName="gnd_id" fieldId="1" fieldType="TABLE_COLUMN" name="genders.gnd_id" sqlTabName="genders" widget="Phantom"/>
+        <Edit colName="gnd_name" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="29" imageColumn="myimage" name="genders.gnd_name" posX="0" posY="0" scroll="true" sqlTabName="genders" tabIndex="-1" title="Gender" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Phantom colName="gnd_uiorder" fieldId="4" fieldType="TABLE_COLUMN" name="genders.gnd_uiorder" sqlTabName="genders" widget="Phantom"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA5ADEAMAAyADMAMQBlADYALQBiADgAOQAwAC0ANAAwAGQAYwAtADgANAA1AGMALQA1ADIAZAA0ADIAZgAzADYANQA5ADIAOAB9AAAAAAAAAAAAAAAAAAAAAD9ok3S8an76AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

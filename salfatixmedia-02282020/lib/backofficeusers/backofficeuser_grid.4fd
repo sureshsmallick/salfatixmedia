@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a0a" name="managedform" uid="{10b09318-317f-4e60-ba19-e35d0ca6c7f5}">
+  <AGSettings/>
+  <Record masterTable="backofficeusers" name="scr_bouser_grid" uid="{a6099fd8-2c79-4e19-b6a0-6b088aef3e27}">
+    <RecordField colName="bousr_id" fieldIdRef="1" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_id" sqlTabName="backofficeusers" uid="{7bdf4dd0-e5dc-44e4-ab05-af6a21095bea}"/>
+    <RecordField colName="bousr_password" fieldIdRef="2" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_password" sqlTabName="backofficeusers" uid="{ca3e22e9-2a28-4360-867c-4ccc6f6dbecb}"/>
+    <RecordField colName="bousr_pic_id" fieldIdRef="3" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_pic_id" sqlTabName="backofficeusers" uid="{7dbd19dd-5a4a-4275-aad6-0d0f0f4be506}"/>
+    <RecordField colName="bousr_gender_id" fieldIdRef="4" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_gender_id" sqlTabName="backofficeusers" uid="{d82f3ee4-619f-4e55-8d4f-6bffaf3a4ebc}"/>
+    <RecordField colName="bousr_firstname" fieldIdRef="5" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_firstname" sqlTabName="backofficeusers" uid="{e2b158b9-f915-48b9-a493-7917ae003798}"/>
+    <RecordField colName="bousr_lastname" fieldIdRef="6" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_lastname" sqlTabName="backofficeusers" uid="{4c311014-fe78-461d-90b4-cce8b806d395}"/>
+    <RecordField colName="bousr_email" fieldIdRef="33" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_email" sqlTabName="backofficeusers" table_alias_name="backofficeusers1" uid="{5f207bbe-5698-437c-9580-8a7d89581b49}"/>
+    <RecordField colName="bousr_email_style" fieldIdRef="7" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_email_style" sqlTabName="backofficeusers" table_alias_name="backofficeusers2" uid="{da541fce-adb7-4ee7-81d1-21bb37d82ad4}"/>
+    <RecordField colName="bousr_country_id" fieldIdRef="8" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_country_id" sqlTabName="backofficeusers" uid="{318dddca-e539-43d8-aa9c-fd01f5f89a1c}"/>
+    <RecordField colName="bousr_state_id" fieldIdRef="9" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_state_id" sqlTabName="backofficeusers" uid="{be70629d-95cd-4969-a04d-6b93e9347267}"/>
+    <RecordField colName="bousr_city_id" fieldIdRef="10" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_city_id" sqlTabName="backofficeusers" uid="{92769a33-8258-49fd-aed7-76afaff954f4}"/>
+    <RecordField colName="bousr_address_number" fieldIdRef="11" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_address_number" sqlTabName="backofficeusers" uid="{34ec0624-216a-4cf1-b8dd-bc4a2021b96c}"/>
+    <RecordField colName="bousr_address_street" fieldIdRef="12" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_address_street" sqlTabName="backofficeusers" uid="{4222ac72-c97a-4f83-8751-f53560318313}"/>
+    <RecordField colName="bousr_address_zipcode" fieldIdRef="13" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_address_zipcode" sqlTabName="backofficeusers" uid="{5a870727-c380-4d7c-b5b8-f2d9902ba165}"/>
+    <RecordField colName="bousr_address_town" fieldIdRef="14" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_address_town" sqlTabName="backofficeusers" uid="{8c5aa490-f771-49b7-a9b9-b31bb7d2c1bd}"/>
+    <RecordField colName="bousr_address_more" fieldIdRef="15" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_address_more" sqlTabName="backofficeusers" uid="{e18fa32f-042e-469b-b9bd-e88f1e7bb565}"/>
+    <RecordField colName="bousr_mobile_phone" fieldIdRef="16" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_mobile_phone" sqlTabName="backofficeusers" uid="{ee0d59df-8983-4524-9d27-a3d15ff66106}"/>
+    <RecordField colName="bousr_isadmin" fieldIdRef="17" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_isadmin" sqlTabName="backofficeusers" uid="{29176925-ab31-4a76-8a10-80cd60d65e8f}"/>
+    <RecordField colName="bousr_usrrole_id" fieldIdRef="18" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_usrrole_id" sqlTabName="backofficeusers" uid="{7cf00045-90e6-4275-b3dc-169436111e3e}"/>
+    <RecordField colName="bousr_accountstatus_id" fieldIdRef="19" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_accountstatus_id" sqlTabName="backofficeusers" uid="{766dd3a2-4264-4d77-a2e2-d6da139c485b}"/>
+    <RecordField colName="bousr_creationdate" fieldIdRef="20" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_creationdate" sqlTabName="backofficeusers" uid="{ebb6db3e-23aa-4a6e-b396-aa6ec215eb70}"/>
+    <RecordField colName="bousr_deletiondate" fieldIdRef="21" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_deletiondate" sqlTabName="backofficeusers" uid="{72af89a4-e3e9-4c30-8e21-5a692c812655}"/>
+    <RecordField colName="bousr_stopdate" fieldIdRef="29" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_stopdate" sqlTabName="backofficeusers" uid="{3f8cf51b-d60f-43db-84ee-f58fedb06e83}"/>
+    <RecordField colName="bousr_lastupdatedate" fieldIdRef="22" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_lastupdatedate" sqlTabName="backofficeusers" uid="{ebeba69a-a034-4954-82ee-0a057ebeff89}"/>
+    <RecordField colName="bousr_lastlogindate" fieldIdRef="23" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_lastlogindate" sqlTabName="backofficeusers" uid="{70d3f5e8-c073-45fb-b8cf-80413afdad7b}"/>
+    <RecordField colName="pic_value" fieldIdRef="25" fieldType="TABLE_COLUMN" name="pics.pic_value" sqlTabName="pics" uid="{f2bf3727-7849-4fc2-835c-656ceb38e065}"/>
+    <RecordField colName="bousr_password" fieldIdRef="27" fieldType="TABLE_ALIAS" name="backofficeusers1.bousr_password" sqlTabName="backofficeusers" table_alias_name="backofficeusers1" uid="{2365b402-443c-4e0f-b46a-40ee32452678}"/>
+  </Record>
+  <Record name="src_loc" uid="{28ebfac5-9cdd-4cb4-8450-c9a2bcb60dba}">
+    <RecordField colName="cntr_name" fieldIdRef="30" fieldType="TABLE_COLUMN" name="countries.cntr_name" sqlTabName="countries" uid="{0b0bf11f-873f-4472-a7b4-66cefd5d8add}"/>
+    <RecordField colName="stt_name" fieldIdRef="31" fieldType="TABLE_COLUMN" name="states.stt_name" sqlTabName="states" uid="{9d63c798-46eb-474d-aa7f-0847b689fe39}"/>
+    <RecordField colName="cts_name" fieldIdRef="32" fieldType="TABLE_COLUMN" name="cities.cts_name" sqlTabName="cities" uid="{79a893d2-d47b-4105-bf1d-2bd8d692d9c1}"/>
+  </Record>
+  <Record name="Undefined" uid="{2a0b5308-b372-45fd-9116-7b084280ec6c}">
+    <RecordField fieldIdRef="24" name="ff_formtitle" uid="{9ea159bc-ce03-4e00-a49e-71ed99b5a0bc}"/>
+    <RecordField fieldIdRef="26" name="ffimage_value" uid="{6d1bfe22-258c-4e13-b4f3-7286960a2a75}"/>
+    <RecordField fieldIdRef="28" name="phonenumberprefix_label" uid="{12ea87d5-f674-41f1-8ab5-68917c5f2c53}"/>
+  </Record>
+  <Form gridHeight="37" gridWidth="109" name="form" style="centerwindow" text="Form">
+    <ActionDefaultList name="actiondefaultlist1">
+      <ActionDefault contextMenu="no" image="font:FontAwesome.ttf:f150" name="zoomcountry"/>
+      <ActionDefault image="font:FontAwesome.ttf:f150" name="zoomstate"/>
+      <ActionDefault image="font:FontAwesome.ttf:f150" name="zoomcity"/>
+    </ActionDefaultList>
+    <Grid gridHeight="35" gridWidth="37" name="salfatixmedia1" posX="4" posY="1">
+      <FFLabel fieldId="24" gridHeight="1" gridWidth="33" justify="center" name="ff_formtitle" posX="1" posY="1" style="ff_formtitle" title="fflabel1" widget="FFLabel"/>
+      <FFImage action="upload_photo" autoScale="true" colName="pic_value" fieldId="25" fieldType="TABLE_COLUMN" gridHeight="5" gridWidth="12" name="pics.pic_value" posX="1" posY="2" sizePolicy="fixed" sqlTabName="pics" style="no_border" widget="FFImage">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </FFImage>
+      <FFImage action="save" autoScale="true" comment="Save" fieldId="26" gridHeight="3" gridWidth="5" justify="center" name="ffimage_value" posX="29" posY="2" sizePolicy="fixed" style="no_border" title="ffimage1" widget="FFImage"/>
+      <HRec gridHeight="1" gridWidth="33" name="hrec1" posX="1" posY="7">
+        <Button gridHeight="1" gridWidth="12" name="upload_photo" posX="0" posY="0" style="brand_html" tabIndex="-1" text="Change Photo"/>
+        <Spacer gridWidth="19" name="spacer1" posX="13" posY="0"/>
+      </HRec>
+      <Label gridHeight="1" gridWidth="33" name="label3" posX="1" posY="8" text=" "/>
+      <Label gridHeight="1" gridWidth="33" name="label1" posX="1" posY="9" style="bouser_label_bold" text="User Information"/>
+      <Label gridHeight="1" gridWidth="12" name="backofficeusers_bousr_gender_id_label1" posX="1" posY="10" text="Gender">
+        <Initializer text="dbschema:backofficeusers.bousr_gender_id/@label"/>
+      </Label>
+      <ComboBox colName="bousr_gender_id" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="Other, Male, Female" name="backofficeusers.bousr_gender_id" posX="14" posY="10" sqlTabName="backofficeusers" tabIndex="-1" widget="ComboBox">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        <Item lstrtext="true" name="1" text="Other"/>
+        <Item lstrtext="true" name="2" text="Male"/>
+        <Item lstrtext="true" name="3" text="Female"/>
+      </ComboBox>
+      <Label gridHeight="1" gridWidth="12" name="backofficeusers_bousr_firstname_label1" posX="1" posY="11" text="First Name">
+        <Initializer text="dbschema:backofficeusers.bousr_firstname/@label"/>
+      </Label>
+      <Edit colName="bousr_firstname" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="backofficeusers.bousr_firstname" posX="14" posY="11" scroll="true" sqlTabName="backofficeusers" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="backofficeusers_bousr_lastname_label1" posX="1" posY="12" text="Last Name">
+        <Initializer text="dbschema:backofficeusers.bousr_lastname/@label"/>
+      </Label>
+      <Edit colName="bousr_lastname" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="backofficeusers.bousr_lastname" posX="14" posY="12" scroll="true" sqlTabName="backofficeusers" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="backofficeusers_bousr_email_label1" posX="1" posY="13" text="Email">
+        <Initializer text="dbschema:backofficeusers.bousr_email/@label"/>
+      </Label>
+      <Edit colName="bousr_email" fieldId="33" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" keyboardHint="email" name="backofficeusers.bousr_email" posX="14" posY="13" scroll="true" sqlTabName="backofficeusers" tabIndex="-1" table_alias_name="backofficeusers1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Phantom colName="bousr_email_style" fieldId="7" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_email_style" sqlTabName="backofficeusers" table_alias_name="backofficeusers2" widget="Phantom"/>
+      <Label gridHeight="1" gridWidth="12" name="bousers_bouser_password_label1" posX="1" posY="14" text="Password">
+        <Initializer text="dbschema:brands.brnd_password/@label"/>
+      </Label>
+      <Edit colName="bousr_password" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" invisible="true" name="backofficeusers.bousr_password" posX="14" posY="14" scroll="true" sqlTabName="backofficeusers" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="bousers_bouser_password" posX="1" posY="15" text="Confirm Password">
+        <Initializer text="dbschema:brands.brnd_password/@label"/>
+      </Label>
+      <Edit colName="bousr_password" fieldId="27" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="20" invisible="true" name="backofficeusers1.bousr_password" posX="14" posY="15" scroll="true" sqlTabName="backofficeusers" tabIndex="-1" table_alias_name="backofficeusers1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="backofficeusers_bousr_mobile_phone_label1" posX="1" posY="16" text="Phone Number">
+        <Initializer text="dbschema:backofficeusers.bousr_mobile_phone/@label"/>
+      </Label>
+      <FFLabel fieldId="28" gridHeight="1" gridWidth="4" justify="right" name="phonenumberprefix_label" posX="14" posY="16" title="fflabel1" widget="FFLabel"/>
+      <Edit colName="bousr_mobile_phone" fieldId="16" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" name="backofficeusers.bousr_mobile_phone" posX="19" posY="16" scroll="true" sqlTabName="backofficeusers" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="33" name="label2" posX="1" posY="17" text=" "/>
+      <Label gridHeight="1" gridWidth="33" name="label4" posX="1" posY="18" style="bouser_label_bold" text="Address"/>
+      <Label gridHeight="1" gridWidth="12" name="backofficeusers_bousr_country_id_label1" posX="1" posY="19" text="Country">
+        <Initializer text="dbschema:backofficeusers.bousr_country_id/@label"/>
+      </Label>
+      <ButtonEdit action="zoomcountry" colName="cntr_name" completer="true" fieldId="30" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="countries.cntr_name" posX="14" posY="19" scroll="true" sqlTabName="countries" tabIndex="-1" title="buttonedit1" widget="ButtonEdit"/>
+      <ButtonEdit action="zoomstate" colName="stt_name" completer="true" fieldId="31" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="states.stt_name" posX="14" posY="20" scroll="true" sqlTabName="states" tabIndex="-1" title="buttonedit1" widget="ButtonEdit"/>
+      <Phantom colName="bousr_country_id" fieldId="8" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_country_id" sqlTabName="backofficeusers" widget="Phantom"/>
+      <Label gridHeight="1" gridWidth="12" name="backofficeusers_bousr_state_id_label1" posX="1" posY="20" text="State">
+        <Initializer text="dbschema:backofficeusers.bousr_state_id/@label"/>
+      </Label>
+      <Phantom colName="bousr_state_id" fieldId="9" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_state_id" sqlTabName="backofficeusers" widget="Phantom"/>
+      <Label gridHeight="1" gridWidth="12" name="backofficeusers_bousr_city_id_label1" posX="1" posY="21" text="City">
+        <Initializer text="dbschema:backofficeusers.bousr_city_id/@label"/>
+      </Label>
+      <ButtonEdit action="zoomcity" colName="cts_name" completer="true" fieldId="32" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="cities.cts_name" posX="14" posY="21" scroll="true" sqlTabName="cities" tabIndex="-1" title="buttonedit1" widget="ButtonEdit"/>
+      <Phantom colName="bousr_city_id" fieldId="10" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_city_id" sqlTabName="backofficeusers" widget="Phantom"/>
+      <Label gridHeight="1" gridWidth="12" name="backofficeusers_bousr_address_number_label1" posX="1" posY="22" text="Number">
+        <Initializer text="dbschema:backofficeusers.bousr_address_number/@label"/>
+      </Label>
+      <Edit colName="bousr_address_number" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="backofficeusers.bousr_address_number" posX="14" posY="22" scroll="true" sqlTabName="backofficeusers" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="backofficeusers_bousr_address_street_label1" posX="1" posY="23" text="Street">
+        <Initializer text="dbschema:backofficeusers.bousr_address_street/@label"/>
+      </Label>
+      <Edit colName="bousr_address_street" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="backofficeusers.bousr_address_street" posX="14" posY="23" scroll="true" sqlTabName="backofficeusers" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="backofficeusers_bousr_address_zipcode_label1" posX="1" posY="24" text="Zipcode">
+        <Initializer text="dbschema:backofficeusers.bousr_address_zipcode/@label"/>
+      </Label>
+      <Edit colName="bousr_address_zipcode" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="backofficeusers.bousr_address_zipcode" posX="14" posY="24" scroll="true" sqlTabName="backofficeusers" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" hidden="true" name="backofficeusers_bousr_address_town_label1" posX="1" posY="25" text="Town">
+        <Initializer text="dbschema:backofficeusers.bousr_address_town/@label"/>
+      </Label>
+      <Edit colName="bousr_address_town" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" hidden="true" name="backofficeusers.bousr_address_town" posX="14" posY="25" scroll="true" sqlTabName="backofficeusers" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="backofficeusers_bousr_address_more_label1" posX="1" posY="26" text="More">
+        <Initializer text="dbschema:backofficeusers.bousr_address_more/@label"/>
+      </Label>
+      <Edit colName="bousr_address_more" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="backofficeusers.bousr_address_more" posX="14" posY="26" scroll="true" sqlTabName="backofficeusers" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="33" name="label5" posX="1" posY="27" text=" "/>
+      <Label gridHeight="1" gridWidth="33" name="label6" posX="1" posY="28" style="bouser_label_bold" text="Other"/>
+      <Label gridHeight="1" gridWidth="12" name="backofficeusers_bousr_isadmin_label1" posX="1" posY="29" text="Is Administrator">
+        <Initializer text="dbschema:backofficeusers.bousr_isadmin/@label"/>
+      </Label>
+      <CheckBox colName="bousr_isadmin" fieldId="17" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="backofficeusers.bousr_isadmin" posX="14" posY="29" sqlTabName="backofficeusers" tabIndex="-1" text="" widget="CheckBox">
+        <Initializer text="dbschema:$(sqlTabName).$(colName)/@label" title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </CheckBox>
+      <Phantom colName="bousr_usrrole_id" fieldId="18" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_usrrole_id" sqlTabName="backofficeusers" widget="Phantom"/>
+      <Label gridHeight="1" gridWidth="12" name="backofficeusers_bousr_accountstatus_id_label1" posX="1" posY="31" text="Status">
+        <Initializer text="dbschema:backofficeusers.bousr_accountstatus_id/@label"/>
+      </Label>
+      <ComboBox colName="bousr_accountstatus_id" fieldId="19" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" initializer="bouser_status_combobox_initializer" items="" name="backofficeusers.bousr_accountstatus_id" noEntry="true" posX="14" posY="31" scroll="true" sqlTabName="backofficeusers" tabIndex="-1" widget="ComboBox">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </ComboBox>
+      <Label gridHeight="1" gridWidth="33" name="label7" posX="1" posY="32" text=" "/>
+      <Label gridHeight="1" gridWidth="33" name="account_actions_label" posX="1" posY="33" style="brand_label_bold" text="Account Actions"/>
+      <HRec gridHeight="1" gridWidth="33" name="hrec2" posX="1" posY="34">
+        <Button gridHeight="1" gridWidth="6" name="stop_bouser" posX="0" posY="0" tabIndex="-1" text="Stop"/>
+        <Button gridHeight="1" gridWidth="5" name="delete_bouser" posX="7" posY="0" tabIndex="-1" text="Forget"/>
+        <Spacer gridWidth="19" name="spacer5" posX="13" posY="0"/>
+      </HRec>
+      <Phantom colName="bousr_creationdate" fieldId="20" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_creationdate" sqlTabName="backofficeusers" widget="Phantom"/>
+      <Phantom colName="bousr_deletiondate" fieldId="21" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_deletiondate" sqlTabName="backofficeusers" widget="Phantom"/>
+      <Phantom colName="bousr_id" fieldId="1" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_id" sqlTabName="backofficeusers" widget="Phantom"/>
+      <Phantom colName="bousr_pic_id" fieldId="3" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_pic_id" sqlTabName="backofficeusers" widget="Phantom"/>
+      <Phantom colName="bousr_lastupdatedate" fieldId="22" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_lastupdatedate" sqlTabName="backofficeusers" widget="Phantom"/>
+      <Phantom colName="bousr_lastlogindate" fieldId="23" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_lastlogindate" sqlTabName="backofficeusers" widget="Phantom"/>
+      <Phantom colName="bousr_stopdate" fieldId="29" fieldType="TABLE_COLUMN" name="backofficeusers.bousr_stopdate" sqlTabName="backofficeusers" widget="Phantom"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBhADYAMAA5ADkAZgBkADgALQAyAGMANwA5AC0ANABlADEAOQAtAGIANgBhADAALQA2AGIAMAA4ADgAYQBlAGYAMwBlADIANwB9QCQAAAqqqqFAJAAACqqqoQAAAAAAAAAAAQAAAEwAewAyADgAZQBiAGYAYQBjADUALQA5AGMAZABkAC0ANABjAGIANAAtADgANAA1ADAALQBjADkAYQAyAGIAYwBiADYAMABkAGIAYQB9wGmAABfMzMtAYsAAEX///j90euFHrhR7AQAAAEwAewAyAGEAMABiADUAMwAwADgALQBiADMANwAyAC0ANAA1AGYAZAAtADkAMQAxADYALQA3AGIAMAA4ADQAMgA4ADAAZQBjADYAYwB9wGngAA3MzMFAMQAACRERCT9gYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Form name="html" build="3.20.08" width="17" height="3">
+  <Grid width="17" height="3">
+    <FormField name="formonly.htmlpage" colName="htmlpage" fieldId="0" sqlTabName="formonly" tabIndex="1">
+      <WebComponent width="15" stretch="both" posY="0" posX="1" gridWidth="15" gridHeight="3"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="htmlpage" fieldIdRef="0"/>
+  </RecordView>
+</Form>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a0a" name="managedform" uid="{7a90ebe7-6ed8-409f-a939-6454ffc48b1f}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="scr_mainpanel_list" uid="{c5fa8141-ba4f-426d-9544-5e9f9c19886f}">
+    <RecordField fieldIdRef="1" name="job_id" sqlType="INTEGER" uid="{89471604-fe4d-4681-9dd8-29035c7c2b48}"/>
+    <RecordField fieldIdRef="3" name="job_category" uid="{b3353c11-6377-4d4b-ac0d-85078ea6c2d8}"/>
+    <RecordField fieldIdRef="2" fieldType="NON_DATABASE" name="job_amount" sqlType="INTEGER" uid="{c93c6957-91cf-4c1c-888b-b85613841acd}"/>
+    <RecordField colName="cmp_title" fieldIdRef="4" fieldType="NON_DATABASE" name="job_description" sqlTabName="campaigns" uid="{d275eefc-f0ef-437a-ab1d-cf99ca46150a}"/>
+  </Record>
+  <Record name="Undefined" uid="{29dc1b4e-0820-46d0-8667-1747a56252c5}">
+    <RecordField fieldIdRef="43" name="ff_formtitle" uid="{29096531-9685-41b5-ab44-f432a3494c34}"/>
+  </Record>
+  <Form gridHeight="65" gridWidth="154" name="form" style="centerwindow" text="Form">
+    <Grid gridHeight="16" gridWidth="67" name="grid1" posX="3" posY="3">
+      <FFLabel fieldId="43" gridHeight="1" gridWidth="55" justify="center" name="ff_formtitle" posX="2" posY="0" style="ff_formtitle" title="fflabel1" widget="FFLabel"/>
+      <Button gridHeight="1" gridWidth="5" image="refresh" name="refresh" posX="2" posY="1" tabIndex="-1" text=""/>
+      <ScrollGrid doubleClick="open_job" gridHeight="15" gridWidth="59" initialPageSize="10" name="salfatixmedia1" posX="8" posY="1" style="mainpanellist" wantFixedPageSizeSG="false">
+        <Phantom fieldId="3" name="job_category" widget="Phantom"/>
+        <TextEdit colName="cmp_title" fieldId="4" fieldType="NON_DATABASE" gridHeight="5" gridWidth="44" length="64" name="job_description" posX="2" posY="1" scrollBars="none" sizePolicy="initial" sqlTabName="campaigns" sqlType="VARCHAR" stretch="none" style="htmlnobox" tabIndex="-1" title="" widget="TextEdit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </TextEdit>
+        <Phantom fieldId="2" fieldType="NON_DATABASE" length="1" name="job_amount" sqlType="INTEGER" widget="Phantom"/>
+        <Phantom fieldId="1" name="job_id" sqlType="INTEGER" widget="Phantom"/>
+      </ScrollGrid>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyADkAZABjADEAYgA0AGUALQAwADgAMgAwAC0ANAA2AGQAMAAtADgANgA2ADcALQAxADcANAA3AGEANQA2ADIANQAyAGMANQB9wHJwABiVVUpAQYAAF1VVSj9wYk3S8an8AQAAAEwAewBjADUAZgBhADgAMQA0ADEALQBiAGEANABmAC0ANAAyADYAZAAtADkANQA0ADQALQA1AGUAOQBmADkAYwAxADkAOAA4ADYAZgB9wGGgABd///RAYUAAFv//9T9gYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

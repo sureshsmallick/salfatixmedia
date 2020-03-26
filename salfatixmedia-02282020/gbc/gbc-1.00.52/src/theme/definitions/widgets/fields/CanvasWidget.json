@@ -1,0 +1,15 @@
+{
+  "name": "CanvasWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-CanvasWidget-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "gbc-CanvasWidget-default-height",
+      "type": "size",
+      "defaultValue": "$theme-field-default-height"
+    }
+  ]
+}

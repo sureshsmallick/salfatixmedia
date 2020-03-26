@@ -1,0 +1,58 @@
+DATABASE salfatixmedia
+TOOLBAR
+  ITEM infl_viewopencampaigns
+SEPARATOR
+  ITEM infl_viewappliedcampaigns
+SEPARATOR
+  ITEM infl_viewworkablecampaigns
+END
+TABLES campaigns, pics, brands, campaignuserlist
+
+LAYOUT(TEXT = %"Form", STYLE = "centerwindow")
+STACK
+GROUP t
+  IMAGE pics.pic_value;
+  --PHANTOM brands.brnd_name;
+  EDIT brands.brnd_name, STYLE = "influencer_brand_label_bold";
+  TEXTEDIT campaigns.cmp_title;
+  EDIT campaignuserlist.cmpusrl_usertotalprice, TITLE = %"cmpusrl_usertotalprice", SCROLL;
+  LABEL FORMONLY.curcost;
+  IMAGE FORMONLY.pic_usertotalprice TYPE BYTE, AUTOSCALE, JUSTIFY = RIGHT, SIZEPOLICY = FIXED, STYLE = "no_border";
+  PHANTOM campaigns.cmp_id;
+  PHANTOM campaigns.cmp_brand_id;
+  PHANTOM campaigns.cmp_pic_id;
+  PHANTOM campaigns.cmp_overview;
+  PHANTOM campaigns.cmp_url;
+  PHANTOM campaigns.cmp_isproductneeded;
+  PHANTOM campaigns.cmp_prd_description;
+  PHANTOM campaigns.cmp_prd_value;
+  PHANTOM campaigns.cmp_issharedonfacebook;
+  PHANTOM campaigns.cmp_sharedfacebooklink;
+  PHANTOM campaigns.cmp_post_guidelines;
+  PHANTOM campaigns.cmp_captionrequirements;
+  PHANTOM campaigns.cmp_post_startdate;
+  PHANTOM campaigns.cmp_post_enddate;
+  PHANTOM campaigns.cmp_post_time_starttime;
+  PHANTOM campaigns.cmp_post_time_endtime;
+  PHANTOM campaigns.cmp_postduration_id;
+  PHANTOM campaigns.cmp_totalbudget;
+  PHANTOM campaigns.cmp_deposit;
+  PHANTOM campaigns.cmp_depositpercent;
+  PHANTOM campaigns.cmp_currency_id;
+  PHANTOM campaigns.cmp_wantedusers;
+  PHANTOM campaigns.cmp_campaignstatus_id;
+  PHANTOM campaigns.cmp_createdby_id;
+  PHANTOM campaigns.cmp_creationdate;
+  PHANTOM campaigns.cmp_publisheddate;
+  PHANTOM campaigns.cmp_selectionstartdate;
+  PHANTOM campaigns.cmp_selectionenddate;
+  PHANTOM campaigns.cmp_selectioncomment;
+  PHANTOM campaigns.cmp_actionstartdate;
+  PHANTOM campaigns.cmp_actionenddate;
+  PHANTOM campaigns.cmp_enddate;
+  PHANTOM campaigns.cmp_lastupdatedate;
+END --TABLE
+END --STACK
+END --LAYOUT
+INSTRUCTIONS
+  SCREEN RECORD scr_campaign_list(campaigns.cmp_id, campaigns.cmp_brand_id, campaigns.cmp_pic_id, campaigns.cmp_title, campaigns.cmp_overview, campaigns.cmp_url, campaigns.cmp_isproductneeded, campaigns.cmp_prd_description, campaigns.cmp_prd_value, campaigns.cmp_issharedonfacebook, campaigns.cmp_sharedfacebooklink, campaigns.cmp_post_guidelines, campaigns.cmp_captionrequirements, campaigns.cmp_post_startdate, campaigns.cmp_post_enddate, campaigns.cmp_post_time_starttime, campaigns.cmp_post_time_endtime, campaigns.cmp_postduration_id, campaigns.cmp_totalbudget, campaigns.cmp_deposit, campaigns.cmp_depositpercent, campaigns.cmp_currency_id, campaigns.cmp_wantedusers, campaigns.cmp_campaignstatus_id, campaigns.cmp_createdby_id, campaigns.cmp_creationdate, campaigns.cmp_publisheddate, campaigns.cmp_selectionstartdate, campaigns.cmp_selectionenddate, campaigns.cmp_selectioncomment, campaigns.cmp_actionstartdate, campaigns.cmp_actionenddate, campaigns.cmp_enddate, campaigns.cmp_lastupdatedate, pics.pic_value, brands.brnd_name, campaignuserlist.cmpusrl_usertotalprice, formonly.curcost, formonly.pic_usertotalprice)

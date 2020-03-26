@@ -1,0 +1,70 @@
+{
+  "name": "mt-sidebar",
+  "type": "group",
+  "contents": [{
+      "name": "mt-sidebar-always-visible-min-width",
+      "type": "size",
+      "defaultValue": "$theme-sidebar-always-visible-min-width"
+    },
+    {
+      "name": "mt-sidebar-default-width",
+      "type": "size",
+      "defaultValue": "$theme-sidebar-default-width"
+    },
+    {
+      "name": "mt-sidebar-splitter-size",
+      "type": "size",
+      "defaultValue": "$theme-splitter-size"
+    },
+    {
+      "name": "mt-sidebar-item-height",
+      "type": "size",
+      "defaultValue": "$theme-host-action-default-height"
+    },
+    {
+      "name": "mt-sidebar-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "mt-sidebar-font-size-ratio",
+      "type": "number",
+      "defaultValue": "$theme-font-size-ratio"
+    },
+    {
+      "name": "mt-sidebar-background-color",
+      "type": "color",
+      "defaultValue": "$theme-secondary-alternative-background-color"
+    },
+    {
+      "name": "mt-sidebar-item-color",
+      "type": "color",
+      "defaultValue": "$theme-primary-background-color"
+    },
+    {
+      "name": "mt-sidebar-overlay-background-color",
+      "type": "color",
+      "defaultValue": "$theme-overlay-background-color"
+    },
+    {
+      "name": "mt-sidebar-resizer-hover-color",
+      "type": "color",
+      "defaultValue": "$theme-separator-color"
+    },
+    {
+      "name": "mt-sidebar-overlay-z-index",
+      "type": "number",
+      "defaultValue": "$z-index-DropDown"
+    },
+    {
+      "name": "mt-sidebar-z-index",
+      "type": "number",
+      "defaultValue": "$z-index-above-DropDown"
+    },
+    {
+      "name": "mt-sidebar-animation-duration",
+      "type": "string",
+      "defaultValue": "$theme-animation-duration"
+    }
+  ]
+}

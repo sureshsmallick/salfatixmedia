@@ -1,0 +1,9 @@
+{
+  "name": "mt-list",
+  "type": "group",
+  "contents": [{
+    "name": "mt-list-field-background-color",
+    "type": "color",
+    "defaultValue": "$theme-field-background-color"
+  }]
+}

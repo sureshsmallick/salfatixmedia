@@ -1,0 +1,27 @@
+Action Defaults
+  Action go (Text=%"Start")
+End
+
+Layout (Text=%"Salfatix Media")
+  Grid
+  {
+  [head                        ]
+  [                            ]
+  [                            ]
+  [lb1                         ]
+  [                            ]
+  [bt1                         ]
+  [foot                        ]
+  [                            ]
+  [                            ]
+  [                            ]
+  }
+  End
+End
+
+Attributes
+  Image  head = formonly.head, Stretch=Both, Autoscale, Style="center", sizePolicy=Fixed;
+  Label  lb1  = formonly.msg, Justify=Center;
+  Button bt1  : go, Style="highvisible";
+  Image  foot = formonly.foot, Autoscale, Stretch=Both, Style="center", sizePolicy=Fixed, Action=dev;
+End

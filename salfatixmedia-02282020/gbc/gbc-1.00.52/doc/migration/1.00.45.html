@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation - GBC 1.00.45</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="migration/index.html">What&#x27;s New</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="migration/1.00.52.html">GBC 1.00.52</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.51.html">GBC 1.00.51</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.50.html">GBC 1.00.50</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.49.html">GBC 1.00.49</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.48.html">GBC 1.00.48</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.47.html">GBC 1.00.47</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.46.html">GBC 1.00.46</a>
+          
+          <a class="btn btn-sidebar active" href="migration/1.00.45.html">GBC 1.00.45</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.44.html">GBC 1.00.44</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.43.html">GBC 1.00.43</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.41.html">GBC 1.00.41</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.40.html">GBC 1.00.40</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.39.html">GBC 1.00.39</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.38.html">GBC 1.00.38</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="migration">
+<header class="page-title">
+  <em>GBC 1.00.45</em>
+</header>
+<article class="md-content">
+<p>GBC 1.00.45 was released June 5th, 2018</p>
+<p>This page provides information about new features, as well as changes you need to take
+care of when migrating your customization to this version.</p>
+<h1>New theme variables to define the combobox toggle icon</h1>
+<ul>
+<li><a class="theme-variable-link" href="reference/theme/theme_variables.html#gbc-ComboBoxWidget-toggle-icon"><code>gbc-ComboBoxWidget-toggle-icon</code></a></li>
+<li><a class="theme-variable-link" href="reference/theme/theme_variables.html#gbc-ComboBoxWidget-toggle-open-icon"><code>gbc-ComboBoxWidget-toggle-open-icon</code></a></li>
+</ul>
+<blockquote>
+<p>See <a href="reference/theme/theme_variables.html">Theme variables reference</a> for more details.</p>
+</blockquote>
+<h1>DropDown refactoring and improvement</h1>
+<p>The DropDown component is used in many widgets (DateEdit, DateTimeEdit, ComboBox, Completer, TopMenu, StartMenu, ContextMenu, Menu style popup). It has been reviewed and improved in order to harmonize its usage.
+Changes are mostly code refactoring, UX improvement, and key management feature. When a dropdown is opened, an invisible layer is added over the screen.
+A click anywhere else on the screen will only close the dropdown and remove that invisible layer. During dropdown display, you are not able to execute other operations but those contained in the dropdown.
+For example, you can't switch between windows if a dropdown is displayed. You need to close it first.</p>
+<blockquote>
+<p>Previously a grayed overlay was displayed with dateedit calendar that forced the user to close the calendar using OK/Cancel buttons. This is not the case anymore.</p>
+</blockquote>
+<h2>DropDown attributes change</h2>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Status</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>alignToLeft</code></td>
+<td>deleted</td>
+<td>attribute deleted</td>
+</tr>
+<tr>
+<td><code>renderFunction</code></td>
+<td>added</td>
+<td>new attribute which is null by default. Can be used to define a custom dropdown rendering function instead of default one</td>
+</tr>
+</tbody>
+</table>
+<h2>Deleted DropDown files</h2>
+<hr>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DropDownContainerWidget.js</code></td>
+<td>class previously used to measure and position dropdown. Code has been reviewed and moved in <code>DropDownWidget.js</code></td>
+</tr>
+<tr>
+<td><code>DropDownContainerWidget.scss</code></td>
+<td>css file previously used to position dropdown parent div container. Code has been reviewed and moved to <code>DropDownWidget.scss</code></td>
+</tr>
+<tr>
+<td><code>DropDownService.js</code></td>
+<td>class previously used to handle multiples dropdown handlers and bound listeners. This process has been simplified and is managed in <code>DropDownWidget.js</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Please note that any previous customization done inside of one of these three files need to be updated.
+For example, if you previously customized dropdown rendering and positioning algorithm in <code>DropDownContainerWidget.js</code>, it needs to be moved to dropdown's new attribute <code>renderingFunction</code>.</p>
+</blockquote>
+<h2>Changed variables name</h2>
+<ul>
+<li>Combobox class <em>zmdi-menu-down</em> has been replaced by the generic name : <em>toggle</em> to provide better customization possibilities</li>
+</ul>
+<h2>Value changed variable</h2>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#z-index-DropDown"><code>z-index-DropDown</code></a></td>
+<td>value is 58 by default (previously 57)</td>
+</tr>
+</tbody>
+</table>
+<h2>New variable</h2>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#z-index-Tabbed-Modal"><code>z-index-Tabbed-Modal</code></a></td>
+<td>value is 57 and is right behind dropdown <a class="theme-variable-link" href="reference/theme/theme_variables.html#z-index-DropDown"><code>z-index-DropDown</code></a> and over toolbars <a class="theme-variable-link" href="reference/theme/theme_variables.html#z-index-BarsContainer"><code>z-index-BarsContainer</code></a></td>
+</tr>
+</tbody>
+</table>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

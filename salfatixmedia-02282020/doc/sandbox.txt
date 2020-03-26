@@ -1,0 +1,9 @@
+GBC Customization:
+1. Unzip GBC Project Package
+2. Open a command line box from GST
+3. Go to unzipped GBC dir
+4. npm install
+5. grunt
+6. Copy customized dir
+7. grunt --compile-mode=cdev --customization=customization/salfatixmedia
+8. copy dist result

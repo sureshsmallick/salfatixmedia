@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a0a" name="managedform" uid="{bad0f66a-5fef-486b-82f1-4f5d0283b578}">
+  <AGSettings/>
+  <Record masterTable="cities" name="scrlist_country" uid="{4b6ce764-8d90-42bd-8faf-6e7fb0cdd6f9}">
+    <RecordField colName="cts_id" fieldIdRef="1" fieldType="TABLE_COLUMN" name="cities.cts_id" sqlTabName="cities" uid="{007fc674-7514-480b-a3b4-5682730a95be}"/>
+    <RecordField colName="cts_name" fieldIdRef="4" fieldType="TABLE_COLUMN" name="cities.cts_name" sqlTabName="cities" uid="{116c845f-8993-494c-80b4-5f2f63d126ae}"/>
+    <RecordField colName="cts_state_id" fieldIdRef="2" fieldType="TABLE_COLUMN" name="cities.cts_state_id" sqlTabName="cities" uid="{7b45dd0e-a6c0-44f3-915e-9d334e6240b5}"/>
+    <RecordField colName="cntr_id" fieldIdRef="6" fieldType="TABLE_COLUMN" name="countries.cntr_id" sqlTabName="countries" uid="{9118cf11-669c-4a81-9aaa-d1f0d7503c85}"/>
+    <RecordField colName="cntr_name" fieldIdRef="7" fieldType="TABLE_COLUMN" name="countries.cntr_name" sqlTabName="countries" uid="{5fa9b5fe-f63b-4129-95e2-618dc43f21ab}"/>
+    <RecordField colName="stt_id" fieldIdRef="8" fieldType="TABLE_COLUMN" name="states.stt_id" sqlTabName="states" uid="{eac0c574-2994-4359-a1e8-d8ebc03be590}"/>
+    <RecordField colName="stt_name" fieldIdRef="5" fieldType="TABLE_COLUMN" name="states.stt_name" sqlTabName="states" uid="{91a465c7-67cb-4b71-ab6e-0c8ec4d1fe3d}"/>
+    <RecordField colName="cts_id" fieldIdRef="9" fieldType="TABLE_ALIAS" name="cities1.cts_id" sqlTabName="cities" table_alias_name="cities1" uid="{aa1f582a-8b80-44f7-978f-6bef4190f016}"/>
+    <RecordField fieldIdRef="3" name="myimage" uid="{d0dbd22e-13f6-4ac6-a9eb-38da9329ba1c}"/>
+  </Record>
+  <Record name="Undefined" uid="{a44efd9a-58df-4fc1-97a1-3f758276bddc}">
+    <RecordField fieldIdRef="10" name="selection_lbl" uid="{a4bc64a2-8570-47dd-856a-8711fda0bc1c}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="125" name="form" style="popup" text="City List">
+    <Grid gridHeight="21" gridWidth="124" name="grid1" posX="1" posY="0">
+      <Image action="close" autoScale="true" comment="Back" gridHeight="3" gridWidth="5" image="fa-arrow-circle-left" name="img_back" posX="3" posY="0" sizePolicy="fixed" style="no_border"/>
+      <Image action="accept" autoScale="true" comment="Validate" gridHeight="3" gridWidth="5" image="fa-check-circle-green" name="img_accept" posX="95" posY="0" sizePolicy="fixed" style="no_border"/>
+      <FFLabel fieldId="10" gridHeight="1" gridWidth="97" justify="center" name="selection_lbl" posX="3" posY="3" title="fflabel1" widget="FFLabel"/>
+      <Table doubleClick="selectrow" gridHeight="16" gridWidth="97" name="salfatixmedia2" posX="3" posY="4" style="zoomtable" totalRows="15" unhidableColumns="true" unmovableColumns="true" unsizableColumns="true" unsortableColumns="true">
+        <Phantom colName="cts_id" fieldId="9" fieldType="TABLE_ALIAS" name="cities1.cts_id" sqlTabName="cities" table_alias_name="cities1" widget="Phantom"/>
+        <Phantom colName="stt_id" fieldId="8" fieldType="TABLE_COLUMN" name="states.stt_id" sqlTabName="states" widget="Phantom"/>
+        <Phantom colName="cntr_id" fieldId="6" fieldType="TABLE_COLUMN" name="countries.cntr_id" sqlTabName="countries" widget="Phantom"/>
+        <Edit colName="cts_name" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" imageColumn="myimage" name="cities.cts_name" posX="0" posY="0" scroll="true" sqlTabName="cities" tabIndex="-1" title="City" widget="Edit"/>
+        <Edit colName="stt_name" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="states.stt_name" posX="30" posY="0" scroll="true" sqlTabName="states" tabIndex="-1" title="State" widget="Edit"/>
+        <Edit colName="cntr_name" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="countries.cntr_name" posX="60" posY="0" scroll="true" sqlTabName="countries" tabIndex="-1" title="Country" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Phantom fieldId="3" name="myimage" widget="Phantom"/>
+        <Phantom colName="cts_id" fieldId="1" fieldType="TABLE_COLUMN" name="cities.cts_id" sqlTabName="cities" widget="Phantom"/>
+        <Phantom colName="cts_state_id" fieldId="2" fieldType="TABLE_COLUMN" name="cities.cts_state_id" sqlTabName="cities" widget="Phantom"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA0AGIANgBjAGUANwA2ADQALQA4AGQAOQAwAC0ANAAyAGIAZAAtADgAZgBhAGYALQA2AGUANwBmAGIAMABjAGQAZAA2AGYAOQB9QEQAAAAAAABARAAAAAAAAD9gYk3S8an8AQAAAEwAewBhADQANABlAGYAZAA5AGEALQA1ADgAZABmAC0ANABmAGMAMQAtADkANwBhADEALQAzAGYANwA1ADgAMgA3ADYAYgBkAGQAYwB9QCQAAAAAAABAJAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

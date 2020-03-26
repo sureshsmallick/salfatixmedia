@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WorkspaceViewState version="1.0">
+  <ExpandedNodes>
+    <Node path="salfatixmedia.4pw" type="pm/main-project"/>
+    <Node path="salfatixmedia.4pw/app_salfatixmedia" type="pm/group"/>
+    <Node path="salfatixmedia.4pw/app_salfatixmedia/salfatixmedia4backoffice" type="pm/application"/>
+    <Node path="salfatixmedia.4pw/gbc" type="pm/group"/>
+    <Node path="salfatixmedia.4pw/gbc/customization" type="pm/group"/>
+    <Node path="salfatixmedia.4pw/gbc/customization/salfatixmedia" type="pm/group"/>
+    <Node path="salfatixmedia.4pw/gbc/customization/salfatixmedia/js" type="pm/group"/>
+    <Node path="salfatixmedia.4pw/gbc/customization/salfatixmedia/js/js" type="pm/library"/>
+    <Node path="salfatixmedia.4pw/lib" type="pm/group"/>
+    <Node path="salfatixmedia.4pw/lib/backofficeusers" type="pm/group"/>
+    <Node path="salfatixmedia.4pw/lib/backofficeusers/backofficeusers" type="pm/library"/>
+    <Node path="salfatixmedia.4pw/lib/backofficeusers/bomainpanel" type="pm/library"/>
+    <Node path="salfatixmedia.4pw/xcf" type="pm/group"/>
+    <Node path="salfatixmedia.4pw/xcf/apps" type="pm/library"/>
+  </ExpandedNodes>
+  <OpenDocuments>
+    <Document container="true" filePath="lib/backofficeusers/backofficemainpanel_list.per" locator="15:29:26:42" module="mod-ce3">
+      <Data name="8" value="UTF-8"/>
+    </Document>
+  </OpenDocuments>
+  <CurrentDocument filePath="lib/backofficeusers/backofficemainpanel_list.per" module="mod-ce3"/>
+</WorkspaceViewState>

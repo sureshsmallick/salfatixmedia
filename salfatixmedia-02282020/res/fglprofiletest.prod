@@ -1,0 +1,47 @@
+dbi.database.salfatixmedia.driver = "dbmifx"
+dbi.database.salfatixmedia.source = "salfatixtest"
+
+salfatixmedia.image.extensions="*.png *.jpg *.jpeg *.svg *.gif"
+
+salfatixmedia.log.dir="../log"
+salfatixmedia.www.url="https://www.salfatixmedia.com/"
+salfatixmedia.logo.url="https://static.wixstatic.com/media/3201d9_57980f35b11f4fc595e7afa32186d250~mv2.png"
+salfatixmedia.generaltermsofbusiness.cgu="https://www.salfatixmedia.com/conditions-generales"
+salfatixmedia.generaltermsofbusiness.cgv="https://www.salfatixmedia.com/cgv"
+salfatixmedia.export.tmpdir="../exports/tmp"
+salfatixmedia.export.posts="../exports/posts"
+
+salfatixmedia.link.emailvalidation="https://apps.salfatix.com/salfatix/ua/r/validationtest"
+salfatixmedia.link.resetpassword="https://apps.salfatix.com/salfatix/ua/r/resetpasswordtest"
+salfatixmedia.link.secretkey="HqtJHuWTFsdLBbo4njh9xpAl1032H4N2eQsFpaZ9fUCU2JLpjxyIKp2GKd951nMl"
+
+salfatixmedia.email.dir="../exports/sendmail"
+salfatixmedia.email.scriptpath="../scripts/sendmail.sh"
+salfatixmedia.email.sender="noreply@salfatix.com"
+
+salfatixmedia.account.instagram="https://www.instagram.com/salfatixmedia/"
+salfatixmedia.account.facebook="https://fr-fr.facebook.com/salfatixmedia/"
+
+salfatix.influencer.url="https://apps.salfatix.com/salfatix/ua/r/influencerstest"
+
+salfatix.oauthserver.url="https://apps.salfatix.com/salfatix/ws/r/salfatixmedia/oauthtest"
+salfatix.oauthserver.urlpathtoignore="/salfatix/ws/r/salfatixmedia/oauthtest"
+salfatix.oauthserver.debug=1
+
+salfatix.lang.default="en"
+# salfatix.lang.force.backoffice="en"
+# salfatix.lang.force.brand="en"
+# salfatix.lang.force.influencer="en"
+
+# Salfatix Media
+salfatix.oauthserver.clientid="xxxxxxxxxxxxxxxxxxxxxxxxxxx"
+salfatix.oauthserver.clientsecret="xxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+salfatix.oauthserver.logouturl="https://instagram.com/accounts/logout/"
+
+#ws.foobar.url="https://apps.salfatix.com/salfatix/ws/r/salfatixmedia/oauth"
+#ws.foobar.security = "fff"
+#ws.foobar.verifyserver = "false"
+#authenticate.fff.login="salfatixmedia"
+#authenticate.fff.password="fu9pWLXEjym6EgXt"
+#authenticate.fff.scheme="Basic"

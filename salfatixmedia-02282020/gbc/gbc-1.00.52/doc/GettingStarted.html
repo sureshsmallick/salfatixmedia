@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation - Getting started</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="main" class="started">
+<header class="page-title">
+  <em>Getting started</em>
+</header>
+<article class="md-content">
+<p>This quick start will prepare you for GBC development and customization.</p>
+<h1>Prerequisites</h1>
+<p>You need some tools installed on your system:</p>
+<ul>
+<li><a href="http://nodejs.org/">Node.js</a> — GBC currenlty requires Node 8.x or 10.x</li>
+<li><a href="http://git-scm.com/">git</a></li>
+</ul>
+<p>Follow the tools instruction to install them on your system. Once done, you should have the following tools available from the command line:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> node -v</span>
+v8.9.1
+<span class="hljs-meta">$</span><span class="bash"> npm -v</span>
+5.5.1
+<span class="hljs-meta">$</span><span class="bash"> git --version</span>
+git version 2.7.4
+</code></pre>
+<p>You need to master these command line tools in order to work on GBC customization.</p>
+<p>Next, install <code>grunt</code> using the <code>npm</code> tool. From the console, execute the following command:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> npm install -g grunt-cli</span>
+</code></pre>
+<blockquote>
+<ul>
+<li>You must have internet access.</li>
+<li>You may need super user rights on your system.</li>
+<li>Unless you reinstall node.js or a new version of grunt-cli is required, this command is only needed once.</li>
+</ul>
+</blockquote>
+<p><strong>Your environment is now ready.</strong></p>
+<h1>Setup your customization project</h1>
+<p>Get the latest GBC project package (https://4js.com/download/products/) and extract it to a location of your choosing.
+We will refer to this location where you extract the package as <code>&lt;GBC_PROJECT_DIR&gt;</code> throughout this documentation.</p>
+<p>Then in a console, prepare your working copy:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> <span class="hljs-built_in">cd</span> <span class="hljs-variable">$GBC_PROJECT_DIR</span></span>
+<span class="hljs-meta">$</span><span class="bash"> npm install</span>
+</code></pre>
+<blockquote>
+<ul>
+<li>you must have internet access</li>
+<li>Run this command whenever you get a new version of the project package</li>
+</ul>
+</blockquote>
+<p>And now run the default compilation:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> grunt</span>
+</code></pre>
+<p>The <code>&lt;GBC_PROJECT_DIR&gt;/dist/customization/sample</code> folder is created and contains the compiled version of GBC with
+the provided customization sample defined in <code>&lt;GBC_PROJECT_DIR&gt;/customization/sample</code>.</p>
+<h1>Testing on a GAS</h1>
+<p>To test your newly built customization, you need first to run GAS by executing the following command:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> httpdispatch -E res.path.gbc.user=&lt;GBC_PROJECT_DIR&gt;/dist/customization</span>
+</code></pre>
+<blockquote>
+<ul>
+<li>It is very helpful to add the following arguments as well to the <code>httpdispatch</code> command
+<ul>
+<li><code>-E res.log.output.type=CONSOLE,DAILYFILE</code></li>
+<li><code>-E res.log.categories_filter=ALL</code></li>
+</ul>
+</li>
+<li>Use a dedicated console as you do not need to reexecute <code>httpdispatch</code> each time you rebuild your GBC customization.</li>
+</ul>
+</blockquote>
+<p>The resource <code>res.path.gbc.user</code> amends the default <code>GBC_LOOKUP_PATH</code>. To run a
+given application using a given customization, amend the application URL with
+the query string parameter <code>gbc=&lt;customization_name&gt;</code>.
+In order to run the Genero demo with the customization you just built above (named <em>sample</em>), open the
+following URL in your prefered browser:</p>
+<p><code>http://localhost:6394/ua/r/gwc-demo?gbc=sample</code></p>
+<h1>Build a project continuously</h1>
+<p>To make the development cycle quicker, there is a built-in rule that will watch any
+modification in your customization and instantaneously re-build the customized
+GBC. You will just have to refresh your browser once compilation is done. To use this, execute the following command:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> grunt dev</span>
+</code></pre>
+<blockquote>
+<ul>
+<li>Use a dedicated console, as this command won't return and run permanently</li>
+<li>Depending on your operating system, it is advised to abort and re-run the command if you add new files</li>
+</ul>
+</blockquote>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

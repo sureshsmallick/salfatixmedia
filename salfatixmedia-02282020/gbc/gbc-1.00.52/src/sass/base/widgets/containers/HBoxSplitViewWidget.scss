@@ -1,0 +1,33 @@
+/*
+ * FOURJS_START_COPYRIGHT(D,2018)
+ * Property of Four Js*
+ * (c) Copyright Four Js 2018, 2019. All Rights Reserved.
+ * * Trademark of Four Js Development Tools Europe Ltd
+ *   in the United States and elsewhere
+ * 
+ * This file can be modified by licensees according to the
+ * product manual.
+ * FOURJS_END_COPYRIGHT */
+
+.gbc_HBoxSplitViewWidget{
+  &>.g_BoxElement {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-transition:left 0.3s ease-in-out;
+    transition:left 0.3s ease-in-out;
+
+    &.out_left {
+      left: -2000px;
+      width: 0px;
+    }
+
+    &.out_right {
+      left: 2000px;
+      width: 0px;
+    }
+  }
+}

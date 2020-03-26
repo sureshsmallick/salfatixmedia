@@ -1,0 +1,40 @@
+SCHEMA formonly
+
+Layout (Text=%"Menu")
+  Grid
+  {
+  <T tbl1 >
+  [col    ]
+  [col    ]
+  [col    ]
+  [col    ]
+  [col    ]
+  [col    ]
+  <       >
+  [img    ]
+  [       ]
+  [       ]
+  [       ]
+  [       ]
+  [       ]
+  [       ]
+  [       ]
+  [       ]
+  [       ]
+  [       ]
+  [       ]
+  }
+  End
+End
+
+Attributes
+  Table tbl1 : tbl1,DOUBLECLICK=domenu,STYLE="socialnetworksmobile", HEIGHT = 6 LINES,WANTFIXEDPAGESIZE;
+  Edit  col  = formonly.menuname, SCROLL, IMAGECOLUMN=menuimg;
+  Phantom      formonly.menuimg;
+  Phantom      formonly.menuact;
+  Image  img = formonly.foot, Autoscale, Stretch=Both, Style="center", sizePolicy=Fixed;
+End
+
+Instructions
+  Screen Record srmenu (formonly.menuname,formonly.menuimg,formonly.menuact)
+End

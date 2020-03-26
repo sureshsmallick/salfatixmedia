@@ -1,0 +1,61 @@
+SCHEMA salfatixmedia
+
+LAYOUT (text=%"Form")
+Grid grid1
+{
+
+  [ff_formtitle                       ]
+  [img_back:                 :add     ]
+  <S salfatixmedia1                  >
+  [pstt_name                    ][upt]
+  [user1 :minpri::user::maxpri:cur   ]
+  [freeofcharge                 ][del]
+  [salfatixlbl                       ]
+  [sser1 :sinpri::sser::saxpri:sur   ]
+  [sreeofcharge                      ]
+  <                                  >
+}
+END -- grid1
+END -- form
+
+TABLES
+userpostprices,
+posttypes
+ATTRIBUTES
+LABEL ff_formtitle=formonly.ff_formtitle, justify=center, style="ff_formtitle";
+ScrollGrid salfatixmedia1:salfatixmedia1, wantFixedPageSize=NO,DOUBLECLICK=editprice;
+Edit pstt_name=posttypes.pstt_name, scroll;
+Edit minpri=userpostprices.usrpp_minprice, SCROLL;
+Label user1:userpostprices_usrpp_minprice_label1, text=%"Between";
+Label user:userpostprices_usrpp_maxprice_label1, text=%"and";
+Edit maxpri=userpostprices.usrpp_maxprice, SCROLL;
+Phantom userpostprices.usrpp_freeofcharge;
+LABEL cur=formonly.cur;
+LABEL freeofcharge=formonly.freeofcharge;
+
+Label salfatixlbl=formonly.salfatixlbl, justify=center, style="brand_label_bold";
+
+Label sser1:userpostprices_usrpp_salfatixminprice_label, text=%"Between";
+Edit sinpri=userpostprices.usrpp_salfatixminprice, SCROLL;
+Label sser:userpostprices_usrpp_salfatixmaxprice_label, text=%"and";
+Edit saxpri=userpostprices.usrpp_salfatixmaxprice, SCROLL;
+Phantom userpostprices.usrpp_salfatixfreeofcharge;
+LABEL sur=formonly.sur;
+LABEL sreeofcharge=formonly.sreeofcharge;
+
+Phantom userpostprices.usrpp_isvalidatedbysalfatix;
+
+IMAGE del=formonly.delimage, autoScale, sizePolicy=fixed, style="no_border",ACTION=delete;
+IMAGE upt=formonly.editimage, autoScale, sizePolicy=fixed, style="no_border",ACTION=editprice;
+IMAGE img_back:img_back, HEIGHT=3 CHARACTERS, action=cancel, image="fa-arrow-circle-left", autoScale, sizePolicy=fixed, style="no_border", comment=%"Back";
+IMAGE add:addprice, HEIGHT=3 CHARACTERS, action=addprice, image="addprice.png", autoScale, sizePolicy=fixed, style="no_border", comment=%"Add Price";
+
+Phantom userpostprices.usrpp_usr_id;
+Phantom userpostprices.usrpp_posttype_id;
+END -- ATTRIBUTES
+
+INSTRUCTIONS
+SCREEN RECORD scr_userpostprice_list(userpostprices.usrpp_usr_id,userpostprices.usrpp_posttype_id,userpostprices.usrpp_minprice,userpostprices.usrpp_maxprice,userpostprices.usrpp_freeofcharge,userpostprices.usrpp_salfatixminprice,userpostprices.usrpp_salfatixmaxprice,userpostprices.usrpp_salfatixfreeofcharge,userpostprices.usrpp_isvalidatedbysalfatix, posttypes.pstt_name,formonly.cur, formonly.delimage, formonly.editimage, formonly.freeofcharge, formonly.salfatixlbl, formonly.sur, formonly.sreeofcharge)
+SCREEN RECORD Undefined(formonly.ff_formtitle)
+END -- INSTRUCTIONS
+

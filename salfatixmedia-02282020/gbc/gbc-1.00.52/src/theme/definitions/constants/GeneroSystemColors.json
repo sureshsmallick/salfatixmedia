@@ -1,0 +1,91 @@
+{
+  "name": "genero-system-colors",
+  "title": "Genero system color definitions",
+  "description": "Genero system colors (legacy equivalent)",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-genero-appWorkSpace",
+      "title": "Gbc Genero system color appWorkSpace",
+      "type": "color",
+      "const": true,
+      "value": "$theme-secondary-background-color"
+    },
+    {
+      "name": "gbc-genero-background",
+      "title": "Gbc Genero system color background",
+      "type": "color",
+      "const": true,
+      "value": "$theme-secondary-alternative-background-color"
+    },
+    {
+      "name": "gbc-genero-buttonFace",
+      "title": "Gbc Genero system color buttonFace",
+      "type": "color",
+      "const": true,
+      "value": "$theme-primary-background-color"
+    },
+    {
+      "name": "gbc-genero-buttonText",
+      "title": "Gbc Genero system color buttonText",
+      "type": "color",
+      "const": true,
+      "value": "$theme-primary-color"
+    },
+    {
+      "name": "gbc-genero-grayText",
+      "title": "Gbc Genero system color grayText",
+      "type": "color",
+      "const": true,
+      "value": "$theme-disabled-color"
+    },
+    {
+      "name": "gbc-genero-highLight",
+      "title": "Gbc Genero system color highLight",
+      "type": "color",
+      "const": true,
+      "value": "$theme-primary-emphasis-background-color"
+    },
+    {
+      "name": "gbc-genero-highLightText",
+      "title": "Gbc Genero system color highLightText",
+      "type": "color",
+      "const": true,
+      "value": "$theme-primary-color"
+    },
+    {
+      "name": "gbc-genero-infoBackground",
+      "title": "Gbc Genero system color infoBackground",
+      "type": "color",
+      "const": true,
+      "value": "$theme-secondary-background-color"
+    },
+    {
+      "name": "gbc-genero-infoText",
+      "title": "Gbc Genero system color infoText",
+      "type": "color",
+      "const": true,
+      "value": "$theme-secondary-color"
+    },
+    {
+      "name": "gbc-genero-systemAlternateBackground",
+      "title": "Gbc Genero system color systemAlternateBackground",
+      "type": "color",
+      "const": true,
+      "value": "$theme-primary-faded-background-color"
+    },
+    {
+      "name": "gbc-genero-window",
+      "title": "Gbc Genero system color window",
+      "type": "color",
+      "const": true,
+      "value": "$theme-secondary-background-color"
+    },
+    {
+      "name": "gbc-genero-windowText",
+      "title": "Gbc Genero system color windowText",
+      "type": "color",
+      "const": true,
+      "value": "$theme-secondary-color"
+    }
+  ]
+}

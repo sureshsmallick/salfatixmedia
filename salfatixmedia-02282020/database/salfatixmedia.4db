@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Schema gstVersion="30a0a" id="{d8a5a8af-b982-48c2-9c31-1673657ecbdf}" version="4.0">
+  <AGSettings version="1.1">
+    <DynamicProperties version="2">
+      <DynamicProperty description="Associated label when generating form" initialValue="" isDefaultInherited="false" isHidden="false" label="Label" name="label" readOnly="false" type="TEXT"/>
+      <DynamicProperty description="Associated widget" editorInfo="contains:ButtonEdit|CheckBox|ComboBox|DateEdit|DateTimeEdit|Edit|FFImage|FFLabel|Field|Phantom|ProgressBar|RadioGroup|Slider|SpinEdit|TextEdit|TimeEdit" initialValue="Edit" isDefaultInherited="false" isHidden="false" label="Widget" name="widget" readOnly="false" type="ENUM"/>
+      <DynamicPropertyGroup collapsed="false" description="Formfied properties" label="Formfield" name="formfieldGroup" properties="label;widget"/>
+    </DynamicProperties>
+    <NodeInfos version="1">
+      <NodeInfo mimeType="db/column" properties="widget;label"/>
+    </NodeInfos>
+  </AGSettings>
+  <ExtractionSettings last="IBM Informix">
+    <ExtractionOptions casens="LowerCase" cvmeth="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ignerr="true" systab="false" type="IBM Informix"/>
+  </ExtractionSettings>
+  <GenerationSettings>
+    <GenerationOptions casens="LowerCase" generate="true" genidx="true" genpk="1" genuq="1" national="false" nobackup="false" populate="false" version="IBM Informix"/>
+  </GenerationSettings>
+  <Table active="true" name="accountstatus" status="U" uuid="db/table2">
+    <Column fglLength="4" fglType="2" name="accst_id" notNull="true" order="1" status="U" uuid="db/column2"/>
+    <Column fglLength="32" fglType="13" name="accst_name" notNull="true" order="2" status="U" uuid="db/column4"/>
+    <Index indexColumns="accst_id" indexConstraint="primaryKey" name="u226_660" status="U" uuid="db/index3"/>
+  </Table>
+  <Table active="true" name="backofficeusers" status="U" uuid="db/table4">
+    <Column fglLength="4" fglType="6" name="bousr_id" notNull="true" order="1" status="U" uuid="db/column6"/>
+    <Column fglLength="255" fglType="13" name="bousr_password" notNull="true" order="2" status="U" uuid="db/column10"/>
+    <Column fglLength="4" fglType="2" name="bousr_pic_id" notNull="true" order="3" status="U" uuid="db/column21"/>
+    <Column fglLength="4" fglType="2" name="bousr_gender_id" notNull="false" order="4" status="U" uuid="db/column14"/>
+    <Column fglLength="128" fglType="13" name="bousr_firstname" notNull="false" order="5" status="U" uuid="db/column16"/>
+    <Column fglLength="128" fglType="13" name="bousr_lastname" notNull="false" order="6" status="U" uuid="db/column18"/>
+    <Column fglLength="128" fglType="13" name="bousr_email" notNull="true" order="7" status="U" uuid="db/column20"/>
+    <Column fglLength="1" fglType="0" name="bousr_email_style" notNull="false" order="8" status="U" uuid="db/column259"/>
+    <Column fglLength="4" fglType="2" name="bousr_country_id" notNull="true" order="9" status="U" uuid="db/column22"/>
+    <Column fglLength="4" fglType="2" name="bousr_state_id" notNull="false" order="10" status="U" uuid="db/column24"/>
+    <Column fglLength="4" fglType="2" name="bousr_city_id" notNull="false" order="11" status="U" uuid="db/column26"/>
+    <Column fglLength="16" fglType="13" name="bousr_address_number" notNull="false" order="12" status="U" uuid="db/column28"/>
+    <Column fglLength="128" fglType="13" name="bousr_address_street" notNull="false" order="13" status="U" uuid="db/column30"/>
+    <Column fglLength="128" fglType="13" name="bousr_address_zipcode" notNull="false" order="14" status="U" uuid="db/column32"/>
+    <Column fglLength="128" fglType="13" name="bousr_address_town" notNull="false" order="15" status="U" uuid="db/column34"/>
+    <Column fglLength="128" fglType="13" name="bousr_address_more" notNull="false" order="16" status="U" uuid="db/column36"/>
+    <Column fglLength="8" fglType="52" name="bousr_mobile_phone" notNull="false" order="17" status="U" uuid="db/column38"/>
+    <Column fglLength="2" fglType="1" name="bousr_isadmin" notNull="true" order="18" status="U" uuid="db/column40"/>
+    <Column fglLength="4" fglType="2" name="bousr_usrrole_id" notNull="false" order="19" status="U" uuid="db/column42"/>
+    <Column fglLength="4" fglType="2" name="bousr_accountstatus_id" notNull="true" order="20" status="U" uuid="db/column37"/>
+    <Column fglLength="3594" fglType="10" name="bousr_creationdate" notNull="true" order="21" status="U" uuid="db/column44"/>
+    <Column fglLength="3594" fglType="10" name="bousr_deletiondate" notNull="false" order="22" status="U" uuid="db/column48"/>
+    <Column fglLength="3594" fglType="10" name="bousr_stopdate" notNull="false" order="23" status="U" uuid="db/column11"/>
+    <Column fglLength="3594" fglType="10" name="bousr_lastupdatedate" notNull="false" order="24" status="U" uuid="db/column52"/>
+    <Column fglLength="3594" fglType="10" name="bousr_lastlogindate" notNull="false" order="25" status="U" uuid="db/column54"/>
+    <Index indexColumns="bousr_id" indexConstraint="primaryKey" name="u258_737" status="U" uuid="db/index4"/>
+  </Table>
+  <Table active="true" name="booperations" status="U" uuid="db/table6">
+    <Column fglLength="4" fglType="2" name="boop_id" notNull="true" order="1" status="U" uuid="db/column56"/>
+    <Column fglLength="64" fglType="13" name="boop_name" notNull="true" order="2" status="U" uuid="db/column58"/>
+    <Index indexColumns="boop_id" indexConstraint="primaryKey" name="u249_748" status="U" uuid="db/index5"/>
+  </Table>
+  <Table active="true" name="boroleperations" status="U" uuid="db/table1">
+    <Column fglLength="4" fglType="2" name="borlop_borole_id" notNull="true" order="1" status="U" uuid="db/column1"/>
+    <Column fglLength="4" fglType="2" name="borlop_booperation_id" notNull="true" order="2" status="U" uuid="db/column3"/>
+    <Index indexColumns="borlop_borole_id, borlop_booperation_id" indexConstraint="primaryKey" name="u250_751" status="U" uuid="db/index6"/>
+  </Table>
+  <Table active="true" name="boroles" status="U" uuid="db/table10">
+    <Column fglLength="4" fglType="6" name="borl_id" notNull="true" order="1" status="U" uuid="db/column64"/>
+    <Column fglLength="64" fglType="13" name="borl_name" notNull="true" order="2" status="U" uuid="db/column66"/>
+    <Index indexColumns="borl_id" indexConstraint="primaryKey" name="u248_745" status="U" uuid="db/index7"/>
+  </Table>
+  <Table active="true" name="brandcategories" status="U" uuid="db/table12">
+    <Column fglLength="4" fglType="2" name="brndcat_brand_id" notNull="true" order="1" status="U" uuid="db/column68"/>
+    <Column fglLength="4" fglType="2" name="brndcat_category_id" notNull="true" order="2" status="U" uuid="db/column70"/>
+    <Column fglLength="2" fglType="1" name="brndcat_isprimary" notNull="true" order="3" status="U" uuid="db/column191"/>
+    <Index indexColumns="brndcat_brand_id, brndcat_category_id" indexConstraint="primaryKey" name="u228_666" status="U" uuid="db/index8"/>
+  </Table>
+  <Table active="true" name="brands" status="U" uuid="db/table14">
+    <Column fglLength="4" fglType="6" name="brnd_id" notNull="true" order="1" status="U" uuid="db/column72"/>
+    <Column fglLength="4" fglType="2" name="brnd_pic_id" notNull="true" order="2" status="U" uuid="db/column15"/>
+    <Column fglLength="128" fglType="13" name="brnd_name" notNull="true" order="3" status="U" uuid="db/column76"/>
+    <Column fglLength="255" fglType="13" name="brnd_website" notNull="false" order="4" status="U" uuid="db/column78"/>
+    <Column fglLength="4" fglType="2" name="brnd_country_id" notNull="true" order="5" status="U" uuid="db/column80"/>
+    <Column fglLength="4" fglType="2" name="brnd_state_id" notNull="false" order="6" status="U" uuid="db/column82"/>
+    <Column fglLength="4" fglType="2" name="brnd_city_id" notNull="false" order="7" status="U" uuid="db/column84"/>
+    <Column fglLength="16" fglType="13" name="brnd_address_number" notNull="false" order="8" status="U" uuid="db/column277"/>
+    <Column fglLength="128" fglType="13" name="brnd_address_street" notNull="false" order="9" status="U" uuid="db/column279"/>
+    <Column fglLength="128" fglType="13" name="brnd_address_zipcode" notNull="false" order="10" status="U" uuid="db/column281"/>
+    <Column fglLength="128" fglType="13" name="brnd_address_town" notNull="false" order="11" status="U" uuid="db/column291"/>
+    <Column fglLength="128" fglType="13" name="brnd_address_more" notNull="false" order="12" status="U" uuid="db/column293"/>
+    <Column fglLength="4" fglType="2" name="brnd_currency_id" notNull="true" order="13" status="U" uuid="db/column51"/>
+    <Column fglLength="4" fglType="2" name="brnd_gender_id" notNull="false" order="14" status="U" uuid="db/column86"/>
+    <Column fglLength="128" fglType="13" name="brnd_firstname" notNull="false" order="15" status="U" uuid="db/column88"/>
+    <Column fglLength="128" fglType="13" name="brnd_lastname" notNull="false" order="16" status="U" uuid="db/column90"/>
+    <Column fglLength="128" fglType="13" name="brnd_contact_rank" notNull="false" order="17" status="U" uuid="db/column295"/>
+    <Column fglLength="128" fglType="13" name="brnd_email" notNull="true" order="18" status="U" uuid="db/column92"/>
+    <Column fglLength="1" fglType="0" name="brnd_email_style" notNull="false" order="19" status="U" uuid="db/column261"/>
+    <Column fglLength="255" fglType="13" name="brnd_password" notNull="true" order="20" status="U" uuid="db/column94"/>
+    <Column fglLength="8" fglType="52" name="brnd_mobile_phonenumber" notNull="false" order="21" status="U" uuid="db/column96"/>
+    <Column fglLength="4" fglType="2" name="brnd_accountstatus_id" notNull="true" order="22" status="U" uuid="db/column98"/>
+    <Column fglLength="4" fglType="2" name="brnd_createdby_id" notNull="true" order="23" status="U" uuid="db/column8"/>
+    <Column fglLength="3594" fglType="10" name="brnd_creationdate" notNull="true" order="24" status="U" uuid="db/column100"/>
+    <Column fglLength="3594" fglType="10" name="brnd_deletiondate" notNull="false" order="25" status="U" uuid="db/column104"/>
+    <Column fglLength="3594" fglType="10" name="brnd_validationdate" notNull="false" order="26" status="U" uuid="db/column106"/>
+    <Column fglLength="3594" fglType="10" name="brnd_canceldate" notNull="false" order="27" status="U" uuid="db/column108"/>
+    <Column fglLength="3594" fglType="10" name="brnd_suspendeddate" notNull="false" order="28" status="U" uuid="db/column110"/>
+    <Column fglLength="3594" fglType="10" name="brnd_stopdate" notNull="false" order="29" status="U" uuid="db/column57"/>
+    <Column fglLength="3594" fglType="10" name="brnd_emailvalidationdate" notNull="false" order="30" status="U" uuid="db/column112"/>
+    <Column fglLength="3594" fglType="10" name="brnd_lastupdatedate" notNull="false" order="31" status="U" uuid="db/column114"/>
+    <Column fglLength="3594" fglType="10" name="brnd_lastlogindate" notNull="false" order="32" status="U" uuid="db/column116"/>
+    <Index indexColumns="brnd_id" indexConstraint="primaryKey" name="u260_646" status="U" uuid="db/index9"/>
+  </Table>
+  <Table active="true" name="brandsocialnetworks" status="U" uuid="db/table29">
+    <Column fglLength="4" fglType="6" name="brndscl_id" notNull="true" order="1" status="U" uuid="db/column193"/>
+    <Column fglLength="4" fglType="2" name="brndscl_brand_id" notNull="true" order="2" status="U" uuid="db/column195"/>
+    <Column fglLength="4" fglType="2" name="brndscl_socialnetwork_id" notNull="true" order="3" status="U" uuid="db/column197"/>
+    <Column fglLength="255" fglType="13" name="brndscl_accountname" notNull="true" order="4" status="U" uuid="db/column198"/>
+    <Column fglLength="255" fglType="13" name="brndscl_comment" notNull="false" order="5" status="U" uuid="db/column199"/>
+    <Index indexColumns="brndscl_id" indexConstraint="primaryKey" name="u291_1022" status="U" uuid="db/index10"/>
+  </Table>
+  <Table active="true" name="campaigncategories" status="U" uuid="db/table16">
+    <Column fglLength="4" fglType="2" name="cmpcat_campaign_id" notNull="true" order="1" status="U" uuid="db/column118"/>
+    <Column fglLength="4" fglType="2" name="cmpcat_category_id" notNull="true" order="2" status="U" uuid="db/column120"/>
+    <Index indexColumns="cmpcat_campaign_id, cmpcat_category_id" indexConstraint="primaryKey" name="u231_678" status="U" uuid="db/index11"/>
+  </Table>
+  <Table active="true" name="campaigncities" status="U" uuid="db/table8">
+    <Column fglLength="4" fglType="6" name="cmpcts_id" notNull="true" order="1" status="U" uuid="db/column63"/>
+    <Column fglLength="4" fglType="2" name="cmpcts_campaignstate_id" notNull="true" order="2" status="U" uuid="db/column65"/>
+    <Column fglLength="4" fglType="2" name="cmpcts_city_id" notNull="false" order="3" status="U" uuid="db/column67"/>
+    <Index indexColumns="cmpcts_id" indexConstraint="primaryKey" name="u269_868" status="U" uuid="db/index12"/>
+  </Table>
+  <Table active="true" name="campaigncountries" status="U" uuid="db/table9">
+    <Column fglLength="4" fglType="6" name="cmpcntr_id" notNull="true" order="1" status="U" uuid="db/column69"/>
+    <Column fglLength="4" fglType="2" name="cmpcntr_campaign_id" notNull="true" order="2" status="U" uuid="db/column71"/>
+    <Column fglLength="4" fglType="2" name="cmpcntr_country_id" notNull="true" order="3" status="U" uuid="db/column73"/>
+    <Index indexColumns="cmpcntr_id" indexConstraint="primaryKey" name="u267_860" status="U" uuid="db/index13"/>
+  </Table>
+  <Table active="true" name="campaigngenders" status="U" uuid="db/table27">
+    <Column fglLength="4" fglType="2" name="cmpgen_campaign_id" notNull="true" order="1" status="U" uuid="db/column187"/>
+    <Column fglLength="4" fglType="2" name="cmpgen_gender_id" notNull="true" order="2" status="U" uuid="db/column189"/>
+    <Index indexColumns="cmpgen_campaign_id, cmpgen_gender_id" indexConstraint="primaryKey" name="u290_1016" status="U" uuid="db/index14"/>
+  </Table>
+  <Table active="true" name="campaignphotos" status="U" uuid="db/table18">
+    <Column fglLength="4" fglType="2" name="cmpph_campaign_id" notNull="true" order="1" status="U" uuid="db/column124"/>
+    <Column fglLength="4" fglType="2" name="cmpph_pic_id" notNull="true" order="2" status="U" uuid="db/column23"/>
+    <Column fglLength="4" fglType="2" name="cmpph_uiorder" notNull="true" order="3" status="U" uuid="db/column12"/>
+    <Index indexColumns="cmpph_campaign_id, cmpph_pic_id" indexConstraint="primaryKey" name="u257_816" status="U" uuid="db/index15"/>
+  </Table>
+  <Table active="true" name="campaignposts" status="U" uuid="db/table21">
+    <Column fglLength="4" fglType="6" name="cmppost_id" notNull="true" order="1" status="U" uuid="db/column157"/>
+    <Column fglLength="4" fglType="2" name="cmppost_campaign_id" notNull="true" order="2" status="U" uuid="db/column159"/>
+    <Column fglLength="4" fglType="2" name="cmppost_usr_id" notNull="true" order="3" status="U" uuid="db/column161"/>
+    <Column fglLength="4" fglType="2" name="cmppost_posttype_id" notNull="true" order="4" status="U" uuid="db/column163"/>
+    <Column fglLength="255" fglType="13" name="cmppost_url" notNull="false" order="5" status="U" uuid="db/column164"/>
+    <Column fglLength="2" fglType="1" name="cmppost_ispublic" notNull="false" order="6" status="U" uuid="db/column165"/>
+    <Column fglLength="4" fglType="2" name="cmppost_status_id" notNull="true" order="7" status="U" uuid="db/column167"/>
+    <Column fglLength="255" fglType="13" name="cmppost_screenshot_post" notNull="false" order="8" status="U" uuid="db/column146"/>
+    <Column fglLength="255" fglType="13" name="cmppost_screenshot_stat" notNull="false" order="9" status="U" uuid="db/column190"/>
+    <Column fglLength="3594" fglType="10" name="cmppost_creationdate" notNull="true" order="10" status="U" uuid="db/column169"/>
+    <Column fglLength="3594" fglType="10" name="cmppost_onlinedate" notNull="false" order="11" status="U" uuid="db/column115"/>
+    <Column fglLength="3594" fglType="10" name="cmppost_lastmetricsdate" notNull="false" order="12" status="U" uuid="db/column117"/>
+    <Column fglLength="4" fglType="2" name="cmppost_youtube_viewcount" notNull="false" order="13" status="U" uuid="db/column205"/>
+    <Column fglLength="4" fglType="2" name="cmppost_youtube_likecount" notNull="false" order="14" status="U" uuid="db/column207"/>
+    <Column fglLength="4" fglType="2" name="cmppost_youtube_dislikecount" notNull="false" order="15" status="U" uuid="db/column209"/>
+    <Column fglLength="4" fglType="2" name="cmppost_youtube_favoritecount" notNull="false" order="16" status="U" uuid="db/column211"/>
+    <Column fglLength="4" fglType="2" name="cmppost_youtube_commentcount" notNull="false" order="17" status="U" uuid="db/column213"/>
+    <Column fglLength="4" fglType="2" name="cmppost_ig_likes" notNull="false" order="18" status="U" uuid="db/column215"/>
+    <Column fglLength="4" fglType="2" name="cmppost_ig_comments" notNull="false" order="19" status="U" uuid="db/column217"/>
+    <Column fglLength="4" fglType="2" name="cmppost_ig_saved" notNull="false" order="20" status="U" uuid="db/column219"/>
+    <Column fglLength="4" fglType="2" name="cmppost_ig_profilevisits" notNull="false" order="21" status="U" uuid="db/column221"/>
+    <Column fglLength="4" fglType="2" name="cmppost_ig_follows" notNull="false" order="22" status="U" uuid="db/column223"/>
+    <Column fglLength="4" fglType="2" name="cmppost_ig_websiteclicks" notNull="false" order="23" status="U" uuid="db/column225"/>
+    <Column fglLength="1282" fglType="5" name="cmppost_ig_discovery" notNull="false" order="24" status="U" uuid="db/column227"/>
+    <Column fglLength="4" fglType="2" name="cmppost_ig_reach" notNull="false" order="25" status="U" uuid="db/column229"/>
+    <Column fglLength="4" fglType="2" name="cmppost_ig_impressions" notNull="false" order="26" status="U" uuid="db/column231"/>
+    <Column fglLength="4" fglType="2" name="cmppost_instastory_impressions" notNull="false" order="27" status="U" uuid="db/column233"/>
+    <Column fglLength="4" fglType="2" name="cmppost_instastory_reach" notNull="false" order="28" status="U" uuid="db/column235"/>
+    <Column fglLength="4" fglType="2" name="cmppost_instastory_tapsforward" notNull="false" order="29" status="U" uuid="db/column237"/>
+    <Column fglLength="4" fglType="2" name="cmppost_instastory_tapsback" notNull="false" order="30" status="U" uuid="db/column239"/>
+    <Column fglLength="4" fglType="2" name="cmppost_instastory_replies" notNull="false" order="31" status="U" uuid="db/column241"/>
+    <Column fglLength="4" fglType="2" name="cmppost_instastory_swipeaway" notNull="false" order="32" status="U" uuid="db/column243"/>
+    <Column fglLength="4" fglType="2" name="cmppost_instastory_exists" notNull="false" order="33" status="U" uuid="db/column245"/>
+    <Column fglLength="2" fglType="1" name="cmppost_isacceptedbysalfatix" notNull="false" order="34" status="U" uuid="db/column316"/>
+    <Column fglLength="2" fglType="1" name="cmppost_isacceptedbybrand" notNull="false" order="35" status="U" uuid="db/column317"/>
+    <Column fglLength="255" fglType="13" name="cmppost_filename" notNull="false" order="36" status="U" uuid="db/column319"/>
+    <Column fglLength="2" fglType="1" name="cmppost_postno" notNull="false" order="37" status="U" uuid="db/column321"/>
+    <Column fglLength="2" fglType="1" name="cmppost_uiorder" notNull="false" order="38" status="U" uuid="db/column323"/>
+    <Index indexColumns="cmppost_id" indexConstraint="primaryKey" name="u288_993" status="U" uuid="db/index16"/>
+  </Table>
+  <Table active="true" name="campaignpostshist" status="U" uuid="db/table23">
+    <Column fglLength="4" fglType="6" name="cmpposth_id" notNull="true" order="1" status="U" uuid="db/column171"/>
+    <Column fglLength="4" fglType="2" name="cmpposth_campaignpost_id" notNull="true" order="2" status="U" uuid="db/column173"/>
+    <Column fglLength="4" fglType="2" name="cmpposth_status_id" notNull="true" order="3" status="U" uuid="db/column175"/>
+    <Column fglLength="3594" fglType="10" name="cmpposth_statusdate" notNull="true" order="4" status="U" uuid="db/column177"/>
+    <Index indexColumns="cmpposth_id" indexConstraint="primaryKey" name="u289_1006" status="U" uuid="db/index17"/>
+  </Table>
+  <Table active="true" name="campaignpoststatus" status="U" uuid="db/table25">
+    <Column fglLength="4" fglType="2" name="cmppstst_id" notNull="true" order="1" status="U" uuid="db/column179"/>
+    <Column fglLength="32" fglType="13" name="cmppstst_name" notNull="true" order="2" status="U" uuid="db/column180"/>
+    <Index indexColumns="cmppstst_id" indexConstraint="primaryKey" name="u286_981" status="U" uuid="db/index18"/>
+  </Table>
+  <Table active="true" name="campaignposttypes" status="U" uuid="db/table20">
+    <Column fglLength="4" fglType="2" name="cmppst_campaign_id" notNull="true" order="1" status="U" uuid="db/column130"/>
+    <Column fglLength="4" fglType="2" name="cmppst_posttype_id" notNull="true" order="2" status="U" uuid="db/column132"/>
+    <Column fglLength="4" fglType="2" name="cmppst_quantity" notNull="true" order="3" status="U" uuid="db/column143"/>
+    <Column fglLength="2" fglType="1" name="cmppst_tovalidate" notNull="true" order="4" status="U" uuid="db/column181"/>
+    <Index indexColumns="cmppst_campaign_id, cmppst_posttype_id" indexConstraint="primaryKey" name="u233_684" status="U" uuid="db/index19"/>
+  </Table>
+  <Table active="true" name="campaigns" status="U" uuid="db/table22">
+    <Column fglLength="4" fglType="6" name="cmp_id" notNull="true" order="1" status="U" uuid="db/column134"/>
+    <Column fglLength="4" fglType="2" name="cmp_brand_id" notNull="true" order="2" status="U" uuid="db/column136"/>
+    <Column fglLength="4" fglType="2" name="cmp_pic_id" notNull="true" order="3" status="U" uuid="db/column25"/>
+    <Column fglLength="64" fglType="13" name="cmp_title" notNull="false" order="4" status="U" uuid="db/column140"/>
+    <Column fglLength="255" fglType="13" name="cmp_overview" notNull="false" order="5" status="U" uuid="db/column142"/>
+    <Column fglLength="255" fglType="13" name="cmp_url" notNull="false" order="6" status="U" uuid="db/column144"/>
+    <Column fglLength="2" fglType="1" name="cmp_isproductneeded" notNull="true" order="7" status="U" uuid="db/column297"/>
+    <Column fglLength="255" fglType="13" name="cmp_prd_description" notNull="false" order="8" status="U" uuid="db/column154"/>
+    <Column fglLength="2562" fglType="5" name="cmp_prd_value" notNull="false" order="9" status="U" uuid="db/column156"/>
+    <Column fglLength="2" fglType="1" name="cmp_issharedonfacebook" notNull="true" order="10" status="U" uuid="db/column273"/>
+    <Column fglLength="255" fglType="13" name="cmp_sharedfacebooklink" notNull="false" order="11" status="U" uuid="db/column275"/>
+    <Column fglLength="128" fglType="13" name="cmp_post_guidelines" notNull="false" order="12" status="U" uuid="db/column158"/>
+    <Column fglLength="255" fglType="13" name="cmp_captionrequirements" notNull="false" order="13" status="U" uuid="db/column160"/>
+    <Column fglLength="4" fglType="7" name="cmp_post_startdate" notNull="false" order="14" status="U" uuid="db/column162"/>
+    <Column fglLength="4" fglType="7" name="cmp_post_enddate" notNull="false" order="15" status="U" uuid="db/column55"/>
+    <Column fglLength="4" fglType="2" name="cmp_post_time_starttime" notNull="false" order="16" status="U" uuid="db/column166"/>
+    <Column fglLength="4" fglType="2" name="cmp_post_time_endtime" notNull="false" order="17" status="U" uuid="db/column168"/>
+    <Column fglLength="4" fglType="2" name="cmp_postduration_id" notNull="false" order="18" status="U" uuid="db/column170"/>
+    <Column fglLength="2562" fglType="5" name="cmp_totalbudget" notNull="false" order="19" status="U" uuid="db/column172"/>
+    <Column fglLength="2562" fglType="5" name="cmp_deposit" notNull="false" order="20" status="U" uuid="db/column174"/>
+    <Column fglLength="1538" fglType="5" name="cmp_depositpercent" notNull="false" order="21" status="U" uuid="db/column176"/>
+    <Column fglLength="4" fglType="2" name="cmp_currency_id" notNull="false" order="22" status="U" uuid="db/column178"/>
+    <Column fglLength="4" fglType="2" name="cmp_wantedusers" notNull="false" order="23" status="U" uuid="db/column53"/>
+    <Column fglLength="4" fglType="2" name="cmp_campaignstatus_id" notNull="true" order="24" status="U" uuid="db/column186"/>
+    <Column fglLength="4" fglType="2" name="cmp_createdby_id" notNull="true" order="25" status="U" uuid="db/column29"/>
+    <Column fglLength="3594" fglType="10" name="cmp_creationdate" notNull="true" order="26" status="U" uuid="db/column188"/>
+    <Column fglLength="4" fglType="7" name="cmp_publisheddate" notNull="false" order="27" status="U" uuid="db/column60"/>
+    <Column fglLength="4" fglType="7" name="cmp_selectionstartdate" notNull="false" order="28" status="U" uuid="db/column202"/>
+    <Column fglLength="4" fglType="7" name="cmp_selectionenddate" notNull="false" order="29" status="U" uuid="db/column204"/>
+    <Column fglLength="128" fglType="13" name="cmp_selectioncomment" notNull="false" order="30" status="U" uuid="db/column61"/>
+    <Column fglLength="3594" fglType="10" name="cmp_actionstartdate" notNull="false" order="31" status="U" uuid="db/column206"/>
+    <Column fglLength="3594" fglType="10" name="cmp_actionenddate" notNull="false" order="32" status="U" uuid="db/column208"/>
+    <Column fglLength="3594" fglType="10" name="cmp_enddate" notNull="false" order="33" status="U" uuid="db/column210"/>
+    <Column fglLength="3594" fglType="10" name="cmp_lastupdatedate" notNull="false" order="34" status="U" uuid="db/column212"/>
+    <Index indexColumns="cmp_id" indexConstraint="primaryKey" name="u299_669" status="U" uuid="db/index2"/>
+  </Table>
+  <Table active="true" name="campaignshist" status="U" uuid="db/table31">
+    <Column fglLength="4" fglType="6" name="cmph_id" notNull="true" order="1" status="U" uuid="db/column247"/>
+    <Column fglLength="4" fglType="2" name="cmph_campaign_id" notNull="true" order="2" status="U" uuid="db/column249"/>
+    <Column fglLength="4" fglType="2" name="cmph_campaignstatus_id" notNull="true" order="3" status="U" uuid="db/column251"/>
+    <Column fglLength="3594" fglType="10" name="cmph_date" notNull="true" order="4" status="U" uuid="db/column253"/>
+    <Index indexColumns="cmph_id" indexConstraint="primaryKey" name="u292_1030" status="U" uuid="db/index23"/>
+  </Table>
+  <Table active="true" name="campaignstates" status="U" uuid="db/table11">
+    <Column fglLength="4" fglType="6" name="cmpstt_id" notNull="true" order="1" status="U" uuid="db/column74"/>
+    <Column fglLength="4" fglType="2" name="cmpstt_campaigncountry_id" notNull="true" order="2" status="U" uuid="db/column75"/>
+    <Column fglLength="4" fglType="2" name="cmpstt_state_id" notNull="true" order="3" status="U" uuid="db/column77"/>
+    <Index indexColumns="cmpstt_id" indexConstraint="primaryKey" name="u268_864" status="U" uuid="db/index24"/>
+  </Table>
+  <Table active="true" name="campaignstatus" status="U" uuid="db/table24">
+    <Column fglLength="4" fglType="2" name="cmpst_id" notNull="true" order="1" status="U" uuid="db/column214"/>
+    <Column fglLength="32" fglType="13" name="cmpst_name" notNull="true" order="2" status="U" uuid="db/column216"/>
+    <Index indexColumns="cmpst_id" indexConstraint="primaryKey" name="u227_663" status="U" uuid="db/index25"/>
+  </Table>
+  <Table active="true" name="campaigntags" status="U" uuid="db/table26">
+    <Column fglLength="4" fglType="2" name="cmptg_campaign_id" notNull="true" order="1" status="U" uuid="db/column218"/>
+    <Column fglLength="4" fglType="2" name="cmptg_tag_id" notNull="true" order="2" status="U" uuid="db/column220"/>
+    <Column fglLength="4" fglType="2" name="cmptg_uiorder" notNull="true" order="3" status="U" uuid="db/column27"/>
+    <Index indexColumns="cmptg_campaign_id, cmptg_tag_id" indexConstraint="primaryKey" name="u235_692" status="U" uuid="db/index26"/>
+  </Table>
+  <Table active="true" name="campaignuserlist" status="U" uuid="db/table3">
+    <Column fglLength="4" fglType="6" name="cmpusrl_id" notNull="true" order="1" status="U" uuid="db/column62"/>
+    <Column fglLength="4" fglType="2" name="cmpusrl_campaign_id" notNull="true" order="2" status="U" uuid="db/column79"/>
+    <Column fglLength="4" fglType="2" name="cmpusrl_user_id" notNull="true" order="3" status="U" uuid="db/column81"/>
+    <Column fglLength="4" fglType="7" name="cmpusrl_visibilitydate" notNull="true" order="4" status="U" uuid="db/column102"/>
+    <Column fglLength="2" fglType="1" name="cmpusrl_previewuser" notNull="true" order="5" status="U" uuid="db/column83"/>
+    <Column fglLength="2" fglType="1" name="cmpusrl_wantedbybrand" notNull="true" order="6" status="U" uuid="db/column85"/>
+    <Column fglLength="4" fglType="7" name="cmpusrl_selectionstartdate" notNull="true" order="7" status="U" uuid="db/column87"/>
+    <Column fglLength="4" fglType="7" name="cmpusrl_selectionenddate" notNull="true" order="8" status="U" uuid="db/column89"/>
+    <Column fglLength="128" fglType="13" name="cmpusrl_selectioncomment" notNull="false" order="9" status="U" uuid="db/column91"/>
+    <Column fglLength="2" fglType="1" name="cmpusrl_tonotify" notNull="true" order="10" status="U" uuid="db/column93"/>
+    <Column fglLength="3594" fglType="10" name="cmpusrl_notificationdate" notNull="false" order="11" status="U" uuid="db/column95"/>
+    <Column fglLength="2" fglType="1" name="cmpusrl_isacceptbyuser" notNull="false" order="12" status="U" uuid="db/column97"/>
+    <Column fglLength="3594" fglType="10" name="cmpusrl_useranswerdate" notNull="false" order="13" status="U" uuid="db/column99"/>
+    <Column fglLength="2562" fglType="5" name="cmpusrl_usertotalprice" notNull="true" order="14" status="U" uuid="db/column39"/>
+    <Column fglLength="2562" fglType="5" name="cmpusrl_salfatixtotalprice" notNull="true" order="15" status="U" uuid="db/column101"/>
+    <Column fglLength="2562" fglType="5" name="cmpusrl_userwantedprice" notNull="false" order="16" status="U" uuid="db/column301"/>
+    <Column fglLength="4" fglType="2" name="cmpusrl_uiorder" notNull="false" order="17" status="U" uuid="db/column303"/>
+    <Column fglLength="2" fglType="1" name="cmpusrl_isacceptedbysalfatix" notNull="false" order="18" status="U" uuid="db/column305"/>
+    <Column fglLength="2" fglType="1" name="cmpusrl_isacceptedbybrand" notNull="false" order="19" status="U" uuid="db/column307"/>
+    <Column fglLength="128" fglType="13" name="cmpusrl_commentforbrand" notNull="false" order="20" status="U" uuid="db/column313"/>
+    <Column fglLength="2" fglType="1" name="cmpusrl_usergotproduct" notNull="false" order="21" status="U" uuid="db/column311"/>
+    <Column fglLength="2" fglType="1" name="cmpusrl_isuserpaid" notNull="false" order="22" status="U" uuid="db/column309"/>
+    <Column fglLength="2562" fglType="5" name="cmpusrl_userpaid" notNull="false" order="23" status="U" uuid="db/column315"/>
+    <Index indexColumns="cmpusrl_id" indexConstraint="primaryKey" name="u273_911" status="U" uuid="db/index27"/>
+  </Table>
+  <Table active="true" name="campaignuserprices" status="U" uuid="db/table13">
+    <Column fglLength="4" fglType="2" name="cmpusrp_campaign_id" notNull="true" order="1" status="U" uuid="db/column105"/>
+    <Column fglLength="4" fglType="2" name="cmpusrp_usr_id" notNull="true" order="2" status="U" uuid="db/column107"/>
+    <Column fglLength="4" fglType="2" name="cmpusrp_posttype_id" notNull="true" order="3" status="U" uuid="db/column109"/>
+    <Column fglLength="2562" fglType="5" name="cmpusrp_price" notNull="false" order="4" status="U" uuid="db/column111"/>
+    <Column fglLength="2" fglType="1" name="cmpusrp_freeofcharge" notNull="true" order="5" status="U" uuid="db/column113"/>
+    <Index indexColumns="cmpusrp_campaign_id, cmpusrp_usr_id, cmpusrp_posttype_id" indexConstraint="primaryKey" name="u277_923" status="U" uuid="db/index28"/>
+  </Table>
+  <Table active="true" name="categories" status="U" uuid="db/table28">
+    <Column fglLength="4" fglType="6" name="ctgr_id" notNull="true" order="1" status="U" uuid="db/column222"/>
+    <Column fglLength="32" fglType="13" name="ctgr_name" notNull="true" order="2" status="U" uuid="db/column224"/>
+    <Column fglLength="4" fglType="2" name="ctgr_uiorder" notNull="true" order="3" status="U" uuid="db/column5"/>
+    <Column fglLength="4" fglType="2" name="ctgr_parent_id" notNull="false" order="4" status="U" uuid="db/column299"/>
+    <Index indexColumns="ctgr_name" indexConstraint="unique" name="u262_840" status="U" uuid="db/index29"/>
+    <Index indexColumns="ctgr_id" indexConstraint="primaryKey" name="u262_841" status="U" uuid="db/index30"/>
+  </Table>
+  <Table active="true" name="cities" status="U" uuid="db/table30">
+    <Column fglLength="4" fglType="2" name="cts_id" notNull="true" order="1" status="U" uuid="db/column226"/>
+    <Column fglLength="60" fglType="13" name="cts_name" notNull="true" order="2" status="U" uuid="db/column228"/>
+    <Column fglLength="4" fglType="2" name="cts_state_id" notNull="true" order="3" status="U" uuid="db/column230"/>
+    <Index indexColumns="cts_id" indexConstraint="primaryKey" name="u301_642" status="U" uuid="db/index41"/>
+  </Table>
+  <Table active="true" name="countries" status="U" uuid="db/table32">
+    <Column fglLength="4" fglType="2" name="cntr_id" notNull="true" order="1" status="U" uuid="db/column232"/>
+    <Column fglLength="4" fglType="13" name="cntr_sortname" notNull="true" order="2" status="U" uuid="db/column234"/>
+    <Column fglLength="64" fglType="13" name="cntr_name" notNull="true" order="3" status="U" uuid="db/column236"/>
+    <Column fglLength="4" fglType="2" name="cntr_phonecode" notNull="true" order="4" status="U" uuid="db/column238"/>
+    <Index indexColumns="cntr_id" indexConstraint="primaryKey" name="u220_633" status="U" uuid="db/index32"/>
+  </Table>
+  <Table active="true" name="createdby" status="U" uuid="db/table7">
+    <Column fglLength="4" fglType="2" name="crcb_id" notNull="true" order="1" status="U" uuid="db/column31"/>
+    <Column fglLength="32" fglType="13" name="crcb_name" notNull="true" order="2" status="U" uuid="db/column33"/>
+    <Index indexColumns="crcb_id" indexConstraint="primaryKey" name="u230_675" status="U" uuid="db/index33"/>
+  </Table>
+  <Table active="true" name="currencies" status="U" uuid="db/table34">
+    <Column fglLength="4" fglType="2" name="crr_id" notNull="true" order="1" status="U" uuid="db/column240"/>
+    <Column fglLength="32" fglType="13" name="crr_name" notNull="true" order="2" status="U" uuid="db/column242"/>
+    <Column fglLength="8" fglType="13" name="crr_symbol" notNull="false" order="3" status="U" uuid="db/column244"/>
+    <Index indexColumns="crr_id" indexConstraint="primaryKey" name="u241_712" status="U" uuid="db/index34"/>
+  </Table>
+  <Table active="true" name="genders" status="U" uuid="db/table36">
+    <Column fglLength="4" fglType="2" name="gnd_id" notNull="true" order="1" status="U" uuid="db/column246"/>
+    <Column fglLength="16" fglType="13" name="gnd_name" notNull="true" order="2" status="U" uuid="db/column248"/>
+    <Column fglLength="4" fglType="2" name="gnd_uiorder" notNull="true" order="3" status="U" uuid="db/column185"/>
+    <Index indexColumns="gnd_name" indexConstraint="unique" name="u224_1015" status="U" uuid="db/index35"/>
+    <Index indexColumns="gnd_id" indexConstraint="primaryKey" name="u224_654" status="U" uuid="db/index36"/>
+  </Table>
+  <Table active="true" name="grouptags" status="U" uuid="db/table38">
+    <Column fglLength="4" fglType="6" name="gtag_id" notNull="true" order="1" status="U" uuid="db/column250"/>
+    <Column fglLength="128" fglType="13" name="gtag_name" notNull="true" order="2" status="U" uuid="db/column252"/>
+    <Column fglLength="3594" fglType="10" name="gtag_creationdate" notNull="true" order="3" status="U" uuid="db/column254"/>
+    <Index indexColumns="gtag_id" indexConstraint="primaryKey" name="u238_702" status="U" uuid="db/index37"/>
+  </Table>
+  <Table active="true" name="grouptagslist" status="U" uuid="db/table40">
+    <Column fglLength="4" fglType="2" name="gtagl_grouptag_id" notNull="true" order="1" status="U" uuid="db/column256"/>
+    <Column fglLength="4" fglType="2" name="gtagl_tag_id" notNull="true" order="2" status="U" uuid="db/column258"/>
+    <Index indexColumns="gtagl_grouptag_id, gtagl_tag_id" indexConstraint="primaryKey" name="u239_706" status="U" uuid="db/index38"/>
+  </Table>
+  <Table active="true" name="messages" status="U" uuid="db/table37">
+    <Column fglLength="4" fglType="2" name="msg_id" notNull="true" order="1" status="U" uuid="db/column194"/>
+    <Column fglLength="8" fglType="13" name="msg_lang" notNull="true" order="2" status="U" uuid="db/column196"/>
+    <Column fglLength="255" fglType="13" name="msg_texttitle" notNull="false" order="3" status="U" uuid="db/column255"/>
+    <Column fglLength="4096" fglType="201" name="msg_textcontent" notNull="false" order="4" status="U" uuid="db/column257"/>
+    <Column fglLength="255" fglType="13" name="msg_htmltitle" notNull="false" order="5" status="U" uuid="db/column283"/>
+    <Column fglLength="4096" fglType="201" name="msg_htmlcontent" notNull="false" order="6" status="U" uuid="db/column284"/>
+    <Index indexColumns="msg_id, msg_lang" indexConstraint="primaryKey" name="pk_messages" status="U" uuid="db/index1"/>
+  </Table>
+  <Table active="true" name="notificationtokens" status="U" uuid="db/table39">
+    <Column fglLength="4" fglType="6" name="ntt_id" notNull="true" order="1" status="U" uuid="db/column265"/>
+    <Column fglLength="4" fglType="2" name="ntt_usr_id" notNull="true" order="2" status="U" uuid="db/column267"/>
+    <Column fglLength="200" fglType="13" name="ntt_unique_id" notNull="true" order="3" status="U" uuid="db/column269"/>
+    <Column fglLength="10" fglType="13" name="ntt_device_type" notNull="true" order="4" status="U" uuid="db/column263"/>
+    <Column fglLength="4" fglType="2" name="ntt_meter" notNull="false" order="5" status="U" uuid="db/column192"/>
+    <Column fglLength="200" fglType="13" name="ntt_token" notNull="true" order="6" status="U" uuid="db/column271"/>
+    <Index indexColumns="ntt_id" indexConstraint="primaryKey" name="u298_1054" status="U" uuid="db/index39"/>
+  </Table>
+  <Table active="true" name="params" status="U" uuid="db/table33">
+    <Column fglLength="4" fglType="6" name="par_id" notNull="true" order="1" status="U" uuid="db/column103"/>
+    <Column fglLength="4" fglType="2" name="par_typ" notNull="true" order="2" status="U" uuid="db/column152"/>
+    <Column fglLength="2562" fglType="5" name="par_min" notNull="true" order="3" status="U" uuid="db/column153"/>
+    <Column fglLength="2562" fglType="5" name="par_max" notNull="true" order="4" status="U" uuid="db/column182"/>
+    <Column fglLength="200" fglType="13" name="par_des" notNull="true" order="5" status="U" uuid="db/column184"/>
+    <Index indexColumns="par_id" indexConstraint="primaryKey" name="u295_1042" status="U" uuid="db/index40"/>
+  </Table>
+  <Table active="true" name="pics" status="U" uuid="db/table5">
+    <Column fglLength="4" fglType="6" name="pic_id" notNull="true" order="1" status="U" uuid="db/column17"/>
+    <Column fglLength="56" fglType="11" name="pic_value" notNull="true" order="2" status="U" uuid="db/column19"/>
+    <Index indexColumns="pic_id" indexConstraint="primaryKey" name="u253_807" status="U" uuid="db/index42"/>
+  </Table>
+  <Table active="true" name="postdurations" status="U" uuid="db/table42">
+    <Column fglLength="4" fglType="2" name="pstdr_id" notNull="true" order="1" status="U" uuid="db/column260"/>
+    <Column fglLength="32" fglType="13" name="pstdr_name" notNull="true" order="2" status="U" uuid="db/column262"/>
+    <Index indexColumns="pstdr_id" indexConstraint="primaryKey" name="u240_709" status="U" uuid="db/index44"/>
+  </Table>
+  <Table active="true" name="posttypes" status="U" uuid="db/table44">
+    <Column fglLength="4" fglType="2" name="pstt_id" notNull="true" order="1" status="U" uuid="db/column264"/>
+    <Column fglLength="32" fglType="13" name="pstt_name" notNull="true" order="2" status="U" uuid="db/column266"/>
+    <Column fglLength="4" fglType="2" name="pstt_uiorder" notNull="true" order="3" status="U" uuid="db/column7"/>
+    <Index indexColumns="pstt_id" indexConstraint="primaryKey" name="u232_681" status="U" uuid="db/index46"/>
+  </Table>
+  <Table active="true" name="socialnetworks" status="U" uuid="db/table46">
+    <Column fglLength="4" fglType="2" name="scl_id" notNull="true" order="1" status="U" uuid="db/column268"/>
+    <Column fglLength="64" fglType="13" name="scl_name" notNull="true" order="2" status="U" uuid="db/column270"/>
+    <Column fglLength="4" fglType="2" name="scl_uiorder" notNull="true" order="3" status="U" uuid="db/column9"/>
+    <Column fglLength="32" fglType="13" name="scl_img" notNull="true" order="4" status="U" uuid="db/column50"/>
+    <Column fglLength="255" fglType="13" name="scl_url" notNull="false" order="5" status="U" uuid="db/column200"/>
+    <Index indexColumns="scl_id" indexConstraint="primaryKey" name="u245_730" status="U" uuid="db/index50"/>
+  </Table>
+  <Table active="true" name="states" status="U" uuid="db/table48">
+    <Column fglLength="4" fglType="2" name="stt_id" notNull="true" order="1" status="U" uuid="db/column272"/>
+    <Column fglLength="60" fglType="13" name="stt_name" notNull="true" order="2" status="U" uuid="db/column274"/>
+    <Column fglLength="4" fglType="2" name="stt_country_id" notNull="true" order="3" status="U" uuid="db/column276"/>
+    <Index indexColumns="stt_id" indexConstraint="primaryKey" name="u300_638" status="U" uuid="db/index43"/>
+  </Table>
+  <Table active="true" name="tags" status="U" uuid="db/table50">
+    <Column fglLength="4" fglType="6" name="tag_id" notNull="true" order="1" status="U" uuid="db/column278"/>
+    <Column fglLength="128" fglType="13" name="tag_name" notNull="true" order="2" status="U" uuid="db/column280"/>
+    <Column fglLength="4" fglType="2" name="tag_type_id" notNull="false" order="3" status="U" uuid="db/column282"/>
+    <Index indexColumns="tag_id" indexConstraint="primaryKey" name="u237_698" status="U" uuid="db/index54"/>
+    <Index indexColumns="tag_name" indexConstraint="unique" name="u237_824" status="U" uuid="db/index56"/>
+  </Table>
+  <Table active="true" name="tagtypes" status="U" uuid="db/table52">
+    <Column fglLength="4" fglType="2" name="tagt_id" notNull="true" order="1" status="U" uuid="db/column286"/>
+    <Column fglLength="16" fglType="13" name="tagt_name" notNull="true" order="2" status="U" uuid="db/column288"/>
+    <Index indexColumns="tagt_id" indexConstraint="primaryKey" name="u236_695" status="U" uuid="db/index58"/>
+  </Table>
+  <Table active="true" name="usermetrics" status="U" uuid="db/table54">
+    <Column fglLength="4" fglType="6" name="usrmtc_id" notNull="true" order="1" status="U" uuid="db/column290"/>
+    <Column fglLength="4" fglType="2" name="usrmtc_usr_id" notNull="false" order="2" status="U" uuid="db/column203"/>
+    <Column fglLength="8" fglType="52" name="usrmtc_instagram_userid" notNull="false" order="3" status="U" uuid="db/column292"/>
+    <Column fglLength="128" fglType="13" name="usrmtc_instagram_username" notNull="false" order="4" status="U" uuid="db/column13"/>
+    <Column fglLength="4" fglType="2" name="usrmtc_geomedia_count" notNull="false" order="5" status="U" uuid="db/column294"/>
+    <Column fglLength="4" fglType="2" name="usrmtc_media_count" notNull="false" order="6" status="U" uuid="db/column296"/>
+    <Column fglLength="4" fglType="2" name="usrmtc_follows_count" notNull="false" order="7" status="U" uuid="db/column298"/>
+    <Column fglLength="4" fglType="2" name="usrmtc_followers_count" notNull="false" order="8" status="U" uuid="db/column300"/>
+    <Column fglLength="4" fglType="2" name="usrmtc_comments_count" notNull="false" order="9" status="U" uuid="db/column302"/>
+    <Column fglLength="4" fglType="2" name="usrmtc_likes_count" notNull="false" order="10" status="U" uuid="db/column304"/>
+    <Column fglLength="4" fglType="2" name="usrmtc_usertags_count" notNull="false" order="11" status="U" uuid="db/column306"/>
+    <Column fglLength="4" fglType="2" name="usrmtc_reach" notNull="false" order="12" status="U" uuid="db/column201"/>
+    <Column fglLength="3594" fglType="10" name="usrmtc_bdate" notNull="true" order="13" status="U" uuid="db/column308"/>
+    <Column fglLength="3594" fglType="10" name="usrmtc_edate" notNull="true" order="14" status="U" uuid="db/column310"/>
+    <Index indexColumns="usrmtc_id" indexConstraint="primaryKey" name="u244_726" status="U" uuid="db/index100"/>
+  </Table>
+  <Table active="true" name="userpostprices" status="U" uuid="db/table56">
+    <Column fglLength="4" fglType="2" name="usrpp_usr_id" notNull="true" order="1" status="U" uuid="db/column312"/>
+    <Column fglLength="4" fglType="2" name="usrpp_posttype_id" notNull="true" order="2" status="U" uuid="db/column314"/>
+    <Column fglLength="2562" fglType="5" name="usrpp_minprice" notNull="true" order="3" status="U" uuid="db/column41"/>
+    <Column fglLength="2562" fglType="5" name="usrpp_maxprice" notNull="true" order="4" status="U" uuid="db/column43"/>
+    <Column fglLength="2" fglType="1" name="usrpp_freeofcharge" notNull="true" order="5" status="U" uuid="db/column45"/>
+    <Column fglLength="2562" fglType="5" name="usrpp_salfatixminprice" notNull="false" order="6" status="U" uuid="db/column145"/>
+    <Column fglLength="2562" fglType="5" name="usrpp_salfatixmaxprice" notNull="false" order="7" status="U" uuid="db/column147"/>
+    <Column fglLength="2" fglType="1" name="usrpp_salfatixfreeofcharge" notNull="true" order="8" status="U" uuid="db/column148"/>
+    <Column fglLength="2" fglType="1" name="usrpp_isvalidatedbysalfatix" notNull="true" order="9" status="U" uuid="db/column149"/>
+    <Index indexColumns="usrpp_usr_id, usrpp_posttype_id" indexConstraint="primaryKey" name="u243_723" status="U" uuid="db/index102"/>
+  </Table>
+  <Table active="true" name="users" status="U" uuid="db/table58">
+    <Column fglLength="4" fglType="6" name="usr_id" notNull="true" order="1" status="U" uuid="db/column318"/>
+    <Column fglLength="4" fglType="2" name="usr_gender_id" notNull="false" order="2" status="U" uuid="db/column320"/>
+    <Column fglLength="128" fglType="13" name="usr_firstname" notNull="false" order="3" status="U" uuid="db/column322"/>
+    <Column fglLength="128" fglType="13" name="usr_lastname" notNull="false" order="4" status="U" uuid="db/column324"/>
+    <Column fglLength="4" fglType="7" name="usr_birthday" notNull="false" order="5" status="U" uuid="db/column326"/>
+    <Column fglLength="128" fglType="13" name="usr_email" notNull="true" order="6" status="U" uuid="db/column328"/>
+    <Column fglLength="255" fglType="13" name="usr_password" notNull="true" order="7" status="U" uuid="db/column330"/>
+    <Column fglLength="4" fglType="2" name="usr_country_id" notNull="true" order="8" status="U" uuid="db/column332"/>
+    <Column fglLength="4" fglType="2" name="usr_state_id" notNull="false" order="9" status="U" uuid="db/column334"/>
+    <Column fglLength="4" fglType="2" name="usr_city_id" notNull="false" order="10" status="U" uuid="db/column336"/>
+    <Column fglLength="16" fglType="13" name="usr_address_number" notNull="false" order="11" status="U" uuid="db/column338"/>
+    <Column fglLength="128" fglType="13" name="usr_address_street" notNull="false" order="12" status="U" uuid="db/column340"/>
+    <Column fglLength="128" fglType="13" name="usr_address_zipcode" notNull="false" order="13" status="U" uuid="db/column342"/>
+    <Column fglLength="128" fglType="13" name="usr_address_town" notNull="false" order="14" status="U" uuid="db/column344"/>
+    <Column fglLength="128" fglType="13" name="usr_address_more" notNull="false" order="15" status="U" uuid="db/column346"/>
+    <Column fglLength="8" fglType="52" name="usr_mobile_phone" notNull="false" order="16" status="U" uuid="db/column348"/>
+    <Column fglLength="8" fglType="52" name="usr_instagram_userid" notNull="false" order="17" status="U" uuid="db/column350"/>
+    <Column fglLength="128" fglType="13" name="usr_instagram_username" notNull="true" order="18" status="U" uuid="db/column352"/>
+    <Column fglLength="128" fglType="13" name="usr_instagram_fullname" notNull="false" order="19" status="U" uuid="db/column354"/>
+    <Column fglLength="255" fglType="13" name="usr_instagram_profilepicture" notNull="false" order="20" status="U" uuid="db/column356"/>
+    <Column fglLength="255" fglType="13" name="usr_instagram_biography" notNull="false" order="21" status="U" uuid="db/column358"/>
+    <Column fglLength="255" fglType="13" name="usr_instagram_website" notNull="false" order="22" status="U" uuid="db/column360"/>
+    <Column fglLength="2" fglType="1" name="usr_instagram_is_private" notNull="false" order="23" status="U" uuid="db/column362"/>
+    <Column fglLength="2" fglType="1" name="usr_instagram_is_verified" notNull="false" order="24" status="U" uuid="db/column364"/>
+    <Column fglLength="2" fglType="1" name="usr_instagram_is_business" notNull="false" order="25" status="U" uuid="db/column366"/>
+    <Column fglLength="128" fglType="13" name="usr_bank_name" notNull="false" order="26" status="U" uuid="db/column368"/>
+    <Column fglLength="64" fglType="13" name="usr_bank_iban" notNull="false" order="27" status="U" uuid="db/column370"/>
+    <Column fglLength="64" fglType="13" name="usr_bank_swift" notNull="false" order="28" status="U" uuid="db/column372"/>
+    <Column fglLength="128" fglType="13" name="usr_paypal" notNull="false" order="29" status="U" uuid="db/column183"/>
+    <Column fglLength="2" fglType="1" name="usr_mobile_notifications" notNull="false" order="30" status="U" uuid="db/column374"/>
+    <Column fglLength="1" fglType="0" name="usr_notif_style" notNull="false" order="31" status="U" uuid="db/column287"/>
+    <Column fglLength="2" fglType="1" name="usr_email_notifications" notNull="false" order="32" status="U" uuid="db/column378"/>
+    <Column fglLength="1" fglType="0" name="usr_email_style" notNull="false" order="33" status="U" uuid="db/column289"/>
+    <Column fglLength="4" fglType="2" name="usr_currency_id" notNull="false" order="34" status="U" uuid="db/column380"/>
+    <Column fglLength="4" fglType="2" name="usr_accountstatus_id" notNull="true" order="35" status="U" uuid="db/column382"/>
+    <Column fglLength="4" fglType="2" name="usr_createdby_id" notNull="true" order="36" status="U" uuid="db/column35"/>
+    <Column fglLength="3594" fglType="10" name="usr_creationdate" notNull="true" order="37" status="U" uuid="db/column384"/>
+    <Column fglLength="3594" fglType="10" name="usr_deletiondate" notNull="false" order="38" status="U" uuid="db/column388"/>
+    <Column fglLength="3594" fglType="10" name="usr_validationdate" notNull="false" order="39" status="U" uuid="db/column390"/>
+    <Column fglLength="3594" fglType="10" name="usr_canceldate" notNull="false" order="40" status="U" uuid="db/column392"/>
+    <Column fglLength="3594" fglType="10" name="usr_suspendeddate" notNull="false" order="41" status="U" uuid="db/column394"/>
+    <Column fglLength="3594" fglType="10" name="usr_stopdate" notNull="false" order="42" status="U" uuid="db/column59"/>
+    <Column fglLength="3594" fglType="10" name="usr_emailvalidationdate" notNull="false" order="43" status="U" uuid="db/column398"/>
+    <Column fglLength="3594" fglType="10" name="usr_lastupdatedate" notNull="false" order="44" status="U" uuid="db/column400"/>
+    <Column fglLength="3594" fglType="10" name="usr_lastlogindate" notNull="false" order="45" status="U" uuid="db/column402"/>
+    <Column fglLength="255" fglType="13" name="usr_instagram_token" notNull="false" order="46" status="U" uuid="db/column285"/>
+    <Index indexColumns="usr_id" indexConstraint="primaryKey" name="u261_715" status="U" uuid="db/index103"/>
+  </Table>
+  <Table active="true" name="usersocialnetworks" status="U" uuid="db/table60">
+    <Column fglLength="4" fglType="6" name="usrscl_id" notNull="true" order="1" status="U" uuid="db/column404"/>
+    <Column fglLength="4" fglType="2" name="usrscl_usr_id" notNull="true" order="2" status="U" uuid="db/column46"/>
+    <Column fglLength="4" fglType="2" name="usrscl_socialnetwork_id" notNull="true" order="3" status="U" uuid="db/column408"/>
+    <Column fglLength="255" fglType="13" name="usrscl_accountname" notNull="true" order="4" status="U" uuid="db/column47"/>
+    <Column fglLength="255" fglType="13" name="usrscl_comment" notNull="false" order="5" status="U" uuid="db/column49"/>
+    <Index indexColumns="usrscl_id" indexConstraint="primaryKey" name="u246_733" status="U" uuid="db/index104"/>
+  </Table>
+  <ForeignKey cascadeDelete="false" fkColumns="ntt_usr_id" fkRefColumns="usr_id" name="fk_notificationtokens_users" refTable="users" status="U" table="notificationtokens" uuid="db/foreignkey1"/>
+  <ForeignKey cascadeDelete="false" fkColumns="brndcat_brand_id" fkRefColumns="brnd_id" name="r228_761" refTable="brands" status="U" table="brandcategories" uuid="db/foreignkey4"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpcat_campaign_id" fkRefColumns="cmp_id" name="r231_772" refTable="campaigns" status="U" table="campaigncategories" uuid="db/foreignkey5"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmppst_campaign_id" fkRefColumns="cmp_id" name="r233_797" refTable="campaigns" status="U" table="campaignposttypes" uuid="db/foreignkey6"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmppst_posttype_id" fkRefColumns="pstt_id" name="r233_798" refTable="posttypes" status="U" table="campaignposttypes" uuid="db/foreignkey7"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmptg_campaign_id" fkRefColumns="cmp_id" name="r235_775" refTable="campaigns" status="U" table="campaigntags" uuid="db/foreignkey8"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmptg_tag_id" fkRefColumns="tag_id" name="r235_776" refTable="tags" status="U" table="campaigntags" uuid="db/foreignkey9"/>
+  <ForeignKey cascadeDelete="false" fkColumns="tag_type_id" fkRefColumns="tagt_id" name="r237_777" refTable="tagtypes" status="U" table="tags" uuid="db/foreignkey10"/>
+  <ForeignKey cascadeDelete="false" fkColumns="gtagl_tag_id" fkRefColumns="gtag_id" name="r239_778" refTable="grouptags" status="U" table="grouptagslist" uuid="db/foreignkey11"/>
+  <ForeignKey cascadeDelete="false" fkColumns="gtagl_tag_id" fkRefColumns="tag_id" name="r239_779" refTable="tags" status="U" table="grouptagslist" uuid="db/foreignkey12"/>
+  <ForeignKey cascadeDelete="false" fkColumns="usrpp_usr_id" fkRefColumns="usr_id" name="r243_785" refTable="users" status="U" table="userpostprices" uuid="db/foreignkey13"/>
+  <ForeignKey cascadeDelete="false" fkColumns="usrpp_posttype_id" fkRefColumns="pstt_id" name="r243_786" refTable="posttypes" status="U" table="userpostprices" uuid="db/foreignkey14"/>
+  <ForeignKey cascadeDelete="false" fkColumns="usrmtc_usr_id" fkRefColumns="usr_id" name="r244_1029" refTable="users" status="U" table="usermetrics" uuid="db/foreignkey15"/>
+  <ForeignKey cascadeDelete="false" fkColumns="usrscl_usr_id" fkRefColumns="usr_id" name="r246_787" refTable="users" status="U" table="usersocialnetworks" uuid="db/foreignkey16"/>
+  <ForeignKey cascadeDelete="false" fkColumns="usrscl_socialnetwork_id" fkRefColumns="scl_id" name="r246_788" refTable="socialnetworks" status="U" table="usersocialnetworks" uuid="db/foreignkey17"/>
+  <ForeignKey cascadeDelete="false" fkColumns="borlop_borole_id" fkRefColumns="borl_id" name="r250_794" refTable="boroles" status="U" table="boroleperations" uuid="db/foreignkey18"/>
+  <ForeignKey cascadeDelete="false" fkColumns="borlop_booperation_id" fkRefColumns="boop_id" name="r250_795" refTable="booperations" status="U" table="boroleperations" uuid="db/foreignkey19"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpph_campaign_id" fkRefColumns="cmp_id" name="r257_820" refTable="campaigns" status="U" table="campaignphotos" uuid="db/foreignkey20"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpph_pic_id" fkRefColumns="pic_id" name="r257_821" refTable="pics" status="U" table="campaignphotos" uuid="db/foreignkey21"/>
+  <ForeignKey cascadeDelete="false" fkColumns="bousr_gender_id" fkRefColumns="gnd_id" name="r258_789" refTable="genders" status="U" table="backofficeusers" uuid="db/foreignkey22"/>
+  <ForeignKey cascadeDelete="false" fkColumns="bousr_country_id" fkRefColumns="cntr_id" name="r258_790" refTable="countries" status="U" table="backofficeusers" uuid="db/foreignkey23"/>
+  <ForeignKey cascadeDelete="false" fkColumns="bousr_state_id" fkRefColumns="stt_id" name="r258_791" refTable="states" status="U" table="backofficeusers" uuid="db/foreignkey24"/>
+  <ForeignKey cascadeDelete="false" fkColumns="bousr_city_id" fkRefColumns="cts_id" name="r258_792" refTable="cities" status="U" table="backofficeusers" uuid="db/foreignkey25"/>
+  <ForeignKey cascadeDelete="false" fkColumns="bousr_usrrole_id" fkRefColumns="borl_id" name="r258_793" refTable="boroles" status="U" table="backofficeusers" uuid="db/foreignkey26"/>
+  <ForeignKey cascadeDelete="false" fkColumns="bousr_pic_id" fkRefColumns="pic_id" name="r258_813" refTable="pics" status="U" table="backofficeusers" uuid="db/foreignkey27"/>
+  <ForeignKey cascadeDelete="false" fkColumns="bousr_accountstatus_id" fkRefColumns="accst_id" name="r258_835" refTable="accountstatus" status="U" table="backofficeusers" uuid="db/foreignkey28"/>
+  <ForeignKey cascadeDelete="false" fkColumns="brnd_country_id" fkRefColumns="cntr_id" name="r260_756" refTable="countries" status="U" table="brands" uuid="db/foreignkey29"/>
+  <ForeignKey cascadeDelete="false" fkColumns="brnd_state_id" fkRefColumns="stt_id" name="r260_757" refTable="states" status="U" table="brands" uuid="db/foreignkey30"/>
+  <ForeignKey cascadeDelete="false" fkColumns="brnd_city_id" fkRefColumns="cts_id" name="r260_758" refTable="cities" status="U" table="brands" uuid="db/foreignkey31"/>
+  <ForeignKey cascadeDelete="false" fkColumns="brnd_gender_id" fkRefColumns="gnd_id" name="r260_759" refTable="genders" status="U" table="brands" uuid="db/foreignkey32"/>
+  <ForeignKey cascadeDelete="false" fkColumns="brnd_accountstatus_id" fkRefColumns="accst_id" name="r260_760" refTable="accountstatus" status="U" table="brands" uuid="db/foreignkey33"/>
+  <ForeignKey cascadeDelete="false" fkColumns="brnd_pic_id" fkRefColumns="pic_id" name="r260_811" refTable="pics" status="U" table="brands" uuid="db/foreignkey34"/>
+  <ForeignKey cascadeDelete="false" fkColumns="brnd_createdby_id" fkRefColumns="crcb_id" name="r260_827" refTable="createdby" status="U" table="brands" uuid="db/foreignkey35"/>
+  <ForeignKey cascadeDelete="false" fkColumns="brnd_currency_id" fkRefColumns="crr_id" name="r260_843" refTable="currencies" status="U" table="brands" uuid="db/foreignkey36"/>
+  <ForeignKey cascadeDelete="false" fkColumns="usr_gender_id" fkRefColumns="gnd_id" name="r261_780" refTable="genders" status="U" table="users" uuid="db/foreignkey37"/>
+  <ForeignKey cascadeDelete="false" fkColumns="usr_country_id" fkRefColumns="cntr_id" name="r261_781" refTable="countries" status="U" table="users" uuid="db/foreignkey38"/>
+  <ForeignKey cascadeDelete="false" fkColumns="usr_state_id" fkRefColumns="stt_id" name="r261_782" refTable="states" status="U" table="users" uuid="db/foreignkey39"/>
+  <ForeignKey cascadeDelete="false" fkColumns="usr_city_id" fkRefColumns="cts_id" name="r261_783" refTable="cities" status="U" table="users" uuid="db/foreignkey40"/>
+  <ForeignKey cascadeDelete="false" fkColumns="usr_currency_id" fkRefColumns="crr_id" name="r261_784" refTable="currencies" status="U" table="users" uuid="db/foreignkey41"/>
+  <ForeignKey cascadeDelete="false" fkColumns="usr_accountstatus_id" fkRefColumns="accst_id" name="r261_796" refTable="accountstatus" status="U" table="users" uuid="db/foreignkey42"/>
+  <ForeignKey cascadeDelete="false" fkColumns="usr_createdby_id" fkRefColumns="crcb_id" name="r261_829" refTable="createdby" status="U" table="users" uuid="db/foreignkey43"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpcntr_campaign_id" fkRefColumns="cmp_id" name="r267_871" refTable="campaigns" status="U" table="campaigncountries" uuid="db/foreignkey44"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpcntr_country_id" fkRefColumns="cntr_id" name="r267_872" refTable="countries" status="U" table="campaigncountries" uuid="db/foreignkey45"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpstt_campaigncountry_id" fkRefColumns="cmpcntr_id" name="r268_873" refTable="campaigncountries" status="U" table="campaignstates" uuid="db/foreignkey46"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpstt_state_id" fkRefColumns="stt_id" name="r268_874" refTable="states" status="U" table="campaignstates" uuid="db/foreignkey47"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpcts_campaignstate_id" fkRefColumns="cmpstt_id" name="r269_875" refTable="campaignstates" status="U" table="campaigncities" uuid="db/foreignkey48"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpcts_city_id" fkRefColumns="cts_id" name="r269_876" refTable="cities" status="U" table="campaigncities" uuid="db/foreignkey49"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpusrl_campaign_id" fkRefColumns="cmp_id" name="r273_921" refTable="campaigns" status="U" table="campaignuserlist" uuid="db/foreignkey50"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpusrl_user_id" fkRefColumns="usr_id" name="r273_922" refTable="users" status="U" table="campaignuserlist" uuid="db/foreignkey51"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpusrp_campaign_id" fkRefColumns="cmp_id" name="r277_928" refTable="campaigns" status="U" table="campaignuserprices" uuid="db/foreignkey58"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpusrp_usr_id" fkRefColumns="usr_id" name="r277_929" refTable="users" status="U" table="campaignuserprices" uuid="db/foreignkey59"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpusrp_posttype_id" fkRefColumns="pstt_id" name="r277_930" refTable="posttypes" status="U" table="campaignuserprices" uuid="db/foreignkey60"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmppost_campaign_id" fkRefColumns="cmp_id" name="r288_1002" refTable="campaigns" status="U" table="campaignposts" uuid="db/foreignkey65"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmppost_usr_id" fkRefColumns="usr_id" name="r288_1003" refTable="users" status="U" table="campaignposts" uuid="db/foreignkey66"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmppost_posttype_id" fkRefColumns="pstt_id" name="r288_1004" refTable="posttypes" status="U" table="campaignposts" uuid="db/foreignkey67"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmppost_status_id" fkRefColumns="cmppstst_id" name="r288_1005" refTable="campaignpoststatus" status="U" table="campaignposts" uuid="db/foreignkey68"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpposth_campaignpost_id" fkRefColumns="cmppost_id" name="r289_1011" refTable="campaignposts" status="U" table="campaignpostshist" uuid="db/foreignkey69"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpposth_status_id" fkRefColumns="cmppstst_id" name="r289_1012" refTable="campaignpoststatus" status="U" table="campaignpostshist" uuid="db/foreignkey70"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpgen_campaign_id" fkRefColumns="cmp_id" name="r290_1019" refTable="campaigns" status="U" table="campaigngenders" uuid="db/foreignkey71"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmpgen_gender_id" fkRefColumns="gnd_id" name="r290_1020" refTable="genders" status="U" table="campaigngenders" uuid="db/foreignkey72"/>
+  <ForeignKey cascadeDelete="false" fkColumns="brndscl_brand_id" fkRefColumns="brnd_id" name="r291_1027" refTable="brands" status="U" table="brandsocialnetworks" uuid="db/foreignkey73"/>
+  <ForeignKey cascadeDelete="false" fkColumns="brndscl_socialnetwork_id" fkRefColumns="scl_id" name="r291_1028" refTable="socialnetworks" status="U" table="brandsocialnetworks" uuid="db/foreignkey82"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmph_campaign_id" fkRefColumns="cmp_id" name="r292_1035" refTable="campaigns" status="U" table="campaignshist" uuid="db/foreignkey83"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmph_campaignstatus_id" fkRefColumns="cmpst_id" name="r292_1036" refTable="campaignstatus" status="U" table="campaignshist" uuid="db/foreignkey151"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmp_brand_id" fkRefColumns="brnd_id" name="r299_763" refTable="brands" status="U" table="campaigns" uuid="db/foreignkey74"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmp_postduration_id" fkRefColumns="pstdr_id" name="r299_768" refTable="postdurations" status="U" table="campaigns" uuid="db/foreignkey75"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmp_campaignstatus_id" fkRefColumns="cmpst_id" name="r299_769" refTable="campaignstatus" status="U" table="campaigns" uuid="db/foreignkey76"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmp_currency_id" fkRefColumns="crr_id" name="r299_770" refTable="currencies" status="U" table="campaigns" uuid="db/foreignkey77"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmp_createdby_id" fkRefColumns="crcb_id" name="r299_771" refTable="createdby" status="U" table="campaigns" uuid="db/foreignkey78"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cmp_pic_id" fkRefColumns="pic_id" name="r299_815" refTable="pics" status="U" table="campaigns" uuid="db/foreignkey79"/>
+  <ForeignKey cascadeDelete="false" fkColumns="stt_country_id" fkRefColumns="cntr_id" name="r300_755" refTable="countries" status="U" table="states" uuid="db/foreignkey80"/>
+  <ForeignKey cascadeDelete="false" fkColumns="cts_state_id" fkRefColumns="stt_id" name="r301_754" refTable="states" status="U" table="cities" uuid="db/foreignkey81"/>
+  <Views ActiveView="Campaigns" showLabels="true">
+    <View Name="AllTables">
+      <Layout>
+        <![CDATA[AAAAAgAAABQAZABiAC8AdABhAGIAbABlADIAOQAAAAAAAAAAAAAAAAAAAAA/5PXCj1wo+gEAAAAUAGQAYgAvAHQAYQBiAGwAZQAxADBArAfu7vMqBECufxEwQ8TQP9oMSbpeNUUBAAAAFABkAGIALwB0AGEAYgBsAGUAMQA3AAAAAAAAAAAAAAAAAAAAAD/nlYEGJN00AQAAABIAZABiAC8AdABhAGIAbABlADgAAAAAAAAAAAAAAAAAAAAAP+KPXCj1wpMBAAAAEgBkAGIALwB0AGEAYgBsAGUANECnbTNMfoGxQKdKVWxr6To/2SbpeNT9+QEAAAAUAGQAYgAvAHQAYQBiAGwAZQAzADBApqRETBNXkECkLwAKw7uyP+IMSbpeNUMBAAAAEgBkAGIALwB0AGEAYgBsAGUANwAAAAAAAAAAAAAAAAAAAAA/5k3S8an77AEAAAAUAGQAYgAvAHQAYQBiAGwAZQAyADMAAAAAAAAAAAAAAAAAAAAAP+VP3ztkWiEBAAAAFABkAGIALwB0AGEAYgBsAGUANQAwQIgrTozj5Y5AJUDYC1XIfz/keuFHrhR/AQAAABQAZABiAC8AdABhAGIAbABlADEANQAAAAAAAAAAAAAAAAAAAAA/541P3ztkXwEAAAAUAGQAYgAvAHQAYQBiAGwAZQA0ADhApQ1ESzpGf0Cln8zLiG0pP+Jul41P3z8BAAAAFABkAGIALwB0AGEAYgBsAGUAMgA0QJH+AAmYiIBAjHzMzzF+OD/g9cKPXCj5AQAAABQAZABiAC8AdABhAGIAbABlADEAOQAAAAAAAAAAAAAAAAAAAAA/5ztkWhysDQEAAAAUAGQAYgAvAHQAYQBiAGwAZQAzADdAihAABvMzLMBDgAAFMzMuP+ZFocrAgxcBAAAAFABkAGIALwB0AGEAYgBsAGUAMQA0QKG2ESlyKzxApuUiLDXwBj/ktDlYEGJSAQAAABIAZABiAC8AdABhAGIAbABlADUAAAAAAAAAAAAAAAAAAAAAP99cKPXCj2MBAAAAFABkAGIALwB0AGEAYgBsAGUAMwA5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAABQAZABiAC8AdABhAGIAbABlADMANkChF6qpHbBOQKVDM0tXCjk/5NT987ZFpgEAAAAUAGQAYgAvAHQAYQBiAGwAZQAzADEAAAAAAAAAAAAAAAAAAAAAP+SbpeNT99MBAAAAEgBkAGIALwB0AGEAYgBsAGUAOQAAAAAAAAAAAAAAAAAAAAA/4j1wo9cKQQEAAAAUAGQAYgAvAHQAYQBiAGwAZQA0ADZAr8eq0PMFrUCHGljMUlFuP+UGJN0vGqQBAAAAEgBkAGIALwB0AGEAYgBsAGUANkCwVRmoteuBQLJG3em/ZTs/2k3S8an77QEAAAAUAGQAYgAvAHQAYQBiAGwAZQAzADhAebToLbXRFkBaMCDN94jiP+SLQ5WBBikBAAAAFABkAGIALwB0AGEAYgBsAGUAMgA2QJK8o+n+NTtAMt3gCg/u5j/a0OVgQYk9AQAAABQAZABiAC8AdABhAGIAbABlADIAMkBOe7wQQf3QQHi5mg0vyY4/4DlYEGJN1gEAAAAUAGQAYgAvAHQAYQBiAGwAZQAzADJApHmIiut790CkAVVqq2CzP+JeNT987ZUBAAAAFABkAGIALwB0AGEAYgBsAGUAMQA4QJWMgct+IwdAc9ERCpGioT/blYEGJN01AQAAABQAZABiAC8AdABhAGIAbABlADUAMkB4tadNLa59QG2htQ/NtdE/33ztkWhytwEAAAAUAGQAYgAvAHQAYQBiAGwAZQAxADZAhiczS9Cj00Ca2maOUljAP+P3ztkWhy8BAAAAFABkAGIALwB0AGEAYgBsAGUANAAwQHm+FI26tY2/2L8ADTKqoD/kOVgQYk3XAQAAABQAZABiAC8AdABhAGIAbABlADMAMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAASAGQAYgAvAHQAYQBiAGwAZQAyQKHvmamQ2m9ArlrM0DBtJj/k5WBBiTdQAQAAABQAZABiAC8AdABhAGIAbABlADIANQAAAAAAAAAAAAAAAAAAAAA/44UeuFHriQEAAAAUAGQAYgAvAHQAYQBiAGwAZQAyADhAk8Bmaoi/GUCqSXeOBQx8P9JN0vGp++sBAAAAEgBkAGIALwB0AGEAYgBsAGUAMUBQQAAIqqqjQFEAAAkREQk/2i0OVgQYmQEAAAAUAGQAYgAvAHQAYQBiAGwAZQAxADMAAAAAAAAAAAAAAAAAAAAAP+dLxqfvnbcBAAAAFABkAGIALwB0AGEAYgBsAGUANAA0QK3RAA/m7uJAmcBETbvgFj/i4UeuFHrlAQAAABQAZABiAC8AdABhAGIAbABlADMANECk2pmrH0DTQJp7VW4fpPQ/5MSbpeNT/AEAAAAUAGQAYgAvAHQAYQBiAGwAZQA1ADRArSHu74mQakClj4iLf8A5P+QYk3S8aoMBAAAAFABkAGIALwB0AGEAYgBsAGUANgAwQKzD7u9XbkhAkMa4aPKEbz/g3S8an756AQAAABQAZABiAC8AdABhAGIAbABlADQAMkCSKd3pr+3FQIhPd4z3LqA/4ItDlYEGKAEAAAAUAGQAYgAvAHQAYQBiAGwAZQA1ADhAn10RELorJUBkxVULE+kHP+LpeNT987oBAAAAFABkAGIALwB0AGEAYgBsAGUAMgAxAAAAAAAAAAAAAAAAAAAAAD/npeNT987eAQAAABQAZABiAC8AdABhAGIAbABlADEAMQAAAAAAAAAAAAAAAAAAAAA/4n752yLQ6QEAAAAUAGQAYgAvAHQAYQBiAGwAZQAyADBApDfu6sh/XUCTnREqdeb3P+B64UeuFH4BAAAAFABkAGIALwB0AGEAYgBsAGUANQA2QKn43e3aD+RAmzzu7oblwD/gxJul41P7AQAAABQAZABiAC8AdABhAGIAbABlADIANwAAAAAAAAAAAAAAAAAAAAA/4+dsi0OVhQEAAAASAGQAYgAvAHQAYQBiAGwAZQAzAAAAAAAAAAAAAAAAAAAAAD/nfO2RaHK1AQAAABQAZABiAC8AdABhAGIAbABlADEAMkCaEzNN6BtKQKtwqq6ifRY/0crAgxJumwE=]]>
+      </Layout>
+    </View>
+    <View Name="Brands">
+      <Layout>
+        <![CDATA[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]]>
+      </Layout>
+    </View>
+    <View Name="SalfatixUsers">
+      <Layout>
+        <![CDATA[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]]>
+      </Layout>
+    </View>
+    <View Name="Influencers">
+      <Layout>
+        <![CDATA[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]]>
+      </Layout>
+    </View>
+    <View Name="Campaigns">
+      <Layout>
+        <![CDATA[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]]>
+      </Layout>
+    </View>
+  </Views>
+</Schema>

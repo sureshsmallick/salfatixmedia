@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="../">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="reference/index.html">Reference</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="reference/api.html">API reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/theme/index.html">Theme reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_conditions.html">Theme conditions</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_config_json.html">theme.config.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_scss_json_file.html">theme.scss.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_variables.html">Theme variables reference</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/grunt/index.html">Grunt reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/grunt/configure_compilation.html">Configure your compilation</a>
+            
+            <a class="btn btn-sidebar " href="reference/grunt/fix_configuration_issues.html">Fix configuration issues</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/project/index.html">Project reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/project/project_directory.html">Project directory</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/customization_project.html">Customization project</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets.html">Widgets</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_js_file.html">Widget JavaScript file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_template_file.html">Widget template file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_scss_file.html">Widget scss file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets_with_modelhelper.html">Widgets with Modelhelper</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/deliverables.html">Deliverables</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/upgrading/index.html">Upgrading</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/bootstrap.html">Application bootstrap</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/compatibility.html">Compatibility</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/cookies.html">Use of cookies</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/customization_migration.html">Customization migration</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deploy-runtime-on-gas..html">Deploy runtime on GAS</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deployment-portal.html">Deploy runtime with Portal</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/local_storage.html">Local storage</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.10.html">Upgrade to 3.10</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="source">
+
+  <a class="btn btn-default btn-xs" href="classes/classes.ComboBoxWidget.html"><i class="glyphicon glyphicon-link"></i> view class doc</a>
+<section class="source-code">
+    <article>
+        <pre class="hljs"><span class="line-number"><span class="number" id="line_1">1</span><span class="number" id="line_2">2</span><span class="number" id="line_3">3</span><span class="number" id="line_4">4</span><span class="number" id="line_5">5</span><span class="number" id="line_6">6</span><span class="number" id="line_7">7</span><span class="number" id="line_8">8</span><span class="number" id="line_9">9</span><span class="number" id="line_10">10</span><span class="number" id="line_11">11</span><span class="number" id="line_12">12</span><span class="number" id="line_13">13</span><span class="number" id="line_14">14</span><span class="number" id="line_15">15</span><span class="number" id="line_16">16</span><span class="number" id="line_17">17</span><span class="number" id="line_18">18</span><span class="number" id="line_19">19</span><span class="number" id="line_20">20</span><span class="number" id="line_21">21</span><span class="number" id="line_22">22</span><span class="number" id="line_23">23</span><span class="number" id="line_24">24</span><span class="number" id="line_25">25</span><span class="number" id="line_26">26</span><span class="number" id="line_27">27</span><span class="number" id="line_28">28</span><span class="number" id="line_29">29</span><span class="number" id="line_30">30</span><span class="number" id="line_31">31</span><span class="number" id="line_32">32</span><span class="number" id="line_33">33</span><span class="number" id="line_34">34</span><span class="number" id="line_35">35</span><span class="number" id="line_36">36</span><span class="number" id="line_37">37</span><span class="number" id="line_38">38</span><span class="number" id="line_39">39</span><span class="number" id="line_40">40</span><span class="number" id="line_41">41</span><span class="number" id="line_42">42</span><span class="number" id="line_43">43</span><span class="number" id="line_44">44</span><span class="number" id="line_45">45</span><span class="number" id="line_46">46</span><span class="number" id="line_47">47</span><span class="number" id="line_48">48</span><span class="number" id="line_49">49</span><span class="number" id="line_50">50</span><span class="number" id="line_51">51</span><span class="number" id="line_52">52</span><span class="number" id="line_53">53</span><span class="number" id="line_54">54</span><span class="number" id="line_55">55</span><span class="number" id="line_56">56</span><span class="number" id="line_57">57</span><span class="number" id="line_58">58</span><span class="number" id="line_59">59</span><span class="number" id="line_60">60</span><span class="number" id="line_61">61</span><span class="number" id="line_62">62</span><span class="number" id="line_63">63</span><span class="number" id="line_64">64</span><span class="number" id="line_65">65</span><span class="number" id="line_66">66</span><span class="number" id="line_67">67</span><span class="number" id="line_68">68</span><span class="number" id="line_69">69</span><span class="number" id="line_70">70</span><span class="number" id="line_71">71</span><span class="number" id="line_72">72</span><span class="number" id="line_73">73</span><span class="number" id="line_74">74</span><span class="number" id="line_75">75</span><span class="number" id="line_76">76</span><span class="number" id="line_77">77</span><span class="number" id="line_78">78</span><span class="number" id="line_79">79</span><span class="number" id="line_80">80</span><span class="number" id="line_81">81</span><span class="number" id="line_82">82</span><span class="number" id="line_83">83</span><span class="number" id="line_84">84</span><span class="number" id="line_85">85</span><span class="number" id="line_86">86</span><span class="number" id="line_87">87</span><span class="number" id="line_88">88</span><span class="number" id="line_89">89</span><span class="number" id="line_90">90</span><span class="number" id="line_91">91</span><span class="number" id="line_92">92</span><span class="number" id="line_93">93</span><span class="number" id="line_94">94</span><span class="number" id="line_95">95</span><span class="number" id="line_96">96</span><span class="number" id="line_97">97</span><span class="number" id="line_98">98</span><span class="number" id="line_99">99</span><span class="number" id="line_100">100</span><span class="number" id="line_101">101</span><span class="number" id="line_102">102</span><span class="number" id="line_103">103</span><span class="number" id="line_104">104</span><span class="number" id="line_105">105</span><span class="number" id="line_106">106</span><span class="number" id="line_107">107</span><span class="number" id="line_108">108</span><span class="number" id="line_109">109</span><span class="number" id="line_110">110</span><span class="number" id="line_111">111</span><span class="number" id="line_112">112</span><span class="number" id="line_113">113</span><span class="number" id="line_114">114</span><span class="number" id="line_115">115</span><span class="number" id="line_116">116</span><span class="number" id="line_117">117</span><span class="number" id="line_118">118</span><span class="number" id="line_119">119</span><span class="number" id="line_120">120</span><span class="number" id="line_121">121</span><span class="number" id="line_122">122</span><span class="number" id="line_123">123</span><span class="number" id="line_124">124</span><span class="number" id="line_125">125</span><span class="number" id="line_126">126</span><span class="number" id="line_127">127</span><span class="number" id="line_128">128</span><span class="number" id="line_129">129</span><span class="number" id="line_130">130</span><span class="number" id="line_131">131</span><span class="number" id="line_132">132</span><span class="number" id="line_133">133</span><span class="number" id="line_134">134</span><span class="number" id="line_135">135</span><span class="number" id="line_136">136</span><span class="number" id="line_137">137</span><span class="number" id="line_138">138</span><span class="number" id="line_139">139</span><span class="number" id="line_140">140</span><span class="number" id="line_141">141</span><span class="number" id="line_142">142</span><span class="number" id="line_143">143</span><span class="number" id="line_144">144</span><span class="number" id="line_145">145</span><span class="number" id="line_146">146</span><span class="number" id="line_147">147</span><span class="number" id="line_148">148</span><span class="number" id="line_149">149</span><span class="number" id="line_150">150</span><span class="number" id="line_151">151</span><span class="number" id="line_152">152</span><span class="number" id="line_153">153</span><span class="number" id="line_154">154</span><span class="number" id="line_155">155</span><span class="number" id="line_156">156</span><span class="number" id="line_157">157</span><span class="number" id="line_158">158</span><span class="number" id="line_159">159</span><span class="number" id="line_160">160</span><span class="number" id="line_161">161</span><span class="number" id="line_162">162</span><span class="number" id="line_163">163</span><span class="number" id="line_164">164</span><span class="number" id="line_165">165</span><span class="number" id="line_166">166</span><span class="number" id="line_167">167</span><span class="number" id="line_168">168</span><span class="number" id="line_169">169</span><span class="number" id="line_170">170</span><span class="number" id="line_171">171</span><span class="number" id="line_172">172</span><span class="number" id="line_173">173</span><span class="number" id="line_174">174</span><span class="number" id="line_175">175</span><span class="number" id="line_176">176</span><span class="number" id="line_177">177</span><span class="number" id="line_178">178</span><span class="number" id="line_179">179</span><span class="number" id="line_180">180</span><span class="number" id="line_181">181</span><span class="number" id="line_182">182</span><span class="number" id="line_183">183</span><span class="number" id="line_184">184</span><span class="number" id="line_185">185</span><span class="number" id="line_186">186</span><span class="number" id="line_187">187</span><span class="number" id="line_188">188</span><span class="number" id="line_189">189</span><span class="number" id="line_190">190</span><span class="number" id="line_191">191</span><span class="number" id="line_192">192</span><span class="number" id="line_193">193</span><span class="number" id="line_194">194</span><span class="number" id="line_195">195</span><span class="number" id="line_196">196</span><span class="number" id="line_197">197</span><span class="number" id="line_198">198</span><span class="number" id="line_199">199</span><span class="number" id="line_200">200</span><span class="number" id="line_201">201</span><span class="number" id="line_202">202</span><span class="number" id="line_203">203</span><span class="number" id="line_204">204</span><span class="number" id="line_205">205</span><span class="number" id="line_206">206</span><span class="number" id="line_207">207</span><span class="number" id="line_208">208</span><span class="number" id="line_209">209</span><span class="number" id="line_210">210</span><span class="number" id="line_211">211</span><span class="number" id="line_212">212</span><span class="number" id="line_213">213</span><span class="number" id="line_214">214</span><span class="number" id="line_215">215</span><span class="number" id="line_216">216</span><span class="number" id="line_217">217</span><span class="number" id="line_218">218</span><span class="number" id="line_219">219</span><span class="number" id="line_220">220</span><span class="number" id="line_221">221</span><span class="number" id="line_222">222</span><span class="number" id="line_223">223</span><span class="number" id="line_224">224</span><span class="number" id="line_225">225</span><span class="number" id="line_226">226</span><span class="number" id="line_227">227</span><span class="number" id="line_228">228</span><span class="number" id="line_229">229</span><span class="number" id="line_230">230</span><span class="number" id="line_231">231</span><span class="number" id="line_232">232</span><span class="number" id="line_233">233</span><span class="number" id="line_234">234</span><span class="number" id="line_235">235</span><span class="number" id="line_236">236</span><span class="number" id="line_237">237</span><span class="number" id="line_238">238</span><span class="number" id="line_239">239</span><span class="number" id="line_240">240</span><span class="number" id="line_241">241</span><span class="number" id="line_242">242</span><span class="number" id="line_243">243</span><span class="number" id="line_244">244</span><span class="number" id="line_245">245</span><span class="number" id="line_246">246</span><span class="number" id="line_247">247</span><span class="number" id="line_248">248</span><span class="number" id="line_249">249</span><span class="number" id="line_250">250</span><span class="number" id="line_251">251</span><span class="number" id="line_252">252</span><span class="number" id="line_253">253</span><span class="number" id="line_254">254</span><span class="number" id="line_255">255</span><span class="number" id="line_256">256</span><span class="number" id="line_257">257</span><span class="number" id="line_258">258</span><span class="number" id="line_259">259</span><span class="number" id="line_260">260</span><span class="number" id="line_261">261</span><span class="number" id="line_262">262</span><span class="number" id="line_263">263</span><span class="number" id="line_264">264</span><span class="number" id="line_265">265</span><span class="number" id="line_266">266</span><span class="number" id="line_267">267</span><span class="number" id="line_268">268</span><span class="number" id="line_269">269</span><span class="number" id="line_270">270</span><span class="number" id="line_271">271</span><span class="number" id="line_272">272</span><span class="number" id="line_273">273</span><span class="number" id="line_274">274</span><span class="number" id="line_275">275</span><span class="number" id="line_276">276</span><span class="number" id="line_277">277</span><span class="number" id="line_278">278</span><span class="number" id="line_279">279</span><span class="number" id="line_280">280</span><span class="number" id="line_281">281</span><span class="number" id="line_282">282</span><span class="number" id="line_283">283</span><span class="number" id="line_284">284</span><span class="number" id="line_285">285</span><span class="number" id="line_286">286</span><span class="number" id="line_287">287</span><span class="number" id="line_288">288</span><span class="number" id="line_289">289</span><span class="number" id="line_290">290</span><span class="number" id="line_291">291</span><span class="number" id="line_292">292</span><span class="number" id="line_293">293</span><span class="number" id="line_294">294</span><span class="number" id="line_295">295</span><span class="number" id="line_296">296</span><span class="number" id="line_297">297</span><span class="number" id="line_298">298</span><span class="number" id="line_299">299</span><span class="number" id="line_300">300</span><span class="number" id="line_301">301</span><span class="number" id="line_302">302</span><span class="number" id="line_303">303</span><span class="number" id="line_304">304</span><span class="number" id="line_305">305</span><span class="number" id="line_306">306</span><span class="number" id="line_307">307</span><span class="number" id="line_308">308</span><span class="number" id="line_309">309</span><span class="number" id="line_310">310</span><span class="number" id="line_311">311</span><span class="number" id="line_312">312</span><span class="number" id="line_313">313</span><span class="number" id="line_314">314</span><span class="number" id="line_315">315</span><span class="number" id="line_316">316</span><span class="number" id="line_317">317</span><span class="number" id="line_318">318</span><span class="number" id="line_319">319</span><span class="number" id="line_320">320</span><span class="number" id="line_321">321</span><span class="number" id="line_322">322</span><span class="number" id="line_323">323</span><span class="number" id="line_324">324</span><span class="number" id="line_325">325</span><span class="number" id="line_326">326</span><span class="number" id="line_327">327</span><span class="number" id="line_328">328</span><span class="number" id="line_329">329</span><span class="number" id="line_330">330</span><span class="number" id="line_331">331</span><span class="number" id="line_332">332</span><span class="number" id="line_333">333</span><span class="number" id="line_334">334</span><span class="number" id="line_335">335</span><span class="number" id="line_336">336</span><span class="number" id="line_337">337</span><span class="number" id="line_338">338</span><span class="number" id="line_339">339</span><span class="number" id="line_340">340</span><span class="number" id="line_341">341</span><span class="number" id="line_342">342</span><span class="number" id="line_343">343</span><span class="number" id="line_344">344</span><span class="number" id="line_345">345</span><span class="number" id="line_346">346</span><span class="number" id="line_347">347</span><span class="number" id="line_348">348</span><span class="number" id="line_349">349</span><span class="number" id="line_350">350</span><span class="number" id="line_351">351</span><span class="number" id="line_352">352</span><span class="number" id="line_353">353</span><span class="number" id="line_354">354</span><span class="number" id="line_355">355</span><span class="number" id="line_356">356</span><span class="number" id="line_357">357</span><span class="number" id="line_358">358</span><span class="number" id="line_359">359</span><span class="number" id="line_360">360</span><span class="number" id="line_361">361</span><span class="number" id="line_362">362</span><span class="number" id="line_363">363</span><span class="number" id="line_364">364</span><span class="number" id="line_365">365</span><span class="number" id="line_366">366</span><span class="number" id="line_367">367</span><span class="number" id="line_368">368</span><span class="number" id="line_369">369</span><span class="number" id="line_370">370</span><span class="number" id="line_371">371</span><span class="number" id="line_372">372</span><span class="number" id="line_373">373</span><span class="number" id="line_374">374</span><span class="number" id="line_375">375</span><span class="number" id="line_376">376</span><span class="number" id="line_377">377</span><span class="number" id="line_378">378</span><span class="number" id="line_379">379</span><span class="number" id="line_380">380</span><span class="number" id="line_381">381</span><span class="number" id="line_382">382</span><span class="number" id="line_383">383</span><span class="number" id="line_384">384</span><span class="number" id="line_385">385</span><span class="number" id="line_386">386</span><span class="number" id="line_387">387</span><span class="number" id="line_388">388</span><span class="number" id="line_389">389</span><span class="number" id="line_390">390</span><span class="number" id="line_391">391</span><span class="number" id="line_392">392</span><span class="number" id="line_393">393</span><span class="number" id="line_394">394</span><span class="number" id="line_395">395</span><span class="number" id="line_396">396</span><span class="number" id="line_397">397</span><span class="number" id="line_398">398</span><span class="number" id="line_399">399</span><span class="number" id="line_400">400</span><span class="number" id="line_401">401</span><span class="number" id="line_402">402</span><span class="number" id="line_403">403</span><span class="number" id="line_404">404</span><span class="number" id="line_405">405</span><span class="number" id="line_406">406</span><span class="number" id="line_407">407</span><span class="number" id="line_408">408</span><span class="number" id="line_409">409</span><span class="number" id="line_410">410</span><span class="number" id="line_411">411</span><span class="number" id="line_412">412</span><span class="number" id="line_413">413</span><span class="number" id="line_414">414</span><span class="number" id="line_415">415</span><span class="number" id="line_416">416</span><span class="number" id="line_417">417</span><span class="number" id="line_418">418</span><span class="number" id="line_419">419</span><span class="number" id="line_420">420</span><span class="number" id="line_421">421</span><span class="number" id="line_422">422</span><span class="number" id="line_423">423</span><span class="number" id="line_424">424</span><span class="number" id="line_425">425</span><span class="number" id="line_426">426</span><span class="number" id="line_427">427</span><span class="number" id="line_428">428</span><span class="number" id="line_429">429</span><span class="number" id="line_430">430</span><span class="number" id="line_431">431</span><span class="number" id="line_432">432</span><span class="number" id="line_433">433</span><span class="number" id="line_434">434</span><span class="number" id="line_435">435</span><span class="number" id="line_436">436</span><span class="number" id="line_437">437</span><span class="number" id="line_438">438</span><span class="number" id="line_439">439</span><span class="number" id="line_440">440</span><span class="number" id="line_441">441</span><span class="number" id="line_442">442</span><span class="number" id="line_443">443</span><span class="number" id="line_444">444</span><span class="number" id="line_445">445</span><span class="number" id="line_446">446</span><span class="number" id="line_447">447</span><span class="number" id="line_448">448</span><span class="number" id="line_449">449</span><span class="number" id="line_450">450</span><span class="number" id="line_451">451</span><span class="number" id="line_452">452</span><span class="number" id="line_453">453</span><span class="number" id="line_454">454</span><span class="number" id="line_455">455</span><span class="number" id="line_456">456</span><span class="number" id="line_457">457</span><span class="number" id="line_458">458</span><span class="number" id="line_459">459</span><span class="number" id="line_460">460</span><span class="number" id="line_461">461</span><span class="number" id="line_462">462</span><span class="number" id="line_463">463</span><span class="number" id="line_464">464</span><span class="number" id="line_465">465</span><span class="number" id="line_466">466</span><span class="number" id="line_467">467</span><span class="number" id="line_468">468</span><span class="number" id="line_469">469</span><span class="number" id="line_470">470</span><span class="number" id="line_471">471</span><span class="number" id="line_472">472</span><span class="number" id="line_473">473</span><span class="number" id="line_474">474</span><span class="number" id="line_475">475</span><span class="number" id="line_476">476</span><span class="number" id="line_477">477</span><span class="number" id="line_478">478</span><span class="number" id="line_479">479</span><span class="number" id="line_480">480</span><span class="number" id="line_481">481</span><span class="number" id="line_482">482</span><span class="number" id="line_483">483</span><span class="number" id="line_484">484</span><span class="number" id="line_485">485</span><span class="number" id="line_486">486</span><span class="number" id="line_487">487</span><span class="number" id="line_488">488</span><span class="number" id="line_489">489</span><span class="number" id="line_490">490</span><span class="number" id="line_491">491</span><span class="number" id="line_492">492</span><span class="number" id="line_493">493</span><span class="number" id="line_494">494</span><span class="number" id="line_495">495</span><span class="number" id="line_496">496</span><span class="number" id="line_497">497</span><span class="number" id="line_498">498</span><span class="number" id="line_499">499</span><span class="number" id="line_500">500</span><span class="number" id="line_501">501</span><span class="number" id="line_502">502</span><span class="number" id="line_503">503</span><span class="number" id="line_504">504</span><span class="number" id="line_505">505</span><span class="number" id="line_506">506</span><span class="number" id="line_507">507</span><span class="number" id="line_508">508</span><span class="number" id="line_509">509</span><span class="number" id="line_510">510</span><span class="number" id="line_511">511</span><span class="number" id="line_512">512</span><span class="number" id="line_513">513</span><span class="number" id="line_514">514</span><span class="number" id="line_515">515</span><span class="number" id="line_516">516</span><span class="number" id="line_517">517</span><span class="number" id="line_518">518</span><span class="number" id="line_519">519</span><span class="number" id="line_520">520</span><span class="number" id="line_521">521</span><span class="number" id="line_522">522</span><span class="number" id="line_523">523</span><span class="number" id="line_524">524</span><span class="number" id="line_525">525</span><span class="number" id="line_526">526</span><span class="number" id="line_527">527</span><span class="number" id="line_528">528</span><span class="number" id="line_529">529</span><span class="number" id="line_530">530</span><span class="number" id="line_531">531</span><span class="number" id="line_532">532</span><span class="number" id="line_533">533</span><span class="number" id="line_534">534</span><span class="number" id="line_535">535</span><span class="number" id="line_536">536</span><span class="number" id="line_537">537</span><span class="number" id="line_538">538</span><span class="number" id="line_539">539</span><span class="number" id="line_540">540</span><span class="number" id="line_541">541</span><span class="number" id="line_542">542</span><span class="number" id="line_543">543</span><span class="number" id="line_544">544</span><span class="number" id="line_545">545</span><span class="number" id="line_546">546</span><span class="number" id="line_547">547</span><span class="number" id="line_548">548</span><span class="number" id="line_549">549</span><span class="number" id="line_550">550</span><span class="number" id="line_551">551</span><span class="number" id="line_552">552</span><span class="number" id="line_553">553</span><span class="number" id="line_554">554</span><span class="number" id="line_555">555</span><span class="number" id="line_556">556</span><span class="number" id="line_557">557</span><span class="number" id="line_558">558</span><span class="number" id="line_559">559</span><span class="number" id="line_560">560</span><span class="number" id="line_561">561</span><span class="number" id="line_562">562</span><span class="number" id="line_563">563</span><span class="number" id="line_564">564</span><span class="number" id="line_565">565</span><span class="number" id="line_566">566</span><span class="number" id="line_567">567</span><span class="number" id="line_568">568</span><span class="number" id="line_569">569</span><span class="number" id="line_570">570</span><span class="number" id="line_571">571</span><span class="number" id="line_572">572</span><span class="number" id="line_573">573</span><span class="number" id="line_574">574</span><span class="number" id="line_575">575</span><span class="number" id="line_576">576</span><span class="number" id="line_577">577</span><span class="number" id="line_578">578</span><span class="number" id="line_579">579</span><span class="number" id="line_580">580</span><span class="number" id="line_581">581</span><span class="number" id="line_582">582</span><span class="number" id="line_583">583</span><span class="number" id="line_584">584</span><span class="number" id="line_585">585</span><span class="number" id="line_586">586</span><span class="number" id="line_587">587</span><span class="number" id="line_588">588</span><span class="number" id="line_589">589</span><span class="number" id="line_590">590</span><span class="number" id="line_591">591</span><span class="number" id="line_592">592</span><span class="number" id="line_593">593</span><span class="number" id="line_594">594</span><span class="number" id="line_595">595</span><span class="number" id="line_596">596</span><span class="number" id="line_597">597</span><span class="number" id="line_598">598</span><span class="number" id="line_599">599</span><span class="number" id="line_600">600</span><span class="number" id="line_601">601</span><span class="number" id="line_602">602</span><span class="number" id="line_603">603</span><span class="number" id="line_604">604</span><span class="number" id="line_605">605</span><span class="number" id="line_606">606</span><span class="number" id="line_607">607</span><span class="number" id="line_608">608</span><span class="number" id="line_609">609</span><span class="number" id="line_610">610</span><span class="number" id="line_611">611</span><span class="number" id="line_612">612</span><span class="number" id="line_613">613</span><span class="number" id="line_614">614</span><span class="number" id="line_615">615</span><span class="number" id="line_616">616</span><span class="number" id="line_617">617</span><span class="number" id="line_618">618</span><span class="number" id="line_619">619</span><span class="number" id="line_620">620</span><span class="number" id="line_621">621</span><span class="number" id="line_622">622</span><span class="number" id="line_623">623</span><span class="number" id="line_624">624</span><span class="number" id="line_625">625</span><span class="number" id="line_626">626</span><span class="number" id="line_627">627</span><span class="number" id="line_628">628</span><span class="number" id="line_629">629</span><span class="number" id="line_630">630</span><span class="number" id="line_631">631</span><span class="number" id="line_632">632</span><span class="number" id="line_633">633</span><span class="number" id="line_634">634</span><span class="number" id="line_635">635</span><span class="number" id="line_636">636</span><span class="number" id="line_637">637</span><span class="number" id="line_638">638</span><span class="number" id="line_639">639</span><span class="number" id="line_640">640</span><span class="number" id="line_641">641</span><span class="number" id="line_642">642</span><span class="number" id="line_643">643</span><span class="number" id="line_644">644</span><span class="number" id="line_645">645</span><span class="number" id="line_646">646</span><span class="number" id="line_647">647</span><span class="number" id="line_648">648</span><span class="number" id="line_649">649</span><span class="number" id="line_650">650</span><span class="number" id="line_651">651</span><span class="number" id="line_652">652</span><span class="number" id="line_653">653</span><span class="number" id="line_654">654</span><span class="number" id="line_655">655</span><span class="number" id="line_656">656</span><span class="number" id="line_657">657</span><span class="number" id="line_658">658</span><span class="number" id="line_659">659</span><span class="number" id="line_660">660</span><span class="number" id="line_661">661</span><span class="number" id="line_662">662</span><span class="number" id="line_663">663</span><span class="number" id="line_664">664</span><span class="number" id="line_665">665</span><span class="number" id="line_666">666</span><span class="number" id="line_667">667</span><span class="number" id="line_668">668</span><span class="number" id="line_669">669</span><span class="number" id="line_670">670</span><span class="number" id="line_671">671</span><span class="number" id="line_672">672</span><span class="number" id="line_673">673</span><span class="number" id="line_674">674</span><span class="number" id="line_675">675</span><span class="number" id="line_676">676</span><span class="number" id="line_677">677</span><span class="number" id="line_678">678</span><span class="number" id="line_679">679</span><span class="number" id="line_680">680</span><span class="number" id="line_681">681</span><span class="number" id="line_682">682</span><span class="number" id="line_683">683</span><span class="number" id="line_684">684</span><span class="number" id="line_685">685</span><span class="number" id="line_686">686</span><span class="number" id="line_687">687</span><span class="number" id="line_688">688</span><span class="number" id="line_689">689</span><span class="number" id="line_690">690</span><span class="number" id="line_691">691</span><span class="number" id="line_692">692</span><span class="number" id="line_693">693</span><span class="number" id="line_694">694</span><span class="number" id="line_695">695</span><span class="number" id="line_696">696</span><span class="number" id="line_697">697</span><span class="number" id="line_698">698</span><span class="number" id="line_699">699</span><span class="number" id="line_700">700</span><span class="number" id="line_701">701</span><span class="number" id="line_702">702</span><span class="number" id="line_703">703</span><span class="number" id="line_704">704</span><span class="number" id="line_705">705</span><span class="number" id="line_706">706</span><span class="number" id="line_707">707</span><span class="number" id="line_708">708</span><span class="number" id="line_709">709</span><span class="number" id="line_710">710</span><span class="number" id="line_711">711</span><span class="number" id="line_712">712</span><span class="number" id="line_713">713</span><span class="number" id="line_714">714</span><span class="number" id="line_715">715</span><span class="number" id="line_716">716</span><span class="number" id="line_717">717</span><span class="number" id="line_718">718</span><span class="number" id="line_719">719</span><span class="number" id="line_720">720</span><span class="number" id="line_721">721</span><span class="number" id="line_722">722</span><span class="number" id="line_723">723</span><span class="number" id="line_724">724</span><span class="number" id="line_725">725</span><span class="number" id="line_726">726</span><span class="number" id="line_727">727</span><span class="number" id="line_728">728</span><span class="number" id="line_729">729</span><span class="number" id="line_730">730</span><span class="number" id="line_731">731</span><span class="number" id="line_732">732</span><span class="number" id="line_733">733</span><span class="number" id="line_734">734</span><span class="number" id="line_735">735</span><span class="number" id="line_736">736</span><span class="number" id="line_737">737</span><span class="number" id="line_738">738</span><span class="number" id="line_739">739</span><span class="number" id="line_740">740</span><span class="number" id="line_741">741</span></span><code><span class="hljs-comment">/// FOURJS_START_COPYRIGHT(D,2015)</span>
+<span class="hljs-comment">/// Property of Four Js*</span>
+<span class="hljs-comment">/// (c) Copyright Four Js 2015, 2019. All Rights Reserved.</span>
+<span class="hljs-comment">/// * Trademark of Four Js Development Tools Europe Ltd</span>
+<span class="hljs-comment">///   in the United States and elsewhere</span>
+<span class="hljs-comment">/// </span>
+<span class="hljs-comment">/// This file can be modified by licensees according to the</span>
+<span class="hljs-comment">/// product manual.</span>
+<span class="hljs-comment">/// FOURJS_END_COPYRIGHT</span>
+<span class="hljs-meta">
+'use strict'</span>;
+
+modulum(<span class="hljs-string">'ComboBoxWidget'</span>, [<span class="hljs-string">'FieldWidgetBase'</span>, <span class="hljs-string">'WidgetFactory'</span>],
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context, cls</span>) </span>{
+
+    <span class="hljs-comment">/**
+     * Combobox widget.
+     * @class ComboBoxWidget
+     * @memberOf classes
+     * @extends classes.FieldWidgetBase
+     * @publicdoc Widgets
+     */</span>
+
+    cls.ComboBoxWidget = context.oo.Class(cls.FieldWidgetBase, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$super</span>) </span>{
+      <span class="hljs-keyword">return</span> <span class="hljs-comment">/** @lends classes.ComboBoxWidget.prototype */</span> {
+        <span class="hljs-attr">__name</span>: <span class="hljs-string">'ComboBoxWidget'</span>,
+
+        <span class="hljs-comment">/** @type {string} */</span>
+        __dataContentPlaceholderSelector: <span class="hljs-string">'.gbc_dataContentPlaceholder'</span>,
+        <span class="hljs-comment">/** @type {classes.EditWidget}*/</span>
+        _editWidget: <span class="hljs-literal">null</span>,
+        <span class="hljs-comment">/** @type {classes.ListDropDownWidget} */</span>
+        _dropDown: <span class="hljs-literal">null</span>,
+        <span class="hljs-comment">/** @type {string} */</span>
+        _typedLetters: <span class="hljs-string">""</span>,
+        <span class="hljs-comment">/** @function */</span>
+        _typedLettersCacheHandler: <span class="hljs-literal">null</span>,
+        <span class="hljs-comment">/** @function */</span>
+        _focusHandler: <span class="hljs-literal">null</span>,
+        <span class="hljs-comment">/** @function */</span>
+        _editFocusHandler: <span class="hljs-literal">null</span>,
+        <span class="hljs-comment">/** @function */</span>
+        _dropDownSelectHandler: <span class="hljs-literal">null</span>,
+        <span class="hljs-comment">/** @function */</span>
+        _visibilityChangeHandler: <span class="hljs-literal">null</span>,
+
+        <span class="hljs-comment">/** @type {HTMLElement} */</span>
+        _toggleIcon: <span class="hljs-literal">null</span>,
+
+        <span class="hljs-comment">/** @type {string} */</span>
+        _placeholderText: <span class="hljs-string">''</span>,
+
+        <span class="hljs-comment">/** @type {string} */</span>
+        _currentValue: <span class="hljs-string">""</span>,
+        <span class="hljs-comment">/** @type {string} */</span>
+        _lastVMValue: <span class="hljs-string">""</span>,
+        <span class="hljs-comment">/** @type {boolean} */</span>
+        _allowMultipleValues: <span class="hljs-literal">false</span>,
+
+        <span class="hljs-comment">/**
+         * Is the combobox query editable?
+         * @type {boolean}
+         */</span>
+        _isQueryEditable: <span class="hljs-literal">null</span>,
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        _initLayout: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>._ignoreLayout) {
+            <span class="hljs-keyword">this</span>._layoutInformation = <span class="hljs-keyword">new</span> cls.LayoutInformation(<span class="hljs-keyword">this</span>);
+            <span class="hljs-keyword">this</span>._layoutEngine = <span class="hljs-keyword">new</span> cls.ComboBoxLayoutEngine(<span class="hljs-keyword">this</span>);
+            <span class="hljs-keyword">this</span>._layoutInformation.setReservedDecorationSpace(<span class="hljs-number">2</span>);
+            <span class="hljs-keyword">this</span>._layoutInformation.setSingleLineContentOnly(<span class="hljs-literal">true</span>);
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * Bind all events listeners on combobox and create the combobox dropdown
+         * @inheritDoc
+         */</span>
+        _initElement: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $<span class="hljs-keyword">super</span>._initElement.call(<span class="hljs-keyword">this</span>);
+
+          <span class="hljs-keyword">this</span>._toggleIcon = <span class="hljs-keyword">this</span>.getElement().querySelector(<span class="hljs-string">"i.toggle"</span>);
+
+          <span class="hljs-keyword">this</span>.setStyle(<span class="hljs-string">'i.toggle'</span>, {
+            <span class="hljs-string">'min-width'</span>: (<span class="hljs-built_in">window</span>.scrollBarSize) + <span class="hljs-string">'px'</span>,
+          });
+
+          <span class="hljs-keyword">this</span>._editWidget = cls.WidgetFactory.createWidget(<span class="hljs-string">'Edit'</span>, <span class="hljs-keyword">this</span>.getBuildParameters());
+          <span class="hljs-keyword">this</span>._editWidget.setFocusable(<span class="hljs-literal">false</span>);
+          <span class="hljs-keyword">this</span>._editWidget.setParentWidget(<span class="hljs-keyword">this</span>);
+          <span class="hljs-keyword">this</span>._element.prependChild(<span class="hljs-keyword">this</span>._editWidget.getElement());
+
+          <span class="hljs-keyword">this</span>._dropDown = cls.WidgetFactory.createWidget(<span class="hljs-string">'ListDropDown'</span>, <span class="hljs-keyword">this</span>.getBuildParameters());
+          <span class="hljs-keyword">this</span>._dropDown.setParentWidget(<span class="hljs-keyword">this</span>);
+          <span class="hljs-keyword">this</span>._dropDown.fallbackMaxHeight = <span class="hljs-number">300</span>;
+          <span class="hljs-keyword">this</span>._dropDown.hide();
+          <span class="hljs-keyword">this</span>._dropDownSelectHandler = <span class="hljs-keyword">this</span>._dropDown.when(context.constants.widgetEvents.select, <span class="hljs-keyword">this</span>._onSelectValue.bind(<span class="hljs-keyword">this</span>));
+          <span class="hljs-keyword">this</span>._focusHandler = <span class="hljs-keyword">this</span>.when(context.constants.widgetEvents.focus, <span class="hljs-keyword">this</span>._onFocus.bind(<span class="hljs-keyword">this</span>));
+          <span class="hljs-keyword">this</span>._dropDown.onClose(<span class="hljs-keyword">this</span>._onFocus.bind(<span class="hljs-keyword">this</span>));
+          <span class="hljs-keyword">this</span>._dropDown.onClose(<span class="hljs-keyword">this</span>._onClose.bind(<span class="hljs-keyword">this</span>));
+
+          <span class="hljs-keyword">this</span>._editWidget._inputElement.on(<span class="hljs-string">'blur.ComboBoxWidget'</span>, <span class="hljs-keyword">this</span>._onBlur.bind(<span class="hljs-keyword">this</span>));
+          <span class="hljs-keyword">this</span>._editFocusHandler = <span class="hljs-keyword">this</span>._editWidget.when(context.constants.widgetEvents.requestFocus, <span class="hljs-keyword">this</span>._onEditRequestFocus.bind(
+            <span class="hljs-keyword">this</span>));
+
+          <span class="hljs-keyword">this</span>.setFocusable(<span class="hljs-literal">true</span>);
+
+          <span class="hljs-keyword">this</span>._visibilityChangeHandler = <span class="hljs-keyword">this</span>._dropDown
+            .when(context.constants.widgetEvents.visibilityChange, <span class="hljs-keyword">this</span>._updateEditState.bind(<span class="hljs-keyword">this</span>));
+          <span class="hljs-keyword">this</span>.setAriaAttribute(<span class="hljs-string">"owns"</span>, <span class="hljs-keyword">this</span>._dropDown.getRootClassName());
+          <span class="hljs-keyword">this</span>.setAriaAttribute(<span class="hljs-string">"expanded"</span>, <span class="hljs-string">"false"</span>);
+          <span class="hljs-keyword">this</span>.setAriaAttribute(<span class="hljs-string">"live"</span>, <span class="hljs-string">"polite"</span>);
+          <span class="hljs-keyword">this</span>.setAriaAttribute(<span class="hljs-string">"labelledby"</span>, <span class="hljs-keyword">this</span>._editWidget.getRootClassName());
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        destroy: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._focusHandler) {
+            <span class="hljs-keyword">this</span>._focusHandler();
+            <span class="hljs-keyword">this</span>._focusHandler = <span class="hljs-literal">null</span>;
+          }
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._editFocusHandler) {
+            <span class="hljs-keyword">this</span>._editFocusHandler();
+            <span class="hljs-keyword">this</span>._editFocusHandler = <span class="hljs-literal">null</span>;
+          }
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._dropDownSelectHandler) {
+            <span class="hljs-keyword">this</span>._dropDownSelectHandler();
+            <span class="hljs-keyword">this</span>._dropDownSelectHandler = <span class="hljs-literal">null</span>;
+          }
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._visibilityChangeHandler) {
+            <span class="hljs-keyword">this</span>._visibilityChangeHandler();
+            <span class="hljs-keyword">this</span>._visibilityChangeHandler = <span class="hljs-literal">null</span>;
+          }
+
+          <span class="hljs-keyword">this</span>._editWidget._inputElement.off(<span class="hljs-string">'blur.ComboBoxWidget'</span>);
+
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._dropDown) {
+            <span class="hljs-keyword">this</span>._dropDown.destroy();
+            <span class="hljs-keyword">this</span>._dropDown = <span class="hljs-literal">null</span>;
+          }
+
+          <span class="hljs-keyword">this</span>._typedLettersCacheHandler = <span class="hljs-literal">null</span>;
+
+          <span class="hljs-keyword">this</span>._editWidget.destroy();
+          <span class="hljs-keyword">this</span>._editWidget = <span class="hljs-literal">null</span>;
+          $<span class="hljs-keyword">super</span>.destroy.call(<span class="hljs-keyword">this</span>);
+        },
+
+        <span class="hljs-comment">/**
+         * Set widget mode. Useful when widget have peculiar behavior in certain mode
+         * @param {string} mode the widget mode
+         * @param {boolean} active the active state
+         */</span>
+        setWidgetMode: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">mode, active</span>) </span>{
+          <span class="hljs-keyword">this</span>._allowMultipleValues = mode === <span class="hljs-string">"Construct"</span>;
+          <span class="hljs-keyword">this</span>._dropDown.allowMultipleChoices(<span class="hljs-keyword">this</span>._allowMultipleValues);
+          <span class="hljs-keyword">this</span>._updateEditState();
+          <span class="hljs-keyword">this</span>._updateTextTransform();
+        },
+
+        <span class="hljs-comment">/**
+         * Returns whether or not the user should be able to input data freely
+         * @return {boolean} true if user can input data
+         */</span>
+        canInputText: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._isQueryEditable &amp;&amp; <span class="hljs-keyword">this</span>._allowMultipleValues;
+        },
+
+        <span class="hljs-comment">/**
+         * format the value
+         * @param {string} value value
+         * @return {string} the formatted value
+         * @private
+         */</span>
+        _getFormattedValue: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>) </span>{
+          <span class="hljs-keyword">var</span> allResolved = <span class="hljs-literal">true</span>,
+            values = (value || <span class="hljs-string">""</span>).split(<span class="hljs-string">"|"</span>).map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">itemValue</span>) </span>{
+              <span class="hljs-keyword">var</span> found = <span class="hljs-keyword">this</span>._dropDown.findByValue(itemValue);
+              allResolved = allResolved &amp;&amp; (!!found || itemValue === <span class="hljs-string">""</span>);
+              <span class="hljs-keyword">return</span> found &amp;&amp; found.text || itemValue;
+            }.bind(<span class="hljs-keyword">this</span>));
+          <span class="hljs-keyword">if</span> (values[<span class="hljs-number">0</span>] === <span class="hljs-string">""</span>) {
+            values.splice(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>);
+          }
+          <span class="hljs-keyword">return</span> allResolved ? values.join(<span class="hljs-string">"|"</span>) : value;
+        },
+
+        <span class="hljs-comment">/**
+         * Handler when focus is requested
+         * @param event
+         * @param sender
+         * @param domEvent
+         */</span>
+        _onEditRequestFocus: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event, sender, domEvent</span>) </span>{
+          <span class="hljs-keyword">this</span>.emit(context.constants.widgetEvents.requestFocus, domEvent);
+        },
+
+        <span class="hljs-comment">/**
+         * update the edit value from the widget value
+         * @private
+         */</span>
+        _updateEditValue: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">this</span>._editWidget.setValue(<span class="hljs-keyword">this</span>._getFormattedValue(<span class="hljs-keyword">this</span>._currentValue));
+        },
+        <span class="hljs-comment">/**
+         * update edit availability
+         * @private
+         */</span>
+        _updateEditState: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">var</span> readOnly = <span class="hljs-keyword">this</span>._dropDown.isVisible() || !<span class="hljs-keyword">this</span>.canInputText();
+          <span class="hljs-keyword">this</span>._editWidget.setReadOnly(readOnly);
+          <span class="hljs-keyword">this</span>._editWidget._inputElement.setAttribute(<span class="hljs-string">'contentEditable'</span>, readOnly ? <span class="hljs-string">'false'</span> : <span class="hljs-string">'true'</span>);
+        },
+
+        <span class="hljs-comment">/**
+         * Handler once dropdown is closed
+         * @private
+         */</span>
+        _onClose: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">this</span>._toggleIcon.toggleClass(<span class="hljs-string">"dd-open"</span>, <span class="hljs-keyword">this</span>._dropDown.isVisible());
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        manageMouseClick: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">domEvent</span>) </span>{
+          <span class="hljs-keyword">this</span>._onRequestFocus(domEvent); <span class="hljs-comment">// request focus</span>
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.isEnabled()) {
+            <span class="hljs-keyword">this</span>._dropDown.show();
+            <span class="hljs-keyword">this</span>._toggleIcon.toggleClass(<span class="hljs-string">"dd-open"</span>, <span class="hljs-keyword">this</span>._dropDown.isVisible());
+          }
+          <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+        },
+
+        <span class="hljs-comment">/**
+         * Focus handler
+         * @private
+         */</span>
+        _onFocus: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._editWidget &amp;&amp; <span class="hljs-keyword">this</span>.isEnabled()) {
+            <span class="hljs-keyword">this</span>._editWidget.getInputElement().domFocus();
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * Blur handler
+         * @private
+         */</span>
+        _onBlur: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>._dropDown.isVisible()) {
+            <span class="hljs-keyword">this</span>.emit(context.constants.widgetEvents.blur);
+          } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.hasFocus()) {
+            <span class="hljs-keyword">this</span>._dropDown.hide();
+          }
+        },
+        <span class="hljs-comment">/**
+         * when value is selected in the dropdown
+         * @param event
+         * @param src
+         * @param value
+         * @private
+         */</span>
+        _onSelectValue: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event, src, value</span>) </span>{
+          <span class="hljs-keyword">this</span>.setEditing(<span class="hljs-literal">true</span>);
+          <span class="hljs-keyword">this</span>.setValue(value);
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        managePriorityKeyDown: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">keyString, domKeyEvent, repeat</span>) </span>{
+          <span class="hljs-keyword">var</span> keyProcessed = <span class="hljs-literal">false</span>;
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._dropDown.isVisible()) {
+            keyProcessed = <span class="hljs-keyword">this</span>._dropDown.managePriorityKeyDown(keyString, domKeyEvent, repeat);
+          }
+
+          <span class="hljs-keyword">if</span> (keyProcessed) {
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+          } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> $<span class="hljs-keyword">super</span>.managePriorityKeyDown.call(<span class="hljs-keyword">this</span>, keyString, domKeyEvent, repeat);
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        manageKeyDown: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">keyString, domKeyEvent, repeat</span>) </span>{
+          <span class="hljs-keyword">var</span> keyProcessed = <span class="hljs-literal">false</span>;
+
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.isEnabled()) {
+            <span class="hljs-comment">// we call managePriorityKeyDown method on the closed combobox to select item using same navigation logic</span>
+            keyProcessed = <span class="hljs-keyword">this</span>._dropDown.managePriorityKeyDown(keyString, domKeyEvent, repeat);
+
+            <span class="hljs-keyword">if</span> (!keyProcessed) {
+              <span class="hljs-comment">// auto item preselection by name</span>
+              keyProcessed = <span class="hljs-keyword">this</span>._processKey(domKeyEvent, keyString);
+            }
+          }
+
+          <span class="hljs-keyword">if</span> (keyProcessed) {
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+          } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> $<span class="hljs-keyword">super</span>.manageKeyDown.call(<span class="hljs-keyword">this</span>, keyString, domKeyEvent, repeat);
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * Process one key event
+         * @param {Object} event
+         * @param {string} keyString
+         * @returns {boolean} true if key has been processed, false otherwise
+         * @private
+         */</span>
+        _processKey: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event, keyString</span>) </span>{
+          <span class="hljs-keyword">if</span> (event.which &lt;= <span class="hljs-number">0</span>) { <span class="hljs-comment">// arrows key (for firefox)</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+          }
+          <span class="hljs-keyword">var</span> key = event.gbcKey;
+
+          <span class="hljs-keyword">if</span> (key.length &gt; <span class="hljs-number">1</span>) { <span class="hljs-comment">// we only want single char</span>
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+          }
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._typedLettersCacheHandler) {
+            <span class="hljs-keyword">this</span>._clearTimeout(<span class="hljs-keyword">this</span>._typedLettersCacheHandler);
+            <span class="hljs-keyword">this</span>._typedLettersCacheHandler = <span class="hljs-number">0</span>;
+          }
+          <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>._dropDown.isVisible()) {
+            <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.canInputText()) {
+              <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+            }
+          }
+          <span class="hljs-keyword">var</span> found, lastChar = key.toLocaleLowerCase(),
+            repeating = <span class="hljs-keyword">this</span>._typedLetters[<span class="hljs-keyword">this</span>._typedLetters.length - <span class="hljs-number">1</span>] === lastChar;
+          <span class="hljs-keyword">this</span>._typedLettersCacheHandler = <span class="hljs-keyword">this</span>._registerTimeout(<span class="hljs-keyword">this</span>._clearTypedLettersCache.bind(<span class="hljs-keyword">this</span>), <span class="hljs-number">1000</span>);
+          <span class="hljs-keyword">if</span> (repeating) {
+            found = <span class="hljs-keyword">this</span>._dropDown.findStartingByText(<span class="hljs-keyword">this</span>._typedLetters, <span class="hljs-literal">true</span>);
+            <span class="hljs-keyword">if</span> (found &amp;&amp; found.value === <span class="hljs-keyword">this</span>._currentValue) {
+              found = <span class="hljs-literal">null</span>;
+            }
+          }
+          <span class="hljs-keyword">if</span> (!found || !repeating) {
+            <span class="hljs-keyword">this</span>._typedLetters += lastChar;
+            found = <span class="hljs-keyword">this</span>._dropDown.findStartingByText(<span class="hljs-keyword">this</span>._typedLetters);
+          }
+          <span class="hljs-keyword">if</span> (!found) {
+            <span class="hljs-keyword">this</span>._typedLetters = lastChar;
+            found = <span class="hljs-keyword">this</span>._dropDown.findStartingByText(<span class="hljs-keyword">this</span>._typedLetters);
+          }
+          <span class="hljs-keyword">if</span> (found) {
+            <span class="hljs-keyword">this</span>._dropDown.navigateToItem(found);
+            <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>._dropDown.isVisible()) {
+              <span class="hljs-keyword">this</span>.setEditing(<span class="hljs-keyword">this</span>._oldValue !== found.value);
+              <span class="hljs-keyword">this</span>.setValue(found.value);
+            }
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+          }
+          <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+        },
+
+        <span class="hljs-comment">/**
+         * Clear the cache of typed letters
+         * @private
+         */</span>
+        _clearTypedLettersCache: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">this</span>._typedLettersCacheHandler = <span class="hljs-number">0</span>;
+          <span class="hljs-keyword">this</span>._typedLetters = <span class="hljs-string">""</span>;
+        },
+
+        <span class="hljs-comment">/**
+         * Returns position of current value
+         * @returns {number}
+         * @private
+         */</span>
+        _getCurrentPosition: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._dropDown.indexByValue(<span class="hljs-keyword">this</span>.getValue());
+        },
+
+        <span class="hljs-comment">/**
+         * Get the value of the dropdown list at given position
+         * @param {number} pos - position in the dropdown
+         * @return {*} value at given position
+         * @publicdoc
+         */</span>
+        getValueAtPosition: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">pos</span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._dropDown.getValueAtPosition(pos);
+        },
+
+        <span class="hljs-comment">/**
+         * get the available items
+         * @return {Object[]}
+         */</span>
+        getItems: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._dropDown.getItems();
+        },
+
+        <span class="hljs-comment">/**
+         * set combobox choice(s)
+         * @param {ListDropDownWidgetItem|ListDropDownWidgetItem[]} choices - a single or a list of choices
+         * @publicdoc
+         */</span>
+        setChoices: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">choices</span>) </span>{
+          <span class="hljs-keyword">var</span> list = choices;
+          <span class="hljs-keyword">if</span> (!<span class="hljs-built_in">Array</span>.isArray(choices)) {
+            list = choices ? [choices] : [];
+          }
+          <span class="hljs-keyword">this</span>._dropDown.setItems(list);
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._dropDown.isVisible()) {
+            <span class="hljs-keyword">this</span>._dropDown.setSelectedValues(<span class="hljs-keyword">this</span>.getValue());
+            <span class="hljs-keyword">this</span>._dropDown.setCurrentValue(<span class="hljs-keyword">this</span>.getValue());
+          }
+          <span class="hljs-keyword">this</span>._updateSelectedValue();
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._layoutEngine) {
+            <span class="hljs-keyword">this</span>._layoutEngine.invalidateMeasure();
+          }
+        },
+        <span class="hljs-comment">/**
+         * update edit value
+         * @private
+         */</span>
+        _updateSelectedValue: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">var</span> selectedValue = <span class="hljs-keyword">this</span>.isEditing() ? <span class="hljs-keyword">this</span>._editWidget.getValue() : <span class="hljs-keyword">this</span>._lastVMValue,
+            foundInList = <span class="hljs-keyword">this</span>._dropDown.findByValue(selectedValue);
+          <span class="hljs-keyword">this</span>._currentValue = foundInList &amp;&amp; foundInList.value || <span class="hljs-string">""</span>;
+          <span class="hljs-keyword">if</span> (!foundInList) {
+            <span class="hljs-keyword">this</span>._editWidget.setValue(<span class="hljs-string">''</span>);
+          } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">this</span>._editWidget.setValue(foundInList.text);
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * Display the dropdown
+         * @publicdoc
+         */</span>
+        showDropDown: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">this</span>.emit(context.constants.widgetEvents.requestFocus, <span class="hljs-literal">null</span>);
+          <span class="hljs-keyword">this</span>._dropDown.show();
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        getValue: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">var</span> editValue = <span class="hljs-keyword">this</span>.getEditValue(),
+            formattedValue = <span class="hljs-keyword">this</span>._getFormattedValue(<span class="hljs-keyword">this</span>._currentValue);
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.canInputText() &amp;&amp; !<span class="hljs-keyword">this</span>._dropDown.isVisible() &amp;&amp; editValue !== formattedValue ? editValue : <span class="hljs-keyword">this</span>._currentValue ||
+            <span class="hljs-string">""</span>;
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        getClipboardValue: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">var</span> value = <span class="hljs-keyword">this</span>._dropDown.getCurrentValue();
+          <span class="hljs-keyword">var</span> item = <span class="hljs-keyword">this</span>._dropDown.findByValue(value);
+          <span class="hljs-keyword">return</span> item ? item.text : value;
+        },
+
+        <span class="hljs-comment">/**
+         * get the edit value
+         * @return {string}
+         */</span>
+        getEditValue: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._editWidget &amp;&amp; <span class="hljs-keyword">this</span>._editWidget.getValue() || <span class="hljs-string">""</span>;
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setValue: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value, fromVM</span>) </span>{
+          $<span class="hljs-keyword">super</span>.setValue.call(<span class="hljs-keyword">this</span>, value, fromVM);
+          <span class="hljs-keyword">if</span> (fromVM) {
+            <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._editWidget) {
+              <span class="hljs-keyword">this</span>._editWidget.setEditing(<span class="hljs-literal">false</span>);
+            }
+            <span class="hljs-keyword">this</span>._lastVMValue = value;
+          }
+          <span class="hljs-keyword">this</span>._setValue(value, fromVM);
+        },
+
+        <span class="hljs-comment">/**
+         * Internal setValue used to be inherited correctly by OtherWidget
+         * @param {string} value - the value
+         * @param {boolean} [fromVM] - is value come from VM ?
+         * @private
+         */</span>
+        _setValue: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value, fromVM</span>) </span>{
+          <span class="hljs-keyword">var</span> currentValue, valueChanged = <span class="hljs-literal">false</span>;
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._allowMultipleValues) {
+            <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._dropDown.isVisible()) {
+              <span class="hljs-keyword">if</span> (fromVM) {
+                <span class="hljs-keyword">this</span>._currentValue = value;
+                <span class="hljs-keyword">this</span>._updateEditValue();
+              } <span class="hljs-keyword">else</span> {
+                <span class="hljs-keyword">var</span> values = <span class="hljs-keyword">this</span>._currentValue === <span class="hljs-string">""</span> ? [] : <span class="hljs-keyword">this</span>._currentValue.split(<span class="hljs-string">"|"</span>);
+                <span class="hljs-keyword">var</span> existingIndex = values.indexOf(value);
+                <span class="hljs-keyword">if</span> (existingIndex &gt;= <span class="hljs-number">0</span>) {
+                  values.splice(existingIndex, <span class="hljs-number">1</span>);
+                } <span class="hljs-keyword">else</span> {
+                  values.push(value);
+                }
+                values = <span class="hljs-keyword">this</span>._dropDown.sortValues(values);
+                <span class="hljs-keyword">this</span>._currentValue = values.join(<span class="hljs-string">"|"</span>);
+                valueChanged = <span class="hljs-literal">true</span>;
+                <span class="hljs-keyword">this</span>._updateEditValue();
+              }
+              <span class="hljs-keyword">this</span>._dropDown.setSelectedValues(<span class="hljs-keyword">this</span>._currentValue);
+            } <span class="hljs-keyword">else</span> {
+              currentValue = <span class="hljs-keyword">this</span>._currentValue || <span class="hljs-string">""</span>;
+              <span class="hljs-keyword">if</span> (currentValue !== value) {
+                <span class="hljs-keyword">this</span>._currentValue = value;
+                <span class="hljs-keyword">this</span>._dropDown.setCurrentValue(value);
+                <span class="hljs-keyword">this</span>._updateEditValue();
+                valueChanged = <span class="hljs-literal">true</span>;
+              }
+              <span class="hljs-keyword">if</span> (!fromVM &amp;&amp; valueChanged) {
+                <span class="hljs-keyword">this</span>.emit(context.constants.widgetEvents.change, <span class="hljs-literal">false</span>);
+              }
+            }
+          } <span class="hljs-keyword">else</span> {
+            currentValue = <span class="hljs-keyword">this</span>._currentValue || <span class="hljs-string">""</span>;
+            <span class="hljs-keyword">if</span> (currentValue !== value) {
+              <span class="hljs-keyword">var</span> found = <span class="hljs-keyword">this</span>._dropDown.findByValue(value);
+              <span class="hljs-keyword">this</span>._currentValue = found &amp;&amp; found.value || <span class="hljs-string">""</span>;
+              <span class="hljs-keyword">this</span>._dropDown.setCurrentValue(<span class="hljs-keyword">this</span>._currentValue);
+              <span class="hljs-keyword">this</span>._editWidget.setValue(found ? found.text : <span class="hljs-string">""</span>);
+              valueChanged = <span class="hljs-literal">true</span>;
+            }
+          }
+          <span class="hljs-keyword">if</span> (!fromVM &amp;&amp; valueChanged) {
+            <span class="hljs-keyword">this</span>.emit(context.constants.widgetEvents.change, <span class="hljs-literal">false</span>);
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setTitle: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">title</span>) </span>{
+          <span class="hljs-keyword">this</span>.getElement().setAttribute(<span class="hljs-string">'title'</span>, title);
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        getTitle: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.getElement().getAttribute(<span class="hljs-string">'title'</span>);
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setFocus: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">fromMouse</span>) </span>{
+          $<span class="hljs-keyword">super</span>.setFocus.call(<span class="hljs-keyword">this</span>, fromMouse);
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._editWidget) {
+            <span class="hljs-keyword">this</span>._editWidget.getInputElement().domFocus();
+          } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">this</span>._element.domFocus();
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setEnabled: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">enabled</span>) </span>{
+          $<span class="hljs-keyword">super</span>.setEnabled.call(<span class="hljs-keyword">this</span>, enabled);
+          <span class="hljs-keyword">this</span>._editWidget.setEnabled(enabled);
+          <span class="hljs-keyword">this</span>._updateEditState();
+          <span class="hljs-keyword">this</span>._updateEditValue();
+          <span class="hljs-keyword">this</span>._dropDown.setEnabled(enabled);
+          <span class="hljs-keyword">this</span>._element.toggleClass(<span class="hljs-string">'disabled'</span>, !enabled);
+        },
+
+        <span class="hljs-comment">/**
+         * sets the combobox as query editable
+         * @param {boolean} isQueryEditable
+         */</span>
+        setQueryEditable: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">isQueryEditable</span>) </span>{
+          <span class="hljs-keyword">this</span>._isQueryEditable = isQueryEditable;
+          <span class="hljs-keyword">this</span>._updateEditState();
+          <span class="hljs-keyword">this</span>._updateTextTransform();
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setColor: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">color</span>) </span>{
+          $<span class="hljs-keyword">super</span>.setColor.call(<span class="hljs-keyword">this</span>, color);
+          <span class="hljs-keyword">this</span>._editWidget.setColor(color);
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._dropDown) {
+            <span class="hljs-keyword">this</span>._dropDown.setColor(color);
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        getColor: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._editWidget.getColor();
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        getColorFromStyle: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._editWidget.getColorFromStyle();
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setBackgroundColor: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">color</span>) </span>{
+          $<span class="hljs-keyword">super</span>.setBackgroundColor.call(<span class="hljs-keyword">this</span>, color);
+          <span class="hljs-keyword">this</span>._editWidget.setBackgroundColor(color);
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._dropDown) {
+            <span class="hljs-keyword">this</span>._dropDown.setBackgroundColor(color);
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        getBackgroundColor: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._editWidget.getBackgroundColor();
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setFontWeight: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">weight</span>) </span>{
+          <span class="hljs-keyword">this</span>._editWidget.setFontWeight(weight);
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        getFontWeight: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._editWidget.getFontWeight();
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setFontStyle: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">style</span>) </span>{
+          <span class="hljs-keyword">this</span>._editWidget.setFontStyle(style);
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        getFontStyle: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._editWidget.getFontStyle();
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setTextAlign: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">align</span>) </span>{
+          <span class="hljs-keyword">this</span>._editWidget.setTextAlign(align);
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        getTextAlign: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._editWidget.getTextAlign();
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setTextTransform: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">transform</span>) </span>{
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._textTransform !== transform) {
+            <span class="hljs-keyword">this</span>._textTransform = transform;
+            <span class="hljs-keyword">this</span>._updateTextTransform();
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        getTextTransform: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.canInputText() ? <span class="hljs-keyword">this</span>._textTransform : <span class="hljs-string">"none"</span>;
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        removeTextTransform: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">this</span>._editWidget.removeTextTransform();
+          <span class="hljs-keyword">this</span>._textTransform = <span class="hljs-string">'none'</span>;
+        },
+        <span class="hljs-comment">/**
+         * update text transform behavior
+         */</span>
+        _updateTextTransform: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">var</span> wantedTextTransform = <span class="hljs-keyword">this</span>.canInputText() ? <span class="hljs-keyword">this</span>._textTransform : <span class="hljs-string">"none"</span>;
+          <span class="hljs-keyword">if</span> (wantedTextTransform !== <span class="hljs-keyword">this</span>._editWidget.getTextTransform()) {
+            <span class="hljs-keyword">this</span>._editWidget.removeTextTransform();
+            <span class="hljs-keyword">this</span>._editWidget.setTextTransform(wantedTextTransform);
+          }
+        },
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        getTextDecoration: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._editWidget.getTextDecoration();
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setTextDecoration: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">decoration</span>) </span>{
+          <span class="hljs-keyword">this</span>._editWidget.setTextDecoration(decoration);
+        },
+
+        <span class="hljs-comment">/**
+         * Handle a null item if notNull is not specified
+         * @param {boolean} notNull - combobox accept notNull value?
+         * @publicdoc
+         */</span>
+        setNotNull: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">notNull</span>) </span>{
+          $<span class="hljs-keyword">super</span>.setNotNull.call(<span class="hljs-keyword">this</span>, notNull);
+          <span class="hljs-keyword">this</span>._dropDown.setNotNull(notNull);
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setPlaceHolder: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">placeholder</span>) </span>{
+          <span class="hljs-keyword">this</span>._editWidget.setPlaceHolder(placeholder);
+          <span class="hljs-keyword">this</span>.setAriaAttribute(<span class="hljs-string">"placeholder"</span>, placeholder);
+        }
+      };
+    });
+    cls.WidgetFactory.registerBuilder(<span class="hljs-string">'ComboBox'</span>, cls.ComboBoxWidget);
+  });
+</code><span class="line-number-clear"></span></pre>
+    </article>
+</section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

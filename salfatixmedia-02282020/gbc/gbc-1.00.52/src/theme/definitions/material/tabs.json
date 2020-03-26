@@ -1,0 +1,25 @@
+{
+  "name": "mt-tabs",
+  "type": "group",
+  "contents": [{
+      "name": "mt-tabs-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "mt-tabs-font-size-ratio",
+      "type": "number",
+      "defaultValue": "$theme-font-size-ratio"
+    },
+    {
+      "name": "mt-tabs-tab-z-index",
+      "type": "number",
+      "defaultValue": "$z-index-Normal"
+    },
+    {
+      "name": "mt-tabs-tab-current-z-index",
+      "type": "number",
+      "defaultValue": "$z-index-above-Normal"
+    }
+  ]
+}

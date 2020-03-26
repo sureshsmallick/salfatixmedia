@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a0a" name="managedform" uid="{7c7e7672-9945-41dc-a5ff-0d77e49fd879}">
+  <AGSettings/>
+  <Record joinLeft="campaignproposedusers.cmpprpu_user_id" joinOperator="INNER" joinRight="users.usr_id" masterTable="campaignposts" name="scr_campaignpost_list" uid="{5d6426c8-97fc-43c9-9680-5350ba163d4b}">
+    <RecordField colName="cmppost_id" fieldIdRef="1" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_id" sqlTabName="campaignposts" uid="{43d92828-534f-470f-8051-1d07873d3039}"/>
+    <RecordField colName="cmppost_campaign_id" fieldIdRef="2" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_campaign_id" sqlTabName="campaignposts" uid="{d986a09a-52aa-45f4-aeed-8c03e5a8dbe7}"/>
+    <RecordField colName="cmppost_usr_id" fieldIdRef="3" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_usr_id" sqlTabName="campaignposts" uid="{4ae75974-9be5-41da-97d7-7369f2affcf6}"/>
+    <RecordField colName="cmppost_posttype_id" fieldIdRef="4" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_posttype_id" sqlTabName="campaignposts" uid="{30029a2a-68f2-46f9-b9e0-01b9a32e4bcb}"/>
+    <RecordField colName="cmppost_url" fieldIdRef="5" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_url" sqlTabName="campaignposts" uid="{bb89c960-0fc4-46a1-8c33-b3346649d172}"/>
+    <RecordField colName="cmppost_ispublic" fieldIdRef="6" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ispublic" sqlTabName="campaignposts" uid="{63f908d4-1fe7-4baa-8145-c143280db7b3}"/>
+    <RecordField colName="cmppost_status_id" fieldIdRef="7" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_status_id" sqlTabName="campaignposts" uid="{78e20f7f-04ff-4975-852c-3256488f3afc}"/>
+    <RecordField colName="cmppost_screenshot_post" fieldIdRef="12" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_screenshot_post" sqlTabName="campaignposts" uid="{cac434f3-3779-4a6c-8520-95592abd2e50}"/>
+    <RecordField colName="cmppost_screenshot_stat" fieldIdRef="55" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_screenshot_stat" sqlTabName="campaignposts" uid="{fe6c0cef-a8e9-41c7-b90f-ca1f050072e6}"/>
+    <RecordField colName="cmppost_creationdate" fieldIdRef="8" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_creationdate" sqlTabName="campaignposts" uid="{2504f0f8-32b2-4483-ba75-41cf7d4f9da3}"/>
+    <RecordField colName="cmppost_onlinedate" fieldIdRef="92" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_onlinedate" sqlTabName="campaignposts" uid="{dc0dbcf5-0be6-4a17-ac73-e986cb1b54cf}"/>
+    <RecordField colName="cmppost_lastmetricsdate" fieldIdRef="93" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_lastmetricsdate" sqlTabName="campaignposts" uid="{25aeeff9-0448-49f8-bf41-455dfb24ca55}"/>
+    <RecordField colName="cmppost_youtube_viewcount" fieldIdRef="11" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_youtube_viewcount" sqlTabName="campaignposts" uid="{7c8053e1-226d-4ddd-8977-0422f6cce7b8}"/>
+    <RecordField colName="cmppost_youtube_likecount" fieldIdRef="59" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_youtube_likecount" sqlTabName="campaignposts" uid="{0f6cb269-416c-4f00-ae22-2165f43627b8}"/>
+    <RecordField colName="cmppost_youtube_dislikecount" fieldIdRef="60" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_youtube_dislikecount" sqlTabName="campaignposts" uid="{c2a01428-8054-43b1-8ed4-46ec679e9687}"/>
+    <RecordField colName="cmppost_youtube_favoritecount" fieldIdRef="61" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_youtube_favoritecount" sqlTabName="campaignposts" uid="{aa62a8bb-5a21-41b0-b4dd-36c321edaf25}"/>
+    <RecordField colName="cmppost_youtube_commentcount" fieldIdRef="62" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_youtube_commentcount" sqlTabName="campaignposts" uid="{ca1e5051-c7d5-437c-9f04-b59018ac190e}"/>
+    <RecordField colName="cmppost_ig_likes" fieldIdRef="63" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_likes" sqlTabName="campaignposts" uid="{6c1ad7c8-3a91-4b68-8aec-c1240e0a5593}"/>
+    <RecordField colName="cmppost_ig_comments" fieldIdRef="64" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_comments" sqlTabName="campaignposts" uid="{0a50725f-7344-413e-9e42-3a4bf8ebc4d2}"/>
+    <RecordField colName="cmppost_ig_saved" fieldIdRef="65" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_saved" sqlTabName="campaignposts" uid="{eb87477d-ab86-4a3b-bebc-19e0f12849dd}"/>
+    <RecordField colName="cmppost_ig_profilevisits" fieldIdRef="66" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_profilevisits" sqlTabName="campaignposts" uid="{66e5c9e2-18e2-42f8-a0b1-79747dac933a}"/>
+    <RecordField colName="cmppost_ig_follows" fieldIdRef="67" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_follows" sqlTabName="campaignposts" uid="{be5e7765-740a-454b-a9b1-9eea54bfd1a5}"/>
+    <RecordField colName="cmppost_ig_websiteclicks" fieldIdRef="68" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_websiteclicks" sqlTabName="campaignposts" uid="{405500db-188c-4055-b257-016bf123522f}"/>
+    <RecordField colName="cmppost_ig_discovery" fieldIdRef="69" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_discovery" sqlTabName="campaignposts" uid="{d75fef63-9d93-44a7-831b-383e6ebf7bca}"/>
+    <RecordField colName="cmppost_ig_reach" fieldIdRef="70" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_reach" sqlTabName="campaignposts" uid="{80cc6bc4-7a3c-406d-a902-2b8d92bc462e}"/>
+    <RecordField colName="cmppost_ig_impressions" fieldIdRef="71" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_impressions" sqlTabName="campaignposts" uid="{07561f7f-cb41-4435-88e4-508567ad6a42}"/>
+    <RecordField colName="cmppost_instastory_impressions" fieldIdRef="72" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_impressions" sqlTabName="campaignposts" uid="{284c0bb6-7fba-483f-bbf3-92fa8b8ba6ef}"/>
+    <RecordField colName="cmppost_instastory_reach" fieldIdRef="73" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_reach" sqlTabName="campaignposts" uid="{a46c3c35-1e00-467e-bcf5-b82ef521bebc}"/>
+    <RecordField colName="cmppost_instastory_tapsforward" fieldIdRef="74" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_tapsforward" sqlTabName="campaignposts" uid="{f516fe27-1e6f-4340-a576-c8e3fa9d1793}"/>
+    <RecordField colName="cmppost_instastory_tapsback" fieldIdRef="75" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_tapsback" sqlTabName="campaignposts" uid="{25d3d73f-bf7e-4758-993b-c710208f493d}"/>
+    <RecordField colName="cmppost_instastory_replies" fieldIdRef="76" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_replies" sqlTabName="campaignposts" uid="{21833eac-462e-4ca7-9bde-3157e3635961}"/>
+    <RecordField colName="cmppost_instastory_swipeaway" fieldIdRef="77" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_swipeaway" sqlTabName="campaignposts" uid="{989619c9-2257-461a-97e7-98df65bb1ab7}"/>
+    <RecordField colName="cmppost_instastory_exists" fieldIdRef="78" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_exists" sqlTabName="campaignposts" uid="{01d79e74-540e-4764-9da1-7b35a284499c}"/>
+    <RecordField colName="cmppost_isacceptedbysalfatix" fieldIdRef="88" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_isacceptedbysalfatix" sqlTabName="campaignposts" uid="{43ddfbd1-7174-4f0b-aa87-9b94d2bc9bf0}"/>
+    <RecordField colName="cmppost_isacceptedbybrand" fieldIdRef="84" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_isacceptedbybrand" sqlTabName="campaignposts" uid="{ff04c2bf-961d-4055-8ebc-1534730c9d1c}"/>
+    <RecordField colName="cmppost_filename" fieldIdRef="87" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_filename" sqlTabName="campaignposts" uid="{970482eb-d194-463b-8fe2-939ee9549ece}"/>
+    <RecordField colName="cmppost_postno" fieldIdRef="85" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_postno" sqlTabName="campaignposts" uid="{744b5630-4087-4b49-a94d-921682a0bc2d}"/>
+    <RecordField colName="cmppost_uiorder" fieldIdRef="86" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_uiorder" sqlTabName="campaignposts" uid="{e1c6f42f-690b-402b-8064-7e684e02e819}"/>
+    <RecordField colName="usr_id" fieldIdRef="13" fieldType="TABLE_COLUMN" name="users.usr_id" sqlTabName="users" uid="{7ac26f4d-b025-4d21-8664-36aba033e426}"/>
+    <RecordField colName="usr_gender_id" fieldIdRef="14" fieldType="TABLE_COLUMN" name="users.usr_gender_id" sqlTabName="users" uid="{f36665cf-9598-4367-8bc8-27ebb446e2de}"/>
+    <RecordField colName="usr_firstname" fieldIdRef="15" fieldType="TABLE_COLUMN" name="users.usr_firstname" sqlTabName="users" uid="{750a760e-cdcd-404e-bf35-aa2f768ddfc6}"/>
+    <RecordField colName="usr_lastname" fieldIdRef="16" fieldType="TABLE_COLUMN" name="users.usr_lastname" sqlTabName="users" uid="{1e8e8ce0-810f-40da-825e-827c41f09457}"/>
+    <RecordField colName="usr_birthday" fieldIdRef="17" fieldType="TABLE_COLUMN" name="users.usr_birthday" sqlTabName="users" uid="{09b5f163-803b-434a-a5f6-38174b1b5e67}"/>
+    <RecordField colName="usr_email" fieldIdRef="18" fieldType="TABLE_COLUMN" name="users.usr_email" sqlTabName="users" uid="{d0749dab-b759-49af-8dc1-8141edee9a2d}"/>
+    <RecordField colName="usr_password" fieldIdRef="19" fieldType="TABLE_COLUMN" name="users.usr_password" sqlTabName="users" uid="{8f098a5e-970f-4ffe-b70b-6dbe938a34d0}"/>
+    <RecordField colName="usr_country_id" fieldIdRef="20" fieldType="TABLE_COLUMN" name="users.usr_country_id" sqlTabName="users" uid="{b068b017-6f2f-4fa4-bf87-b429161668a7}"/>
+    <RecordField colName="usr_state_id" fieldIdRef="21" fieldType="TABLE_COLUMN" name="users.usr_state_id" sqlTabName="users" uid="{fc10c831-7734-4fb5-968d-cd47b4cc3020}"/>
+    <RecordField colName="usr_city_id" fieldIdRef="22" fieldType="TABLE_COLUMN" name="users.usr_city_id" sqlTabName="users" uid="{29a99faf-a207-451d-b8dd-c2b96631bc7e}"/>
+    <RecordField colName="usr_address_number" fieldIdRef="23" fieldType="TABLE_COLUMN" name="users.usr_address_number" sqlTabName="users" uid="{3fdc0d54-12ba-4f92-b0a6-b9c91b5c9eb4}"/>
+    <RecordField colName="usr_address_street" fieldIdRef="24" fieldType="TABLE_COLUMN" name="users.usr_address_street" sqlTabName="users" uid="{3d9c15d6-b7c8-4eb5-bae3-53ff02f7573c}"/>
+    <RecordField colName="usr_address_zipcode" fieldIdRef="25" fieldType="TABLE_COLUMN" name="users.usr_address_zipcode" sqlTabName="users" uid="{1125f8a0-d8dd-4a1d-80b6-76c0f1157578}"/>
+    <RecordField colName="usr_address_town" fieldIdRef="26" fieldType="TABLE_COLUMN" name="users.usr_address_town" sqlTabName="users" uid="{8e7fe808-91c7-4602-a066-a9c508e5c7ba}"/>
+    <RecordField colName="usr_address_more" fieldIdRef="27" fieldType="TABLE_COLUMN" name="users.usr_address_more" sqlTabName="users" uid="{f07eed03-afb4-4170-88e0-2fdb3cd83ac0}"/>
+    <RecordField colName="usr_mobile_phone" fieldIdRef="28" fieldType="TABLE_COLUMN" name="users.usr_mobile_phone" sqlTabName="users" uid="{17c98f5d-74ce-4060-9d87-d2a8438f650a}"/>
+    <RecordField colName="usr_instagram_userid" fieldIdRef="29" fieldType="TABLE_COLUMN" name="users.usr_instagram_userid" sqlTabName="users" uid="{db583b1e-e1ca-4ea9-8782-474c7c0e0fc2}"/>
+    <RecordField colName="usr_instagram_username" fieldIdRef="30" fieldType="TABLE_COLUMN" name="users.usr_instagram_username" sqlTabName="users" uid="{27816d63-deac-4079-ad4b-d2c1dd47909b}"/>
+    <RecordField colName="usr_instagram_fullname" fieldIdRef="31" fieldType="TABLE_COLUMN" name="users.usr_instagram_fullname" sqlTabName="users" uid="{bec4fae4-0ee4-402f-b826-b76ef20edd9d}"/>
+    <RecordField colName="usr_instagram_profilepicture" fieldIdRef="32" fieldType="TABLE_COLUMN" name="users.usr_instagram_profilepicture" sqlTabName="users" uid="{c2f6c090-21ed-40a5-bb02-fcd37da2ef5c}"/>
+    <RecordField colName="usr_instagram_biography" fieldIdRef="33" fieldType="TABLE_COLUMN" name="users.usr_instagram_biography" sqlTabName="users" uid="{e2ed0a37-b4dc-42cf-ba2b-6e6651b600c7}"/>
+    <RecordField colName="usr_instagram_website" fieldIdRef="34" fieldType="TABLE_COLUMN" name="users.usr_instagram_website" sqlTabName="users" uid="{dd159aed-ace4-4a17-a96a-536377e8367a}"/>
+    <RecordField colName="usr_instagram_is_private" fieldIdRef="35" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_private" sqlTabName="users" uid="{ab97bb67-9e91-4497-9896-0eba5a01ea3c}"/>
+    <RecordField colName="usr_instagram_is_verified" fieldIdRef="36" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_verified" sqlTabName="users" uid="{1fa8ef0e-0658-4904-8add-e2d888d2fb92}"/>
+    <RecordField colName="usr_instagram_is_business" fieldIdRef="37" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_business" sqlTabName="users" uid="{d30a9ec0-c546-49db-bee6-c5fb72945d10}"/>
+    <RecordField colName="usr_bank_name" fieldIdRef="38" fieldType="TABLE_COLUMN" name="users.usr_bank_name" sqlTabName="users" uid="{5c32933b-88d1-4c6d-8178-9f86f7d48cb3}"/>
+    <RecordField colName="usr_bank_iban" fieldIdRef="39" fieldType="TABLE_COLUMN" name="users.usr_bank_iban" sqlTabName="users" uid="{2501196f-cca2-4d96-98bb-827dc3554fc3}"/>
+    <RecordField colName="usr_bank_swift" fieldIdRef="40" fieldType="TABLE_COLUMN" name="users.usr_bank_swift" sqlTabName="users" uid="{4e232442-425b-487a-835a-ec997cf91737}"/>
+    <RecordField colName="usr_paypal" fieldIdRef="9" fieldType="TABLE_COLUMN" name="users.usr_paypal" sqlTabName="users" uid="{56c29047-2039-4437-9d11-996e6721c0ec}"/>
+    <RecordField colName="usr_mobile_notifications" fieldIdRef="41" fieldType="TABLE_COLUMN" name="users.usr_mobile_notifications" sqlTabName="users" uid="{1e87d4ab-918a-4842-8e34-f5767aa4db27}"/>
+    <RecordField colName="usr_notif_style" fieldIdRef="80" fieldType="TABLE_COLUMN" name="users.usr_notif_style" sqlTabName="users" uid="{6cfc6cb3-2067-40bd-a985-89929988f2df}"/>
+    <RecordField colName="usr_email_notifications" fieldIdRef="42" fieldType="TABLE_COLUMN" name="users.usr_email_notifications" sqlTabName="users" uid="{7c336eda-5338-4511-a7c1-1e7e2c1c3c78}"/>
+    <RecordField colName="usr_email_style" fieldIdRef="81" fieldType="TABLE_COLUMN" name="users.usr_email_style" sqlTabName="users" uid="{ffe6d1ba-195a-4a83-89cd-8f1cfdcd2a63}"/>
+    <RecordField colName="usr_currency_id" fieldIdRef="43" fieldType="TABLE_COLUMN" name="users.usr_currency_id" sqlTabName="users" uid="{4aa7632a-952e-4bd0-8d22-96f0922662fb}"/>
+    <RecordField colName="usr_accountstatus_id" fieldIdRef="44" fieldType="TABLE_COLUMN" name="users.usr_accountstatus_id" sqlTabName="users" uid="{c89d9da2-8ea5-471a-91c6-244d98e16516}"/>
+    <RecordField colName="usr_createdby_id" fieldIdRef="45" fieldType="TABLE_COLUMN" name="users.usr_createdby_id" sqlTabName="users" uid="{18f15700-f27f-4ac7-8214-f3b789eb2f9d}"/>
+    <RecordField colName="usr_creationdate" fieldIdRef="46" fieldType="TABLE_COLUMN" name="users.usr_creationdate" sqlTabName="users" uid="{6bf19812-cd4f-48f8-8ddd-9ae68290c7d6}"/>
+    <RecordField colName="usr_deletiondate" fieldIdRef="47" fieldType="TABLE_COLUMN" name="users.usr_deletiondate" sqlTabName="users" uid="{668da2b6-bdb5-486e-9211-5d2014633f76}"/>
+    <RecordField colName="usr_validationdate" fieldIdRef="48" fieldType="TABLE_COLUMN" name="users.usr_validationdate" sqlTabName="users" uid="{5431eb2e-699f-49c5-8454-8c6272ea77ce}"/>
+    <RecordField colName="usr_canceldate" fieldIdRef="49" fieldType="TABLE_COLUMN" name="users.usr_canceldate" sqlTabName="users" uid="{b24641d7-d311-4543-9bd4-49996b499458}"/>
+    <RecordField colName="usr_suspendeddate" fieldIdRef="50" fieldType="TABLE_COLUMN" name="users.usr_suspendeddate" sqlTabName="users" uid="{2ff3832c-1cfe-4db3-a03f-d9e4e553671f}"/>
+    <RecordField colName="usr_stopdate" fieldIdRef="51" fieldType="TABLE_COLUMN" name="users.usr_stopdate" sqlTabName="users" uid="{9aa70e76-e687-4914-b5fe-98a29d482ec8}"/>
+    <RecordField colName="usr_emailvalidationdate" fieldIdRef="52" fieldType="TABLE_COLUMN" name="users.usr_emailvalidationdate" sqlTabName="users" uid="{e3cefcbf-e807-4a42-a2f6-9065dc6b8fe0}"/>
+    <RecordField colName="usr_lastupdatedate" fieldIdRef="53" fieldType="TABLE_COLUMN" name="users.usr_lastupdatedate" sqlTabName="users" uid="{d3353060-5f99-44de-b11a-2c78ab222f2e}"/>
+    <RecordField colName="usr_lastlogindate" fieldIdRef="54" fieldType="TABLE_COLUMN" name="users.usr_lastlogindate" sqlTabName="users" uid="{69a4155b-db00-44a0-8864-a2b2f91e643f}"/>
+    <RecordField colName="usr_instagram_token" fieldIdRef="79" fieldType="TABLE_COLUMN" name="users.usr_instagram_token" sqlTabName="users" uid="{af1ddec2-faae-4236-b1d4-bf7c3cb0b8d9}"/>
+    <RecordField colName="usr_instagram_profilepicture" fieldIdRef="99" fieldType="COLUMN_LIKE" name="usr_instagram_profilepicture" sqlTabName="users" uid="{1eb1f576-80c4-423d-8304-6ecd0157961b}"/>
+    <RecordField fieldIdRef="58" name="editpost" uid="{53671e3a-198e-4a2f-91fb-1dee35e34049}"/>
+    <RecordField fieldIdRef="10" name="viewpost" uid="{c902e230-648e-4c37-96cc-3fd8e865cea8}"/>
+    <RecordField fieldIdRef="56" name="viewscreenshotpost" uid="{a1880f42-3d62-4143-bc3c-b5775cd64168}"/>
+    <RecordField fieldIdRef="57" name="viewscreenshotstat" uid="{d43ea3ab-6ed8-47e4-943d-5201b1d5e7c6}"/>
+    <RecordField fieldIdRef="82" name="acceptedbysalfatiximage" uid="{59d58094-cf5c-48e3-904d-6d5feefd486c}"/>
+    <RecordField fieldIdRef="83" name="acceptedbybrandimage" uid="{f4f327fc-a6e4-40f7-a8b3-68f52fa6636c}"/>
+    <RecordField fieldIdRef="89" name="ispublicimage" uid="{323d3f59-3304-44b6-95a9-02cb446fc334}"/>
+    <RecordField fieldIdRef="90" name="viewfile" uid="{2eba4624-2373-4d66-98ae-2da52a4c2efa}"/>
+    <RecordField colName="pic_value" fieldIdRef="91" fieldType="TABLE_COLUMN" name="pics.pic_value" sqlTabName="pics" uid="{3bcb5506-2ee7-49b9-abc4-2a5ea8a6056a}"/>
+  </Record>
+  <Record name="Undefined" uid="{e919200e-14b2-46ad-8a6b-e63153ca4e13}">
+    <RecordField fieldIdRef="100" name="ff_formtitle" uid="{3fa36fd5-e7f8-43c1-a9f0-79596e29342d}"/>
+  </Record>
+  <Form gridHeight="42" gridWidth="439" name="form" style="centerwindow" text="Form">
+    <Grid gridHeight="42" gridWidth="439" name="salfatixmedia1" posX="0" posY="0">
+      <HRec gridHeight="1" gridWidth="437" name="hrec1" posX="1" posY="8">
+        <Image action="backtocampaign" autoScale="true" comment="Back to campaign" gridHeight="1" gridWidth="3" image="fa-arrow-circle-left" lstrcomment="true" name="img_back" posX="0" posY="0" sizePolicy="fixed" style="no_border"/>
+        <Spacer gridWidth="206" name="spacer2" posX="4" posY="0"/>
+        <FFLabel fieldId="100" gridHeight="1" gridWidth="14" justify="center" name="ff_formtitle" posX="211" posY="0" style="ff_formtitle" title="fflabel1" widget="FFLabel"/>
+        <Spacer gridWidth="206" name="spacer1" posX="226" posY="0"/>
+        <Image autoScale="true" gridHeight="1" gridWidth="3" name="img_fake" posX="433" posY="0" sizePolicy="fixed" style="no_border"/>
+      </HRec>
+      <Group gridHeight="21" gridWidth="33" name="postactions" posX="1" posY="10" text="Post actions">
+        <Button gridHeight="1" gridWidth="30" name="refresh" posX="1" posY="1" tabIndex="-1" text="Refresh"/>
+        <Label gridHeight="1" gridWidth="30" name="label_validatepost" posX="1" posY="2" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="validatepost" posX="1" posY="3" tabIndex="-1" text="Validate post"/>
+        <Label gridHeight="1" gridWidth="30" name="label_rejectpost" posX="1" posY="4" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="rejectpost" posX="1" posY="5" tabIndex="-1" text="Reject post"/>
+        <Label gridHeight="1" gridWidth="30" name="label_validatepostbybrand" posX="1" posY="6" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="validatepostbybrand" posX="1" posY="7" tabIndex="-1" text="Validate post"/>
+        <Label gridHeight="1" gridWidth="30" name="label_rejectpostbybrand" posX="1" posY="8" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="rejectpostbybrand" posX="1" posY="9" tabIndex="-1" text="Reject post"/>
+        <Label gridHeight="1" gridWidth="30" name="label_sendnotification" posX="1" posY="10" text=""/>
+        <Button comment="Send notification for each influencer who didn&apos;t send any posts or who didn&apos;t send all awaited posts." gridHeight="1" gridWidth="30" name="sendnotification" posX="1" posY="11" tabIndex="-1" text="Request influencer to do post(s)"/>
+        <Label gridHeight="1" gridWidth="30" name="label_reviewprivacy" posX="1" posY="12" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="reviewprivacy" posX="1" posY="13" tabIndex="-1" text="Request influencer to publish this post"/>
+        <Label gridHeight="1" gridWidth="30" name="label_verifiedpublic" posX="1" posY="14" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="verifiedpublic" posX="1" posY="15" tabIndex="-1" text="Click to confirm this post is public"/>
+        <Label gridHeight="1" gridWidth="30" name="label_askpoststatistics" posX="1" posY="16" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="askpoststatistics" posX="1" posY="17" tabIndex="-1" text="Request influencer statistics for this post"/>
+        <Label gridHeight="1" gridWidth="30" name="label_exportstatistics" posX="1" posY="18" text=""/>
+        <Button gridHeight="1" gridWidth="30" name="exportstatistics" posX="1" posY="19" tabIndex="-1" text="Export statistics"/>
+      </Group>
+      <Table gridHeight="21" gridWidth="403" name="salfatixmedia2" posX="35" posY="10" style="campaignpostlist" totalRows="10" unhidableColumns="true" unmovableColumns="true" unsortableColumns="true">
+        <Phantom colName="usr_paypal" fieldId="9" fieldType="TABLE_COLUMN" name="users.usr_paypal" sqlTabName="users" widget="Phantom"/>
+        <FFImage action="editpost" autoScale="true" fieldId="58" gridHeight="1" gridWidth="2" name="editpost" posX="0" posY="0" sizePolicy="fixed" style="no_border" title="" widget="FFImage"/>
+        <FFImage autoScale="true" colName="usr_instagram_profilepicture" fieldId="99" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" height="2" lstrtitle="true" name="usr_instagram_profilepicture" posX="2" posY="0" sizePolicy="fixed" sqlTabName="users" style="no_border" title="Profile" unitHeight="lines" widget="FFImage"/>
+        <Phantom colName="cmppost_id" fieldId="1" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_id" sqlTabName="campaignposts" widget="Phantom"/>
+        <Phantom colName="cmppost_campaign_id" fieldId="2" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_campaign_id" sqlTabName="campaignposts" widget="Phantom"/>
+        <Phantom colName="cmppost_usr_id" fieldId="3" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_usr_id" sqlTabName="campaignposts" widget="Phantom"/>
+        <Phantom colName="cmppost_creationdate" fieldId="8" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_creationdate" sqlTabName="campaignposts" widget="Phantom"/>
+        <FFImage fieldId="82" gridHeight="1" gridWidth="8" name="acceptedbysalfatiximage" posX="10" posY="0" sizePolicy="fixed" style="no_border" title="Proposed" widget="FFImage"/>
+        <FFImage fieldId="83" gridHeight="1" gridWidth="8" name="acceptedbybrandimage" posX="18" posY="0" sizePolicy="fixed" style="no_border" title="Accepted" widget="FFImage"/>
+        <Edit colName="usr_firstname" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" name="users.usr_firstname" posX="26" posY="0" scroll="true" sqlTabName="users" tabIndex="-1" title="First Name" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Edit colName="usr_lastname" fieldId="16" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" name="users.usr_lastname" posX="41" posY="0" scroll="true" sqlTabName="users" tabIndex="-1" title="Last Name" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <ComboBox colName="cmppost_posttype_id" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="14" items="" name="campaignposts.cmppost_posttype_id" posX="56" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="Post Type" widget="ComboBox"/>
+        <Phantom colName="cmppost_status_id" fieldId="7" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_status_id" sqlTabName="campaignposts" widget="Phantom"/>
+        <FFImage action="viewfile" autoScale="true" fieldId="90" gridHeight="1" gridWidth="2" name="viewfile" posX="70" posY="0" sizePolicy="fixed" style="no_border" title="" widget="FFImage"/>
+        <FFImage action="viewfile" autoScale="true" colName="pic_value" fieldId="91" fieldType="TABLE_COLUMN" gridHeight="4" gridWidth="9" name="pics.pic_value" posX="72" posY="0" repeat="false" sizePolicy="fixed" sqlTabName="pics" style="no_border" title="Post Preview" widget="FFImage"/>
+        <FFImage action="viewpost" autoScale="true" fieldId="10" gridHeight="1" gridWidth="2" name="viewpost" posX="81" posY="0" sizePolicy="fixed" style="no_border" title="" widget="FFImage"/>
+        <Edit colName="cmppost_url" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="campaignposts.cmppost_url" posX="83" posY="0" scroll="true" sqlTabName="campaignposts" tabIndex="-1" title="Post Link" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Phantom colName="cmppost_ispublic" fieldId="6" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ispublic" sqlTabName="campaignposts" widget="Phantom"/>
+        <Phantom colName="usr_id" fieldId="13" fieldType="TABLE_COLUMN" name="users.usr_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_gender_id" fieldId="14" fieldType="TABLE_COLUMN" name="users.usr_gender_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_birthday" fieldId="17" fieldType="TABLE_COLUMN" name="users.usr_birthday" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_email" fieldId="18" fieldType="TABLE_COLUMN" name="users.usr_email" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_password" fieldId="19" fieldType="TABLE_COLUMN" name="users.usr_password" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_country_id" fieldId="20" fieldType="TABLE_COLUMN" name="users.usr_country_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_state_id" fieldId="21" fieldType="TABLE_COLUMN" name="users.usr_state_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_city_id" fieldId="22" fieldType="TABLE_COLUMN" name="users.usr_city_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_address_number" fieldId="23" fieldType="TABLE_COLUMN" name="users.usr_address_number" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_address_street" fieldId="24" fieldType="TABLE_COLUMN" name="users.usr_address_street" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_address_zipcode" fieldId="25" fieldType="TABLE_COLUMN" name="users.usr_address_zipcode" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_address_town" fieldId="26" fieldType="TABLE_COLUMN" name="users.usr_address_town" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_address_more" fieldId="27" fieldType="TABLE_COLUMN" name="users.usr_address_more" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_mobile_phone" fieldId="28" fieldType="TABLE_COLUMN" name="users.usr_mobile_phone" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_userid" fieldId="29" fieldType="TABLE_COLUMN" name="users.usr_instagram_userid" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_username" fieldId="30" fieldType="TABLE_COLUMN" name="users.usr_instagram_username" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_fullname" fieldId="31" fieldType="TABLE_COLUMN" name="users.usr_instagram_fullname" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_profilepicture" fieldId="32" fieldType="TABLE_COLUMN" name="users.usr_instagram_profilepicture" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_biography" fieldId="33" fieldType="TABLE_COLUMN" name="users.usr_instagram_biography" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_website" fieldId="34" fieldType="TABLE_COLUMN" name="users.usr_instagram_website" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_is_private" fieldId="35" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_private" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_is_verified" fieldId="36" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_verified" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_is_business" fieldId="37" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_business" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_bank_name" fieldId="38" fieldType="TABLE_COLUMN" name="users.usr_bank_name" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_bank_iban" fieldId="39" fieldType="TABLE_COLUMN" name="users.usr_bank_iban" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_bank_swift" fieldId="40" fieldType="TABLE_COLUMN" name="users.usr_bank_swift" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_mobile_notifications" fieldId="41" fieldType="TABLE_COLUMN" name="users.usr_mobile_notifications" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_email_notifications" fieldId="42" fieldType="TABLE_COLUMN" name="users.usr_email_notifications" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_currency_id" fieldId="43" fieldType="TABLE_COLUMN" name="users.usr_currency_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_accountstatus_id" fieldId="44" fieldType="TABLE_COLUMN" name="users.usr_accountstatus_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_createdby_id" fieldId="45" fieldType="TABLE_COLUMN" name="users.usr_createdby_id" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_creationdate" fieldId="46" fieldType="TABLE_COLUMN" name="users.usr_creationdate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_deletiondate" fieldId="47" fieldType="TABLE_COLUMN" name="users.usr_deletiondate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_validationdate" fieldId="48" fieldType="TABLE_COLUMN" name="users.usr_validationdate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_canceldate" fieldId="49" fieldType="TABLE_COLUMN" name="users.usr_canceldate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_suspendeddate" fieldId="50" fieldType="TABLE_COLUMN" name="users.usr_suspendeddate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_stopdate" fieldId="51" fieldType="TABLE_COLUMN" name="users.usr_stopdate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_emailvalidationdate" fieldId="52" fieldType="TABLE_COLUMN" name="users.usr_emailvalidationdate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_lastupdatedate" fieldId="53" fieldType="TABLE_COLUMN" name="users.usr_lastupdatedate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_lastlogindate" fieldId="54" fieldType="TABLE_COLUMN" name="users.usr_lastlogindate" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_instagram_token" fieldId="79" fieldType="TABLE_COLUMN" name="users.usr_instagram_token" sqlTabName="users" widget="Phantom"/>
+        <FFImage fieldId="89" gridHeight="1" gridWidth="10" name="ispublicimage" posX="113" posY="0" sizePolicy="fixed" title="Post is public ?" widget="FFImage"/>
+        <FFImage action="viewscreenshotpost" autoScale="true" fieldId="56" gridHeight="1" gridWidth="2" name="viewscreenshotpost" posX="123" posY="0" sizePolicy="fixed" style="no_border" title="" widget="FFImage"/>
+        <Edit colName="cmppost_screenshot_post" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="campaignposts.cmppost_screenshot_post" posX="125" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="Publication Drive Link" widget="Edit"/>
+        <FFImage action="viewscreenshotstat" autoScale="true" fieldId="57" gridHeight="1" gridWidth="2" name="viewscreenshotstat" posX="155" posY="0" sizePolicy="fixed" style="no_border" title="" widget="FFImage"/>
+        <Edit colName="cmppost_screenshot_stat" fieldId="55" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="campaignposts.cmppost_screenshot_stat" posX="157" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="Statistics Drive Link" widget="Edit"/>
+        <Edit colName="cmppost_youtube_viewcount" comment="The number of users who have indicated that they liked the video by giving it a positive rating." fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" lstrcomment="true" name="campaignposts.cmppost_youtube_viewcount" posX="187" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="Youtube viewcount" widget="Edit"/>
+        <Edit colName="cmppost_youtube_likecount" comment="The number of times the video has been viewed." fieldId="59" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_youtube_likecount" posX="195" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="Youtube likecount" widget="Edit"/>
+        <Edit colName="cmppost_youtube_dislikecount" comment="The number of users who have indicated that they disliked the video by giving it a negative rating." fieldId="60" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_youtube_dislikecount" posX="203" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="Youtube dislikecount" widget="Edit"/>
+        <Edit colName="cmppost_youtube_favoritecount" comment="The number of users who currently have the video marked as a favorite video." fieldId="61" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_youtube_favoritecount" posX="211" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="Youtube favoritecount" widget="Edit"/>
+        <Edit colName="cmppost_youtube_commentcount" comment="The number of comments for the video." fieldId="62" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_youtube_commentcount" posX="219" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="Youtube commentcount" widget="Edit"/>
+        <Edit colName="cmppost_ig_likes" fieldId="63" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_ig_likes" posX="227" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="IG likes" widget="Edit"/>
+        <Edit colName="cmppost_ig_comments" fieldId="64" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_ig_comments" posX="235" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="IG comments" widget="Edit"/>
+        <Edit colName="cmppost_ig_saved" comment="The number of unique accounts that saved the user post" fieldId="65" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_ig_saved" posX="243" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="IG saved" widget="Edit"/>
+        <Edit colName="cmppost_ig_profilevisits" comment="The number of times an account clicks on the username (to visit user profile)" fieldId="66" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_ig_profilevisits" posX="251" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="IG profilevisits" widget="Edit"/>
+        <Edit colName="cmppost_ig_follows" comment="The number of accounts that started following the user" fieldId="67" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_ig_follows" posX="259" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="IG follows" widget="Edit"/>
+        <Edit colName="cmppost_ig_websiteclicks" comment="The number of clicks to links user has included in his business profile description" fieldId="68" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_ig_websiteclicks" posX="267" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="IG websiteclicks" widget="Edit"/>
+        <Edit colName="cmppost_ig_discovery" comment="% of accounts that saw user post and aren&apos;t following him" fieldId="69" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_ig_discovery" posX="275" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="IG discovery (%)" widget="Edit"/>
+        <Edit colName="cmppost_ig_reach" comment="The number of unique accounts who saw user post" fieldId="70" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_ig_reach" posX="283" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="IG reach" widget="Edit"/>
+        <Edit colName="cmppost_ig_impressions" comment="The total number of times user post has been seen from a particular surface (home, search&amp;explore, profile, location, hashtags)" fieldId="71" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_ig_impressions" posX="291" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="IG impressions" widget="Edit"/>
+        <Edit colName="cmppost_instastory_impressions" comment="The total number of views the story has received" fieldId="72" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_instastory_impressions" posX="299" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="Instastory impressions" widget="Edit"/>
+        <Edit colName="cmppost_instastory_reach" comment="The number of unique accounts who saw the story" fieldId="73" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_instastory_reach" posX="307" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="Instastory reach" widget="Edit"/>
+        <Edit colName="cmppost_instastory_tapsforward" comment="The number of times someone taps to skip to the next piece of the story" fieldId="74" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_instastory_tapsforward" posX="315" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="Instastory tapsforward" widget="Edit"/>
+        <Edit colName="cmppost_instastory_tapsback" comment="The number of times someone taps to go back to a previous piece of the story." fieldId="75" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_instastory_tapsback" posX="323" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="Instastory tapsback" widget="Edit"/>
+        <Edit colName="cmppost_instastory_replies" comment="The number of times people send messages through the Send Message option on the story" fieldId="76" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_instastory_replies" posX="331" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="Instastory replies" widget="Edit"/>
+        <Edit colName="cmppost_instastory_swipeaway" comment="The number of times someone swipes to skip to the next account’s story" fieldId="77" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_instastory_swipeaway" posX="339" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="Instastory swipeaway" widget="Edit"/>
+        <Edit colName="cmppost_instastory_exists" comment="The number of times someone leaves the stories viewer to return to their feed" fieldId="78" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="campaignposts.cmppost_instastory_exists" posX="347" posY="0" sqlTabName="campaignposts" tabIndex="-1" title="Instastory exists" widget="Edit"/>
+        <Phantom colName="usr_notif_style" fieldId="80" fieldType="TABLE_COLUMN" name="users.usr_notif_style" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="usr_email_style" fieldId="81" fieldType="TABLE_COLUMN" name="users.usr_email_style" sqlTabName="users" widget="Phantom"/>
+        <Phantom colName="cmppost_isacceptedbybrand" fieldId="84" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_isacceptedbybrand" sqlTabName="campaignposts" widget="Phantom"/>
+        <Phantom colName="cmppost_postno" fieldId="85" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_postno" sqlTabName="campaignposts" widget="Phantom"/>
+        <Phantom colName="cmppost_uiorder" fieldId="86" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_uiorder" sqlTabName="campaignposts" widget="Phantom"/>
+        <Phantom colName="cmppost_filename" fieldId="87" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_filename" sqlTabName="campaignposts" widget="Phantom"/>
+        <Phantom colName="cmppost_isacceptedbysalfatix" fieldId="88" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_isacceptedbysalfatix" sqlTabName="campaignposts" widget="Phantom"/>
+        <Phantom colName="cmppost_onlinedate" fieldId="92" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_onlinedate" sqlTabName="campaignposts" widget="Phantom"/>
+        <Phantom colName="cmppost_lastmetricsdate" fieldId="93" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_lastmetricsdate" sqlTabName="campaignposts" widget="Phantom"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA1AGQANgA0ADIANgBjADgALQA5ADcAZgBjAC0ANAAzAGMAOQAtADkANgA4ADAALQA1ADMANQAwAGIAYQAxADYAMwBkADQAYgB9QHD8zNVZmY9AGmZmdmZmYj+WhysCDEm+AQAAAEwAewBlADkAMQA5ADIAMAAwAGUALQAxADQAYgAyAC0ANAA2AGEAZAAtADgAYQA2AGIALQBlADYAMwAxADUAMwBjAGEANABlADEAMwB9QEQAAAqqqqFARAAACqqqoQAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

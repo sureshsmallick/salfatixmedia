@@ -1,0 +1,8 @@
+Install GBC:
+unzip gbc*project.zip
+npm install
+grunt
+mkdir customization/salfatixmedia
+cd customization/salfatixmedia
+
+grunt --compile-mode=cdev --customization=customization/salfatixmedia --create-zip

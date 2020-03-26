@@ -1,0 +1,26 @@
+LAYOUT
+GRID
+{
+[post                    ]
+[vid        ][pic        ]
+<T tbl1                  >
+[lastpost                ]
+[lastpost                ]
+[lastpost                ]
+[lastpost                ]
+<                        >
+}
+END
+
+ATTRIBUTES
+COMBOBOX post = formonly.posttype,items=((1,"Instagram Picture"),(2,"Instastory"),(3,"Youtube Video"));
+BUTTON vid : selectvid, TEXT=%"Pick Video";
+BUTTON pic : selectpic, TEXT=%"Pick Photo";
+
+TABLE tbl1 : postsent,Hidden;
+BUTTONEDIT lastpost = formonly.lastpost, ACTION=delete;
+END
+
+INSTRUCTIONS
+  SCREEN RECORD srDonePosts (formonly.lastpost)
+END

@@ -1,0 +1,18 @@
+Action Defaults
+  Action accept (Text=%"Ok",Accelerator=Enter)
+End
+
+Layout
+  Grid
+  {
+  [f01                ]
+           [bt01][bt02]
+  }
+  End
+End
+
+Attributes
+  Combobox f01  = Formonly.socialNetwork, Items=("Instagram","Facebook"), Default="Instagram", Not Null;
+  Button   bt01 : cancel;
+  Button   bt02 : accept;
+End

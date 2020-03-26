@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Migration tips</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="quickstarts/index.html">Getting Started</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="quickstarts/prep_gbc.html">Getting started with GBC</a>
+          
+          <a class="btn btn-sidebar " href="quickstarts/prep_new_cust_proj.html">Create a new customization project</a>
+          
+          <a class="btn btn-sidebar " href="quickstarts/migration/index.html">Migrate GDC to GBC</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="quickstarts/migration/evaluate.html">Evaluate</a>
+            
+            <a class="btn btn-sidebar " href="quickstarts/migration/features_limitations.html">Limitations</a>
+            
+            <a class="btn btn-sidebar active" href="quickstarts/migration/migration_tips.html">Migration tips</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="quickstarts/from_GWC_HTML5_to_GBC.html">Migrate GWC-HTML5 to GBC</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="quickstarts">
+<header class="page-title">
+  <em>Migration tips</em>
+</header>
+<article class="md-content">
+<h1 id="Overview">Overview <a class="header-anchor" href="quickstarts/migration/migration_tips.html#Overview" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>When migrating an application from the Genero Desktop Client (GDC) to the Genero Browser Client (GBC), you may encounter issues. Here are some tips that may help.</p>
+<h1 id="Configuration_issues">Configuration issues <a class="header-anchor" href="quickstarts/migration/migration_tips.html#Configuration_issues" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>The Genero Application Server (GAS) is likely serving several types of applications, which might use different versions of the Genero Business Development Language and different databases. You need to configure the GAS for the environment your application will be running. This is done through the GAS configuration file.
+If you already have your application configured for GDC-HTTP, you need to enable the rendering for GBC.
+Example of configuration for a GDC application:</p>
+<pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">APPLICATION</span> <span class="hljs-attr">Id</span>=<span class="hljs-string">"my-app"</span> <span class="hljs-attr">Parent</span>=<span class="hljs-string">"defaultgdc"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">EXECUTION</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">PATH</span>&gt;</span>$(res.path.fgldir.demo)<span class="hljs-tag">&lt;/<span class="hljs-name">PATH</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">MODULE</span>&gt;</span>demo.42r<span class="hljs-tag">&lt;/<span class="hljs-name">MODULE</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">EXECUTION</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">APPLICATION</span>&gt;</span>
+</code></pre>
+<p>To allow GBC rendering, replace <code>defaultgdc</code> by <code>defaultgwc</code>, and add the <code>UA_OUTPUT</code> for the public image resources and the GBC customization:</p>
+<pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">APPLICATION</span> <span class="hljs-attr">Id</span>=<span class="hljs-string">"my-app"</span> <span class="hljs-attr">Parent</span>=<span class="hljs-string">"defaultgwc"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">EXECUTION</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">PATH</span>&gt;</span>$(res.path.fgldir.demo)<span class="hljs-tag">&lt;/<span class="hljs-name">PATH</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">MODULE</span>&gt;</span>demo.42r<span class="hljs-tag">&lt;/<span class="hljs-name">MODULE</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">EXECUTION</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">UA_OUTPUT</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">PUBLIC_IMAGEPATH</span>&gt;</span>$(res.public.resources)<span class="hljs-tag">&lt;/<span class="hljs-name">PUBLIC_IMAGEPATH</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">GBC</span>&gt;</span>gwc-dev<span class="hljs-tag">&lt;/<span class="hljs-name">GBC</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">UA_OUTPUT</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">APPLICATION</span>&gt;</span>
+</code></pre>
+<p>See the <em>Configuring Applications on GAS</em> topic in the <em>Genero Application Server User Guide</em> to configure your execution environment, the database access and the resource deployment (pictures, reports, and so on).</p>
+<p>If the application fails to start:</p>
+<ol>
+<li>Look in the dispatcher log for error messages. See <em>Logging</em> in the <em>Genero Application Server User Guide</em>.</li>
+<li>Start a debug console as explained in the <em>What if the application doesn't start?</em> topic in the <em>Genero Application Server User Guide</em>.
+With a console, the GAS does not launch the application, but instead launches a console with the application environment set up. You can then compare the environment variables to your GDC working environment.</li>
+<li>With a console started you can run commands to check and update your environment variables.</li>
+<li>You can also display the application on the GDC by changing the FGLSERVER environment variable to verify that the application runs properly with GDC.</li>
+</ol>
+<h1 id="Rendering_issues">Rendering issues <a class="header-anchor" href="quickstarts/migration/migration_tips.html#Rendering_issues" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>Graphical widgets that are not rendered properly or displayed with a different style are considered rendering issues. Try to identify the source of the rendering issue. This could be the browser, your code, or some GBC customization. For help with troubleshooting see <a href="quickstarts/migration/evaluate.html">Evaluate</a>.</p>
+<h1 id="Application_issues">Application issues <a class="header-anchor" href="quickstarts/migration/migration_tips.html#Application_issues" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>Application issues are behavior related. Most of the time you need to contact your local support center. But you can first check for:</p>
+<ul>
+<li>Relevant messages in the logs</li>
+<li>JavaScript errors</li>
+</ul>
+<p>If clues are provided in either the logs or in the errors, try to build a simple test program that replicates the issue and contact your local support center.</p>
+<p>When you right-click on your application, the browser context menu displays by default. To change this to the Genero context menu, see <a href="howdoi/customize-theme-vars/genero-context-menu.html">Display the Genero context menu</a>.</p>
+<h1 id="Network_issues">Network issues <a class="header-anchor" href="quickstarts/migration/migration_tips.html#Network_issues" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>Once the migration is almost done and you are in load tests phase, you might encounter sporadic disconnections. Carefully read the chapters on GAS installation for your Web server and verify the Web servers and GAS timeouts are compatible. You can also have a look at:</p>
+<ul>
+<li>Web server log (error/access log)</li>
+<li>The Genero Application Server logs</li>
+<li>Network sniffer (like Wireshark)</li>
+</ul>
+<h1 id="Web_Components">Web Components <a class="header-anchor" href="quickstarts/migration/migration_tips.html#Web_Components" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>The default path for a Web component is <em><code>appdir</code></em><code>/webcomponents</code>, where <em>appdir</em> is the application directory. See the <em>WEB_COMPONENT_DIRECTORY</em> element in your <code>FGLASDIR/etc/as.xcf</code> configuration file:</p>
+<pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">WEB_APPLICATION_EXECUTION_COMPONENT</span> <span class="hljs-attr">Id</span>=<span class="hljs-string">"cpn.wa.execution.local"</span>&gt;</span>
+   […]
+   <span class="hljs-tag">&lt;<span class="hljs-name">DVM</span>&gt;</span>$(res.dvm.wa)<span class="hljs-tag">&lt;/<span class="hljs-name">DVM</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">WEB_COMPONENT_DIRECTORY</span>&gt;</span>$(application.path)/webcomponents;
+                             $(res.path.as)/webcomponents<span class="hljs-tag">&lt;/<span class="hljs-name">WEB_COMPONENT_DIRECTORY</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">WEB_APPLICATION_EXECUTION_COMPONENT</span>&gt;</span>
+</code></pre>
+<p>You can change the default Web components location by configuring a <code>WEB_COMPONENT_DIRECTORY</code> element in your application's configuration. In this example, the Web component is no longer located in <code>appdir/webcomponents</code> but in <code>appdir/mycomponents</code>.</p>
+<pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">APPLICATION</span> <span class="hljs-attr">Parent</span>=<span class="hljs-string">"defaultgwc"</span> …&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">EXECUTION</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">PATH</span>&gt;</span>/home/myapp<span class="hljs-tag">&lt;/<span class="hljs-name">PATH</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">MODULE</span>&gt;</span>myapp<span class="hljs-tag">&lt;/<span class="hljs-name">MODULE</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">WEB_COMPONENT_DIRECTORY</span>&gt;</span>/home/myapp/mycomponents<span class="hljs-tag">&lt;/<span class="hljs-name">WEB_COMPONENT_DIRECTORY</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">EXECUTION</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">APPLICATION</span>&gt;</span>
+</code></pre>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

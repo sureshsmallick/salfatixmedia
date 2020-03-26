@@ -1,0 +1,30 @@
+{
+  "name": "ButtonWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-ButtonWidget-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "gbc-ButtonWidget-font-size-ratio",
+      "type": "number",
+      "defaultValue": "$theme-font-size-ratio"
+    },
+    {
+      "name": "gbc-ButtonWidget-default-height",
+      "type": "size",
+      "defaultValue": "$theme-field-default-height"
+    },
+    {
+      "name": "gbc-ButtonWidget-color",
+      "type": "color",
+      "defaultValue": "$theme-primary-color"
+    },
+    {
+      "name": "gbc-ButtonWidget-focus-background-color",
+      "type": "color",
+      "defaultValue": "$theme-primary-emphasis-background-color"
+    }
+  ]
+}

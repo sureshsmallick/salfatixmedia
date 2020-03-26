@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Limitations</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="quickstarts/index.html">Getting Started</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="quickstarts/prep_gbc.html">Getting started with GBC</a>
+          
+          <a class="btn btn-sidebar " href="quickstarts/prep_new_cust_proj.html">Create a new customization project</a>
+          
+          <a class="btn btn-sidebar " href="quickstarts/migration/index.html">Migrate GDC to GBC</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="quickstarts/migration/evaluate.html">Evaluate</a>
+            
+            <a class="btn btn-sidebar active" href="quickstarts/migration/features_limitations.html">Limitations</a>
+            
+            <a class="btn btn-sidebar " href="quickstarts/migration/migration_tips.html">Migration tips</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="quickstarts/from_GWC_HTML5_to_GBC.html">Migrate GWC-HTML5 to GBC</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="quickstarts">
+<header class="page-title">
+  <em>Limitations</em>
+</header>
+<article class="md-content">
+<p>This page lists the limitations of the Genero Browser Client (GBC).</p>
+<h2 id="Parallel_dialogs">Parallel dialogs <a class="header-anchor" href="quickstarts/migration/features_limitations.html#Parallel_dialogs" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>Parallel dialogs are not implemented in GBC.</p>
+<h2 id="Multirow_selection">Multirow selection <a class="header-anchor" href="quickstarts/migration/features_limitations.html#Multirow_selection" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>You cannot select multiple rows on mobile or in listview.</p>
+<h2 id="Drag_and_Drop">Drag and Drop <a class="header-anchor" href="quickstarts/migration/features_limitations.html#Drag_and_Drop" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>You cannot drag an item from the desktop onto a Genero DISPLAY ARRAY.</p>
+<h2 id="Widgets_not_changed_dynamically">Widgets not changed dynamically <a class="header-anchor" href="quickstarts/migration/features_limitations.html#Widgets_not_changed_dynamically" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>Some widget styles cannot be changed once the widget has been created and displayed by GBC.</p>
+<p>This applies to the following widgets using these particular style attributes:</p>
+<ul>
+<li>Button with style attribute <code>buttonType</code></li>
+<li>CheckBox with style attribute <code>customWidget</code></li>
+<li>ScrollGrid with style attribute <code>customWidget</code></li>
+<li>Table with style attribute <code>tableType</code></li>
+</ul>
+<p>This applies to the widgets defined in a GBC customization, when you customize a widget and register it. For example:</p>
+<pre class="hljs"><code>cls.WidgetFactory.registerBuilder(<span class="hljs-string">'MyWidget[attributeName=attributeValue]'</span>, cls.MyWidget)
+</code></pre>
+<p>Once the widget has been displayed, you cannot change these style attributes at runtime.</p>
+<p>For more information on style attributes for widgets, see the <em>Style attributes reference</em> topics in the <em>Genero Business Development Language User Guide</em>.</p>
+<h2 id="Hot_key_support">Hot key support <a class="header-anchor" href="quickstarts/migration/features_limitations.html#Hot_key_support" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>When using the Genero Browser Client, some hot key combinations are not supported by specific browsers; they are trapped by the browser instead. The behavior is not consistent between the available browsers, and Four Js is unable to provide accurate and up-to-date information regarding hot key support for each supported browser.</p>
+<p>To make an action available for when a hot key combination is not supported, you must make the action visible. For example, you can add the action to the action panel. This allows the user to click on a button when the hot key combination is not working.</p>
+<h2 id="Mobile_screen_operations">Mobile screen operations <a class="header-anchor" href="quickstarts/migration/features_limitations.html#Mobile_screen_operations" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>When using a mobile device, the application reacts to touch events (finger interactions) instead of mouse clicks.</p>
+<ul>
+<li>Access the context menu with a long tap, where a tap is a finger press. For example, to display a context menu for a table column header, press on the table column header for two seconds.</li>
+<li>To zoom into a page, use two fingers to pinch in on the screen. To zoom out of a page, use two fingers to pinch out on the screen.</li>
+<li>A double tap corresponds to a double click in terms of Genero logic. For example, if you double tap on a row, the row action will be executed. Double tap will not zoom a page.</li>
+</ul>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

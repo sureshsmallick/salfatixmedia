@@ -1,0 +1,64 @@
+{
+  "name": "DropDownWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-DropDownWidget-z-index",
+      "type": "number",
+      "defaultValue": "$z-index-DropDown"
+    },
+    {
+      "name": "gbc-DropDownWidget-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "gbc-DropDownWidget-margin",
+      "type": "size",
+      "defaultValue": "$theme-combobox-margin"
+    },
+    {
+      "name": "gbc-DropDownWidget-line-height",
+      "type": "size",
+      "defaultValue": "2.2em"
+    },
+    {
+      "name": "gbc-DropDownWidget-background-color",
+      "type": "color",
+      "defaultValue": "$theme-secondary-alternative-background-color"
+    },
+    {
+      "name": "gbc-DropDownWidget-item-current-color",
+      "type": "color",
+      "defaultValue": "$theme-currentrow-color"
+    },
+    {
+      "name": "gbc-DropDownWidget-item-current-background-color",
+      "type": "color",
+      "defaultValue": "$theme-currentrow-background-color"
+    },
+    {
+      "name": "gbc-DropDownWidget-item-current-disabled-background-color",
+      "type": "color",
+      "defaultValue": "$theme-secondary-faded-color"
+    },
+    {
+      "name": "gbc-DropDownWidget-item-hover-background-color",
+      "type": "color",
+      "defaultValue": "$theme-primary-faded-background-color"
+    },
+    {
+      "name": "gbc-DropDownWidget-min-width",
+      "type": "number",
+      "defaultValue": 0
+    }, {
+      "name": "gbc-DropDownWidget-max-height",
+      "type": "number",
+      "defaultValue": 300
+    },
+    {
+      "name": "gbc-DropDownWidget-icon-size",
+      "type": "size",
+      "defaultValue": "$theme-small-icon-size"
+    }
+  ]
+}

@@ -1,0 +1,552 @@
+[{
+    "name": "theme",
+    "title": "Theme",
+    "description": "Defines theme main variables",
+    "type": "group",
+    "contents": [{
+        "name": "theme-colors",
+        "title": "Theme colors",
+        "description": "Defines theme main colors",
+        "type": "group",
+        "contents": [{
+            "name": "theme-primary-color",
+            "title": "Theme primary color",
+            "type": "color",
+            "defaultValue": "$palette-text-primary-100",
+            "aliases": ["gbc-secondary-text-color"]
+          },
+          {
+            "name": "theme-primary-background-color",
+            "title": "Theme primary background color",
+            "type": "color",
+            "defaultValue": "$palette-primary-700",
+            "aliases": ["gbc-primary-color"]
+          },
+          {
+            "name": "theme-primary-emphasis-background-color",
+            "title": "Theme primary emphasis background color",
+            "type": "color",
+            "defaultValue": "$palette-primary-500",
+            "aliases": ["gbc-primary-medium-color"]
+          },
+          {
+            "name": "theme-primary-faded-background-color",
+            "title": "Theme primary faded background color",
+            "type": "color",
+            "defaultValue": "$palette-primary-100",
+            "aliases": ["gbc-primary-light-color"]
+          },
+          {
+            "name": "theme-secondary-color",
+            "title": "Theme secondary color",
+            "type": "color",
+            "defaultValue": "$palette-text-secondary-100",
+            "aliases": ["gbc-primary-text-color"]
+          },
+          {
+            "name": "theme-secondary-faded-color",
+            "title": "Theme secondary faded color",
+            "type": "color",
+            "defaultValue": "$palette-text-secondary-54"
+          },
+          {
+            "name": "theme-secondary-background-color",
+            "title": "Theme secondary background color",
+            "type": "color",
+            "defaultValue": "$palette-secondary-50",
+            "aliases": ["gbc-primary-background-color"]
+          },
+          {
+            "name": "theme-secondary-alternative-background-color",
+            "title": "Theme secondary alternative background color",
+            "type": "color",
+            "defaultValue": "$mt-white",
+            "aliases": ["gbc-secondary-background-color"]
+          },
+          {
+            "name": "theme-field-background-color",
+            "title": "Theme field background color",
+            "type": "color",
+            "defaultValue": "$mt-white",
+            "aliases": ["gbc-field-background-color"]
+          },
+          {
+            "name": "theme-header-color",
+            "title": "Theme header color",
+            "type": "color",
+            "defaultValue": "$palette-secondary-100",
+            "aliases": ["gbc-header-color"]
+          },
+          {
+            "name": "theme-separator-color",
+            "title": "Theme separator color",
+            "type": "color",
+            "defaultValue": "$palette-secondary-400",
+            "aliases": ["gbc-separator-color"]
+          },
+          {
+            "name": "theme-disabled-color",
+            "title": "Theme disabled color",
+            "type": "color",
+            "defaultValue": "$palette-disabled-200"
+          },
+          {
+            "name": "theme-disabled-background-color",
+            "title": "Theme disabled background color",
+            "type": "color",
+            "defaultValue": "$palette-disabled-400",
+            "aliases": ["gbc-disabled-color"]
+          },
+          {
+            "name": "theme-field-disabled-background-color",
+            "title": "Theme field disabled background color",
+            "type": "color",
+            "defaultValue": "$palette-disabled-200",
+            "aliases": ["gbc-field-disabled-background-color"]
+          },
+          {
+            "name": "theme-field-readonly-background-color",
+            "title": "Theme field readonly background color",
+            "type": "color",
+            "defaultValue": "$palette-disabled-200",
+            "aliases": ["gbc-field-readonly-background-color"]
+          },
+          {
+            "name": "theme-placeholder-color",
+            "title": "Theme placeholder color",
+            "type": "color",
+            "defaultValue": "$palette-disabled-400"
+          },
+          {
+            "name": "theme-overlay-background-color",
+            "title": "Theme overlay color",
+            "type": "color",
+            "defaultValue": "$palette-text-secondary-26"
+          },
+          {
+            "name": "theme-message-color",
+            "type": "color",
+            "defaultValue": "$theme-primary-color"
+          },
+          {
+            "name": "theme-message-background-color",
+            "type": "color",
+            "defaultValue": "$palette-secondary-800",
+            "aliases": ["gbc-message-color"]
+          },
+          {
+            "name": "theme-error-background-color",
+            "type": "color",
+            "defaultValue": "$mt-red-800",
+            "aliases": ["gbc-error-color"]
+          },
+          {
+            "name": "theme-currentrow-color",
+            "type": "color",
+            "defaultValue": "$theme-primary-color"
+          },
+          {
+            "name": "theme-currentrow-background-color",
+            "type": "color",
+            "defaultValue": "$theme-primary-emphasis-background-color"
+          }
+        ]
+      },
+      {
+        "name": "theme-layout",
+        "title": "Theme layout variables",
+        "description": "Defines theme layout variables",
+        "type": "group",
+        "contents": [{
+            "name": "theme-field-height-ratio",
+            "title": "Theme field height ratio",
+            "type": "number",
+            "defaultValue": 0.7,
+            "aliases": ["gbc-field-height-ratio"]
+          },
+          {
+            "name": "theme-field-default-height",
+            "title": "Theme field default height",
+            "type": "size",
+            "defaultValue": "$theme-field-height-ratio * 32px",
+            "aliases": ["field-default-height"]
+          },
+          {
+            "name": "theme-font-size-ratio",
+            "title": "Theme font-size ratio",
+            "type": "number",
+            "defaultValue": 0.8,
+            "aliases": ["gbc-font-size-ratio"]
+          },
+          {
+            "name": "theme-host-action-default-height",
+            "title": "Theme host-action default height",
+            "type": "size",
+            "defaultValue": "$theme-margin-ratio * 56px",
+            "aliases": ["mt-toolbar-height"]
+          },
+          {
+            "name": "theme-button-default-width",
+            "title": "theme button default width",
+            "type": "size",
+            "defaultValue": "$theme-font-size-ratio * 100px",
+            "aliases": ["button-default-width"]
+          },
+          {
+            "name": "theme-margin-ratio",
+            "title": "Theme margin ratio",
+            "type": "number",
+            "defaultValue": 0.6,
+            "aliases": ["gbc-margin-ratio"]
+          },
+          {
+            "name": "theme-input-padding-top",
+            "title": "Theme input padding-top",
+            "type": "size",
+            "defaultValue": "$theme-margin-ratio*2px"
+          },
+          {
+            "name": "theme-input-padding-right",
+            "title": "Theme input padding-right",
+            "type": "size",
+            "defaultValue": "$theme-margin-ratio*6px"
+          },
+          {
+            "name": "theme-input-padding-bottom",
+            "title": "Theme input padding-bottom",
+            "type": "size",
+            "defaultValue": "$theme-margin-ratio*2px"
+          },
+          {
+            "name": "theme-input-padding-left",
+            "title": "Theme input padding-left",
+            "type": "size",
+            "defaultValue": "$theme-margin-ratio*6px"
+          },
+          {
+            "name": "theme-textarea-padding-top",
+            "title": "Theme textarea padding-top",
+            "type": "size",
+            "defaultValue": "$theme-margin-ratio*4px"
+          },
+          {
+            "name": "theme-textarea-padding-right",
+            "title": "Theme textarea padding-right",
+            "type": "size",
+            "defaultValue": "$theme-input-padding-right"
+          },
+          {
+            "name": "theme-textarea-padding-bottom",
+            "title": "Theme textarea padding-bottom",
+            "type": "size",
+            "defaultValue": "0"
+          },
+          {
+            "name": "theme-textarea-padding-left",
+            "title": "Theme textarea padding-left",
+            "type": "size",
+            "defaultValue": "$theme-input-padding-left"
+          },
+          {
+            "name": "theme-table-margin",
+            "type": "size",
+            "defaultValue": "6px",
+            "aliases": ["gbc-table-margin"]
+          },
+          {
+            "name": "theme-combobox-margin",
+            "type": "size",
+            "defaultValue": "5px",
+            "aliases": ["gbc-combobox-margin"]
+          },
+          {
+            "name": "theme-combobox-padding",
+            "type": "size",
+            "defaultValue": "2px",
+            "aliases": ["gbc-combobox-padding"]
+          },
+          {
+            "name": "theme-radiobutton-size",
+            "title": "radiobutton size",
+            "type": "size",
+            "defaultValue": "14px",
+            "aliases": ["gbc-radiobutton-size"]
+          },
+          {
+            "name": "theme-checkbox-size",
+            "title": "checkbox size",
+            "type": "size",
+            "defaultValue": "14px",
+            "aliases": ["gbc-checkbox-size"]
+          },
+          {
+            "name": "theme-sidebar-always-visible-min-width",
+            "title": "Theme sidebar always-visible min-width",
+            "type": "size",
+            "defaultValue": "1400px",
+            "aliases": ["gbc-sidebar-always-visible-min-width"]
+          },
+          {
+            "name": "theme-sidebar-default-width",
+            "title": "Theme sidebar default width",
+            "type": "size",
+            "defaultValue": "300px",
+            "aliases": ["gbc-sidebar-default-width"]
+          },
+          {
+            "name": "theme-sidebar-max-width",
+            "type": "size",
+            "defaultValue": "800px",
+            "aliases": ["gbc-sidebar-max-width"]
+          },
+          {
+            "name": "theme-toggle-right-sidebar-min-width",
+            "title": "right sidebar toggling min-width",
+            "type": "size",
+            "defaultValue": "720px",
+            "aliases": ["gbc-toggle-right-sidebar-min-width"]
+          },
+          {
+            "name": "theme-group-separation-size",
+            "type": "string",
+            "defaultValue": "$theme-margin-ratio * 12",
+            "aliases": ["group-separation-size"]
+          },
+          {
+            "name": "theme-splitter-size",
+            "title": "Theme splitter size",
+            "type": "size",
+            "defaultValue": "$theme-group-separation-size * 1px",
+            "aliases": ["splitter-size"]
+          },
+          {
+            "name": "theme-traditional-mode-letter-spacing",
+            "type": "size",
+            "defaultValue": "2px",
+            "aliases": ["traditional-mode-letter-spacing"]
+          },
+          {
+            "name": "theme-max-icon-size",
+            "type": "size",
+            "defaultValue": "32px",
+            "aliases": ["gbc-max-icon-size"]
+          },
+          {
+            "name": "theme-small-icon-size",
+            "type": "size",
+            "defaultValue": "20px * $theme-font-size-ratio"
+          },
+          {
+            "name": "theme-grid-inner-gutter",
+            "type": "number",
+            "defaultValue": 3,
+            "aliases": ["layout-grid-inner-gutter"]
+          }
+        ]
+      },
+      {
+        "name": "theme-misc",
+        "title": "Theme miscellaneous",
+        "description": "Defines theme variables",
+        "type": "group",
+        "contents": [{
+            "name": "theme-font-family",
+            "title": "Theme font family",
+            "type": "string",
+            "defaultValue": "'\"Droid Sans\", sans-serif'"
+          },
+          {
+            "name": "theme-font-family-monospace",
+            "title": "Theme font family monospace",
+            "type": "string",
+            "defaultValue": "'\"Droid Sans Mono\", monospace'"
+          },
+          {
+            "name": "theme-animation-duration",
+            "type": "string",
+            "defaultValue": "0.3s",
+            "aliases": ["gbc-animation-duration"]
+          },
+          {
+            "name": "theme-disable-ending-popup",
+            "description": "Disable the confirmation ending popup",
+            "type": "boolean",
+            "defaultValue": false,
+            "aliases": ["gbc-disable-ending-popup", "gbc-desactivate-ending-popup"]
+          },
+          {
+            "name": "theme-disable-context-menu",
+            "title": "Disable context menu",
+            "description": "Disable the genero context menu",
+            "type": "boolean",
+            "defaultValue": true,
+            "aliases": ["gbc-disable-context-menu"]
+          },
+          {
+            "name": "theme-scrollers-clickonly",
+            "description": "Define general scrollers behavior",
+            "type": "boolean",
+            "defaultValue": false,
+            "aliases": ["gbc-scrollers-clickonly"]
+          },
+          {
+            "name": "theme-scrollers-speed",
+            "description": "Define the scrollers speed",
+            "type": "number",
+            "defaultValue": 10,
+            "aliases": ["gbc-scrollers-speed"]
+          },
+          {
+            "name": "theme-message-display-time",
+            "type": "number",
+            "defaultValue": 10,
+            "aliases": ["gbc-message-display-time"]
+          },
+          {
+            "name": "theme-message-display-position",
+            "type": "message-display-position",
+            "defaultValue": "bottom-right",
+            "aliases": ["gbc-message-position"]
+          },
+          {
+            "name": "theme-error-display-time",
+            "type": "number",
+            "defaultValue": 10,
+            "aliases": ["gbc-error-display-time"]
+          },
+          {
+            "name": "theme-error-display-position",
+            "type": "message-display-position",
+            "defaultValue": "bottom-right",
+            "aliases": ["gbc-error-position"]
+          },
+          {
+            "name": "aui-mutation-watch",
+            "title": "Gbc Watch aui mutations",
+            "description": "Enable watching aui mutations",
+            "type": "boolean",
+            "defaultValue": false
+          },
+          {
+            "name": "theme-table-default-widget",
+            "title": "Gbc table default widget",
+            "description": "Gbc default widget used to render table (if value is 'listview' table will be rendered as listview by default else it will be rendered as normal table). Behavior can still be override by 4ST (tableType).",
+            "type": "string",
+            "defaultValue": "table"
+          },
+          {
+            "name": "theme-legacy-topbar",
+            "title": "Use the old topbar of GBC instead of Chromebar",
+            "description": "Warning, this is a depreated feature, the old topbar will be removed in the future",
+            "type": "boolean",
+            "defaultValue": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "main-color-palettes",
+    "title": "Main color palettes",
+    "description": "Defines general colors palettes appearing in the customization",
+    "type": "group",
+    "contents": [{
+        "name": "palette-primary",
+        "title": "Primary color base",
+        "description": "Defines the theme's main color base",
+        "type": "color",
+        "generator": "material-color",
+        "defaultValue": "$mt-blue",
+        "aliases": [
+          "primary"
+        ]
+      },
+      {
+        "name": "palette-secondary",
+        "title": "Secondary color base",
+        "description": "Defines the theme's secondary color base",
+        "type": "color",
+        "generator": "material-color",
+        "defaultValue": "$mt-grey"
+      },
+      {
+        "name": "palette-disabled",
+        "title": "Disabled color base",
+        "description": "Defines the theme's disabled color base",
+        "type": "color",
+        "generator": "material-color",
+        "defaultValue": "$mt-grey"
+      },
+      {
+        "name": "palette-text-primary",
+        "title": "Text Light",
+        "const": true,
+        "type": "color",
+        "generator": "material-text-color",
+        "value": "$mt-text-white",
+        "aliases": [
+          "text-light"
+        ]
+      },
+      {
+        "name": "palette-text-secondary",
+        "title": "Text Dark",
+        "const": true,
+        "type": "color",
+        "generator": "material-text-color",
+        "value": "$mt-text-black",
+        "aliases": [
+          "text-dark"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "features",
+    "title": "Features",
+    "type": "group",
+    "contents": "features/**/*.json"
+  },
+  {
+    "name": "layout",
+    "title": "Gbc layout variables",
+    "description": "Configure Gbc layout variables",
+    "type": "group",
+    "contents": "layout/**/*.json"
+  },
+  {
+    "name": "material",
+    "title": "Material variables",
+    "type": "group",
+    "contents": "material/**/*.json"
+  },
+  {
+    "name": "widgets",
+    "title": "Widgets specific variables",
+    "description": "Configure variables specific to a widget",
+    "type": "group",
+    "contents": "widgets/**/*.json"
+  },
+  {
+    "name": "constants",
+    "title": "Constant variables",
+    "description": "Constants variables that can be used but not modified",
+    "type": "group",
+    "contents": "constants/**/*.json"
+  },
+  {
+    "name": "deprecated",
+    "title": "Deprecated variables",
+    "description": "deprecated variables that will be removed",
+    "type": "group",
+    "contents": [{
+        "name": "gbc-primary-strong-color",
+        "deprecated": true
+      },
+      {
+        "name": "gbc-secondary-color",
+        "deprecated": true
+      }
+    ]
+  }
+]

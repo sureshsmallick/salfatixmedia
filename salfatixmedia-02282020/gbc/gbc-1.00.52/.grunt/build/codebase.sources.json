@@ -1,0 +1,16 @@
+[
+  "src/js/libextensions/vanilla/**/*.js",
+  "src/js/libextensions/**/*.js",
+  "src/js/sysinit/bootstrap/*.js",
+  "src/js/sysinit/gbc.js",
+  "src/js/sysinit/constants/**/*.js",
+  "src/js/base/*.js",
+  "src/js/base/events/**/*.js",
+  "src/js/base/services/**/*.js",
+  "src/js/base/helpers/**/*.js",
+  "src/js/base/aui/**/*.js",
+  "src/js/base/controller/**/*.js",
+  "src/js/base/widget/**/*.js",
+  "src/js/base/**/*.js",
+  "src/js/plugins/**/*.js"
+]

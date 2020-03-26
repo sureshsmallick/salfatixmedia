@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="brand_scrollgrid.tmp" build="3.20.07" sqlDbName="salfatixmedia" text="Form" style="centerwindow" width="81" height="19">
+  <LStr text="Form"/>
+  <Grid name="grid1" width="81" height="19">
+    <FormField name="formonly.ff_formtitle" colName="ff_formtitle" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Label width="78" justify="center" style="ff_formtitle" posY="0" posX="2" gridWidth="78"/>
+    </FormField>
+    <Group name="group1" text="Filters" style="no_border" posY="1" posX="2" gridWidth="36" gridHeight="17">
+      <LStr text="Filters"/>
+      <Label name="label1" width="28" text="Sort By" posY="1" posX="1" gridWidth="28">
+        <LStr text="Sort By"/>
+      </Label>
+      <FormField name="formonly.radiogroup1" colName="radiogroup1" fieldId="1" sqlTabName="formonly" tabIndex="2">
+        <RadioGroup width="28" orientation="horizontal" posY="2" posX="1" gridWidth="28">
+          <Item name="brands.brnd_name" text="Name">
+            <LStr text="Name"/>
+          </Item>
+          <Item name="brands.brnd_email" text="Email">
+            <LStr text="Email"/>
+          </Item>
+          <Item name="accountstatus.accst_name" text="Status">
+            <LStr text="Status"/>
+          </Item>
+        </RadioGroup>
+      </FormField>
+      <Label name="label2" width="20" text="Order" posY="3" posX="1" gridWidth="20">
+        <LStr text="Order"/>
+      </Label>
+      <FormField name="formonly.radiogroup2" colName="radiogroup2" fieldId="2" sqlTabName="formonly" tabIndex="3">
+        <RadioGroup width="20" orientation="horizontal" posY="4" posX="1" gridWidth="20">
+          <Item name="asc" text="Ascending">
+            <LStr text="Ascending"/>
+          </Item>
+          <Item name="desc" text="Descending">
+            <LStr text="Descending"/>
+          </Item>
+        </RadioGroup>
+      </FormField>
+      <Label name="label3" width="28" text="Filter on name" posY="5" posX="1" gridWidth="28">
+        <LStr text="Filter on name"/>
+      </Label>
+      <FormField name="brands1.brnd_name" colName="brnd_name" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="3" sqlTabName="brands" tabIndex="4">
+        <Edit width="28" posY="6" posX="1" gridWidth="28"/>
+      </FormField>
+      <Label name="label4" width="28" text="Filter on email" posY="7" posX="1" gridWidth="28">
+        <LStr text="Filter on email"/>
+      </Label>
+      <FormField name="brands1.brnd_email" colName="brnd_email" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="4" sqlTabName="brands" tabIndex="5">
+        <Edit width="28" posY="8" posX="1" gridWidth="28"/>
+      </FormField>
+      <Label name="label5" width="28" text="Filter on status" posY="9" posX="1" gridWidth="28">
+        <LStr text="Filter on status"/>
+      </Label>
+      <FormField name="accountstatus1.accst_name" colName="accst_name" sqlType="VARCHAR(32)" required="1" notNull="1" fieldId="5" sqlTabName="accountstatus" tabIndex="6">
+        <Edit width="28" scroll="1" posY="10" posX="1" gridWidth="28"/>
+      </FormField>
+      <Label name="label6" width="28" text="Filter on main category" posY="11" posX="1" gridWidth="28">
+        <LStr text="Filter on main category"/>
+      </Label>
+      <FormField name="formonly.brands_primarycategory_filter" colName="brands_primarycategory_filter" sqlType="VARCHAR" fieldId="6" sqlTabName="formonly" tabIndex="7">
+        <ButtonEdit width="26" action="zoom" notEditable="1" image="fa-angle-right" scroll="1" posY="12" posX="1" gridWidth="28"/>
+      </FormField>
+      <Label name="label7" width="28" text="Filter on sub categories" posY="13" posX="1" gridWidth="28">
+        <LStr text="Filter on sub categories"/>
+      </Label>
+      <FormField name="formonly.brands_othercategories_filter" colName="brands_othercategories_filter" sqlType="VARCHAR" fieldId="7" sqlTabName="formonly" tabIndex="8">
+        <ButtonEdit width="26" action="zoom" notEditable="1" image="fa-angle-right" scroll="1" posY="14" posX="1" gridWidth="28"/>
+      </FormField>
+      <Button name="filter" width="7" text="Filter" posY="15" posX="22" gridWidth="7" tabIndex="9">
+        <LStr text="Filter"/>
+      </Button>
+    </Group>
+    <ScrollGrid wantFixedPageSize="0" name="salfatixmedia1" doubleClick="display_brand" style="brandlisttable" pageSize="10" posY="1" posX="41" gridWidth="39" gridHeight="12">
+      <PhantomMatrix name="brands.brnd_id" colName="brnd_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="26" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_pic_id" colName="brnd_pic_id" sqlType="INTEGER" required="1" notNull="1" fieldId="16" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <Matrix name="pics.pic_value" colName="pic_value" sqlType="BYTE" required="1" notNull="1" fieldId="8" sqlTabName="pics" noEntry="1" tabIndex="10" pageSize="10" stepY="11">
+        <Image width="12" height="4" autoScale="1" sizePolicy="fixed" style="no_border" posY="1" posX="1" gridWidth="12" gridHeight="4"/>
+      </Matrix>
+      <Matrix name="brands.brnd_name" colName="brnd_name" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="9" sqlTabName="brands" tabIndex="11" pageSize="10" stepY="11">
+        <Edit width="23" posY="1" posX="15" gridWidth="23"/>
+      </Matrix>
+      <PhantomMatrix name="brands.brnd_website" colName="brnd_website" sqlType="VARCHAR(255)" fieldId="17" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_country_id" colName="brnd_country_id" sqlType="INTEGER" required="1" notNull="1" fieldId="18" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_state_id" colName="brnd_state_id" sqlType="INTEGER" fieldId="19" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_city_id" colName="brnd_city_id" sqlType="INTEGER" fieldId="20" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_address_number" colName="brnd_address_number" sqlType="VARCHAR(16)" fieldId="38" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_address_street" colName="brnd_address_street" sqlType="VARCHAR(128)" fieldId="39" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_address_zipcode" colName="brnd_address_zipcode" sqlType="VARCHAR(128)" fieldId="40" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_address_town" colName="brnd_address_town" sqlType="VARCHAR(128)" fieldId="41" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_address_more" colName="brnd_address_more" sqlType="VARCHAR(128)" fieldId="42" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_currency_id" colName="brnd_currency_id" sqlType="INTEGER" required="1" notNull="1" fieldId="36" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_gender_id" colName="brnd_gender_id" sqlType="INTEGER" fieldId="21" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_firstname" colName="brnd_firstname" sqlType="VARCHAR(128)" fieldId="22" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_lastname" colName="brnd_lastname" sqlType="VARCHAR(128)" fieldId="23" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_contact_rank" colName="brnd_contact_rank" sqlType="VARCHAR(128)" fieldId="15" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <Matrix name="brands.brnd_email" colName="brnd_email" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="10" sqlTabName="brands" tabIndex="12" pageSize="10" stepY="11">
+        <Edit width="23" posY="2" posX="15" gridWidth="23"/>
+      </Matrix>
+      <PhantomMatrix name="brands.brnd_email_style" colName="brnd_email_style" sqlType="CHAR(1)" fieldId="14" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_password" colName="brnd_password" sqlType="VARCHAR(255)" required="1" notNull="1" fieldId="24" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_mobile_phonenumber" colName="brnd_mobile_phonenumber" sqlType="BIGINT" fieldId="25" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <Matrix name="formonly.brands_primarycategory" colName="brands_primarycategory" sqlType="VARCHAR" fieldId="11" sqlTabName="formonly" tabIndex="13" pageSize="10" stepY="11">
+        <Edit width="23" scroll="1" posY="3" posX="15" gridWidth="23"/>
+      </Matrix>
+      <Matrix name="formonly.brands_othercategories" colName="brands_othercategories" sqlType="VARCHAR" fieldId="12" sqlTabName="formonly" tabIndex="14" pageSize="10" stepY="11">
+        <Edit width="23" scroll="1" posY="4" posX="15" gridWidth="23"/>
+      </Matrix>
+      <Matrix name="brands.brnd_accountstatus_id" colName="brnd_accountstatus_id" sqlType="INTEGER" required="1" notNull="1" fieldId="13" sqlTabName="brands" tabIndex="15" pageSize="10" stepY="11">
+        <ComboBox width="21" initializer="brand_status_combobox_initializer" scroll="1" posY="5" posX="15" gridWidth="23"/>
+      </Matrix>
+      <PhantomMatrix name="brands.brnd_createdby_id" colName="brnd_createdby_id" sqlType="INTEGER" required="1" notNull="1" fieldId="27" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_creationdate" colName="brnd_creationdate" sqlType="DATETIME YEAR TO SECOND" required="1" notNull="1" fieldId="28" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_deletiondate" colName="brnd_deletiondate" sqlType="DATETIME YEAR TO SECOND" fieldId="29" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_validationdate" colName="brnd_validationdate" sqlType="DATETIME YEAR TO SECOND" fieldId="30" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_canceldate" colName="brnd_canceldate" sqlType="DATETIME YEAR TO SECOND" fieldId="31" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_suspendeddate" colName="brnd_suspendeddate" sqlType="DATETIME YEAR TO SECOND" fieldId="32" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_stopdate" colName="brnd_stopdate" sqlType="DATETIME YEAR TO SECOND" fieldId="37" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_emailvalidationdate" colName="brnd_emailvalidationdate" sqlType="DATETIME YEAR TO SECOND" fieldId="33" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_lastupdatedate" colName="brnd_lastupdatedate" sqlType="DATETIME YEAR TO SECOND" fieldId="34" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brands.brnd_lastlogindate" colName="brnd_lastlogindate" sqlType="DATETIME YEAR TO SECOND" fieldId="35" sqlTabName="brands" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+    </ScrollGrid>
+  </Grid>
+  <RecordView tabName="brands1">
+    <Link colName="brnd_name" fieldIdRef="3"/>
+    <Link colName="brnd_email" fieldIdRef="4"/>
+  </RecordView>
+  <RecordView tabName="accountstatus1">
+    <Link colName="accst_name" fieldIdRef="5"/>
+  </RecordView>
+  <RecordView tabName="pics">
+    <Link colName="pic_value" fieldIdRef="8"/>
+  </RecordView>
+  <RecordView tabName="brands">
+    <Link colName="brnd_name" fieldIdRef="9"/>
+    <Link colName="brnd_email" fieldIdRef="10"/>
+    <Link colName="brnd_accountstatus_id" fieldIdRef="13"/>
+    <Link colName="brnd_email_style" fieldIdRef="14"/>
+    <Link colName="brnd_contact_rank" fieldIdRef="15"/>
+    <Link colName="brnd_pic_id" fieldIdRef="16"/>
+    <Link colName="brnd_website" fieldIdRef="17"/>
+    <Link colName="brnd_country_id" fieldIdRef="18"/>
+    <Link colName="brnd_state_id" fieldIdRef="19"/>
+    <Link colName="brnd_city_id" fieldIdRef="20"/>
+    <Link colName="brnd_gender_id" fieldIdRef="21"/>
+    <Link colName="brnd_firstname" fieldIdRef="22"/>
+    <Link colName="brnd_lastname" fieldIdRef="23"/>
+    <Link colName="brnd_password" fieldIdRef="24"/>
+    <Link colName="brnd_mobile_phonenumber" fieldIdRef="25"/>
+    <Link colName="brnd_id" fieldIdRef="26"/>
+    <Link colName="brnd_createdby_id" fieldIdRef="27"/>
+    <Link colName="brnd_creationdate" fieldIdRef="28"/>
+    <Link colName="brnd_deletiondate" fieldIdRef="29"/>
+    <Link colName="brnd_validationdate" fieldIdRef="30"/>
+    <Link colName="brnd_canceldate" fieldIdRef="31"/>
+    <Link colName="brnd_suspendeddate" fieldIdRef="32"/>
+    <Link colName="brnd_emailvalidationdate" fieldIdRef="33"/>
+    <Link colName="brnd_lastupdatedate" fieldIdRef="34"/>
+    <Link colName="brnd_lastlogindate" fieldIdRef="35"/>
+    <Link colName="brnd_currency_id" fieldIdRef="36"/>
+    <Link colName="brnd_stopdate" fieldIdRef="37"/>
+    <Link colName="brnd_address_number" fieldIdRef="38"/>
+    <Link colName="brnd_address_street" fieldIdRef="39"/>
+    <Link colName="brnd_address_zipcode" fieldIdRef="40"/>
+    <Link colName="brnd_address_town" fieldIdRef="41"/>
+    <Link colName="brnd_address_more" fieldIdRef="42"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="radiogroup1" fieldIdRef="1"/>
+    <Link colName="radiogroup2" fieldIdRef="2"/>
+    <Link colName="brands_primarycategory_filter" fieldIdRef="6"/>
+    <Link colName="brands_othercategories_filter" fieldIdRef="7"/>
+    <Link colName="brands_primarycategory" fieldIdRef="11"/>
+    <Link colName="brands_othercategories" fieldIdRef="12"/>
+  </RecordView>
+  <RecordView tabName="scr_brand_list">
+    <Link colName="brnd_id" fieldIdRef="26"/>
+    <Link colName="brnd_pic_id" fieldIdRef="16"/>
+    <Link colName="brnd_name" fieldIdRef="9"/>
+    <Link colName="brnd_website" fieldIdRef="17"/>
+    <Link colName="brnd_country_id" fieldIdRef="18"/>
+    <Link colName="brnd_state_id" fieldIdRef="19"/>
+    <Link colName="brnd_city_id" fieldIdRef="20"/>
+    <Link colName="brnd_address_number" fieldIdRef="38"/>
+    <Link colName="brnd_address_street" fieldIdRef="39"/>
+    <Link colName="brnd_address_zipcode" fieldIdRef="40"/>
+    <Link colName="brnd_address_town" fieldIdRef="41"/>
+    <Link colName="brnd_address_more" fieldIdRef="42"/>
+    <Link colName="brnd_currency_id" fieldIdRef="36"/>
+    <Link colName="brnd_gender_id" fieldIdRef="21"/>
+    <Link colName="brnd_firstname" fieldIdRef="22"/>
+    <Link colName="brnd_lastname" fieldIdRef="23"/>
+    <Link colName="brnd_contact_rank" fieldIdRef="15"/>
+    <Link colName="brnd_email" fieldIdRef="10"/>
+    <Link colName="brnd_email_style" fieldIdRef="14"/>
+    <Link colName="brnd_password" fieldIdRef="24"/>
+    <Link colName="brnd_mobile_phonenumber" fieldIdRef="25"/>
+    <Link colName="brnd_accountstatus_id" fieldIdRef="13"/>
+    <Link colName="brnd_createdby_id" fieldIdRef="27"/>
+    <Link colName="brnd_creationdate" fieldIdRef="28"/>
+    <Link colName="brnd_deletiondate" fieldIdRef="29"/>
+    <Link colName="brnd_validationdate" fieldIdRef="30"/>
+    <Link colName="brnd_canceldate" fieldIdRef="31"/>
+    <Link colName="brnd_suspendeddate" fieldIdRef="32"/>
+    <Link colName="brnd_stopdate" fieldIdRef="37"/>
+    <Link colName="brnd_emailvalidationdate" fieldIdRef="33"/>
+    <Link colName="brnd_lastupdatedate" fieldIdRef="34"/>
+    <Link colName="brnd_lastlogindate" fieldIdRef="35"/>
+    <Link colName="pic_value" fieldIdRef="8"/>
+    <Link colName="brands_primarycategory" fieldIdRef="11"/>
+    <Link colName="brands_othercategories" fieldIdRef="12"/>
+  </RecordView>
+  <RecordView tabName="scr_qbeconstruct">
+    <Link colName="brnd_name" fieldIdRef="3"/>
+    <Link colName="brnd_email" fieldIdRef="4"/>
+    <Link colName="accst_name" fieldIdRef="5"/>
+    <Link colName="brands_primarycategory_filter" fieldIdRef="6"/>
+    <Link colName="brands_othercategories_filter" fieldIdRef="7"/>
+  </RecordView>
+  <RecordView tabName="scr_qbeinput">
+    <Link colName="radiogroup1" fieldIdRef="1"/>
+    <Link colName="radiogroup2" fieldIdRef="2"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+  </RecordView>
+</Form>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a06" name="managedform" uid="{a7e27293-674b-4df7-83ea-ed74c2818fe8}">
+  <AGSettings/>
+  <Record masterTable="brandsocialnetworks" name="scr_brandsocialnetwork_grid" uid="{324ab38b-6d1f-4af5-aeb1-507120e2a91c}">
+    <RecordField colName="brndscl_id" fieldIdRef="1" fieldType="TABLE_COLUMN" name="brandsocialnetworks.brndscl_id" sqlTabName="brandsocialnetworks" uid="{ab4e7888-d8c4-4467-939e-436969679a6a}"/>
+    <RecordField colName="brndscl_brand_id" fieldIdRef="2" fieldType="TABLE_COLUMN" name="brandsocialnetworks.brndscl_brand_id" sqlTabName="brandsocialnetworks" uid="{d761d8c8-0029-46e9-a766-e5e843bc8f97}"/>
+    <RecordField colName="brndscl_socialnetwork_id" fieldIdRef="3" fieldType="TABLE_COLUMN" name="brandsocialnetworks.brndscl_socialnetwork_id" sqlTabName="brandsocialnetworks" uid="{3fb8d4ff-7999-40d0-91b9-1cd4957805d2}"/>
+    <RecordField colName="brndscl_accountname" fieldIdRef="4" fieldType="TABLE_COLUMN" name="brandsocialnetworks.brndscl_accountname" sqlTabName="brandsocialnetworks" uid="{145f6cc5-9095-41b1-806c-b37235d1053f}"/>
+    <RecordField colName="brndscl_comment" fieldIdRef="5" fieldType="TABLE_COLUMN" name="brandsocialnetworks.brndscl_comment" sqlTabName="brandsocialnetworks" uid="{dbbd0783-f83c-4144-86cd-6a05d432c01c}"/>
+  </Record>
+  <Record name="Undefined" uid="{be23cb5f-d6f3-4b17-b17a-be4a4f9fa905}">
+    <RecordField fieldIdRef="6" name="ff_formtitle" uid="{e68ebf9c-4ad5-4e5c-9c6b-fb61380817c5}"/>
+    <RecordField fieldIdRef="7" name="ffimage_value" uid="{0642906f-1823-403a-b761-2cd4c3b342b5}"/>
+  </Record>
+  <Form gridHeight="27" gridWidth="102" name="form" style="centerwindow" text="Form">
+    <Grid gridHeight="9" gridWidth="37" name="salfatixmedia1" posX="1" posY="1">
+      <FFLabel fieldId="6" gridHeight="1" gridWidth="35" justify="center" name="ff_formtitle" posX="1" posY="0" style="ff_formtitle" title="fflabel1" widget="FFLabel"/>
+      <Image action="cancel" autoScale="true" comment="Back" gridHeight="3" gridWidth="5" image="fa-arrow-circle-left" name="img_back" posX="1" posY="1" sizePolicy="fixed" style="no_border"/>
+      <FFImage action="save" autoScale="true" comment="Save" fieldId="7" gridHeight="3" gridWidth="5" name="ffimage_value" posX="31" posY="1" sizePolicy="fixed" style="no_border" title="ffimage1" widget="FFImage"/>
+      <HRec gridHeight="1" gridWidth="35" name="hrec1" posX="1" posY="4">
+        <Label gridHeight="1" gridWidth="8" name="brandsocialnetworks_brndscl_socialnetwork_id_label1" posX="0" posY="0" text="Network">
+          <Initializer text="dbschema:brandsocialnetworks.brndscl_socialnetwork_id/@label"/>
+        </Label>
+        <ComboBox colName="brndscl_socialnetwork_id" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" items="" name="brandsocialnetworks.brndscl_socialnetwork_id" posX="9" posY="0" scroll="true" sqlTabName="brandsocialnetworks" tabIndex="-1" widget="ComboBox">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </ComboBox>
+        <Spacer gridWidth="0" name="spacer1" posX="34" posY="0"/>
+      </HRec>
+      <HRec gridHeight="1" gridWidth="35" name="hrec2" posX="1" posY="5">
+        <Label gridHeight="1" gridWidth="8" name="brandsocialnetworks_brndscl_accountname_label1" posX="0" posY="0" text="Account">
+          <Initializer text="dbschema:brandsocialnetworks.brndscl_accountname/@label"/>
+        </Label>
+        <Edit colName="brndscl_accountname" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="24" name="brandsocialnetworks.brndscl_accountname" posX="9" posY="0" scroll="true" sqlTabName="brandsocialnetworks" tabIndex="-1" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Spacer gridWidth="0" name="spacer2" posX="34" posY="0"/>
+      </HRec>
+      <Label gridHeight="1" gridWidth="8" name="brandsocialnetworks_brndscl_comment_label" posX="1" posY="6" text="Comment">
+        <Initializer text="dbschema:usersocialnetworks.usrscl_comment/@label"/>
+      </Label>
+      <TextEdit colName="brndscl_comment" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="3" gridWidth="24" name="brandsocialnetworks.brndscl_comment" posX="10" posY="6" sqlTabName="brandsocialnetworks" tabIndex="-1" widget="TextEdit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </TextEdit>
+      <Phantom colName="brndscl_id" fieldId="1" fieldType="TABLE_COLUMN" name="brandsocialnetworks.brndscl_id" sqlTabName="brandsocialnetworks" widget="Phantom"/>
+      <Phantom colName="brndscl_brand_id" fieldId="2" fieldType="TABLE_COLUMN" name="brandsocialnetworks.brndscl_brand_id" sqlTabName="brandsocialnetworks" widget="Phantom"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAzADIANABhAGIAMwA4AGIALQA2AGQAMQBmAC0ANABhAGYANQAtAGEAZQBiADEALQA1ADAANwAxADIAMABlADIAYQA5ADEAYwB9QDQAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAAEwAewBiAGUAMgAzAGMAYgA1AGYALQBkADYAZgAzAC0ANABiADEANwAtAGIAMQA3AGEALQBiAGUANABhADQAZgA5AGYAYQA5ADAANQB9wGlAAAAAAABAIAAAAAAAAD9QYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

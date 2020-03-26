@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="salfatix_menu.tmp" build="3.20.07" text="Salfatixmedia Back-office" style="salfatixmenu" width="18" height="7">
+  <LStr text="Salfatixmedia Back-office"/>
+  <Grid name="grid1" width="18" height="7">
+    <Image name="underconstruction" width="16" height="4" image="../res/imgs/underconstruction" autoScale="1" stretch="both" style="no_border" posY="0" posX="1" gridWidth="16" gridHeight="4"/>
+  </Grid>
+</Form>

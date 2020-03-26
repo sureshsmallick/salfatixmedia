@@ -1,0 +1,9 @@
+{
+  "name": "StackWidget",
+  "type": "group",
+  "contents": [{
+    "name": "gbc-StackWidget-margin-ratio",
+    "type": "number",
+    "defaultValue": "$theme-margin-ratio"
+  }]
+}

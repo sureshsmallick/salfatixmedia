@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="backofficemainpanel_list" build="3.20.08" sqlDbName="salfatixmedia" text="Form" style="centerwindow" width="67" height="16">
+  <LStr text="Form"/>
+  <Grid name="grid1" width="67" height="16">
+    <FormField name="formonly.ff_formtitle" colName="ff_formtitle" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Label width="55" justify="center" style="ff_formtitle" posY="0" posX="2" gridWidth="55"/>
+    </FormField>
+    <Button name="refresh" width="5" text="" image="refresh" posY="1" posX="2" gridWidth="5" tabIndex="2">
+      <LStr text=""/>
+    </Button>
+    <ScrollGrid wantFixedPageSize="0" name="salfatixmedia1" doubleClick="open_job" style="mainpanellist" pageSize="10" posY="1" posX="8" gridWidth="59" gridHeight="15">
+      <PhantomMatrix name="formonly.job_id" colName="job_id" sqlType="INTEGER" fieldId="4" sqlTabName="formonly" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="formonly.job_category" colName="job_category" fieldId="2" sqlTabName="formonly" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="formonly.job_amount" colName="job_amount" sqlType="INTEGER" fieldId="3" sqlTabName="formonly" pageSize="10">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <Matrix name="formonly.job_description" colName="job_description" sqlType="VARCHAR" fieldId="1" sqlTabName="formonly" tabIndex="3" pageSize="10" stepY="14">
+        <TextEdit width="15" height="5" stretch="none" scrollBars="none" sizePolicy="initial" style="htmlnobox" wantReturns="1" posY="1" posX="2" gridWidth="15" gridHeight="5"/>
+      </Matrix>
+    </ScrollGrid>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="job_description" fieldIdRef="1"/>
+    <Link colName="job_category" fieldIdRef="2"/>
+    <Link colName="job_amount" fieldIdRef="3"/>
+    <Link colName="job_id" fieldIdRef="4"/>
+  </RecordView>
+  <RecordView tabName="scr_mainpanel_list">
+    <Link colName="job_id" fieldIdRef="4"/>
+    <Link colName="job_category" fieldIdRef="2"/>
+    <Link colName="job_amount" fieldIdRef="3"/>
+    <Link colName="job_description" fieldIdRef="1"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+  </RecordView>
+</Form>

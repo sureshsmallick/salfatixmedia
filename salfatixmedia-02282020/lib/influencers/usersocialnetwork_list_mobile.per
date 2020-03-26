@@ -1,0 +1,55 @@
+SCHEMA salfatixmedia
+
+LAYOUT (text=%"Form")
+Grid grid1
+{
+
+  [ff_formtitle                       ]
+  [img_back:                 :add     ]
+  <T salfatixmedia1                   >
+  [accname                            ]
+  [accname                            ]
+  [accname                            ]
+  [accname                            ]
+  [accname                            ]
+  <                                   >
+  [img1                          ]
+  [                              ]
+  [                              ]
+}
+END -- grid1
+END -- form
+
+TABLES
+usersocialnetworks
+ATTRIBUTES
+LABEL ff_formtitle=formonly.ff_formtitle, justify=center, style="ff_formtitle";
+IMAGE img_back:img_back, HEIGHT=3 CHARACTERS, action=cancel, image="fa-arrow-circle-left", autoScale, sizePolicy=fixed, style="no_border", comment=%"Back";
+IMAGE add:addsocialnetwork, HEIGHT=3 CHARACTERS, action=addsocialnetwork, image="fa-plus", autoScale, sizePolicy=fixed, style="no_border", comment=%"Add Social Network";
+Table salfatixmedia1:salfatixmedia1, DOUBLECLICK=editsocialnetwork,STYLE="socialnetworksmobile", HEIGHT = 5 LINES,WANTFIXEDPAGESIZE;
+Phantom usersocialnetworks.usrscl_id;
+Phantom usersocialnetworks.usrscl_usr_id;
+Phantom usersocialnetworks.usrscl_socialnetwork_id;
+Edit accname=usersocialnetworks.usrscl_accountname, SCROLL, IMAGECOLUMN=scl_img;
+Phantom usersocialnetworks.usrscl_comment;
+Phantom formonly.scl_img;
+Phantom formonly.delimage;
+Phantom formonly.editimage;
+Phantom formonly.viewimage;
+Image  img1 = formonly.foot, Autoscale, Stretch=Both, Style="center", sizePolicy=Fixed;
+END -- ATTRIBUTES
+
+INSTRUCTIONS
+SCREEN RECORD scr_usersocialnetwork_list(
+usersocialnetworks.usrscl_id,
+usersocialnetworks.usrscl_usr_id,
+usersocialnetworks.usrscl_socialnetwork_id,
+usersocialnetworks.usrscl_accountname,
+usersocialnetworks.usrscl_comment,
+formonly.scl_img,
+formonly.delimage,
+formonly.editimage,
+formonly.viewimage)
+SCREEN RECORD Undefined(formonly.ff_formtitle)
+END -- INSTRUCTIONS
+

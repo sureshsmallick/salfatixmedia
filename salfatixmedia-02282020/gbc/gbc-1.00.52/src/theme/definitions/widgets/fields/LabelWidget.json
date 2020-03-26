@@ -1,0 +1,15 @@
+{
+  "name": "LabelWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-LabelWidget-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "gbc-LabelWidget-margin",
+      "type": "size",
+      "defaultValue": "$theme-combobox-margin"
+    }
+  ]
+}

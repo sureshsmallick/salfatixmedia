@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="../">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="reference/index.html">Reference</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="reference/api.html">API reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/theme/index.html">Theme reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_conditions.html">Theme conditions</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_config_json.html">theme.config.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_scss_json_file.html">theme.scss.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_variables.html">Theme variables reference</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/grunt/index.html">Grunt reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/grunt/configure_compilation.html">Configure your compilation</a>
+            
+            <a class="btn btn-sidebar " href="reference/grunt/fix_configuration_issues.html">Fix configuration issues</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/project/index.html">Project reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/project/project_directory.html">Project directory</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/customization_project.html">Customization project</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets.html">Widgets</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_js_file.html">Widget JavaScript file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_template_file.html">Widget template file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_scss_file.html">Widget scss file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets_with_modelhelper.html">Widgets with Modelhelper</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/deliverables.html">Deliverables</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/upgrading/index.html">Upgrading</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/bootstrap.html">Application bootstrap</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/compatibility.html">Compatibility</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/cookies.html">Use of cookies</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/customization_migration.html">Customization migration</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deploy-runtime-on-gas..html">Deploy runtime on GAS</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deployment-portal.html">Deploy runtime with Portal</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/local_storage.html">Local storage</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.10.html">Upgrade to 3.10</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="source">
+
+  <a class="btn btn-default btn-xs" href="classes/classes.UserInterfaceWidget.html"><i class="glyphicon glyphicon-link"></i> view class doc</a>
+<section class="source-code">
+    <article>
+        <pre class="hljs"><span class="line-number"><span class="number" id="line_1">1</span><span class="number" id="line_2">2</span><span class="number" id="line_3">3</span><span class="number" id="line_4">4</span><span class="number" id="line_5">5</span><span class="number" id="line_6">6</span><span class="number" id="line_7">7</span><span class="number" id="line_8">8</span><span class="number" id="line_9">9</span><span class="number" id="line_10">10</span><span class="number" id="line_11">11</span><span class="number" id="line_12">12</span><span class="number" id="line_13">13</span><span class="number" id="line_14">14</span><span class="number" id="line_15">15</span><span class="number" id="line_16">16</span><span class="number" id="line_17">17</span><span class="number" id="line_18">18</span><span class="number" id="line_19">19</span><span class="number" id="line_20">20</span><span class="number" id="line_21">21</span><span class="number" id="line_22">22</span><span class="number" id="line_23">23</span><span class="number" id="line_24">24</span><span class="number" id="line_25">25</span><span class="number" id="line_26">26</span><span class="number" id="line_27">27</span><span class="number" id="line_28">28</span><span class="number" id="line_29">29</span><span class="number" id="line_30">30</span><span class="number" id="line_31">31</span><span class="number" id="line_32">32</span><span class="number" id="line_33">33</span><span class="number" id="line_34">34</span><span class="number" id="line_35">35</span><span class="number" id="line_36">36</span><span class="number" id="line_37">37</span><span class="number" id="line_38">38</span><span class="number" id="line_39">39</span><span class="number" id="line_40">40</span><span class="number" id="line_41">41</span><span class="number" id="line_42">42</span><span class="number" id="line_43">43</span><span class="number" id="line_44">44</span><span class="number" id="line_45">45</span><span class="number" id="line_46">46</span><span class="number" id="line_47">47</span><span class="number" id="line_48">48</span><span class="number" id="line_49">49</span><span class="number" id="line_50">50</span><span class="number" id="line_51">51</span><span class="number" id="line_52">52</span><span class="number" id="line_53">53</span><span class="number" id="line_54">54</span><span class="number" id="line_55">55</span><span class="number" id="line_56">56</span><span class="number" id="line_57">57</span><span class="number" id="line_58">58</span><span class="number" id="line_59">59</span><span class="number" id="line_60">60</span><span class="number" id="line_61">61</span><span class="number" id="line_62">62</span><span class="number" id="line_63">63</span><span class="number" id="line_64">64</span><span class="number" id="line_65">65</span><span class="number" id="line_66">66</span><span class="number" id="line_67">67</span><span class="number" id="line_68">68</span><span class="number" id="line_69">69</span><span class="number" id="line_70">70</span><span class="number" id="line_71">71</span><span class="number" id="line_72">72</span><span class="number" id="line_73">73</span><span class="number" id="line_74">74</span><span class="number" id="line_75">75</span><span class="number" id="line_76">76</span><span class="number" id="line_77">77</span><span class="number" id="line_78">78</span><span class="number" id="line_79">79</span><span class="number" id="line_80">80</span><span class="number" id="line_81">81</span><span class="number" id="line_82">82</span><span class="number" id="line_83">83</span><span class="number" id="line_84">84</span><span class="number" id="line_85">85</span><span class="number" id="line_86">86</span><span class="number" id="line_87">87</span><span class="number" id="line_88">88</span><span class="number" id="line_89">89</span><span class="number" id="line_90">90</span><span class="number" id="line_91">91</span><span class="number" id="line_92">92</span><span class="number" id="line_93">93</span><span class="number" id="line_94">94</span><span class="number" id="line_95">95</span><span class="number" id="line_96">96</span><span class="number" id="line_97">97</span><span class="number" id="line_98">98</span><span class="number" id="line_99">99</span><span class="number" id="line_100">100</span><span class="number" id="line_101">101</span><span class="number" id="line_102">102</span><span class="number" id="line_103">103</span><span class="number" id="line_104">104</span><span class="number" id="line_105">105</span><span class="number" id="line_106">106</span><span class="number" id="line_107">107</span><span class="number" id="line_108">108</span><span class="number" id="line_109">109</span><span class="number" id="line_110">110</span><span class="number" id="line_111">111</span><span class="number" id="line_112">112</span><span class="number" id="line_113">113</span><span class="number" id="line_114">114</span><span class="number" id="line_115">115</span><span class="number" id="line_116">116</span><span class="number" id="line_117">117</span><span class="number" id="line_118">118</span><span class="number" id="line_119">119</span><span class="number" id="line_120">120</span><span class="number" id="line_121">121</span><span class="number" id="line_122">122</span><span class="number" id="line_123">123</span><span class="number" id="line_124">124</span><span class="number" id="line_125">125</span><span class="number" id="line_126">126</span><span class="number" id="line_127">127</span><span class="number" id="line_128">128</span><span class="number" id="line_129">129</span><span class="number" id="line_130">130</span><span class="number" id="line_131">131</span><span class="number" id="line_132">132</span><span class="number" id="line_133">133</span><span class="number" id="line_134">134</span><span class="number" id="line_135">135</span><span class="number" id="line_136">136</span><span class="number" id="line_137">137</span><span class="number" id="line_138">138</span><span class="number" id="line_139">139</span><span class="number" id="line_140">140</span><span class="number" id="line_141">141</span><span class="number" id="line_142">142</span><span class="number" id="line_143">143</span><span class="number" id="line_144">144</span><span class="number" id="line_145">145</span><span class="number" id="line_146">146</span><span class="number" id="line_147">147</span><span class="number" id="line_148">148</span><span class="number" id="line_149">149</span><span class="number" id="line_150">150</span><span class="number" id="line_151">151</span><span class="number" id="line_152">152</span><span class="number" id="line_153">153</span><span class="number" id="line_154">154</span><span class="number" id="line_155">155</span><span class="number" id="line_156">156</span><span class="number" id="line_157">157</span><span class="number" id="line_158">158</span><span class="number" id="line_159">159</span><span class="number" id="line_160">160</span><span class="number" id="line_161">161</span><span class="number" id="line_162">162</span><span class="number" id="line_163">163</span><span class="number" id="line_164">164</span><span class="number" id="line_165">165</span><span class="number" id="line_166">166</span><span class="number" id="line_167">167</span><span class="number" id="line_168">168</span><span class="number" id="line_169">169</span><span class="number" id="line_170">170</span><span class="number" id="line_171">171</span><span class="number" id="line_172">172</span><span class="number" id="line_173">173</span><span class="number" id="line_174">174</span><span class="number" id="line_175">175</span><span class="number" id="line_176">176</span><span class="number" id="line_177">177</span><span class="number" id="line_178">178</span><span class="number" id="line_179">179</span><span class="number" id="line_180">180</span><span class="number" id="line_181">181</span><span class="number" id="line_182">182</span><span class="number" id="line_183">183</span><span class="number" id="line_184">184</span><span class="number" id="line_185">185</span><span class="number" id="line_186">186</span><span class="number" id="line_187">187</span><span class="number" id="line_188">188</span><span class="number" id="line_189">189</span><span class="number" id="line_190">190</span><span class="number" id="line_191">191</span><span class="number" id="line_192">192</span><span class="number" id="line_193">193</span><span class="number" id="line_194">194</span><span class="number" id="line_195">195</span><span class="number" id="line_196">196</span><span class="number" id="line_197">197</span><span class="number" id="line_198">198</span><span class="number" id="line_199">199</span><span class="number" id="line_200">200</span><span class="number" id="line_201">201</span><span class="number" id="line_202">202</span><span class="number" id="line_203">203</span><span class="number" id="line_204">204</span><span class="number" id="line_205">205</span><span class="number" id="line_206">206</span><span class="number" id="line_207">207</span><span class="number" id="line_208">208</span><span class="number" id="line_209">209</span><span class="number" id="line_210">210</span><span class="number" id="line_211">211</span><span class="number" id="line_212">212</span><span class="number" id="line_213">213</span><span class="number" id="line_214">214</span><span class="number" id="line_215">215</span><span class="number" id="line_216">216</span><span class="number" id="line_217">217</span><span class="number" id="line_218">218</span><span class="number" id="line_219">219</span><span class="number" id="line_220">220</span><span class="number" id="line_221">221</span><span class="number" id="line_222">222</span><span class="number" id="line_223">223</span><span class="number" id="line_224">224</span><span class="number" id="line_225">225</span><span class="number" id="line_226">226</span><span class="number" id="line_227">227</span><span class="number" id="line_228">228</span><span class="number" id="line_229">229</span><span class="number" id="line_230">230</span><span class="number" id="line_231">231</span><span class="number" id="line_232">232</span><span class="number" id="line_233">233</span><span class="number" id="line_234">234</span><span class="number" id="line_235">235</span><span class="number" id="line_236">236</span><span class="number" id="line_237">237</span><span class="number" id="line_238">238</span><span class="number" id="line_239">239</span><span class="number" id="line_240">240</span><span class="number" id="line_241">241</span><span class="number" id="line_242">242</span><span class="number" id="line_243">243</span><span class="number" id="line_244">244</span><span class="number" id="line_245">245</span><span class="number" id="line_246">246</span><span class="number" id="line_247">247</span><span class="number" id="line_248">248</span><span class="number" id="line_249">249</span><span class="number" id="line_250">250</span><span class="number" id="line_251">251</span><span class="number" id="line_252">252</span><span class="number" id="line_253">253</span><span class="number" id="line_254">254</span><span class="number" id="line_255">255</span><span class="number" id="line_256">256</span><span class="number" id="line_257">257</span><span class="number" id="line_258">258</span><span class="number" id="line_259">259</span><span class="number" id="line_260">260</span><span class="number" id="line_261">261</span><span class="number" id="line_262">262</span><span class="number" id="line_263">263</span><span class="number" id="line_264">264</span><span class="number" id="line_265">265</span><span class="number" id="line_266">266</span><span class="number" id="line_267">267</span><span class="number" id="line_268">268</span><span class="number" id="line_269">269</span><span class="number" id="line_270">270</span><span class="number" id="line_271">271</span><span class="number" id="line_272">272</span><span class="number" id="line_273">273</span><span class="number" id="line_274">274</span><span class="number" id="line_275">275</span><span class="number" id="line_276">276</span><span class="number" id="line_277">277</span><span class="number" id="line_278">278</span><span class="number" id="line_279">279</span><span class="number" id="line_280">280</span><span class="number" id="line_281">281</span><span class="number" id="line_282">282</span><span class="number" id="line_283">283</span><span class="number" id="line_284">284</span><span class="number" id="line_285">285</span><span class="number" id="line_286">286</span><span class="number" id="line_287">287</span><span class="number" id="line_288">288</span><span class="number" id="line_289">289</span><span class="number" id="line_290">290</span><span class="number" id="line_291">291</span><span class="number" id="line_292">292</span><span class="number" id="line_293">293</span><span class="number" id="line_294">294</span><span class="number" id="line_295">295</span><span class="number" id="line_296">296</span><span class="number" id="line_297">297</span><span class="number" id="line_298">298</span><span class="number" id="line_299">299</span><span class="number" id="line_300">300</span><span class="number" id="line_301">301</span><span class="number" id="line_302">302</span><span class="number" id="line_303">303</span><span class="number" id="line_304">304</span><span class="number" id="line_305">305</span><span class="number" id="line_306">306</span><span class="number" id="line_307">307</span><span class="number" id="line_308">308</span><span class="number" id="line_309">309</span><span class="number" id="line_310">310</span><span class="number" id="line_311">311</span><span class="number" id="line_312">312</span><span class="number" id="line_313">313</span><span class="number" id="line_314">314</span><span class="number" id="line_315">315</span><span class="number" id="line_316">316</span><span class="number" id="line_317">317</span><span class="number" id="line_318">318</span><span class="number" id="line_319">319</span><span class="number" id="line_320">320</span><span class="number" id="line_321">321</span><span class="number" id="line_322">322</span><span class="number" id="line_323">323</span><span class="number" id="line_324">324</span><span class="number" id="line_325">325</span><span class="number" id="line_326">326</span><span class="number" id="line_327">327</span><span class="number" id="line_328">328</span><span class="number" id="line_329">329</span><span class="number" id="line_330">330</span><span class="number" id="line_331">331</span><span class="number" id="line_332">332</span><span class="number" id="line_333">333</span><span class="number" id="line_334">334</span><span class="number" id="line_335">335</span><span class="number" id="line_336">336</span><span class="number" id="line_337">337</span><span class="number" id="line_338">338</span><span class="number" id="line_339">339</span><span class="number" id="line_340">340</span><span class="number" id="line_341">341</span><span class="number" id="line_342">342</span><span class="number" id="line_343">343</span><span class="number" id="line_344">344</span><span class="number" id="line_345">345</span><span class="number" id="line_346">346</span><span class="number" id="line_347">347</span><span class="number" id="line_348">348</span><span class="number" id="line_349">349</span><span class="number" id="line_350">350</span><span class="number" id="line_351">351</span><span class="number" id="line_352">352</span><span class="number" id="line_353">353</span><span class="number" id="line_354">354</span><span class="number" id="line_355">355</span><span class="number" id="line_356">356</span><span class="number" id="line_357">357</span><span class="number" id="line_358">358</span><span class="number" id="line_359">359</span><span class="number" id="line_360">360</span><span class="number" id="line_361">361</span><span class="number" id="line_362">362</span><span class="number" id="line_363">363</span><span class="number" id="line_364">364</span><span class="number" id="line_365">365</span><span class="number" id="line_366">366</span><span class="number" id="line_367">367</span><span class="number" id="line_368">368</span><span class="number" id="line_369">369</span><span class="number" id="line_370">370</span><span class="number" id="line_371">371</span><span class="number" id="line_372">372</span><span class="number" id="line_373">373</span><span class="number" id="line_374">374</span><span class="number" id="line_375">375</span><span class="number" id="line_376">376</span><span class="number" id="line_377">377</span><span class="number" id="line_378">378</span><span class="number" id="line_379">379</span><span class="number" id="line_380">380</span><span class="number" id="line_381">381</span><span class="number" id="line_382">382</span><span class="number" id="line_383">383</span><span class="number" id="line_384">384</span><span class="number" id="line_385">385</span><span class="number" id="line_386">386</span><span class="number" id="line_387">387</span><span class="number" id="line_388">388</span><span class="number" id="line_389">389</span><span class="number" id="line_390">390</span><span class="number" id="line_391">391</span><span class="number" id="line_392">392</span><span class="number" id="line_393">393</span><span class="number" id="line_394">394</span><span class="number" id="line_395">395</span><span class="number" id="line_396">396</span><span class="number" id="line_397">397</span><span class="number" id="line_398">398</span><span class="number" id="line_399">399</span><span class="number" id="line_400">400</span><span class="number" id="line_401">401</span><span class="number" id="line_402">402</span><span class="number" id="line_403">403</span><span class="number" id="line_404">404</span><span class="number" id="line_405">405</span><span class="number" id="line_406">406</span><span class="number" id="line_407">407</span><span class="number" id="line_408">408</span><span class="number" id="line_409">409</span><span class="number" id="line_410">410</span></span><code><span class="hljs-comment">/// FOURJS_START_COPYRIGHT(D,2015)</span>
+<span class="hljs-comment">/// Property of Four Js*</span>
+<span class="hljs-comment">/// (c) Copyright Four Js 2015, 2019. All Rights Reserved.</span>
+<span class="hljs-comment">/// * Trademark of Four Js Development Tools Europe Ltd</span>
+<span class="hljs-comment">///   in the United States and elsewhere</span>
+<span class="hljs-comment">/// </span>
+<span class="hljs-comment">/// This file can be modified by licensees according to the</span>
+<span class="hljs-comment">/// product manual.</span>
+<span class="hljs-comment">/// FOURJS_END_COPYRIGHT</span>
+<span class="hljs-meta">
+"use strict"</span>;
+
+modulum(<span class="hljs-string">'UserInterfaceWidget'</span>, [<span class="hljs-string">'WidgetGroupBase'</span>, <span class="hljs-string">'WidgetFactory'</span>],
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context, cls</span>) </span>{
+
+    <span class="hljs-comment">/**
+     * UserInterface widget.
+     * @class UserInterfaceWidget
+     * @memberOf classes
+     * @extends classes.WidgetGroupBase
+     * @publicdoc Widgets
+     */</span>
+    cls.UserInterfaceWidget = context.oo.Class(cls.WidgetGroupBase, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$super</span>) </span>{
+      <span class="hljs-keyword">return</span> <span class="hljs-comment">/** @lends classes.UserInterfaceWidget.prototype */</span> {
+        <span class="hljs-attr">__name</span>: <span class="hljs-string">"UserInterfaceWidget"</span>,
+
+        <span class="hljs-attr">$static</span>: {
+          <span class="hljs-attr">startMenuPosition</span>: <span class="hljs-string">'gStartMenuPosition'</span>
+        },
+
+        <span class="hljs-attr">_text</span>: <span class="hljs-string">""</span>,
+        <span class="hljs-attr">_image</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">_topMenuContainer</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">_toolBarContainer</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">_startMenuWidget</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">_startMenuContainer</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">_sidebarWidget</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">_traditionalWindowContainer</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-comment">/** @type {?number} */</span>
+        _currentWindowIdRef: <span class="hljs-literal">null</span>,
+        <span class="hljs-comment">/** VM Focused widget
+         * @type {classes.WidgetBase}*/</span>
+        _vmFocusedWidget: <span class="hljs-literal">null</span>,
+        <span class="hljs-comment">/** VM Previously Focused widget
+         *  @type {classes.WidgetBase}*/</span>
+        _vmPreviouslyFocusedWidget: <span class="hljs-literal">null</span>,
+        <span class="hljs-comment">/** Client focused widget
+         * @type {classes.WidgetBase} */</span>
+        _focusedWidget: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">_dbDate</span>: <span class="hljs-string">"MDY4/"</span>, <span class="hljs-comment">// default format</span>
+        _unBindLayoutHandler: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">_activeWindow</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">_errorMessageWidget</span>: <span class="hljs-literal">null</span>,
+
+        <span class="hljs-comment">/** @type {Node} */</span>
+        _chromeBarContainer: <span class="hljs-literal">null</span>,
+        <span class="hljs-comment">/** @type {classes.ChromeBarWidget} */</span>
+        _chromeBar: <span class="hljs-literal">null</span>,
+
+        <span class="hljs-comment">/**
+         * Typeahead
+         */</span>
+        _isBufferingKeys: <span class="hljs-literal">null</span>,
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        <span class="hljs-keyword">constructor</span>: function(opts) {
+          $<span class="hljs-keyword">super</span>.constructor.call(<span class="hljs-keyword">this</span>, opts);
+          <span class="hljs-keyword">this</span>._chromeBarContainer = <span class="hljs-keyword">this</span>._element.getElementsByClassName(<span class="hljs-string">"gbc_chromeBarContainer"</span>)[<span class="hljs-number">0</span>];
+          <span class="hljs-keyword">this</span>._topMenuContainer = <span class="hljs-keyword">this</span>._element.getElementsByClassName(<span class="hljs-string">"gbc_topMenuContainer"</span>)[<span class="hljs-number">0</span>];
+          <span class="hljs-keyword">this</span>._toolBarContainer = <span class="hljs-keyword">this</span>._element.getElementsByClassName(<span class="hljs-string">"gbc_toolBarContainer"</span>)[<span class="hljs-number">0</span>];
+          <span class="hljs-keyword">this</span>._startMenuContainer = <span class="hljs-keyword">this</span>._element.getElementsByClassName(<span class="hljs-string">"gbc_startMenuContainer"</span>)[<span class="hljs-number">0</span>];
+          <span class="hljs-keyword">this</span>._errorMessageWidget = cls.WidgetFactory.createWidget(<span class="hljs-string">"Message"</span>, <span class="hljs-keyword">this</span>.getBuildParameters());
+          <span class="hljs-keyword">this</span>._errorMessageWidget.setHidden(<span class="hljs-literal">true</span>);
+
+          <span class="hljs-keyword">if</span> (!gbc.ThemeService.getValue(<span class="hljs-string">"theme-legacy-topbar"</span>)) {
+            <span class="hljs-keyword">this</span>._chromeBar = cls.WidgetFactory.createWidget(<span class="hljs-string">"ChromeBar"</span>, <span class="hljs-keyword">this</span>.getBuildParameters());
+            <span class="hljs-keyword">var</span> appHost = context.HostService.getApplicationHostWidget();
+            <span class="hljs-keyword">this</span>._chromeBar.when(context.constants.widgetEvents.toggleClick, appHost.showSidebar.bind(appHost));
+            <span class="hljs-keyword">this</span>.addChromeBar();
+          }
+        },
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        destroy: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">this</span>._topMenuContainer = <span class="hljs-literal">null</span>;
+          <span class="hljs-keyword">this</span>._toolBarContainer = <span class="hljs-literal">null</span>;
+          <span class="hljs-keyword">this</span>._startMenuContainer = <span class="hljs-literal">null</span>;
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._unBindLayoutHandler) {
+            <span class="hljs-keyword">this</span>._unBindLayoutHandler();
+            <span class="hljs-keyword">this</span>._unBindLayoutHandler = <span class="hljs-literal">null</span>;
+          }
+          <span class="hljs-keyword">this</span>._chromeBarContainer = <span class="hljs-literal">null</span>;
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._chromeBar) {
+            <span class="hljs-keyword">this</span>._chromeBar.destroy();
+            <span class="hljs-keyword">this</span>._chromeBar = <span class="hljs-literal">null</span>;
+          }
+          <span class="hljs-keyword">this</span>._errorMessageWidget.destroy();
+          <span class="hljs-keyword">this</span>._errorMessageWidget = <span class="hljs-literal">null</span>;
+          <span class="hljs-keyword">this</span>._vmFocusedWidget = <span class="hljs-literal">null</span>;
+          <span class="hljs-keyword">this</span>._focusedWidget = <span class="hljs-literal">null</span>;
+          $<span class="hljs-keyword">super</span>.destroy.call(<span class="hljs-keyword">this</span>);
+          <span class="hljs-keyword">this</span>._startMenuWidget = <span class="hljs-literal">null</span>;
+        },
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        _initLayout: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">this</span>._layoutInformation = <span class="hljs-keyword">new</span> cls.LayoutInformation(<span class="hljs-keyword">this</span>);
+          <span class="hljs-keyword">this</span>._layoutEngine = <span class="hljs-keyword">new</span> cls.UserInterfaceLayoutEngine(<span class="hljs-keyword">this</span>);
+          <span class="hljs-keyword">this</span>._unBindLayoutHandler = <span class="hljs-keyword">this</span>._layoutEngine.onLayoutApplied(<span class="hljs-keyword">this</span>._onLayoutApplied.bind(<span class="hljs-keyword">this</span>));
+        },
+
+        <span class="hljs-attr">_onLayoutApplied</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.getContainerElement().children.length &gt; <span class="hljs-number">1</span>) {
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-keyword">this</span>.getChildren().length; i++) {
+              <span class="hljs-keyword">var</span> current = <span class="hljs-keyword">this</span>.getChildren()[i];
+              <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._canBeRemoved(current)) {
+                current.getElement().remove();
+              }
+            }
+          }
+
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._unBindLayoutHandler) {
+            <span class="hljs-keyword">this</span>._unBindLayoutHandler();
+            <span class="hljs-keyword">this</span>._unBindLayoutHandler = <span class="hljs-literal">null</span>;
+          }
+        },
+
+        <span class="hljs-attr">_canBeRemoved</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">widget</span>) </span>{
+          <span class="hljs-keyword">return</span> widget <span class="hljs-keyword">instanceof</span> cls.WindowWidget &amp;&amp;
+            (context.HostService.getCurrentWindow() &amp;&amp;
+              widget !== context.HostService.getCurrentWindow()) &amp;&amp;
+            !widget._forceVisible;
+        },
+
+        <span class="hljs-attr">getSidebarWidget</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._sidebarWidget;
+        },
+        <span class="hljs-attr">setSidebarWidget</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">widget</span>) </span>{
+          <span class="hljs-keyword">this</span>._sidebarWidget = widget;
+        },
+        <span class="hljs-attr">getMessageWidget</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._errorMessageWidget;
+        },
+
+        <span class="hljs-comment">/**
+         * Get the chromebar widget if any
+         * @return {*|null}
+         */</span>
+        getChromeBarWidget: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._chromeBar;
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        addChildWidget: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">widget, options</span>) </span>{
+          $<span class="hljs-keyword">super</span>.addChildWidget.call(<span class="hljs-keyword">this</span>, widget, options);
+          <span class="hljs-keyword">if</span> (widget <span class="hljs-keyword">instanceof</span> cls.WindowWidget &amp;&amp; !!<span class="hljs-keyword">this</span>.getSidebarWidget()) {
+            <span class="hljs-keyword">this</span>.getSidebarWidget().addChildWidget(widget.getSidebarWidget());
+          }
+          <span class="hljs-keyword">if</span> (options &amp;&amp; !options.noDOMInsert) {
+            <span class="hljs-keyword">this</span>._syncCurrentWindow();
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         * @param {classes.ApplicationWidget} widget
+         */</span>
+        removeChildWidget: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">widget</span>) </span>{
+          <span class="hljs-keyword">if</span> (widget <span class="hljs-keyword">instanceof</span> cls.WindowWidget &amp;&amp; !!<span class="hljs-keyword">this</span>.getSidebarWidget()) {
+            <span class="hljs-keyword">this</span>.getSidebarWidget().removeChildWidget(widget.getSidebarWidget());
+          }
+          $<span class="hljs-keyword">super</span>.removeChildWidget.call(<span class="hljs-keyword">this</span>, widget);
+        },
+
+        <span class="hljs-attr">addTopMenu</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">widget, order</span>) </span>{
+          widget.setOrder(order);
+          <span class="hljs-keyword">if</span> (widget.getParentWidget() === <span class="hljs-literal">null</span>) {
+            <span class="hljs-keyword">this</span>.addChildWidget(widget, {
+              <span class="hljs-attr">noDOMInsert</span>: <span class="hljs-literal">true</span>
+            });
+          }
+          widget.getElement().insertAt(order, <span class="hljs-keyword">this</span>._topMenuContainer);
+        },
+
+        <span class="hljs-comment">/**
+         * Add the chromebar to the dom
+         */</span>
+        addChromeBar: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._chromeBar) {
+            <span class="hljs-keyword">this</span>.addChildWidget(<span class="hljs-keyword">this</span>._chromeBar, {
+              <span class="hljs-attr">noDOMInsert</span>: <span class="hljs-literal">true</span>
+            });
+            <span class="hljs-keyword">this</span>._chromeBarContainer.appendChild(<span class="hljs-keyword">this</span>._chromeBar.getElement());
+          }
+        },
+
+        <span class="hljs-attr">addStartMenu</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">widget</span>) </span>{
+          <span class="hljs-keyword">this</span>._startMenuWidget = widget;
+          <span class="hljs-keyword">this</span>._startMenuContainer.appendChild(widget.getElement());
+        },
+
+        <span class="hljs-attr">getStartMenuWidget</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._startMenuWidget;
+        },
+
+        <span class="hljs-comment">/**
+         * Add a toolbar in the good container
+         * @param widget
+         * @param order
+         * @param widgetContainer
+         * @param chromeBar
+         */</span>
+        addToolBar: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">widget, order, widgetContainer, chromeBar</span>) </span>{
+          widget.setOrder(order);
+          <span class="hljs-keyword">if</span> (widget.getParentWidget() === <span class="hljs-literal">null</span>) {
+            <span class="hljs-keyword">this</span>.addChildWidget(widget, {
+              <span class="hljs-attr">noDOMInsert</span>: <span class="hljs-literal">true</span>
+            });
+          }
+          <span class="hljs-comment">//add it to the chromebar if any</span>
+          <span class="hljs-keyword">if</span> (chromeBar) {
+            chromeBar.addToolBar(widget, order);
+          } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">this</span>._toolBarContainer.appendChild(widget._element);
+          }
+
+        },
+        <span class="hljs-comment">/**
+         * Sets the current window
+         * @param windowIdRef
+         */</span>
+        setCurrentWindowId: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">windowIdRef</span>) </span>{
+          <span class="hljs-keyword">var</span> currentChanged = <span class="hljs-keyword">this</span>._currentWindowIdRef !== windowIdRef;
+          <span class="hljs-keyword">if</span> (currentChanged) {
+            <span class="hljs-keyword">this</span>._currentWindowIdRef = windowIdRef;
+            <span class="hljs-keyword">this</span>._syncCurrentWindow();
+          }
+        },
+
+        <span class="hljs-attr">_syncCurrentWindow</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">var</span> currentWin = <span class="hljs-keyword">this</span>.getCurrentWindow();
+          <span class="hljs-keyword">if</span> (currentWin) {
+
+            currentWin._sidebarItemWidget.setCurrent();
+            context.HostService.setDisplayedWindow(currentWin);
+
+            <span class="hljs-keyword">this</span>.getLayoutEngine().invalidateAllocatedSpace();
+            <span class="hljs-keyword">this</span>.emit(cls.UserInterfaceWidget.startMenuPosition, currentWin._auiTag);
+          }
+        },
+        <span class="hljs-comment">/**
+         * @returns {classes.WindowWidget} the current window
+         */</span>
+        getCurrentWindow: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">var</span> i;
+          <span class="hljs-keyword">var</span> win = <span class="hljs-literal">null</span>;
+          <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-keyword">this</span>.getChildren().length; ++i) {
+            win = <span class="hljs-keyword">this</span>.getChildren()[i];
+            <span class="hljs-keyword">if</span> (!!<span class="hljs-keyword">this</span>._currentWindowIdRef &amp;&amp; win._auiTag === <span class="hljs-keyword">this</span>._currentWindowIdRef) {
+              <span class="hljs-keyword">return</span> win;
+            }
+          }
+          <span class="hljs-comment">// If no window has been found, return the traditional window container</span>
+          <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-keyword">this</span>.getChildren().length; ++i) {
+            win = <span class="hljs-keyword">this</span>.getChildren()[i];
+            <span class="hljs-keyword">if</span> (win.hasClass(<span class="hljs-string">"gbc_TraditionalContainerWindow"</span>)) {
+              <span class="hljs-keyword">return</span> win;
+            }
+          }
+          <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setFocus: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">fromMouse</span>) </span>{
+          $<span class="hljs-keyword">super</span>.setFocus.call(<span class="hljs-keyword">this</span>, fromMouse);
+          <span class="hljs-keyword">this</span>.getElement().domFocus();
+        },
+
+        <span class="hljs-comment">/**
+         * Set VM focused widget
+         * @param {classes.WidgetBase} widget - widget which gains VM focus
+         */</span>
+        setVMFocusedWidget: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">widget</span>) </span>{
+          <span class="hljs-keyword">this</span>._vmPreviouslyFocusedWidget = <span class="hljs-keyword">this</span>._vmFocusedWidget;
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._vmFocusedWidget !== widget) {
+            <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._vmFocusedWidget) {
+              <span class="hljs-keyword">this</span>._vmFocusedWidget.loseVMFocus();
+            }
+            <span class="hljs-keyword">this</span>._vmFocusedWidget = widget;
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * Set client focused widget
+         * @param {classes.WidgetBase} widget - widget which gains client focus
+         */</span>
+        setFocusedWidget: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">widget</span>) </span>{
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._focusedWidget &amp;&amp; <span class="hljs-keyword">this</span>._focusedWidget !== widget) {
+            <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._focusedWidget.getElement()) {
+              <span class="hljs-keyword">this</span>._focusedWidget.getElement().removeClass(<span class="hljs-string">"gbc_Focus"</span>);
+              <span class="hljs-keyword">this</span>._focusedWidget.loseFocus();
+            }
+          }
+          <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>._focusedWidget || <span class="hljs-keyword">this</span>._focusedWidget !== widget) {
+            <span class="hljs-keyword">this</span>._focusedWidget = widget;
+            <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._focusedWidget.getElement()) {
+              <span class="hljs-keyword">this</span>._focusedWidget.getElement().addClass(<span class="hljs-string">"gbc_Focus"</span>);
+            }
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * @returns {classes.WidgetBase} current focused widget (by VM)
+         */</span>
+        getVMFocusedWidget: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._vmFocusedWidget;
+        },
+
+        <span class="hljs-comment">/**
+         * @returns {boolean} true if current focused widget changed (by VM)
+         */</span>
+        hasVMFocusedWidgetChanged: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._vmFocusedWidget !== <span class="hljs-keyword">this</span>._vmPreviouslyFocusedWidget;
+        },
+
+        <span class="hljs-comment">/**
+         * @returns {classes.WidgetBase} current focused widget (by VM)
+         */</span>
+        getFocusedWidget: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._focusedWidget;
+        },
+        <span class="hljs-comment">/**
+         * @param {string} text The window title
+         */</span>
+        setText: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">text</span>) </span>{
+          <span class="hljs-keyword">this</span>._text = text;
+        },
+        <span class="hljs-comment">/**
+         * @returns {string} The window title
+         */</span>
+        getText: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._text;
+        },
+
+        <span class="hljs-attr">setImage</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">image</span>) </span>{
+          <span class="hljs-keyword">this</span>._image = image;
+          <span class="hljs-keyword">this</span>.getSidebarWidget().setApplicationIcon(image);
+        },
+
+        <span class="hljs-attr">getImage</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._image;
+        },
+
+        <span class="hljs-attr">getDbDateFormat</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._dbDate;
+        },
+
+        <span class="hljs-attr">setDbDateFormat</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">format</span>) </span>{
+          <span class="hljs-keyword">this</span>._dbDate = format;
+        },
+
+        <span class="hljs-attr">getTraditionalWindowContainer</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>._traditionalWindowContainer) {
+            <span class="hljs-keyword">this</span>._traditionalWindowContainer = cls.WidgetFactory.createWidget(<span class="hljs-string">"TraditionalWindowContainer"</span>, <span class="hljs-keyword">this</span>.getBuildParameters());
+          }
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._traditionalWindowContainer;
+        },
+
+        <span class="hljs-attr">removeTraditionalWindowContainer</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._traditionalWindowContainer) {
+            <span class="hljs-keyword">this</span>.removeChildWidget(<span class="hljs-keyword">this</span>._traditionalWindowContainer);
+            <span class="hljs-keyword">this</span>._traditionalWindowContainer = <span class="hljs-literal">null</span>;
+          }
+        },
+        <span class="hljs-attr">isLayoutTerminator</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+        },
+        <span class="hljs-attr">activate</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">this</span>.emit(context.constants.widgetEvents.activate);
+        },
+
+        <span class="hljs-attr">onActivate</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">hook</span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.when(context.constants.widgetEvents.activate, hook);
+        },
+        <span class="hljs-attr">onDisable</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">hook</span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.when(context.constants.widgetEvents.disable, hook);
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setBackgroundColor: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">color</span>) </span>{
+          $<span class="hljs-keyword">super</span>.setBackgroundColor.call(<span class="hljs-keyword">this</span>, color);
+          <span class="hljs-keyword">this</span>.setStyle(<span class="hljs-string">'&gt; .gbc_barsContainer'</span>, {
+            <span class="hljs-string">"background-color"</span>: !!color &amp;&amp; !<span class="hljs-keyword">this</span>._ignoreBackgroundColor ? color : <span class="hljs-literal">null</span>
+          });
+        }
+      };
+    });
+    cls.WidgetFactory.registerBuilder(<span class="hljs-string">'UserInterface'</span>, cls.UserInterfaceWidget);
+  });
+</code><span class="line-number-clear"></span></pre>
+    </article>
+</section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

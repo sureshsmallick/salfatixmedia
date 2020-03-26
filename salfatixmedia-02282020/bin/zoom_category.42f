@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="zoom_category.tmp" build="3.20.07" sqlDbName="salfatixmedia" text="Category List" style="popup" width="36" height="21">
+  <LStr text="Category List"/>
+  <Grid name="grid1" width="36" height="21">
+    <Image name="img_back" width="5" height="3" action="close" image="fa-arrow-circle-left" autoScale="1" sizePolicy="fixed" style="no_border" comment="Back" posY="1" posX="3" gridWidth="5" gridHeight="3">
+      <LStr comment="Back"/>
+    </Image>
+    <Image name="img_accept" width="5" height="3" action="accept" image="fa-check-circle-green" autoScale="1" sizePolicy="fixed" style="no_border" comment="Validate" posY="1" posX="30" gridWidth="5" gridHeight="3">
+      <LStr comment="Validate"/>
+    </Image>
+    <Table pageSize="15" name="salfatixmedia1" style="zoomtable" doubleClick="selectrow" width="32" posY="4" posX="3" gridWidth="32" gridHeight="16" tabName="scrlist_category">
+      <PhantomColumn name="categories.ctgr_id" colName="ctgr_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="1" sqlTabName="categories">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <TableColumn name="categories.ctgr_name" colName="ctgr_name" sqlType="VARCHAR(32)" required="1" notNull="1" fieldId="3" sqlTabName="categories" text="Category" imageColumn="myimage" tabIndex="1">
+        <Edit width="29" scroll="1"/>
+        <LStr text="Category"/>
+      </TableColumn>
+      <PhantomColumn name="categories.ctgr_uiorder" colName="ctgr_uiorder" sqlType="INTEGER" required="1" notNull="1" fieldId="4" sqlTabName="categories">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="categories.ctgr_parent_id" colName="ctgr_parent_id" sqlType="INTEGER" fieldId="2" sqlTabName="categories">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="formonly.myimage" colName="myimage" fieldId="0" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+    </Table>
+    <Button name="addcategory" width="32" text="Add  new category" posY="20" posX="3" gridWidth="32" tabIndex="2">
+      <LStr text="Add  new category"/>
+    </Button>
+  </Grid>
+  <RecordView tabName="categories">
+    <Link colName="ctgr_id" fieldIdRef="1"/>
+    <Link colName="ctgr_parent_id" fieldIdRef="2"/>
+    <Link colName="ctgr_name" fieldIdRef="3"/>
+    <Link colName="ctgr_uiorder" fieldIdRef="4"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="myimage" fieldIdRef="0"/>
+  </RecordView>
+</Form>

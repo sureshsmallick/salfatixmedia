@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionDefaultList>
+  
+  <ActionDefault name="infl_campaigns" text="Campaigns" comment="" image="fa-list-green" contextMenu="no"/>
+  <ActionDefault name="infl_yourdetail" text="Profile" comment="" image="fa-info" contextMenu="no"/>
+  <ActionDefault name="infl_notifications"  text="Notifications" comment="" image="letter" contextMenu="no"/>
+  <ActionDefault name="infl_socialnetworks" text="Social networks" comment="" image="fa-users" contextMenu="no"/>
+  <ActionDefault name="infl_financialdata" text="Remuneration" comment="" image="fa-money" contextMenu="no"/>
+  <ActionDefault name="infl_rates" text="Currency" comment="" image="fa-euro" contextMenu="no"/>
+  <ActionDefault name="infl_postprices" text="Price per post" comment="" image="fa-calculator" contextMenu="no"/>
+  <ActionDefault name="infl_postpriceshelp" text="Euro symbols meaning" comment="" image="fa-calculator" contextMenu="no"/>
+  <ActionDefault name="infl_bankdata" text="Bank information" comment="" image="fa-bank" contextMenu="no"/>
+  <ActionDefault name="signout" text="Sign out" comment="" image="fa-sign-out-red" contextMenu="no"/>
+
+  <ActionDefault name="infl_viewopencampaigns" text="Campaigns" comment="" image="fa-list" contextMenu="no"/>
+  <ActionDefault name="infl_viewappliedcampaigns" text="Applied campaigns" comment="" image="fa-thumbs-o-up" contextMenu="no"/>
+  <ActionDefault name="infl_viewworkablecampaigns" text="Campaign Jobs" comment="" image="fa-wrench" contextMenu="no"/>
+
+  <ActionDefault name="addpricemobile" text="Add" comment="" image="" contextMenu="no"/>
+  <ActionDefault name="addsocialnetworkmobile" text="" comment="" image="fa-plus" contextMenu="no"/>
+  <ActionDefault name="addpost" text="" comment="" image="fa-plus" contextMenu="no"/>
+
+  <ActionDefault name="accept" text="OK" acceleratorName="Return" acceleratorName2="Enter" contextMenu="no"/>
+  <ActionDefault name="save" text="OK" acceleratorName="Return" acceleratorName2="Enter" contextMenu="no"/>
+  <ActionDefault name="save_mobile" text="Done" acceleratorName="Return" acceleratorName2="Enter" contextMenu="no"/>
+
+</ActionDefaultList>

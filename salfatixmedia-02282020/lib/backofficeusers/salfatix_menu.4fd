@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="30a00" gstVersion="30a06" name="managedform" uid="{7a90ebe7-6ed8-409f-a939-6454ffc48b1f}">
+  <AGSettings/>
+  <Form gridHeight="25" gridWidth="80" name="form" style="salfatixmenu" text="Salfatixmedia Back-office">
+    <Grid gridHeight="7" gridWidth="37" name="grid1" posX="8" posY="3">
+      <Image autoScale="true" gridHeight="4" gridWidth="16" image="../res/imgs/underconstruction" name="underconstruction" posX="1" posY="0" stretch="both" style="no_border"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAg==]]>
+  </DiagramLayout>
+</ManagedForm>

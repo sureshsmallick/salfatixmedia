@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="30a00" gstVersion="30a06" name="managedform" uid="{7a90ebe7-6ed8-409f-a939-6454ffc48b1f}">
+  <AGSettings/>
+  <Record name="Undefined" uid="{e59c6e01-7023-4a31-9564-4a914e7495f5}"/>
+  <Form gridHeight="25" gridWidth="80" name="form" style="centerwindow" text="Salfatixmedia Back-office">
+    <Grid gridHeight="11" gridWidth="46" name="grid1" posX="8" posY="3">
+      <Label gridHeight="1" gridWidth="31" justify="center" name="label3" posX="2" posY="3" style="ff_formtitle" text="There is no price per post">
+        <Initializer text="dbschema:brands.brnd_password/@label"/>
+      </Label>
+      <Image action="cancel" autoScale="true" comment="Back" gridHeight="3" gridWidth="5" image="fa-arrow-circle-left" name="img_back" posX="2" posY="4" sizePolicy="fixed" style="no_border"/>
+      <Label gridHeight="1" gridWidth="31" name="label4" posX="2" posY="7" text="Click the button to start adding prices">
+        <Initializer text="dbschema:brands.brnd_password/@label"/>
+      </Label>
+      <Label gridHeight="1" gridWidth="31" name="label6" posX="2" posY="8" text=" "/>
+      <HRec gridHeight="1" gridWidth="31" name="hrec1" posX="2" posY="9">
+        <Spacer gridWidth="9" name="spacer2" posX="0" posY="0"/>
+        <Button gridHeight="1" gridWidth="11" image="fa-plus-square" name="addprice" posX="10" posY="0" tabIndex="-1" text="Add Price"/>
+        <Spacer gridWidth="8" name="spacer1" posX="22" posY="0"/>
+      </HRec>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlADUAOQBjADYAZQAwADEALQA3ADAAMgAzAC0ANABhADMAMQAtADkANQA2ADQALQA0AGEAOQAxADQAZQA3ADQAOQA1AGYANQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

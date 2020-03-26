@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Form name="readpics" build="3.20.08" width="15" height="5">
+  <Grid width="15" height="5">
+    <Button name="next" width="3" text="" posY="0" posX="1" gridWidth="3" tabIndex="1"/>
+    <Button name="accept" width="3" text="" image="accept" posY="0" posX="6" gridWidth="3" tabIndex="2"/>
+    <Button name="cancel" width="3" text="" image="cancel" posY="0" posX="11" gridWidth="3" tabIndex="3"/>
+    <FormField name="formonly.pic_value" colName="pic_value" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="4">
+      <Image width="13" height="4" sizePolicy="fixed" stretch="both" autoScale="1" posY="1" posX="1" gridWidth="13" gridHeight="4"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="pic_value" fieldIdRef="0"/>
+  </RecordView>
+</Form>

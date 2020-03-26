@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation - Widget scss file</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="reference/index.html">Reference</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="reference/api.html">API reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/theme/index.html">Theme reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_conditions.html">Theme conditions</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_config_json.html">theme.config.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_scss_json_file.html">theme.scss.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_variables.html">Theme variables reference</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/grunt/index.html">Grunt reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/grunt/configure_compilation.html">Configure your compilation</a>
+            
+            <a class="btn btn-sidebar " href="reference/grunt/fix_configuration_issues.html">Fix configuration issues</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/project/index.html">Project reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/project/project_directory.html">Project directory</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/customization_project.html">Customization project</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets.html">Widgets</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_js_file.html">Widget JavaScript file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_template_file.html">Widget template file</a>
+            
+            <a class="btn btn-sidebar active" href="reference/project/widget_scss_file.html">Widget scss file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets_with_modelhelper.html">Widgets with Modelhelper</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/deliverables.html">Deliverables</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/upgrading/index.html">Upgrading</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/bootstrap.html">Application bootstrap</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/compatibility.html">Compatibility</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/cookies.html">Use of cookies</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/customization_migration.html">Customization migration</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deploy-runtime-on-gas..html">Deploy runtime on GAS</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deployment-portal.html">Deploy runtime with Portal</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/local_storage.html">Local storage</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.10.html">Upgrade to 3.10</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="reference">
+<header class="page-title">
+  <em>Widget scss file</em>
+</header>
+<article class="md-content">
+<p>The Genero Browser Client (GBC) widget scss file contains the widget styles.</p>
+<h2>Overview</h2>
+<p>The scss files contain the colors, fonts and variables that define styles.
+When the scss file is processed, it takes the variables you define for colors, for example <a class="theme-variable-link" href="reference/theme/theme_variables.html#gbc-primary-medium-color"><code>gbc-primary-medium-color</code></a>, and outputs normal CSS with your variable values placed in the CSS.</p>
+<h2>Extending a basic widget style</h2>
+<p>You can extend a widget style by creating a <code>.scss</code> file, then importing that file in the <code>customization.scss</code> file. For example, you can a file <code>&lt;GBC_PROJECT_DIR&gt;/customization/&lt;customization_project_dir&gt;/sass/MyEditWidget.scss</code> containing:</p>
+<pre class="hljs"><code><span class="hljs-selector-class">.gbc_MyEditWidget</span> {
+  &gt; <span class="hljs-selector-class">.title</span> {
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">5px</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">8pt</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$gbc-primary-medium-color</span>;
+    <span class="hljs-attribute">text-transform</span>: none;
+  }
+  &gt; <span class="hljs-selector-tag">input</span> {
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span> <span class="hljs-number">1</span> <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">32px</span>;
+    <span class="hljs-attribute">border-bottom</span>: solid <span class="hljs-number">2px</span> <span class="hljs-variable">$gbc-primary-light-color</span>;
+  }
+  &amp;<span class="hljs-selector-class">.gbc_Focus</span> &gt; <span class="hljs-selector-tag">input</span> {
+    <span class="hljs-attribute">border-bottom</span>: solid <span class="hljs-number">2px</span> <span class="hljs-variable">$gbc-primary-medium-color</span>;
+  }
+}
+</code></pre>
+<blockquote>
+<p><em>NOTE</em> :don't forget to import this file in <code>&lt;GBC_PROJECT_DIR&gt;/customization/&lt;customization_project_dir&gt;/sass/customization.scss</code>, like:</p>
+<pre class="hljs"><code><span class="hljs-comment">// […]</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"CssLayoutWidget"</span>;
+</code></pre>
+</blockquote>
+<h2>Generated selectors</h2>
+<p>A widget with a style in the form has a dedicated selector.
+For example, in the form source (shown here using the <code>.per</code> file syntax), you have:</p>
+<pre><code>EDIT f01 = formonly.edt, STYLE=&quot;mystyle1 mystyle2 …&quot;;
+</code></pre>
+<p>You get a generated selector in the HTML structure:</p>
+<pre class="hljs"><code>class= "… gbc_style_mystyle1 gbc_style_mystyle2 …"
+</code></pre>
+<p>These selectors may be used to do advanced styling using CSS. The advantage of using these over Genero presentation styles (<code>.4st</code> files) is that it provides a much more powerful framework for implementing changes. The disadvantage, however, is a lack of portability across the various Genero front-ends.</p>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

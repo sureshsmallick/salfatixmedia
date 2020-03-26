@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="brandsocialnetwork_empty.tmp" build="3.20.07" text="Salfatixmedia Back-office" style="centerwindow" width="34" height="11">
+  <LStr text="Salfatixmedia Back-office"/>
+  <Grid name="grid1" width="34" height="11">
+    <Label name="label3" width="31" text="There is no social networks" justify="center" style="ff_formtitle" posY="3" posX="2" gridWidth="31">
+      <LStr text="There is no social networks"/>
+    </Label>
+    <Image name="img_back" width="5" height="3" action="cancel" image="fa-arrow-circle-left" autoScale="1" sizePolicy="fixed" style="no_border" comment="Back" posY="4" posX="2" gridWidth="5" gridHeight="3">
+      <LStr comment="Back"/>
+    </Image>
+    <Label name="label4" width="31" text="Click the button to start adding social networks" posY="7" posX="2" gridWidth="31">
+      <LStr text="Click the button to start adding social networks"/>
+    </Label>
+    <Label name="label6" width="31" text=" " posY="8" posX="2" gridWidth="31">
+      <LStr text=" "/>
+    </Label>
+    <HBox posY="9" posX="2" gridWidth="31">
+      <SpacerItem/>
+      <Button name="addsocialnetwork" width="13" text="Add Social Network" image="fa-plus-square" tabIndex="1">
+        <LStr text="Add Social Network"/>
+      </Button>
+      <SpacerItem/>
+    </HBox>
+  </Grid>
+</Form>

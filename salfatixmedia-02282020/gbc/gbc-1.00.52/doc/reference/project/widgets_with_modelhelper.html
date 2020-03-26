@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation - Widgets with Modelhelper</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="reference/index.html">Reference</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="reference/api.html">API reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/theme/index.html">Theme reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_conditions.html">Theme conditions</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_config_json.html">theme.config.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_scss_json_file.html">theme.scss.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_variables.html">Theme variables reference</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/grunt/index.html">Grunt reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/grunt/configure_compilation.html">Configure your compilation</a>
+            
+            <a class="btn btn-sidebar " href="reference/grunt/fix_configuration_issues.html">Fix configuration issues</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/project/index.html">Project reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/project/project_directory.html">Project directory</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/customization_project.html">Customization project</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets.html">Widgets</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_js_file.html">Widget JavaScript file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_template_file.html">Widget template file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_scss_file.html">Widget scss file</a>
+            
+            <a class="btn btn-sidebar active" href="reference/project/widgets_with_modelhelper.html">Widgets with Modelhelper</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/deliverables.html">Deliverables</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/upgrading/index.html">Upgrading</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/bootstrap.html">Application bootstrap</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/compatibility.html">Compatibility</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/cookies.html">Use of cookies</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/customization_migration.html">Customization migration</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deploy-runtime-on-gas..html">Deploy runtime on GAS</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deployment-portal.html">Deploy runtime with Portal</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/local_storage.html">Local storage</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.10.html">Upgrade to 3.10</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="reference">
+<header class="page-title">
+  <em>Widgets with Modelhelper</em>
+</header>
+<article class="md-content">
+<p>In this procedure you learn how to customize widgets using the ModelHelper class in the Genero Browser Client (GBC) project.</p>
+<p>The GBC has two main widgets types:</p>
+<ul>
+<li>Simple widgets</li>
+<li>Container widgets</li>
+</ul>
+<p>The ModelHelper class is designed to help you with their customization. The source is available at <code>&lt;GBC_PROJECT_DIR&gt;/src/js/base/helpers/ModelHelper.js</code>. For details about the ModelHelper APIs and their functions see <a href="reference/api.html">API reference</a>.</p>
+<h2>Extending a basic widget using ModelHelper</h2>
+<p>The sample code creates a basic widget for the header bar using some functions in the ModelHelper class. The code in the example is found in <code>&lt;GBC_PROJECT_DIR&gt;/customization/sample/js/MyHeaderBarWidget.js</code></p>
+<pre class="hljs"><code><span class="hljs-comment">// MyHeaderBarWidget.js</span>
+<span class="hljs-meta">"use strict"</span>;
+
+modulum(<span class="hljs-string">'MyHeaderBarWidget'</span>, [<span class="hljs-string">'WidgetBase'</span>, <span class="hljs-string">'WidgetFactory'</span>],
+  <span class="hljs-comment">/**
+   * @param {gbc} context
+   * @param {classes} cls
+   */</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context, cls</span>) </span>{
+
+    <span class="hljs-comment">/**
+     * @class classes.MyHeaderBarWidget
+     * @extends classes.WidgetBase
+     */</span>
+    cls.MyHeaderBarWidget = context.oo.Class(cls.WidgetBase, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$super</span>) </span>{
+      <span class="hljs-comment">/** @lends classes.MyHeaderBarWidget.prototype */</span>
+      <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">__name</span>: <span class="hljs-string">"MyHeaderBarWidget"</span>,
+        <span class="hljs-comment">/** @type {classes.ModelHelper} */</span>
+        _model: <span class="hljs-literal">null</span>,
+        <span class="hljs-comment">/** @type {number} */</span>
+        _appsCount: <span class="hljs-literal">null</span>,
+
+        <span class="hljs-attr">constructor</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $<span class="hljs-keyword">super</span>.constructor.call(<span class="hljs-keyword">this</span>);
+          <span class="hljs-keyword">this</span>._appsCount = <span class="hljs-number">0</span>;
+          <span class="hljs-keyword">this</span>._model = <span class="hljs-keyword">new</span> cls.ModelHelper(<span class="hljs-keyword">this</span>);
+          <span class="hljs-keyword">this</span>._model.addNewApplicationListener(<span class="hljs-keyword">this</span>.onNewApplication.bind(<span class="hljs-keyword">this</span>));
+          <span class="hljs-keyword">this</span>._model.addCloseApplicationListener(<span class="hljs-keyword">this</span>.onCloseApplication.bind(<span class="hljs-keyword">this</span>));
+          <span class="hljs-keyword">this</span>._model.addCurrentWindowChangeListener(<span class="hljs-keyword">this</span>.onCurrentWindowChanged.bind(<span class="hljs-keyword">this</span>));
+        },
+
+        <span class="hljs-attr">onNewApplication</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">application</span>) </span>{
+          ++<span class="hljs-keyword">this</span>._appsCount;
+          <span class="hljs-keyword">var</span> elt = <span class="hljs-keyword">this</span>.getElement().querySelector(<span class="hljs-string">".MyHeaderBarWidget-counter"</span>);
+          elt.textContent = <span class="hljs-keyword">this</span>._appsCount.toString();
+        },
+
+        <span class="hljs-attr">onCloseApplication</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">application</span>) </span>{
+          --<span class="hljs-keyword">this</span>._appsCount;
+          <span class="hljs-keyword">var</span> elt = <span class="hljs-keyword">this</span>.getElement().querySelector(<span class="hljs-string">".MyHeaderBarWidget-counter"</span>);
+          elt.textContent = <span class="hljs-keyword">this</span>._appsCount.toString();
+        },
+
+        <span class="hljs-attr">onCurrentWindowChanged</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">windowNode</span>) </span>{
+          <span class="hljs-keyword">var</span> elt = <span class="hljs-keyword">this</span>.getElement().querySelector(<span class="hljs-string">".MyHeaderBarWidget-title"</span>);
+          <span class="hljs-keyword">if</span> (windowNode) {
+            elt.textContent = windowNode.attribute(<span class="hljs-string">'text'</span>);
+          } <span class="hljs-keyword">else</span> {
+            elt.textContent = <span class="hljs-string">"&lt;NONE&gt;"</span>;
+          }
+        }
+      };
+    });
+  }
+);
+
+</code></pre>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

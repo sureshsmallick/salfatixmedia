@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="userpostprice_grid.tmp" build="3.20.07" sqlDbName="salfatixmedia" text="Form" style="centerwindow" width="37" height="11">
+  <LStr text="Form"/>
+  <Grid name="salfatixmedia1" width="37" height="11">
+    <FormField name="formonly.ff_formtitle" colName="ff_formtitle" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Label width="35" justify="center" style="ff_formtitle" posY="0" posX="1" gridWidth="35"/>
+    </FormField>
+    <Image name="img_back" width="5" height="3" action="cancel" image="fa-arrow-circle-left" autoScale="1" sizePolicy="fixed" style="no_border" comment="Back" posY="1" posX="1" gridWidth="5" gridHeight="3">
+      <LStr comment="Back"/>
+    </Image>
+    <FormField name="formonly.ffimage_value" colName="ffimage_value" fieldId="1" sqlTabName="formonly" noEntry="1" tabIndex="2">
+      <Image width="5" height="3" action="save" autoScale="1" sizePolicy="fixed" style="no_border" comment="Save" posY="1" posX="31" gridWidth="5" gridHeight="3">
+        <LStr comment="Save"/>
+      </Image>
+    </FormField>
+    <HBox posY="4" posX="1" gridWidth="35">
+      <PhantomFormField name="userpostprices.usrpp_usr_id" colName="usrpp_usr_id" sqlType="INTEGER" required="1" notNull="1" fieldId="12" sqlTabName="userpostprices">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <Label name="userpostprices_usrpp_posttype_id_label1" width="8" text="Post Type">
+        <LStr text="Post Type"/>
+      </Label>
+      <FormField name="userpostprices.usrpp_posttype_id" colName="usrpp_posttype_id" sqlType="INTEGER" required="1" notNull="1" fieldId="2" sqlTabName="userpostprices" tabIndex="3">
+        <ComboBox width="21" scroll="1"/>
+      </FormField>
+      <SpacerItem/>
+    </HBox>
+    <HBox posY="5" posX="1" gridWidth="35">
+      <Label name="userpostprices_usrpp_minprice_label1" width="8" text="Between">
+        <LStr text="Between"/>
+      </Label>
+      <FormField name="userpostprices.usrpp_minprice" colName="usrpp_minprice" sqlType="DECIMAL(10,2)" required="1" notNull="1" fieldId="3" sqlTabName="userpostprices" tabIndex="4">
+        <Edit width="7" scroll="1"/>
+      </FormField>
+      <Label name="userpostprices_usrpp_maxprice_label1" width="3" text="and">
+        <LStr text="and"/>
+      </Label>
+      <FormField name="userpostprices.usrpp_maxprice" colName="usrpp_maxprice" sqlType="DECIMAL(10,2)" required="1" notNull="1" fieldId="4" sqlTabName="userpostprices" tabIndex="5">
+        <Edit width="7" scroll="1"/>
+      </FormField>
+      <FormField name="formonly.cur" colName="cur" fieldId="5" sqlTabName="formonly" noEntry="1" tabIndex="6">
+        <Label width="3"/>
+      </FormField>
+      <SpacerItem/>
+    </HBox>
+    <HBox posY="6" posX="1" gridWidth="35">
+      <Label name="userpostprices_usrpp_freeofcharge_label" width="15" text="Accept free of charge">
+        <LStr text="Accept free of charge"/>
+      </Label>
+      <FormField name="userpostprices.usrpp_freeofcharge" colName="usrpp_freeofcharge" sqlType="SMALLINT" required="1" notNull="1" fieldId="6" sqlTabName="userpostprices" tabIndex="7">
+        <CheckBox width="3" text="">
+          <LStr text=""/>
+        </CheckBox>
+      </FormField>
+      <SpacerItem/>
+    </HBox>
+    <FormField name="formonly.salfatixlbl" colName="salfatixlbl" fieldId="7" sqlTabName="formonly" noEntry="1" tabIndex="8">
+      <Label width="35" justify="center" style="brand_label_bold" posY="7" posX="1" gridWidth="35"/>
+    </FormField>
+    <HBox posY="8" posX="1" gridWidth="35">
+      <Label name="userpostprices_usrpp_salfatixminprice_label" width="8" text="Between">
+        <LStr text="Between"/>
+      </Label>
+      <FormField name="userpostprices.usrpp_salfatixminprice" colName="usrpp_salfatixminprice" sqlType="DECIMAL(10,2)" fieldId="8" sqlTabName="userpostprices" tabIndex="9">
+        <Edit width="7" scroll="1"/>
+      </FormField>
+      <Label name="userpostprices_usrpp_salfatixmaxprice_label" width="3" text="and">
+        <LStr text="and"/>
+      </Label>
+      <FormField name="userpostprices.usrpp_salfatixmaxprice" colName="usrpp_salfatixmaxprice" sqlType="DECIMAL(10,2)" fieldId="9" sqlTabName="userpostprices" tabIndex="10">
+        <Edit width="7" scroll="1"/>
+      </FormField>
+      <FormField name="formonly.sur" colName="sur" fieldId="10" sqlTabName="formonly" noEntry="1" tabIndex="11">
+        <Label width="3"/>
+      </FormField>
+      <SpacerItem/>
+    </HBox>
+    <HBox posY="9" posX="1" gridWidth="35">
+      <Label name="userpostprices_usrpp_salfatixfreeofcharge_label" width="28" text="Free when influencer&apos;s service has no price">
+        <LStr text="Free when influencer&apos;s service has no price"/>
+      </Label>
+      <FormField name="userpostprices.usrpp_salfatixfreeofcharge" colName="usrpp_salfatixfreeofcharge" sqlType="SMALLINT" required="1" notNull="1" fieldId="11" sqlTabName="userpostprices" tabIndex="12">
+        <CheckBox width="3" text="">
+          <LStr text=""/>
+        </CheckBox>
+      </FormField>
+      <PhantomFormField name="userpostprices.usrpp_isvalidatedbysalfatix" colName="usrpp_isvalidatedbysalfatix" sqlType="SMALLINT" required="1" notNull="1" fieldId="13" sqlTabName="userpostprices">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <SpacerItem/>
+    </HBox>
+  </Grid>
+  <RecordView tabName="userpostprices">
+    <Link colName="usrpp_posttype_id" fieldIdRef="2"/>
+    <Link colName="usrpp_minprice" fieldIdRef="3"/>
+    <Link colName="usrpp_maxprice" fieldIdRef="4"/>
+    <Link colName="usrpp_freeofcharge" fieldIdRef="6"/>
+    <Link colName="usrpp_salfatixminprice" fieldIdRef="8"/>
+    <Link colName="usrpp_salfatixmaxprice" fieldIdRef="9"/>
+    <Link colName="usrpp_salfatixfreeofcharge" fieldIdRef="11"/>
+    <Link colName="usrpp_usr_id" fieldIdRef="12"/>
+    <Link colName="usrpp_isvalidatedbysalfatix" fieldIdRef="13"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="ffimage_value" fieldIdRef="1"/>
+    <Link colName="cur" fieldIdRef="5"/>
+    <Link colName="salfatixlbl" fieldIdRef="7"/>
+    <Link colName="sur" fieldIdRef="10"/>
+  </RecordView>
+  <RecordView tabName="scr_userpostprice_grid">
+    <Link colName="usrpp_usr_id" fieldIdRef="12"/>
+    <Link colName="usrpp_posttype_id" fieldIdRef="2"/>
+    <Link colName="usrpp_minprice" fieldIdRef="3"/>
+    <Link colName="usrpp_maxprice" fieldIdRef="4"/>
+    <Link colName="usrpp_freeofcharge" fieldIdRef="6"/>
+    <Link colName="usrpp_salfatixminprice" fieldIdRef="8"/>
+    <Link colName="usrpp_salfatixmaxprice" fieldIdRef="9"/>
+    <Link colName="usrpp_salfatixfreeofcharge" fieldIdRef="11"/>
+    <Link colName="usrpp_isvalidatedbysalfatix" fieldIdRef="13"/>
+    <Link colName="cur" fieldIdRef="5"/>
+    <Link colName="salfatixlbl" fieldIdRef="7"/>
+    <Link colName="sur" fieldIdRef="10"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="ffimage_value" fieldIdRef="1"/>
+  </RecordView>
+</Form>

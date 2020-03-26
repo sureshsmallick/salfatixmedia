@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation - Extend the MainContainerWidget</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="howdoi/index.html">How do I …</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="howdoi/compiledeploy/index.html">Compile &amp; Deploy</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/createruntimezip.html">Create a runtime zip</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/deployongas.html">Deploy on GAS</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/jgas.html">Deploy on JGAS</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/customization/index.html">Customize the UI</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_theme_part.html">Add a theme part</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_theme.html">Add a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/modify_theme.html">Modify a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/delete_theme.html">Delete a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_image_or_logo.html">Header image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_image_with_style_class.html">Header image (style class)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_custom_header_widget.html">Header widget</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_footer_text.html">Footer text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/display-sidebar.html">Sidebar (hide)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/display_icon_or_right_sidebar.html">Sidebar or Icon</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change_favicon.html">Favicon image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-file-load-icon.html">File loading icon (change)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/center-file-load-icon.html">File loading icon (center)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-mttab-bkgd-img.html">Tab background image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-checkbox.html">Checkbox icons</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-pop-up-animation.html">Pop-up animation</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/redirect_application_end.html">Redirect application end</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/customize_theme_settings.html">Customize theme settings</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/customize_user_interface.html">Customize User Interface</a>
+            
+            <a class="btn btn-sidebar active" href="howdoi/customization/extend_main_container_widget.html">Extend the MainContainerWidget</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/view_aui_tree.html">View the AUI tree</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/internationalization/index.html">Internationalize my app</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/add_localized_text.html">Add localized text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/configure_right_to_left_languages.html">Right-to-left languages</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/customize_translation_text.html">Translation text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/default_encoding.html">Default encoding</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/migration/index.html">Migrate to GBC</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/evaluate.html">Evaluate your GBC app needs</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/features_limitations.html">Features and limitations</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/from_GWC_HTML5_to_GBC.html">GWC-HTML5 to GBC</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/migration_tips.html">Migration tips</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="howdoi">
+<header class="page-title">
+  <em>Extend the MainContainerWidget</em>
+</header>
+<article class="md-content">
+<p>This procedure shows you how to modify the default customization project files to extend the MainContainerWidget. Once you have sets up this framework, you are ready to carry out the procedures for customizing header and footer widgets.</p>
+<h2>Overview</h2>
+<p>This procedure starts by having you copy and modify some files provided by the sample customization project.</p>
+<h2>Copy the javascript, template, and scss files for the MyMainContainerWidget</h2>
+<p>Copy the <code>&lt;GBC_PROJECT_DIR&gt;/customization/sample/js/MyMainContainerWidget.js</code> file to your <code>&lt;GBC_PROJECT_DIR&gt;/customization/&lt;customization_project_dir&gt;/js</code> directory.</p>
+<p>Copy the <code>&lt;GBC_PROJECT_DIR&gt;/customization/sample/js/MyMainContainerWidget.tpl.html</code> file to your <code>&lt;GBC_PROJECT_DIR&gt;/customization/&lt;customization_project_dir&gt;/js</code> directory.</p>
+<p>Copy the <code>&lt;GBC_PROJECT_DIR&gt;/customization/sample/js/MyMainContainerWidget.scss</code> file to your <code>&lt;GBC_PROJECT_DIR&gt;/customization/&lt;customization_project_dir&gt;/scss</code> directory.</p>
+<h2>Edit MyMainContainerWidget.js</h2>
+<p>Open <code>&lt;GBC_PROJECT_DIR&gt;/customization/&lt;customization_project_dir&gt;/js/MyMainContainerWidget.js</code> with a text editor.</p>
+<p>Remove the code that extends the header. Your file should resemble the code in the example. Save your changes.</p>
+<pre class="hljs"><code><span class="hljs-meta">"use strict"</span>;
+
+modulum(<span class="hljs-string">'MyMainContainerWidget'</span>, [<span class="hljs-string">'MainContainerWidget'</span>, <span class="hljs-string">'WidgetFactory'</span>],
+  <span class="hljs-comment">/**
+   * @param {gbc} context
+   * @param {classes} cls
+   */</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context, cls</span>) </span>{
+
+    <span class="hljs-comment">/**
+     * @class classes.MyMainContainerWidget
+     * @extends classes.MainContainerWidget
+     */</span>
+    cls.MyMainContainerWidget = context.oo.Class(cls.MainContainerWidget, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$super</span>) </span>{
+      <span class="hljs-comment">/** @lends classes.MyMainContainerWidget.prototype */</span>
+      <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">__name</span>: <span class="hljs-string">"MyMainContainerWidget"</span>,
+
+      };
+    });
+
+    <span class="hljs-comment">/*
+     *  This is a sample widget that would replace the default one in GBC
+     *  To activate it, please uncomment the line below. This will override
+     *  the original widget registration to this one.
+     */</span>
+
+    cls.WidgetFactory.registerBuilder(<span class="hljs-string">'MainContainer'</span>, cls.MyMainContainerWidget);
+  });
+</code></pre>
+<h2>Edit MyMainContainerWidget.tpl.html</h2>
+<p>Open the <code>&lt;GBC_PROJECT_DIR&gt;/customization/&lt;customization_project&gt;/js/MyMainContainerWidget.tpl.html</code> file for editing.</p>
+<p>Modify the code to explicitly illustrate the header element. Your file should resemble the code in the example. Save your changes.</p>
+<pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+      Place your header here.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- GBC will be rendered in this div --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"containerElement"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
+      Place your footer here
+  <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h2>Update customization.scss</h2>
+<p>Open the <code>&lt;GBC_PROJECT_DIR&gt;/customization/&lt;customization_project&gt;/sass/customization.scss</code> file for editing.</p>
+<p>Copy the code shown in the example to import the <code>MyMainContainerWidget.scss</code> file and save.</p>
+<pre class="hljs"><code><span class="hljs-comment">//@import "sampleItem";</span>
+<span class="hljs-comment">//@import "sampleContainer";</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"MyMainContainerWidget"</span>;
+
+</code></pre>
+<h2>Rebuild using grunt.</h2>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> grunt --customization=&lt;customization_project_dir&gt;</span>
+</code></pre>
+<h2>Test</h2>
+<p>Verify your customization is used as expected by closing and reopening your application.</p>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

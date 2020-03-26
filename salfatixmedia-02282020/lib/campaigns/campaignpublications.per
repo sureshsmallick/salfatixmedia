@@ -1,0 +1,528 @@
+SCHEMA salfatixmedia
+
+LAYOUT (style="centerwindow")
+FOLDER
+  PAGE(TEXT=%"Influencers selection",ACTION=refreshselected)
+    GRID
+    {
+    [img_back1: :ff_formtitle2:                                                                                                                                                                                                                                                                                                                                                                                             :img_fak1]
+
+    <G group2              > <T salfatixmedia2                                                                                                                                                                                                                                                                                                                                                                                       >
+    [cmp_totallabel: :viewp] [d |v |e |usr_instagr2|answer|answer1|answer2|usr_usernam2|usr_firstnam2|usr_lastnam2|visbltydat  |prev   |wbb     |selsdate         |seledate         |cmpusrl_usertotalpri|cmpusrl_userwa|cmpusrl_salfatixtota|tonotif  |notifdate    |answerdate|selcomment|cmpusrl_commen|cmpusrl_usergo|isuserpaid|userpaid|usrmtc|usrmtc_f|usr_coun|usr_stat|usr_cityname|usr|usr_addre|usr_addr|usr_add1|usr_add2]
+    [cmp_totalbudget   |cur]                                                                                                                                                        [aggrgte_total       ]              [aggrgte_salfatix    ]                                                                                      [agg_usrp]
+    [cmp_wantedusers_label ]
+    [cmp_wantedusers       ]
+    [lbl_20                ]
+    [cmp_publisheddate     ]
+    [lbl_21                ]
+    [cmp_selectionstartdate]
+    [lbl_22                ]
+    [cmp_selectionenddate  ]
+    [lbl_23                ]
+    [cmp_selectioncomment  ]
+    [                      ]
+    [                      ]
+    [refreshselected       ]
+    [emptylabel0           ]
+    [save                  ]
+    [emptylabel1           ]
+    [clear                 ]
+    [label_publish         ]
+    [publish               ]
+    [label_proposeall      ]
+    [validateallbysalfatix ]
+    [emptylabel3           ]
+    [exportlist            ]
+    <                      >
+    <G group4              >
+    [validatedbysalfatix   ]
+    [rejectedbysalfatix    ]
+    [manageposts           ]
+    <                      > <                                                                                                                                                                                                                                                                                                                                                                                                       >
+    }
+    END
+  END
+  PAGE p_search (TEXT=%"Search influencers",ACTION=refreshselectable)
+    GRID
+    {
+    [img_back2: :ff_formtitle:                                  :img_fak2]
+    <G group1                    > <S salfatixmedia1                     >
+    [label1                ]       [vw:sel:                           : x]
+    [radiogroup1           ]       [usr_instagra][usr_firstnam1          ]
+                                   [            ][usr_lastnam1           ]
+    [label2              ]         [            ][usr_emai1              ]
+    [radiogroup2         ]         [            ][user_phonenumber       ]
+    [label3                ]       [lbl_insta   ][usr_instagram_usernam1 ]
+    [usr_firstname         ]       [lbl_nbfollow][user_nb_followers      ]
+    [label4                ]       [lbl_reach   ][user_reach             ]
+    [usr_lastname          ]
+    [label5                ]
+    [usr_email             ]
+    [label7                ]
+    [usr_instagram_username]
+    [label6                ]
+    [usrmtc_followers_count]
+    [label8                ]
+    [usrmtc_reach          ]
+    [filter                ]
+    [emptylabel5           ]
+    [refreshselectable     ]
+    [emptylabel4           ]
+    [sall                  ]
+    <                            > <                                     >
+    }
+    END
+  END
+END --folder
+END
+
+TABLES
+users1=users,
+usermetrics1=usermetrics,
+users,
+usermetrics,
+users2=users,
+campaigns,
+campaignuserlist,
+countries,
+states,
+cities
+END
+
+ATTRIBUTES
+Button viewp:viewprice, text=%"Prices";
+
+LABEL emptylabel0=formonly.emptylabel0;
+LABEL emptylabel1=formonly.emptylabel1;
+LABEL label_publish=formonly.label_publish;
+LABEL label_proposeall=formonly.label_proposeall;
+LABEL emptylabel3=formonly.emptylabel3;
+LABEL emptylabel4=formonly.emptylabel4;
+LABEL emptylabel5=formonly.emptylabel5;
+
+LABEL ff_formtitle=formonly.ff_formtitle, justify=center, style="ff_formtitle";
+LABEL ff_formtitle2=formonly.ff_formtitle2, justify=center, style="ff_formtitle";
+
+Group group4:group4, text=%"Actions on influencer", style="no_border";
+BUTTON validatedbysalfatix:validatedbysalfatix, text=%"Propose to brand";
+BUTTON validateallbysalfatix:validateallbysalfatix, TEXT=%"Propose all to brand";
+BUTTON rejectedbysalfatix:rejectedbysalfatix, text=%"Reject";
+BUTTON manageposts:manageposts, text=%"Influencer posts";
+
+BUTTON exportlist:exportlist, TEXT=%"Export proposed influencers";
+
+Group group2:group2, text=%"Campaign publication", style="no_border";
+Label cmp_totallabel : campaigns_cmp_totalbudget_label, text=%"Campaign budget";
+Edit  cmp_totalbudget       = campaigns.cmp_totalbudget, noEntry;
+Label cur                   = formonly.cur;
+Label cmp_wantedusers_label : campaigns_cmp_wantedusers_label, text=%"Prefered number of influencers";
+Edit  cmp_wantedusers       = campaigns.cmp_wantedusers, noEntry;
+Label lbl_20:lbl_20, text=%"Influencers can see campaign from";
+DateEdit cmp_publisheddate=campaigns.cmp_publisheddate;
+Label lbl_21:lbl_21, text=%"Influencers can apply from";
+DateEdit cmp_selectionstartdate=campaigns.cmp_selectionstartdate;
+Label lbl_22:lbl_22, text=%"To";
+DateEdit cmp_selectionenddate=campaigns.cmp_selectionenddate;
+Label lbl_23:lbl_23, text=%"Internal comment";
+TextEdit cmp_selectioncomment=campaigns.cmp_selectioncomment;
+Button publish:publish, text=%"Publish campaign";
+Button save:save, text=%"Save";
+BUTTON sall:selectallselectable, text=%"Select All";
+BUTTON refreshselectable:refreshselectable, text=%"Refresh list";
+BUTTON refreshselected:refreshselected, text=%"Refresh list";
+Button clear:clearselected, text=%"Clear selection";
+Image img_back1:img_back, action=backtocampaign, image="fa-arrow-circle-left", autoScale, sizePolicy=fixed, style="no_border", comment=%"Back to campaign";
+Image img_back2:img_back, action=backtocampaign, image="fa-arrow-circle-left", autoScale, sizePolicy=fixed, style="no_border", comment=%"Back to campaign";
+Image img_fak1:img_fak, autoScale, sizePolicy=fixed, style="no_border";
+Image img_fak2:img_fak, autoScale, sizePolicy=fixed, style="no_border";
+
+Phantom campaigns.cmp_id;
+Phantom campaigns.cmp_brand_id;
+Phantom campaigns.cmp_pic_id;
+Phantom campaigns.cmp_title;
+Phantom campaigns.cmp_overview;
+Phantom campaigns.cmp_url;
+Phantom campaigns.cmp_isproductneeded;
+Phantom campaigns.cmp_prd_description;
+Phantom campaigns.cmp_prd_value;
+Phantom campaigns.cmp_issharedonfacebook;
+Phantom campaigns.cmp_sharedfacebooklink;
+Phantom campaigns.cmp_post_guidelines;
+Phantom campaigns.cmp_captionrequirements;
+Phantom campaigns.cmp_post_startdate;
+Phantom campaigns.cmp_post_enddate;
+Phantom campaigns.cmp_post_time_starttime;
+Phantom campaigns.cmp_post_time_endtime;
+Phantom campaigns.cmp_postduration_id;
+Phantom campaigns.cmp_deposit;
+Phantom campaigns.cmp_depositpercent;
+Phantom campaigns.cmp_currency_id;
+Phantom campaigns.cmp_campaignstatus_id;
+Phantom campaigns.cmp_createdby_id;
+Phantom campaigns.cmp_creationdate;
+Phantom campaigns.cmp_actionstartdate;
+Phantom campaigns.cmp_actionenddate;
+Phantom campaigns.cmp_enddate;
+Phantom campaigns.cmp_lastupdatedate;
+
+Group group1:group1, text=%"Search filters", style="no_border";
+Label label1:label1, text=%"Sort By";
+RadioGroup radiogroup1=formonly.radiogroup1, items=(("users.usr_firstname", %"FirstName"),("users.usr_lastname", %"LastName"),("users.usr_email", %"Email"),("users.usr_instagram_username", %"Instagram Account"),("usermetrics.usrmtc_followers_count", %"Number of followers"),("usermetrics.usrmtc_reach", %"Reach"));
+Label label2:label2, text=%"Order";
+RadioGroup radiogroup2=formonly.radiogroup2, orientation=horizontal, items=(("asc", %"Ascending"),("desc", %"Descending"));
+Label label3:label3, text=%"Filter on first name";
+Edit usr_firstname=users1.usr_firstname;
+Label label4:label4, text=%"Filter on last name";
+Edit usr_lastname=users1.usr_lastname;
+Label label5:label5, text=%"Filter on email";
+Edit usr_email=users1.usr_email, scroll;
+Label label7:label7, text=%"Filter on Instagram account";
+Edit usr_instagram_username=users1.usr_instagram_username, scroll;
+Label label6:label6, text=%"Filter on number of followers";
+Edit usrmtc_followers_count=usermetrics1.usrmtc_followers_count, SCROLL;
+Label label8:label8, text=%"Filter on reach";
+Edit usrmtc_reach=usermetrics1.usrmtc_reach, scroll;
+Button filter:filter, text=%"Filter";
+ScrollGrid salfatixmedia1:salfatixmedia1, doubleClick=select_influencer, wantFixedPageSize=NO, style="influencerlisttable";
+Phantom users.usr_instagram_profilepicture;
+IMAGE usr_instagra=formonly.usr_instagram_profilepicture type VARCHAR, autoScale, sizePolicy=fixed, style="no_border", ACTION=viewsocialnetwork;
+Edit usr_instagram_usernam1=users.usr_instagram_username;
+Phantom users.usr_id;
+Phantom users.usr_gender_id;
+Edit usr_firstnam1=users.usr_firstname, scroll;
+Edit usr_lastnam1=users.usr_lastname, scroll;
+Edit user_phonenumber=formonly.user_phonenumber type VARCHAR;
+Edit user_nb_followers=formonly.user_nb_followers type VARCHAR;
+Edit user_reach=formonly.user_reach type VARCHAR;
+Phantom users.usr_birthday;
+Edit usr_emai1=users.usr_email, scroll;
+Phantom users.usr_password;
+Phantom users.usr_country_id;
+Phantom users.usr_state_id;
+Phantom users.usr_city_id;
+Phantom users.usr_address_number;
+Phantom users.usr_address_street;
+Phantom users.usr_address_zipcode;
+Phantom users.usr_address_town;
+Phantom users.usr_address_more;
+Phantom users.usr_mobile_phone;
+Phantom users.usr_instagram_userid;
+Phantom users.usr_instagram_fullname;
+Phantom users.usr_instagram_biography;
+Phantom users.usr_instagram_website;
+Phantom users.usr_instagram_is_private;
+Phantom users.usr_instagram_is_verified;
+Phantom users.usr_instagram_is_business;
+Phantom users.usr_bank_name;
+Phantom users.usr_bank_iban;
+Phantom users.usr_bank_swift;
+Phantom users.usr_paypal;
+Phantom users.usr_mobile_notifications;
+Phantom users.usr_notif_style;
+Phantom users.usr_email_notifications;
+Phantom users.usr_email_style;
+Phantom users.usr_currency_id;
+Phantom users.usr_accountstatus_id;
+Phantom users.usr_createdby_id;
+Phantom users.usr_creationdate;
+Phantom users.usr_deletiondate;
+Phantom users.usr_validationdate;
+Phantom users.usr_canceldate;
+Phantom users.usr_suspendeddate;
+Phantom users.usr_stopdate;
+Phantom users.usr_emailvalidationdate;
+Phantom users.usr_lastupdatedate;
+Phantom users.usr_lastlogindate;
+Phantom users.usr_instagram_token;
+Label lbl_insta:lbl_insta, text=%"Instagram";
+Label lbl_nbfollow:lbl_nbfollow, text=%"Followers";
+Label lbl_reach:lbl_reach, text=%"Reach";
+IMAGE sel=formonly.selectinfluencer, autoScale, sizePolicy=fixed, style="no_border",ACTION=selectinfluencer;
+IMAGE vw=formonly.viewinfluencer, autoScale, sizePolicy=fixed, style="no_border",ACTION=viewinfluencer;
+IMAGE x=formonly.deleteimage, autoScale, sizePolicy=fixed, style="no_border",ACTION=delete;
+
+Table salfatixmedia2:salfatixmedia2, doubleClick=deselect_influencer,HEIGHT=10 LINES,STYLE="campaignselectedlist",  UNHIDABLECOLUMNS, UNMOVABLECOLUMNS;
+Phantom users2.usr_instagram_profilepicture;
+IMAGE usr_instagr2=formonly.usr_instagram_profilepicture2 type VARCHAR, autoScale, sizePolicy=fixed, style="no_border",title=%"Profile", HEIGHT=2 LINES, ACTION=viewsocialnetwork;
+Edit usr_usernam2 = users2.usr_instagram_username, Scroll, Title=%"User Name";
+Phantom users2.usr_id;
+Phantom users2.usr_gender_id;
+Edit usr_firstnam2=users2.usr_firstname, scroll,title=%"First name";
+Edit usr_lastnam2=users2.usr_lastname, scroll,title=%"Last name";
+Phantom formonly.user_phonenumber2;
+Phantom formonly.user_nb_followers2;
+Phantom users2.usr_birthday;
+Phantom users2.usr_email;
+Phantom users2.usr_password;
+Phantom users2.usr_country_id;
+Phantom users2.usr_state_id;
+Phantom users2.usr_city_id;
+Edit usr=users2.usr_address_number, title=%"N°";
+Edit usr_addre=users2.usr_address_street, title=%"Street";
+Edit usr_addr=users2.usr_address_zipcode, title=%"Zipcode";
+Edit usr_add1=users2.usr_address_town, title=%"Town", hidden;
+Edit usr_add2=users2.usr_address_more, title=%"More";
+Phantom users2.usr_mobile_phone;
+Phantom users2.usr_instagram_userid;
+Phantom users2.usr_instagram_fullname;
+Phantom users2.usr_instagram_biography;
+Phantom users2.usr_instagram_website;
+Phantom users2.usr_instagram_is_private;
+Phantom users2.usr_instagram_is_verified;
+Phantom users2.usr_instagram_is_business;
+Phantom users2.usr_bank_name;
+Phantom users2.usr_bank_iban;
+Phantom users2.usr_bank_swift;
+Phantom users2.usr_paypal;
+Phantom users2.usr_mobile_notifications;
+Phantom users2.usr_notif_style;
+Phantom users2.usr_email_notifications;
+Phantom users2.usr_email_style;
+Phantom users2.usr_currency_id;
+Phantom users2.usr_accountstatus_id;
+Phantom users2.usr_createdby_id;
+Phantom users2.usr_creationdate;
+Phantom users2.usr_deletiondate;
+Phantom users2.usr_validationdate;
+Phantom users2.usr_canceldate;
+Phantom users2.usr_suspendeddate;
+Phantom users2.usr_stopdate;
+Phantom users2.usr_emailvalidationdate;
+Phantom users2.usr_lastupdatedate;
+Phantom users2.usr_lastlogindate;
+Phantom users2.usr_instagram_token;
+
+Phantom campaignuserlist.cmpusrl_id;
+Phantom campaignuserlist.cmpusrl_campaign_id;
+Phantom campaignuserlist.cmpusrl_user_id;
+DateEdit visbltydat=campaignuserlist.cmpusrl_visibilitydate, title=%"See campaign from";
+ComboBox prev=campaignuserlist.cmpusrl_previewuser, title=%"Preview", SCROLL, ITEMS=((0,%"No"),(1,%"Yes")), HIDDEN;
+ComboBox wbb=campaignuserlist.cmpusrl_wantedbybrand, title=%"Required", SCROLL, ITEMS=((0,%"No"),(1,%"Yes"));
+DateEdit selsdate=campaignuserlist.cmpusrl_selectionstartdate, title=%"Can apply from";
+DateEdit seledate=campaignuserlist.cmpusrl_selectionenddate, title=%"To";
+Edit cmpusrl_usertotalpri=campaignuserlist.cmpusrl_usertotalprice, title=%"Influencer Proposed Price";
+Edit cmpusrl_salfatixtota=campaignuserlist.cmpusrl_salfatixtotalprice, title=%"Brand Cost";
+Edit selcomment=campaignuserlist.cmpusrl_selectioncomment, scroll,title=%"Internal comment";
+ComboBox tonotif=campaignuserlist.cmpusrl_tonotify, title=%"To notify", SCROLL, ITEMS=((0,%"No"),(1,%"Yes")), HIDDEN;
+DateEdit notifdate=campaignuserlist.cmpusrl_notificationdate, title=%"Notification date", HIDDEN;
+--ComboBox answer=campaignuserlist.cmpusrl_isacceptbyuser, title=%"Answer", SCROLL, ITEMS=((0,%"Refused"),(1,%"Applied"));
+Phantom campaignuserlist.cmpusrl_isacceptbyuser;
+IMAGE answer=formonly.imganswer, title=%"Answer",autoScale, sizePolicy=fixed, style="no_border";
+DateEdit answerdate=campaignuserlist.cmpusrl_useranswerdate, title=%"Answer date";
+
+EDIT cmpusrl_userwa=campaignuserlist.cmpusrl_userwantedprice, SCROLL,TITLE=%"Influencer wanted price";
+PHANTOM campaignuserlist.cmpusrl_uiorder;
+PHANTOM campaignuserlist.cmpusrl_isacceptedbysalfatix;
+PHANTOM campaignuserlist.cmpusrl_isacceptedbybrand;
+EDIT cmpusrl_commen=campaignuserlist.cmpusrl_commentforbrand, SCROLL,TITLE=%"Comment for brand";
+COMBOBOX cmpusrl_usergo=campaignuserlist.cmpusrl_usergotproduct, SCROLL,TITLE=%"Influencer got product", ITEMS=((0,%"No"),(1,%"Yes"));
+EDIT isuserpaid=campaignuserlist.cmpusrl_isuserpaid, SCROLL,TITLE=%"Influencer paid ?";
+EDIT userpaid=campaignuserlist.cmpusrl_userpaid, SCROLL,TITLE=%"Paid to influencer";
+
+IMAGE answer1=formonly.acceptedbysalfatiximage, title=%"Proposed",autoScale, sizePolicy=fixed, style="no_border";
+IMAGE answer2=formonly.acceptedbybrandimage, title=%"Accepted",autoScale, sizePolicy=fixed, style="no_border";
+
+IMAGE d=formonly.delimage, autoScale, sizePolicy=fixed, style="no_border",ACTION=delete;
+IMAGE v=formonly.viewinfluencer2, autoScale, sizePolicy=fixed, style="no_border",ACTION=viewinfluencer;
+IMAGE e=formonly.editimage, autoScale, sizePolicy=fixed, style="no_border",ACTION=editinfluencerselection;
+
+Aggregate aggrgte_total=formonly.aggregate_usertotalprice type like campaignuserlist.cmpusrl_usertotalprice, aggregateText=%"Influencers Total", aggregateType=SUM;
+Aggregate aggrgte_salfatix=formonly.aggregate_salfatixtotalprice type like campaignuserlist.cmpusrl_salfatixtotalprice, aggregateText=%"Total", aggregateType=SUM;
+Aggregate agg_usrp=formonly.aggregate_cmpusrl_userpaid type like campaignuserlist.cmpusrl_userpaid, aggregateText=%"Total", aggregateType=SUM;
+
+Edit usrmtc=usermetrics.usrmtc_reach, title=%"Reach";
+Edit usrmtc_f=usermetrics.usrmtc_followers_count, title=%"Nb Followers";
+Edit usr_coun=formonly.usr_countryname type like countries.cntr_name, title=%"Country";
+Edit usr_stat=formonly.usr_statename type like states.stt_name, title=%"State";
+Edit usr_cityname=formonly.usr_cityname type like cities.cts_name, title=%"City";
+
+END -- ATTRIBUTES
+
+INSTRUCTIONS
+SCREEN RECORD scr_influencer_list(users.usr_id,
+users.usr_gender_id,
+users.usr_firstname,
+users.usr_lastname,
+users.usr_birthday,
+users.usr_email,
+users.usr_password,
+users.usr_country_id,
+users.usr_state_id,
+users.usr_city_id,
+users.usr_address_number,
+users.usr_address_street,
+users.usr_address_zipcode,
+users.usr_address_town,
+users.usr_address_more,
+users.usr_mobile_phone,
+users.usr_instagram_userid,
+users.usr_instagram_username,
+users.usr_instagram_fullname,
+users.usr_instagram_profilepicture,
+users.usr_instagram_biography,
+users.usr_instagram_website,
+users.usr_instagram_is_private,
+users.usr_instagram_is_verified,
+users.usr_instagram_is_business,
+users.usr_bank_name,
+users.usr_bank_iban,
+users.usr_bank_swift,
+users.usr_paypal,
+users.usr_mobile_notifications,
+users.usr_notif_style,
+users.usr_email_notifications,
+users.usr_email_style,
+users.usr_currency_id,
+users.usr_accountstatus_id,
+users.usr_createdby_id,
+users.usr_creationdate,
+users.usr_deletiondate,
+users.usr_validationdate,
+users.usr_canceldate,
+users.usr_suspendeddate,
+users.usr_stopdate,
+users.usr_emailvalidationdate,
+users.usr_lastupdatedate,
+users.usr_lastlogindate,
+users.usr_instagram_token,
+formonly.usr_instagram_profilepicture,
+formonly.user_phonenumber,
+formonly.user_nb_followers,
+formonly.user_reach,
+formonly.selectinfluencer,
+formonly.viewinfluencer,
+formonly.deleteimage)
+SCREEN RECORD scr_qbeinput(formonly.radiogroup1,
+formonly.radiogroup2)
+SCREEN RECORD scr_qbeconstruct(users1.usr_firstname,
+users1.usr_lastname,
+users1.usr_email,
+users1.usr_instagram_username,
+usermetrics1.usrmtc_followers_count,
+usermetrics1.usrmtc_reach)
+
+SCREEN RECORD scr_selected_list(
+campaignuserlist.cmpusrl_id,
+campaignuserlist.cmpusrl_campaign_id,
+campaignuserlist.cmpusrl_user_id,
+campaignuserlist.cmpusrl_visibilitydate,
+campaignuserlist.cmpusrl_previewuser,
+campaignuserlist.cmpusrl_wantedbybrand,
+campaignuserlist.cmpusrl_selectionstartdate,
+campaignuserlist.cmpusrl_selectionenddate,
+campaignuserlist.cmpusrl_selectioncomment,
+campaignuserlist.cmpusrl_tonotify,
+campaignuserlist.cmpusrl_notificationdate,
+campaignuserlist.cmpusrl_isacceptbyuser,
+campaignuserlist.cmpusrl_useranswerdate,
+campaignuserlist.cmpusrl_usertotalprice,
+campaignuserlist.cmpusrl_salfatixtotalprice,
+campaignuserlist.cmpusrl_userwantedprice,
+campaignuserlist.cmpusrl_uiorder,
+campaignuserlist.cmpusrl_isacceptedbysalfatix,
+campaignuserlist.cmpusrl_isacceptedbybrand,
+campaignuserlist.cmpusrl_commentforbrand,
+campaignuserlist.cmpusrl_usergotproduct,
+campaignuserlist.cmpusrl_isuserpaid,
+campaignuserlist.cmpusrl_userpaid,
+users2.usr_id,
+users2.usr_gender_id,
+users2.usr_firstname,
+users2.usr_lastname,
+users2.usr_birthday,
+users2.usr_email,
+users2.usr_password,
+users2.usr_country_id,
+users2.usr_state_id,
+users2.usr_city_id,
+users2.usr_address_number,
+users2.usr_address_street,
+users2.usr_address_zipcode,
+users2.usr_address_town,
+users2.usr_address_more,
+users2.usr_mobile_phone,
+users2.usr_instagram_userid,
+users2.usr_instagram_username,
+users2.usr_instagram_fullname,
+users2.usr_instagram_profilepicture,
+users2.usr_instagram_biography,
+users2.usr_instagram_website,
+users2.usr_instagram_is_private,
+users2.usr_instagram_is_verified,
+users2.usr_instagram_is_business,
+users2.usr_bank_name,
+users2.usr_bank_iban,
+users2.usr_bank_swift,
+users2.usr_paypal,
+users2.usr_mobile_notifications,
+users2.usr_notif_style,
+users2.usr_email_notifications,
+users2.usr_email_style,
+users2.usr_currency_id,
+users2.usr_accountstatus_id,
+users2.usr_createdby_id,
+users2.usr_creationdate,
+users2.usr_deletiondate,
+users2.usr_validationdate,
+users2.usr_canceldate,
+users2.usr_suspendeddate,
+users2.usr_stopdate,
+users2.usr_emailvalidationdate,
+users2.usr_lastupdatedate,
+users2.usr_lastlogindate,
+users2.usr_instagram_token,
+formonly.usr_instagram_profilepicture2,
+formonly.user_phonenumber2,
+formonly.user_nb_followers2,
+formonly.delimage,
+formonly.viewinfluencer2,
+formonly.editimage,
+formonly.imganswer,
+formonly.acceptedbysalfatiximage,
+formonly.acceptedbybrandimage,
+usermetrics.usrmtc_reach,
+usermetrics.usrmtc_followers_count,
+formonly.usr_countryname,
+formonly.usr_statename,
+formonly.usr_cityname
+)
+
+SCREEN RECORD scr_campaign(
+campaigns.cmp_id
+,campaigns.cmp_brand_id
+,campaigns.cmp_pic_id
+,campaigns.cmp_title
+,campaigns.cmp_overview
+,campaigns.cmp_url
+,campaigns.cmp_isproductneeded
+,campaigns.cmp_prd_description
+,campaigns.cmp_prd_value
+,campaigns.cmp_issharedonfacebook
+,campaigns.cmp_sharedfacebooklink
+,campaigns.cmp_post_guidelines
+,campaigns.cmp_captionrequirements
+,campaigns.cmp_post_startdate
+,campaigns.cmp_post_enddate
+,campaigns.cmp_post_time_starttime
+,campaigns.cmp_post_time_endtime
+,campaigns.cmp_postduration_id
+,campaigns.cmp_totalbudget
+,campaigns.cmp_deposit
+,campaigns.cmp_depositpercent
+,campaigns.cmp_currency_id
+,campaigns.cmp_wantedusers
+,campaigns.cmp_campaignstatus_id
+,campaigns.cmp_createdby_id
+,campaigns.cmp_creationdate
+,campaigns.cmp_publisheddate
+,campaigns.cmp_selectionstartdate
+,campaigns.cmp_selectionenddate
+,campaigns.cmp_selectioncomment
+,campaigns.cmp_actionstartdate
+,campaigns.cmp_actionenddate
+,campaigns.cmp_enddate
+,campaigns.cmp_lastupdatedate
+)
+
+SCREEN RECORD Undefined(formonly.ff_formtitle, formonly.ff_formtitle2)
+END -- INSTRUCTIONS

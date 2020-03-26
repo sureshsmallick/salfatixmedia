@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="userpostprice_eurosymbolshelp" build="3.20.07" sqlDbName="salfatixmedia" width="13" height="21">
+  <Grid width="13" height="21">
+    <Label name="lb01" width="11" height="2" text="Following picture means you might earn:" justify="center" posY="0" posX="1" gridWidth="11" gridHeight="2">
+      <LStr text="Following picture means you might earn:"/>
+    </Label>
+    <Table pageSize="4" name="tbl1" unmovableColumns="1" unsizableColumns="1" unhidableColumns="1" style="noheader" width="13" posY="2" posX="0" gridWidth="13" gridHeight="6" tabName="srmeaning">
+      <PhantomColumn name="params.par_des" colName="par_des" sqlType="VARCHAR(200)" required="1" notNull="1" fieldId="0" sqlTabName="params">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <TableColumn name="formonly.def" colName="def" fieldId="1" sqlTabName="formonly" imageColumn="par_des" noEntry="1" tabIndex="1">
+        <Label width="11"/>
+      </TableColumn>
+    </Table>
+    <FormField name="formonly.foot" colName="foot" fieldId="2" sqlTabName="formonly" noEntry="1" tabIndex="2">
+      <Image width="11" height="13" autoScale="1" stretch="both" style="center" sizePolicy="fixed" posY="8" posX="1" gridWidth="11" gridHeight="13"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="params">
+    <Link colName="par_des" fieldIdRef="0"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="def" fieldIdRef="1"/>
+    <Link colName="foot" fieldIdRef="2"/>
+  </RecordView>
+</Form>

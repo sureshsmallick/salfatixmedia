@@ -1,0 +1,46 @@
+Schema salfatixmedia
+
+Layout
+  Grid
+  {
+  [lb01       ]
+  [           ]
+  <T tbl1     >
+  [lb02       ]
+  [lb02       ]
+  [lb02       ]
+  [lb02       ]
+  <           >
+  [img1       ]
+  [           ]
+  [           ]
+  [           ]
+  [           ]
+  [           ]
+  [           ]
+  [           ]
+  [           ]
+  [           ]
+  [           ]
+  [           ]
+  [           ]
+  }
+  End
+End
+
+Tables
+  params
+End
+
+Attributes
+  Label lb01 : lb01, Text=%"Following picture means you might earn:", Justify=Center;
+  Table tbl1 : tbl1, UnmovableColumns, UnsizableColumns, UnhidableColumns,Style="noheader";
+  Phantom params.par_des;
+  Label lb02 = formonly.def, ImageColumn=par_des;
+  Image img1 = formonly.foot, Autoscale, Stretch=Both, Style="center", sizePolicy=Fixed;
+
+End
+
+Instructions
+  Screen Record srMeaning ( params.par_des, formonly.def )
+End

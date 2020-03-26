@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="../">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="toggleCollapsed"><a onclick="window.gbcdoc.toggleCompact()">
+            <i title="Toggle to compact view" class="mdi mdi-arrow-collapse"></i>
+            <i title="Toggle to complete view" class="mdi mdi-arrow-expand"></i>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="reference/index.html">Reference</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="reference/url.html">URL reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/api.html">API reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/grunt/index.html">Grunt reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/grunt/configure_compilation.html">Configure your compilation</a>
+            
+            <a class="btn btn-sidebar " href="reference/grunt/fix_configuration_issues.html">Fix configuration issues</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/theme/index.html">Theme reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_conditions.html">Theme conditions</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_config_json.html">theme.config.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_scss_json_file.html">theme.scss.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_variables.html">Theme variables reference</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/project/index.html">Project reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/project/project_directory.html">Project directory</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/customization_project.html">Customization project</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets.html">Widgets</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_js_file.html">Widget JavaScript file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_template_file.html">Widget template file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_scss_file.html">Widget scss file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets_with_modelhelper.html">Widgets with Modelhelper</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/deliverables.html">Deliverables</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/upgrading/index.html">Upgrading</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/compatibility.html">Compatibility</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/customization_migration.html">Customization migration</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deploy-runtime-on-gas.html">Deploy runtime on GAS</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.20.html">Upgrade to 3.20</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.10.html">Upgrade to 3.10</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="class">
+  <h1 class="page-title">
+    class <em>TextWidgetBase</em>
+    <a class="btn btn-default btn-xs source" href="sources/classes.TextWidgetBase.html"><i class="glyphicon glyphicon-link"></i> view source</a>
+      <div class="extends">
+        <div>extends <a class="type isclass" href="classes/classes.ColoredWidgetBase.html">ColoredWidgetBase</a></div>
+          <div class="extends">
+            <div>extends <a class="type isclass" href="classes/classes.WidgetBase.html">WidgetBase</a></div>
+              <div class="extends">
+                <div>extends <a class="type isclass" href="classes/classes.EventListener.html">EventListener</a></div>
+              </div>
+          </div>
+      </div>
+  </h1>
+  <p class="description">Base class for all widgets handling text attributes</p>
+  <div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">Constructor</div>
+      <div class="panel-body">
+        
+        <div id="WidgetBase" class="member">
+          <div class="constructor">
+            <h2>
+              new <span class="name">TextWidgetBase</span><span class="params">(opts : <a class="type native" title="native javascript type">Object</a>)</span>
+              <div class="more">
+                
+              </div>
+            </h2>
+            <div>
+              
+                <h3 class="only-expanded">Parameters</h3>
+                <div class="panel panel-default">
+                  <table class="table">
+                      <tr>
+                        <td class="param-name">opts</td>
+                        <td class="param-type"><a class="type native" title="native javascript type">Object</a></td>
+                        <td class="param-desc">instantiation options</td>
+                    </tr>
+                      <tr>
+                        <td class="param-name">opts.appHash</td>
+                        <td class="param-type"><a class="type native" title="native javascript type">number</a></td>
+                        <td class="param-desc">internal app hash</td>
+                    </tr>
+                      <tr>
+                        <td class="param-name">opts.appWidget</td>
+                        <td class="param-type"><a class="type isclass" href="classes/classes.ApplicationWidget.html">ApplicationWidget</a></td>
+                        <td class="param-desc">early ApplicationWidget link</td>
+                    </tr>
+                      <tr>
+                        <td class="param-name">opts.auiTag</td>
+                        <td class="param-type"><a class="type native" title="native javascript type">number</a></td>
+                        <td class="param-desc">internal aui tag id</td>
+                    </tr>
+                      <tr>
+                        <td class="param-name">opts.inTable</td>
+                        <td class="param-type"><a class="type native" title="native javascript type">boolean</a></td>
+                        <td class="param-desc">internal is in table</td>
+                    </tr>
+                      <tr>
+                        <td class="param-name">opts.inMatrix</td>
+                        <td class="param-type"><a class="type native" title="native javascript type">boolean</a></td>
+                        <td class="param-desc">internal is in matrix</td>
+                    </tr>
+                      <tr>
+                        <td class="param-name">opts.inFirstTableRow</td>
+                        <td class="param-type"><a class="type native" title="native javascript type">boolean</a></td>
+                        <td class="param-desc">internal</td>
+                    </tr>
+                      <tr>
+                        <td class="param-name">opts.inScrollGrid</td>
+                        <td class="param-type"><a class="type native" title="native javascript type">boolean</a></td>
+                        <td class="param-desc">internal is in a scroll grid</td>
+                    </tr>
+                      <tr>
+                        <td class="param-name">opts.ignoreLayout</td>
+                        <td class="param-type"><a class="type native" title="native javascript type">boolean</a></td>
+                        <td class="param-desc">ignore layout char measurer</td>
+                    </tr>
+                  </table>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">Instance members</div>
+      <div class="panel-body">
+          
+          <div id="addClass" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">addClass</span><span class="params">(className : <a class="type native" title="native javascript type">string</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#addClass">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Add the given class to element</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">className</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">class to add</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="detach" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">detach</span><span class="params">()</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#detach">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Detach the widget from the dom</p>
+              </div>
+            </div>
+          </div>
+          
+          <div id="emit" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">emit</span><span class="params">(type : <a class="type native" title="native javascript type">string</a>, arguments… : <a class="type native" title="Can take values of any type">any</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.EventListener.html#emit">EventListener</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Emit an event</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">type</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">event type to emit</td>
+                      </tr>
+                        <tr>
+                          <td class="param-name">arguments</td>
+                          <td class="param-type"><a class="type native" title="Can take values of any type">any</a></td>
+                          <td class="param-desc">arguments (excluding type) will be set in event.data</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getApplicationIdentifier" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getApplicationIdentifier</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getApplicationIdentifier">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the unique identifier of the application</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">the unique identifier of the application</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getApplicationWidget" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getApplicationWidget</span><span class="params">()</span>
+                : (<a class="type isclass" href="classes/classes.ApplicationWidget.html">ApplicationWidget</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getApplicationWidget">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get Application Widget related to the widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type isclass" href="classes/classes.ApplicationWidget.html">ApplicationWidget</a>)</span> <span class="return-desc">ApplicationWidget</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getBackgroundColor" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getBackgroundColor</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.ColoredWidgetBase.html#getBackgroundColor">ColoredWidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Returns the background color</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">a color definition as an RGB function (&#x27;rgb(128, 255, 0)&#x27;)</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getBuildParameters" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getBuildParameters</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">Object</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getBuildParameters">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Returns build parameters</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">Object</a>)</span> <span class="return-desc">build parameters</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getClassName" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getClassName</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getClassName">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the main class name of the widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">the main class name</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getColor" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getColor</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.ColoredWidgetBase.html#getColor">ColoredWidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Returns the fore color</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">a color definition as an RGB function (&#x27;rgb(128, 255, 0)&#x27;)</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getColorFromStyle" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getColorFromStyle</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.ColoredWidgetBase.html#getColorFromStyle">ColoredWidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Returns the fore color (directly from style css)</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">a color definition as an RGB function (&#x27;rgb(128, 255, 0)&#x27;)</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getDialogType" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getDialogType</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getDialogType">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">return widget current dialog type</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">values can be : Input, InputArray, Display, DisplayArray or Construct</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getElement" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getElement</span><span class="params">()</span>
+                : (<a class="type native" title="browser native type">HTMLElement</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getElement">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the root element of the widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="browser native type">HTMLElement</a>)</span> <span class="return-desc">the root element of the widget</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getEnd" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getEnd</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getEnd">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get end (for reversed mode)</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">end keyword for rtl</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getFontFamily" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getFontFamily</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the font-family used by this widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">the used font family</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getFontSize" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getFontSize</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the font-size used by this widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">a CSS font size value</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getFontStyle" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getFontStyle</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the font-style used by this widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">a CSS font style value</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getFontWeight" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getFontWeight</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the font-family used by this widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">a CSS font weight value</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getFormWidget" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getFormWidget</span><span class="params">()</span>
+                : (<a class="type isclass" href="classes/classes.FormWidget.html">FormWidget</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getFormWidget">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the Form Widget related to the widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type isclass" href="classes/classes.FormWidget.html">FormWidget</a>)</span> <span class="return-desc">FormWidget</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getLayoutEngine" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getLayoutEngine</span><span class="params">()</span>
+                : (<a class="type isclass" href="classes/classes.LayoutEngineBase.html">LayoutEngineBase</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getLayoutEngine">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the widget&#x27;s layout engine</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type isclass" href="classes/classes.LayoutEngineBase.html">LayoutEngineBase</a>)</span> <span class="return-desc">the widget&#x27;s layout engine</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getLayoutInformation" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getLayoutInformation</span><span class="params">()</span>
+                : (<a class="type isclass" href="classes/classes.LayoutInformation.html">LayoutInformation</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getLayoutInformation">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the widget&#x27;s layout information</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type isclass" href="classes/classes.LayoutInformation.html">LayoutInformation</a>)</span> <span class="return-desc">the widget&#x27;s layout information</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getName" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getName</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getName">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the name of the widget class</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">the widget class name</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getParentWidget" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getParentWidget</span><span class="params">()</span>
+                : (<a class="type isclass" href="classes/classes.WidgetGroupBase.html">WidgetGroupBase</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getParentWidget">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the parent widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type isclass" href="classes/classes.WidgetGroupBase.html">WidgetGroupBase</a>)</span> <span class="return-desc">the parent widget</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getStart" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getStart</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getStart">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get start (for reversed mode)</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">start keyword for rtl</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getStyle" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getStyle</span><span class="params">(selector : <a class="type native" title="native javascript type">string</a>, property : <a class="type native" title="native javascript type">string</a>, appliesOnRoot : <a class="type native" title="native javascript type">boolean</a>)</span>
+                : (<a class="type native" title="Can take values of any type">any</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getStyle">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get widget style property value</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">selector</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">additional sub selector</td>
+                      </tr>
+                        <tr>
+                          <td class="param-name">property</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">property name</td>
+                      </tr>
+                        <tr>
+                          <td class="param-name">appliesOnRoot</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">boolean</a></td>
+                          <td class="param-desc">true if the returned selector should match the root too.</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="Can take values of any type">any</a>)</span> <span class="return-desc">property value if set, undefined otherwise</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getTableWidgetBase" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getTableWidgetBase</span><span class="params">()</span>
+                : (<a class="type isclass" href="classes/classes.TableWidgetBase.html">TableWidgetBase</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getTableWidgetBase">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the table Widget base class related to the widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type isclass" href="classes/classes.TableWidgetBase.html">TableWidgetBase</a>)</span> <span class="return-desc">TableWidgetBase</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getTextAlign" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getTextAlign</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the text-align used by this widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">a text alignment</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getTextDecoration" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getTextDecoration</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the text-decoration used by this widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">a CSS text decoration</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getTextTransform" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getTextTransform</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the text-transform used by this widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">a CSS text transform</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getTitle" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getTitle</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getTitle">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the title of the widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">the tooltip text</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getUniqueIdentifier" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getUniqueIdentifier</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">string</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getUniqueIdentifier">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the unique identifier of the widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">string</a>)</span> <span class="return-desc">the unique identifier of the widget</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getUserInterfaceWidget" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getUserInterfaceWidget</span><span class="params">()</span>
+                : (<a class="type isclass" href="classes/classes.UserInterfaceWidget.html">UserInterfaceWidget</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getUserInterfaceWidget">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the UI widget related to the widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type isclass" href="classes/classes.UserInterfaceWidget.html">UserInterfaceWidget</a>)</span> <span class="return-desc">UserInterfaceWidget</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="getWindowWidget" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">getWindowWidget</span><span class="params">()</span>
+                : (<a class="type isclass" href="classes/classes.WindowWidget.html">WindowWidget</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#getWindowWidget">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Get the Window Widget related to the widget</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type isclass" href="classes/classes.WindowWidget.html">WindowWidget</a>)</span> <span class="return-desc">WindowWidget</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="hasClass" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">hasClass</span><span class="params">(className : <a class="type native" title="native javascript type">string</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#hasClass">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Checks if the widget element has the given class</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">className</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">class to check</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="hasFocus" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">hasFocus</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">boolean</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#hasFocus">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Check if widget node has focus (class gbc_Focus)</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">boolean</a>)</span> <span class="return-desc">true if widget node has focus</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="hasVMFocus" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">hasVMFocus</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">boolean</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#hasVMFocus">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Check if widget node has VM focus</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">boolean</a>)</span> <span class="return-desc">true if widget node has VM focus</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="ignoreLayout" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">ignoreLayout</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">boolean</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#ignoreLayout">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Does the widget ignore layouting</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">boolean</a>)</span> <span class="return-desc">true if the widget ignore all layout.</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="isChildOf" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">isChildOf</span><span class="params">(parent : <a class="type isclass" href="classes/classes.WidgetBase.html">WidgetBase</a>)</span>
+                : (<a class="type native" title="native javascript type">boolean</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#isChildOf">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Check if this widget is a child of a given one</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">parent</td>
+                          <td class="param-type"><a class="type isclass" href="classes/classes.WidgetBase.html">WidgetBase</a></td>
+                          <td class="param-desc">the reference parent widget</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">boolean</a>)</span> <span class="return-desc">true if is a child, false otherwise</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="isDestroyed" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">isDestroyed</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">boolean</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.EventListener.html#isDestroyed">EventListener</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Returns if the node is destroyed</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">boolean</a>)</span> <span class="return-desc">true if node is destroyed</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="isEnabled" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">isEnabled</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">boolean</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#isEnabled">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Check if widget is enabled</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">boolean</a>)</span> <span class="return-desc">true if the widget allows user interaction, false otherwise.</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="isFocusable" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">isFocusable</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">boolean</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#isFocusable">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Returns if the widget is focusable</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">boolean</a>)</span> <span class="return-desc">State of focusable</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="isHidden" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">isHidden</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">boolean</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#isHidden">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Check if the widget is hidden</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">boolean</a>)</span> <span class="return-desc">true if the widget is hidden, false otherwise</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="isInMatrix" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">isInMatrix</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">boolean</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#isInMatrix">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Check if the widget is in a matrix</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">boolean</a>)</span> <span class="return-desc">true if the widget is in a matrix, false otherwise.</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="isInTable" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">isInTable</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">boolean</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#isInTable">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Check if the widget is in a table</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">boolean</a>)</span> <span class="return-desc">true if the widget is in a table, false otherwise.</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="isNoBorder" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">isNoBorder</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">boolean</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#isNoBorder">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Check if the widget is displayed without border</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">boolean</a>)</span> <span class="return-desc">true if the widget has no border class, false otherwise</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="isReversed" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">isReversed</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">boolean</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#isReversed">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Check if arabic mode is enabled</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">boolean</a>)</span> <span class="return-desc">true if enabled</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="isVisible" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">isVisible</span><span class="params">()</span>
+                : (<a class="type native" title="native javascript type">boolean</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#isVisible">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Check if the widget is visible</p>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type native" title="native javascript type">boolean</a>)</span> <span class="return-desc">true if visible, false otherwise</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="loseFocus" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">loseFocus</span><span class="params">()</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#loseFocus">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Called before setFocus to notify previous focused widget</p>
+              </div>
+            </div>
+          </div>
+          
+          <div id="loseVMFocus" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">loseVMFocus</span><span class="params">()</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#loseVMFocus">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Called before setting VM focus to notify previous VM focused widget</p>
+              </div>
+            </div>
+          </div>
+          
+          <div id="removeClass" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">removeClass</span><span class="params">(className : <a class="type native" title="native javascript type">string</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#removeClass">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Remove the given class from element</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">className</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">class to delete</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="removeTextTransform" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">removeTextTransform</span><span class="params">()</span>
+                
+                <div class="more">
+                  
+                </div>
+              </h2>
+              <div>
+                <p class="description">Remove both class which cause text-transform</p>
+              </div>
+            </div>
+          </div>
+          
+          <div id="replaceWith" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">replaceWith</span><span class="params">(widget : <a class="type isclass" href="classes/classes.WidgetBase.html">WidgetBase</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#replaceWith">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Replace the current widget with a given one</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">widget</td>
+                          <td class="param-type"><a class="type isclass" href="classes/classes.WidgetBase.html">WidgetBase</a></td>
+                          <td class="param-desc">the new widget</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setBackgroundColor" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setBackgroundColor</span><span class="params">(color : <a class="type native" title="native javascript type">string</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.ColoredWidgetBase.html#setBackgroundColor">ColoredWidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Sets the background color</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">color</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">a CSS color definition. Can be a color name (&#x27;red&#x27;, &#x27;blue&#x27;),
+                          an hex code (&#x27;#f5d48a&#x27;) or a color function (&#x27;rgb(128, 255, 0)&#x27;)
+                          null restores the default value.</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setColor" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setColor</span><span class="params">(color : <a class="type native" title="native javascript type">string</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.ColoredWidgetBase.html#setColor">ColoredWidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Set the fore color</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">color</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">a CSS color definition. Can be a color name (&#x27;red&#x27;, &#x27;blue&#x27;),
+                          an hex code (&#x27;#f5d48a&#x27;) or a color function (&#x27;rgb(128, 255, 0)&#x27;).
+                          null restores the default value.</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setDialogType" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setDialogType</span><span class="params">(dialogType : <a class="type native" title="native javascript type">string</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#setDialogType">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Set widget current dialog type.
+          Can be Input, Input Array, Display, Display Array or Construct</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">dialogType</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">Dialog type</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setEnabled" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setEnabled</span><span class="params">(enabled : <a class="type native" title="native javascript type">boolean</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#setEnabled">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Defines the enabled status of the widget</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">enabled</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">boolean</a></td>
+                          <td class="param-desc">true if the widget allows user interaction, false otherwise.</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setFocus" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setFocus</span><span class="params">(fromMouse : <a class="type native" title="native javascript type">boolean</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#setFocus">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Called when widget obtains the focus</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">fromMouse</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">boolean</a></td>
+                          <td class="param-desc">true if focus comes from mouse event</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setFocusable" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setFocusable</span><span class="params">(focusable : <a class="type native" title="native javascript type">boolean</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#setFocusable">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Defines if the widget is focusable</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">focusable</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">boolean</a></td>
+                          <td class="param-desc">State of focusable</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setFontFamily" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setFontFamily</span><span class="params">(fontFamily : <a class="type native" title="native javascript type">string</a>)</span>
+                
+                <div class="more">
+                  
+                </div>
+              </h2>
+              <div>
+                <p class="description">Set the font-family used for this widget</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">fontFamily</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">the font family to use. null restores the default value.</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setFontSize" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setFontSize</span><span class="params">(size : <a class="type native" title="native javascript type">string</a>)</span>
+                
+                <div class="more">
+                  
+                </div>
+              </h2>
+              <div>
+                <p class="description">Set the font-size used for this widget</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">size</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">a CSS font size value. null restores the default value.</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setFontStyle" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setFontStyle</span><span class="params">(style : <a class="type native" title="native javascript type">string</a>)</span>
+                
+                <div class="more">
+                  
+                </div>
+              </h2>
+              <div>
+                <p class="description">Set the font-style used for this widget</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">style</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">a CSS font style value. null restores the default value.</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setFontWeight" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setFontWeight</span><span class="params">(weight : <a class="type native" title="native javascript type">string</a>)</span>
+                
+                <div class="more">
+                  
+                </div>
+              </h2>
+              <div>
+                <p class="description">Set the font weight used for this widget</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">weight</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">a CSS font weight value. null restores the default value.</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setHidden" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setHidden</span><span class="params">(hidden : <a class="type native" title="native javascript type">boolean</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#setHidden">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Defines if the widget should be hidden or not</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">hidden</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">boolean</a></td>
+                          <td class="param-desc">true if the widget is hidden, false otherwise</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setNoBorder" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setNoBorder</span><span class="params">(noBorder : <a class="type native" title="native javascript type">boolean</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#setNoBorder">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Remove or add borders to the widget</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">noBorder</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">boolean</a></td>
+                          <td class="param-desc">true if the widget has no border class, false otherwise</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setParentWidget" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setParentWidget</span><span class="params">(widget : <a class="type isclass" href="classes/classes.WidgetGroupBase.html">WidgetGroupBase</a>, options : <a class="type native" title="native javascript type">Object</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#setParentWidget">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Defines the parent widget</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">widget</td>
+                          <td class="param-type"><a class="type isclass" href="classes/classes.WidgetGroupBase.html">WidgetGroupBase</a></td>
+                          <td class="param-desc">the widget to use as parent</td>
+                      </tr>
+                        <tr>
+                          <td class="param-name">options</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">Object</a></td>
+                          <td class="param-desc">possible options</td>
+                      </tr>
+                        <tr>
+                          <td class="param-name">options.noLayoutInvalidation</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">boolean</a></td>
+                          <td class="param-desc">won&#x27;t affect parent layout</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setReverse" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setReverse</span><span class="params">(rtl : <a class="type native" title="native javascript type">boolean</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#setReverse">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Set Arabic mode</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">rtl</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">boolean</a></td>
+                          <td class="param-desc">true if widget is right to left</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setStyle" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setStyle</span><span class="params">(selector : <a class="type native" title="native javascript type">string</a>|<a class="type native" title="native javascript type">Object</a>, style : <a class="type native" title="native javascript type">Object</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#setStyle">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Updates widget style with new rules</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">selector</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a>|<a class="type native" title="native javascript type">Object</a></td>
+                          <td class="param-desc">additional sub selector</td>
+                      </tr>
+                        <tr>
+                          <td class="param-name">style</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">Object</a></td>
+                          <td class="param-desc">style properties to set</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setTextAlign" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setTextAlign</span><span class="params">(align : <a class="type native" title="native javascript type">string</a>)</span>
+                
+                <div class="more">
+                  
+                </div>
+              </h2>
+              <div>
+                <p class="description">Set the text-align used for this widget</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">align</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">a CSS text alignment. null restores the default value.</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setTextDecoration" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setTextDecoration</span><span class="params">()</span>
+                
+                <div class="more">
+                  
+                </div>
+              </h2>
+              <div>
+                <p class="description">Set the text-decoration used for this widget</p>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setTextTransform" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setTextTransform</span><span class="params">(transform : <a class="type native" title="native javascript type">string</a>)</span>
+                
+                <div class="more">
+                  
+                </div>
+              </h2>
+              <div>
+                <p class="description">Set the text-transform used for this widget</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">transform</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">a CSS text transform. null restores the default value.</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="setTitle" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">setTitle</span><span class="params">(title : <a class="type native" title="native javascript type">string</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#setTitle">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Set the title of the widget</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">title</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">the tooltip text</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="toggleClass" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">toggleClass</span><span class="params">(className : <a class="type native" title="native javascript type">string</a>, switcher : <a class="type native" title="native javascript type">boolean</a>)</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#toggleClass">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Toggle the given class to element</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">className</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">class to toggle</td>
+                      </tr>
+                        <tr>
+                          <td class="param-name">switcher</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">boolean</a></td>
+                          <td class="param-desc">forced new state</td>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="translate" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">translate</span><span class="params">()</span>
+                
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.WidgetBase.html#translate">WidgetBase</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Translate the widget</p>
+              </div>
+            </div>
+          </div>
+          
+          <div id="when" class="member">
+            <div class="method public">
+              <h2>
+                <span class="label label-visibility label-public"></span>
+                <span class="name">when</span><span class="params">(type : <a class="type native" title="native javascript type">string</a>, handler : <a class="type istypedef" title="predefined type">Hook</a>, once : <a class="type native" title="native javascript type">boolean</a>)</span>
+                : (<a class="type istypedef" title="predefined type">HandleRegistration</a>)
+                <div class="more">
+                  <span class="label label-info inheritsFrom">[inherits from <a class="type isclass" href="classes/classes.EventListener.html#when">EventListener</a>]</span>
+                </div>
+              </h2>
+              <div>
+                <p class="description">Registers a handler for this event type</p>
+                  <h3 class="only-expanded">Parameters</h3>
+                  <div class="panel panel-default">
+                    <table class="table">
+                        <tr>
+                          <td class="param-name">type</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">string</a></td>
+                          <td class="param-desc">event type (e.g. &quot;attribute changed&quot;)</td>
+                      </tr>
+                        <tr>
+                          <td class="param-name">handler</td>
+                          <td class="param-type"><a class="type istypedef" title="predefined type">Hook</a></td>
+                          <td class="param-desc">handler to trigger when the event type is emitted</td>
+                      </tr>
+                        <tr>
+                          <td class="param-name">once</td>
+                          <td class="param-type"><a class="type native" title="native javascript type">boolean</a></td>
+                          <td class="param-desc">if true, will only fire once</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <h3 class="only-expanded">Returns</h3>
+                  <div class="returns-or only-expanded"></div>
+                  <div class="returns only-expanded">
+                    <span class="return-type">(<a class="type istypedef" title="predefined type">HandleRegistration</a>)</span> <span class="return-desc">a registration handle (for unbind purpose)</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

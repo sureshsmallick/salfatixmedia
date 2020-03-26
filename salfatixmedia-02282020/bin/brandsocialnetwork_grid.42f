@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="brandsocialnetwork_grid.tmp" build="3.20.07" sqlDbName="salfatixmedia" text="Form" style="centerwindow" width="37" height="9">
+  <LStr text="Form"/>
+  <Grid name="salfatixmedia1" width="37" height="9">
+    <FormField name="formonly.ff_formtitle" colName="ff_formtitle" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Label width="35" justify="center" style="ff_formtitle" posY="0" posX="1" gridWidth="35"/>
+    </FormField>
+    <Image name="img_back" width="5" height="3" action="cancel" image="fa-arrow-circle-left" autoScale="1" sizePolicy="fixed" style="no_border" comment="Back" posY="1" posX="1" gridWidth="5" gridHeight="3">
+      <LStr comment="Back"/>
+    </Image>
+    <FormField name="formonly.ffimage_value" colName="ffimage_value" fieldId="1" sqlTabName="formonly" noEntry="1" tabIndex="2">
+      <Image width="5" height="3" action="save" autoScale="1" sizePolicy="fixed" style="no_border" comment="Save" posY="1" posX="31" gridWidth="5" gridHeight="3">
+        <LStr comment="Save"/>
+      </Image>
+    </FormField>
+    <HBox posY="4" posX="1" gridWidth="35">
+      <PhantomFormField name="brandsocialnetworks.brndscl_id" colName="brndscl_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="5" sqlTabName="brandsocialnetworks">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="brandsocialnetworks.brndscl_brand_id" colName="brndscl_brand_id" sqlType="INTEGER" required="1" notNull="1" fieldId="6" sqlTabName="brandsocialnetworks">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <Label name="brandsocialnetworks_brndscl_socialnetwork_id_label1" width="8" text="Network">
+        <LStr text="Network"/>
+      </Label>
+      <FormField name="brandsocialnetworks.brndscl_socialnetwork_id" colName="brndscl_socialnetwork_id" sqlType="INTEGER" required="1" notNull="1" fieldId="2" sqlTabName="brandsocialnetworks" tabIndex="3">
+        <ComboBox width="22" scroll="1"/>
+      </FormField>
+      <SpacerItem/>
+    </HBox>
+    <HBox posY="5" posX="1" gridWidth="35">
+      <Label name="brandsocialnetworks_brndscl_accountname_label1" width="8" text="Account">
+        <LStr text="Account"/>
+      </Label>
+      <FormField name="brandsocialnetworks.brndscl_accountname" colName="brndscl_accountname" sqlType="VARCHAR(255)" required="1" notNull="1" fieldId="3" sqlTabName="brandsocialnetworks" tabIndex="4">
+        <Edit width="24" scroll="1"/>
+      </FormField>
+      <SpacerItem/>
+    </HBox>
+    <Label name="brandsocialnetworks_brndscl_comment_label" width="8" text="Comment" posY="6" posX="1" gridWidth="8">
+      <LStr text="Comment"/>
+    </Label>
+    <FormField name="brandsocialnetworks.brndscl_comment" colName="brndscl_comment" sqlType="VARCHAR(255)" fieldId="4" sqlTabName="brandsocialnetworks" tabIndex="5">
+      <TextEdit width="24" height="3" wantReturns="1" scroll="1" posY="6" posX="10" gridWidth="24" gridHeight="3"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="brandsocialnetworks">
+    <Link colName="brndscl_socialnetwork_id" fieldIdRef="2"/>
+    <Link colName="brndscl_accountname" fieldIdRef="3"/>
+    <Link colName="brndscl_comment" fieldIdRef="4"/>
+    <Link colName="brndscl_id" fieldIdRef="5"/>
+    <Link colName="brndscl_brand_id" fieldIdRef="6"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="ffimage_value" fieldIdRef="1"/>
+  </RecordView>
+  <RecordView tabName="scr_brandsocialnetwork_grid">
+    <Link colName="brndscl_id" fieldIdRef="5"/>
+    <Link colName="brndscl_brand_id" fieldIdRef="6"/>
+    <Link colName="brndscl_socialnetwork_id" fieldIdRef="2"/>
+    <Link colName="brndscl_accountname" fieldIdRef="3"/>
+    <Link colName="brndscl_comment" fieldIdRef="4"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="ffimage_value" fieldIdRef="1"/>
+  </RecordView>
+</Form>

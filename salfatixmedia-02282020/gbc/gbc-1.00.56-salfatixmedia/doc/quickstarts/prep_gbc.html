@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Getting started with GBC</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="quickstarts/index.html">Getting Started</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar active" href="quickstarts/prep_gbc.html">Getting started with GBC</a>
+          
+          <a class="btn btn-sidebar " href="quickstarts/prep_new_cust_proj.html">Create a new customization project</a>
+          
+          <a class="btn btn-sidebar " href="quickstarts/migration/index.html">Migrate GDC to GBC</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="quickstarts/migration/evaluate.html">Evaluate</a>
+            
+            <a class="btn btn-sidebar " href="quickstarts/migration/features_limitations.html">Limitations</a>
+            
+            <a class="btn btn-sidebar " href="quickstarts/migration/migration_tips.html">Migration tips</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="quickstarts/from_GWC_HTML5_to_GBC.html">Migrate GWC-HTML5 to GBC</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="quickstarts">
+<header class="page-title">
+  <em>Getting started with GBC</em>
+</header>
+<article class="md-content">
+<p>This quick start prepares your working environment for GBC customization development.</p>
+<h1 id="Prerequisites">Prerequisites <a class="header-anchor" href="quickstarts/prep_gbc.html#Prerequisites" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>You need some tools installed on your system:</p>
+<ul>
+<li><a href="http://nodejs.org/">Node.js</a> <strong>version 10 is recommended with python 2.7</strong></li>
+<li><a href="http://git-scm.com/">git</a></li>
+</ul>
+<p>Under Windows, you can directly install proper nodejs, npm and python versions by using nvm :</p>
+<ol>
+<li>Download and install nvm</li>
+</ol>
+<ul>
+<li><a href="https://github.com/coreybutler/nvm-windows/releases/">nvm</a></li>
+</ul>
+<ol start="2">
+<li>Then run commands :</li>
+</ol>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> nvm list available </span>
+|   CURRENT    |     LTS      |  OLD STABLE  | OLD UNSTABLE |
+|--------------|--------------|--------------|--------------|
+|    12.4.0    |   10.16.0    |   0.12.18    |   0.11.16    |
+|    12.3.1    |   10.15.3    |   0.12.17    |   0.11.15    |
+...
+<span class="hljs-meta">$</span><span class="bash"> nvm install 12.4.0</span>
+<span class="hljs-meta">$</span><span class="bash"> nvm use 12.4.0</span>
+</code></pre>
+<p>Follow the instructions provided by the tools to install them on your system. Once the installation is complete, you should have the following tools available from the command line:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> node -v</span>
+v12.4.0 or v10.16.0
+<span class="hljs-meta">$</span><span class="bash"> npm -v</span>
+6.9.0
+</code></pre>
+<p>You need to master these command line tools in order to work on GBC customization.</p>
+<p>Next, install <code>grunt</code> using the <code>npm</code> tool. From the console, execute the following command:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> npm install -g grunt-cli</span>
+</code></pre>
+<blockquote>
+<ul>
+<li>You must have internet access.</li>
+<li>You may need super user rights on your system.</li>
+<li>Unless you reinstall node.js or a new version of grunt-cli is required, this command is only needed once.</li>
+</ul>
+</blockquote>
+<p><strong>Your environment is now ready.</strong></p>
+<h1 id="Setup_your_customization_project">Setup your customization project <a class="header-anchor" href="quickstarts/prep_gbc.html#Setup_your_customization_project" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>Get the latest GBC project package from the <a href="https://4js.com/download/products/">Four Js Products download area</a> and extract it to a location of your choosing.
+We will refer to this location (where you extract the package) as the <em><code>gbc-project-dir</code></em> throughout this documentation.</p>
+<p>Next, prepare your working copy:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> <span class="hljs-built_in">cd</span> <span class="hljs-variable">$GBC_PROJECT_DIR</span></span>
+<span class="hljs-meta">$</span><span class="bash"> npm install</span>
+</code></pre>
+<blockquote>
+<ul>
+<li>you must have internet access</li>
+<li>Run this command whenever you get a new version of the project package</li>
+</ul>
+</blockquote>
+<p>Finally, execute the default compilation:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> grunt</span>
+</code></pre>
+<p>The <em><code>gbc-project-dir</code></em><code>/dist/customization/sample</code> folder is created. It contains the compiled version of the GBC with
+the provided customization sample defined in <em><code>gbc-project-dir</code></em><code>/customization/sample</code>.</p>
+<h1 id="Test_using_the_standalone_GAS">Test using the standalone GAS <a class="header-anchor" href="quickstarts/prep_gbc.html#Test_using_the_standalone_GAS" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>To test your newly built customization, you need to run the standalone GAS by executing the following command:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> httpdispatch -E res.path.gbc.user=&lt;gbc-project-dir&gt;/dist/customization</span>
+</code></pre>
+<blockquote>
+<ul>
+<li>Launch the Genero Workplace Window to ensure an environment suitable for Genero commands (such as <code>httpdispatch</code>).</li>
+<li>It can very helpful to add the following arguments to the <code>httpdispatch</code> command:
+<ul>
+<li><code>-E res.log.output.type=CONSOLE,DAILYFILE</code></li>
+<li><code>-E res.log.categories_filter=ALL</code></li>
+</ul>
+</li>
+<li>Use a dedicated console to run the <code>httpdispatch</code> command. This allows you to rebuild your GBC customization without needing to re-execute <code>httpdispatch</code> afterwards.</li>
+</ul>
+</blockquote>
+<p>The resource <code>res.path.gbc.user</code> amends the default <code>GBC_LOOKUP_PATH</code>. To run a
+given application using a given customization, amend the application URL with
+the query string parameter <code>gbc=</code><em><code>customization_name</code></em>.</p>
+<p>For example, in order to run the Genero demo with the default customization (named <em>sample</em>) that was built earlier in this procedure, open the
+following URL in your prefered browser:</p>
+<p><code>http://localhost:6394/ua/r/gwc-demo?gbc=sample</code></p>
+<h1 id="Build_a_project_continuously">Build a project continuously <a class="header-anchor" href="quickstarts/prep_gbc.html#Build_a_project_continuously" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>To make the development cycle quicker, there is a built-in rule that will watch for any modifications in your customization, then immediately rebuild the customization when modifications are detected. To use this rule, execute the following command from a dedicated command prompt:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> grunt dev</span>
+</code></pre>
+<p>You will need to refresh your browser once compilation completes.</p>
+<blockquote>
+<ul>
+<li>Use a dedicated console, as this is designed to run permanently. It will not return to the command prompt.</li>
+<li>Depending on your operating system, it is advised to abort and re-run the command if you add new files.</li>
+</ul>
+</blockquote>
+<h1 id="Create_your_own_customization_project">Create your own customization project <a class="header-anchor" href="quickstarts/prep_gbc.html#Create_your_own_customization_project" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>To create a new customization project, see <a href="quickstarts/prep_new_cust_proj.html">Create a new customization project</a>.</p>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

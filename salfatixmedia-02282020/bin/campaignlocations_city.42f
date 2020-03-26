@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="campaignlocations_city.tmp" build="3.20.07" sqlDbName="salfatixmedia" text="City List" style="popup" width="101" height="21">
+  <LStr text="City List"/>
+  <Grid name="grid1" width="101" height="21">
+    <Image name="img_back" width="5" height="3" action="close" image="fa-arrow-circle-left" autoScale="1" sizePolicy="fixed" style="no_border" comment="Back" posY="0" posX="3" gridWidth="5" gridHeight="3">
+      <LStr comment="Back"/>
+    </Image>
+    <Image name="img_accept" width="5" height="3" action="accept" image="fa-check-circle-green" autoScale="1" sizePolicy="fixed" style="no_border" comment="Validate" posY="0" posX="95" gridWidth="5" gridHeight="3">
+      <LStr comment="Validate"/>
+    </Image>
+    <FormField name="formonly.selection_lbl" colName="selection_lbl" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Label width="97" justify="center" posY="3" posX="3" gridWidth="97"/>
+    </FormField>
+    <Table pageSize="15" name="salfatixmedia2" style="zoomtable" doubleClick="selectrow" unsortableColumns="1" unsizableColumns="1" unmovableColumns="1" unhidableColumns="1" width="97" posY="4" posX="3" gridWidth="97" gridHeight="16" tabName="+tn_0">
+      <PhantomColumn name="cities.cts_id" colName="cts_id" sqlType="INTEGER" required="1" notNull="1" fieldId="8" sqlTabName="cities">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <TableColumn name="cities.cts_name" colName="cts_name" sqlType="VARCHAR(60)" required="1" notNull="1" fieldId="4" sqlTabName="cities" text="City" imageColumn="myimage" tabIndex="2">
+        <Edit width="30" scroll="1"/>
+        <LStr text="City"/>
+      </TableColumn>
+      <PhantomColumn name="cities.cts_state_id" colName="cts_state_id" sqlType="INTEGER" required="1" notNull="1" fieldId="9" sqlTabName="cities">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="countries.cntr_id" colName="cntr_id" sqlType="INTEGER" required="1" notNull="1" fieldId="3" sqlTabName="countries">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <TableColumn name="states.stt_name" colName="stt_name" sqlType="VARCHAR(60)" required="1" notNull="1" fieldId="5" sqlTabName="states" text="State" tabIndex="3">
+        <Edit width="30" scroll="1"/>
+        <LStr text="State"/>
+      </TableColumn>
+      <PhantomColumn name="cities1.cts_id" colName="cts_id" sqlType="INTEGER" required="1" notNull="1" fieldId="1" sqlTabName="cities">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="formonly.myimage" colName="myimage" fieldId="7" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <TableColumn name="countries.cntr_name" colName="cntr_name" sqlType="VARCHAR(64)" required="1" notNull="1" fieldId="6" sqlTabName="countries" text="Country" tabIndex="4">
+        <Edit width="30" scroll="1"/>
+        <LStr text="Country"/>
+      </TableColumn>
+      <PhantomColumn name="states.stt_id" colName="stt_id" sqlType="INTEGER" required="1" notNull="1" fieldId="2" sqlTabName="states">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+    </Table>
+  </Grid>
+  <RecordView tabName="cities1">
+    <Link colName="cts_id" fieldIdRef="1"/>
+  </RecordView>
+  <RecordView tabName="states">
+    <Link colName="stt_id" fieldIdRef="2"/>
+    <Link colName="stt_name" fieldIdRef="5"/>
+  </RecordView>
+  <RecordView tabName="countries">
+    <Link colName="cntr_id" fieldIdRef="3"/>
+    <Link colName="cntr_name" fieldIdRef="6"/>
+  </RecordView>
+  <RecordView tabName="cities">
+    <Link colName="cts_name" fieldIdRef="4"/>
+    <Link colName="cts_id" fieldIdRef="8"/>
+    <Link colName="cts_state_id" fieldIdRef="9"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="selection_lbl" fieldIdRef="0"/>
+    <Link colName="myimage" fieldIdRef="7"/>
+  </RecordView>
+  <RecordView tabName="scrlist_country">
+    <Link colName="cts_id" fieldIdRef="8"/>
+    <Link colName="cts_name" fieldIdRef="4"/>
+    <Link colName="cts_state_id" fieldIdRef="9"/>
+    <Link colName="cntr_id" fieldIdRef="3"/>
+    <Link colName="cntr_name" fieldIdRef="6"/>
+    <Link colName="stt_id" fieldIdRef="2"/>
+    <Link colName="stt_name" fieldIdRef="5"/>
+    <Link colName="cts_id" fieldIdRef="1"/>
+    <Link colName="myimage" fieldIdRef="7"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="selection_lbl" fieldIdRef="0"/>
+  </RecordView>
+</Form>

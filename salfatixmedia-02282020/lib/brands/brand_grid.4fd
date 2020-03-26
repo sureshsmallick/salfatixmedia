@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a0a" name="managedform" uid="{b7ea217b-0cc2-450e-bdf3-118226aebdfc}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record masterTable="brands" name="scr_brand_grid" uid="{35795de6-913d-45b1-895a-bebfdc870965}">
+    <RecordField colName="brnd_id" fieldIdRef="1" fieldType="TABLE_COLUMN" name="brands.brnd_id" sqlTabName="brands" uid="{fee3ed5e-d1cd-497f-b382-e2bf869edc81}"/>
+    <RecordField colName="brnd_pic_id" fieldIdRef="25" fieldType="TABLE_COLUMN" name="brands.brnd_pic_id" sqlTabName="brands" uid="{a626b89b-abd0-423c-b7a6-4864624d08b1}"/>
+    <RecordField colName="brnd_name" fieldIdRef="3" fieldType="TABLE_COLUMN" name="brands.brnd_name" sqlTabName="brands" uid="{0df357db-4916-426a-ba34-cc6c13431e17}"/>
+    <RecordField colName="brnd_website" fieldIdRef="4" fieldType="TABLE_COLUMN" name="brands.brnd_website" sqlTabName="brands" uid="{09c8b486-4ffa-42b6-a016-4721ac396569}"/>
+    <RecordField colName="brnd_country_id" fieldIdRef="5" fieldType="TABLE_COLUMN" name="brands.brnd_country_id" sqlTabName="brands" uid="{a7da9928-5a1f-4c62-b9bf-69878c8c49ef}"/>
+    <RecordField colName="brnd_state_id" fieldIdRef="6" fieldType="TABLE_COLUMN" name="brands.brnd_state_id" sqlTabName="brands" uid="{d1e20425-072c-4a32-bcf0-b5dcf970ff1d}"/>
+    <RecordField colName="brnd_city_id" fieldIdRef="7" fieldType="TABLE_COLUMN" name="brands.brnd_city_id" sqlTabName="brands" uid="{65fff58f-56ad-4fa8-afdf-549e5da70256}"/>
+    <RecordField colName="brnd_address_number" fieldIdRef="37" fieldType="TABLE_COLUMN" name="brands.brnd_address_number" sqlTabName="brands" uid="{d142cf62-f337-4bd3-85b8-8a4aa03db15d}"/>
+    <RecordField colName="brnd_address_street" fieldIdRef="38" fieldType="TABLE_COLUMN" name="brands.brnd_address_street" sqlTabName="brands" uid="{81ed3f73-e771-4ed3-8c7f-34cc39f57e15}"/>
+    <RecordField colName="brnd_address_zipcode" fieldIdRef="39" fieldType="TABLE_COLUMN" name="brands.brnd_address_zipcode" sqlTabName="brands" uid="{40e8a6e7-6224-4a26-b946-de68b0a4c674}"/>
+    <RecordField colName="brnd_address_town" fieldIdRef="40" fieldType="TABLE_COLUMN" name="brands.brnd_address_town" sqlTabName="brands" uid="{498aca30-195c-4f88-8548-92235f52f274}"/>
+    <RecordField colName="brnd_address_more" fieldIdRef="41" fieldType="TABLE_COLUMN" name="brands.brnd_address_more" sqlTabName="brands" uid="{480a7328-2656-4525-b293-457556e946cf}"/>
+    <RecordField colName="brnd_currency_id" fieldIdRef="30" fieldType="TABLE_COLUMN" name="brands.brnd_currency_id" sqlTabName="brands" uid="{de073f0a-3dc7-4bb7-9868-750b5a05cedc}"/>
+    <RecordField colName="brnd_gender_id" fieldIdRef="8" fieldType="TABLE_COLUMN" name="brands.brnd_gender_id" sqlTabName="brands" uid="{eac2d648-8a1a-4556-b371-e0c272e7b1be}"/>
+    <RecordField colName="brnd_firstname" fieldIdRef="9" fieldType="TABLE_COLUMN" name="brands.brnd_firstname" sqlTabName="brands" uid="{5e306434-4eb5-4a30-a5a9-8c11a330d9ed}"/>
+    <RecordField colName="brnd_lastname" fieldIdRef="10" fieldType="TABLE_COLUMN" name="brands.brnd_lastname" sqlTabName="brands" uid="{f0ea3132-6e2e-48cf-a864-a3e691880a7d}"/>
+    <RecordField colName="brnd_contact_rank" fieldIdRef="42" fieldType="TABLE_COLUMN" name="brands.brnd_contact_rank" sqlTabName="brands" table_alias_name="brands1" uid="{efc4bf12-5255-464e-8e25-c30bda0df614}"/>
+    <RecordField colName="brnd_email" fieldIdRef="11" fieldType="TABLE_COLUMN" name="brands.brnd_email" sqlTabName="brands" uid="{024fb4cb-8bb3-4e01-838f-2303b68b9e8e}"/>
+    <RecordField colName="brnd_email_style" fieldIdRef="36" fieldType="TABLE_COLUMN" name="brands.brnd_email_style" sqlTabName="brands" uid="{161c020a-fdd0-47e3-a8fc-cb5811fedc6b}"/>
+    <RecordField colName="brnd_password" fieldIdRef="12" fieldType="TABLE_COLUMN" name="brands.brnd_password" sqlTabName="brands" uid="{ebc55e67-2a7c-41c3-a7e0-2d6dc14753e2}"/>
+    <RecordField colName="brnd_mobile_phonenumber" fieldIdRef="13" fieldType="TABLE_COLUMN" name="brands.brnd_mobile_phonenumber" sqlTabName="brands" uid="{677a839f-ae4c-4344-bd7e-81ae93c2c87c}"/>
+    <RecordField colName="brnd_accountstatus_id" fieldIdRef="14" fieldType="TABLE_COLUMN" name="brands.brnd_accountstatus_id" sqlTabName="brands" uid="{9074e48e-60f9-4c4e-ac31-a1251ab316dd}"/>
+    <RecordField colName="brnd_createdby_id" fieldIdRef="27" fieldType="TABLE_COLUMN" name="brands.brnd_createdby_id" sqlTabName="brands" uid="{35d490fe-6d4a-48ee-877a-6cc5a3ebf0ff}"/>
+    <RecordField colName="brnd_creationdate" fieldIdRef="15" fieldType="TABLE_COLUMN" name="brands.brnd_creationdate" sqlTabName="brands" uid="{9fb6114d-d795-4b43-83e4-eaef74e09a87}"/>
+    <RecordField colName="brnd_deletiondate" fieldIdRef="17" fieldType="TABLE_COLUMN" name="brands.brnd_deletiondate" sqlTabName="brands" uid="{e8c88f0c-e82e-441f-99cf-4577cedc1e86}"/>
+    <RecordField colName="brnd_validationdate" fieldIdRef="18" fieldType="TABLE_COLUMN" name="brands.brnd_validationdate" sqlTabName="brands" uid="{5157167f-5d20-4e0d-b510-35f36d077a9f}"/>
+    <RecordField colName="brnd_canceldate" fieldIdRef="19" fieldType="TABLE_COLUMN" name="brands.brnd_canceldate" sqlTabName="brands" uid="{43891f60-3684-4744-93e2-260653d2d8b3}"/>
+    <RecordField colName="brnd_suspendeddate" fieldIdRef="20" fieldType="TABLE_COLUMN" name="brands.brnd_suspendeddate" sqlTabName="brands" uid="{e5e50e38-20b1-42fa-9272-29c1a78994cd}"/>
+    <RecordField colName="brnd_stopdate" fieldIdRef="31" fieldType="TABLE_COLUMN" name="brands.brnd_stopdate" sqlTabName="brands" uid="{255f94aa-3316-45f8-98ad-f14ae2f81717}"/>
+    <RecordField colName="brnd_emailvalidationdate" fieldIdRef="21" fieldType="TABLE_COLUMN" name="brands.brnd_emailvalidationdate" sqlTabName="brands" uid="{8d59c807-64f5-4c0c-b6f7-47028f09e83c}"/>
+    <RecordField colName="brnd_lastupdatedate" fieldIdRef="22" fieldType="TABLE_COLUMN" name="brands.brnd_lastupdatedate" sqlTabName="brands" uid="{b726b628-f0e0-41d9-87b1-a138de3b327a}"/>
+    <RecordField colName="brnd_lastlogindate" fieldIdRef="23" fieldType="TABLE_COLUMN" name="brands.brnd_lastlogindate" sqlTabName="brands" uid="{81a2ee28-3211-4aed-91b2-bc631d9604c9}"/>
+    <RecordField colName="pic_value" fieldIdRef="2" fieldType="TABLE_COLUMN" name="pics.pic_value" sqlTabName="pics" uid="{59710ff9-b5f1-4643-bf03-91578de0d4da}"/>
+    <RecordField colName="brnd_password" fieldIdRef="24" fieldType="TABLE_ALIAS" name="brands1.brnd_password" sqlTabName="brands" table_alias_name="brands1" uid="{ce120cb0-e385-40ff-9bc1-20ab85c0c9f7}"/>
+    <RecordField fieldIdRef="32" length="32" name="brands_primarycategory" sqlType="VARCHAR" uid="{8358f857-cfb4-416f-9d29-ef3370220e80}"/>
+    <RecordField fieldIdRef="26" length="32" name="brands_othercategories" sqlType="VARCHAR" uid="{05c15894-2316-4b2f-a468-673f80bf9635}"/>
+  </Record>
+  <Record name="scr_loc" uid="{490eaadb-771d-4f9d-a77a-548505005c4f}">
+    <RecordField colName="cntr_name" fieldIdRef="33" fieldType="TABLE_COLUMN" name="countries.cntr_name" sqlTabName="countries" uid="{a272e940-a4f2-4972-9ca4-bf8e1d132947}"/>
+    <RecordField colName="stt_name" fieldIdRef="34" fieldType="TABLE_COLUMN" name="states.stt_name" sqlTabName="states" uid="{1dfceddc-756b-46ec-bd48-b6d88aa589c2}"/>
+    <RecordField colName="cts_name" fieldIdRef="35" fieldType="TABLE_COLUMN" name="cities.cts_name" sqlTabName="cities" uid="{deef42d6-aba3-4bf0-bd82-4120736054aa}"/>
+  </Record>
+  <Record name="Undefined" uid="{21edca54-453f-4433-8297-554f140e4148}">
+    <RecordField fieldIdRef="16" name="ff_formtitle" uid="{2cbf8bab-34e4-4ab9-a6bb-126947c45aa0}"/>
+    <RecordField fieldIdRef="28" name="ffimage_value" uid="{78d7feb4-9d6d-416f-92ec-8a0834852afa}"/>
+    <RecordField fieldIdRef="29" name="phonenumberprefix_label" uid="{af044be0-a37e-4c95-8b9f-6ecbedfdca2a}"/>
+  </Record>
+  <Form gridHeight="40" gridWidth="109" name="form" style="centerwindow" text="Form">
+    <ActionDefaultList name="actiondefaultlist1">
+      <ActionDefault image="font:FontAwesome.ttf:f150" name="zoomcountry"/>
+      <ActionDefault image="font:FontAwesome.ttf:f150" name="zoomstate"/>
+      <ActionDefault image="font:FontAwesome.ttf:f150" name="zoomcity"/>
+    </ActionDefaultList>
+    <Grid gridHeight="38" gridWidth="98" name="salfatixmedia1" posX="2" posY="2">
+      <Phantom colName="brnd_email_style" fieldId="36" fieldType="TABLE_COLUMN" name="brands.brnd_email_style" sqlTabName="brands" widget="Phantom"/>
+      <FFLabel fieldId="16" gridHeight="1" gridWidth="33" justify="center" name="ff_formtitle" posX="1" posY="0" style="ff_formtitle" title="fflabel1" widget="FFLabel"/>
+      <FFImage action="upload_photo" autoScale="true" colName="pic_value" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="5" gridWidth="12" name="pics.pic_value" posX="1" posY="1" sizePolicy="fixed" sqlTabName="pics" style="no_border" widget="FFImage">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </FFImage>
+      <FFImage action="save" autoScale="true" comment="Save" fieldId="28" gridHeight="3" gridWidth="5" justify="center" name="ffimage_value" posX="29" posY="1" sizePolicy="fixed" style="no_border" title="ffimage1" widget="FFImage"/>
+      <HRec gridHeight="1" gridWidth="33" name="hrec1" posX="1" posY="6">
+        <Button gridHeight="1" gridWidth="12" name="upload_photo" posX="0" posY="0" style="brand_html" tabIndex="-1" text="Change Photo"/>
+        <Spacer gridWidth="5" name="spacer2" posX="13" posY="0"/>
+        <Button gridHeight="1" gridWidth="13" name="edit_brandsocialnetworks" posX="19" posY="0" tabIndex="-1" text="Edit social networks"/>
+      </HRec>
+      <Label gridHeight="1" gridWidth="33" name="label3" posX="1" posY="7" text=" "/>
+      <Label gridHeight="1" gridWidth="33" name="label1" posX="1" posY="8" style="brand_label_bold" text="Brand Information"/>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_name_label1" posX="1" posY="9" text="Brand">
+        <Initializer text="dbschema:brands.brnd_name/@label"/>
+      </Label>
+      <Edit colName="brnd_name" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="brands.brnd_name" posX="14" posY="9" scroll="true" sqlTabName="brands" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_website_label1" posX="1" posY="10" text="Website">
+        <Initializer text="dbschema:brands.brnd_website/@label"/>
+      </Label>
+      <Edit colName="brnd_website" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="brands.brnd_website" posX="14" posY="10" scroll="true" sqlTabName="brands" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_country_id_label1" posX="1" posY="11" text="Country">
+        <Initializer text="dbschema:brands.brnd_country_id/@label"/>
+      </Label>
+      <ButtonEdit action="zoomcountry" colName="cntr_name" completer="true" fieldId="33" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="countries.cntr_name" posX="14" posY="11" scroll="true" sqlTabName="countries" tabIndex="-1" title="buttonedit1" widget="ButtonEdit"/>
+      <ButtonEdit action="zoomstate" colName="stt_name" completer="true" fieldId="34" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="states.stt_name" posX="14" posY="12" scroll="true" sqlTabName="states" tabIndex="-1" title="buttonedit1" widget="ButtonEdit"/>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_address_number_label" posX="1" posY="14" text="Number">
+        <Initializer text="dbschema:users.usr_address_number/@label"/>
+      </Label>
+      <Edit colName="brnd_address_number" fieldId="37" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="brands.brnd_address_number" posX="14" posY="14" scroll="true" sqlTabName="brands" tabIndex="-1" title="Address Number" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_address_street_label" posX="1" posY="15" text="Street">
+        <Initializer text="dbschema:users.usr_address_street/@label"/>
+      </Label>
+      <Edit colName="brnd_address_street" fieldId="38" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="brands.brnd_address_street" posX="14" posY="15" scroll="true" sqlTabName="brands" tabIndex="-1" title="Street" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_address_zipcode_label" posX="1" posY="16" text="Zipcode">
+        <Initializer text="dbschema:users.usr_address_zipcode/@label"/>
+      </Label>
+      <Phantom colName="brnd_country_id" fieldId="5" fieldType="TABLE_COLUMN" name="brands.brnd_country_id" sqlTabName="brands" widget="Phantom"/>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_state_id_label1" posX="1" posY="12" text="State">
+        <Initializer text="dbschema:brands.brnd_state_id/@label"/>
+      </Label>
+      <ButtonEdit action="zoomcity" colName="cts_name" completer="true" fieldId="35" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="cities.cts_name" posX="14" posY="13" scroll="true" sqlTabName="cities" tabIndex="-1" title="buttonedit1" widget="ButtonEdit"/>
+      <Edit colName="brnd_address_zipcode" fieldId="39" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="brands.brnd_address_zipcode" posX="14" posY="16" scroll="true" sqlTabName="brands" tabIndex="-1" title="Zipcode" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Edit colName="brnd_address_town" fieldId="40" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" hidden="true" name="brands.brnd_address_town" posX="14" posY="17" scroll="true" sqlTabName="brands" tabIndex="-1" title="Town" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <ButtonEdit action="zoom" fieldId="32" gridHeight="1" gridWidth="20" image="fa-angle-right" length="32" name="brands_primarycategory" notEditable="true" posX="14" posY="19" scroll="true" sqlType="VARCHAR" tabIndex="-1" title="buttonedit1" widget="ButtonEdit"/>
+      <Phantom colName="brnd_state_id" fieldId="6" fieldType="TABLE_COLUMN" name="brands.brnd_state_id" sqlTabName="brands" widget="Phantom"/>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_city_id_label1" posX="1" posY="13" text="City">
+        <Initializer text="dbschema:brands.brnd_city_id/@label"/>
+      </Label>
+      <Label gridHeight="1" gridWidth="12" hidden="true" name="brands_brnd_address_town_label" posX="1" posY="17" text="Town">
+        <Initializer text="dbschema:users.usr_address_town/@label"/>
+      </Label>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_address_more_label" posX="1" posY="18" text="More">
+        <Initializer text="dbschema:users.usr_address_more/@label"/>
+      </Label>
+      <Edit colName="brnd_address_more" fieldId="41" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="brands.brnd_address_more" posX="14" posY="18" scroll="true" sqlTabName="brands" tabIndex="-1" title="More" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Phantom colName="brnd_city_id" fieldId="7" fieldType="TABLE_COLUMN" name="brands.brnd_city_id" sqlTabName="brands" widget="Phantom"/>
+      <Label gridHeight="1" gridWidth="12" name="brands_primarycategory_label" posX="1" posY="19" text="Main category">
+        <Initializer text="dbschema:brands.brnd_city_id/@label"/>
+      </Label>
+      <Label gridHeight="1" gridWidth="12" name="brands_categories_label" posX="1" posY="20" text="Sub categories">
+        <Initializer text="dbschema:brands.brnd_city_id/@label"/>
+      </Label>
+      <ButtonEdit action="zoom" fieldId="26" gridHeight="1" gridWidth="20" image="fa-angle-right" length="32" name="brands_othercategories" notEditable="true" posX="14" posY="20" scroll="true" sqlType="VARCHAR" tabIndex="-1" title="buttonedit1" widget="ButtonEdit"/>
+      <Label gridHeight="1" gridWidth="12" name="brands_currency_label" posX="1" posY="21" text="Currency">
+        <Initializer text="dbschema:brands.brnd_city_id/@label"/>
+      </Label>
+      <ComboBox colName="brnd_currency_id" fieldId="30" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="" name="brands.brnd_currency_id" posX="14" posY="21" scroll="true" sqlTabName="brands" tabIndex="-1" widget="ComboBox">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </ComboBox>
+      <Label gridHeight="1" gridWidth="33" name="label4" posX="1" posY="22" text=" "/>
+      <Label gridHeight="1" gridWidth="33" name="label2" posX="1" posY="23" style="brand_label_bold" text="Contact Details"/>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_gender_id_label1" posX="1" posY="24" text="Gender">
+        <Initializer text="dbschema:brands.brnd_gender_id/@label"/>
+      </Label>
+      <ComboBox colName="brnd_gender_id" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="Other, Male, Female" name="brands.brnd_gender_id" posX="14" posY="24" sqlTabName="brands" tabIndex="-1" widget="ComboBox">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        <Item lstrtext="true" name="1" text="Other"/>
+        <Item lstrtext="true" name="2" text="Male"/>
+        <Item lstrtext="true" name="3" text="Female"/>
+      </ComboBox>
+      <Phantom colName="brnd_id" fieldId="1" fieldType="TABLE_COLUMN" name="brands.brnd_id" sqlTabName="brands" widget="Phantom"/>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_firstname_label1" posX="1" posY="25" text="First Name">
+        <Initializer text="dbschema:brands.brnd_firstname/@label"/>
+      </Label>
+      <Edit colName="brnd_firstname" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="brands.brnd_firstname" posX="14" posY="25" scroll="true" sqlTabName="brands" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_lastname_label1" posX="1" posY="26" text="Last Name">
+        <Initializer text="dbschema:brands.brnd_lastname/@label"/>
+      </Label>
+      <Edit colName="brnd_lastname" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="brands.brnd_lastname" posX="14" posY="26" scroll="true" sqlTabName="brands" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_contact_rank_label" posX="1" posY="27" text="Position">
+        <Initializer text="dbschema:brands.brnd_email/@label"/>
+      </Label>
+      <Edit colName="brnd_contact_rank" fieldId="42" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" keyboardHint="email" name="brands.brnd_contact_rank" posX="14" posY="27" scroll="true" sqlTabName="brands" tabIndex="-1" table_alias_name="brands1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_email_label1" posX="1" posY="28" text="Email">
+        <Initializer text="dbschema:brands.brnd_email/@label"/>
+      </Label>
+      <Edit colName="brnd_email" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" keyboardHint="email" name="brands.brnd_email" posX="14" posY="28" scroll="true" sqlTabName="brands" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="brnd_emailvalidationdate_label" posX="1" posY="29" text="Email Validation">
+        <Initializer text="dbschema:brands.brnd_email/@label"/>
+      </Label>
+      <DateEdit colName="brnd_emailvalidationdate" fieldId="21" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="brands.brnd_emailvalidationdate" noEntry="true" posX="14" posY="29" sqlTabName="brands" tabIndex="-1" title="brnd_emailvalidationdate" widget="DateEdit"/>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_password_label1" posX="1" posY="30" text="Password">
+        <Initializer text="dbschema:brands.brnd_password/@label"/>
+      </Label>
+      <Edit colName="brnd_password" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" invisible="true" name="brands.brnd_password" posX="14" posY="30" scroll="true" sqlTabName="brands" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="brands1_brnd_password" posX="1" posY="31" text="Confirm Password">
+        <Initializer text="dbschema:brands.brnd_password/@label"/>
+      </Label>
+      <Edit colName="brnd_password" fieldId="24" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="20" invisible="true" name="brands1.brnd_password" posX="14" posY="31" scroll="true" sqlTabName="brands" tabIndex="-1" table_alias_name="brands1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="brands_brnd_mobile_phonenumber_label1" posX="1" posY="32" text="Phone Number">
+        <Initializer text="dbschema:brands.brnd_mobile_phonenumber/@label"/>
+      </Label>
+      <FFLabel fieldId="29" gridHeight="1" gridWidth="4" justify="right" name="phonenumberprefix_label" posX="14" posY="32" title="fflabel1" widget="FFLabel"/>
+      <Edit colName="brnd_mobile_phonenumber" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" keyboardHint="phone" name="brands.brnd_mobile_phonenumber" posX="19" posY="32" scroll="true" sqlTabName="brands" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="12" name="brnd_accountstatus_id_label" posX="1" posY="33" text="Account Status">
+        <Initializer text="dbschema:brands.brnd_mobile_phonenumber/@label"/>
+      </Label>
+      <ComboBox colName="brnd_accountstatus_id" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="" name="brands.brnd_accountstatus_id" noEntry="true" posX="14" posY="33" scroll="true" sqlTabName="brands" tabIndex="-1" title="brnd_accountstatus_id" widget="ComboBox"/>
+      <Label gridHeight="1" gridWidth="33" name="label5" posX="1" posY="34" text=" "/>
+      <Button gridHeight="1" gridWidth="33" name="requestcancelaccount" posX="1" posY="35" tabIndex="-1" text="Cancel my account"/>
+      <Label gridHeight="1" gridWidth="33" name="account_actions_label" posX="1" posY="36" style="brand_label_bold" text="Account Actions"/>
+      <HRec gridHeight="1" gridWidth="51" name="hrec2" posX="1" posY="37">
+        <Button gridHeight="1" gridWidth="6" name="validate_brand" posX="0" posY="0" tabIndex="-1" text="Validate"/>
+        <Button gridHeight="1" gridWidth="6" name="cancel_brand" posX="7" posY="0" tabIndex="-1" text="Is Spam"/>
+        <Button gridHeight="1" gridWidth="6" name="reject_brand" posX="14" posY="0" tabIndex="-1" text="Reject"/>
+        <Button gridHeight="1" gridWidth="6" name="suspend_brand" posX="21" posY="0" tabIndex="-1" text="Suspend"/>
+        <Button gridHeight="1" gridWidth="5" name="delete_brand" posX="28" posY="0" tabIndex="-1" text="Forget"/>
+        <Button gridHeight="1" gridWidth="5" name="acceptrequestcancelaccount" posX="34" posY="0" tabIndex="-1" text="Accept cancel account"/>
+        <Button gridHeight="1" gridWidth="4" name="rejectrequestcancelaccount" posX="40" posY="0" tabIndex="-1" text="Reject cancel account"/>
+        <Button gridHeight="1" gridWidth="3" name="exportaccount" posX="45" posY="0" tabIndex="-1" text="Export"/>
+        <Spacer gridWidth="1" name="spacer5" posX="49" posY="0"/>
+      </HRec>
+      <Phantom colName="brnd_creationdate" fieldId="15" fieldType="TABLE_COLUMN" name="brands.brnd_creationdate" sqlTabName="brands" widget="Phantom"/>
+      <Phantom colName="brnd_deletiondate" fieldId="17" fieldType="TABLE_COLUMN" name="brands.brnd_deletiondate" sqlTabName="brands" widget="Phantom"/>
+      <Phantom colName="brnd_validationdate" fieldId="18" fieldType="TABLE_COLUMN" name="brands.brnd_validationdate" sqlTabName="brands" widget="Phantom"/>
+      <Phantom colName="brnd_canceldate" fieldId="19" fieldType="TABLE_COLUMN" name="brands.brnd_canceldate" sqlTabName="brands" widget="Phantom"/>
+      <Phantom colName="brnd_suspendeddate" fieldId="20" fieldType="TABLE_COLUMN" name="brands.brnd_suspendeddate" sqlTabName="brands" widget="Phantom"/>
+      <Phantom colName="brnd_lastupdatedate" fieldId="22" fieldType="TABLE_COLUMN" name="brands.brnd_lastupdatedate" sqlTabName="brands" widget="Phantom"/>
+      <Phantom colName="brnd_lastlogindate" fieldId="23" fieldType="TABLE_COLUMN" name="brands.brnd_lastlogindate" sqlTabName="brands" widget="Phantom"/>
+      <Phantom colName="brnd_pic_id" fieldId="25" fieldType="TABLE_COLUMN" name="brands.brnd_pic_id" sqlTabName="brands" widget="Phantom"/>
+      <Phantom colName="brnd_createdby_id" fieldId="27" fieldType="TABLE_COLUMN" name="brands.brnd_createdby_id" sqlTabName="brands" widget="Phantom"/>
+      <Phantom colName="brnd_stopdate" fieldId="31" fieldType="TABLE_COLUMN" name="brands.brnd_stopdate" sqlTabName="brands" widget="Phantom"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAzADUANwA5ADUAZABlADYALQA5ADEAMwBkAC0ANAA1AGIAMQAtADgAOQA1AGEALQBiAGUAYgBmAGQAYwA4ADcAMAA5ADYANQB9wGqzM1pcKPVAIzMzT1wo9T98rAgxJul5AQAAAEwAewA0ADkAMABlAGEAYQBkAGIALQA3ADcAMQBkAC0ANABmADkAZAAtAGEANwA3AGEALQA1ADQAOAA1ADAANQAwADAANQBjADQAZgB9QCzMzPcKPW9AYgAAGmZmZj94k3S8an76AQAAAEwAewAyADEAZQBkAGMAYQA1ADQALQA0ADUAMwBmAC0ANAA0ADMAMwAtADgAMgA5ADcALQA1ADUANABmADEANAAwAGUANAAxADQAOAB9QCQAABVVVUhAJAAAFVVVSAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

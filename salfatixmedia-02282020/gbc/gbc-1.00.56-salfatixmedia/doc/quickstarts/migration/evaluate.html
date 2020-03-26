@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Evaluate</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="quickstarts/index.html">Getting Started</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="quickstarts/prep_gbc.html">Getting started with GBC</a>
+          
+          <a class="btn btn-sidebar " href="quickstarts/prep_new_cust_proj.html">Create a new customization project</a>
+          
+          <a class="btn btn-sidebar " href="quickstarts/migration/index.html">Migrate GDC to GBC</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar active" href="quickstarts/migration/evaluate.html">Evaluate</a>
+            
+            <a class="btn btn-sidebar " href="quickstarts/migration/features_limitations.html">Limitations</a>
+            
+            <a class="btn btn-sidebar " href="quickstarts/migration/migration_tips.html">Migration tips</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="quickstarts/from_GWC_HTML5_to_GBC.html">Migrate GWC-HTML5 to GBC</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="quickstarts">
+<header class="page-title">
+  <em>Evaluate</em>
+</header>
+<article class="md-content">
+<p>While most Genero Desktop Client (GDC) features are supported by the Genero Browser Client (GBC), there are features that are not supported. The goal of this topic is to show you how to evaluate your application, how to examine the limitations and authentication specifics, with the GBC in mind.</p>
+<p>Before reading more of this topic, you may wish to peruse the list of unsupported and partially supported features. See <a href="quickstarts/migration/features_limitations.html">Limitations</a>.</p>
+<p>One method of evaluating is to run the application and see what happens! If you encounter an issue, you need to determine if this is a limitation, a customization, or a bug. See <a href="quickstarts/migration/migration_tips.html">Migration tips</a> for hints aimed at helping you solve your issues during migration.</p>
+<h1 id="Evaluate_limitations">Evaluate limitations <a class="header-anchor" href="quickstarts/migration/evaluate.html#Evaluate_limitations" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>These limitations are grouped under the headings <strong>Rendering</strong> and <strong>Behaviors</strong>:</p>
+<h1 id="Rendering">Rendering <a class="header-anchor" href="quickstarts/migration/evaluate.html#Rendering" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>You application is likely capable of displaying on a number of different display sizes and devices, but an exact pixel-by-pixel match with GDC can not be expected.</p>
+<p>If in the GDC you have sized everything to fit in a certain sized area in a monitor, there is no guarantee that it will render inside a browser tab to the exact same size. It will be close, but you may find scroll bars appearing. To ensure that your application works well on your target devices, it is recommended that you review your application's screens.</p>
+<h2 id="Pop_up_windows">Pop-up windows <a class="header-anchor" href="quickstarts/migration/evaluate.html#Pop_up_windows" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>The GBC is a Web client, and as such it is not a fully-implemented windows manager. It displays at most two windows at once. It always displays the top most normal (non-modal) window, and then if there is a modal window opened, it is displayed over it. This is the equivalent of running the GDC with every non-modal window maximized.</p>
+<blockquote>
+<p><em>NOTE</em> You do have access to stacked windows in the GBC through the sidebar, but only non-modal windows are accessible.</p>
+</blockquote>
+<p>If you have a situation where window B is opened over the top of window A, and there is useful information that needs to be seen in window A, you should consider opening window B as modal. This can be accomplished by referencing the <code>default.4st</code> window style and setting the attribute <code>STYLE=&quot;dialog&quot;</code> in the Genero BDL code:</p>
+<pre><code>OPEN window msg WITH FORM &quot;MyWindowB&quot; ATTRIBUTES (STYLE=&quot;dialog&quot;)
+</code></pre>
+<p>Window B then displays as a pop-up window.</p>
+<p>An alternative is to consolidate window A and window B together as one window.</p>
+<p>If you already have some pop-up windows in your GDC application, and you want to have consistency between windows in GDC and GBC, set the windowType style attribute to <code>modal</code> in the Genero style for <code>Window.dialog</code> (in the <code>default.4st</code>) to achieve a similar display with the GBC.</p>
+<blockquote>
+<p><em>NOTE</em>: Any presentation style (4st) element bound to a window may contain the <code>windowType</code> attribute.</p>
+</blockquote>
+<p>Excerpt from <code>$FGLDIR/lib/default.4st</code></p>
+<pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">Style</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Window.dialog"</span>&gt;</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-name">StyleAttribute</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"windowType"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"modal"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">StyleAttribute</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sizable"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"no"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">StyleAttribute</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"position"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"center"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">StyleAttribute</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"actionPanelPosition"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"bottom"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">StyleAttribute</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ringMenuPosition"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"bottom"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">StyleAttribute</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"toolBarPosition"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"none"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">StyleAttribute</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"statusBarType"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"none"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">StyleAttribute</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"errorMessagePosition"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"popup"</span> /&gt;</span>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">Style</span>&gt;</span>
+</code></pre>
+<h2 id="Multiple_Document_Interface">Multiple Document Interface <a class="header-anchor" href="quickstarts/migration/evaluate.html#Multiple_Document_Interface" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>Multiple Document Interface (MDI) is not applicable for Web applications.</p>
+<h2 id="Customization">Customization <a class="header-anchor" href="quickstarts/migration/evaluate.html#Customization" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>It is likely you will want to apply some corporate styling to your user interface. For example, you may want to use your corporate colors, add your company logo, and so on.</p>
+<p>Try out some customization exercises. Change the default blue color of the user interface to a color of your choosing. Modify the header to display a logo. Change the favicon.</p>
+<p>And try these customization exercises <em>before</em> you migrate your application.</p>
+<h1 id="Behaviors">Behaviors <a class="header-anchor" href="quickstarts/migration/evaluate.html#Behaviors" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>With the GDC, your application is an executable running on a front-end PC, and is therefore bound by the rules of what an executable can do within the operating system.</p>
+<p>With the GBC, your application is running inside a browser, and is therefore bound by the rules of what Web pages are allowed to do inside a browser. As the Web browser is more vulnerable to intrusive attacks, you need to take into consideration what control you, as the developer, have over how accessible and secure this environment is, and how safe data is. If you find the browser too restrictive, consider what a malicious Web site would do if it could:</p>
+<ul>
+<li>Complete a file transfer without user permission.</li>
+<li>Perform front-end calls to your disk.</li>
+<li>Access APIs on your system.</li>
+<li>Print immediately to the local printer</li>
+</ul>
+<p>This section recommends ways to perform these tasks with security in mind, and suggests alternatives to performing them safely from the GBC.</p>
+<h2 id="File_transfer">File transfer <a class="header-anchor" href="quickstarts/migration/evaluate.html#File_transfer" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>File transfer in GBC is not transparent. The browser requests user permission before downloading anything on the client side.</p>
+<h2 id="GDC_front_end_calls">GDC front-end calls <a class="header-anchor" href="quickstarts/migration/evaluate.html#GDC_front_end_calls" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>Calls by the front-end that access the desktop file systems (disk) are not supported. Check the available front-end function calls for GBC in the <em>Built-in front calls</em> section of the <em>Genero Business Development Language User Guide</em>.</p>
+<p>The alternative is to write your own front-end call in JavaScript. For more information see the <em>Implement front call modules for GBC</em> topic in the <em>Genero Business Development Language User Guide</em>.</p>
+<h2 id="GDC_embedded_APIs">GDC embedded APIs <a class="header-anchor" href="quickstarts/migration/evaluate.html#GDC_embedded_APIs" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>APIs such as <code>WinDDE</code>, <code>WinMail</code>, and <code>WinCOM</code> - used for data exchange and communication with, for example, Microsoft Excel, Word, and Outlook - are not supported by GBC.</p>
+<p>The alternative is to use the server-side Java API solutions for Microsoft documents, such as those provided by Apache. For more information, see the topics about the Apache POI framework in the The <em>Java interface</em> section of the <em>Genero Business Development Language User Guide</em>.</p>
+<h2 id="Printing_to_local_printer">Printing to local printer <a class="header-anchor" href="quickstarts/migration/evaluate.html#Printing_to_local_printer" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>Printing immediately to a local printer is not supported. The local printer has to be registered on the server first and print commands must originate from the back-end server.</p>
+<p>As an alternative, you can display a file that the user can print by selecting <strong>File</strong> <strong>&gt;&gt;</strong> <strong>Print</strong> from the browser.</p>
+<h2 id="Keystrokes">Keystrokes <a class="header-anchor" href="quickstarts/migration/evaluate.html#Keystrokes" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>Some browsers may not allow some or all keystrokes to pass through to the application. It is possible (as in the case of tablets and smartphones) that the device does not perform keystrokes. You should review your sources and review your dependencies on keystrokes. For example, use <code>ON ACTION</code> instead of <code>ON KEY</code>.</p>
+<p>It is also recommended to review the text messages displayed on the screen. Consider the following message:</p>
+<pre><code>Press &lt;ENTER&gt; to continue
+</code></pre>
+<p>If you have messages like this displayed on your screens, you may need to rewrite the message.</p>
+<h2 id="License_count">License count <a class="header-anchor" href="quickstarts/migration/evaluate.html#License_count" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>Our intent is for your GBC to use the same number of licenses as a desktop application. However, there are two cases where you may observe a difference.</p>
+<ol>
+<li>
+<p>If you close a browser tab or a browser window, it does not send a signal to the <code>fglrun</code> process to stop. It will continue to consume a license until a timeout period (default 5 minutes) is reached.</p>
+<blockquote>
+<p><em>NOTE</em>: Even though the same occurs if you close the GDC by killing its process, it is more probable that a user will close their browser tab than kill a GDC process!</p>
+</blockquote>
+<p>If you have a low number of licenses or run close to your limit of user licenses, you may need to add extra licenses to lessen the chance of running out of licenses when this happens. With a CPU license this is not an issue. For more information see <em>Multi-user Licensing</em> topics in the <em>Genero Licensing manual</em>.</p>
+</li>
+<li>
+<p>We can identify that a program has launched another program via <code>RUN</code> (or StartMenu) commands. This results in the same license being used with no extra consumption of licenses. However, if you type an application URL into a browser or click on a link, there is no way of matching that up to an existing Genero program running in a browser and/or on the same PC. If you use a third party menu system, you may find that your license consumption increases if users run multiple programs. If you use a third party menu system, use a CPU-based license.</p>
+</li>
+</ol>
+<p>For more information contact your local sales office.</p>
+<h2 id="Evaluate_authentication">Evaluate authentication <a class="header-anchor" href="quickstarts/migration/evaluate.html#Evaluate_authentication" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>Most GDC applications connect to the server with its user permissions and profile. As a result, the applications are run under this user identity.</p>
+<p>When applications are deployed through GAS, they are launched as the user that started the GAS, unless the GAS is set to impersonate.</p>
+<p>As the application user is different, this can have an impact on use of environment variables and permissions. The setting for the HOME environment variable, for example, may not be for the user you intended, and the ability to read/write files and execute sub-shells may also be affected by different user permissions.</p>
+<p>You need to review your sources to determine how dependent you are on environment variables. If you do not already have one, it is probable that you will need to add the concept of an application user to your application. You will also need to consider how this user is authenticated. This may mean adding your own login/password dialog, or using SSO or Web server authentication.</p>
+<p>In any case, it is recommended to migrate the application first on GDC over HTTP. If the application runs on the browser, no further action is required. Otherwise, depending on authentication needs, adaptations to your application may be needed.</p>
+<ul>
+<li>
+<p>Single sign-on (SSO) authentication</p>
+<p>The Single sign-on (SSO) authentication mechanism now works for both GDC and GBC. If you were using SSO with GDC, you can continue to use it with the GAS. See <em>How to implement Single sign-on (SSO)</em> in the <em>Genero Application Server User Guide</em> for more details.</p>
+</li>
+<li>
+<p>Web Server authentication</p>
+<p>Web servers such as Apache or Microsoft IIS provide simple authentication mechanisms that can be used for authentication. If you use the Web server's authentication mechanism, the login details are transmitted to Genero applications by the dispatcher in an environment variable. The user login can be retrieved from the runtime environment with the FGL instruction:</p>
+<pre><code>fgl_getenv(&quot;FGL_WEBSERVER_REMOTE_USER&quot;)
+</code></pre>
+<p>For more details, see the <em>fgl_getenv</em> topic in the <em>Built-in functions</em> chapter of <em>Genero Business Development Language User Guide</em>.</p>
+</li>
+<li>
+<p>Application login</p>
+<p>With an application login, there is nothing additional to do as the application handles the login.</p>
+</li>
+</ul>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

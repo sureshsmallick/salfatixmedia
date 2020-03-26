@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Form name="imagecolumn" build="3.20.08" text="Table" width="20" height="6">
+  <Grid width="20" height="6">
+    <Table pageSize="3" doubleClick="selectrow" width="19" posY="0" posX="1" gridWidth="19" gridHeight="5" tabName="s">
+      <TableColumn text="Names" name="formonly.a" colName="a" fieldId="1" sqlTabName="formonly" imageColumn="b" tabIndex="1">
+        <Edit width="15"/>
+      </TableColumn>
+      <PhantomColumn name="formonly.b" colName="b" fieldId="0" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+    </Table>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="b" fieldIdRef="0"/>
+    <Link colName="a" fieldIdRef="1"/>
+  </RecordView>
+</Form>

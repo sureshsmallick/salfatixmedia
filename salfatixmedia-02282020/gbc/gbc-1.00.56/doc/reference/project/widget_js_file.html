@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Widget JavaScript file</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="reference/index.html">Reference</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="reference/url.html">URL reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/api.html">API reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/grunt/index.html">Grunt reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/grunt/configure_compilation.html">Configure your compilation</a>
+            
+            <a class="btn btn-sidebar " href="reference/grunt/fix_configuration_issues.html">Fix configuration issues</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/theme/index.html">Theme reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_conditions.html">Theme conditions</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_config_json.html">theme.config.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_scss_json_file.html">theme.scss.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_variables.html">Theme variables reference</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/project/index.html">Project reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/project/project_directory.html">Project directory</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/customization_project.html">Customization project</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets.html">Widgets</a>
+            
+            <a class="btn btn-sidebar active" href="reference/project/widget_js_file.html">Widget JavaScript file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_template_file.html">Widget template file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_scss_file.html">Widget scss file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets_with_modelhelper.html">Widgets with Modelhelper</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/deliverables.html">Deliverables</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/upgrading/index.html">Upgrading</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/compatibility.html">Compatibility</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/customization_migration.html">Customization migration</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deploy-runtime-on-gas.html">Deploy runtime on GAS</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.20.html">Upgrade to 3.20</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.10.html">Upgrade to 3.10</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="reference">
+<header class="page-title">
+  <em>Widget JavaScript file</em>
+</header>
+<article class="md-content">
+<p>The js file contains specific JavaScript code that implements a widget as an element of the user interface. This page shows examples of how to extend existing widgets and implement changes by registering them as new widget classes.</p>
+<h2 id="Overview">Overview <a class="header-anchor" href="reference/project/widget_js_file.html#Overview" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>The js files contain functions for rendering the widget template file (<code>.tpl.html</code>) and dynamically building the DOM element. To customize a widget, you need to extend the standard widget class in a new widget js file contained in your customization project directory.</p>
+<p>The js is associated with a template file, which must use the same name.</p>
+<blockquote>
+<p><em>NOTE</em>: If the template file does not have the same name as the js, it can be referenced explicitly in the code using the <code>__templateName</code> value.</p>
+</blockquote>
+<h2 id="Extending_a_basic_widget">Extending a basic widget <a class="header-anchor" href="reference/project/widget_js_file.html#Extending_a_basic_widget" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>This sample code shows the minimal code you need to extend a basic widget in <code>js</code>.</p>
+<pre class="hljs"><code><span class="hljs-meta">"use strict"</span>;
+
+modulum(<span class="hljs-string">'newWidget'</span>, [<span class="hljs-string">'baseWidget'</span>, <span class="hljs-string">'WidgetFactory'</span>],
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context, cls</span>) </span>{
+
+    cls.newWidget = context.oo.Class(cls.baseWidget, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$super</span>) </span>{
+      <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">__name</span>: <span class="hljs-string">"newWidget"</span>,
+
+        <span class="hljs-comment">/* your custom code */</span>
+      };
+    });
+    cls.WidgetFactory.register(<span class="hljs-string">'widgetType'</span>, cls.newWidget);
+  });
+
+</code></pre>
+<p>where:</p>
+<ul>
+<li><code>newWidget</code> is your custom widget</li>
+<li><code>baseWidget</code> is the built-in widget that it extends</li>
+<li><code>widgetType</code> is the widget representation (node name) in the AUI tree.</li>
+</ul>
+<h2 id="Extending_a_basic_widget_and_registering_a_new_widget_style">Extending a basic widget and registering a new widget style <a class="header-anchor" href="reference/project/widget_js_file.html#Extending_a_basic_widget_and_registering_a_new_widget_style" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>Register a new widget style to allow for selective application of your customization as specified by the style settings in your form source.</p>
+<pre class="hljs"><code><span class="hljs-meta">"use strict"</span>;
+
+modulum(<span class="hljs-string">'newWidget'</span>, [<span class="hljs-string">'baseWidget'</span>, <span class="hljs-string">'WidgetFactory'</span>],
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context, cls</span>) </span>{
+
+    cls.newWidget = context.oo.Class(cls.baseWidget, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$super</span>) </span>{
+      <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">__name</span>: <span class="hljs-string">"newWidget"</span>,
+
+        <span class="hljs-comment">/* your custom code */</span>
+      };
+    });
+    cls.WidgetFactory.register(<span class="hljs-string">'widgetType'</span>, ‘widgetStyle’, cls.newWidget);
+  });
+
+</code></pre>
+<p>where:</p>
+<ul>
+<li><code>newWidget</code> is your custom widget</li>
+<li><code>baseWidget</code> is the built-in widget that it extends</li>
+<li><code>widgetType</code> is the widget representation (node name) in the AUI tree.</li>
+<li><code>widgetStyle</code> is the style name.</li>
+</ul>
+<p>The <code>widgetStyle</code> argument (optional) allows you to reference your widget in your Genero form source. For example, in this form (<code>.per</code>) file snippet, the style &quot;widgetStyle&quot; is applied to the defined Edit form field:</p>
+<pre><code>EDIT f01 = formonly.edit, STYLE=”widgetStyle”;
+
+</code></pre>
+<p>Only fields with the style applied will be customized.</p>
+<h2 id="Example__Extending_a_simple_widget">Example: Extending a simple widget <a class="header-anchor" href="reference/project/widget_js_file.html#Example__Extending_a_simple_widget" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>For simple widget customization, you can extend the Edit widget as an example, in a file <em><code>gbc-project-dir</code></em><code>/customization/</code><em><code>customization-project-dir</code></em><code>/js/MyEditWidget.js</code>, like:</p>
+<pre class="hljs"><code><span class="hljs-meta">
+"use strict"</span>;
+
+modulum(<span class="hljs-string">'MyEditWidget'</span>, [<span class="hljs-string">'EditWidget'</span>, <span class="hljs-string">'WidgetFactory'</span>],
+ 
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context, cls</span>) </span>{
+
+    <span class="hljs-comment">/**
+     * Edit widget.
+     * @class classes.MyEditWidget
+     * @extends classes.EditWidget
+     */</span>
+    cls.MyEditWidget = context.oo.Class(cls.EditWidget, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$super</span>) </span>{
+      <span class="hljs-comment">/** @lends classes.MyEditWidget.prototype */</span>
+      <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">__name</span>: <span class="hljs-string">"MyEditWidget"</span>.
+        
+        setTitle: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">title</span>) </span>{
+          $(<span class="hljs-keyword">this</span>.getElement()).find(<span class="hljs-string">".title"</span>).text(title);
+        },
+
+        <span class="hljs-attr">getTitle</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> $(<span class="hljs-keyword">this</span>.getElement()).find(<span class="hljs-string">".title"</span>).text();
+        }
+      };
+    });
+    cls.WidgetFactory.registerBuilder(<span class="hljs-string">'Edit'</span>, cls.MyEditWidget);
+  });
+</code></pre>
+<p>And a template file <em><code>gbc-project-dir</code></em><code>/customization/</code><em><code>customization-project-dir</code></em><code>/js/MyEditWidget.tpl.html</code>, like:</p>
+<pre class="hljs"><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"gbc_dataContentPlaceholder"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> /&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>This customization extends the built-in EditWidget. You can reference an element in the HTML template for the widget by using the <code>this.getElement()</code> function.</p>
+<h2 id="Example__Extending_a_container_widget">Example: Extending a container widget <a class="header-anchor" href="reference/project/widget_js_file.html#Example__Extending_a_container_widget" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>For container widget customization, you can set for example a file <em><code>gbc-project-dir</code></em><code>/customization/</code><em><code>customization-project-dir</code></em><code>/js/MyComposedWidget.js</code>.</p>
+<pre class="hljs"><code><span class="hljs-meta">"use strict"</span>;
+
+modulum(<span class="hljs-string">'MyComposedWidget'</span>, [<span class="hljs-string">'WidgetGroupBase'</span>, <span class="hljs-string">'WidgetFactory'</span>],
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context, cls</span>) </span>{
+    cls.MyComposedWidget = context.oo.Class(cls.WidgetGroupBase, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$super</span>) </span>{
+      <span class="hljs-comment">/** @lends classes.MyComposedWidget.prototype */</span>
+      <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">__name</span>: <span class="hljs-string">"MyComposedWidget"</span>,
+
+        <span class="hljs-attr">_label</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">_edit</span>: <span class="hljs-literal">null</span>,
+
+        <span class="hljs-attr">constructor</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $<span class="hljs-keyword">super</span>.constructor.call(<span class="hljs-keyword">this</span>);
+          <span class="hljs-keyword">this</span>._label = cls.WidgetFactory.createWidget(<span class="hljs-string">'Label'</span>);
+          <span class="hljs-keyword">this</span>._edit = cls.WidgetFactory.createWidget(<span class="hljs-string">'Edit'</span>);
+          <span class="hljs-keyword">this</span>.addChildWidget(<span class="hljs-keyword">this</span>._label);
+          <span class="hljs-keyword">this</span>.addChildWidget(<span class="hljs-keyword">this</span>._edit);
+        },
+
+        [...]
+        destroy: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">this</span>.removeChildWidget(<span class="hljs-keyword">this</span>._label);
+          <span class="hljs-keyword">this</span>.removeChildWidget(<span class="hljs-keyword">this</span>._edit);
+          <span class="hljs-keyword">this</span>._label.destroy();
+          <span class="hljs-keyword">this</span>._label = <span class="hljs-literal">null</span>;
+          <span class="hljs-keyword">this</span>._edit.destroy();
+          <span class="hljs-keyword">this</span>._edit = <span class="hljs-literal">null</span>;
+          $<span class="hljs-keyword">super</span>.destroy();
+        },
+        [...]
+      };
+    });
+    cls.WidgetFactory.registerBuilder(<span class="hljs-string">'MyComposed'</span>, cls.MyComposedWidget);
+  });
+
+</code></pre>
+<p>For a Container widget, the root base widget is always <code>WidgetGroupBase</code>. You add the child elements with <code>this.addChildWidget</code> and remove child elements with <code>this.removeChildWidget</code>.</p>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

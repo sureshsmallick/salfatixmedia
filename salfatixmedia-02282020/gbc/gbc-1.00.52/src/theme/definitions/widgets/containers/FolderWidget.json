@@ -1,0 +1,35 @@
+{
+  "name": "FolderWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-FolderWidget-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "gbc-FolderWidget-font-size-ratio",
+      "type": "number",
+      "defaultValue": "$theme-font-size-ratio"
+    },
+    {
+      "name": "gbc-FolderWidget-separator-color",
+      "type": "color",
+      "defaultValue": "$theme-separator-color"
+    },
+    {
+      "name": "gbc-FolderWidget-tab-current-border-color",
+      "type": "color",
+      "defaultValue": "$theme-primary-background-color"
+    },
+    {
+      "name": "gbc-FolderWidget-trigger-color",
+      "type": "color",
+      "defaultValue": "$theme-primary-background-color"
+    },
+    {
+      "name": "gbc-FolderWidget-background-color",
+      "type": "color",
+      "defaultValue": "$theme-secondary-alternative-background-color"
+    }
+  ]
+}

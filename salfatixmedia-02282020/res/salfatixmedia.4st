@@ -1,0 +1,192 @@
+<StyleList>
+  <Style name=".influencer_grid_no_border" >
+    <StyleAttribute name="border" value="none" />
+  </Style>
+
+  <Style name="TextEdit.htmlnobox" >
+    <StyleAttribute name="textFormat" value="html" />
+    <StyleAttribute name="showEditToolBox" value="no" />
+  </Style>
+
+  <!-- Style name="Group.no_border" >
+    <StyleAttribute name="border" value="none" />
+  </Style-->
+
+  <Style name="ToolBarSeparator.myiosseparator" >
+    <StyleAttribute name="iosSeparatorStretch" value="yes" />
+  </Style>
+
+  <Style name="Edit.influencer_brand_label_bold" >
+    <StyleAttribute name="fontSize" value="large" />
+    <StyleAttribute name="fontWeight" value="bold" />
+  </Style>
+
+  <Style name="Label.ff_formtitle" >
+    <StyleAttribute name="fontSize" value="large" />
+    <StyleAttribute name="fontWeight" value="bold" />
+  </Style>
+  <Style name="Label.brand_label_bold" >
+    <StyleAttribute name="fontWeight" value="bold" />
+  </Style>
+  <Style name="Label.influencer_brand_label_bold" >
+    <StyleAttribute name="fontWeight" value="bold" />
+  </Style>
+  <Style name="Label.bouser_label_bold" >
+    <StyleAttribute name="fontWeight" value="bold" />
+  </Style>
+  <Style name="Label.credential_header" >
+    <!--StyleAttribute name="fontSize" value="large" /-->
+    <!--StyleAttribute name="fontWeight" value="bold" /-->
+    <!-- set to 17 px like in the css -->
+    <StyleAttribute name="fontSize" value="17px" />
+  </Style>
+  <Style name="Label.credential_header_mobile" >
+    <StyleAttribute name="fontSize" value="large" />
+    <StyleAttribute name="fontWeight" value="bold" />
+  </Style>
+  <Style name="Label.influencer_label_bold" >
+    <StyleAttribute name="fontWeight" value="bold" />
+  </Style>
+  
+  <Style name="Button.brand_html" >
+    <StyleAttribute name="buttonType" value="link" />
+    <StyleAttribute name="border" value="none" />
+  </Style>
+  <Style name="Button.brand_html_center" >
+    <StyleAttribute name="buttonType" value="link" />
+    <StyleAttribute name="alignment" value="center" />
+    <StyleAttribute name="border" value="none" />
+  </Style>
+  <Style name="Button.credentials" >
+    <StyleAttribute name="border" value="none" />
+    <StyleAttribute name="textColor" value="#007AFF" />
+  </Style>
+  <Style name="Button.signin" >
+    <StyleAttribute name="textColor" value="#007AFF" />
+  </Style>
+  <Style name="Button.highvisible">
+     <StyleAttribute name="alignment" value="center" />
+     <StyleAttribute name="border" value="none" />
+  </Style>
+
+  <Style name="Image.no_border" >
+    <StyleAttribute name="border" value="none" />
+  </Style>
+  <Style name="Image.center">
+     <StyleAttribute name="alignment" value="horizontalCenter" />
+     <StyleAttribute name="border" value="none" />
+  </Style>
+
+  <Style name="Window.centerwindow" >
+    <StyleAttribute name="position" value="center" />
+    <StyleAttribute name='actionPanelPosition' value='none'/>
+    <StyleAttribute name='ringMenuPosition' value='none'/>
+    <StyleAttribute name='toolBarPosition' value='none'/>
+    <StyleAttribute name="iosToolBarTintColor" value="#FFFFFF" />
+  </Style>
+  <Style name="Window.centerwindowpopup" >
+    <StyleAttribute name='windowType' value='modal'/>
+    <StyleAttribute name='sizable' value='no'/>
+    <StyleAttribute name="position" value="center" />
+    <StyleAttribute name='actionPanelPosition' value='none'/>
+    <StyleAttribute name='ringMenuPosition' value='none'/>
+    <StyleAttribute name='toolBarPosition' value='none'/>
+  </Style>
+  <Style name='Window.popup'>
+    <StyleAttribute name='windowType' value='modal'/>
+    <StyleAttribute name='sizable' value='no'/>
+    <StyleAttribute name='position' value='center'/>
+    <StyleAttribute name='actionPanelPosition' value='none'/>
+    <StyleAttribute name='ringMenuPosition' value='none'/>
+    <StyleAttribute name='toolBarPosition' value='top'/>
+    <StyleAttribute name="statusBarType" value="none" />
+  </Style>
+  <Style name="Window.salfatixmenu" >
+    <StyleAttribute name="position" value="center" />
+    <StyleAttribute name='actionPanelPosition' value='none'/>
+    <StyleAttribute name='ringMenuPosition' value='none'/>
+    <StyleAttribute name='toolBarPosition' value='none'/>
+  </Style>
+
+  <Style name="Table.singleclick">
+     <StyleAttribute name="rowActionTrigger" value="singleClick" />
+  </Style>
+  <Style name="Table.campaignselectedlist" >
+    <StyleAttribute name="allowWebSelection" value="yes" />
+    <StyleAttribute name="highlightCurrentCell" value="no" />
+    <StyleAttribute name="resizeFillsEmptySpace" value="yes" />
+  </Style>
+  <Style name="Table.campaignproposallist" >
+    <StyleAttribute name="highlightCurrentRow" value="no" />
+    <StyleAttribute name="highlightCurrentCell" value="no" />
+    <StyleAttribute name="resizeFillsEmptySpace" value="yes" />
+  </Style>
+  <Style name="Table.zoomtable" >
+    <StyleAttribute name="rowActionTrigger" value="singleClick" />
+    <StyleAttribute name="resizeFillsEmptySpace" value="yes" />
+  </Style>
+  <Style name="Table.campaignmenutable" >
+    <StyleAttribute name="rowActionTrigger" value="singleClick" />
+    <StyleAttribute name="highlightCurrentRow" value="no" />
+    <StyleAttribute name="headerHidden" value="yes" />
+  </Style>
+  <Style name="Table.socialnetworksmobile" >
+    <StyleAttribute name="rowActionTrigger" value="singleClick" />
+    <StyleAttribute name="highlightCurrentRow" value="no" />
+    <StyleAttribute name="reduceFilter" value="no" />
+  </Style>
+  <Style name="Table.campaignpostlist" >
+    <StyleAttribute name="resizeFillsEmptySpace" value="yes" />
+  </Style>
+  <Style name="Table.noheader" >
+    <StyleAttribute name="headerHidden" value="yes" />
+    <StyleAttribute name="highlightCurrentCell" value="no" />
+    <StyleAttribute name="highlightCurrentRow" value="no" />
+    <StyleAttribute name="resizeFillsEmptySpace" value="yes" />
+    <StyleAttribute name="reduceFilter" value="no" />
+  </Style>
+
+  <Style name="ScrollGrid.campaignlisttable" >
+    <StyleAttribute name="rowActionTrigger" value="singleClick" />
+    <StyleAttribute name="highlightCurrentRow" value="no" />
+    <StyleAttribute name="customWidget" value="pagedScrollGrid" />
+  </Style>
+  <Style name="ScrollGrid.campaignmenutable" >
+    <StyleAttribute name="rowActionTrigger" value="singleClick" />
+    <StyleAttribute name="highlightCurrentRow" value="no" />
+  </Style>
+  <Style name="ScrollGrid.mainpanellist" >
+    <StyleAttribute name="rowActionTrigger" value="singleClick" />
+    <StyleAttribute name="highlightCurrentRow" value="no" />
+    <StyleAttribute name="customWidget" value="pagedScrollGrid" />
+  </Style>
+  <Style name="ScrollGrid.brandlisttable" >
+    <StyleAttribute name="rowActionTrigger" value="singleClick" />
+    <StyleAttribute name="highlightCurrentRow" value="no" />
+    <StyleAttribute name="customWidget" value="pagedScrollGrid" />
+  </Style>
+  <Style name="ScrollGrid.influencerlisttable" >
+    <StyleAttribute name="rowActionTrigger" value="singleClick" />
+    <StyleAttribute name="highlightCurrentRow" value="no" />
+    <StyleAttribute name="customWidget" value="pagedScrollGrid" />
+  </Style>
+  <Style name="ScrollGrid.priceperpostmobile" >
+    <StyleAttribute name="rowActionTrigger" value="singleClick" />
+    <StyleAttribute name="highlightCurrentRow" value="no" />
+    <StyleAttribute name="customWidget" value="pagedScrollGrid" />
+  </Style>
+  <Style name="ScrollGrid.priceperpost" >
+    <StyleAttribute name="highlightCurrentRow" value="no" />
+    <StyleAttribute name="customWidget" value="pagedScrollGrid" />
+  </Style>
+  <Style name="ScrollGrid.socialnetworks" >
+    <StyleAttribute name="highlightCurrentRow" value="no" />
+    <StyleAttribute name="customWidget" value="pagedScrollGrid" />
+  </Style>
+  <Style name="ScrollGrid.bouserlisttable" >
+    <StyleAttribute name="rowActionTrigger" value="singleClick" />
+    <StyleAttribute name="highlightCurrentRow" value="no" />
+    <StyleAttribute name="customWidget" value="pagedScrollGrid" />
+  </Style>
+
+</StyleList>

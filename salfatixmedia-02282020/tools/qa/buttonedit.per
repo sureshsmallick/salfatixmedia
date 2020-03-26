@@ -1,0 +1,16 @@
+LAYOUT
+GRID
+{
+ Edit                      [a                    ]
+ ButtonEdit Editable :     [b                    ]
+ ButtonEdit Not Editable : [c                    ]
+}
+END
+END
+ATTRIBUTES
+EDIT a=FORMONLY.a;
+BUTTONEDIT b=FORMONLY.b,SCROLL,ACTION=zoom,IMAGE="fa-check";
+BUTTONEDIT c=FORMONLY.c,NOTEDITABLE,SCROLL,ACTION=zoom,IMAGE="fa-check";
+
+INSTRUCTIONS
+SCREEN RECORD s(a,b,c);

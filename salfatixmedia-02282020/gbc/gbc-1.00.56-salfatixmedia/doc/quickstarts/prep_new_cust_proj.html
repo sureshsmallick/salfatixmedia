@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Create a new customization project</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="quickstarts/index.html">Getting Started</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="quickstarts/prep_gbc.html">Getting started with GBC</a>
+          
+          <a class="btn btn-sidebar active" href="quickstarts/prep_new_cust_proj.html">Create a new customization project</a>
+          
+          <a class="btn btn-sidebar " href="quickstarts/migration/index.html">Migrate GDC to GBC</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="quickstarts/migration/evaluate.html">Evaluate</a>
+            
+            <a class="btn btn-sidebar " href="quickstarts/migration/features_limitations.html">Limitations</a>
+            
+            <a class="btn btn-sidebar " href="quickstarts/migration/migration_tips.html">Migration tips</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="quickstarts/from_GWC_HTML5_to_GBC.html">Migrate GWC-HTML5 to GBC</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="quickstarts">
+<header class="page-title">
+  <em>Create a new customization project</em>
+</header>
+<article class="md-content">
+<p>This quick starts sets up the structure for a new customization project.</p>
+<h1 id="Prerequisites">Prerequisites <a class="header-anchor" href="quickstarts/prep_new_cust_proj.html#Prerequisites" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>Before you begin, you should have gone through the steps that prepare your development environment for GBC customization. If you have not completed these steps, follow the instructions at <a href="quickstarts/prep_gbc.html">Getting started with GBC</a>.</p>
+<p>You need to know the location of <em><code>gbc-project-dir</code></em></p>
+<h1 id="Set_up_customization_directory">Set up customization directory <a class="header-anchor" href="quickstarts/prep_new_cust_proj.html#Set_up_customization_directory" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>Create a new directory in <em><code>gbc-project-dir</code></em><code>/customization</code>. The name you give this new directory becomes the name of your customization. For example, if you create <em><code>gbc-project-dir</code></em><code>/customization/companyA</code>, then the customization is named <code>companyA</code>.</p>
+<p>This directory will be referred to as the <em><code>customization-project-dir</code></em> throughout this documentation.</p>
+<p>Next, set up the customization directory structure. To understand the layout of a customization project, see <a href="reference/project/customization_project.html">Customization project</a>. You do not need to create every folder mentioned; you only need to create those folders that will be needed to complete your customization.</p>
+<blockquote>
+<p><em>NOTE</em>: You can copy the contents of the sample customization into your new customization folder; however you must then search and remove all  customization entries that you do not want included in your new customization.</p>
+</blockquote>
+<h1 id="Add_customizations">Add customizations <a class="header-anchor" href="quickstarts/prep_new_cust_proj.html#Add_customizations" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>With this structure set up, you can now add customizations where they need to be added.</p>
+<h1 id="Build_your_customization">Build your customization <a class="header-anchor" href="quickstarts/prep_new_cust_proj.html#Build_your_customization" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>When you are ready to build your customization, execute from a command prompt:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> grunt --customization=customization/&lt;customization_project_dir&gt;</span>
+</code></pre>
+<p>Alternatively, you can set your configuration files to compile your customization with a simple <code>grunt</code> command. See <a href="reference/grunt/configure_compilation.html">Configure your compilation</a>.</p>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

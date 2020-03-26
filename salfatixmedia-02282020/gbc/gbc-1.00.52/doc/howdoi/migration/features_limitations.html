@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation - Features and limitations</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="howdoi/index.html">How do I …</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="howdoi/compiledeploy/index.html">Compile &amp; Deploy</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/createruntimezip.html">Create a runtime zip</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/deployongas.html">Deploy on GAS</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/jgas.html">Deploy on JGAS</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/customization/index.html">Customize the UI</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_theme_part.html">Add a theme part</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_theme.html">Add a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/modify_theme.html">Modify a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/delete_theme.html">Delete a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_image_or_logo.html">Header image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_image_with_style_class.html">Header image (style class)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_custom_header_widget.html">Header widget</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_footer_text.html">Footer text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/display-sidebar.html">Sidebar (hide)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/display_icon_or_right_sidebar.html">Sidebar or Icon</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change_favicon.html">Favicon image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-file-load-icon.html">File loading icon (change)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/center-file-load-icon.html">File loading icon (center)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-mttab-bkgd-img.html">Tab background image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-checkbox.html">Checkbox icons</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-pop-up-animation.html">Pop-up animation</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/redirect_application_end.html">Redirect application end</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/customize_theme_settings.html">Customize theme settings</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/customize_user_interface.html">Customize User Interface</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/extend_main_container_widget.html">Extend the MainContainerWidget</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/view_aui_tree.html">View the AUI tree</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/internationalization/index.html">Internationalize my app</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/add_localized_text.html">Add localized text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/configure_right_to_left_languages.html">Right-to-left languages</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/customize_translation_text.html">Translation text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/default_encoding.html">Default encoding</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/migration/index.html">Migrate to GBC</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/evaluate.html">Evaluate your GBC app needs</a>
+            
+            <a class="btn btn-sidebar active" href="howdoi/migration/features_limitations.html">Features and limitations</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/from_GWC_HTML5_to_GBC.html">GWC-HTML5 to GBC</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/migration_tips.html">Migration tips</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="howdoi">
+<header class="page-title">
+  <em>Features and limitations</em>
+</header>
+<article class="md-content">
+<h1>Overview</h1>
+<p>While a Genero application largely reacts the same across the front-ends (the Genero Browser Client (GBC) and the Genero Desktop Client (GDC)), there are limitations for applications.</p>
+<p>In this page you will get to know the features and limitations of the different Genero front-ends, which can help you determine which front-end is the best suited for your applications.</p>
+<h2>Legend</h2>
+<p>Codes in the tables indicate the availability of the feature:</p>
+<ul>
+<li>X : available</li>
+<li>X* : available with limitations</li>
+<li>NA : not available</li>
+</ul>
+<h2>Rendering: Features and limitations for Genero front-ends</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>GDC</th>
+<th>GBC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Look</td>
+<td>X</td>
+<td>X*</td>
+</tr>
+<tr>
+<td>Layout</td>
+<td>X</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>MDI windows</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Stacked window</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Styles: <code>.4st</code> colors, fonts (common styles)</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Styles: <code>.4st</code> positioning</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Widgets Customization</td>
+<td>NA</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Web Components</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Traditional GUI Mode</td>
+<td>X</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<h2>Behavior: Features and limitations for Genero front-ends</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>GDC</th>
+<th>GBC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Synchronous triggers (predefined actions completed together)</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Drag and Drop</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Keying: dialogtouched</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Keying: Type ahead</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Keying: Accelerator keys</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Keying: Local actions</td>
+<td>X</td>
+<td>X*</td>
+</tr>
+<tr>
+<td>Natural accelerator</td>
+<td>X</td>
+<td>X*</td>
+</tr>
+<tr>
+<td>Cursor: <code>fgl_dialog_getselectionend</code></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Cursor: <code>fgl_dialog_setselection</code></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Cursor: <code>fgl_dialog_getcursor</code></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Cursor: <code>fgl_dialog_setcursor</code></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Cursor: <code>fgl_getcursor</code></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Widgets</td>
+<td>X</td>
+<td>X*</td>
+</tr>
+<tr>
+<td>RIP widgets</td>
+<td>X</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Table: Resizing columns</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Table: Display/Hide columns</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Table: Frozen columns</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Dockable toolbars/menus</td>
+<td>X</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Genero Report Viewer</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>CANVAS</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Richtext</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>PictureFlow</td>
+<td>X</td>
+<td>NA</td>
+</tr>
+</tbody>
+</table>
+<h2>Interaction (with third party): Features and limitations for Genero front-ends</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>GDC</th>
+<th>GBC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File transfer</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Session variables/Cookies</td>
+<td>NA</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Stored settings</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>front-end Call</td>
+<td>X</td>
+<td>X*</td>
+</tr>
+</tbody>
+</table>
+<h2>Deployment: Features and limitations for Genero front-ends</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>GDC</th>
+<th>GBC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>front-end System</td>
+<td>All / Internet Explorer</td>
+<td>HTML5 Browsers</td>
+</tr>
+<tr>
+<td>Connections: HTTP / HTTPS</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>Connections: rlogin / telnet / SSH / SSH2</td>
+<td>X*</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>Single Sign On</td>
+<td>X</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<h2>Widgets not changed dynamically</h2>
+<p>Some widget styles can not be changed once the widget has been created and displayed by GBC. This applies to the following widgets using these particular style attributes:</p>
+<ul>
+<li>Button with style attribute <code>buttonType</code></li>
+<li>CheckBox with style attribute <code>customWidget</code></li>
+<li>ScrollGrid with style attribute <code>customWidget</code></li>
+<li>Table with style attribute <code>tableType</code></li>
+</ul>
+<p>It also applies to these widgets defined in the GBC customization when you customize a widget and register it, for example:</p>
+<pre class="hljs"><code>cls.WidgetFactory.registerBuilder(<span class="hljs-string">'MyWidget[attributeName=attributeValue]'</span>, cls.MyWidget)
+</code></pre>
+<p>Once the widget has been displayed, you can not change these style attributes at runtime. For more information on widget attributes, see the <em>Style attributes reference</em> topics in the <em>Genero Business Development Language User Guide</em>.</p>
+<h2>Hot key support</h2>
+<p>When using the Genero Browser Client, some hot key combinations are not supported by specific browsers; they are trapped by the browser instead. The behavior is not consistent amongst the available browsers, and Four Js is unable to provide accurate and up-to-date information regarding hot key support for each supported browser.</p>
+<p>To make an action available for when a hot key combination is not supported, you must make the action visible. For example, you can add the action to the action panel. This allows the user to click on a button when the hot key combination is not working.</p>
+<h2>Mobile screen operations</h2>
+<p>When using a mobile device, the application reacts to finger interactions instead of mouse clicks.</p>
+<ul>
+<li>Access the context menu with a long tap, where a tap is a finger press. For example, to display a context menu for a table column header, press on the table column header for two seconds.</li>
+<li>To zoom into a page, use two fingers to pinch in on the screen. To zoom out of a page, use two fingers to pinch out on the screen.</li>
+<li>A double tap corresponds to a double click in terms of Genero logic. For example, if you double tap on a row, the row action will be executed. Double tap will not zoom a page.</li>
+</ul>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

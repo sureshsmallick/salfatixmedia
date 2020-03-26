@@ -1,0 +1,62 @@
+SCHEMA salfatixmedia
+
+LAYOUT (text=%"Form")
+Grid grid1
+{
+
+  [ff_formtitle                            ]
+  [img_back:                      :add     ]
+  <S salfatixmedia1                        >
+  [scl_img][accname                   ][upt]
+  [       ][usrscl_comment            ][vie]
+  [       ][                          ]
+  [       ][                          ][del]
+  <                                        >
+  [img1                                    ]
+  [                                        ]
+  [                                        ]
+  [                                        ]
+  [                                        ]
+  [                                        ]
+  [                                        ]
+}
+END -- grid1
+END -- form
+
+TABLES
+usersocialnetworks,
+socialnetworks
+ATTRIBUTES
+LABEL ff_formtitle=formonly.ff_formtitle, justify=center, style="ff_formtitle";
+IMAGE img_back:img_back, HEIGHT=3 CHARACTERS, action=cancel, image="fa-arrow-circle-left", autoScale, sizePolicy=fixed, style="no_border", comment=%"Back";
+IMAGE add:addsocialnetwork, HEIGHT=3 CHARACTERS, action=addsocialnetwork, image="fa-plus", autoScale, sizePolicy=fixed, style="no_border", comment=%"Add Social Network";
+ScrollGrid salfatixmedia1:salfatixmedia1, wantFixedPageSize=NO,DOUBLECLICK=editsocialnetwork,STYLE="socialnetworks";
+Phantom usersocialnetworks.usrscl_id;
+Phantom usersocialnetworks.usrscl_usr_id;
+Phantom usersocialnetworks.usrscl_socialnetwork_id;
+IMAGE scl_img=socialnetworks.scl_img, autoScale, sizePolicy=fixed, style="no_border";
+IMAGE upt=formonly.editimage, autoScale, sizePolicy=fixed, style="no_border",ACTION=editsocialnetwork;
+Edit accname=usersocialnetworks.usrscl_accountname, SCROLL;
+TEXTEDIT usrscl_comment=usersocialnetworks.usrscl_comment, scrollBars=none;
+
+IMAGE del=formonly.delimage, autoScale, sizePolicy=fixed, style="no_border",ACTION=delete;
+
+IMAGE vie=formonly.viewimage, autoScale, sizePolicy=fixed, style="no_border",ACTION=viewsocialnetwork;
+Image  img1 = formonly.foot, Autoscale, Stretch=Both, Style="center", sizePolicy=Fixed,Hidden;
+
+END -- ATTRIBUTES
+
+INSTRUCTIONS
+SCREEN RECORD scr_usersocialnetwork_list(
+usersocialnetworks.usrscl_id,
+usersocialnetworks.usrscl_usr_id,
+usersocialnetworks.usrscl_socialnetwork_id,
+usersocialnetworks.usrscl_accountname,
+usersocialnetworks.usrscl_comment,
+socialnetworks.scl_img,
+formonly.delimage,
+formonly.editimage,
+formonly.viewimage)
+SCREEN RECORD Undefined(formonly.ff_formtitle)
+END -- INSTRUCTIONS
+

@@ -1,0 +1,21 @@
+<StyleList>
+  <Style name="Window.centerwindow" >
+    <StyleAttribute name="position" value="center" />
+    <StyleAttribute name='actionPanelPosition' value='none'/>
+    <StyleAttribute name='ringMenuPosition' value='none'/>
+    <StyleAttribute name='toolBarPosition' value='none'/>
+    <StyleAttribute name="iosToolBarTintColor" value="#FFFFFF" />
+  </Style>
+  <Style name="Label.ff_formtitle" >
+    <StyleAttribute name="fontSize" value="large" />
+    <StyleAttribute name="fontWeight" value="bold" />
+  </Style>
+  <Style name="ScrollGrid.campaignlisttable" >
+    <StyleAttribute name="rowActionTrigger" value="singleClick" />
+    <StyleAttribute name="highlightCurrentRow" value="no" />
+    <StyleAttribute name="customWidget" value="pagedScrollGrid" />
+  </Style>
+  <Style name="Image.no_border" >
+    <StyleAttribute name="border" value="none" />
+  </Style>
+</StyleList>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a0a" name="managedform" uid="{7a90ebe7-6ed8-409f-a939-6454ffc48b1f}">
+  <AGSettings/>
+  <Record masterTable="campaignposts" name="scr_campaignpost_grid" uid="{c5fa8141-ba4f-426d-9544-5e9f9c19886f}">
+    <RecordField colName="cmppost_id" fieldIdRef="31" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_id" sqlTabName="campaignposts" uid="{58d5189a-4c35-4479-b9e6-19c4baac5708}"/>
+    <RecordField colName="cmppost_campaign_id" fieldIdRef="32" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_campaign_id" sqlTabName="campaignposts" uid="{963c8354-51dd-4d2c-a194-5e7f1cffa882}"/>
+    <RecordField colName="cmppost_usr_id" fieldIdRef="33" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_usr_id" sqlTabName="campaignposts" uid="{6ed1577b-1f51-473f-a019-438cf7a4e1dc}"/>
+    <RecordField colName="cmppost_posttype_id" fieldIdRef="34" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_posttype_id" sqlTabName="campaignposts" uid="{0147e4c6-ed44-46ef-bc4c-d1261e5db9f7}"/>
+    <RecordField colName="cmppost_url" fieldIdRef="35" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_url" sqlTabName="campaignposts" uid="{94589e17-5fc2-4ab9-9a70-e06a3e43d977}"/>
+    <RecordField colName="cmppost_ispublic" fieldIdRef="45" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ispublic" sqlTabName="campaignposts" uid="{b4e8f2e8-ad95-4a2d-8ca0-54a9866398f0}"/>
+    <RecordField colName="cmppost_status_id" fieldIdRef="46" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_status_id" sqlTabName="campaignposts" uid="{515e2e86-6572-42b8-9c3c-60bf054ca2f0}"/>
+    <RecordField colName="cmppost_screenshot_post" fieldIdRef="47" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_screenshot_post" sqlTabName="campaignposts" uid="{c08cfee0-8cef-4975-b3f6-a9a88345b962}"/>
+    <RecordField colName="cmppost_screenshot_stat" fieldIdRef="48" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_screenshot_stat" sqlTabName="campaignposts" uid="{d21b615e-e9b1-4392-8dae-a8f4ae2b99ec}"/>
+    <RecordField colName="cmppost_creationdate" fieldIdRef="49" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_creationdate" sqlTabName="campaignposts" uid="{d185dd4f-ecd9-4d41-8104-3e89e661e5cb}"/>
+    <RecordField colName="cmppost_onlinedate" fieldIdRef="2" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_onlinedate" sqlTabName="campaignposts" uid="{70bfba6f-1d4b-4ae5-a4d4-306965ecd35d}"/>
+    <RecordField colName="cmppost_lastmetricsdate" fieldIdRef="3" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_lastmetricsdate" sqlTabName="campaignposts" uid="{3c4d5124-56e3-416d-8888-7786d472898c}"/>
+    <RecordField colName="cmppost_youtube_viewcount" fieldIdRef="50" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_youtube_viewcount" sqlTabName="campaignposts" uid="{d3a59ce1-36dc-49b7-9f92-ec511fed6e00}"/>
+    <RecordField colName="cmppost_youtube_likecount" fieldIdRef="51" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_youtube_likecount" sqlTabName="campaignposts" uid="{ffe38f44-4e94-4acc-bad0-c04d67b745b8}"/>
+    <RecordField colName="cmppost_youtube_dislikecount" fieldIdRef="52" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_youtube_dislikecount" sqlTabName="campaignposts" uid="{22ce2417-d195-4495-aa1d-04e48518e5ec}"/>
+    <RecordField colName="cmppost_youtube_favoritecount" fieldIdRef="53" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_youtube_favoritecount" sqlTabName="campaignposts" uid="{2fc8c2a8-1ce3-4d75-bb1a-59d7cd4026b1}"/>
+    <RecordField colName="cmppost_youtube_commentcount" fieldIdRef="54" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_youtube_commentcount" sqlTabName="campaignposts" uid="{db67c950-1fc7-41cb-9479-9224e932146d}"/>
+    <RecordField colName="cmppost_ig_likes" fieldIdRef="55" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_likes" sqlTabName="campaignposts" uid="{8916f747-83c9-44bb-b705-16b1fd4810cd}"/>
+    <RecordField colName="cmppost_ig_comments" fieldIdRef="56" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_comments" sqlTabName="campaignposts" uid="{7de7358f-d015-40ed-b548-0991e2f489b7}"/>
+    <RecordField colName="cmppost_ig_saved" fieldIdRef="57" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_saved" sqlTabName="campaignposts" uid="{823ecc83-c258-42d7-b82b-4519c7e27788}"/>
+    <RecordField colName="cmppost_ig_profilevisits" fieldIdRef="58" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_profilevisits" sqlTabName="campaignposts" uid="{7f0c3b54-8c18-4055-8473-170046450a47}"/>
+    <RecordField colName="cmppost_ig_follows" fieldIdRef="59" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_follows" sqlTabName="campaignposts" uid="{85a19e1d-48f3-4647-8914-a927425af5ca}"/>
+    <RecordField colName="cmppost_ig_websiteclicks" fieldIdRef="60" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_websiteclicks" sqlTabName="campaignposts" uid="{d7cec03e-4fdf-4abf-83a3-4eec1dde5db2}"/>
+    <RecordField colName="cmppost_ig_discovery" fieldIdRef="61" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_discovery" sqlTabName="campaignposts" uid="{4666ee2a-03ab-4a54-b78a-c6e2e89bea99}"/>
+    <RecordField colName="cmppost_ig_reach" fieldIdRef="62" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_reach" sqlTabName="campaignposts" uid="{ef315070-5b4c-4d71-966b-512fb569220b}"/>
+    <RecordField colName="cmppost_ig_impressions" fieldIdRef="63" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_impressions" sqlTabName="campaignposts" uid="{20f70601-25af-42f9-a41b-5fae97afc20a}"/>
+    <RecordField colName="cmppost_instastory_impressions" fieldIdRef="64" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_impressions" sqlTabName="campaignposts" uid="{122c5128-8209-4eaa-8fa8-71bc3ae58f44}"/>
+    <RecordField colName="cmppost_instastory_reach" fieldIdRef="65" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_reach" sqlTabName="campaignposts" uid="{324bffcb-e3b0-425f-8ce2-c0cb66b4b332}"/>
+    <RecordField colName="cmppost_instastory_tapsforward" fieldIdRef="66" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_tapsforward" sqlTabName="campaignposts" uid="{a0e90b10-3af2-4f58-bbd8-4a67cb83597f}"/>
+    <RecordField colName="cmppost_instastory_tapsback" fieldIdRef="67" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_tapsback" sqlTabName="campaignposts" uid="{c5928b58-0400-4816-ba74-16b3be11ebcb}"/>
+    <RecordField colName="cmppost_instastory_replies" fieldIdRef="68" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_replies" sqlTabName="campaignposts" uid="{2fd0f67c-7577-4617-8faf-20eb838356c3}"/>
+    <RecordField colName="cmppost_instastory_swipeaway" fieldIdRef="69" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_swipeaway" sqlTabName="campaignposts" uid="{d4b1ed08-1dc2-459f-80b8-f7f3b2085c23}"/>
+    <RecordField colName="cmppost_instastory_exists" fieldIdRef="70" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_exists" sqlTabName="campaignposts" uid="{f4340bd3-90fb-4f1b-a89a-80dcb4b45d3a}"/>
+    <RecordField colName="cmppost_isacceptedbysalfatix" fieldIdRef="71" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_isacceptedbysalfatix" sqlTabName="campaignposts" uid="{6b71ee95-2cb6-483f-aa96-a33741296064}"/>
+    <RecordField colName="cmppost_isacceptedbybrand" fieldIdRef="72" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_isacceptedbybrand" sqlTabName="campaignposts" uid="{a8744cf4-e5dc-4c66-876e-907c80bd1aa6}"/>
+    <RecordField colName="cmppost_filename" fieldIdRef="73" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_filename" sqlTabName="campaignposts" uid="{465bec6e-0ffa-4111-b036-8b19b391a53c}"/>
+    <RecordField colName="cmppost_postno" fieldIdRef="74" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_postno" sqlTabName="campaignposts" uid="{10bb8043-ad2d-4f8a-9223-4ffb02301e6d}"/>
+    <RecordField colName="cmppost_uiorder" fieldIdRef="75" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_uiorder" sqlTabName="campaignposts" uid="{1000e5e2-2819-4317-ad01-925deff8f45a}"/>
+    <RecordField colName="pic_value" fieldIdRef="42" fieldType="TABLE_COLUMN" name="pics.pic_value" sqlTabName="pics" uid="{d442191d-d388-4fc3-9d73-d15bd58dbfdf}"/>
+    <RecordField fieldIdRef="1" name="status_label" uid="{bf2aa3ca-df87-4b67-a2ed-d0f50a1a3955}"/>
+  </Record>
+  <Form gridHeight="65" gridWidth="154" name="form" style="centerwindow" text="Posts">
+    <Grid gridHeight="17" gridWidth="29" name="grid1" posX="3" posY="3">
+      <ComboBox colName="cmppost_posttype_id" fieldId="34" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="" justify="center" name="campaignposts.cmppost_posttype_id" posX="3" posY="1" repeat="false" scroll="true" sqlTabName="campaignposts" tabIndex="-1" widget="ComboBox">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </ComboBox>
+      <FFImage action="upload_media" autoScale="true" colName="pic_value" fieldId="42" fieldType="TABLE_COLUMN" gridHeight="6" gridWidth="20" justify="center" name="pics.pic_value" posX="3" posY="2" sizePolicy="fixed" sqlTabName="pics" style="no_border center" title="" widget="FFImage"/>
+      <FFLabel fieldId="1" gridHeight="1" gridWidth="20" justify="center" name="status_label" posX="3" posY="8" repeat="false" title="fflabel1" widget="FFLabel"/>
+      <ComboBox colName="cmppost_ispublic" fieldId="45" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" items="Ce post est privé, Ce post est public" justify="center" name="campaignposts.cmppost_ispublic" posX="3" posY="9" repeat="false" scroll="true" sqlTabName="campaignposts" tabIndex="-1" widget="ComboBox">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        <Item lstrtext="false" name="0" text="Ce post est privé"/>
+        <Item lstrtext="false" name="1" text="Ce post est public"/>
+      </ComboBox>
+      <Edit colName="cmppost_url" fieldId="35" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="campaignposts.cmppost_url" placeholder="&lt;Input post URL here&gt;" posX="3" posY="10" scroll="true" sqlTabName="campaignposts" tabIndex="-1" title="cmppost_url" widget="Edit"/>
+      <Phantom colName="cmppost_id" fieldId="31" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_id" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_campaign_id" fieldId="32" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_campaign_id" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_usr_id" fieldId="33" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_usr_id" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_status_id" fieldId="46" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_status_id" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_screenshot_post" fieldId="47" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_screenshot_post" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_screenshot_stat" fieldId="48" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_screenshot_stat" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_creationdate" fieldId="49" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_creationdate" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_youtube_viewcount" fieldId="50" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_youtube_viewcount" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_youtube_likecount" fieldId="51" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_youtube_likecount" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_youtube_dislikecount" fieldId="52" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_youtube_dislikecount" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_youtube_favoritecount" fieldId="53" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_youtube_favoritecount" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_youtube_commentcount" fieldId="54" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_youtube_commentcount" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_ig_likes" fieldId="55" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_likes" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_ig_comments" fieldId="56" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_comments" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_ig_saved" fieldId="57" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_saved" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_ig_profilevisits" fieldId="58" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_profilevisits" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_ig_follows" fieldId="59" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_follows" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_ig_websiteclicks" fieldId="60" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_websiteclicks" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_ig_discovery" fieldId="61" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_discovery" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_ig_reach" fieldId="62" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_reach" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_ig_impressions" fieldId="63" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_ig_impressions" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_instastory_impressions" fieldId="64" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_impressions" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_instastory_reach" fieldId="65" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_reach" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_instastory_tapsforward" fieldId="66" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_tapsforward" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_instastory_tapsback" fieldId="67" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_tapsback" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_instastory_replies" fieldId="68" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_replies" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_instastory_swipeaway" fieldId="69" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_swipeaway" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_instastory_exists" fieldId="70" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_instastory_exists" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_isacceptedbysalfatix" fieldId="71" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_isacceptedbysalfatix" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_isacceptedbybrand" fieldId="72" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_isacceptedbybrand" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_filename" fieldId="73" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_filename" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_postno" fieldId="74" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_postno" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_uiorder" fieldId="75" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_uiorder" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_onlinedate" fieldId="2" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_onlinedate" sqlTabName="campaignposts" widget="Phantom"/>
+      <Phantom colName="cmppost_lastmetricsdate" fieldId="3" fieldType="TABLE_COLUMN" name="campaignposts.cmppost_lastmetricsdate" sqlTabName="campaignposts" widget="Phantom"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBjADUAZgBhADgAMQA0ADEALQBiAGEANABmAC0ANAAyADYAZAAtADkANQA0ADQALQA1AGUAOQBmADkAYwAxADkAOAA4ADYAZgB9wGwmZo8vyWFANMzM706BsT9gYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,9 @@
+{
+  "name": "ImageWidget",
+  "type": "group",
+  "contents": [{
+    "name": "gbc-ImageWidget-max-icon-size",
+    "type": "size",
+    "defaultValue": "$theme-max-icon-size"
+  }]
+}

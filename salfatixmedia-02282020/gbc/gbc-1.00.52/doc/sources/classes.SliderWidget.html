@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="../">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="reference/index.html">Reference</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="reference/api.html">API reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/theme/index.html">Theme reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_conditions.html">Theme conditions</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_config_json.html">theme.config.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_scss_json_file.html">theme.scss.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_variables.html">Theme variables reference</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/grunt/index.html">Grunt reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/grunt/configure_compilation.html">Configure your compilation</a>
+            
+            <a class="btn btn-sidebar " href="reference/grunt/fix_configuration_issues.html">Fix configuration issues</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/project/index.html">Project reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/project/project_directory.html">Project directory</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/customization_project.html">Customization project</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets.html">Widgets</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_js_file.html">Widget JavaScript file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_template_file.html">Widget template file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_scss_file.html">Widget scss file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets_with_modelhelper.html">Widgets with Modelhelper</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/deliverables.html">Deliverables</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/upgrading/index.html">Upgrading</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/bootstrap.html">Application bootstrap</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/compatibility.html">Compatibility</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/cookies.html">Use of cookies</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/customization_migration.html">Customization migration</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deploy-runtime-on-gas..html">Deploy runtime on GAS</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deployment-portal.html">Deploy runtime with Portal</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/local_storage.html">Local storage</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.10.html">Upgrade to 3.10</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="source">
+
+  <a class="btn btn-default btn-xs" href="classes/classes.SliderWidget.html"><i class="glyphicon glyphicon-link"></i> view class doc</a>
+<section class="source-code">
+    <article>
+        <pre class="hljs"><span class="line-number"><span class="number" id="line_1">1</span><span class="number" id="line_2">2</span><span class="number" id="line_3">3</span><span class="number" id="line_4">4</span><span class="number" id="line_5">5</span><span class="number" id="line_6">6</span><span class="number" id="line_7">7</span><span class="number" id="line_8">8</span><span class="number" id="line_9">9</span><span class="number" id="line_10">10</span><span class="number" id="line_11">11</span><span class="number" id="line_12">12</span><span class="number" id="line_13">13</span><span class="number" id="line_14">14</span><span class="number" id="line_15">15</span><span class="number" id="line_16">16</span><span class="number" id="line_17">17</span><span class="number" id="line_18">18</span><span class="number" id="line_19">19</span><span class="number" id="line_20">20</span><span class="number" id="line_21">21</span><span class="number" id="line_22">22</span><span class="number" id="line_23">23</span><span class="number" id="line_24">24</span><span class="number" id="line_25">25</span><span class="number" id="line_26">26</span><span class="number" id="line_27">27</span><span class="number" id="line_28">28</span><span class="number" id="line_29">29</span><span class="number" id="line_30">30</span><span class="number" id="line_31">31</span><span class="number" id="line_32">32</span><span class="number" id="line_33">33</span><span class="number" id="line_34">34</span><span class="number" id="line_35">35</span><span class="number" id="line_36">36</span><span class="number" id="line_37">37</span><span class="number" id="line_38">38</span><span class="number" id="line_39">39</span><span class="number" id="line_40">40</span><span class="number" id="line_41">41</span><span class="number" id="line_42">42</span><span class="number" id="line_43">43</span><span class="number" id="line_44">44</span><span class="number" id="line_45">45</span><span class="number" id="line_46">46</span><span class="number" id="line_47">47</span><span class="number" id="line_48">48</span><span class="number" id="line_49">49</span><span class="number" id="line_50">50</span><span class="number" id="line_51">51</span><span class="number" id="line_52">52</span><span class="number" id="line_53">53</span><span class="number" id="line_54">54</span><span class="number" id="line_55">55</span><span class="number" id="line_56">56</span><span class="number" id="line_57">57</span><span class="number" id="line_58">58</span><span class="number" id="line_59">59</span><span class="number" id="line_60">60</span><span class="number" id="line_61">61</span><span class="number" id="line_62">62</span><span class="number" id="line_63">63</span><span class="number" id="line_64">64</span><span class="number" id="line_65">65</span><span class="number" id="line_66">66</span><span class="number" id="line_67">67</span><span class="number" id="line_68">68</span><span class="number" id="line_69">69</span><span class="number" id="line_70">70</span><span class="number" id="line_71">71</span><span class="number" id="line_72">72</span><span class="number" id="line_73">73</span><span class="number" id="line_74">74</span><span class="number" id="line_75">75</span><span class="number" id="line_76">76</span><span class="number" id="line_77">77</span><span class="number" id="line_78">78</span><span class="number" id="line_79">79</span><span class="number" id="line_80">80</span><span class="number" id="line_81">81</span><span class="number" id="line_82">82</span><span class="number" id="line_83">83</span><span class="number" id="line_84">84</span><span class="number" id="line_85">85</span><span class="number" id="line_86">86</span><span class="number" id="line_87">87</span><span class="number" id="line_88">88</span><span class="number" id="line_89">89</span><span class="number" id="line_90">90</span><span class="number" id="line_91">91</span><span class="number" id="line_92">92</span><span class="number" id="line_93">93</span><span class="number" id="line_94">94</span><span class="number" id="line_95">95</span><span class="number" id="line_96">96</span><span class="number" id="line_97">97</span><span class="number" id="line_98">98</span><span class="number" id="line_99">99</span><span class="number" id="line_100">100</span><span class="number" id="line_101">101</span><span class="number" id="line_102">102</span><span class="number" id="line_103">103</span><span class="number" id="line_104">104</span><span class="number" id="line_105">105</span><span class="number" id="line_106">106</span><span class="number" id="line_107">107</span><span class="number" id="line_108">108</span><span class="number" id="line_109">109</span><span class="number" id="line_110">110</span><span class="number" id="line_111">111</span><span class="number" id="line_112">112</span><span class="number" id="line_113">113</span><span class="number" id="line_114">114</span><span class="number" id="line_115">115</span><span class="number" id="line_116">116</span><span class="number" id="line_117">117</span><span class="number" id="line_118">118</span><span class="number" id="line_119">119</span><span class="number" id="line_120">120</span><span class="number" id="line_121">121</span><span class="number" id="line_122">122</span><span class="number" id="line_123">123</span><span class="number" id="line_124">124</span><span class="number" id="line_125">125</span><span class="number" id="line_126">126</span><span class="number" id="line_127">127</span><span class="number" id="line_128">128</span><span class="number" id="line_129">129</span><span class="number" id="line_130">130</span><span class="number" id="line_131">131</span><span class="number" id="line_132">132</span><span class="number" id="line_133">133</span><span class="number" id="line_134">134</span><span class="number" id="line_135">135</span><span class="number" id="line_136">136</span><span class="number" id="line_137">137</span><span class="number" id="line_138">138</span><span class="number" id="line_139">139</span><span class="number" id="line_140">140</span><span class="number" id="line_141">141</span><span class="number" id="line_142">142</span><span class="number" id="line_143">143</span><span class="number" id="line_144">144</span><span class="number" id="line_145">145</span><span class="number" id="line_146">146</span><span class="number" id="line_147">147</span><span class="number" id="line_148">148</span><span class="number" id="line_149">149</span><span class="number" id="line_150">150</span><span class="number" id="line_151">151</span><span class="number" id="line_152">152</span><span class="number" id="line_153">153</span><span class="number" id="line_154">154</span><span class="number" id="line_155">155</span><span class="number" id="line_156">156</span><span class="number" id="line_157">157</span><span class="number" id="line_158">158</span><span class="number" id="line_159">159</span><span class="number" id="line_160">160</span><span class="number" id="line_161">161</span><span class="number" id="line_162">162</span><span class="number" id="line_163">163</span><span class="number" id="line_164">164</span><span class="number" id="line_165">165</span><span class="number" id="line_166">166</span><span class="number" id="line_167">167</span><span class="number" id="line_168">168</span><span class="number" id="line_169">169</span><span class="number" id="line_170">170</span><span class="number" id="line_171">171</span><span class="number" id="line_172">172</span><span class="number" id="line_173">173</span><span class="number" id="line_174">174</span><span class="number" id="line_175">175</span><span class="number" id="line_176">176</span><span class="number" id="line_177">177</span><span class="number" id="line_178">178</span><span class="number" id="line_179">179</span><span class="number" id="line_180">180</span><span class="number" id="line_181">181</span><span class="number" id="line_182">182</span><span class="number" id="line_183">183</span><span class="number" id="line_184">184</span><span class="number" id="line_185">185</span><span class="number" id="line_186">186</span><span class="number" id="line_187">187</span><span class="number" id="line_188">188</span><span class="number" id="line_189">189</span><span class="number" id="line_190">190</span><span class="number" id="line_191">191</span><span class="number" id="line_192">192</span><span class="number" id="line_193">193</span><span class="number" id="line_194">194</span><span class="number" id="line_195">195</span><span class="number" id="line_196">196</span><span class="number" id="line_197">197</span><span class="number" id="line_198">198</span><span class="number" id="line_199">199</span><span class="number" id="line_200">200</span><span class="number" id="line_201">201</span><span class="number" id="line_202">202</span><span class="number" id="line_203">203</span><span class="number" id="line_204">204</span><span class="number" id="line_205">205</span><span class="number" id="line_206">206</span><span class="number" id="line_207">207</span><span class="number" id="line_208">208</span><span class="number" id="line_209">209</span><span class="number" id="line_210">210</span><span class="number" id="line_211">211</span><span class="number" id="line_212">212</span><span class="number" id="line_213">213</span><span class="number" id="line_214">214</span><span class="number" id="line_215">215</span><span class="number" id="line_216">216</span><span class="number" id="line_217">217</span><span class="number" id="line_218">218</span><span class="number" id="line_219">219</span><span class="number" id="line_220">220</span><span class="number" id="line_221">221</span><span class="number" id="line_222">222</span><span class="number" id="line_223">223</span><span class="number" id="line_224">224</span><span class="number" id="line_225">225</span><span class="number" id="line_226">226</span><span class="number" id="line_227">227</span><span class="number" id="line_228">228</span><span class="number" id="line_229">229</span><span class="number" id="line_230">230</span><span class="number" id="line_231">231</span><span class="number" id="line_232">232</span><span class="number" id="line_233">233</span><span class="number" id="line_234">234</span><span class="number" id="line_235">235</span><span class="number" id="line_236">236</span><span class="number" id="line_237">237</span><span class="number" id="line_238">238</span><span class="number" id="line_239">239</span><span class="number" id="line_240">240</span><span class="number" id="line_241">241</span><span class="number" id="line_242">242</span><span class="number" id="line_243">243</span><span class="number" id="line_244">244</span><span class="number" id="line_245">245</span><span class="number" id="line_246">246</span><span class="number" id="line_247">247</span><span class="number" id="line_248">248</span><span class="number" id="line_249">249</span><span class="number" id="line_250">250</span><span class="number" id="line_251">251</span><span class="number" id="line_252">252</span><span class="number" id="line_253">253</span><span class="number" id="line_254">254</span><span class="number" id="line_255">255</span><span class="number" id="line_256">256</span><span class="number" id="line_257">257</span><span class="number" id="line_258">258</span><span class="number" id="line_259">259</span><span class="number" id="line_260">260</span><span class="number" id="line_261">261</span><span class="number" id="line_262">262</span><span class="number" id="line_263">263</span><span class="number" id="line_264">264</span><span class="number" id="line_265">265</span><span class="number" id="line_266">266</span><span class="number" id="line_267">267</span><span class="number" id="line_268">268</span><span class="number" id="line_269">269</span><span class="number" id="line_270">270</span><span class="number" id="line_271">271</span><span class="number" id="line_272">272</span><span class="number" id="line_273">273</span><span class="number" id="line_274">274</span><span class="number" id="line_275">275</span><span class="number" id="line_276">276</span><span class="number" id="line_277">277</span><span class="number" id="line_278">278</span><span class="number" id="line_279">279</span><span class="number" id="line_280">280</span><span class="number" id="line_281">281</span><span class="number" id="line_282">282</span><span class="number" id="line_283">283</span><span class="number" id="line_284">284</span><span class="number" id="line_285">285</span><span class="number" id="line_286">286</span><span class="number" id="line_287">287</span><span class="number" id="line_288">288</span><span class="number" id="line_289">289</span><span class="number" id="line_290">290</span><span class="number" id="line_291">291</span><span class="number" id="line_292">292</span><span class="number" id="line_293">293</span><span class="number" id="line_294">294</span><span class="number" id="line_295">295</span><span class="number" id="line_296">296</span><span class="number" id="line_297">297</span><span class="number" id="line_298">298</span><span class="number" id="line_299">299</span><span class="number" id="line_300">300</span><span class="number" id="line_301">301</span><span class="number" id="line_302">302</span><span class="number" id="line_303">303</span><span class="number" id="line_304">304</span><span class="number" id="line_305">305</span><span class="number" id="line_306">306</span><span class="number" id="line_307">307</span><span class="number" id="line_308">308</span><span class="number" id="line_309">309</span><span class="number" id="line_310">310</span><span class="number" id="line_311">311</span><span class="number" id="line_312">312</span><span class="number" id="line_313">313</span><span class="number" id="line_314">314</span><span class="number" id="line_315">315</span><span class="number" id="line_316">316</span><span class="number" id="line_317">317</span><span class="number" id="line_318">318</span><span class="number" id="line_319">319</span><span class="number" id="line_320">320</span><span class="number" id="line_321">321</span><span class="number" id="line_322">322</span><span class="number" id="line_323">323</span><span class="number" id="line_324">324</span><span class="number" id="line_325">325</span><span class="number" id="line_326">326</span><span class="number" id="line_327">327</span><span class="number" id="line_328">328</span><span class="number" id="line_329">329</span><span class="number" id="line_330">330</span><span class="number" id="line_331">331</span><span class="number" id="line_332">332</span><span class="number" id="line_333">333</span><span class="number" id="line_334">334</span><span class="number" id="line_335">335</span><span class="number" id="line_336">336</span><span class="number" id="line_337">337</span><span class="number" id="line_338">338</span><span class="number" id="line_339">339</span><span class="number" id="line_340">340</span><span class="number" id="line_341">341</span><span class="number" id="line_342">342</span><span class="number" id="line_343">343</span><span class="number" id="line_344">344</span><span class="number" id="line_345">345</span><span class="number" id="line_346">346</span><span class="number" id="line_347">347</span><span class="number" id="line_348">348</span><span class="number" id="line_349">349</span><span class="number" id="line_350">350</span><span class="number" id="line_351">351</span><span class="number" id="line_352">352</span><span class="number" id="line_353">353</span><span class="number" id="line_354">354</span><span class="number" id="line_355">355</span><span class="number" id="line_356">356</span><span class="number" id="line_357">357</span><span class="number" id="line_358">358</span><span class="number" id="line_359">359</span><span class="number" id="line_360">360</span><span class="number" id="line_361">361</span><span class="number" id="line_362">362</span><span class="number" id="line_363">363</span><span class="number" id="line_364">364</span><span class="number" id="line_365">365</span><span class="number" id="line_366">366</span><span class="number" id="line_367">367</span><span class="number" id="line_368">368</span><span class="number" id="line_369">369</span><span class="number" id="line_370">370</span><span class="number" id="line_371">371</span><span class="number" id="line_372">372</span></span><code><span class="hljs-comment">/// FOURJS_START_COPYRIGHT(D,2015)</span>
+<span class="hljs-comment">/// Property of Four Js*</span>
+<span class="hljs-comment">/// (c) Copyright Four Js 2015, 2019. All Rights Reserved.</span>
+<span class="hljs-comment">/// * Trademark of Four Js Development Tools Europe Ltd</span>
+<span class="hljs-comment">///   in the United States and elsewhere</span>
+<span class="hljs-comment">/// </span>
+<span class="hljs-comment">/// This file can be modified by licensees according to the</span>
+<span class="hljs-comment">/// product manual.</span>
+<span class="hljs-comment">/// FOURJS_END_COPYRIGHT</span>
+<span class="hljs-meta">
+'use strict'</span>;
+
+modulum(<span class="hljs-string">'SliderWidget'</span>, [<span class="hljs-string">'FieldWidgetBase'</span>, <span class="hljs-string">'WidgetFactory'</span>],
+  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context, cls</span>) </span>{
+
+    <span class="hljs-comment">/**
+     * Slider widget.
+     * @class SliderWidget
+     * @memberOf classes
+     * @extends classes.FieldWidgetBase
+     * @publicdoc Widgets
+     */</span>
+    cls.SliderWidget = context.oo.Class(cls.FieldWidgetBase, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$super</span>) </span>{
+      <span class="hljs-keyword">return</span> <span class="hljs-comment">/** @lends classes.SliderWidget.prototype */</span> {
+        <span class="hljs-attr">__name</span>: <span class="hljs-string">'SliderWidget'</span>,
+        <span class="hljs-comment">/**
+         * Redefine where the data is located
+         * @type {string|Object}
+         */</span>
+        __dataContentPlaceholderSelector: cls.WidgetBase.selfDataContent,
+        <span class="hljs-comment">/**
+         * Slider orientation. Default is horizontal
+         * @type {?string}
+         */</span>
+        _orientation: <span class="hljs-literal">null</span>,
+        <span class="hljs-comment">/**
+         * Flag to indicate if we updated orientation before or after first widget layout
+         */</span>
+        _afterLayoutFlag: <span class="hljs-literal">null</span>,
+
+        <span class="hljs-comment">/**
+         * @constructs
+         * @param {Object} opts - Options passed to the constructor
+         * @publicdoc
+         */</span>
+        <span class="hljs-keyword">constructor</span>: function(opts) {
+          $<span class="hljs-keyword">super</span>.constructor.call(<span class="hljs-keyword">this</span>, opts);
+          <span class="hljs-keyword">this</span>.setFocusable(<span class="hljs-literal">true</span>);
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        _initLayout: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>._ignoreLayout) {
+            <span class="hljs-keyword">this</span>._layoutInformation = <span class="hljs-keyword">new</span> cls.LayoutInformation(<span class="hljs-keyword">this</span>);
+            <span class="hljs-keyword">this</span>._layoutEngine = <span class="hljs-keyword">new</span> cls.SliderLayoutEngine(<span class="hljs-keyword">this</span>);
+            <span class="hljs-keyword">this</span>._layoutInformation.getSizePolicyConfig().initial = cls.SizePolicy.Dynamic();
+            <span class="hljs-keyword">this</span>._layoutInformation.getSizePolicyConfig().fixed = cls.SizePolicy.Dynamic();
+            <span class="hljs-keyword">this</span>._layoutInformation._forceFixedWidthMeasure = <span class="hljs-literal">true</span>;
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        _initElement: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          $<span class="hljs-keyword">super</span>._initElement.call(<span class="hljs-keyword">this</span>);
+          <span class="hljs-keyword">this</span>._inputElement = <span class="hljs-keyword">this</span>._element.getElementsByTagName(<span class="hljs-string">'input'</span>)[<span class="hljs-number">0</span>];
+          <span class="hljs-keyword">var</span> onSlideEnd = <span class="hljs-keyword">this</span>._onSlide.bind(<span class="hljs-keyword">this</span>);
+
+          <span class="hljs-keyword">this</span>._inputElement.on(<span class="hljs-string">'touchend.SliderWidget'</span>, onSlideEnd);
+          <span class="hljs-keyword">this</span>._inputElement.on(<span class="hljs-string">'mouseup.SliderWidget'</span>, onSlideEnd);
+
+          <span class="hljs-keyword">this</span>._inputElement.on(<span class="hljs-string">'touchstart.SliderWidget'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">this</span>._preventContainerScrolling(<span class="hljs-literal">true</span>);
+          }.bind(<span class="hljs-keyword">this</span>));
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        destroy: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">this</span>._inputElement.off(<span class="hljs-string">'touchend.SliderWidget'</span>);
+          <span class="hljs-keyword">this</span>._inputElement.off(<span class="hljs-string">'mouseup.SliderWidget'</span>);
+          <span class="hljs-keyword">this</span>._inputElement.off(<span class="hljs-string">'touchstart.SliderWidget'</span>);
+          $<span class="hljs-keyword">super</span>.destroy.call(<span class="hljs-keyword">this</span>);
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        manageMouseClick: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">domEvent</span>) </span>{
+          <span class="hljs-keyword">this</span>._onRequestFocus(domEvent); <span class="hljs-comment">// request focus</span>
+          <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        manageKeyDown: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">keyString, domKeyEvent, repeat</span>) </span>{
+          <span class="hljs-keyword">var</span> keyProcessed = <span class="hljs-literal">false</span>;
+
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.isEnabled() &amp;&amp; !<span class="hljs-keyword">this</span>.isReadOnly()) {
+
+            keyProcessed = <span class="hljs-literal">true</span>;
+            <span class="hljs-keyword">switch</span> (keyString) {
+              <span class="hljs-keyword">case</span> <span class="hljs-string">"down"</span>:
+              <span class="hljs-keyword">case</span> <span class="hljs-string">"pagedown"</span>:
+              <span class="hljs-keyword">case</span> <span class="hljs-keyword">this</span>.getStart():
+                <span class="hljs-keyword">this</span>.setEditing(<span class="hljs-literal">true</span>);
+                <span class="hljs-keyword">this</span>._decrease();
+                <span class="hljs-keyword">this</span>.emit(context.constants.widgetEvents.change, <span class="hljs-literal">false</span>);
+                <span class="hljs-keyword">break</span>;
+              <span class="hljs-keyword">case</span> <span class="hljs-string">"up"</span>:
+              <span class="hljs-keyword">case</span> <span class="hljs-string">"pageup"</span>:
+              <span class="hljs-keyword">case</span> <span class="hljs-keyword">this</span>.getEnd():
+                <span class="hljs-keyword">this</span>.setEditing(<span class="hljs-literal">true</span>);
+                <span class="hljs-keyword">this</span>._increase();
+                <span class="hljs-keyword">this</span>.emit(context.constants.widgetEvents.change, <span class="hljs-literal">false</span>);
+                <span class="hljs-keyword">break</span>;
+              <span class="hljs-keyword">default</span>:
+                keyProcessed = <span class="hljs-literal">false</span>;
+            }
+          }
+
+          <span class="hljs-keyword">if</span> (keyProcessed) {
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+          } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">return</span> $<span class="hljs-keyword">super</span>.manageKeyDown.call(<span class="hljs-keyword">this</span>, keyString, domKeyEvent, repeat);
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * Handler executed on mouse click. We update the value depending of pointer location click on the slider
+         * and send it to VM
+         * @param {Object} evt - DOM event
+         */</span>
+        _onSlide: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">evt</span>) </span>{
+          <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.hasFocus()) {
+            <span class="hljs-keyword">this</span>._onRequestFocus(evt); <span class="hljs-comment">// request focus</span>
+          }
+          <span class="hljs-comment">// need to emit change because on some browsers, change event is not raised when slider has not yet the focus</span>
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.isEnabled() &amp;&amp; !<span class="hljs-keyword">this</span>.isReadOnly()) {
+            <span class="hljs-keyword">var</span> total;
+            <span class="hljs-comment">// Vertical sliders are rotated with CSS. evt.offsetX takes this into account. getBoundingClientRect doesn't</span>
+            <span class="hljs-keyword">var</span> clickPos = <span class="hljs-number">0</span>;
+            <span class="hljs-keyword">var</span> inputRect = <span class="hljs-keyword">this</span>._inputElement.getBoundingClientRect();
+            <span class="hljs-keyword">if</span> (!!evt.offsetX) {
+              clickPos = evt.offsetX;
+              <span class="hljs-comment">// on mobile offsetX doesn't exist. We need to calculate the relative click position using global pageX and input position</span>
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.isTouchDevice() &amp;&amp; evt.changedTouches[<span class="hljs-number">0</span>]) {
+              <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.getOrientation() === <span class="hljs-string">'horizontal'</span>) {
+                clickPos = evt.changedTouches[<span class="hljs-number">0</span>].pageX - inputRect.left;
+              } <span class="hljs-keyword">else</span> {
+                clickPos = inputRect.bottom - evt.changedTouches[<span class="hljs-number">0</span>].pageY;
+              }
+            }
+            <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.getOrientation() === <span class="hljs-string">'horizontal'</span>) {
+              total = inputRect.width;
+            } <span class="hljs-keyword">else</span> {
+              total = inputRect.height;
+            }
+            <span class="hljs-keyword">var</span> expectedTotal = <span class="hljs-keyword">this</span>.getMax() - <span class="hljs-keyword">this</span>.getMin();
+            <span class="hljs-keyword">var</span> expectedVal = expectedTotal * (clickPos / total);
+            <span class="hljs-keyword">var</span> step = <span class="hljs-keyword">this</span>.getStep();
+            <span class="hljs-keyword">var</span> value = <span class="hljs-keyword">this</span>.getMin() + <span class="hljs-built_in">Math</span>.floor(expectedVal / step) * step;
+            <span class="hljs-keyword">if</span> ((expectedVal % step) &gt; (step / <span class="hljs-number">2</span>)) {
+              value += step;
+            }
+            <span class="hljs-keyword">this</span>.setEditing(<span class="hljs-literal">true</span>);
+            <span class="hljs-keyword">this</span>._inputElement.value = value;
+          }
+          <span class="hljs-keyword">this</span>._preventContainerScrolling(<span class="hljs-literal">false</span>);
+          <span class="hljs-keyword">this</span>.emit(context.constants.widgetEvents.change, <span class="hljs-literal">false</span>);
+        },
+
+        <span class="hljs-comment">/**
+         * Increase the displayed value
+         */</span>
+        _increase: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">this</span>.setValue((<span class="hljs-keyword">this</span>.getValue() || <span class="hljs-number">0</span>) + <span class="hljs-keyword">this</span>.getStep());
+        },
+
+        <span class="hljs-comment">/**
+         * Decrease the displayed value
+         */</span>
+        _decrease: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">this</span>.setValue((<span class="hljs-keyword">this</span>.getValue() || <span class="hljs-number">0</span>) - <span class="hljs-keyword">this</span>.getStep());
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        getValue: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-built_in">parseInt</span>(<span class="hljs-keyword">this</span>._inputElement.value, <span class="hljs-number">10</span>);
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setValue: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value, fromVM</span>) </span>{
+          $<span class="hljs-keyword">super</span>.setValue.call(<span class="hljs-keyword">this</span>, value, fromVM);
+          value = +value;
+          <span class="hljs-keyword">this</span>._inputElement.value = <span class="hljs-built_in">Object</span>.isNumber(value) &amp;&amp; !<span class="hljs-built_in">Number</span>.isNaN(value) ? value : <span class="hljs-number">0</span>;
+          <span class="hljs-keyword">this</span>.setAriaAttribute(<span class="hljs-string">"valuenow"</span>, value);
+        },
+
+        <span class="hljs-comment">/**
+         * Get minimum possible value of the slider
+         * @returns {number} the minimum value
+         * @publicdoc
+         */</span>
+        getMin: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._inputElement.getIntAttribute(<span class="hljs-string">'min'</span>);
+        },
+
+        <span class="hljs-comment">/**
+         * Define the minimum possible value of the slider
+         * @param {number} value - the minimum value
+         * @publicdoc
+         */</span>
+        setMin: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>) </span>{
+          <span class="hljs-keyword">if</span> (<span class="hljs-built_in">Object</span>.isNumber(value)) {
+            <span class="hljs-keyword">this</span>._inputElement.setAttribute(<span class="hljs-string">'min'</span>, value);
+          } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">this</span>._inputElement.removeAttribute(<span class="hljs-string">'min'</span>);
+          }
+          <span class="hljs-keyword">this</span>.setAriaAttribute(<span class="hljs-string">"valuemin"</span>, value);
+        },
+
+        <span class="hljs-comment">/**
+         * Get maximum possible value of the slider
+         * @returns {number} the maximum value
+         * @publicdoc
+         */</span>
+        getMax: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._inputElement.getIntAttribute(<span class="hljs-string">'max'</span>);
+        },
+
+        <span class="hljs-comment">/**
+         * Define the maximum possible value of the slider
+         * @param {number} value - the maximum value
+         * @publicdoc
+         */</span>
+        setMax: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>) </span>{
+          <span class="hljs-keyword">if</span> (<span class="hljs-built_in">Object</span>.isNumber(value)) {
+            <span class="hljs-keyword">this</span>._inputElement.setAttribute(<span class="hljs-string">'max'</span>, value);
+          } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">this</span>._inputElement.removeAttribute(<span class="hljs-string">'max'</span>);
+          }
+          <span class="hljs-keyword">this</span>.setAriaAttribute(<span class="hljs-string">"valuemax"</span>, value);
+        },
+
+        <span class="hljs-comment">/**
+         * Get slider step when increasing or decreasing value
+         * @returns {number} the step value
+         * @publicdoc
+         */</span>
+        getStep: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._inputElement.getIntAttribute(<span class="hljs-string">'step'</span>);
+        },
+
+        <span class="hljs-comment">/**
+         * Define the slider step when increasing or decreasing value
+         * @param {number} step - the step value
+         * @publicdoc
+         */</span>
+        setStep: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">step</span>) </span>{
+          <span class="hljs-keyword">this</span>._inputElement.setAttribute(<span class="hljs-string">'step'</span>, <span class="hljs-built_in">Object</span>.isNumber(step) &amp;&amp; step &gt; <span class="hljs-number">0</span> ? step : <span class="hljs-number">1</span>);
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setTitle: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">title</span>) </span>{
+          <span class="hljs-keyword">this</span>._inputElement.setAttribute(<span class="hljs-string">'title'</span>, title);
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        getTitle: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._inputElement.getAttribute(<span class="hljs-string">'title'</span>);
+        },
+
+        <span class="hljs-comment">/**
+         * Set the orientation of the slider widget
+         * @param {string} orientation can be 'horizontal' or 'vertical'
+         * @param {boolean} afterLayout internal
+         * @publicdoc
+         */</span>
+        setOrientation: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">orientation, afterLayout</span>) </span>{
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._orientation !== orientation || <span class="hljs-keyword">this</span>._afterLayoutFlag !== afterLayout) {
+            <span class="hljs-keyword">this</span>._orientation = orientation;
+            <span class="hljs-keyword">this</span>._afterLayoutFlag = afterLayout;
+            <span class="hljs-keyword">var</span> newStyle = {};
+
+            <span class="hljs-keyword">if</span> (orientation === <span class="hljs-string">'vertical'</span> &amp;&amp; afterLayout) {
+              <span class="hljs-comment">// Rotate only after layout</span>
+              <span class="hljs-keyword">this</span>.setStyle({
+                <span class="hljs-string">'transform'</span>: <span class="hljs-string">'rotate(-90deg)'</span>
+              });
+            } <span class="hljs-keyword">else</span> {
+              newStyle = {
+                <span class="hljs-string">'-webkit-appearance'</span>: <span class="hljs-literal">null</span>,
+                <span class="hljs-string">'writing-mode'</span>: <span class="hljs-literal">null</span>
+              };
+              <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._inputElement) {
+                <span class="hljs-keyword">this</span>._inputElement.removeAttribute(<span class="hljs-string">'orient'</span>);
+              }
+            }
+            <span class="hljs-keyword">this</span>.setStyle(<span class="hljs-string">'&gt;input[type=range]'</span>, newStyle);
+            <span class="hljs-keyword">this</span>.setAriaAttribute(<span class="hljs-string">"orientation"</span>, orientation);
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * Get the current slider orientation. Default is horizontal.
+         * @returns {string} current css orientation
+         * @publicdoc
+         */</span>
+        getOrientation: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+          <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._orientation ? <span class="hljs-keyword">this</span>._orientation : <span class="hljs-string">'horizontal'</span>;
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setFocus: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">fromMouse</span>) </span>{
+          <span class="hljs-keyword">this</span>._inputElement.domFocus();
+          $<span class="hljs-keyword">super</span>.setFocus.call(<span class="hljs-keyword">this</span>, fromMouse);
+        },
+
+        <span class="hljs-comment">/**
+         * @inheritDoc
+         */</span>
+        setReadOnly: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">readonly</span>) </span>{
+          $<span class="hljs-keyword">super</span>.setReadOnly.call(<span class="hljs-keyword">this</span>, readonly);
+          <span class="hljs-keyword">this</span>._setInputReadOnly(readonly);
+        },
+
+        <span class="hljs-comment">/**
+         * Set if input element is readonly
+         * @param {boolean} readonly
+         * @private
+         */</span>
+        _setInputReadOnly: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">readonly</span>) </span>{
+          <span class="hljs-keyword">if</span> (readonly) {
+            <span class="hljs-keyword">this</span>._inputElement.setAttribute(<span class="hljs-string">'readonly'</span>, <span class="hljs-string">'readonly'</span>);
+          } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">this</span>._inputElement.removeAttribute(<span class="hljs-string">'readonly'</span>);
+          }
+        },
+
+        <span class="hljs-comment">/**
+         * Prevent the container to scroll while doing touch to scroll the tab-titles
+         * @param {Boolean} prevent - true to prevent it, false otherwise
+         * @private
+         */</span>
+        _preventContainerScrolling: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">prevent</span>) </span>{
+          <span class="hljs-keyword">var</span> form = <span class="hljs-keyword">this</span>.getFormWidget();
+          <span class="hljs-keyword">if</span> (form) {
+            form.getContainerElement().toggleClass(<span class="hljs-string">"prevent-touch-scroll"</span>, prevent);
+          }
+        }
+
+      };
+    });
+    cls.WidgetFactory.registerBuilder(<span class="hljs-string">'Slider'</span>, cls.SliderWidget);
+  });
+</code><span class="line-number-clear"></span></pre>
+    </article>
+</section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

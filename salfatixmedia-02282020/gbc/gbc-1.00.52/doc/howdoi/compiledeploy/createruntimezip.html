@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation - Create a runtime zip</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="howdoi/index.html">How do I …</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="howdoi/compiledeploy/index.html">Compile &amp; Deploy</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar active" href="howdoi/compiledeploy/createruntimezip.html">Create a runtime zip</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/deployongas.html">Deploy on GAS</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/jgas.html">Deploy on JGAS</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/customization/index.html">Customize the UI</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_theme_part.html">Add a theme part</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_theme.html">Add a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/modify_theme.html">Modify a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/delete_theme.html">Delete a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_image_or_logo.html">Header image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_image_with_style_class.html">Header image (style class)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_custom_header_widget.html">Header widget</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_footer_text.html">Footer text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/display-sidebar.html">Sidebar (hide)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/display_icon_or_right_sidebar.html">Sidebar or Icon</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change_favicon.html">Favicon image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-file-load-icon.html">File loading icon (change)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/center-file-load-icon.html">File loading icon (center)</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-mttab-bkgd-img.html">Tab background image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-checkbox.html">Checkbox icons</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-pop-up-animation.html">Pop-up animation</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/redirect_application_end.html">Redirect application end</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/customize_theme_settings.html">Customize theme settings</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/customize_user_interface.html">Customize User Interface</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/extend_main_container_widget.html">Extend the MainContainerWidget</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/view_aui_tree.html">View the AUI tree</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/internationalization/index.html">Internationalize my app</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/add_localized_text.html">Add localized text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/configure_right_to_left_languages.html">Right-to-left languages</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/customize_translation_text.html">Translation text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/default_encoding.html">Default encoding</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/migration/index.html">Migrate to GBC</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/evaluate.html">Evaluate your GBC app needs</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/features_limitations.html">Features and limitations</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/from_GWC_HTML5_to_GBC.html">GWC-HTML5 to GBC</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/migration/migration_tips.html">Migration tips</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="howdoi">
+<header class="page-title">
+  <em>Create a runtime zip</em>
+</header>
+<article class="md-content">
+<p>Once your customization is ready, you need to build the GBC runtime that your BDL
+development team will be able to deploy on their development or production
+environments.</p>
+<p>The command creates a zip file for the customization using the settings of the
+<code>compile.mode</code> and <code>compile.customization</code> parameters in <code>&lt;GBC_PROJECT_DIR&gt;/custom.json</code>.
+To produce a runtime package using the settings of the <code>custom.json</code> file, execute:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> grunt --create-zip</span>
+</code></pre>
+<p>You may wish to switch modes (cdev, dev, prod). To accomplish this, either change the
+<code>compile.mode</code> parameter in <code>&lt;GBC_PROJECT_DIR&gt;/custom.json</code> or use the <code>--compile-mode</code>
+option of the <code>grunt</code> command.</p>
+<p>You may wish to switch customizations. To accomplish this, either change the
+<code>compile.customization</code> parameter in <code>&lt;GBC_PROJECT_DIR&gt;/custom.json</code> or use the
+<code>--customization</code> option of the <code>grunt</code> command.</p>
+<p>This example specifies both the mode and customization:</p>
+<pre class="hljs"><code>grunt --customization=customization/myCustomization --compile-mode=prod --create-zip
+</code></pre>
+<p>The resulting runtime will be located in <code>&lt;GBC_PROJECT_DIR&gt;/archive</code> directory. It
+will be named <code>fjs-gbc-&lt;version&gt;-build&lt;build&gt;-customization_&lt;customName&gt;.zip</code>.
+This is a GBC runtime that you can deploy. You can deploy it in the same
+manner as you deploy the standard runtime provided by Four Js on our
+web site download center. See <a href="reference/upgrading/deployment-portal.html">Deploy runtime with Portal</a>.</p>
+<blockquote>
+<p><em>NOTE</em>: You can rename this file to any name that suits you.</p>
+</blockquote>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

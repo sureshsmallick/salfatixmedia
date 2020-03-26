@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="brandsocialnetwork_list" build="3.20.07" sqlDbName="salfatixmedia" text="Form" width="44" height="9">
+  <LStr text="Form"/>
+  <Grid name="grid1" width="44" height="9">
+    <FormField name="formonly.ff_formtitle" colName="ff_formtitle" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Label width="40" justify="center" style="ff_formtitle" posY="0" posX="3" gridWidth="40"/>
+    </FormField>
+    <HBox posY="1" posX="3" gridWidth="40">
+      <Image name="img_back" width="8" height="3" action="cancel" image="fa-arrow-circle-left" autoScale="1" sizePolicy="fixed" style="no_border" comment="Back">
+        <LStr comment="Back"/>
+      </Image>
+      <SpacerItem/>
+      <Image name="addsocialnetwork" width="8" height="3" action="addsocialnetwork" image="fa-plus" autoScale="1" sizePolicy="fixed" style="no_border" comment="Add Social Network">
+        <LStr comment="Add Social Network"/>
+      </Image>
+    </HBox>
+    <ScrollGrid wantFixedPageSize="0" name="salfatixmedia1" doubleClick="editsocialnetwork" style="socialnetworks" posY="2" posX="2" gridWidth="42" gridHeight="6" pageSize="1">
+      <PhantomMatrix name="brandsocialnetworks.brndscl_id" colName="brndscl_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="1" sqlTabName="brandsocialnetworks" pageSize="1">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brandsocialnetworks.brndscl_brand_id" colName="brndscl_brand_id" sqlType="INTEGER" required="1" notNull="1" fieldId="2" sqlTabName="brandsocialnetworks" pageSize="1">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <PhantomMatrix name="brandsocialnetworks.brndscl_socialnetwork_id" colName="brndscl_socialnetwork_id" sqlType="INTEGER" required="1" notNull="1" fieldId="3" sqlTabName="brandsocialnetworks" pageSize="1">
+        <PhantomEdit width="1"/>
+      </PhantomMatrix>
+      <Matrix name="socialnetworks.scl_img" colName="scl_img" sqlType="VARCHAR(32)" required="1" notNull="1" fieldId="4" sqlTabName="socialnetworks" noEntry="1" tabIndex="2" pageSize="1" stepY="5">
+        <Image width="7" height="2ln" autoScale="1" sizePolicy="fixed" style="no_border" posY="1" posX="1" gridWidth="7" gridHeight="4"/>
+      </Matrix>
+      <Matrix name="brandsocialnetworks.brndscl_accountname" colName="brndscl_accountname" sqlType="VARCHAR(255)" required="1" notNull="1" fieldId="6" sqlTabName="brandsocialnetworks" tabIndex="3" pageSize="1" stepY="5">
+        <Edit width="26" scroll="1" posY="1" posX="10" gridWidth="26"/>
+      </Matrix>
+      <Matrix name="formonly.editimage" colName="editimage" fieldId="5" sqlTabName="formonly" noEntry="1" tabIndex="4" pageSize="1" stepY="5">
+        <Image width="3" autoScale="1" sizePolicy="fixed" style="no_border" action="editsocialnetwork" posY="1" posX="38" gridWidth="3"/>
+      </Matrix>
+      <Matrix name="brandsocialnetworks.brndscl_comment" colName="brndscl_comment" sqlType="VARCHAR(255)" fieldId="7" sqlTabName="brandsocialnetworks" tabIndex="5" pageSize="1" stepY="5">
+        <TextEdit width="26" height="3" scrollBars="none" wantReturns="1" posY="2" posX="10" gridWidth="26" gridHeight="3"/>
+      </Matrix>
+      <Matrix name="formonly.viewimage" colName="viewimage" fieldId="9" sqlTabName="formonly" noEntry="1" tabIndex="6" pageSize="1" stepY="5">
+        <Image width="3" autoScale="1" sizePolicy="fixed" style="no_border" action="viewsocialnetwork" posY="2" posX="38" gridWidth="3"/>
+      </Matrix>
+      <Matrix name="formonly.delimage" colName="delimage" fieldId="8" sqlTabName="formonly" noEntry="1" tabIndex="7" pageSize="1" stepY="5">
+        <Image width="3" autoScale="1" sizePolicy="fixed" style="no_border" action="delete" posY="4" posX="38" gridWidth="3"/>
+      </Matrix>
+    </ScrollGrid>
+  </Grid>
+  <RecordView tabName="brandsocialnetworks">
+    <Link colName="brndscl_id" fieldIdRef="1"/>
+    <Link colName="brndscl_brand_id" fieldIdRef="2"/>
+    <Link colName="brndscl_socialnetwork_id" fieldIdRef="3"/>
+    <Link colName="brndscl_accountname" fieldIdRef="6"/>
+    <Link colName="brndscl_comment" fieldIdRef="7"/>
+  </RecordView>
+  <RecordView tabName="socialnetworks">
+    <Link colName="scl_img" fieldIdRef="4"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="editimage" fieldIdRef="5"/>
+    <Link colName="delimage" fieldIdRef="8"/>
+    <Link colName="viewimage" fieldIdRef="9"/>
+  </RecordView>
+  <RecordView tabName="scr_brandsocialnetwork_list">
+    <Link colName="brndscl_id" fieldIdRef="1"/>
+    <Link colName="brndscl_brand_id" fieldIdRef="2"/>
+    <Link colName="brndscl_socialnetwork_id" fieldIdRef="3"/>
+    <Link colName="brndscl_accountname" fieldIdRef="6"/>
+    <Link colName="brndscl_comment" fieldIdRef="7"/>
+    <Link colName="scl_img" fieldIdRef="4"/>
+    <Link colName="delimage" fieldIdRef="8"/>
+    <Link colName="editimage" fieldIdRef="5"/>
+    <Link colName="viewimage" fieldIdRef="9"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+  </RecordView>
+</Form>

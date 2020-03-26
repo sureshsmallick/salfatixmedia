@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation - Theme conditions</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="reference/index.html">Reference</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="reference/api.html">API reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/theme/index.html">Theme reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar active" href="reference/theme/theme_conditions.html">Theme conditions</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_config_json.html">theme.config.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_scss_json_file.html">theme.scss.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_variables.html">Theme variables reference</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/grunt/index.html">Grunt reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/grunt/configure_compilation.html">Configure your compilation</a>
+            
+            <a class="btn btn-sidebar " href="reference/grunt/fix_configuration_issues.html">Fix configuration issues</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/project/index.html">Project reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/project/project_directory.html">Project directory</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/customization_project.html">Customization project</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets.html">Widgets</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_js_file.html">Widget JavaScript file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_template_file.html">Widget template file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_scss_file.html">Widget scss file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets_with_modelhelper.html">Widgets with Modelhelper</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/deliverables.html">Deliverables</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/upgrading/index.html">Upgrading</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/bootstrap.html">Application bootstrap</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/compatibility.html">Compatibility</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/cookies.html">Use of cookies</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/customization_migration.html">Customization migration</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deploy-runtime-on-gas..html">Deploy runtime on GAS</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deployment-portal.html">Deploy runtime with Portal</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/local_storage.html">Local storage</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.10.html">Upgrade to 3.10</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="reference">
+<header class="page-title">
+  <em>Theme conditions</em>
+</header>
+<article class="md-content">
+<h2>Overview</h2>
+<p>Theme condition allows you to filter applicable themes for the user. One would want mobile themes to be only applicable on mobile devices and desktop themes only to be applicable on desktop browsers for example.</p>
+<h2>Available conditions</h2>
+<p>Possible conditions are:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>isDesktop</code></td>
+<td>the running platform is a desktop (e.g. Windows, Linux)</td>
+</tr>
+<tr>
+<td><code>isTouchDevice</code></td>
+<td>the running platform has touch abilities (e.g. mobile device, Microsoft Surface)</td>
+</tr>
+<tr>
+<td><code>isMobile</code></td>
+<td>the running platform is a mobile (e.g. Android, IOS)</td>
+</tr>
+<tr>
+<td><code>isPhone</code></td>
+<td>the running platform is a mobile with a significant size lower than 768px</td>
+</tr>
+<tr>
+<td><code>isTablet</code></td>
+<td>the running platform is a mobile with a significant size higher or equal than 768px</td>
+</tr>
+<tr>
+<td><code>isAndroid</code></td>
+<td>the running platform is Android</td>
+</tr>
+<tr>
+<td><code>isIOS</code></td>
+<td>the running platform is IOS</td>
+</tr>
+<tr>
+<td><code>isChrome</code></td>
+<td>the running browser is Google Chrome</td>
+</tr>
+<tr>
+<td><code>isEdge</code></td>
+<td>the running browser is Microsoft Edge</td>
+</tr>
+<tr>
+<td><code>isFirefox</code></td>
+<td>the running browser is Mozilla Firefox</td>
+</tr>
+<tr>
+<td><code>isIE</code></td>
+<td>the running browser is Microsoft Internet Explorer</td>
+</tr>
+<tr>
+<td><code>isOpera</code></td>
+<td>the running browser is Opera</td>
+</tr>
+<tr>
+<td><code>isSafari</code></td>
+<td>the running browser is Safari</td>
+</tr>
+</tbody>
+</table>
+<h2>Usage</h2>
+<p>Conditions will be declared as a JSON property <code>conditions</code> as an array, like <code>&quot;conditions&quot;:[&quot;isDesktop&quot;, &quot;isChrome&quot;]</code>.</p>
+<p>These conditions can be set at multiple levels:</p>
+<ul>
+<li>at theme parts, in parts <code>theme.config.json</code> as a property of the root object</li>
+<li>at theme definitions (in <code>custom.json</code>) as a property the theme definition object</li>
+</ul>
+<p>When multiple conditions are set in theme parts and/or in theme definitions, an <code>AND</code> logic operator will be applied as the compound condition of the resulting theme.</p>
+<blockquote>
+<p>Beware of conflicting conditions! If a theme gets for example &quot;isDesktop&quot; and &quot;isMobile&quot; conditions, this theme won't be usable in any case.</p>
+<pre class="hljs"><code><span class="hljs-comment">// custom.json</span>
+{ 
+  <span class="hljs-string">"themes"</span>: [
+    <span class="hljs-comment">// this theme will never be available </span>
+    {
+      <span class="hljs-string">"name"</span>:<span class="hljs-string">"impossible-theme"</span>,
+      <span class="hljs-string">"conditions"</span>:[<span class="hljs-string">"isDesktop"</span>, <span class="hljs-string">"isMobile"</span>]
+    }
+  ]
+} 
+</code></pre>
+</blockquote>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

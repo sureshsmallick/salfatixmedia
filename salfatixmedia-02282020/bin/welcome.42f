@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Form name="welcome" build="3.20.08" text="Salfatix Media" width="30" height="10">
+  <ActionDefaultList>
+    <ActionDefault name="go" text="Start">
+      <LStr text="Start"/>
+    </ActionDefault>
+  </ActionDefaultList>
+  <LStr text="Salfatix Media"/>
+  <Grid width="30" height="10">
+    <FormField name="formonly.head" colName="head" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Image width="28" height="3" stretch="both" autoScale="1" style="center" sizePolicy="fixed" posY="0" posX="1" gridWidth="28" gridHeight="3"/>
+    </FormField>
+    <FormField name="formonly.msg" colName="msg" fieldId="1" sqlTabName="formonly" noEntry="1" tabIndex="2">
+      <Label width="28" justify="center" posY="3" posX="1" gridWidth="28" gridHeight="2"/>
+    </FormField>
+    <Button name="go" width="28" style="highvisible" posY="5" posX="1" gridWidth="28" tabIndex="3"/>
+    <FormField name="formonly.foot" colName="foot" fieldId="2" sqlTabName="formonly" noEntry="1" tabIndex="4">
+      <Image width="28" height="4" autoScale="1" stretch="both" style="center" sizePolicy="fixed" action="dev" posY="6" posX="1" gridWidth="28" gridHeight="4"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="head" fieldIdRef="0"/>
+    <Link colName="msg" fieldIdRef="1"/>
+    <Link colName="foot" fieldIdRef="2"/>
+  </RecordView>
+</Form>

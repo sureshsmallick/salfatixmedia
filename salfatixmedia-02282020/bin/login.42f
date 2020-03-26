@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Form name="login" build="3.20.08" width="21" height="2">
+  <ActionDefaultList>
+    <ActionDefault name="accept" text="Ok" acceleratorName="enter">
+      <LStr text="Ok"/>
+    </ActionDefault>
+  </ActionDefaultList>
+  <Grid width="21" height="2">
+    <FormField name="formonly.socialnetwork" colName="socialnetwork" fieldId="0" sqlTabName="formonly" defaultValue="Instagram" notNull="1" required="1" tabIndex="1">
+      <ComboBox width="17" posY="0" posX="1" gridWidth="19">
+        <Item name="Instagram" text="Instagram"/>
+        <Item name="Facebook" text="Facebook"/>
+      </ComboBox>
+    </FormField>
+    <Button name="cancel" width="4" posY="1" posX="10" gridWidth="4" tabIndex="2"/>
+    <Button name="accept" width="4" posY="1" posX="16" gridWidth="4" tabIndex="3"/>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="socialnetwork" fieldIdRef="0"/>
+  </RecordView>
+</Form>

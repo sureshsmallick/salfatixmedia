@@ -1,0 +1,20 @@
+{
+  "name": "TimeEditWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-TimeEditWidget-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "gbc-TimeEditWidget-font-family",
+      "type": "string",
+      "defaultValue": "$theme-font-family"
+    },
+    {
+      "name": "gbc-TimeEditWidget-hover-color",
+      "type": "color",
+      "defaultValue": "$theme-primary-faded-background-color"
+    }
+  ]
+}

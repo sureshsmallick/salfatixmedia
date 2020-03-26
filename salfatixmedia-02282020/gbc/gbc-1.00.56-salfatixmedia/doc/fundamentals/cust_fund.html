@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Customization fundamentals</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="fundamentals/index.html">Basics</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="fundamentals/whatIsGBC.html">What is the GBC?</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/key_players.html">Key Players</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/how_gbc_works.html">How the GBC works</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/what_to_download.html">Downloads</a>
+          
+          <a class="btn btn-sidebar active" href="fundamentals/cust_fund.html">Customization fundamentals</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/cust_migrate.html">Migrating customizations</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/which_cust_theme.html">Customization and Theme Selection</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/view_gbc_doc.html">View the documentation</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/search_gbc_doc.html">Search the documentation</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/tour/index.html">Tour the GBC</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="fundamentals/tour/tour_home_page.html">Home Page</a>
+            
+            <a class="btn btn-sidebar " href="fundamentals/tour/tour_app_page.html">Application page</a>
+            
+            <a class="btn btn-sidebar " href="fundamentals/tour/tour_debug.html">Debug icons</a>
+            
+            <a class="btn btn-sidebar " href="fundamentals/tour/tour_app_end.html">Application ended page</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="fundamentals/syntax.html">Syntax</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="fundamentals">
+<header class="page-title">
+  <em>Customization fundamentals</em>
+</header>
+<article class="md-content">
+<p>Before getting into the technical details behind the customization process, it is good to have an understanding of the theory.</p>
+<h1 id="Projects__Customizations__Themes__and_Theme_Parts">Projects, Customizations, Themes, and Theme Parts <a class="header-anchor" href="fundamentals/cust_fund.html#Projects__Customizations__Themes__and_Theme_Parts" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>The GBC contains these components, as illustrated in <em>Figure 1</em>:</p>
+<ul>
+<li>Projects</li>
+<li>Customizations</li>
+<li>Themes</li>
+<li>Theme parts</li>
+</ul>
+<p><img src="fundamentals/customization_theme_contained.png" alt="Relationship of project, customization, and themes">
+<em><strong>Figure 1: Relationship of project, customization, and themes</strong></em></p>
+<p>These components contain the files that do the work of the customization: the json files, the scss files, and the javascript files. See <em>Figure 2</em> for the directory structure.</p>
+<p><img src="fundamentals/customization_folders.png" alt="Directory structure showing project, customization, and themes"></p>
+<p><em><strong>Figure 2: Directories for customization and themes</strong></em></p>
+<p>At the root is the GBC project directory. In most cases, your team has only one GBC project directory for each version of the GBC project package that they download. A project directory is referred to as the <em><code>gbc-project-dir</code></em>.</p>
+<p>Within the project directory, your team can add customization projects. A customization project contains any of the javascript and scss files that you create to customize the widgets. Each customization that you may add has its own customization directory, which we refer to as a <em><code>customization-project-dir</code></em>.</p>
+<p>Within a customization project, you can define multiple themes. Themes allow the user to change the look-and-feel while remaining within the same customization. For example, if you keep the themes that are provided by default with the customization package, the user can switch between a <em>default</em> theme and a <em>high contrast</em> theme, the latter providing them with an interface with larger fonts. Other possible themes could include providing with a light interface and a dark interface, or providing different color options.</p>
+<p>A theme is comprised of one or more theme parts. A theme part can define theme variables, resources (such as images), and conditions (such as a check on whether the client is desktop or mobile). You combine theme parts to create a theme - think of them as Lego building blocks that you snap together.</p>
+<p>The theme parts may be local (contained within the customization folder) or  global (for theme parts that you may want to use across multiple customizations within the project).</p>
+<blockquote>
+<p><em>TIP</em>: To ease migration, it is recommended that you use local theme parts.</p>
+</blockquote>
+<p>The GBC displays the application according to the customization and theme selected.</p>
+<h1 id="Planning_for_the_customization">Planning for the customization <a class="header-anchor" href="fundamentals/cust_fund.html#Planning_for_the_customization" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>The first step is to answer the question &quot;What do I need to do to complete the customization that I wish to achieve?&quot;</p>
+<p>Identify your goals:</p>
+<ul>
+<li>Do you have a single audience for your application, and only need to customize the interface to apply some corporate branding?</li>
+<li>Do you want your users to be able to change the appearance of the interface?
+For example, you could provide:
+<ul>
+<li>A default view and a high-contrast view (as in the default runtime package)</li>
+<li>A lighter-color view and a darker-color view</li>
+</ul>
+</li>
+<li>Do you have different audiences that require a separate and distinct look-and-feel?</li>
+</ul>
+<p>Let's examine each scenario.</p>
+<h3 id="I_have_a_single_audience_and_only_need_to_apply_corporate_branding">I have a single audience and only need to apply corporate branding <a class="header-anchor" href="fundamentals/cust_fund.html#I_have_a_single_audience_and_only_need_to_apply_corporate_branding" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h3>
+<p>Use a single customization containing a single theme. This theme may be comprised of one or more theme parts.</p>
+<h3 id="I_want_the_user_to_be_able_to_choose_between_different_look_and_feels">I want the user to be able to choose between different look-and-feels <a class="header-anchor" href="fundamentals/cust_fund.html#I_want_the_user_to_be_able_to_choose_between_different_look_and_feels" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h3>
+<p>Start with a single customization and create multiple themes within that customization. Each theme provides a specific look-and-feel. These themes may share some theme parts, but the combination of theme parts define the theme.</p>
+<h3 id="I_want_the_UI_to_change_based_on_the_user_device">I want the UI to change based on the user device <a class="header-anchor" href="fundamentals/cust_fund.html#I_want_the_UI_to_change_based_on_the_user_device" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h3>
+<p>Start with a single customization and create a theme for each device type that the application may encounter. Within the definition of the theme, specify which device the theme is valid for. When users access the application from a device, they see only those themes that are allowed for that device.</p>
+<h3 id="I_have_two_separate_audiences_and_want_each_to_have_their_own_look_and_feel">I have two separate audiences and want each to have their own look-and-feel <a class="header-anchor" href="fundamentals/cust_fund.html#I_have_two_separate_audiences_and_want_each_to_have_their_own_look_and_feel" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h3>
+<p>Create two distinct customizations. If you want to provide any themes to both groups, use theme parts that are defined globally for the project, and then reference those theme parts with the themes set up in each of the customizations.</p>
+<h1 id="Getting_the_right_customization_and_theme_to_the_user">Getting the right customization and theme to the user <a class="header-anchor" href="fundamentals/cust_fund.html#Getting_the_right_customization_and_theme_to_the_user" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>After you modify a customization and its themes, you package your customization and deploy it to the Genero Application Server (GAS). You can deploy many customizations to the GAS, but only one can be marked as the default customization. Unless otherwise specified, a user receives the default customization.</p>
+<p>You can use the URL to specify a different customization.</p>
+<p>Within the selected customization, a default theme is used unless:</p>
+<ul>
+<li>The user has previously accessed the application and selected a different theme. The last selected theme for the user is chosen.</li>
+<li>The theme is specified specifically in the URL.</li>
+<li>The theme is set by a frontcall from the application.</li>
+</ul>
+<p>When the application is running, the theme can be changed, but the customization cannot. To use a different customization, restart the application with the new customization selected.</p>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

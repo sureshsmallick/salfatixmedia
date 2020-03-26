@@ -1,0 +1,40 @@
+{
+  "name": "ComboBoxWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-ComboBoxWidget-padding",
+      "type": "size",
+      "defaultValue": "$theme-combobox-padding"
+    },
+    {
+      "name": "gbc-ComboBoxWidget-placeholder-color",
+      "type": "color",
+      "defaultValue": "$theme-placeholder-color"
+    },
+    {
+      "name": "gbc-ComboBoxWidget-background-color",
+      "type": "color",
+      "defaultValue": "$theme-field-background-color"
+    },
+    {
+      "name": "gbc-ComboBoxWidget-color",
+      "type": "color",
+      "defaultValue": "$theme-secondary-color"
+    },
+    {
+      "name": "gbc-ComboBoxWidget-toggle-icon",
+      "type": "string",
+      "defaultValue": "menu-down"
+    },
+    {
+      "name": "gbc-ComboBoxWidget-toggle-open-icon",
+      "type": "string",
+      "defaultValue": "menu-down"
+    },
+    {
+      "name": "gbc-ComboBoxWidget-toggle-size",
+      "type": "size",
+      "defaultValue": "1em"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="usersocialnetwork_list_mobile" build="3.20.07" sqlDbName="salfatixmedia" text="Form" width="39" height="13">
+  <LStr text="Form"/>
+  <Grid name="grid1" width="39" height="13">
+    <FormField name="formonly.ff_formtitle" colName="ff_formtitle" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Label width="35" justify="center" style="ff_formtitle" posY="1" posX="3" gridWidth="35"/>
+    </FormField>
+    <HBox posY="2" posX="3" gridWidth="35">
+      <Image name="img_back" width="8" height="3" action="cancel" image="fa-arrow-circle-left" autoScale="1" sizePolicy="fixed" style="no_border" comment="Back">
+        <LStr comment="Back"/>
+      </Image>
+      <SpacerItem/>
+      <Image name="addsocialnetwork" width="8" height="3" action="addsocialnetwork" image="fa-plus" autoScale="1" sizePolicy="fixed" style="no_border" comment="Add Social Network">
+        <LStr comment="Add Social Network"/>
+      </Image>
+    </HBox>
+    <Table pageSize="5" name="salfatixmedia1" doubleClick="editsocialnetwork" style="socialnetworksmobile" height="5ln" wantFixedPageSize="1" width="37" posY="3" posX="2" gridWidth="37" gridHeight="7" tabName="scr_usersocialnetwork_list">
+      <PhantomColumn name="usersocialnetworks.usrscl_id" colName="usrscl_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="1" sqlTabName="usersocialnetworks">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="usersocialnetworks.usrscl_usr_id" colName="usrscl_usr_id" sqlType="INTEGER" required="1" notNull="1" fieldId="2" sqlTabName="usersocialnetworks">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="usersocialnetworks.usrscl_socialnetwork_id" colName="usrscl_socialnetwork_id" sqlType="INTEGER" required="1" notNull="1" fieldId="3" sqlTabName="usersocialnetworks">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <TableColumn name="usersocialnetworks.usrscl_accountname" colName="usrscl_accountname" sqlType="VARCHAR(255)" required="1" notNull="1" fieldId="4" sqlTabName="usersocialnetworks" imageColumn="scl_img" tabIndex="2">
+        <Edit width="35" scroll="1"/>
+      </TableColumn>
+      <PhantomColumn name="usersocialnetworks.usrscl_comment" colName="usrscl_comment" sqlType="VARCHAR(255)" fieldId="5" sqlTabName="usersocialnetworks">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="formonly.scl_img" colName="scl_img" fieldId="6" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="formonly.delimage" colName="delimage" fieldId="7" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="formonly.editimage" colName="editimage" fieldId="8" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="formonly.viewimage" colName="viewimage" fieldId="9" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+    </Table>
+    <FormField name="formonly.foot" colName="foot" fieldId="10" sqlTabName="formonly" noEntry="1" tabIndex="3">
+      <Image width="30" height="3" autoScale="1" stretch="both" style="center" sizePolicy="fixed" posY="10" posX="3" gridWidth="30" gridHeight="3"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="usersocialnetworks">
+    <Link colName="usrscl_id" fieldIdRef="1"/>
+    <Link colName="usrscl_usr_id" fieldIdRef="2"/>
+    <Link colName="usrscl_socialnetwork_id" fieldIdRef="3"/>
+    <Link colName="usrscl_accountname" fieldIdRef="4"/>
+    <Link colName="usrscl_comment" fieldIdRef="5"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+    <Link colName="scl_img" fieldIdRef="6"/>
+    <Link colName="delimage" fieldIdRef="7"/>
+    <Link colName="editimage" fieldIdRef="8"/>
+    <Link colName="viewimage" fieldIdRef="9"/>
+    <Link colName="foot" fieldIdRef="10"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="ff_formtitle" fieldIdRef="0"/>
+  </RecordView>
+</Form>

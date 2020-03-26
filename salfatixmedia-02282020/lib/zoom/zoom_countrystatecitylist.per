@@ -1,0 +1,28 @@
+Layout (Style="popup")
+  Grid
+  {
+  [i1  ]               [i2  ]
+  [    ]               [    ]
+  [    ]               [    ]
+  <T list                   >
+  [col1                     ]
+  [col1                     ]
+  [col1                     ]
+  [col1                     ]
+  [col1                     ]
+  <                         >
+  }
+  End
+End
+
+Attributes
+  Image i1 : img_back,Style="no_border",sizePolicy=Fixed,Autoscale,Image="fa-arrow-circle-left",Comment=%"Back",Action=back;
+  Image i2 : img_accept,Style="no_border",sizePolicy=Fixed,Autoscale,Image="fa-check-circle-green",Comment=%"Validate",Action=done;
+  Table list : list,Style="singleclick",DOUBLECLICK=accept;
+  Phantom formonly.cle;
+  Edit col1 = formonly.lbl, Title=%"Name";
+End
+
+Instructions
+  Screen Record srTbl (formonly.*)
+End

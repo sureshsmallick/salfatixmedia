@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Customization project</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="reference/index.html">Reference</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="reference/url.html">URL reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/api.html">API reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/grunt/index.html">Grunt reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/grunt/configure_compilation.html">Configure your compilation</a>
+            
+            <a class="btn btn-sidebar " href="reference/grunt/fix_configuration_issues.html">Fix configuration issues</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/theme/index.html">Theme reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_conditions.html">Theme conditions</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_config_json.html">theme.config.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_scss_json_file.html">theme.scss.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_variables.html">Theme variables reference</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/project/index.html">Project reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/project/project_directory.html">Project directory</a>
+            
+            <a class="btn btn-sidebar active" href="reference/project/customization_project.html">Customization project</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets.html">Widgets</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_js_file.html">Widget JavaScript file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_template_file.html">Widget template file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_scss_file.html">Widget scss file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets_with_modelhelper.html">Widgets with Modelhelper</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/deliverables.html">Deliverables</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/upgrading/index.html">Upgrading</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/compatibility.html">Compatibility</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/customization_migration.html">Customization migration</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/deploy-runtime-on-gas.html">Deploy runtime on GAS</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.20.html">Upgrade to 3.20</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.10.html">Upgrade to 3.10</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="reference">
+<header class="page-title">
+  <em>Customization project</em>
+</header>
+<article class="md-content">
+<p>You can modify features and styles of a Genero Browser Client (GBC) front-end within a customization project directory.</p>
+<p>In the <em><code>customization-project-dir</code></em>, you add your custom JavaScript, HTML, and CSS sources. These sources are compiled into a new front-end for distribution.</p>
+<p>Within <em><code>customization-project-dir</code></em>, these are the directory structures and files that you must understand and manage.</p>
+<table>
+<thead>
+<tr>
+<th>Directory or file</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em><code>customization-project-dir</code></em><code>/js</code> (folder)</td>
+<td>The project's JavaScript and widget template HTML files.</td>
+</tr>
+<tr>
+<td><em><code>customization-project-dir</code></em><code>/locales</code> (folder)</td>
+<td>The project's translation texts for localization.</td>
+</tr>
+<tr>
+<td><em><code>customization-project-dir</code></em><code>/resources</code> (folder)</td>
+<td>Project resources, to include images in an img subdirectory.</td>
+</tr>
+<tr>
+<td><em><code>customization-project-dir</code></em><code>/resources/img</code> (folder)</td>
+<td>The <code>img</code> subdirectory containing images.</td>
+</tr>
+<tr>
+<td><em><code>customization-project-dir</code></em><code>/sass</code> (folder)</td>
+<td>Cascading Style Sheet files for instructing the browser how to display specific widgets. You can change colors, fonts, layout, how text is layed out, and so on.</td>
+</tr>
+<tr>
+<td><em><code>customization-project-dir</code></em><code>/sass/customization.scss</code> (file)</td>
+<td>Entries here modify the stylesheet. While you can add css details directly into this file, a preferred method is to use the <code>@import</code> statement to import other stylesheets contained in the <code>sass</code> folder. For example, if you had a file named <code>myHeader.scss</code> in the customization's <code>sass</code> folder, you would include <code>@import &quot;myHeader&quot;</code> at the top of the <code>customization.scss</code> file.</td>
+</tr>
+<tr>
+<td><em><code>customization-project-dir</code></em><code>/theme</code> (folder)</td>
+<td>Customization-specific theme parts, with each theme part in its own directory.</td>
+</tr>
+<tr>
+<td><em><code>customization-project-dir</code></em><code>/theme/&lt;theme_part&gt;/theme.scss.json</code> (file)</td>
+<td>When using a theme that contains this theme part, change the default GBC color and theme settings for your windows, widgets, messages, buttons, tables, and so on.</td>
+</tr>
+<tr>
+<td><em><code>customization-project-dir</code></em><code>/config.json</code> (file)</td>
+<td>Customization specific configuration file. This one will override information of custom.json file (see <a href="reference/grunt/configure_compilation.html">Configure your compilation</a>).</td>
+</tr>
+<tr>
+<td><em><code>customization-project-dir</code></em><code>/theme.scss.json</code> (file)</td>
+<td>Change the default GBC color and theme settings for your windows, widgets, messages, buttons, tables, and so on. <em><strong>[DEPRECATED]</strong> Changes using scss should now be completed within a theme part, in a file of the same name.</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Creating_a_customization_project">Creating a customization project <a class="header-anchor" href="reference/project/customization_project.html#Creating_a_customization_project" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>To create a new customization project, create a directory under <em><code>gbc-project-dir</code></em><code>/customization</code>. This directory becomes your new <em><code>customization-project-dir</code></em>, and you can start adding your customized files.
+You can have many customization projects. Each must have a unique name.
+A customization project must be compiled to be usable. See <a href="quickstarts/prep_gbc.html">Getting started with GBC</a>.</p>
+<h3 id="Finding_the_right_UI_component">Finding the right UI component <a class="header-anchor" href="reference/project/customization_project.html#Finding_the_right_UI_component" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h3>
+<p>Customization initially consists of working with the GBC client to identify which component in the interface to customize. Each element of the UI is a widget/component.
+Each widget has a defined class name in the format &quot;<code>gbc_xxxWidget</code>&quot;, where &quot;xxx&quot; is the widget name. The widget name is often the name used in the AUI tree.</p>
+<blockquote>
+<p><em>TIP</em>: Use your browser's developer tools to select the UI element you want to change.</p>
+</blockquote>
+<h3 id="Finding_the_widget_files">Finding the widget files <a class="header-anchor" href="reference/project/customization_project.html#Finding_the_widget_files" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h3>
+<p>Once you have identified the widget, locate the corresponding widget files in the <em><code>gbc-project-dir</code></em><code>/src</code> subdirectories:
+The <code>js</code> subdirectories contain the <code>xxxWidget.js</code> and <code>xxxWidget.tpl.html</code> files. The <code>sass</code> subdirectories contain the <code>xxxWidget.scsz</code>
+For more information on widgets, see <a href="reference/project/widgets.html">Widgets</a>.</p>
+<blockquote>
+<p><em>IMPORTANT</em>: We recommend that you leave the core sources untouched.</p>
+</blockquote>
+<h3 id="Extending_widgets">Extending widgets <a class="header-anchor" href="reference/project/customization_project.html#Extending_widgets" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h3>
+<p>For the widgets you want to customize, create <code>MyxxxWidget.tpl.html</code> and <code>MyxxxWidget.js</code> files in your customization project's js directory. These contain the minimal HTML and JavaScript code needed to inherit and extend the parent widgets.</p>
+<p>Create your <code>Myxxx.scss</code> file in your customization project sass directory. Import your .scss in the <code>customization.scss</code> file.</p>
+<p>Follow the recommended naming convention to define new widgets with the same name in the format &quot;<code>MyxxxWidget</code>&quot;, where &quot;xxx&quot; is the parent widget name. For example; <code>MyHeaderBarWidget.js</code>, <code>MyHeaderBarWidget.tpl.html</code>, and <code>MyHeaderBarWidget.scss</code>.</p>
+<p>See <a href="howdoi/index.html">How do I …</a>.</p>
+<h3 id="Compiling_and_testing_as_you_go">Compiling and testing as you go <a class="header-anchor" href="reference/project/customization_project.html#Compiling_and_testing_as_you_go" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h3>
+<p>As you add or update your project files, run the grunt command to compile your project. Open an application to test the customization.</p>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="categorygrid.tmp" build="3.20.07" sqlDbName="salfatixmedia" text="Category List" style="popup" width="35" height="7">
+  <LStr text="Category List"/>
+  <Grid name="grid1" width="35" height="7">
+    <PhantomFormField name="categories.ctgr_id" colName="ctgr_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="3" sqlTabName="categories">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <Image name="img_back" width="5" height="3" action="close" image="fa-arrow-circle-left" autoScale="1" sizePolicy="fixed" style="no_border" comment="Back" posY="1" posX="2" gridWidth="5" gridHeight="3">
+      <LStr comment="Back"/>
+    </Image>
+    <Image name="img_accept" width="5" height="3" action="accept" image="fa-check-circle-green" autoScale="1" sizePolicy="fixed" style="no_border" comment="Validate" posY="1" posX="29" gridWidth="5" gridHeight="3">
+      <LStr comment="Validate"/>
+    </Image>
+    <Label name="categories_ctgr_name_label1" width="7" text="Name" posY="4" posX="2" gridWidth="7">
+      <LStr text="Name"/>
+    </Label>
+    <FormField name="categories.ctgr_name" colName="ctgr_name" sqlType="VARCHAR(32)" required="1" notNull="1" fieldId="0" sqlTabName="categories" tabIndex="1">
+      <Edit width="24" placeholder="category name" scroll="1" posY="4" posX="10" gridWidth="24">
+        <LStr placeholder="category name"/>
+      </Edit>
+    </FormField>
+    <PhantomFormField name="categories.ctgr_uiorder" colName="ctgr_uiorder" sqlType="INTEGER" required="1" notNull="1" fieldId="2" sqlTabName="categories">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="categories.ctgr_parent_id" colName="ctgr_parent_id" sqlType="INTEGER" fieldId="1" sqlTabName="categories">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+  </Grid>
+  <RecordView tabName="categories">
+    <Link colName="ctgr_name" fieldIdRef="0"/>
+    <Link colName="ctgr_parent_id" fieldIdRef="1"/>
+    <Link colName="ctgr_uiorder" fieldIdRef="2"/>
+    <Link colName="ctgr_id" fieldIdRef="3"/>
+  </RecordView>
+  <RecordView tabName="scr_category_grid">
+    <Link colName="ctgr_id" fieldIdRef="3"/>
+    <Link colName="ctgr_name" fieldIdRef="0"/>
+    <Link colName="ctgr_uiorder" fieldIdRef="2"/>
+    <Link colName="ctgr_parent_id" fieldIdRef="1"/>
+  </RecordView>
+</Form>

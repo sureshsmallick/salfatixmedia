@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Home Page</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="fundamentals/index.html">Basics</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="fundamentals/whatIsGBC.html">What is the GBC?</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/key_players.html">Key Players</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/how_gbc_works.html">How the GBC works</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/what_to_download.html">Downloads</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/cust_fund.html">Customization fundamentals</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/cust_migrate.html">Migrating customizations</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/which_cust_theme.html">Customization and Theme Selection</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/view_gbc_doc.html">View the documentation</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/search_gbc_doc.html">Search the documentation</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/tour/index.html">Tour the GBC</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar active" href="fundamentals/tour/tour_home_page.html">Home Page</a>
+            
+            <a class="btn btn-sidebar " href="fundamentals/tour/tour_app_page.html">Application page</a>
+            
+            <a class="btn btn-sidebar " href="fundamentals/tour/tour_debug.html">Debug icons</a>
+            
+            <a class="btn btn-sidebar " href="fundamentals/tour/tour_app_end.html">Application ended page</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="fundamentals/syntax.html">Syntax</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="fundamentals">
+<header class="page-title">
+  <em>Home Page</em>
+</header>
+<article class="md-content">
+<p>The GBC home page displays when explicitly launched or when an application ended page is closed. From the home page, you can open or replay applications.</p>
+<p>To open the GBC home page, type the URL into your browser as follows: <code>http://</code><em><code>host</code></em><code>:</code><em><code>port</code></em><code>/ua/w/</code><em><code>gbc</code></em><code>/index.html</code>, where <em><code>gbc</code></em> is the name of the front-end directory. For example, if you are working with the standalone dispatcher as the Web server, enter <a href="http://localhost:6394/ua/w/gbc/index.html">http://localhost:6394/ua/w/gbc/index.html</a>.</p>
+<p><img src="fundamentals/gbc_home_page.png" alt="GBC home page"></p>
+<p>The home page has two panels:</p>
+<h2 id="The_History_panel">The History panel <a class="header-anchor" href="fundamentals/tour/tour_home_page.html#The_History_panel" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>The History panel lists all recently-opened applications. Applications are automatically added to the list when opened.</p>
+<ul>
+<li>Click on an application to open it.</li>
+<li>Remove an application from the list by clicking on the delete icon for the application.</li>
+</ul>
+<h2 id="The_Bookmarks_panel">The Bookmarks panel <a class="header-anchor" href="fundamentals/tour/tour_home_page.html#The_Bookmarks_panel" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>The Bookmarks panel lists all bookmarked application. Applications are added to the list when you click on the Bookmark icon in an open application.</p>
+<ul>
+<li>Click on an application to open it.</li>
+<li>Remove an application from the list by clicking on the delete icon for the application.</li>
+</ul>
+<h2 id="The_Log_Player">The Log Player <a class="header-anchor" href="fundamentals/tour/tour_home_page.html#The_Log_Player" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>The Log Player allows you to replay an application using its session log. Click on the <strong>Run</strong> button next to the Log Player to open the Log Player.</p>
+<h2 id="The_UA_Url_launcher">The UA Url launcher <a class="header-anchor" href="fundamentals/tour/tour_home_page.html#The_UA_Url_launcher" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>To start an application that is configured on your GAS:</p>
+<ol>
+<li>Type the application name in the UA Url launcher field.</li>
+<li>Click <strong>Run</strong>.</li>
+</ol>
+<p>For example, to launch the Demos app, enter &quot;gwc-demo&quot;.</p>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - GBC 1.00.53</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="migration/index.html">What&#x27;s New</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="migration/1.00.56.html">GBC 1.00.56</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.55.html">GBC 1.00.55</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.54.html">GBC 1.00.54</a>
+          
+          <a class="btn btn-sidebar active" href="migration/1.00.53.html">GBC 1.00.53</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.52.html">GBC 1.00.52</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.51.html">GBC 1.00.51</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.50.html">GBC 1.00.50</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.49.html">GBC 1.00.49</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.48.html">GBC 1.00.48</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.47.html">GBC 1.00.47</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.46.html">GBC 1.00.46</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.45.html">GBC 1.00.45</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.44.html">GBC 1.00.44</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.43.html">GBC 1.00.43</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.41.html">GBC 1.00.41</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.40.html">GBC 1.00.40</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.39.html">GBC 1.00.39</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.38.html">GBC 1.00.38</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="migration">
+<header class="page-title">
+  <em>GBC 1.00.53</em>
+</header>
+<article class="md-content">
+<p>This page provides information about new features, as well as changes you need
+to plan for when migrating your customization to this version.</p>
+<p>For a detailed list of GBC 1.00.53 changes, please refer to
+<a href="https://4js.com/support/issue/?product=GBC&amp;stat=CLOSED&amp;fixed_in=1.00.53">the list of fixes on our issue tracker</a>.</p>
+<h2 id="Consolidated_documentation">Consolidated documentation <a class="header-anchor" href="migration/1.00.53.html#Consolidated_documentation" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>All documentation is now consolidated into a single manual, the <em>Genero Browser Client User Guide</em>.</p>
+<h2 id="Theme_conditions_and_new_default_themes">Theme conditions and new default themes <a class="header-anchor" href="migration/1.00.53.html#Theme_conditions_and_new_default_themes" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>Two new theme conditions are available:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>isBrowser</code></td>
+<td>The running platform is a browser running in Native Rendering mode.</td>
+</tr>
+<tr>
+<td><code>isUR</code></td>
+<td>The running platform is a Genero front-end (the GDC desktop client or the GMA/GMI mobile client) running in Universal Rendering mode. Universal Rendering provides a common rendering solution for all front-end clients based on the GBC.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><em>Important</em>: These two new conditions conflict, and cannot be used at the same time.</p>
+</blockquote>
+<p>For more information, see <a href="reference/theme/theme_conditions.html">Theme conditions</a>.</p>
+<p>GBC 1.00.53 introduces four new default themes to differentiate browser-based rendering (Native Rendering) and Universal Rendering. The current default themes are:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>default</code></td>
+<td>Default theme for browser-based rendering (Native Rendering). This theme was present in the previous GBC version.</td>
+</tr>
+<tr>
+<td><code>highcontrast</code></td>
+<td>Accessible default theme for browser-based rendering (Native Rendering). This theme was present in the previous GBC version.</td>
+</tr>
+<tr>
+<td><code>default_mobile</code></td>
+<td>Mobile theme for browser-based rendering (Native Rendering). This theme was present in the previous GBC version.</td>
+</tr>
+<tr>
+<td><code>highcontrast_mobile</code></td>
+<td>Accessible mobile theme for browser-based rendering (Native Rendering). This theme was present in the previous GBC version.</td>
+</tr>
+<tr>
+<td><code>ur_default</code></td>
+<td>Default GDC theme for Universal Rendering. Equivalent to the <code>default</code> theme, but enabling the context menu by default (see <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-disable-context-menu"><code>theme-disable-context-menu</code></a> )</td>
+</tr>
+<tr>
+<td><code>ur_highcontrast</code></td>
+<td>Accessible GDC theme for Universal Rendering. Equivalent to the <code>highcontrast</code> theme, but enabling the context menu by default (see <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-disable-context-menu"><code>theme-disable-context-menu</code></a> )</td>
+</tr>
+<tr>
+<td><code>ur_default_mobile</code></td>
+<td>Default GMI/GMA theme for Universal Rendering. Equivalent to the <code>default_mobile</code> theme.</td>
+</tr>
+<tr>
+<td><code>ur_highcontrast_mobile</code></td>
+<td>Accessible GMI/GMA theme for Universal Rendering. Equivalent to the <code>highcontrast_mobile</code> theme.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Record_and_replay_a_session_log">Record and replay a session log <a class="header-anchor" href="migration/1.00.53.html#Record_and_replay_a_session_log" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>The methodology for recording and replaying a session log has changed. In addition, the log player now includes a pause button, and images can now be saved with the session log. For complete details, see the following topics:</p>
+<ul>
+<li><a href="howdoi/debug/record_gbc_log.html">Record a GBC log</a></li>
+<li><a href="howdoi/debug/replay_gbc_log.html">Replay a GBC log</a></li>
+</ul>
+<h2 id="Personalize_customization_version_suffix">Personalize customization version suffix <a class="header-anchor" href="migration/1.00.53.html#Personalize_customization_version_suffix" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>Personalize the version number suffix in your customizations builds. The default suffix is <code>c</code> (i.e. <code>1.00.53.c</code>). To change it, define <code>customizationSuffix</code> in the root object of the <code>config.json</code> file of your customization.</p>
+<blockquote>
+<p><em>NOTE</em>: The zip package name (created with the <code>grunt</code> option <code>--create-zip</code>) will now include this suffix, or <code>c</code> if not defined. For example, if you define the <code>customizationSuffix</code> as &quot;<code>mycust</code>&quot;, the zip package file name will be <code>fjs-gbc-1.00.53.mycust-build201904261023-customization_sample.zip</code>.</p>
+</blockquote>
+<p>For more information, see <a href="howdoi/compiledeploy/change-cust-ver-suffix.html">Change the version customization suffix</a>.</p>
+<h2 id="Messages_and_Error_behavior">Messages and Error behavior <a class="header-anchor" href="migration/1.00.53.html#Messages_and_Error_behavior" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>Message and Error are now persistant by default. The message or error displays until the Close icon is clicked.</p>
+<p>To have messages and errors close automatically, specify how long (in seconds) to display the message or error before closing with the themes variables <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-message-display-time"><code>theme-message-display-time</code></a> and <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-error-display-time"><code>theme-error-display-time</code></a>.</p>
+<h2 id="Collapsible_GROUPS_and_accordion_FOLDERS_icon_position">Collapsible GROUPS and accordion FOLDERS icon position <a class="header-anchor" href="migration/1.00.53.html#Collapsible_GROUPS_and_accordion_FOLDERS_icon_position" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>By default, the collapsible GROUPS and accordion FOLDERS icon is set to the left. To change this position, use these theme variables:</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-collapser-position"><code>theme-collapser-position</code></a></td>
+<td>Default behavior, set to &quot;left&quot; by default</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#gbc-GroupWidget-collapser-position"><code>gbc-GroupWidget-collapser-position</code></a></td>
+<td>Default set to <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-collapser-position"><code>theme-collapser-position</code></a> (&quot;left&quot;)</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#gbc-AccordionFolderWidget-collapser-position"><code>gbc-AccordionFolderWidget-collapser-position</code></a></td>
+<td>Default set to <a class="theme-variable-link" href="reference/theme/theme_variables.html#theme-collapser-position"><code>theme-collapser-position</code></a> (&quot;left&quot;)</td>
+</tr>
+</tbody>
+</table>
+<p>This can also be achieved using the <code>collapserPosition</code> presentation style attribute, set on a Group or on an accordion folder. This style can be set to <code>left</code> (default) or <code>right</code>.</p>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

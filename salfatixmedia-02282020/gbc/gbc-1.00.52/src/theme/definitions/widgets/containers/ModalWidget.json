@@ -1,0 +1,25 @@
+{
+  "name": "ModalWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-ModalWidget-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "gbc-ModalWidget-field-height-ratio",
+      "type": "number",
+      "defaultValue": "$theme-field-height-ratio"
+    },
+    {
+      "name": "gbc-ModalWidget-z-index",
+      "type": "number",
+      "defaultValue": "$z-index-Modal"
+    },
+    {
+      "name": "gbc-ModalWidget-button-hover-color",
+      "type": "color",
+      "defaultValue": "$theme-primary-background-color"
+    }
+  ]
+}

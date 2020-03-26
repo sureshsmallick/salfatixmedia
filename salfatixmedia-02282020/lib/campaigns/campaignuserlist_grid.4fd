@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a0a" name="managedform" uid="{2671d91a-88cf-45f8-913a-85c45b17cb2f}">
+  <AGSettings/>
+  <Record joinLeft="campaignuserlist.cmpusrl_user_id" joinOperator="INNER" joinRight="users.usr_id" masterTable="campaignuserlist" name="scr_campaignuserlist_grid" uid="{110dbd76-9233-4e7e-989e-1620ae692852}">
+    <RecordField colName="cmpusrl_id" fieldIdRef="1" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_id" sqlTabName="campaignuserlist" uid="{66e3d1fa-4d53-4516-8f69-96c195721e8d}"/>
+    <RecordField colName="cmpusrl_campaign_id" fieldIdRef="2" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_campaign_id" sqlTabName="campaignuserlist" uid="{a925f736-df7d-4e53-9ed4-43dc90e1b0d0}"/>
+    <RecordField colName="cmpusrl_user_id" fieldIdRef="3" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_user_id" sqlTabName="campaignuserlist" uid="{865e575d-d13b-488e-b004-950aec4da911}"/>
+    <RecordField colName="cmpusrl_visibilitydate" fieldIdRef="4" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_visibilitydate" sqlTabName="campaignuserlist" uid="{0db06035-8208-44ba-ac32-6d52ea53a8bc}"/>
+    <RecordField colName="cmpusrl_previewuser" fieldIdRef="5" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_previewuser" sqlTabName="campaignuserlist" uid="{7cf448f0-93d4-4474-9c7a-edc505fe31e6}"/>
+    <RecordField colName="cmpusrl_wantedbybrand" fieldIdRef="6" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_wantedbybrand" sqlTabName="campaignuserlist" uid="{17720a48-1366-414e-b8be-e5ac4be4ee0d}"/>
+    <RecordField colName="cmpusrl_selectionstartdate" fieldIdRef="7" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_selectionstartdate" sqlTabName="campaignuserlist" uid="{18e718d5-b9d0-46ca-af7a-17e7002bd252}"/>
+    <RecordField colName="cmpusrl_selectionenddate" fieldIdRef="8" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_selectionenddate" sqlTabName="campaignuserlist" uid="{677a2ac0-8f3f-48c6-9218-d805a1c6fee5}"/>
+    <RecordField colName="cmpusrl_selectioncomment" fieldIdRef="9" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_selectioncomment" sqlTabName="campaignuserlist" uid="{034e813c-fcd7-4562-97ba-b090ac49523e}"/>
+    <RecordField colName="cmpusrl_tonotify" fieldIdRef="10" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_tonotify" sqlTabName="campaignuserlist" uid="{5e5bba73-6c68-4553-9dc1-877c560792e2}"/>
+    <RecordField colName="cmpusrl_notificationdate" fieldIdRef="11" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_notificationdate" sqlTabName="campaignuserlist" uid="{322e39e7-ea3b-4c3e-a5bf-e7647b970926}"/>
+    <RecordField colName="cmpusrl_isacceptbyuser" fieldIdRef="12" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_isacceptbyuser" sqlTabName="campaignuserlist" uid="{9c0d974f-21a0-415d-b866-e3466f73d9a6}"/>
+    <RecordField colName="cmpusrl_useranswerdate" fieldIdRef="13" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_useranswerdate" sqlTabName="campaignuserlist" uid="{3a5525e7-9cc2-4dd8-9789-be05ff137c82}"/>
+    <RecordField colName="cmpusrl_usertotalprice" fieldIdRef="59" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_usertotalprice" sqlTabName="campaignuserlist" table_alias_name="campaignuserlist1" uid="{2051d58b-0984-46ef-b43a-bf290526afa1}"/>
+    <RecordField colName="cmpusrl_salfatixtotalprice" fieldIdRef="60" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_salfatixtotalprice" sqlTabName="campaignuserlist" table_alias_name="campaignuserlist1" uid="{3352c5bd-cac1-498e-8cb4-f5ed6bdd36d3}"/>
+    <RecordField colName="cmpusrl_userwantedprice" fieldIdRef="64" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_userwantedprice" sqlTabName="campaignuserlist" uid="{e8dc9191-d0ea-4976-bfac-12f04d1d4c14}"/>
+    <RecordField colName="cmpusrl_uiorder" fieldIdRef="65" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_uiorder" sqlTabName="campaignuserlist" uid="{4763cc96-1e64-41a4-b4e4-f72907710a77}"/>
+    <RecordField colName="cmpusrl_isacceptedbysalfatix" fieldIdRef="66" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_isacceptedbysalfatix" sqlTabName="campaignuserlist" uid="{07d4efb8-15c8-430d-a49e-f7b14a4a4798}"/>
+    <RecordField colName="cmpusrl_isacceptedbybrand" fieldIdRef="67" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_isacceptedbybrand" sqlTabName="campaignuserlist" uid="{ce739881-e2c7-451c-99d0-14a4213afb98}"/>
+    <RecordField colName="cmpusrl_commentforbrand" fieldIdRef="68" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_commentforbrand" sqlTabName="campaignuserlist" uid="{76b7e233-d568-4076-9d8f-bf5fce47e188}"/>
+    <RecordField colName="cmpusrl_usergotproduct" fieldIdRef="69" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_usergotproduct" sqlTabName="campaignuserlist" uid="{71258887-10c3-46bb-82f5-c4bdc14c60f5}"/>
+    <RecordField colName="cmpusrl_isuserpaid" fieldIdRef="70" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_isuserpaid" sqlTabName="campaignuserlist" uid="{4c562e4d-ebea-446c-8671-f58b9b592f6b}"/>
+    <RecordField colName="cmpusrl_userpaid" fieldIdRef="71" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_userpaid" sqlTabName="campaignuserlist" uid="{f955e470-2d77-4287-a136-01ac721212cf}"/>
+    <RecordField colName="usr_id" fieldIdRef="14" fieldType="TABLE_COLUMN" lookup="LOOKUP_u261_715" name="users.usr_id" sqlTabName="users" uid="{ec3841cf-0eb0-4316-b803-51e412f3e668}"/>
+    <RecordField colName="usr_gender_id" fieldIdRef="15" fieldType="TABLE_COLUMN" name="users.usr_gender_id" sqlTabName="users" uid="{5257ea50-73d4-4e17-97c9-7f00f8b0669e}"/>
+    <RecordField colName="usr_firstname" fieldIdRef="16" fieldType="TABLE_COLUMN" name="users.usr_firstname" sqlTabName="users" uid="{c71917bf-c1b3-4e85-aae2-a2a0226b8ea6}"/>
+    <RecordField colName="usr_lastname" fieldIdRef="17" fieldType="TABLE_COLUMN" name="users.usr_lastname" sqlTabName="users" uid="{d7f404e3-3882-40ba-8476-a11a1f81b850}"/>
+    <RecordField colName="usr_birthday" fieldIdRef="18" fieldType="TABLE_COLUMN" name="users.usr_birthday" sqlTabName="users" uid="{a7e1ed47-712e-44ca-8d03-9e89fe7819a1}"/>
+    <RecordField colName="usr_email" fieldIdRef="19" fieldType="TABLE_COLUMN" name="users.usr_email" sqlTabName="users" uid="{974d412a-8c58-40fe-bb63-2fa0f128524a}"/>
+    <RecordField colName="usr_password" fieldIdRef="20" fieldType="TABLE_COLUMN" name="users.usr_password" sqlTabName="users" uid="{5d545584-3026-4ec6-93f2-41e22048bccb}"/>
+    <RecordField colName="usr_country_id" fieldIdRef="21" fieldType="TABLE_COLUMN" name="users.usr_country_id" sqlTabName="users" uid="{68739b03-cc37-4b27-bda5-35371223b968}"/>
+    <RecordField colName="usr_state_id" fieldIdRef="22" fieldType="TABLE_COLUMN" name="users.usr_state_id" sqlTabName="users" uid="{80057086-a030-4fed-b3dc-3f3c249f922b}"/>
+    <RecordField colName="usr_city_id" fieldIdRef="23" fieldType="TABLE_COLUMN" name="users.usr_city_id" sqlTabName="users" uid="{9793d928-0c98-4934-af73-fe3e1caede75}"/>
+    <RecordField colName="usr_address_number" fieldIdRef="24" fieldType="TABLE_COLUMN" name="users.usr_address_number" sqlTabName="users" uid="{d32c7f0a-88f1-43b2-b4b8-eea0409fd79e}"/>
+    <RecordField colName="usr_address_street" fieldIdRef="25" fieldType="TABLE_COLUMN" name="users.usr_address_street" sqlTabName="users" uid="{46d90f7f-83c2-457a-b8e3-d99c80e8f6df}"/>
+    <RecordField colName="usr_address_zipcode" fieldIdRef="26" fieldType="TABLE_COLUMN" name="users.usr_address_zipcode" sqlTabName="users" uid="{fcf98385-89ba-4804-b026-8c54208e048b}"/>
+    <RecordField colName="usr_address_town" fieldIdRef="27" fieldType="TABLE_COLUMN" name="users.usr_address_town" sqlTabName="users" uid="{69597541-ec12-4acf-98fc-7bf53fac1064}"/>
+    <RecordField colName="usr_address_more" fieldIdRef="28" fieldType="TABLE_COLUMN" name="users.usr_address_more" sqlTabName="users" uid="{16a74671-72e3-4c64-bf6c-e176b45c1628}"/>
+    <RecordField colName="usr_mobile_phone" fieldIdRef="29" fieldType="TABLE_COLUMN" name="users.usr_mobile_phone" sqlTabName="users" uid="{703bc4b7-6de2-4afe-ba06-873908498c75}"/>
+    <RecordField colName="usr_instagram_userid" fieldIdRef="30" fieldType="TABLE_COLUMN" name="users.usr_instagram_userid" sqlTabName="users" uid="{d64e6e09-b035-44a6-8c37-40883e23d820}"/>
+    <RecordField colName="usr_instagram_username" fieldIdRef="31" fieldType="TABLE_COLUMN" name="users.usr_instagram_username" sqlTabName="users" uid="{6ac47856-2fbc-459f-a166-6f5cc22369d4}"/>
+    <RecordField colName="usr_instagram_fullname" fieldIdRef="32" fieldType="TABLE_COLUMN" name="users.usr_instagram_fullname" sqlTabName="users" uid="{58b0c268-ce00-4648-87ce-35ff177263cc}"/>
+    <RecordField colName="usr_instagram_profilepicture" fieldIdRef="33" fieldType="TABLE_COLUMN" name="users.usr_instagram_profilepicture" sqlTabName="users" uid="{29eea577-a7e0-42a6-a264-e703cf0e7c45}"/>
+    <RecordField colName="usr_instagram_biography" fieldIdRef="34" fieldType="TABLE_COLUMN" name="users.usr_instagram_biography" sqlTabName="users" uid="{60bbc047-f3dd-4d3c-8e24-da21d463acaa}"/>
+    <RecordField colName="usr_instagram_website" fieldIdRef="35" fieldType="TABLE_COLUMN" name="users.usr_instagram_website" sqlTabName="users" uid="{9823788b-eec6-474b-ace7-5ed461c3fc1d}"/>
+    <RecordField colName="usr_instagram_is_private" fieldIdRef="36" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_private" sqlTabName="users" uid="{76a19c0f-6663-42ec-b8fe-f5fbf5797207}"/>
+    <RecordField colName="usr_instagram_is_verified" fieldIdRef="37" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_verified" sqlTabName="users" uid="{2a6f2a52-7943-47b7-8cd2-3a5bfa875a6a}"/>
+    <RecordField colName="usr_instagram_is_business" fieldIdRef="38" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_business" sqlTabName="users" uid="{954d7233-e9e7-4f4d-afa2-b24809857205}"/>
+    <RecordField colName="usr_bank_name" fieldIdRef="39" fieldType="TABLE_COLUMN" name="users.usr_bank_name" sqlTabName="users" uid="{6758184b-c276-46ab-8b27-e142308489b6}"/>
+    <RecordField colName="usr_bank_iban" fieldIdRef="40" fieldType="TABLE_COLUMN" name="users.usr_bank_iban" sqlTabName="users" uid="{3052126c-bbdd-4ae4-ae8d-39164aa2078f}"/>
+    <RecordField colName="usr_bank_swift" fieldIdRef="41" fieldType="TABLE_COLUMN" name="users.usr_bank_swift" sqlTabName="users" uid="{635762df-45a0-48f2-821c-2d1d24b9df8d}"/>
+    <RecordField colName="usr_paypal" fieldIdRef="57" fieldType="TABLE_COLUMN" name="users.usr_paypal" sqlTabName="users" uid="{c3c97b8d-2854-4abc-abee-fd85b0e82607}"/>
+    <RecordField colName="usr_mobile_notifications" fieldIdRef="42" fieldType="TABLE_COLUMN" name="users.usr_mobile_notifications" sqlTabName="users" uid="{7637ef73-3edf-44bf-be86-2b869cbe8f92}"/>
+    <RecordField colName="usr_notif_style" fieldIdRef="62" fieldType="TABLE_COLUMN" name="users.usr_notif_style" sqlTabName="users" uid="{4f9a93fc-1551-4c8f-a190-6f4ff9116e2f}"/>
+    <RecordField colName="usr_email_notifications" fieldIdRef="43" fieldType="TABLE_COLUMN" name="users.usr_email_notifications" sqlTabName="users" uid="{817e4159-2c95-42b9-a0ae-f8e90d13b393}"/>
+    <RecordField colName="usr_email_style" fieldIdRef="63" fieldType="TABLE_COLUMN" name="users.usr_email_style" sqlTabName="users" uid="{86240d1f-d1f6-462a-a3be-2bf6b6a178ee}"/>
+    <RecordField colName="usr_currency_id" fieldIdRef="44" fieldType="TABLE_COLUMN" name="users.usr_currency_id" sqlTabName="users" uid="{36b6a9f0-f8dc-4c00-a23c-55a9446e6440}"/>
+    <RecordField colName="usr_accountstatus_id" fieldIdRef="45" fieldType="TABLE_COLUMN" name="users.usr_accountstatus_id" sqlTabName="users" uid="{ed9b6f70-ec24-4a71-8775-f765c05f7347}"/>
+    <RecordField colName="usr_createdby_id" fieldIdRef="46" fieldType="TABLE_COLUMN" name="users.usr_createdby_id" sqlTabName="users" uid="{1a682654-5d8c-45bb-870f-fdb7e3bbebd0}"/>
+    <RecordField colName="usr_creationdate" fieldIdRef="47" fieldType="TABLE_COLUMN" name="users.usr_creationdate" sqlTabName="users" uid="{2335fe29-15cc-4f39-8f5f-ad2851064eb5}"/>
+    <RecordField colName="usr_deletiondate" fieldIdRef="48" fieldType="TABLE_COLUMN" name="users.usr_deletiondate" sqlTabName="users" uid="{583d74c2-7247-4413-bfd8-2d41ff612d0e}"/>
+    <RecordField colName="usr_validationdate" fieldIdRef="49" fieldType="TABLE_COLUMN" name="users.usr_validationdate" sqlTabName="users" uid="{1b747abb-486c-440e-9304-7c4d389f533d}"/>
+    <RecordField colName="usr_canceldate" fieldIdRef="50" fieldType="TABLE_COLUMN" name="users.usr_canceldate" sqlTabName="users" uid="{2c9690bf-0289-469a-bafc-6bf2a766d735}"/>
+    <RecordField colName="usr_suspendeddate" fieldIdRef="51" fieldType="TABLE_COLUMN" name="users.usr_suspendeddate" sqlTabName="users" uid="{e494c05c-a48d-4fe7-81a3-efb86ba42de3}"/>
+    <RecordField colName="usr_stopdate" fieldIdRef="52" fieldType="TABLE_COLUMN" name="users.usr_stopdate" sqlTabName="users" uid="{b8d40d67-dec3-44b8-bcad-21ddf0f1c622}"/>
+    <RecordField colName="usr_emailvalidationdate" fieldIdRef="53" fieldType="TABLE_COLUMN" name="users.usr_emailvalidationdate" sqlTabName="users" uid="{e8c66713-9450-4152-9589-9a1535788d70}"/>
+    <RecordField colName="usr_lastupdatedate" fieldIdRef="54" fieldType="TABLE_COLUMN" name="users.usr_lastupdatedate" sqlTabName="users" uid="{47860c00-aa58-46a3-84d9-68694b75e0aa}"/>
+    <RecordField colName="usr_lastlogindate" fieldIdRef="55" fieldType="TABLE_COLUMN" name="users.usr_lastlogindate" sqlTabName="users" uid="{67961f07-9db2-485c-89d0-8f8754ebe550}"/>
+    <RecordField colName="usr_instagram_token" fieldIdRef="61" fieldType="TABLE_COLUMN" name="users.usr_instagram_token" sqlTabName="users" uid="{b098733c-1eda-4b2c-b5bb-daebcb07427f}"/>
+    <RecordField colName="usr_instagram_profilepicture" fieldIdRef="56" fieldType="NON_DATABASE" length="255" name="usr_instagram_profilepicture" sqlTabName="users" sqlType="VARCHAR" uid="{484737a1-5f8b-4894-bbb2-9b74c4c8ef43}"/>
+  </Record>
+  <Record name="Undefined" uid="{3cfd268e-f0f7-4a72-ac5f-e4cbb8e5725f}">
+    <RecordField fieldIdRef="58" name="ffimage_value" uid="{d9221bad-783b-42a0-9495-1cf9b66d526b}"/>
+  </Record>
+  <Form gridHeight="35" gridWidth="58" name="form" style="centerwindowpopup">
+    <Grid gridHeight="34" gridWidth="54" name="salfatixmedia1" posX="1" posY="1">
+      <Phantom colName="usr_instagram_token" fieldId="61" fieldType="TABLE_COLUMN" name="users.usr_instagram_token" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_paypal" fieldId="57" fieldType="TABLE_COLUMN" name="users.usr_paypal" sqlTabName="users" widget="Phantom"/>
+      <FFImage action="upload_photo" autoScale="true" colName="usr_instagram_profilepicture" fieldId="56" fieldType="NON_DATABASE" gridHeight="5" gridWidth="12" length="255" name="usr_instagram_profilepicture" posX="1" posY="2" sizePolicy="fixed" sqlTabName="users" sqlType="VARCHAR" style="no_border" widget="FFImage">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </FFImage>
+      <FFImage action="save" autoScale="true" comment="Save" fieldId="58" gridHeight="3" gridWidth="5" justify="center" name="ffimage_value" posX="48" posY="2" sizePolicy="fixed" style="no_border" title="ffimage1" widget="FFImage"/>
+      <Label gridHeight="1" gridWidth="21" name="lbl_usr_firstname" posX="1" posY="7" text="First Name">
+        <Initializer text="dbschema:users.usr_firstname/@label"/>
+      </Label>
+      <Edit colName="usr_firstname" fieldId="16" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="users.usr_firstname" noEntry="true" posX="23" posY="7" scroll="true" sqlTabName="users" tabIndex="1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="21" name="lbl_usr_lastname" posX="1" posY="8" text="Last name">
+        <Initializer text="dbschema:users.usr_lastname/@label"/>
+      </Label>
+      <Edit colName="usr_lastname" fieldId="17" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="users.usr_lastname" noEntry="true" posX="23" posY="8" scroll="true" sqlTabName="users" tabIndex="2" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="21" name="lbl_cmpusrl_visibilitydate" posX="1" posY="9" text="Influencer can see campaign on">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_visibilitydate/@label"/>
+      </Label>
+      <DateEdit colName="cmpusrl_visibilitydate" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="campaignuserlist.cmpusrl_visibilitydate" posX="23" posY="9" sqlTabName="campaignuserlist" tabIndex="3" widget="DateEdit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </DateEdit>
+      <ComboBox colName="cmpusrl_previewuser" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" hidden="true" items="No, Yes" name="campaignuserlist.cmpusrl_previewuser" posX="23" posY="10" sqlTabName="campaignuserlist" tabIndex="4" widget="ComboBox">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        <Item lstrtext="true" name="0" text="No"/>
+        <Item lstrtext="true" name="1" text="Yes"/>
+      </ComboBox>
+      <Phantom colName="cmpusrl_id" fieldId="1" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_id" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_campaign_id" fieldId="2" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_campaign_id" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_user_id" fieldId="3" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_user_id" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Label gridHeight="1" gridWidth="21" hidden="true" name="lbl_cmpusrl_previewuser" posX="1" posY="10" text="Preview influencer">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_previewuser/@label"/>
+      </Label>
+      <Label gridHeight="1" gridWidth="21" name="lbl_cmpusrl_wantedbybrand" posX="1" posY="11" text="Required by brand">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_wantedbybrand/@label"/>
+      </Label>
+      <ComboBox colName="cmpusrl_wantedbybrand" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" items="No, Yes" name="campaignuserlist.cmpusrl_wantedbybrand" posX="23" posY="11" sqlTabName="campaignuserlist" tabIndex="5" widget="ComboBox">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        <Item lstrtext="true" name="0" text="No"/>
+        <Item lstrtext="true" name="1" text="Yes"/>
+      </ComboBox>
+      <Label gridHeight="1" gridWidth="21" name="lbl_cmpusrl_selectionstartdate" posX="1" posY="12" text="Influencer can apply from">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_selectionstartdate/@label"/>
+      </Label>
+      <DateEdit colName="cmpusrl_selectionstartdate" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="campaignuserlist.cmpusrl_selectionstartdate" posX="23" posY="12" sqlTabName="campaignuserlist" tabIndex="6" widget="DateEdit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </DateEdit>
+      <Label gridHeight="1" gridWidth="3" name="lbl_cmpusrl_selectionenddate" posX="34" posY="12" text="To">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_selectionenddate/@label"/>
+      </Label>
+      <DateEdit colName="cmpusrl_selectionenddate" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="campaignuserlist.cmpusrl_selectionenddate" posX="38" posY="12" sqlTabName="campaignuserlist" tabIndex="7" widget="DateEdit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </DateEdit>
+      <Label gridHeight="1" gridWidth="21" name="lbl_cmpusrl_usertotalprice" posX="1" posY="14" text="Influencer proposed price">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_usertotalprice/@label"/>
+      </Label>
+      <Edit colName="cmpusrl_usertotalprice" fieldId="59" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="campaignuserlist.cmpusrl_usertotalprice" posX="23" posY="14" scroll="true" sqlTabName="campaignuserlist" tabIndex="8" table_alias_name="campaignuserlist1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="21" name="lbl_cmpusrl_userwantedprice" posX="1" posY="15" text="Influencer wanted price">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_usertotalprice/@label"/>
+      </Label>
+      <Edit colName="cmpusrl_userwantedprice" fieldId="64" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="campaignuserlist.cmpusrl_userwantedprice" noEntry="true" posX="23" posY="15" scroll="true" sqlTabName="campaignuserlist" tabIndex="9" title="cmpusrl_userwantedprice" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="21" name="lbl_cmpusrl_salfatixtotalprice" posX="1" posY="16" text="Brand cost">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_salfatixtotalprice/@label"/>
+      </Label>
+      <Edit colName="cmpusrl_salfatixtotalprice" fieldId="60" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="campaignuserlist.cmpusrl_salfatixtotalprice" posX="23" posY="16" scroll="true" sqlTabName="campaignuserlist" tabIndex="10" table_alias_name="campaignuserlist1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="21" hidden="true" name="lbl_cmpusrl_tonotify" posX="1" posY="17" text="To notify">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_tonotify/@label"/>
+      </Label>
+      <ComboBox colName="cmpusrl_tonotify" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" hidden="true" items="No, Yes" name="campaignuserlist.cmpusrl_tonotify" posX="23" posY="17" sqlTabName="campaignuserlist" tabIndex="11" widget="ComboBox">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        <Item lstrtext="true" name="0" text="No"/>
+        <Item lstrtext="true" name="1" text="Yes"/>
+      </ComboBox>
+      <Label gridHeight="1" gridWidth="21" hidden="true" name="lbl_cmpusrl_notificationdate" posX="1" posY="18" text="Notification date">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_notificationdate/@label"/>
+      </Label>
+      <DateTimeEdit colName="cmpusrl_notificationdate" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" hidden="true" name="campaignuserlist.cmpusrl_notificationdate" noEntry="true" posX="23" posY="18" sqlTabName="campaignuserlist" tabIndex="12" widget="DateTimeEdit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </DateTimeEdit>
+      <Label gridHeight="1" gridWidth="21" name="lbl_cmpusrl_isacceptbyuser" posX="1" posY="19" text="Answer">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_isacceptbyuser/@label"/>
+      </Label>
+      <ComboBox colName="cmpusrl_isacceptbyuser" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" items="Refused, Applied" name="campaignuserlist.cmpusrl_isacceptbyuser" noEntry="true" posX="23" posY="19" sqlTabName="campaignuserlist" tabIndex="13" widget="ComboBox">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        <Item lstrtext="true" name="0" text="Refused"/>
+        <Item lstrtext="true" name="1" text="Applied"/>
+      </ComboBox>
+      <Label gridHeight="1" gridWidth="21" name="lbl_cmpusrl_useranswerdate" posX="1" posY="20" text="Answer date">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_useranswerdate/@label"/>
+      </Label>
+      <DateTimeEdit colName="cmpusrl_useranswerdate" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="25" name="campaignuserlist.cmpusrl_useranswerdate" noEntry="true" posX="23" posY="20" sqlTabName="campaignuserlist" tabIndex="14" widget="DateTimeEdit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </DateTimeEdit>
+      <Label gridHeight="1" gridWidth="21" name="lbl_cmpusrl_selectioncomment" posX="1" posY="21" text="Internal comment">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_selectioncomment/@label"/>
+      </Label>
+      <TextEdit colName="cmpusrl_selectioncomment" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="4" gridWidth="30" name="campaignuserlist.cmpusrl_selectioncomment" posX="23" posY="21" sqlTabName="campaignuserlist" tabIndex="15" widget="TextEdit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </TextEdit>
+      <Label gridHeight="1" gridWidth="21" name="lbl_cmpusrl_commentforbrand" posX="1" posY="25" text="Comment for brand">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_selectioncomment/@label"/>
+      </Label>
+      <TextEdit colName="cmpusrl_commentforbrand" fieldId="68" fieldType="TABLE_COLUMN" gridHeight="4" gridWidth="30" name="campaignuserlist.cmpusrl_commentforbrand" posX="23" posY="25" sqlTabName="campaignuserlist" tabIndex="-1" title="cmpusrl_commentforbrand" widget="TextEdit"/>
+      <Label gridHeight="1" gridWidth="21" name="lbl_cmpusrl_usergotproduct" posX="1" posY="29" text="Influencer got product">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_selectioncomment/@label"/>
+      </Label>
+      <ComboBox colName="cmpusrl_usergotproduct" fieldId="69" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" items="No, Yes" name="campaignuserlist.cmpusrl_usergotproduct" posX="23" posY="29" sqlTabName="campaignuserlist" tabIndex="-1" title="cmpusrl_usergotproduct" widget="ComboBox">
+        <Item lstrtext="false" name="0" text="No"/>
+        <Item lstrtext="false" name="1" text="Yes"/>
+      </ComboBox>
+      <Label gridHeight="1" gridWidth="21" name="lbl_cmpusrl_isuserpaid" posX="1" posY="30" text="Influencer paid ?">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_selectioncomment/@label"/>
+      </Label>
+      <ComboBox colName="cmpusrl_isuserpaid" fieldId="70" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" items="No, Yes" name="campaignuserlist.cmpusrl_isuserpaid" posX="23" posY="30" sqlTabName="campaignuserlist" tabIndex="-1" title="cmpusrl_isuserpaid" widget="ComboBox">
+        <Item lstrtext="false" name="0" text="No"/>
+        <Item lstrtext="false" name="1" text="Yes"/>
+      </ComboBox>
+      <Label gridHeight="1" gridWidth="21" name="lbl_cmpusrl_userpaid" posX="1" posY="31" text="Paid to influencer">
+        <Initializer text="dbschema:campaignuserlist.cmpusrl_selectioncomment/@label"/>
+      </Label>
+      <Edit colName="cmpusrl_userpaid" fieldId="71" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="campaignuserlist.cmpusrl_userpaid" posX="23" posY="31" scroll="true" sqlTabName="campaignuserlist" tabIndex="-1" title="cmpusrl_userpaid" widget="Edit"/>
+      <Phantom colName="usr_id" fieldId="14" fieldType="TABLE_COLUMN" name="users.usr_id" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_gender_id" fieldId="15" fieldType="TABLE_COLUMN" name="users.usr_gender_id" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_birthday" fieldId="18" fieldType="TABLE_COLUMN" name="users.usr_birthday" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_email" fieldId="19" fieldType="TABLE_COLUMN" name="users.usr_email" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_password" fieldId="20" fieldType="TABLE_COLUMN" name="users.usr_password" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_country_id" fieldId="21" fieldType="TABLE_COLUMN" name="users.usr_country_id" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_state_id" fieldId="22" fieldType="TABLE_COLUMN" name="users.usr_state_id" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_city_id" fieldId="23" fieldType="TABLE_COLUMN" name="users.usr_city_id" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_address_number" fieldId="24" fieldType="TABLE_COLUMN" name="users.usr_address_number" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_address_street" fieldId="25" fieldType="TABLE_COLUMN" name="users.usr_address_street" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_address_zipcode" fieldId="26" fieldType="TABLE_COLUMN" name="users.usr_address_zipcode" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_address_town" fieldId="27" fieldType="TABLE_COLUMN" name="users.usr_address_town" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_address_more" fieldId="28" fieldType="TABLE_COLUMN" name="users.usr_address_more" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_mobile_phone" fieldId="29" fieldType="TABLE_COLUMN" name="users.usr_mobile_phone" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_instagram_userid" fieldId="30" fieldType="TABLE_COLUMN" name="users.usr_instagram_userid" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_instagram_username" fieldId="31" fieldType="TABLE_COLUMN" name="users.usr_instagram_username" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_instagram_fullname" fieldId="32" fieldType="TABLE_COLUMN" name="users.usr_instagram_fullname" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_instagram_profilepicture" fieldId="33" fieldType="TABLE_COLUMN" name="users.usr_instagram_profilepicture" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_instagram_biography" fieldId="34" fieldType="TABLE_COLUMN" name="users.usr_instagram_biography" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_instagram_website" fieldId="35" fieldType="TABLE_COLUMN" name="users.usr_instagram_website" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_instagram_is_private" fieldId="36" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_private" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_instagram_is_verified" fieldId="37" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_verified" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_instagram_is_business" fieldId="38" fieldType="TABLE_COLUMN" name="users.usr_instagram_is_business" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_bank_name" fieldId="39" fieldType="TABLE_COLUMN" name="users.usr_bank_name" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_bank_iban" fieldId="40" fieldType="TABLE_COLUMN" name="users.usr_bank_iban" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_bank_swift" fieldId="41" fieldType="TABLE_COLUMN" name="users.usr_bank_swift" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_mobile_notifications" fieldId="42" fieldType="TABLE_COLUMN" name="users.usr_mobile_notifications" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_email_notifications" fieldId="43" fieldType="TABLE_COLUMN" name="users.usr_email_notifications" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_currency_id" fieldId="44" fieldType="TABLE_COLUMN" name="users.usr_currency_id" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_accountstatus_id" fieldId="45" fieldType="TABLE_COLUMN" name="users.usr_accountstatus_id" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_createdby_id" fieldId="46" fieldType="TABLE_COLUMN" name="users.usr_createdby_id" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_creationdate" fieldId="47" fieldType="TABLE_COLUMN" name="users.usr_creationdate" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_deletiondate" fieldId="48" fieldType="TABLE_COLUMN" name="users.usr_deletiondate" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_validationdate" fieldId="49" fieldType="TABLE_COLUMN" name="users.usr_validationdate" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_canceldate" fieldId="50" fieldType="TABLE_COLUMN" name="users.usr_canceldate" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_suspendeddate" fieldId="51" fieldType="TABLE_COLUMN" name="users.usr_suspendeddate" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_stopdate" fieldId="52" fieldType="TABLE_COLUMN" name="users.usr_stopdate" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_emailvalidationdate" fieldId="53" fieldType="TABLE_COLUMN" name="users.usr_emailvalidationdate" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_lastupdatedate" fieldId="54" fieldType="TABLE_COLUMN" name="users.usr_lastupdatedate" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_lastlogindate" fieldId="55" fieldType="TABLE_COLUMN" name="users.usr_lastlogindate" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_notif_style" fieldId="62" fieldType="TABLE_COLUMN" name="users.usr_notif_style" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="usr_email_style" fieldId="63" fieldType="TABLE_COLUMN" name="users.usr_email_style" sqlTabName="users" widget="Phantom"/>
+      <Phantom colName="cmpusrl_uiorder" fieldId="65" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_uiorder" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_isacceptedbysalfatix" fieldId="66" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_isacceptedbysalfatix" sqlTabName="campaignuserlist" widget="Phantom"/>
+      <Phantom colName="cmpusrl_isacceptedbybrand" fieldId="67" fieldType="TABLE_COLUMN" name="campaignuserlist.cmpusrl_isacceptedbybrand" sqlTabName="campaignuserlist" widget="Phantom"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAxADEAMABkAGIAZAA3ADYALQA5ADIAMwAzAC0ANABlADcAZQAtADkAOAA5AGUALQAxADYAMgAwAGEAZQA2ADkAMgA4ADUAMgB9AAAAAAAAAAAAAAAAAAAAAD9ok3S8an76AQAAAEwAewAzAGMAZgBkADIANgA4AGUALQBmADAAZgA3AC0ANABhADcAMgAtAGEAYwA1AGYALQBlADQAYwBiAGIAOABlADUANwAyADUAZgB9QHS5mbF4UelAYoAAFDMzLz9gYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

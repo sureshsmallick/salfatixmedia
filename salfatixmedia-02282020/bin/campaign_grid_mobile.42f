@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="campaign_grid_mobile.tmp" build="3.20.07" sqlDbName="salfatixmedia" text="Form" style="centerwindow" width="23" height="108">
+  <LStr text="Form"/>
+  <Grid name="salfatixmedia1" width="23" height="108">
+    <PhantomFormField name="campaigns.cmp_id" colName="cmp_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="28" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_brand_id" colName="cmp_brand_id" sqlType="INTEGER" required="1" notNull="1" fieldId="46" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_pic_id" colName="cmp_pic_id" sqlType="INTEGER" required="1" notNull="1" fieldId="44" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <FormField name="pics.pic_value" colName="pic_value" sqlType="BYTE" required="1" notNull="1" fieldId="0" sqlTabName="pics" noEntry="1" tabIndex="1">
+      <Image width="20" height="14" action="upload_photo" autoScale="1" sizePolicy="fixed" style="influencer_grid_no_border center" posY="0" posX="2" gridWidth="20" gridHeight="14"/>
+    </FormField>
+    <FormField name="campaigns.cmp_title" colName="cmp_title" sqlType="VARCHAR(64)" fieldId="1" sqlTabName="campaigns" tabIndex="2">
+      <TextEdit width="20" height="5" style="influencer_grid_no_border" wantReturns="1" scroll="1" posY="20" posX="2" gridWidth="20" gridHeight="5"/>
+    </FormField>
+    <HLine posY="25" posX="2" gridWidth="20"/>
+    <Label name="campaigns_cmp_overview_label1" width="20" text="Campaign description" style="influencer_brand_label_bold" posY="26" posX="2" gridWidth="20">
+      <LStr text="Campaign description"/>
+    </Label>
+    <FormField name="campaigns.cmp_overview" colName="cmp_overview" sqlType="VARCHAR(255)" fieldId="2" sqlTabName="campaigns" tabIndex="3">
+      <TextEdit width="20" height="5" style="influencer_grid_no_border" wantReturns="1" scroll="1" posY="27" posX="2" gridWidth="20" gridHeight="5"/>
+    </FormField>
+    <FormField name="campaigns.cmp_url" colName="cmp_url" sqlType="VARCHAR(255)" fieldId="3" sqlTabName="campaigns" tabIndex="4">
+      <Edit width="20" justify="left" scroll="1" style="influencer_grid_no_border" posY="32" posX="2" gridWidth="20"/>
+    </FormField>
+    <PhantomFormField name="campaigns.cmp_isproductneeded" colName="cmp_isproductneeded" sqlType="SMALLINT" required="1" notNull="1" fieldId="49" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <HLine posY="33" posX="2" gridWidth="20"/>
+    <Label name="campaigns_cmp_prd_description_label1" width="20" text="Product description" style="influencer_brand_label_bold" posY="34" posX="2" gridWidth="20">
+      <LStr text="Product description"/>
+    </Label>
+    <FormField name="campaigns.cmp_prd_description" colName="cmp_prd_description" sqlType="VARCHAR(255)" fieldId="4" sqlTabName="campaigns" tabIndex="5">
+      <TextEdit width="20" height="5" style="influencer_grid_no_border" wantReturns="1" scroll="1" posY="35" posX="2" gridWidth="20" gridHeight="5"/>
+    </FormField>
+    <Label name="campaigns_cmp_prd_value_label1" width="20" text="Product value" style="influencer_brand_label_bold" posY="40" posX="2" gridWidth="20">
+      <LStr text="Product value"/>
+    </Label>
+    <HBox posY="41" posX="2" gridWidth="20">
+      <FormField name="campaigns.cmp_prd_value" colName="cmp_prd_value" sqlType="DECIMAL(10,2)" fieldId="5" sqlTabName="campaigns" tabIndex="6">
+        <Edit width="13" justify="left" scroll="1" style="influencer_grid_no_border"/>
+      </FormField>
+      <FormField name="formonly.cur1" colName="cur1" fieldId="6" sqlTabName="formonly" noEntry="1" tabIndex="7">
+        <Label width="3"/>
+      </FormField>
+      <SpacerItem/>
+    </HBox>
+    <HLine posY="42" posX="2" gridWidth="20"/>
+    <Label name="posttypes_label" width="20" text="Post type" style="influencer_brand_label_bold" posY="43" posX="2" gridWidth="20">
+      <LStr text="Post type"/>
+    </Label>
+    <FormField name="formonly.campaign_posttypes" colName="campaign_posttypes" sqlType="VARCHAR" fieldId="7" sqlTabName="formonly" tabIndex="8">
+      <TextEdit width="20" height="4" notEditable="1" style="influencer_grid_no_border" wantReturns="1" scroll="1" posY="44" posX="2" gridWidth="20" gridHeight="4"/>
+    </FormField>
+    <PhantomFormField name="pics1.pic_id" colName="pic_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="41" sqlTabName="pics">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <FormField name="campaigns.cmp_issharedonfacebook" colName="cmp_issharedonfacebook" sqlType="SMALLINT" required="1" notNull="1" fieldId="8" sqlTabName="campaigns" tabIndex="9">
+      <CheckBox width="20" text="Share on our Facebook Page" style="influencer_grid_no_border" posY="48" posX="2" gridWidth="20">
+        <LStr text="Share on our Facebook Page"/>
+      </CheckBox>
+    </FormField>
+    <Label name="cmp_sharedfacebooklink_lbl" width="20" text="Add your facebook link page" posY="49" posX="2" gridWidth="20">
+      <LStr text="Add your facebook link page"/>
+    </Label>
+    <FormField name="campaigns.cmp_sharedfacebooklink" colName="cmp_sharedfacebooklink" sqlType="VARCHAR(255)" fieldId="9" sqlTabName="campaigns" tabIndex="10">
+      <Edit width="20" posY="50" posX="2" gridWidth="20"/>
+    </FormField>
+    <HLine posY="52" posX="2" gridWidth="20"/>
+    <Label name="campaigns_cmp_post_guidelines_label1" width="20" text="Content guidelines" style="influencer_brand_label_bold" posY="53" posX="2" gridWidth="20">
+      <LStr text="Content guidelines"/>
+    </Label>
+    <FormField name="campaigns.cmp_post_guidelines" colName="cmp_post_guidelines" sqlType="VARCHAR(128)" fieldId="10" sqlTabName="campaigns" tabIndex="11">
+      <TextEdit width="20" height="5" style="influencer_grid_no_border" wantReturns="1" scroll="1" posY="54" posX="2" gridWidth="20" gridHeight="5"/>
+    </FormField>
+    <HLine posY="59" posX="2" gridWidth="20"/>
+    <Label name="photos_label" width="20" text="Photo examples" style="influencer_brand_label_bold" posY="60" posX="2" gridWidth="20">
+      <LStr text="Photo examples"/>
+    </Label>
+    <FormField name="pics1.pic_value" colName="pic_value" sqlType="BYTE" required="1" notNull="1" fieldId="11" sqlTabName="pics" noEntry="1" tabIndex="12">
+      <Image width="6" height="5" action="upload_photo1" autoScale="1" sizePolicy="fixed" style="influencer_grid_no_border center" posY="61" posX="2" gridWidth="6" gridHeight="5"/>
+    </FormField>
+    <PhantomFormField name="pics2.pic_id" colName="pic_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="42" sqlTabName="pics">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <FormField name="pics2.pic_value" colName="pic_value" sqlType="BYTE" required="1" notNull="1" fieldId="12" sqlTabName="pics" noEntry="1" tabIndex="13">
+      <Image width="6" height="5" action="upload_photo2" autoScale="1" sizePolicy="fixed" style="influencer_grid_no_border center" posY="61" posX="9" gridWidth="6" gridHeight="5"/>
+    </FormField>
+    <PhantomFormField name="pics3.pic_id" colName="pic_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="43" sqlTabName="pics">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <FormField name="pics3.pic_value" colName="pic_value" sqlType="BYTE" required="1" notNull="1" fieldId="13" sqlTabName="pics" noEntry="1" tabIndex="14">
+      <Image width="6" height="5" action="upload_photo3" autoScale="1" sizePolicy="fixed" style="influencer_grid_no_border center" posY="61" posX="16" gridWidth="6" gridHeight="5"/>
+    </FormField>
+    <HLine posY="67" posX="2" gridWidth="20"/>
+    <Label name="instagram_tags_label" width="20" text="Tag" style="influencer_brand_label_bold" posY="68" posX="2" gridWidth="20">
+      <LStr text="Tag"/>
+    </Label>
+    <FormField name="formonly.instagram_usertag" colName="instagram_usertag" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="14" sqlTabName="formonly" tabIndex="15">
+      <Edit width="20" placeholder="@username1 @username2" scroll="1" style="influencer_grid_no_border" posY="69" posX="2" gridWidth="20">
+        <LStr placeholder="@username1 @username2"/>
+      </Edit>
+    </FormField>
+    <FormField name="formonly.instagram_hashtag" colName="instagram_hashtag" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="15" sqlTabName="formonly" tabIndex="16">
+      <Edit width="20" placeholder="#goodday #quoteoftheday" scroll="1" style="influencer_grid_no_border" posY="70" posX="2" gridWidth="20">
+        <LStr placeholder="#goodday #quoteoftheday"/>
+      </Edit>
+    </FormField>
+    <HLine posY="71" posX="2" gridWidth="20"/>
+    <Label name="campaigns_cmp_captionrequirements_label1" width="20" text="Caption requirement" style="influencer_brand_label_bold" posY="72" posX="2" gridWidth="20">
+      <LStr text="Caption requirement"/>
+    </Label>
+    <FormField name="campaigns.cmp_captionrequirements" colName="cmp_captionrequirements" sqlType="VARCHAR(255)" fieldId="16" sqlTabName="campaigns" tabIndex="17">
+      <TextEdit width="20" height="5" style="influencer_grid_no_border" wantReturns="1" scroll="1" posY="73" posX="2" gridWidth="20" gridHeight="5"/>
+    </FormField>
+    <HLine posY="78" posX="2" gridWidth="20"/>
+    <Label name="campaigns_cmp_post_startdate_label1" width="20" text="Influencers can post from" style="influencer_brand_label_bold" posY="79" posX="2" gridWidth="20">
+      <LStr text="Influencers can post from"/>
+    </Label>
+    <FormField name="campaigns.cmp_post_startdate" colName="cmp_post_startdate" sqlType="DATE" fieldId="17" sqlTabName="campaigns" tabIndex="18">
+      <DateEdit width="18" justify="left" style="influencer_grid_no_border" posY="80" posX="2" gridWidth="20"/>
+    </FormField>
+    <HLine posY="81" posX="2" gridWidth="20"/>
+    <Label name="campaigns_cmp_post_enddate_label1" width="20" text="Date.To" style="influencer_brand_label_bold" posY="82" posX="2" gridWidth="20">
+      <LStr text="Date.To"/>
+    </Label>
+    <FormField name="campaigns.cmp_post_enddate" colName="cmp_post_enddate" sqlType="DATE" fieldId="18" sqlTabName="campaigns" tabIndex="19">
+      <DateEdit width="18" justify="left" style="influencer_grid_no_border" posY="83" posX="2" gridWidth="20"/>
+    </FormField>
+    <PhantomFormField name="campaigns.cmp_post_time_starttime" colName="cmp_post_time_starttime" sqlType="INTEGER" fieldId="25" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_post_time_endtime" colName="cmp_post_time_endtime" sqlType="INTEGER" fieldId="26" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_postduration_id" colName="cmp_postduration_id" sqlType="INTEGER" fieldId="27" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_totalbudget" colName="cmp_totalbudget" sqlType="DECIMAL(10,2)" fieldId="45" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_deposit" colName="cmp_deposit" sqlType="DECIMAL(10,2)" fieldId="29" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_depositpercent" colName="cmp_depositpercent" sqlType="DECIMAL(6,2)" fieldId="30" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_currency_id" colName="cmp_currency_id" sqlType="INTEGER" fieldId="31" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_wantedusers" colName="cmp_wantedusers" sqlType="INTEGER" fieldId="24" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_campaignstatus_id" colName="cmp_campaignstatus_id" sqlType="INTEGER" required="1" notNull="1" fieldId="32" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_createdby_id" colName="cmp_createdby_id" sqlType="INTEGER" required="1" notNull="1" fieldId="33" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_creationdate" colName="cmp_creationdate" sqlType="DATETIME YEAR TO SECOND" required="1" notNull="1" fieldId="34" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_publisheddate" colName="cmp_publisheddate" sqlType="DATE" fieldId="47" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_selectionstartdate" colName="cmp_selectionstartdate" sqlType="DATE" fieldId="35" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_selectionenddate" colName="cmp_selectionenddate" sqlType="DATE" fieldId="36" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_selectioncomment" colName="cmp_selectioncomment" sqlType="VARCHAR(128)" fieldId="48" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_actionstartdate" colName="cmp_actionstartdate" sqlType="DATETIME YEAR TO SECOND" fieldId="37" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_actionenddate" colName="cmp_actionenddate" sqlType="DATETIME YEAR TO SECOND" fieldId="38" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_enddate" colName="cmp_enddate" sqlType="DATETIME YEAR TO SECOND" fieldId="39" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaigns.cmp_lastupdatedate" colName="cmp_lastupdatedate" sqlType="DATETIME YEAR TO SECOND" fieldId="40" sqlTabName="campaigns">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <HLine posY="84" posX="2" gridWidth="20"/>
+    <Label name="campaigns_cmp_post_time_starttime_label1" width="20" text="Post time must be from" style="influencer_brand_label_bold" posY="85" posX="2" gridWidth="20">
+      <LStr text="Post time must be from"/>
+    </Label>
+    <FormField name="formonly.poststarttime" colName="poststarttime" sqlType="VARCHAR" fieldId="19" sqlTabName="formonly" tabIndex="20">
+      <Edit width="20" placeholder="@username1 @username2" scroll="1" style="influencer_grid_no_border" posY="86" posX="2" gridWidth="20">
+        <LStr placeholder="@username1 @username2"/>
+      </Edit>
+    </FormField>
+    <HLine posY="87" posX="2" gridWidth="20"/>
+    <Label name="campaigns_cmp_post_time_endtime_label1" width="20" text="To" style="influencer_brand_label_bold" posY="88" posX="2" gridWidth="20">
+      <LStr text="To"/>
+    </Label>
+    <FormField name="formonly.postendtime" colName="postendtime" sqlType="VARCHAR" fieldId="20" sqlTabName="formonly" tabIndex="21">
+      <Edit width="20" placeholder="@username1 @username2" scroll="1" style="influencer_grid_no_border" posY="89" posX="2" gridWidth="20">
+        <LStr placeholder="@username1 @username2"/>
+      </Edit>
+    </FormField>
+    <HLine posY="90" posX="2" gridWidth="20"/>
+    <Label name="campaigns_cmp_postduration_id_label1" width="20" text="Post duration" style="influencer_brand_label_bold" posY="91" posX="2" gridWidth="20">
+      <LStr text="Post duration"/>
+    </Label>
+    <FormField name="formonly.postduration" colName="postduration" sqlType="VARCHAR" fieldId="21" sqlTabName="formonly" tabIndex="22">
+      <Edit width="20" placeholder="@username1 @username2" scroll="1" style="influencer_grid_no_border" posY="92" posX="2" gridWidth="20">
+        <LStr placeholder="@username1 @username2"/>
+      </Edit>
+    </FormField>
+    <HLine posY="93" posX="2" gridWidth="20"/>
+    <Label name="campaigns_cmp_postduration_id_label2" width="20" text="Fee" style="influencer_brand_label_bold" posY="94" posX="2" gridWidth="20">
+      <LStr text="Fee"/>
+    </Label>
+    <HBox posY="95" posX="2" gridWidth="20">
+      <SpacerItem/>
+      <FormField name="campaignuserlist.cmpusrl_usertotalprice" colName="cmpusrl_usertotalprice" sqlType="DECIMAL(10,2)" required="1" notNull="1" fieldId="22" sqlTabName="campaignuserlist" tabIndex="23">
+        <Edit width="12" scroll="1"/>
+      </FormField>
+      <FormField name="formonly.curcost" colName="curcost" fieldId="23" sqlTabName="formonly" noEntry="1" tabIndex="24">
+        <Label width="3"/>
+      </FormField>
+    </HBox>
+    <Button name="apply" width="20" text="Apply" posY="96" posX="2" gridWidth="20" tabIndex="25">
+      <LStr text="Apply"/>
+    </Button>
+    <Button name="confirmreception" width="20" text="Confirm product reception" posY="97" posX="2" gridWidth="20" tabIndex="26">
+      <LStr text="Confirm product reception"/>
+    </Button>
+    <Button name="editposts" width="20" text="Edit Posts" posY="98" posX="2" gridWidth="20" tabIndex="27">
+      <LStr text="Edit Posts"/>
+    </Button>
+  </Grid>
+  <RecordView tabName="campaignuserlist">
+    <Link colName="cmpusrl_usertotalprice" fieldIdRef="22"/>
+  </RecordView>
+  <RecordView tabName="pics3">
+    <Link colName="pic_value" fieldIdRef="13"/>
+    <Link colName="pic_id" fieldIdRef="43"/>
+  </RecordView>
+  <RecordView tabName="pics2">
+    <Link colName="pic_value" fieldIdRef="12"/>
+    <Link colName="pic_id" fieldIdRef="42"/>
+  </RecordView>
+  <RecordView tabName="pics">
+    <Link colName="pic_value" fieldIdRef="0"/>
+  </RecordView>
+  <RecordView tabName="campaigns">
+    <Link colName="cmp_title" fieldIdRef="1"/>
+    <Link colName="cmp_overview" fieldIdRef="2"/>
+    <Link colName="cmp_url" fieldIdRef="3"/>
+    <Link colName="cmp_prd_description" fieldIdRef="4"/>
+    <Link colName="cmp_prd_value" fieldIdRef="5"/>
+    <Link colName="cmp_issharedonfacebook" fieldIdRef="8"/>
+    <Link colName="cmp_sharedfacebooklink" fieldIdRef="9"/>
+    <Link colName="cmp_post_guidelines" fieldIdRef="10"/>
+    <Link colName="cmp_captionrequirements" fieldIdRef="16"/>
+    <Link colName="cmp_post_startdate" fieldIdRef="17"/>
+    <Link colName="cmp_post_enddate" fieldIdRef="18"/>
+    <Link colName="cmp_wantedusers" fieldIdRef="24"/>
+    <Link colName="cmp_post_time_starttime" fieldIdRef="25"/>
+    <Link colName="cmp_post_time_endtime" fieldIdRef="26"/>
+    <Link colName="cmp_postduration_id" fieldIdRef="27"/>
+    <Link colName="cmp_id" fieldIdRef="28"/>
+    <Link colName="cmp_deposit" fieldIdRef="29"/>
+    <Link colName="cmp_depositpercent" fieldIdRef="30"/>
+    <Link colName="cmp_currency_id" fieldIdRef="31"/>
+    <Link colName="cmp_campaignstatus_id" fieldIdRef="32"/>
+    <Link colName="cmp_createdby_id" fieldIdRef="33"/>
+    <Link colName="cmp_creationdate" fieldIdRef="34"/>
+    <Link colName="cmp_selectionstartdate" fieldIdRef="35"/>
+    <Link colName="cmp_selectionenddate" fieldIdRef="36"/>
+    <Link colName="cmp_actionstartdate" fieldIdRef="37"/>
+    <Link colName="cmp_actionenddate" fieldIdRef="38"/>
+    <Link colName="cmp_enddate" fieldIdRef="39"/>
+    <Link colName="cmp_lastupdatedate" fieldIdRef="40"/>
+    <Link colName="cmp_pic_id" fieldIdRef="44"/>
+    <Link colName="cmp_totalbudget" fieldIdRef="45"/>
+    <Link colName="cmp_brand_id" fieldIdRef="46"/>
+    <Link colName="cmp_publisheddate" fieldIdRef="47"/>
+    <Link colName="cmp_selectioncomment" fieldIdRef="48"/>
+    <Link colName="cmp_isproductneeded" fieldIdRef="49"/>
+  </RecordView>
+  <RecordView tabName="pics1">
+    <Link colName="pic_value" fieldIdRef="11"/>
+    <Link colName="pic_id" fieldIdRef="41"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="cur1" fieldIdRef="6"/>
+    <Link colName="campaign_posttypes" fieldIdRef="7"/>
+    <Link colName="instagram_usertag" fieldIdRef="14"/>
+    <Link colName="instagram_hashtag" fieldIdRef="15"/>
+    <Link colName="poststarttime" fieldIdRef="19"/>
+    <Link colName="postendtime" fieldIdRef="20"/>
+    <Link colName="postduration" fieldIdRef="21"/>
+    <Link colName="curcost" fieldIdRef="23"/>
+  </RecordView>
+  <RecordView tabName="scr_campaign_grid">
+    <Link colName="cmp_id" fieldIdRef="28"/>
+    <Link colName="cmp_brand_id" fieldIdRef="46"/>
+    <Link colName="cmp_pic_id" fieldIdRef="44"/>
+    <Link colName="cmp_title" fieldIdRef="1"/>
+    <Link colName="cmp_overview" fieldIdRef="2"/>
+    <Link colName="cmp_url" fieldIdRef="3"/>
+    <Link colName="cmp_isproductneeded" fieldIdRef="49"/>
+    <Link colName="cmp_prd_description" fieldIdRef="4"/>
+    <Link colName="cmp_prd_value" fieldIdRef="5"/>
+    <Link colName="cmp_issharedonfacebook" fieldIdRef="8"/>
+    <Link colName="cmp_sharedfacebooklink" fieldIdRef="9"/>
+    <Link colName="cmp_post_guidelines" fieldIdRef="10"/>
+    <Link colName="cmp_captionrequirements" fieldIdRef="16"/>
+    <Link colName="cmp_post_startdate" fieldIdRef="17"/>
+    <Link colName="cmp_post_enddate" fieldIdRef="18"/>
+    <Link colName="cmp_post_time_starttime" fieldIdRef="25"/>
+    <Link colName="cmp_post_time_endtime" fieldIdRef="26"/>
+    <Link colName="cmp_postduration_id" fieldIdRef="27"/>
+    <Link colName="cmp_totalbudget" fieldIdRef="45"/>
+    <Link colName="cmp_deposit" fieldIdRef="29"/>
+    <Link colName="cmp_depositpercent" fieldIdRef="30"/>
+    <Link colName="cmp_currency_id" fieldIdRef="31"/>
+    <Link colName="cmp_wantedusers" fieldIdRef="24"/>
+    <Link colName="cmp_campaignstatus_id" fieldIdRef="32"/>
+    <Link colName="cmp_createdby_id" fieldIdRef="33"/>
+    <Link colName="cmp_creationdate" fieldIdRef="34"/>
+    <Link colName="cmp_publisheddate" fieldIdRef="47"/>
+    <Link colName="cmp_selectionstartdate" fieldIdRef="35"/>
+    <Link colName="cmp_selectionenddate" fieldIdRef="36"/>
+    <Link colName="cmp_selectioncomment" fieldIdRef="48"/>
+    <Link colName="cmp_actionstartdate" fieldIdRef="37"/>
+    <Link colName="cmp_actionenddate" fieldIdRef="38"/>
+    <Link colName="cmp_enddate" fieldIdRef="39"/>
+    <Link colName="cmp_lastupdatedate" fieldIdRef="40"/>
+    <Link colName="pic_value" fieldIdRef="0"/>
+    <Link colName="campaign_posttypes" fieldIdRef="7"/>
+    <Link colName="pic_id" fieldIdRef="41"/>
+    <Link colName="pic_value" fieldIdRef="11"/>
+    <Link colName="pic_id" fieldIdRef="42"/>
+    <Link colName="pic_value" fieldIdRef="12"/>
+    <Link colName="pic_id" fieldIdRef="43"/>
+    <Link colName="pic_value" fieldIdRef="13"/>
+    <Link colName="instagram_usertag" fieldIdRef="14"/>
+    <Link colName="instagram_hashtag" fieldIdRef="15"/>
+    <Link colName="cur1" fieldIdRef="6"/>
+    <Link colName="poststarttime" fieldIdRef="19"/>
+    <Link colName="postendtime" fieldIdRef="20"/>
+    <Link colName="postduration" fieldIdRef="21"/>
+    <Link colName="cmpusrl_usertotalprice" fieldIdRef="22"/>
+    <Link colName="curcost" fieldIdRef="23"/>
+  </RecordView>
+</Form>

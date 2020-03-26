@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="zoom_countrystatecitylist" build="3.20.07" style="popup" width="27" height="10">
+  <Grid width="27" height="10">
+    <Image name="img_back" width="4" height="3" style="no_border" sizePolicy="fixed" autoScale="1" image="fa-arrow-circle-left" comment="Back" action="back" posY="0" posX="1" gridWidth="4" gridHeight="3">
+      <LStr comment="Back"/>
+    </Image>
+    <Image name="img_accept" width="4" height="3" style="no_border" sizePolicy="fixed" autoScale="1" image="fa-check-circle-green" comment="Validate" action="done" posY="0" posX="22" gridWidth="4" gridHeight="3">
+      <LStr comment="Validate"/>
+    </Image>
+    <Table pageSize="5" name="list" style="singleclick" doubleClick="accept" width="27" posY="3" posX="0" gridWidth="27" gridHeight="7" tabName="srtbl">
+      <PhantomColumn name="formonly.cle" colName="cle" fieldId="0" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <TableColumn name="formonly.lbl" colName="lbl" fieldId="1" sqlTabName="formonly" text="Name" tabIndex="1">
+        <Edit width="25"/>
+        <LStr text="Name"/>
+      </TableColumn>
+    </Table>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="cle" fieldIdRef="0"/>
+    <Link colName="lbl" fieldIdRef="1"/>
+  </RecordView>
+</Form>

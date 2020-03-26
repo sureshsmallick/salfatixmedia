@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="salfatixmedia" fileVersion="30a00" gstVersion="30a0a" name="managedform" uid="{bad0f66a-5fef-486b-82f1-4f5d0283b578}">
+  <AGSettings/>
+  <Record masterTable="states" name="scrlist_country" uid="{4b6ce764-8d90-42bd-8faf-6e7fb0cdd6f9}">
+    <RecordField colName="stt_id" fieldIdRef="1" fieldType="TABLE_COLUMN" name="states.stt_id" sqlTabName="states" uid="{15adf0df-4fa5-4f94-b244-aaaa911b0616}"/>
+    <RecordField colName="stt_name" fieldIdRef="5" fieldType="TABLE_COLUMN" name="states.stt_name" sqlTabName="states" uid="{91a465c7-67cb-4b71-ab6e-0c8ec4d1fe3d}"/>
+    <RecordField colName="stt_country_id" fieldIdRef="4" fieldType="TABLE_COLUMN" name="states.stt_country_id" sqlTabName="states" uid="{c4809900-9980-469f-831b-bf6013e851f1}"/>
+    <RecordField colName="cntr_id" fieldIdRef="2" fieldType="TABLE_COLUMN" name="countries.cntr_id" sqlTabName="countries" uid="{6ba5d5c8-1b45-4e2e-ac67-8cddce10c7ca}"/>
+    <RecordField colName="cntr_name" fieldIdRef="7" fieldType="TABLE_COLUMN" name="countries.cntr_name" sqlTabName="countries" uid="{5fa9b5fe-f63b-4129-95e2-618dc43f21ab}"/>
+    <RecordField colName="stt_id" fieldIdRef="6" fieldType="TABLE_ALIAS" name="states1.stt_id" sqlTabName="states" table_alias_name="states1" uid="{ae9ec29e-4bf3-443c-8f6d-08b6d591e48a}"/>
+    <RecordField fieldIdRef="3" name="myimage" uid="{d0dbd22e-13f6-4ac6-a9eb-38da9329ba1c}"/>
+  </Record>
+  <Record name="Undefined" uid="{dcf33f7b-6325-43f6-8145-78db072d0651}">
+    <RecordField fieldIdRef="8" name="selection_lbl" uid="{d49da049-fa70-4270-ad50-9b01faa74917}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="83" name="form" style="popup" text="State List">
+    <Grid gridHeight="21" gridWidth="74" name="grid1" posX="1" posY="0">
+      <Image action="close" autoScale="true" comment="Back" gridHeight="3" gridWidth="5" image="fa-arrow-circle-left" name="img_back" posX="3" posY="0" sizePolicy="fixed" style="no_border"/>
+      <Image action="accept" autoScale="true" comment="Validate" gridHeight="3" gridWidth="5" image="fa-check-circle-green" name="img_accept" posX="61" posY="0" sizePolicy="fixed" style="no_border"/>
+      <FFLabel fieldId="8" gridHeight="1" gridWidth="63" justify="center" name="selection_lbl" posX="3" posY="3" title="fflabel1" widget="FFLabel"/>
+      <Table doubleClick="selectrow" gridHeight="16" gridWidth="63" name="salfatixmedia2" posX="3" posY="4" style="zoomtable" totalRows="15" unhidableColumns="true" unmovableColumns="true" unsizableColumns="true" unsortableColumns="true">
+        <Edit colName="stt_name" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" imageColumn="myimage" name="states.stt_name" posX="0" posY="0" scroll="true" sqlTabName="states" tabIndex="-1" title="State" widget="Edit"/>
+        <Edit colName="cntr_name" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="countries.cntr_name" posX="30" posY="0" scroll="true" sqlTabName="countries" tabIndex="-1" title="Country" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Phantom fieldId="3" name="myimage" widget="Phantom"/>
+        <Phantom colName="stt_id" fieldId="1" fieldType="TABLE_COLUMN" name="states.stt_id" sqlTabName="states" widget="Phantom"/>
+        <Phantom colName="stt_country_id" fieldId="4" fieldType="TABLE_COLUMN" name="states.stt_country_id" sqlTabName="states" widget="Phantom"/>
+        <Phantom colName="cntr_id" fieldId="2" fieldType="TABLE_COLUMN" name="countries.cntr_id" sqlTabName="countries" widget="Phantom"/>
+        <Phantom colName="stt_id" fieldId="6" fieldType="TABLE_ALIAS" name="states1.stt_id" sqlTabName="states" table_alias_name="states1" widget="Phantom"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA0AGIANgBjAGUANwA2ADQALQA4AGQAOQAwAC0ANAAyAGIAZAAtADgAZgBhAGYALQA2AGUANwBmAGIAMABjAGQAZAA2AGYAOQB9QEQAAAAAAABARAAAAAAAAD9QYk3S8an8AQAAAEwAewBkAGMAZgAzADMAZgA3AGIALQA2ADMAMgA1AC0ANAAzAGYANgAtADgAMQA0ADUALQA3ADgAZABiADAANwAyAGQAMAA2ADUAMQB9QCQAAAAAAABAJAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

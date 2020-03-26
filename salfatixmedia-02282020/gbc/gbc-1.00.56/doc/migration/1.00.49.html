@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - GBC 1.00.49</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="migration/index.html">What&#x27;s New</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="migration/1.00.56.html">GBC 1.00.56</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.55.html">GBC 1.00.55</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.54.html">GBC 1.00.54</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.53.html">GBC 1.00.53</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.52.html">GBC 1.00.52</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.51.html">GBC 1.00.51</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.50.html">GBC 1.00.50</a>
+          
+          <a class="btn btn-sidebar active" href="migration/1.00.49.html">GBC 1.00.49</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.48.html">GBC 1.00.48</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.47.html">GBC 1.00.47</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.46.html">GBC 1.00.46</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.45.html">GBC 1.00.45</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.44.html">GBC 1.00.44</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.43.html">GBC 1.00.43</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.41.html">GBC 1.00.41</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.40.html">GBC 1.00.40</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.39.html">GBC 1.00.39</a>
+          
+          <a class="btn btn-sidebar " href="migration/1.00.38.html">GBC 1.00.38</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="migration">
+<header class="page-title">
+  <em>GBC 1.00.49</em>
+</header>
+<article class="md-content">
+<p>GBC 1.00.49 was released on November 19th 2018.</p>
+<p>This page provides information about new features, as well as changes you need to take
+care of when migrating your customization to this version.</p>
+<h1 id="Table_minimum_size">Table minimum size <a class="header-anchor" href="migration/1.00.49.html#Table_minimum_size" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>New theme variables to define table minimum size</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#gbc-TableWidget-min-width"><code>gbc-TableWidget-min-width</code></a></td>
+<td>number</td>
+<td>default value is 60</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#gbc-TableWidget-min-page-size"><code>gbc-TableWidget-min-page-size</code></a></td>
+<td>number</td>
+<td>default value is 3</td>
+</tr>
+</tbody>
+</table>
+<p>Old variables <code>theme-table-min-width</code> and <code>theme-table-min-page-size</code> are now deprecated.</p>
+<h1 id="ListView_minimum_size">ListView minimum size <a class="header-anchor" href="migration/1.00.49.html#ListView_minimum_size" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>New theme variables to define listview minimum size</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#gbc-ListViewWidget-min-width"><code>gbc-ListViewWidget-min-width</code></a></td>
+<td>number</td>
+<td>default value is 60</td>
+</tr>
+<tr>
+<td><a class="theme-variable-link" href="reference/theme/theme_variables.html#gbc-ListViewWidget-min-page-size"><code>gbc-ListViewWidget-min-page-size</code></a></td>
+<td>number</td>
+<td>default value is 1</td>
+</tr>
+</tbody>
+</table>
+<h1 id="NodeBase_API">NodeBase API <a class="header-anchor" href="migration/1.00.49.html#NodeBase_API" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>When a node is destroyed, all of its attributes are now set to NULL. You can use <code>isDestroyed()</code> function to check if a node is destroyed or not.
+Please take that into consideration when doing your own customization.</p>
+<h1 id="WidgetBase_API">WidgetBase API <a class="header-anchor" href="migration/1.00.49.html#WidgetBase_API" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>Function <code>setFocus</code> of WidgetBase class has a new optional parameter</p>
+<p><code>@param {boolean} [fromMouse] - true if focus comes from mouse event</code></p>
+<h1 id="Performance_and_memory_management_improvement">Performance and memory management improvement <a class="header-anchor" href="migration/1.00.49.html#Performance_and_memory_management_improvement" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<ul>
+<li>Improved fields switching and window closing processes.</li>
+<li>Many classes have been reviewed in order to reduce memory consumption and avoid leaks.</li>
+<li>It's a good habit to properly detach handlers and free the memory when an object is destroyed or not used anymore. Please take that into consideration when doing your own customization.</li>
+</ul>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

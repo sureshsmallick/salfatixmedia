@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client Reference Documentation - Customization fundamentals</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="GettingStarted.html">Getting started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="fundamentals/index.html">Basics</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="fundamentals/what_to_download.html">Downloads</a>
+          
+          <a class="btn btn-sidebar active" href="fundamentals/cust_fund.html">Customization fundamentals</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/cust_migrate.html">Migrating Customizations</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="fundamentals">
+<header class="page-title">
+  <em>Customization fundamentals</em>
+</header>
+<article class="md-content">
+<p>Before getting into the technical details behind the customization process, it is good to have an understanding of the theory.</p>
+<h1>Projects, Customizations, Themes, and Theme Parts</h1>
+<p>A customization is made of various components: projects, customizations, themes, and theme parts. These components contain the files that do the actual work of the customization: the json files, the scss files, and the javascript files.</p>
+<p>At the root is the GBC project directory. In most cases, your team will only have one GBC project directory for each version of the GBC project package that they download. A project directory is referred to as the <code>&lt;GBC_PROJECT_DIR&gt;</code>.</p>
+<p>Within the project directory, your team can add customization projects. A customization project will contain any of the javascript and scss files that you create to customize the widgets. Each customization that you may add has its own customization directory, which we refer to as a <code>&lt;customization_project_dir&gt;</code>.</p>
+<p>Within a customization project, you can define multiple themes. Themes allow the user to change the look-and-feel while remaining within the same customization. For example, if you do nothing else but keep the themes that are provided by default with the customization package, the user will be able to switch between a <em>default</em> theme and a <em>high contrast</em> theme, the latter providing them with an interface with larger fonts. Other possible themes could include providing with a light interface and a dark interface, or providing different color options.</p>
+<p>A theme is comprised of theme parts. A theme may have only one theme part, or it may be made up of multiple theme parts. A theme part can define theme variables, resources (such as images), and conditions (such as a check on whether the client is desktop or mobile). The theme parts may be local (contained within the customization folder) or they can be global (for theme parts that you may want to use across multiple customizations within the project). You combile theme parts to create a theme - think of them as Lego building blocks that you snap together.</p>
+<p>The GBC will display the application according to the customization and theme selected.</p>
+<h1>Planning for the customization</h1>
+<p>The first step is to answer the question &quot;What do I need to do to complete the customization that I wish to achieve?&quot;</p>
+<p>To answer this question, you have to identify your goals.</p>
+<ul>
+<li>Do you have a single audience for your application, and only need to customize the interface to apply some corporate branding?</li>
+<li>Do you want to give your users the ability to change how the interface appears?
+For example, you could:
+<ul>
+<li>Provide a default view and a high-contrast view (as done in the default runtime package)</li>
+<li>Providing a lighter-color view and a darker-color view</li>
+</ul>
+</li>
+<li>Do you have different audiences that require a completely separate and distinct look-and-feel?</li>
+</ul>
+<p>To plan for these approaches, let's examine each scenario</p>
+<h3>I have a single audience and only need to apply corporate branding</h3>
+<p>To achieve this, you would have a single customization containing a single theme. This theme may be comprised of one or more theme parts.</p>
+<h3>I want to give the user the ability to choose between different look-and-feels</h3>
+<p>To achieve this, you start with a single customization, but you will create multiple themes within that customization. Each theme will provide a specific look-and-feel. These themes may share some theme parts, however remember that it is the combination of theme parts that ultimately define the theme.</p>
+<h3>I want the UI to change based on the device the user is using</h3>
+<p>To achieve this, you start with a single customization, and you create a theme for each device type that the application may encounter. Within the definition of the theme, you specify which device the theme is valid for. When a user accesses the application from a device, only those themes that are allowed for that device are presented as an option.</p>
+<h3>I have two separate audiences, each whom should have their own look-and-feel</h3>
+<p>To achieve this, you would create two separate, distinct customizations. If you have any themes that you wish to provide to both of the groups (for example, a default and a high-contrast theme), you would use theme parts that are defined globally for the project, and then reference those theme parts with the themes set up in each of the customizations.</p>
+<h1>Getting the right customization and theme to the user</h1>
+<p>After you have modified a customization and its themes, you package your customization and deploy it to the Genero Application Server (GAS). You can have many customizations deployed to the GAS, but only one can be marked as the default customization. Unless otherwise specified, a user receives the default customization.</p>
+<p>Methods to change which customization is used:</p>
+<ul>
+<li>A different customization can be specified in the URL.</li>
+</ul>
+<p>Within the selected customization, a default theme is used unless:</p>
+<ul>
+<li>The user has previously accessed the application and selected a different theme. The last selected theme for the user is the theme that is chosen.</li>
+<li>The theme is specified specifically in the URL.</li>
+<li>The theme is set by a frontcall from the application itself.</li>
+</ul>
+<p>Once the application is running, the theme can be changed, but the customization used cannot. To change the customization used, the application would need to be restarted with the new customization selected.</p>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.52</em> (build 201903131722)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

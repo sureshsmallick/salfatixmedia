@@ -1,0 +1,91 @@
+---------------------------------------------------------------------------------- 
+-- File created from /home/suresh/Documents/I2GEN_BACKUP/Bangalore_Team/Documents/salfatixmedia-02282020/lib/backofficeusers/backofficeuser_list.4fd by Genero Studio
+-- WARNING! All changes made in this file will be lost!
+----------------------------------------------------------------------------------
+
+SCHEMA salfatixmedia
+
+LAYOUT (text=%"Form", style="centerwindow")
+GRID grid1
+{
+ [ff_formtitle                                                                  ]
+  <G group1                             ><S salfatixmedia1                     >
+  [label1                      ]         [pic_value   ][bousr_firstnam1        ]
+  [radiogroup1                 ]         [            ][bousr_lastnam1         ]
+  [                            ]         [            ][bousr_emai1            ]
+  [                            ]         [            ][bousr_accountstatus_id ]
+  [                            ]
+  [label2              ]
+  [radiogroup2         ]
+  [label3                      ]
+  [bousr_firstname             ]
+  [label6                      ]
+  [bousr_lastname              ]
+  [label4                      ]
+  [bousr_email                 ]
+  [label5                      ]
+  [accst_name                  ]
+                       [filter ]
+  <                                     ><                                     >
+}
+END -- grid1
+END -- form
+
+TABLES
+backofficeusers,
+backofficeusers1=backofficeusers,
+pics,
+accountstatus,
+accountstatus1=accountstatus
+ATTRIBUTES
+LABEL ff_formtitle=formonly.ff_formtitle, justify=center, style="ff_formtitle";
+GROUP group1:group1, text=%"Filters", style="no_border";
+LABEL label1:label1, text=%"Sort By";
+RADIOGROUP radiogroup1=formonly.radiogroup1, items=(("backofficeusers.bousr_firstname", %"FirstName"),("backofficeusers.bousr_lastname", %"LastName"),("backofficeusers.bousr_email", %"Email"),("accountstatus.accst_name", %"Status"));
+LABEL label2:label2, text=%"Order";
+RADIOGROUP radiogroup2=formonly.radiogroup2, orientation=horizontal, items=(("asc", %"Ascending"),("desc", %"Descending"));
+LABEL label3:label3, text=%"Filter on first name";
+EDIT bousr_firstname=backofficeusers1.bousr_firstname;
+LABEL label6:label6, text=%"Filter on last name";
+EDIT bousr_lastname=backofficeusers1.bousr_lastname;
+LABEL label4:label4, text=%"Filter on email";
+EDIT bousr_email=backofficeusers1.bousr_email;
+LABEL label5:label5, text=%"Filter on status";
+EDIT accst_name=accountstatus1.accst_name, scroll;
+BUTTON filter:filter, text=%"Filter";
+SCROLLGRID salfatixmedia1:salfatixmedia1, doubleClick=display_bouser, style="bouserlisttable", wantFixedPageSize=NO, initialPageSize=10;
+IMAGE pic_value=pics.pic_value, autoScale, sizePolicy=fixed, style="no_border";
+EDIT bousr_firstnam1=backofficeusers.bousr_firstname;
+EDIT bousr_lastnam1=backofficeusers.bousr_lastname;
+EDIT bousr_emai1=backofficeusers.bousr_email;
+COMBOBOX bousr_accountstatus_id=backofficeusers.bousr_accountstatus_id, initializer=bouser_status_combobox_initializer, scroll;
+PHANTOM backofficeusers.bousr_email_style;
+PHANTOM backofficeusers.bousr_creationdate;
+PHANTOM backofficeusers.bousr_deletiondate;
+PHANTOM backofficeusers.bousr_stopdate;
+PHANTOM backofficeusers.bousr_lastupdatedate;
+PHANTOM backofficeusers.bousr_lastlogindate;
+PHANTOM backofficeusers.bousr_id;
+PHANTOM backofficeusers.bousr_password;
+PHANTOM backofficeusers.bousr_pic_id;
+PHANTOM backofficeusers.bousr_gender_id;
+PHANTOM backofficeusers.bousr_country_id;
+PHANTOM backofficeusers.bousr_state_id;
+PHANTOM backofficeusers.bousr_city_id;
+PHANTOM backofficeusers.bousr_address_number;
+PHANTOM backofficeusers.bousr_address_street;
+PHANTOM backofficeusers.bousr_address_zipcode;
+PHANTOM backofficeusers.bousr_address_town;
+PHANTOM backofficeusers.bousr_address_more;
+PHANTOM backofficeusers.bousr_mobile_phone;
+PHANTOM backofficeusers.bousr_isadmin;
+PHANTOM backofficeusers.bousr_usrrole_id;
+END -- ATTRIBUTES
+
+INSTRUCTIONS
+SCREEN RECORD scr_backofficeuser_list(backofficeusers.bousr_id,backofficeusers.bousr_password,backofficeusers.bousr_pic_id,backofficeusers.bousr_gender_id,backofficeusers.bousr_firstname,backofficeusers.bousr_lastname,backofficeusers.bousr_email,backofficeusers.bousr_email_style,backofficeusers.bousr_country_id,backofficeusers.bousr_state_id,backofficeusers.bousr_city_id,backofficeusers.bousr_address_number,backofficeusers.bousr_address_street,backofficeusers.bousr_address_zipcode,backofficeusers.bousr_address_town,backofficeusers.bousr_address_more,backofficeusers.bousr_mobile_phone,backofficeusers.bousr_isadmin,backofficeusers.bousr_usrrole_id,backofficeusers.bousr_accountstatus_id,backofficeusers.bousr_creationdate,backofficeusers.bousr_deletiondate,backofficeusers.bousr_stopdate,backofficeusers.bousr_lastupdatedate,backofficeusers.bousr_lastlogindate,pics.pic_value)
+SCREEN RECORD scr_qbeconstruct(backofficeusers1.bousr_firstname,backofficeusers1.bousr_lastname,backofficeusers1.bousr_email,accountstatus1.accst_name)
+SCREEN RECORD scr_qbeinput(formonly.radiogroup1,formonly.radiogroup2)
+SCREEN RECORD Undefined(formonly.ff_formtitle)
+END -- INSTRUCTIONS
+

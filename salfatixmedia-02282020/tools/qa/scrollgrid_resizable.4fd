@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="30a00" gstVersion="30a0a" name="managedform" uid="{7a90ebe7-6ed8-409f-a939-6454ffc48b1f}">
+  <AGSettings/>
+  <Record name="scr_list" uid="{c5fa8141-ba4f-426d-9544-5e9f9c19886f}">
+    <RecordField fieldIdRef="4" length="1" name="cmp_title" sqlType="CHAR" uid="{d275eefc-f0ef-437a-ab1d-cf99ca46150a}"/>
+    <RecordField fieldIdRef="42" length="1" name="pic_value" sqlType="CHAR" uid="{d442191d-d388-4fc3-9d73-d15bd58dbfdf}"/>
+    <RecordField fieldIdRef="44" length="1" name="brnd_name" sqlType="CHAR" uid="{d53fc8bc-9799-4f25-8003-34cb792efb7b}"/>
+    <RecordField fieldIdRef="45" length="1" name="cmpst_name" sqlType="CHAR" uid="{c4f79ff8-423f-492b-abb4-cf061a1491bb}"/>
+  </Record>
+  <Record name="scr_qbeinput" uid="{c0cfbcb3-3916-4583-9392-638b75b09088}">
+    <RecordField fieldIdRef="46" name="radiogroup1" uid="{d9a39969-ea61-4045-b062-cf5e4aa078ba}"/>
+    <RecordField fieldIdRef="47" name="radiogroup2" uid="{c06d7361-3549-4ae6-97b5-02d16f1e3d97}"/>
+  </Record>
+  <Record name="scr_qbeconstruct" uid="{5aee2ac7-04ce-4ae0-bc34-8d11d28693cb}">
+    <RecordField fieldIdRef="48" length="1" name="brnd_name2" sqlType="CHAR" uid="{c53918a8-0dde-4474-aa9b-4fea85c322fe}"/>
+    <RecordField fieldIdRef="49" length="1" name="cmp_title2" sqlType="CHAR" uid="{af775f23-c5b0-4963-9573-624e2a430c9e}"/>
+    <RecordField fieldIdRef="50" length="1" name="cmpst_name2" sqlType="CHAR" uid="{dc4115ef-a1dd-40a3-8d07-d313e9ad5305}"/>
+  </Record>
+  <Record name="Undefined" uid="{29dc1b4e-0820-46d0-8667-1747a56252c5}">
+    <RecordField fieldIdRef="43" name="ff_formtitle" uid="{29096531-9685-41b5-ab44-f432a3494c34}"/>
+  </Record>
+  <Form gridHeight="65" gridWidth="154" name="form" style="centerwindow" text="Form">
+    <Grid gridHeight="16" gridWidth="85" name="grid1" posX="3" posY="3">
+      <FFLabel fieldId="43" gridHeight="1" gridWidth="82" justify="center" name="ff_formtitle" posX="2" posY="0" style="ff_formtitle" title="fflabel1" widget="FFLabel"/>
+      <Group gridHeight="14" gridWidth="39" name="filtergroup" posX="1" posY="1" text="Filters">
+        <Label gridHeight="1" gridWidth="28" name="label1" posX="1" posY="1" text="Sort By"/>
+        <RadioGroup fieldId="46" gridHeight="1" gridWidth="28" items="Brand name, Title, Status" name="radiogroup1" orientation="horizontal" posX="1" posY="2" tabIndex="-1" title="radiogroup1" widget="RadioGroup">
+          <Item lstrtext="true" name="brands.brnd_name" text="Brand name"/>
+          <Item lstrtext="true" name="campaigns.cmp_title" text="Title"/>
+          <Item lstrtext="true" name="campaignstatus.cmpst_name" text="Status"/>
+        </RadioGroup>
+        <Label gridHeight="1" gridWidth="20" name="label2" posX="1" posY="4" text="Order"/>
+        <RadioGroup fieldId="47" gridHeight="1" gridWidth="20" items="Ascending, Descending" name="radiogroup2" orientation="horizontal" posX="1" posY="5" tabIndex="-1" title="radiogroup1" widget="RadioGroup">
+          <Item lstrtext="true" name="asc" text="Ascending"/>
+          <Item lstrtext="true" name="desc" text="Descending"/>
+        </RadioGroup>
+        <Label gridHeight="1" gridWidth="28" name="label3" posX="1" posY="6" text="Filter on Brand name"/>
+        <Edit fieldId="48" gridHeight="1" gridWidth="28" length="1" name="brnd_name2" posX="1" posY="7" repeat="false" sqlType="CHAR" tabIndex="-1" title="" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="28" name="label4" posX="1" posY="8" text="Filter on title"/>
+        <Edit fieldId="49" gridHeight="1" gridWidth="28" length="1" name="cmp_title2" posX="1" posY="9" sqlType="CHAR" tabIndex="-1" title="brnd_email" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="28" name="label5" posX="1" posY="10" text="Filter on status"/>
+        <Edit fieldId="50" gridHeight="1" gridWidth="28" length="1" name="cmpst_name2" posX="1" posY="11" repeat="false" scroll="true" sqlType="CHAR" tabIndex="-1" title="" widget="Edit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </Edit>
+        <Button gridHeight="1" gridWidth="7" name="filter" posX="22" posY="12" tabIndex="-1" text="Filter"/>
+      </Group>
+      <ScrollGrid doubleClick="dbl_click" gridHeight="14" gridWidth="43" initialPageSize="10" name="salfatixmedia1" posX="41" posY="1" style="campaignlisttable" wantFixedPageSizeSG="false">
+        <FFImage autoScale="true" fieldId="42" gridHeight="6" gridWidth="17" length="1" name="pic_value" posX="3" posY="1" sizePolicy="fixed" sqlType="CHAR" title="" widget="FFImage"/>
+        <Edit fieldId="44" gridHeight="1" gridWidth="20" length="1" name="brnd_name" posX="22" posY="1" sqlType="CHAR" tabIndex="-1" title="edit1" widget="Edit"/>
+        <TextEdit fieldId="4" gridHeight="4" gridWidth="20" length="1" name="cmp_title" posX="22" posY="2" scrollBars="none" sqlType="CHAR" tabIndex="-1" title="" widget="TextEdit">
+          <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+        </TextEdit>
+        <Edit fieldId="45" gridHeight="1" gridWidth="20" length="1" name="cmpst_name" posX="22" posY="6" sqlType="CHAR" tabIndex="-1" title="edit1" widget="Edit"/>
+      </ScrollGrid>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBjADUAZgBhADgAMQA0ADEALQBiAGEANABmAC0ANAAyADYAZAAtADkANQA0ADQALQA1AGUAOQBmADkAYwAxADkAOAA4ADYAZgB9QCQAAAAAAABAJAAAAAAAAD9ok3S8an76AQAAAEwAewA1AGEAZQBlADIAYQBjADcALQAwADQAYwBlAC0ANABhAGUAMAAtAGIAYwAzADQALQA4AGQAMQAxAGQAMgA4ADYAOQAzAGMAYgB9QD4AAAAAAABAPgAAAAAAAAAAAAAAAAAAAQAAAEwAewBjADAAYwBmAGIAYwBiADMALQAzADkAMQA2AC0ANAA1ADgAMwAtADkAMwA5ADIALQA2ADMAOABiADcANQBiADAAOQAwADgAOAB9QDQAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAAEwAewAyADkAZABjADEAYgA0AGUALQAwADgAMgAwAC0ANAA2AGQAMAAtADgANgA2ADcALQAxADcANAA3AGEANQA2ADIANQAyAGMANQB9QCQAAAAAAABAJAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

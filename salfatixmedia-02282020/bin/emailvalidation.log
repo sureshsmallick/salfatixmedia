@@ -1,0 +1,23 @@
+Date: 03/04/2020    Time: 13:27:34
+Program error at 'emailvalidation.4gl', line number 82.
+FORMS statement error number -8014.
+The resource file 'salfatixmedia' can not be read.
+Date: 03/04/2020    Time: 13:31:06
+Program error at 'emailvalidation.4gl', line number 82.
+FORMS statement error number -8014.
+The resource file 'salfatixmedia' can not be read.
+Date: 03/04/2020    Time: 13:33:08
+Error=-1 - Message=Bad link. Prg argument: 1-2-1534152483-dsfsdfsd. Computed=bcc5f1841bdd2cd38a48cb1412ab72e89fac8f3c1fb74a62e855e9cf094b20560369da632be338cc21917c7efe29aad99b2d5ee3a2ade603a30a1424d2177398
+#0 error_log() at setup.4gl:147
+#1 main() at emailvalidation.4gl:156
+
+Date: 03/04/2020    Time: 15:32:17
+Error=-1 - Message=Bad link. Prg argument: 1-2-1534152483-dsfsdfsd. Computed=bcc5f1841bdd2cd38a48cb1412ab72e89fac8f3c1fb74a62e855e9cf094b20560369da632be338cc21917c7efe29aad99b2d5ee3a2ade603a30a1424d2177398
+#0 error_log() at setup.4gl:147
+#1 main() at emailvalidation.4gl:156
+
+Date: 03/04/2020    Time: 15:33:12
+Error=-1 - Message=Bad link. Prg argument: 1-2-1534152483-dsfsdfsd. Computed=bcc5f1841bdd2cd38a48cb1412ab72e89fac8f3c1fb74a62e855e9cf094b20560369da632be338cc21917c7efe29aad99b2d5ee3a2ade603a30a1424d2177398
+#0 error_log() at setup.4gl:147
+#1 main() at emailvalidation.4gl:156
+

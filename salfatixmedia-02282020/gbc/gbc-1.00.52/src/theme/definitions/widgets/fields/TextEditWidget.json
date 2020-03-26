@@ -1,0 +1,15 @@
+{
+  "name": "TextEditWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-TextEditWidget-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "gbc-TextEditWidget-font-size-ratio",
+      "type": "number",
+      "defaultValue": "$theme-font-size-ratio"
+    }
+  ]
+}

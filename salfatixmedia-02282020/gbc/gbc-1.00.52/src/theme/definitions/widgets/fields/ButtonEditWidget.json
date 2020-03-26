@@ -1,0 +1,15 @@
+{
+  "name": "ButtonEditWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-ButtonEditWidget-default-height",
+      "type": "size",
+      "defaultValue": "$theme-field-default-height"
+    },
+    {
+      "name": "gbc-ButtonEditWidget-focus-border-color",
+      "type": "color",
+      "defaultValue": "$theme-primary-emphasis-background-color"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Customization and Theme Selection</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="fundamentals/index.html">Basics</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="fundamentals/whatIsGBC.html">What is the GBC?</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/key_players.html">Key Players</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/how_gbc_works.html">How the GBC works</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/what_to_download.html">Downloads</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/cust_fund.html">Customization fundamentals</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/cust_migrate.html">Migrating customizations</a>
+          
+          <a class="btn btn-sidebar active" href="fundamentals/which_cust_theme.html">Customization and Theme Selection</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/view_gbc_doc.html">View the documentation</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/search_gbc_doc.html">Search the documentation</a>
+          
+          <a class="btn btn-sidebar " href="fundamentals/tour/index.html">Tour the GBC</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="fundamentals/tour/tour_home_page.html">Home Page</a>
+            
+            <a class="btn btn-sidebar " href="fundamentals/tour/tour_app_page.html">Application page</a>
+            
+            <a class="btn btn-sidebar " href="fundamentals/tour/tour_debug.html">Debug icons</a>
+            
+            <a class="btn btn-sidebar " href="fundamentals/tour/tour_app_end.html">Application ended page</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="fundamentals/syntax.html">Syntax</a>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="fundamentals">
+<header class="page-title">
+  <em>Customization and Theme Selection</em>
+</header>
+<article class="md-content">
+<p>When a GBC application displays, it displays using a specific customization and theme. In this topic, we explain what determines which customization and theme is chosen.</p>
+<h1 id="Which_Customization_">Which Customization? <a class="header-anchor" href="fundamentals/which_cust_theme.html#Which_Customization_" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>Read through the scenarios below to understand which customization is chosen. These customizations assume you have deployed your customizations to the Genero Application Server (GAS).</p>
+<h2 id="The_default_customization">The default customization <a class="header-anchor" href="fundamentals/which_cust_theme.html#The_default_customization" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>If you have deployed your customizations to the Genero Application Server (GAS), you have the option to set one customization as the default. The application server uses the default customization when the application is served, unless a different customization is specifically requested for an application (as described below).</p>
+<blockquote>
+<p><em>TIP</em>: It is recommended that you specify a customization to serve as the default customization.</p>
+</blockquote>
+<p>Use the DeploymentApp to deploy a customization and specify a default.</p>
+<blockquote>
+<p><em>NOTE</em> : If you are not using the latest version of GAS, the DeploymentApp may not be available. Consult your GAS manual for further details.</p>
+</blockquote>
+<p>You can also use the gasadmin tool, or you can manually configure the <code>_default</code> file. To read on alternate methods, see <a href="howdoi/compiledeploy/deployongas.html">Deploy on GAS</a> or refer to the <em>Genero Application Server User Guide</em>.</p>
+<h2 id="Specify_customization_in_the_application_configuration">Specify customization in the application configuration <a class="header-anchor" href="fundamentals/which_cust_theme.html#Specify_customization_in_the_application_configuration" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>You can specify a customization with the <code>GBC</code> element in the application configuration file. In this example, the &quot;sample&quot; customization is specified:</p>
+<pre class="hljs"><code><span class="hljs-meta">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">APPLICATION</span> <span class="hljs-attr">Parent</span>=<span class="hljs-string">"defaultgwc"</span> 
+             <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span> 
+             <span class="hljs-attr">xsi:noNamespaceSchemaLocation</span>=<span class="hljs-string">"http://www.4js.com/ns/gas/3.10/cfextwa.xsd"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">EXECUTION</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">PATH</span>&gt;</span>$(res.deployment.path)<span class="hljs-tag">&lt;/<span class="hljs-name">PATH</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">MODULE</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">MODULE</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">EXECUTION</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">UA_OUTPUT</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">GBC</span>&gt;</span>sample<span class="hljs-tag">&lt;/<span class="hljs-name">GBC</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">PUBLIC_IMAGEPATH</span>&gt;</span>$(res.public.resources)<span class="hljs-tag">&lt;/<span class="hljs-name">PUBLIC_IMAGEPATH</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">UA_OUTPUT</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">APPLICATION</span>&gt;</span>
+</code></pre>
+<h2 id="Specify_customization_in_the_URL">Specify customization in the URL <a class="header-anchor" href="fundamentals/which_cust_theme.html#Specify_customization_in_the_URL" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>You can specify a customization in the application URL, by setting the <code>gbc</code> query string parameter:
+<code>http://localhost:6394/ua/r/gwc-demo?gbc=sample</code></p>
+<p>For more information on query string parameters, see <a href="reference/url.html">URL reference</a></p>
+<h1 id="Which_Theme_">Which Theme? <a class="header-anchor" href="fundamentals/which_cust_theme.html#Which_Theme_" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>With a customization selected, what theme is used?</p>
+<h2 id="By_default__the_first_valid_theme_is_used">By default, the first valid theme is used <a class="header-anchor" href="fundamentals/which_cust_theme.html#By_default__the_first_valid_theme_is_used" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>The themes available are specified in the <code>config.json</code> file for the customization. The order in which the themes are listed in this file is important. Barring any other configuration, the first valid theme listed -- that means the first theme that is not excluded based on a condition such as <code>isDesktop</code> or <code>isMobile</code> -- is the theme that is used by default.</p>
+<p>For more information on theme conditions, see <a href="reference/theme/theme_conditions.html">Theme conditions</a></p>
+<h2 id="Your_theme_selection_is_remembered">Your theme selection is remembered <a class="header-anchor" href="fundamentals/which_cust_theme.html#Your_theme_selection_is_remembered" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>The GBC will remember which theme the end user last selected for an application. If the end user switches themes while using an application, the system remembers which theme the end user last chose and will use that theme when the end user next accesses the application.</p>
+<h2 id="The_application_can_specify_the_theme">The application can specify the theme <a class="header-anchor" href="fundamentals/which_cust_theme.html#The_application_can_specify_the_theme" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>The application programmer can write code that specifies what theme to use.</p>
+<p>For more information, search for the topics relating to the &quot;Theme front calls&quot; in the <em>Genero Business Development Language User Guide</em>.</p>
+<h2 id="Specify_theme_in_the_URL">Specify theme in the URL <a class="header-anchor" href="fundamentals/which_cust_theme.html#Specify_theme_in_the_URL" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>The application URL can specify which theme to use, by setting the <code>theme</code> query string parameter:
+<code>http://localhost:6394/ua/r/gwc-demo?gbc=sample&amp;theme=highcontrast</code></p>
+<p>For more information on query string parameters, see <a href="reference/url.html">URL reference</a></p>
+<h2 id="Changing_the_theme">Changing the theme <a class="header-anchor" href="fundamentals/which_cust_theme.html#Changing_the_theme" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h2>
+<p>When an application is running, the end user can change the theme used by clicking the Settings icon in the chromebar and selecting from the themes listed in the <strong>Interface theme</strong> combobox. To learn more about the chromebar, see <a href="fundamentals/tour/tour_app_page.html">Application page</a>.</p>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

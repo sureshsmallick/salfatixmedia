@@ -1,0 +1,9 @@
+{
+  "name": "TraditionalScreenWidget",
+  "type": "group",
+  "contents": [{
+    "name": "gbc-TraditionalScreenWidget-background-color",
+    "type": "color",
+    "defaultValue": "$theme-secondary-background-color"
+  }]
+}

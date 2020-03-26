@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="zoom_posttype.tmp" build="3.20.07" sqlDbName="salfatixmedia" text="Category List" style="popup" width="35" height="21">
+  <LStr text="Category List"/>
+  <Grid name="grid1" width="35" height="21">
+    <Image name="img_back" width="5" height="3" action="close" image="fa-arrow-circle-left" autoScale="1" sizePolicy="fixed" style="no_border" comment="Back" posY="1" posX="2" gridWidth="5" gridHeight="3">
+      <LStr comment="Back"/>
+    </Image>
+    <Image name="img_accept" width="5" height="3" action="accept" image="fa-check-circle-green" autoScale="1" sizePolicy="fixed" style="no_border" comment="Validate" posY="1" posX="29" gridWidth="5" gridHeight="3">
+      <LStr comment="Validate"/>
+    </Image>
+    <Table pageSize="15" name="salfatixmedia1" style="zoomtable" doubleClick="selectrow" width="32" posY="4" posX="2" gridWidth="32" gridHeight="16" tabName="scrlist_posttype">
+      <PhantomColumn name="posttypes.pstt_id" colName="pstt_id" sqlType="INTEGER" required="1" notNull="1" fieldId="1" sqlTabName="posttypes">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <TableColumn name="posttypes.pstt_name" colName="pstt_name" sqlType="VARCHAR(32)" required="1" notNull="1" fieldId="2" sqlTabName="posttypes" text="Post type" imageColumn="myimage" tabIndex="1">
+        <Edit width="29" scroll="1"/>
+        <LStr text="Post type"/>
+      </TableColumn>
+      <PhantomColumn name="posttypes.pstt_uiorder" colName="pstt_uiorder" sqlType="INTEGER" required="1" notNull="1" fieldId="3" sqlTabName="posttypes">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+      <PhantomColumn name="formonly.myimage" colName="myimage" fieldId="0" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+    </Table>
+  </Grid>
+  <RecordView tabName="posttypes">
+    <Link colName="pstt_id" fieldIdRef="1"/>
+    <Link colName="pstt_name" fieldIdRef="2"/>
+    <Link colName="pstt_uiorder" fieldIdRef="3"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="myimage" fieldIdRef="0"/>
+  </RecordView>
+</Form>

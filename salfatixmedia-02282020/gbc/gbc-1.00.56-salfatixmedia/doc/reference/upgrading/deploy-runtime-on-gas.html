@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Deploy runtime on GAS</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="reference/index.html">Reference</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="reference/url.html">URL reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/api.html">API reference</a>
+          
+          <a class="btn btn-sidebar " href="reference/grunt/index.html">Grunt reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/grunt/configure_compilation.html">Configure your compilation</a>
+            
+            <a class="btn btn-sidebar " href="reference/grunt/fix_configuration_issues.html">Fix configuration issues</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/theme/index.html">Theme reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_conditions.html">Theme conditions</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_config_json.html">theme.config.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_scss_json_file.html">theme.scss.json file</a>
+            
+            <a class="btn btn-sidebar " href="reference/theme/theme_variables.html">Theme variables reference</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/project/index.html">Project reference</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/project/project_directory.html">Project directory</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/customization_project.html">Customization project</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets.html">Widgets</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_js_file.html">Widget JavaScript file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_template_file.html">Widget template file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widget_scss_file.html">Widget scss file</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/widgets_with_modelhelper.html">Widgets with Modelhelper</a>
+            
+            <a class="btn btn-sidebar " href="reference/project/deliverables.html">Deliverables</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="reference/upgrading/index.html">Upgrading</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/compatibility.html">Compatibility</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/customization_migration.html">Customization migration</a>
+            
+            <a class="btn btn-sidebar active" href="reference/upgrading/deploy-runtime-on-gas.html">Deploy runtime on GAS</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.20.html">Upgrade to 3.20</a>
+            
+            <a class="btn btn-sidebar " href="reference/upgrading/Upgrade-GBC-for-GE_3.10.html">Upgrade to 3.10</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="howdoi">
+<header class="page-title">
+  <em>Deploy runtime on GAS</em>
+</header>
+<article class="md-content">
+<p>This procedure shows you how to upgrade the GBC runtime to the latest release and set it as the default.</p>
+<blockquote>
+<p><em>NOTE</em> : To understand the sntax diagrams, see <a href="fundamentals/syntax.html">Syntax</a>.</p>
+</blockquote>
+<p>With each update of the GBC client, you can deploy the runtime package to the Genero Application Server in order to use the latest version of the GBC client without any customization. You can do this using the command line or the DeploymentApp.</p>
+<h1 id="Using_the_command_line">Using the command line <a class="header-anchor" href="reference/upgrading/deploy-runtime-on-gas.html#Using_the_command_line" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<ol>
+<li>
+<p>Use your web browser to navigate to the Products download area of the <a href="http://4js.com/download/products">Four Js web site</a> and download the latest GBC runtime package under the heading &quot;Genero Browser Client - Runtime package - Every OS&quot;. The runtime package contains the compiled or build GBC files.</p>
+</li>
+<li>
+<p>From a command prompt, deploy the runtime package using the <code>gasadmin</code> command.</p>
+</li>
+</ol>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> gasadmin gbc --deploy fjs-gbc-&lt;version&gt;[.&lt;suffix&gt;]-build&lt;build&gt;-runtime.zip</span>
+</code></pre>
+<blockquote>
+<p><em>TIP</em> : The name of the runtime identifies the deployed GBC package. The default name can be lengthy. You may want to rename the runtime package to use a simpler (and shorter) name before you deploy.</p>
+</blockquote>
+<ol start="3">
+<li>Specify this package as the default GBC client using the <code>gasadmin</code> command.</li>
+</ol>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> gasadmin gbc --default fjs-gbc-&lt;version&gt;[.&lt;suffix&gt;]-build&lt;build&gt;-runtime.zip</span>
+</code></pre>
+<ol start="4">
+<li>View the list of deployed GBC clients.</li>
+</ol>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> gasadmin gbc --list</span>
+</code></pre>
+<ol start="5">
+<li>When the GBC is deployed, you can render your application using the default GBC with
+the following URL:</li>
+</ol>
+<p><code>http://</code><em><code>my.server.com</code></em>:6394/ua/r/<code>*</code>appName`*</p>
+<blockquote>
+<p><em>TIP</em> : You can continue to use any (previously) deployed Genero Browser Clients by adding the URL parameter <code>gbc=deployed_gbc_name</code> to the end of the URL:
+<code>http://</code><em><code>my.server.com</code></em><code>:6394/ua/r/</code><em><code>appName</code></em><code>?gbc=gbc-1.00.44</code></p>
+</blockquote>
+<h1 id="Using_the_DeploymentApp">Using the DeploymentApp <a class="header-anchor" href="reference/upgrading/deploy-runtime-on-gas.html#Using_the_DeploymentApp" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<blockquote>
+<p><em>NOTE</em> : If you are not using the latest version of GAS, the DeploymentApp may not be available. Consult your GAS manual for further details.</p>
+</blockquote>
+<p>Before you begin, ensure the Genero Application Server (GAS) is running.</p>
+<ol>
+<li>
+<p>Download the latest GBC runtime package.
+The GBC runtime can be found on the <a href="http://4js.com/download/products">Products download area of the Four Js web site</a>.</p>
+</li>
+<li>
+<p>Enter the URL for the Genero DeploymentApp:</p>
+<p><code>http[s]://</code><em><code>server</code></em><code>:</code><em><code>port</code></em><code>&gt;[/</code><em><code>gas</code></em><code>]/ua/r/admin/DeploymentApp</code></p>
+</li>
+<li>
+<p>Deploy the new browser client.</p>
+<ol>
+<li>Click <strong>Deploy</strong> and select <strong>Genero Browser Clients</strong>.</li>
+<li>Click <strong>Deploy</strong>.</li>
+<li>Select the GBC client by dropping or uploading a file.</li>
+</ol>
+</li>
+</ol>
+<p>The GBC client is listed under the Genero Browser Client(s) section.</p>
+<blockquote>
+<p><em>TIP</em> : The name of the runtime identifies the deployed GBC package. The default name can be lengthy. You may want to rename the runtime package to use a simpler name. Double-click the name in the GBC client's row and enter a new name.</p>
+</blockquote>
+<ol start="4">
+<li>To make this GBC client the default GBC client for applications, select the client in the Genero Browser Client(s) section and click <strong>Set as Default</strong>.</li>
+</ol>
+<blockquote>
+<p><em>TIP</em> : You can continue to use any (previously) deployed Genero Browser Clients by adding the URL parameter <code>gbc=deployed_gbc_name</code> to the end of the URL:
+<code>http://</code><em><code>my.server.com</code></em><code>:6394/ua/r/</code><em><code>appName</code></em><code>?gbc=gbc-1.00.44</code></p>
+</blockquote>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "name": "ScrollGridWidget",
+  "type": "group",
+  "contents": [{
+      "name": "gbc-ScrollGridWidget-margin-ratio",
+      "type": "number",
+      "defaultValue": "$theme-margin-ratio"
+    },
+    {
+      "name": "gbc-ScrollGridWidget-font-size-ratio",
+      "type": "number",
+      "defaultValue": "$theme-font-size-ratio"
+    },
+    {
+      "name": "gbc-ScrollGridWidget-field-default-height",
+      "type": "number",
+      "defaultValue": "$theme-field-default-height"
+    },
+    {
+      "name": "gbc-ScrollGridWidget-inner-gutter",
+      "type": "number",
+      "defaultValue": "$theme-grid-inner-gutter"
+    },
+    {
+      "name": "gbc-ScrollGridWidget-disabled-color",
+      "type": "color",
+      "defaultValue": "$theme-disabled-color"
+    },
+    {
+      "name": "gbc-ScrollGridWidget-current-background-color",
+      "type": "color",
+      "defaultValue": "$theme-currentrow-background-color"
+    },
+    {
+      "name": "gbc-ScrollGridWidget-current-color",
+      "type": "color",
+      "defaultValue": "$theme-currentrow-color"
+    },
+    {
+      "name": "gbc-ScrollGridWidget-field-background-color",
+      "type": "color",
+      "defaultValue": "$theme-field-background-color"
+    }
+  ]
+}

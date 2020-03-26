@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./../..">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Genero Browser Client User Guide - Deploy on JGAS</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link type="text/css" rel="stylesheet" href="styles/doc.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html"> GBC
+        </a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="topNavigation">
+        <ul class="nav navbar-nav">
+            <li>
+              <a href="fundamentals/index.html">Basics</a>
+            </li>
+            <li>
+              <a href="quickstarts/index.html">Getting Started</a>
+            </li>
+            <li>
+              <a href="migration/index.html">What&#x27;s New</a>
+            </li>
+            <li>
+              <a href="reference/index.html">Reference</a>
+            </li>
+            <li>
+              <a href="howdoi/index.html">How do I …</a>
+            </li>
+            <li>
+              <a href="features/index.html">Concepts &amp; Features</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </div>  <div class="container maincontainer">
+    <div class="row">
+<div class="col-md-2">
+  <div class="sidebar btn-group-vertical" role="group">
+        
+        <a class="btn btn-sidebar " href="howdoi/index.html">How do I …</a>
+        <div class="btn-group-vertical" role="group">
+          
+          <a class="btn btn-sidebar " href="howdoi/compiledeploy/index.html">Compile &amp; Deploy</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/createruntimezip.html">Create a runtime zip</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/deployongas.html">Deploy on GAS</a>
+            
+            <a class="btn btn-sidebar active" href="howdoi/compiledeploy/jgas.html">Deploy on JGAS</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/compiledeploy/change-cust-ver-suffix.html">Change the version customization suffix</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/themes/index.html">Manage themes</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/themes/add_theme_part.html">Add a theme part</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/themes/add_theme.html">Add a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/themes/modify_theme.html">Modify a theme</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/themes/delete_theme.html">Delete a theme</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/customization.html">Customize the UI</a>
+          
+          <a class="btn btn-sidebar " href="howdoi/customize-file-replace/index.html">Replace an image</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/customize-file-replace/change_favicon.html">Change the favicon</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customize-file-replace/change-mttab-bkgd-img.html">Change background image for empty tabbed container</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/customize-theme-vars/index.html">Customize theme variables</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/display-sidebar.html">Display or hide the sidebar</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customize-theme-vars/change-checkbox.html">Change checkbox icons</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customize-theme-vars/genero-context-menu.html">Display the Genero context menu</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customize-theme-vars/change-relog-prompt.html">Change relog prompt</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/customize-scss/index.html">Customize style sheets</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/customize-scss/center-file-load-icon.html">Center loading icon</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/customization/index.html">Customize using widgets</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_image_or_logo.html">Add header image</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_image_with_style_class.html">Add header image using style class</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_custom_header_widget.html">Add header text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/add_footer_text.html">Add footer text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/change-file-load-icon.html">Change file loading icon</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/redirect_application_end.html">Redirect application end</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/customization/extend_main_container_widget.html">Extend the MainContainerWidget</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/debug/index.html">Debug</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/debug/start_debug_mode.html">Start in Debug Mode</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/debug/record_gbc_log.html">Record a GBC log</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/debug/replay_gbc_log.html">Replay a GBC log</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/debug/view_aui_tree.html">View the AUI tree</a>
+          </div>
+          
+          <a class="btn btn-sidebar " href="howdoi/internationalization/index.html">Internationalize my app</a>
+          <div class="btn-group-vertical" role="group">
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/add_localized_text.html">Add localized text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/configure_right_to_left_languages.html">Configure right-to-left languages</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/customize_translation_text.html">Customize translation text</a>
+            
+            <a class="btn btn-sidebar " href="howdoi/internationalization/default_encoding.html">Default encoding</a>
+          </div>
+        </div>
+  </div>
+</div>
+<div class="col-md-10">
+        <div id="main" class="howdoi">
+<header class="page-title">
+  <em>Deploy on JGAS</em>
+</header>
+<article class="md-content">
+<p>If you are a J2EE aficionado, you can use the Genero Application Server for Java
+(JGAS) instead of the Genero Application Server (GAS) to test your
+customization or bundle it with your application as a J2EE web archive (a.k.a. WAR
+file).</p>
+<p>More details about the JGAS are available in the <em>Genero Application Server for Java
+User Guide</em>.</p>
+<h1 id="Testing_your_customization_using_JGAS">Testing your customization using JGAS <a class="header-anchor" href="howdoi/compiledeploy/jgas.html#Testing_your_customization_using_JGAS" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>If you wish to use the JGAS instead of the GAS to test your customization work, you
+first need to create a test application bundled in a GAR file. Please read the
+<em>Genero Business Development Language User Guide</em> to learn how to create a GAR file.</p>
+<p>For this example, assume the GAR file is named <em><code>appName</code></em><code>.gar</code>.</p>
+<p>Execute the following commands to bundle your application in a WAR file and to execute
+the WAR file uisng a GBC lookup path pointing to your customization:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> fglgar war --output &lt;appName&gt;.war --input-gar &lt;appName&gt;.gar</span>
+<span class="hljs-meta">$</span><span class="bash"> fglgar run --war &lt;appName&gt;.war -E res.gbc.lookup.path=GBC_PROJECT_DIR/dist/customization</span>
+</code></pre>
+<p>To test your application with your customized GBC, open the following URL in
+your preferred browser:</p>
+<p><code>http://localhost:8080/</code><em><code>appName</code></em><code>/ua/r/</code><em><code>appName</code></em><code>?gbc=</code><em><code>customName</code></em></p>
+<blockquote>
+<p><em>NOTE</em>: When running a standalone JGAS, the default port is 8080. To specify a different
+port, use the -p flag.</p>
+</blockquote>
+<h1 id="Bundling_your_custom_GBC_runtime_in_a_WAR_file_">Bundling your custom GBC runtime in a WAR file. <a class="header-anchor" href="howdoi/compiledeploy/jgas.html#Bundling_your_custom_GBC_runtime_in_a_WAR_file_" aria-hidden="true"><i class="glyphicon glyphicon-link"></i></a></h1>
+<p>The <code>fglgar</code> command line allows you to bundle your Genero application as an
+<em><code>appName</code></em><code>.gar</code> file. For more information regarding the <code>fglgar</code> tool, see the
+<em>Genero Business Development Language User Guide</em>.</p>
+<p>Using the <em><code>appName</code></em><code>.gar</code>, you can
+execute the following command to create a J2EE web archive named <em><code>appName</code></em><code>.war</code>:</p>
+<pre class="hljs"><code><span class="hljs-meta">$</span><span class="bash"> fglgar war --output &lt;appName&gt;.war --input-gar &lt;appName&gt;.gar </span>
+</code></pre>
+<blockquote>
+<p><em>NOTE</em>: This assumes that the GBC is located in <em><code>FGLDIR</code></em><code>/web_utilities/gbc/gbc</code>. To specify a different location for the GBC, add <code>--gbc</code><em><code>gbc-dir</code></em>.</p>
+</blockquote>
+<p>The resulting J2EE web archive is then deployable on any J2EE server.</p>
+
+</article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <span class="copyright">Property of Four Js* (c) Copyright Four Js 2014, 2019. All Rights Reserved.</span>
+    <span class="version">Version <em>1.00.56</em> (build 201912111027)</span>
+    <span class="jsdoc-message">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>
+      
+    </span>
+  </footer>
+  <script src="scripts/gbcdoc.js"></script>
+</body>
+</html>

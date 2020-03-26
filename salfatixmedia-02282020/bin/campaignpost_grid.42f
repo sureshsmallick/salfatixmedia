@@ -1,0 +1,589 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="campaignpost_grid.tmp" build="3.20.07" sqlDbName="salfatixmedia" style="centerwindowpopup" width="49" height="48">
+  <Grid name="salfatixmedia2" width="49" height="48" style="campaignproposallist">
+    <PhantomFormField name="campaignposts.cmppost_id" colName="cmppost_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="41" sqlTabName="campaignposts">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaignposts.cmppost_campaign_id" colName="cmppost_campaign_id" sqlType="INTEGER" required="1" notNull="1" fieldId="42" sqlTabName="campaignposts">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaignposts.cmppost_usr_id" colName="cmppost_usr_id" sqlType="INTEGER" required="1" notNull="1" fieldId="43" sqlTabName="campaignposts">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <FormField name="formonly.usr_instagram_profilepicture" colName="usr_instagram_profilepicture" sqlType="VARCHAR(255)" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Image width="12" height="5" autoScale="1" sizePolicy="fixed" style="no_border" posY="1" posX="1" gridWidth="12" gridHeight="5"/>
+    </FormField>
+    <FormField name="formonly.ffimage_value" colName="ffimage_value" fieldId="1" sqlTabName="formonly" noEntry="1" tabIndex="2">
+      <Image width="5" height="3" action="save" autoScale="1" justify="center" sizePolicy="fixed" style="no_border" comment="Save" posY="1" posX="43" gridWidth="5" gridHeight="3">
+        <LStr comment="Save"/>
+      </Image>
+    </FormField>
+    <Label name="users_usr_firstname_label1" width="16" text="First name" posY="6" posX="1" gridWidth="16">
+      <LStr text="First name"/>
+    </Label>
+    <FormField name="users.usr_firstname" colName="usr_firstname" sqlType="VARCHAR(128)" fieldId="2" sqlTabName="users" noEntry="1" tabIndex="3">
+      <Edit width="30" scroll="1" posY="6" posX="18" gridWidth="30"/>
+    </FormField>
+    <Label name="users_usr_lastname_label1" width="16" text="Last name" posY="7" posX="1" gridWidth="16">
+      <LStr text="Last name"/>
+    </Label>
+    <FormField name="users.usr_lastname" colName="usr_lastname" sqlType="VARCHAR(128)" fieldId="3" sqlTabName="users" noEntry="1" tabIndex="4">
+      <Edit width="30" scroll="1" posY="7" posX="18" gridWidth="30"/>
+    </FormField>
+    <PhantomFormField name="users.usr_birthday" colName="usr_birthday" sqlType="DATE" fieldId="47" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_email" colName="usr_email" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="48" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_password" colName="usr_password" sqlType="VARCHAR(255)" required="1" notNull="1" fieldId="49" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_country_id" colName="usr_country_id" sqlType="INTEGER" required="1" notNull="1" fieldId="50" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_state_id" colName="usr_state_id" sqlType="INTEGER" fieldId="51" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_city_id" colName="usr_city_id" sqlType="INTEGER" fieldId="52" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_address_number" colName="usr_address_number" sqlType="VARCHAR(16)" fieldId="53" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_address_street" colName="usr_address_street" sqlType="VARCHAR(128)" fieldId="54" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_address_zipcode" colName="usr_address_zipcode" sqlType="VARCHAR(128)" fieldId="55" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_address_town" colName="usr_address_town" sqlType="VARCHAR(128)" fieldId="56" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_address_more" colName="usr_address_more" sqlType="VARCHAR(128)" fieldId="57" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_mobile_phone" colName="usr_mobile_phone" sqlType="BIGINT" fieldId="58" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_instagram_userid" colName="usr_instagram_userid" sqlType="BIGINT" fieldId="59" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_instagram_username" colName="usr_instagram_username" sqlType="VARCHAR(128)" required="1" notNull="1" fieldId="60" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_instagram_fullname" colName="usr_instagram_fullname" sqlType="VARCHAR(128)" fieldId="61" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_instagram_profilepicture" colName="usr_instagram_profilepicture" sqlType="VARCHAR(255)" fieldId="62" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_instagram_biography" colName="usr_instagram_biography" sqlType="VARCHAR(255)" fieldId="63" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_instagram_website" colName="usr_instagram_website" sqlType="VARCHAR(255)" fieldId="64" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_instagram_is_private" colName="usr_instagram_is_private" sqlType="SMALLINT" fieldId="65" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_instagram_is_verified" colName="usr_instagram_is_verified" sqlType="SMALLINT" fieldId="66" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_instagram_is_business" colName="usr_instagram_is_business" sqlType="SMALLINT" fieldId="67" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_bank_name" colName="usr_bank_name" sqlType="VARCHAR(128)" fieldId="68" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_bank_iban" colName="usr_bank_iban" sqlType="VARCHAR(64)" fieldId="69" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_bank_swift" colName="usr_bank_swift" sqlType="VARCHAR(64)" fieldId="70" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_paypal" colName="usr_paypal" sqlType="VARCHAR(128)" fieldId="38" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_mobile_notifications" colName="usr_mobile_notifications" sqlType="SMALLINT" fieldId="71" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_notif_style" colName="usr_notif_style" sqlType="CHAR(1)" fieldId="85" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_email_notifications" colName="usr_email_notifications" sqlType="SMALLINT" fieldId="72" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_email_style" colName="usr_email_style" sqlType="CHAR(1)" fieldId="86" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_currency_id" colName="usr_currency_id" sqlType="INTEGER" fieldId="73" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_accountstatus_id" colName="usr_accountstatus_id" sqlType="INTEGER" required="1" notNull="1" fieldId="74" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_createdby_id" colName="usr_createdby_id" sqlType="INTEGER" required="1" notNull="1" fieldId="75" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_creationdate" colName="usr_creationdate" sqlType="DATETIME YEAR TO SECOND" required="1" notNull="1" fieldId="76" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_deletiondate" colName="usr_deletiondate" sqlType="DATETIME YEAR TO SECOND" fieldId="77" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_validationdate" colName="usr_validationdate" sqlType="DATETIME YEAR TO SECOND" fieldId="78" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_canceldate" colName="usr_canceldate" sqlType="DATETIME YEAR TO SECOND" fieldId="79" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_suspendeddate" colName="usr_suspendeddate" sqlType="DATETIME YEAR TO SECOND" fieldId="80" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_stopdate" colName="usr_stopdate" sqlType="DATETIME YEAR TO SECOND" fieldId="81" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_emailvalidationdate" colName="usr_emailvalidationdate" sqlType="DATETIME YEAR TO SECOND" fieldId="82" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_lastupdatedate" colName="usr_lastupdatedate" sqlType="DATETIME YEAR TO SECOND" fieldId="83" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_lastlogindate" colName="usr_lastlogindate" sqlType="DATETIME YEAR TO SECOND" fieldId="84" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="users.usr_instagram_token" colName="usr_instagram_token" sqlType="VARCHAR(255)" fieldId="37" sqlTabName="users">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <Label name="campaignposts_cmppost_posttype_id_label1" width="16" text="Post type" posY="8" posX="1" gridWidth="16">
+      <LStr text="Post type"/>
+    </Label>
+    <FormField name="campaignposts.cmppost_posttype_id" colName="cmppost_posttype_id" sqlType="INTEGER" required="1" notNull="1" fieldId="4" sqlTabName="campaignposts" noEntry="1" tabIndex="5">
+      <ComboBox width="28" scroll="1" posY="8" posX="18" gridWidth="30"/>
+    </FormField>
+    <Label name="campaignposts_cmppost_url_label1" width="16" text="Post link" posY="9" posX="1" gridWidth="16">
+      <LStr text="Post link"/>
+    </Label>
+    <FormField name="campaignposts.cmppost_url" colName="cmppost_url" sqlType="VARCHAR(255)" fieldId="5" sqlTabName="campaignposts" tabIndex="6">
+      <Edit width="30" scroll="1" posY="9" posX="18" gridWidth="30"/>
+    </FormField>
+    <PhantomFormField name="campaignposts.cmppost_ispublic" colName="cmppost_ispublic" sqlType="SMALLINT" fieldId="40" sqlTabName="campaignposts">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <PhantomFormField name="campaignposts.cmppost_status_id" colName="cmppost_status_id" sqlType="INTEGER" required="1" notNull="1" fieldId="39" sqlTabName="campaignposts">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <Label name="campaignposts_cmppost_ispublic_label1" width="16" text="Post is public ?" posY="10" posX="1" gridWidth="16">
+      <LStr text="Post is public ?"/>
+    </Label>
+    <FormField name="formonly.ispublicimage" colName="ispublicimage" fieldId="6" sqlTabName="formonly" noEntry="1" tabIndex="7">
+      <Image width="10" sizePolicy="fixed" style="no_border" posY="10" posX="18" gridWidth="10"/>
+    </FormField>
+    <Label name="campaignposts_cmppost_ispublic_label2" width="16" text="Post online date" posY="11" posX="1" gridWidth="16">
+      <LStr text="Post online date"/>
+    </Label>
+    <FormField name="campaignposts.cmppost_onlinedate" colName="cmppost_onlinedate" sqlType="DATETIME YEAR TO SECOND" fieldId="7" sqlTabName="campaignposts" noEntry="1" tabIndex="8">
+      <DateTimeEdit width="18" posY="11" posX="18" gridWidth="18"/>
+    </FormField>
+    <Label name="campaignposts_cmppost_screenshot_post_label1" width="16" text="Publication drive link" posY="12" posX="1" gridWidth="16">
+      <LStr text="Publication drive link"/>
+    </Label>
+    <FormField name="campaignposts.cmppost_screenshot_post" colName="cmppost_screenshot_post" sqlType="VARCHAR(255)" fieldId="8" sqlTabName="campaignposts" tabIndex="9">
+      <Edit width="30" scroll="1" posY="12" posX="18" gridWidth="30"/>
+    </FormField>
+    <Label name="campaignposts_cmppost_screenshot_stat_label1" width="16" text="Statistics drive link" posY="13" posX="1" gridWidth="16">
+      <LStr text="Statistics drive link"/>
+    </Label>
+    <FormField name="campaignposts.cmppost_screenshot_stat" colName="cmppost_screenshot_stat" sqlType="VARCHAR(255)" fieldId="9" sqlTabName="campaignposts" tabIndex="10">
+      <Edit width="30" scroll="1" posY="13" posX="18" gridWidth="30"/>
+    </FormField>
+    <PhantomFormField name="campaignposts.cmppost_creationdate" colName="cmppost_creationdate" sqlType="DATETIME YEAR TO SECOND" required="1" notNull="1" fieldId="44" sqlTabName="campaignposts">
+      <PhantomEdit width="1"/>
+    </PhantomFormField>
+    <Label name="campaignposts_cmppost_ispublic_label3" width="16" text="Last metrics input" posY="14" posX="1" gridWidth="16">
+      <LStr text="Last metrics input"/>
+    </Label>
+    <FormField name="campaignposts.cmppost_lastmetricsdate" colName="cmppost_lastmetricsdate" sqlType="DATETIME YEAR TO SECOND" fieldId="10" sqlTabName="campaignposts" noEntry="1" tabIndex="11">
+      <DateTimeEdit width="18" posY="14" posX="18" gridWidth="18"/>
+    </FormField>
+    <Group name="group_youtube" text="Youtube" posY="15" posX="1" gridWidth="47" gridHeight="7">
+      <LStr text="Youtube"/>
+      <Label name="campaignposts_cmppost_youtube_viewcount_label1" width="16" text="View count" comment="The number of users who have indicated that they liked the video by giving it a positive rating." posY="1" posX="1" gridWidth="16">
+        <LStr text="View count" comment="The number of users who have indicated that they liked the video by giving it a positive rating."/>
+      </Label>
+      <FormField name="campaignposts.cmppost_youtube_viewcount" colName="cmppost_youtube_viewcount" sqlType="INTEGER" fieldId="11" sqlTabName="campaignposts" tabIndex="12">
+        <Edit width="11" scroll="1" comment="The number of users who have indicated that they liked the video by giving it a positive rating." posY="1" posX="19" gridWidth="11">
+          <LStr comment="The number of users who have indicated that they liked the video by giving it a positive rating."/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_youtube_likecount_label1" width="16" text="Like count" comment="The number of times the video has been viewed." posY="2" posX="1" gridWidth="16">
+        <LStr text="Like count" comment="The number of times the video has been viewed."/>
+      </Label>
+      <FormField name="campaignposts.cmppost_youtube_likecount" colName="cmppost_youtube_likecount" sqlType="INTEGER" fieldId="12" sqlTabName="campaignposts" tabIndex="13">
+        <Edit width="11" scroll="1" comment="The number of times the video has been viewed." posY="2" posX="19" gridWidth="11">
+          <LStr comment="The number of times the video has been viewed."/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_youtube_dislikecount_label1" width="16" text="Dislike count" comment="The number of users who have indicated that they disliked the video by giving it a negative rating." posY="3" posX="1" gridWidth="16">
+        <LStr text="Dislike count" comment="The number of users who have indicated that they disliked the video by giving it a negative rating."/>
+      </Label>
+      <FormField name="campaignposts.cmppost_youtube_dislikecount" colName="cmppost_youtube_dislikecount" sqlType="INTEGER" fieldId="13" sqlTabName="campaignposts" tabIndex="14">
+        <Edit width="11" scroll="1" comment="The number of users who have indicated that they disliked the video by giving it a negative rating." posY="3" posX="19" gridWidth="11">
+          <LStr comment="The number of users who have indicated that they disliked the video by giving it a negative rating."/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_youtube_favoritecount_label1" width="16" text="Favorite count" comment="The number of users who currently have the video marked as a favorite video." posY="4" posX="1" gridWidth="16">
+        <LStr text="Favorite count" comment="The number of users who currently have the video marked as a favorite video."/>
+      </Label>
+      <FormField name="campaignposts.cmppost_youtube_favoritecount" colName="cmppost_youtube_favoritecount" sqlType="INTEGER" fieldId="14" sqlTabName="campaignposts" tabIndex="15">
+        <Edit width="11" scroll="1" comment="The number of users who currently have the video marked as a favorite video." posY="4" posX="19" gridWidth="11">
+          <LStr comment="The number of users who currently have the video marked as a favorite video."/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_youtube_commentcount_label1" width="16" text="Comment count" comment="The number of comments for the video." posY="5" posX="1" gridWidth="16">
+        <LStr text="Comment count" comment="The number of comments for the video."/>
+      </Label>
+      <FormField name="campaignposts.cmppost_youtube_commentcount" colName="cmppost_youtube_commentcount" sqlType="INTEGER" fieldId="15" sqlTabName="campaignposts" tabIndex="16">
+        <Edit width="11" scroll="1" comment="The number of comments for the video." posY="5" posX="19" gridWidth="11">
+          <LStr comment="The number of comments for the video."/>
+        </Edit>
+      </FormField>
+    </Group>
+    <Group name="group_ig" text="Instagram Publication" posY="22" posX="1" gridWidth="47" gridHeight="11">
+      <LStr text="Instagram Publication"/>
+      <Label name="campaignposts_cmppost_ig_likes_label1" width="16" text="Likes" posY="1" posX="1" gridWidth="16">
+        <LStr text="Likes"/>
+      </Label>
+      <FormField name="campaignposts.cmppost_ig_likes" colName="cmppost_ig_likes" sqlType="INTEGER" fieldId="16" sqlTabName="campaignposts" tabIndex="17">
+        <Edit width="11" scroll="1" posY="1" posX="19" gridWidth="11"/>
+      </FormField>
+      <Label name="campaignposts_cmppost_ig_comments_label1" width="16" text="Comments" posY="2" posX="1" gridWidth="16">
+        <LStr text="Comments"/>
+      </Label>
+      <FormField name="campaignposts.cmppost_ig_comments" colName="cmppost_ig_comments" sqlType="INTEGER" fieldId="17" sqlTabName="campaignposts" tabIndex="18">
+        <Edit width="11" scroll="1" posY="2" posX="19" gridWidth="11"/>
+      </FormField>
+      <Label name="campaignposts_cmppost_ig_saved_label1" width="16" text="Saved" comment="The number of unique accounts that saved the user post" posY="3" posX="1" gridWidth="16">
+        <LStr text="Saved" comment="The number of unique accounts that saved the user post"/>
+      </Label>
+      <FormField name="campaignposts.cmppost_ig_saved" colName="cmppost_ig_saved" sqlType="INTEGER" fieldId="18" sqlTabName="campaignposts" tabIndex="19">
+        <Edit width="11" scroll="1" comment="The number of unique accounts that saved the user post" posY="3" posX="19" gridWidth="11">
+          <LStr comment="The number of unique accounts that saved the user post"/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_ig_profilevisits_label1" width="16" text="Profile visits" comment="The number of times an account clicks on the username (to visit user profile)" posY="4" posX="1" gridWidth="16">
+        <LStr text="Profile visits" comment="The number of times an account clicks on the username (to visit user profile)"/>
+      </Label>
+      <FormField name="campaignposts.cmppost_ig_profilevisits" colName="cmppost_ig_profilevisits" sqlType="INTEGER" fieldId="19" sqlTabName="campaignposts" tabIndex="20">
+        <Edit width="11" scroll="1" comment="The number of times an account clicks on the username (to visit user profile)" posY="4" posX="19" gridWidth="11">
+          <LStr comment="The number of times an account clicks on the username (to visit user profile)"/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_ig_follows_label1" width="16" text="Follows" comment="The number of accounts that started following the user" posY="5" posX="1" gridWidth="16">
+        <LStr text="Follows" comment="The number of accounts that started following the user"/>
+      </Label>
+      <FormField name="campaignposts.cmppost_ig_follows" colName="cmppost_ig_follows" sqlType="INTEGER" fieldId="20" sqlTabName="campaignposts" tabIndex="21">
+        <Edit width="11" scroll="1" comment="The number of accounts that started following the user" posY="5" posX="19" gridWidth="11">
+          <LStr comment="The number of accounts that started following the user"/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_ig_websiteclicks_label1" width="16" text="Website clicks" comment="The number of clicks to links user has included in his business profile description" posY="6" posX="1" gridWidth="16">
+        <LStr text="Website clicks" comment="The number of clicks to links user has included in his business profile description"/>
+      </Label>
+      <FormField name="campaignposts.cmppost_ig_websiteclicks" colName="cmppost_ig_websiteclicks" sqlType="INTEGER" fieldId="21" sqlTabName="campaignposts" tabIndex="22">
+        <Edit width="11" scroll="1" comment="The number of clicks to links user has included in his business profile description" posY="6" posX="19" gridWidth="11">
+          <LStr comment="The number of clicks to links user has included in his business profile description"/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_ig_discovery_label1" width="16" text="Discovery" comment="% of accounts that saw user post and aren&apos;t following him" posY="7" posX="1" gridWidth="16">
+        <LStr text="Discovery" comment="% of accounts that saw user post and aren&apos;t following him"/>
+      </Label>
+      <FormField name="campaignposts.cmppost_ig_discovery" colName="cmppost_ig_discovery" sqlType="DECIMAL(5,2)" fieldId="22" sqlTabName="campaignposts" tabIndex="23">
+        <Edit width="7" scroll="1" comment="% of accounts that saw user post and aren&apos;t following him" posY="7" posX="19" gridWidth="7">
+          <LStr comment="% of accounts that saw user post and aren&apos;t following him"/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_ig_reach_label1" width="16" text="Reach" comment="The number of unique accounts who saw user post" posY="8" posX="1" gridWidth="16">
+        <LStr text="Reach" comment="The number of unique accounts who saw user post"/>
+      </Label>
+      <FormField name="campaignposts.cmppost_ig_reach" colName="cmppost_ig_reach" sqlType="INTEGER" fieldId="23" sqlTabName="campaignposts" tabIndex="24">
+        <Edit width="11" scroll="1" comment="The number of unique accounts who saw user post" posY="8" posX="19" gridWidth="11">
+          <LStr comment="The number of unique accounts who saw user post"/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_ig_impressions_label1" width="16" text="Impressions" comment="The total number of times user post has been seen from a particular surface (home, search&amp;explore, profile, location, hashtags)" posY="9" posX="1" gridWidth="16">
+        <LStr text="Impressions" comment="The total number of times user post has been seen from a particular surface (home, search&amp;explore, profile, location, hashtags)"/>
+      </Label>
+      <FormField name="campaignposts.cmppost_ig_impressions" colName="cmppost_ig_impressions" sqlType="INTEGER" fieldId="24" sqlTabName="campaignposts" tabIndex="25">
+        <Edit width="11" scroll="1" comment="The total number of times user post has been seen from a particular surface (home, search&amp;explore, profile, location, hashtags)" posY="9" posX="19" gridWidth="11">
+          <LStr comment="The total number of times user post has been seen from a particular surface (home, search&amp;explore, profile, location, hashtags)"/>
+        </Edit>
+      </FormField>
+    </Group>
+    <Group name="group_instastory" text="Instastory" posY="33" posX="1" gridWidth="47" gridHeight="9">
+      <LStr text="Instastory"/>
+      <Label name="campaignposts_cmppost_instastory_impressions_label1" width="16" text="Impressions" comment="The total number of views the story has received" posY="1" posX="1" gridWidth="16">
+        <LStr text="Impressions" comment="The total number of views the story has received"/>
+      </Label>
+      <FormField name="campaignposts.cmppost_instastory_impressions" colName="cmppost_instastory_impressions" sqlType="INTEGER" fieldId="25" sqlTabName="campaignposts" tabIndex="26">
+        <Edit width="11" scroll="1" comment="The total number of views the story has received" posY="1" posX="19" gridWidth="11">
+          <LStr comment="The total number of views the story has received"/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_instastory_reach_label1" width="16" text="Reach" comment="The number of unique accounts who saw the story" posY="2" posX="1" gridWidth="16">
+        <LStr text="Reach" comment="The number of unique accounts who saw the story"/>
+      </Label>
+      <FormField name="campaignposts.cmppost_instastory_reach" colName="cmppost_instastory_reach" sqlType="INTEGER" fieldId="26" sqlTabName="campaignposts" tabIndex="27">
+        <Edit width="11" scroll="1" comment="The number of unique accounts who saw the story" posY="2" posX="19" gridWidth="11">
+          <LStr comment="The number of unique accounts who saw the story"/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_instastory_tapsforward_label1" width="16" text="Taps forward" comment="The number of times someone taps to skip to the next piece of the story" posY="3" posX="1" gridWidth="16">
+        <LStr text="Taps forward" comment="The number of times someone taps to skip to the next piece of the story"/>
+      </Label>
+      <FormField name="campaignposts.cmppost_instastory_tapsforward" colName="cmppost_instastory_tapsforward" sqlType="INTEGER" fieldId="27" sqlTabName="campaignposts" tabIndex="28">
+        <Edit width="11" scroll="1" comment="The number of times someone taps to skip to the next piece of the story" posY="3" posX="19" gridWidth="11">
+          <LStr comment="The number of times someone taps to skip to the next piece of the story"/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_instastory_tapsback_label1" width="16" text="Taps back" comment="The number of times someone taps to go back to a previous piece of the story." posY="4" posX="1" gridWidth="16">
+        <LStr text="Taps back" comment="The number of times someone taps to go back to a previous piece of the story."/>
+      </Label>
+      <FormField name="campaignposts.cmppost_instastory_tapsback" colName="cmppost_instastory_tapsback" sqlType="INTEGER" fieldId="28" sqlTabName="campaignposts" tabIndex="29">
+        <Edit width="11" scroll="1" comment="The number of times someone taps to go back to a previous piece of the story." posY="4" posX="19" gridWidth="11">
+          <LStr comment="The number of times someone taps to go back to a previous piece of the story."/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_instastory_replies_label1" width="16" text="Replies" comment="The number of times people send messages through the Send Message option on the story" posY="5" posX="1" gridWidth="16">
+        <LStr text="Replies" comment="The number of times people send messages through the Send Message option on the story"/>
+      </Label>
+      <FormField name="campaignposts.cmppost_instastory_replies" colName="cmppost_instastory_replies" sqlType="INTEGER" fieldId="29" sqlTabName="campaignposts" tabIndex="30">
+        <Edit width="11" scroll="1" comment="The number of times people send messages through the Send Message option on the story" posY="5" posX="19" gridWidth="11">
+          <LStr comment="The number of times people send messages through the Send Message option on the story"/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_instastory_swipeaway_label1" width="16" text="Swipe away" comment="The number of times someone swipes to skip to the next account’s story" posY="6" posX="1" gridWidth="16">
+        <LStr text="Swipe away" comment="The number of times someone swipes to skip to the next account’s story"/>
+      </Label>
+      <FormField name="campaignposts.cmppost_instastory_swipeaway" colName="cmppost_instastory_swipeaway" sqlType="INTEGER" fieldId="30" sqlTabName="campaignposts" tabIndex="31">
+        <Edit width="11" scroll="1" comment="The number of times someone swipes to skip to the next account’s story" posY="6" posX="19" gridWidth="11">
+          <LStr comment="The number of times someone swipes to skip to the next account’s story"/>
+        </Edit>
+      </FormField>
+      <Label name="campaignposts_cmppost_instastory_exists_label1" width="16" text="Exists" comment="The number of times someone leaves the stories viewer to return to their feed" posY="7" posX="1" gridWidth="16">
+        <LStr text="Exists" comment="The number of times someone leaves the stories viewer to return to their feed"/>
+      </Label>
+      <FormField name="campaignposts.cmppost_instastory_exists" colName="cmppost_instastory_exists" sqlType="INTEGER" fieldId="31" sqlTabName="campaignposts" tabIndex="32">
+        <Edit width="11" scroll="1" comment="The number of times someone leaves the stories viewer to return to their feed" posY="7" posX="19" gridWidth="11">
+          <LStr comment="The number of times someone leaves the stories viewer to return to their feed"/>
+        </Edit>
+      </FormField>
+      <PhantomFormField name="campaignposts.cmppost_isacceptedbysalfatix" colName="cmppost_isacceptedbysalfatix" sqlType="SMALLINT" fieldId="36" sqlTabName="campaignposts">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignposts.cmppost_isacceptedbybrand" colName="cmppost_isacceptedbybrand" sqlType="SMALLINT" fieldId="32" sqlTabName="campaignposts">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignposts.cmppost_filename" colName="cmppost_filename" sqlType="VARCHAR(255)" fieldId="35" sqlTabName="campaignposts">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignposts.cmppost_postno" colName="cmppost_postno" sqlType="SMALLINT" fieldId="33" sqlTabName="campaignposts">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="campaignposts.cmppost_uiorder" colName="cmppost_uiorder" sqlType="SMALLINT" fieldId="34" sqlTabName="campaignposts">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="users.usr_id" colName="usr_id" noEntry="1" sqlType="INTEGER" required="1" notNull="1" fieldId="45" sqlTabName="users">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="users.usr_gender_id" colName="usr_gender_id" sqlType="INTEGER" fieldId="46" sqlTabName="users">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+    </Group>
+  </Grid>
+  <RecordView tabName="campaignposts">
+    <Link colName="cmppost_posttype_id" fieldIdRef="4"/>
+    <Link colName="cmppost_url" fieldIdRef="5"/>
+    <Link colName="cmppost_onlinedate" fieldIdRef="7"/>
+    <Link colName="cmppost_screenshot_post" fieldIdRef="8"/>
+    <Link colName="cmppost_screenshot_stat" fieldIdRef="9"/>
+    <Link colName="cmppost_lastmetricsdate" fieldIdRef="10"/>
+    <Link colName="cmppost_youtube_viewcount" fieldIdRef="11"/>
+    <Link colName="cmppost_youtube_likecount" fieldIdRef="12"/>
+    <Link colName="cmppost_youtube_dislikecount" fieldIdRef="13"/>
+    <Link colName="cmppost_youtube_favoritecount" fieldIdRef="14"/>
+    <Link colName="cmppost_youtube_commentcount" fieldIdRef="15"/>
+    <Link colName="cmppost_ig_likes" fieldIdRef="16"/>
+    <Link colName="cmppost_ig_comments" fieldIdRef="17"/>
+    <Link colName="cmppost_ig_saved" fieldIdRef="18"/>
+    <Link colName="cmppost_ig_profilevisits" fieldIdRef="19"/>
+    <Link colName="cmppost_ig_follows" fieldIdRef="20"/>
+    <Link colName="cmppost_ig_websiteclicks" fieldIdRef="21"/>
+    <Link colName="cmppost_ig_discovery" fieldIdRef="22"/>
+    <Link colName="cmppost_ig_reach" fieldIdRef="23"/>
+    <Link colName="cmppost_ig_impressions" fieldIdRef="24"/>
+    <Link colName="cmppost_instastory_impressions" fieldIdRef="25"/>
+    <Link colName="cmppost_instastory_reach" fieldIdRef="26"/>
+    <Link colName="cmppost_instastory_tapsforward" fieldIdRef="27"/>
+    <Link colName="cmppost_instastory_tapsback" fieldIdRef="28"/>
+    <Link colName="cmppost_instastory_replies" fieldIdRef="29"/>
+    <Link colName="cmppost_instastory_swipeaway" fieldIdRef="30"/>
+    <Link colName="cmppost_instastory_exists" fieldIdRef="31"/>
+    <Link colName="cmppost_isacceptedbybrand" fieldIdRef="32"/>
+    <Link colName="cmppost_postno" fieldIdRef="33"/>
+    <Link colName="cmppost_uiorder" fieldIdRef="34"/>
+    <Link colName="cmppost_filename" fieldIdRef="35"/>
+    <Link colName="cmppost_isacceptedbysalfatix" fieldIdRef="36"/>
+    <Link colName="cmppost_status_id" fieldIdRef="39"/>
+    <Link colName="cmppost_ispublic" fieldIdRef="40"/>
+    <Link colName="cmppost_id" fieldIdRef="41"/>
+    <Link colName="cmppost_campaign_id" fieldIdRef="42"/>
+    <Link colName="cmppost_usr_id" fieldIdRef="43"/>
+    <Link colName="cmppost_creationdate" fieldIdRef="44"/>
+  </RecordView>
+  <RecordView tabName="users">
+    <Link colName="usr_firstname" fieldIdRef="2"/>
+    <Link colName="usr_lastname" fieldIdRef="3"/>
+    <Link colName="usr_instagram_token" fieldIdRef="37"/>
+    <Link colName="usr_paypal" fieldIdRef="38"/>
+    <Link colName="usr_id" fieldIdRef="45"/>
+    <Link colName="usr_gender_id" fieldIdRef="46"/>
+    <Link colName="usr_birthday" fieldIdRef="47"/>
+    <Link colName="usr_email" fieldIdRef="48"/>
+    <Link colName="usr_password" fieldIdRef="49"/>
+    <Link colName="usr_country_id" fieldIdRef="50"/>
+    <Link colName="usr_state_id" fieldIdRef="51"/>
+    <Link colName="usr_city_id" fieldIdRef="52"/>
+    <Link colName="usr_address_number" fieldIdRef="53"/>
+    <Link colName="usr_address_street" fieldIdRef="54"/>
+    <Link colName="usr_address_zipcode" fieldIdRef="55"/>
+    <Link colName="usr_address_town" fieldIdRef="56"/>
+    <Link colName="usr_address_more" fieldIdRef="57"/>
+    <Link colName="usr_mobile_phone" fieldIdRef="58"/>
+    <Link colName="usr_instagram_userid" fieldIdRef="59"/>
+    <Link colName="usr_instagram_username" fieldIdRef="60"/>
+    <Link colName="usr_instagram_fullname" fieldIdRef="61"/>
+    <Link colName="usr_instagram_profilepicture" fieldIdRef="62"/>
+    <Link colName="usr_instagram_biography" fieldIdRef="63"/>
+    <Link colName="usr_instagram_website" fieldIdRef="64"/>
+    <Link colName="usr_instagram_is_private" fieldIdRef="65"/>
+    <Link colName="usr_instagram_is_verified" fieldIdRef="66"/>
+    <Link colName="usr_instagram_is_business" fieldIdRef="67"/>
+    <Link colName="usr_bank_name" fieldIdRef="68"/>
+    <Link colName="usr_bank_iban" fieldIdRef="69"/>
+    <Link colName="usr_bank_swift" fieldIdRef="70"/>
+    <Link colName="usr_mobile_notifications" fieldIdRef="71"/>
+    <Link colName="usr_email_notifications" fieldIdRef="72"/>
+    <Link colName="usr_currency_id" fieldIdRef="73"/>
+    <Link colName="usr_accountstatus_id" fieldIdRef="74"/>
+    <Link colName="usr_createdby_id" fieldIdRef="75"/>
+    <Link colName="usr_creationdate" fieldIdRef="76"/>
+    <Link colName="usr_deletiondate" fieldIdRef="77"/>
+    <Link colName="usr_validationdate" fieldIdRef="78"/>
+    <Link colName="usr_canceldate" fieldIdRef="79"/>
+    <Link colName="usr_suspendeddate" fieldIdRef="80"/>
+    <Link colName="usr_stopdate" fieldIdRef="81"/>
+    <Link colName="usr_emailvalidationdate" fieldIdRef="82"/>
+    <Link colName="usr_lastupdatedate" fieldIdRef="83"/>
+    <Link colName="usr_lastlogindate" fieldIdRef="84"/>
+    <Link colName="usr_notif_style" fieldIdRef="85"/>
+    <Link colName="usr_email_style" fieldIdRef="86"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="usr_instagram_profilepicture" fieldIdRef="0"/>
+    <Link colName="ffimage_value" fieldIdRef="1"/>
+    <Link colName="ispublicimage" fieldIdRef="6"/>
+  </RecordView>
+  <RecordView tabName="scr_campaignpostgrid">
+    <Link colName="cmppost_id" fieldIdRef="41"/>
+    <Link colName="cmppost_campaign_id" fieldIdRef="42"/>
+    <Link colName="cmppost_usr_id" fieldIdRef="43"/>
+    <Link colName="cmppost_posttype_id" fieldIdRef="4"/>
+    <Link colName="cmppost_url" fieldIdRef="5"/>
+    <Link colName="cmppost_ispublic" fieldIdRef="40"/>
+    <Link colName="cmppost_status_id" fieldIdRef="39"/>
+    <Link colName="cmppost_screenshot_post" fieldIdRef="8"/>
+    <Link colName="cmppost_screenshot_stat" fieldIdRef="9"/>
+    <Link colName="cmppost_creationdate" fieldIdRef="44"/>
+    <Link colName="cmppost_onlinedate" fieldIdRef="7"/>
+    <Link colName="cmppost_lastmetricsdate" fieldIdRef="10"/>
+    <Link colName="cmppost_youtube_viewcount" fieldIdRef="11"/>
+    <Link colName="cmppost_youtube_likecount" fieldIdRef="12"/>
+    <Link colName="cmppost_youtube_dislikecount" fieldIdRef="13"/>
+    <Link colName="cmppost_youtube_favoritecount" fieldIdRef="14"/>
+    <Link colName="cmppost_youtube_commentcount" fieldIdRef="15"/>
+    <Link colName="cmppost_ig_likes" fieldIdRef="16"/>
+    <Link colName="cmppost_ig_comments" fieldIdRef="17"/>
+    <Link colName="cmppost_ig_saved" fieldIdRef="18"/>
+    <Link colName="cmppost_ig_profilevisits" fieldIdRef="19"/>
+    <Link colName="cmppost_ig_follows" fieldIdRef="20"/>
+    <Link colName="cmppost_ig_websiteclicks" fieldIdRef="21"/>
+    <Link colName="cmppost_ig_discovery" fieldIdRef="22"/>
+    <Link colName="cmppost_ig_reach" fieldIdRef="23"/>
+    <Link colName="cmppost_ig_impressions" fieldIdRef="24"/>
+    <Link colName="cmppost_instastory_impressions" fieldIdRef="25"/>
+    <Link colName="cmppost_instastory_reach" fieldIdRef="26"/>
+    <Link colName="cmppost_instastory_tapsforward" fieldIdRef="27"/>
+    <Link colName="cmppost_instastory_tapsback" fieldIdRef="28"/>
+    <Link colName="cmppost_instastory_replies" fieldIdRef="29"/>
+    <Link colName="cmppost_instastory_swipeaway" fieldIdRef="30"/>
+    <Link colName="cmppost_instastory_exists" fieldIdRef="31"/>
+    <Link colName="cmppost_isacceptedbysalfatix" fieldIdRef="36"/>
+    <Link colName="cmppost_isacceptedbybrand" fieldIdRef="32"/>
+    <Link colName="cmppost_filename" fieldIdRef="35"/>
+    <Link colName="cmppost_postno" fieldIdRef="33"/>
+    <Link colName="cmppost_uiorder" fieldIdRef="34"/>
+    <Link colName="usr_id" fieldIdRef="45"/>
+    <Link colName="usr_gender_id" fieldIdRef="46"/>
+    <Link colName="usr_firstname" fieldIdRef="2"/>
+    <Link colName="usr_lastname" fieldIdRef="3"/>
+    <Link colName="usr_birthday" fieldIdRef="47"/>
+    <Link colName="usr_email" fieldIdRef="48"/>
+    <Link colName="usr_password" fieldIdRef="49"/>
+    <Link colName="usr_country_id" fieldIdRef="50"/>
+    <Link colName="usr_state_id" fieldIdRef="51"/>
+    <Link colName="usr_city_id" fieldIdRef="52"/>
+    <Link colName="usr_address_number" fieldIdRef="53"/>
+    <Link colName="usr_address_street" fieldIdRef="54"/>
+    <Link colName="usr_address_zipcode" fieldIdRef="55"/>
+    <Link colName="usr_address_town" fieldIdRef="56"/>
+    <Link colName="usr_address_more" fieldIdRef="57"/>
+    <Link colName="usr_mobile_phone" fieldIdRef="58"/>
+    <Link colName="usr_instagram_userid" fieldIdRef="59"/>
+    <Link colName="usr_instagram_username" fieldIdRef="60"/>
+    <Link colName="usr_instagram_fullname" fieldIdRef="61"/>
+    <Link colName="usr_instagram_profilepicture" fieldIdRef="62"/>
+    <Link colName="usr_instagram_biography" fieldIdRef="63"/>
+    <Link colName="usr_instagram_website" fieldIdRef="64"/>
+    <Link colName="usr_instagram_is_private" fieldIdRef="65"/>
+    <Link colName="usr_instagram_is_verified" fieldIdRef="66"/>
+    <Link colName="usr_instagram_is_business" fieldIdRef="67"/>
+    <Link colName="usr_bank_name" fieldIdRef="68"/>
+    <Link colName="usr_bank_iban" fieldIdRef="69"/>
+    <Link colName="usr_bank_swift" fieldIdRef="70"/>
+    <Link colName="usr_paypal" fieldIdRef="38"/>
+    <Link colName="usr_mobile_notifications" fieldIdRef="71"/>
+    <Link colName="usr_notif_style" fieldIdRef="85"/>
+    <Link colName="usr_email_notifications" fieldIdRef="72"/>
+    <Link colName="usr_email_style" fieldIdRef="86"/>
+    <Link colName="usr_currency_id" fieldIdRef="73"/>
+    <Link colName="usr_accountstatus_id" fieldIdRef="74"/>
+    <Link colName="usr_createdby_id" fieldIdRef="75"/>
+    <Link colName="usr_creationdate" fieldIdRef="76"/>
+    <Link colName="usr_deletiondate" fieldIdRef="77"/>
+    <Link colName="usr_validationdate" fieldIdRef="78"/>
+    <Link colName="usr_canceldate" fieldIdRef="79"/>
+    <Link colName="usr_suspendeddate" fieldIdRef="80"/>
+    <Link colName="usr_stopdate" fieldIdRef="81"/>
+    <Link colName="usr_emailvalidationdate" fieldIdRef="82"/>
+    <Link colName="usr_lastupdatedate" fieldIdRef="83"/>
+    <Link colName="usr_lastlogindate" fieldIdRef="84"/>
+    <Link colName="usr_instagram_token" fieldIdRef="37"/>
+    <Link colName="usr_instagram_profilepicture" fieldIdRef="0"/>
+    <Link colName="ispublicimage" fieldIdRef="6"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="ffimage_value" fieldIdRef="1"/>
+  </RecordView>
+</Form>

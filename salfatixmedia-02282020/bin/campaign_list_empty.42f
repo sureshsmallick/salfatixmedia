@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="campaign_list_empty.tmp" build="3.20.07" style="centerwindow" width="27" height="15">
+  <ToolBar name="toolbar1">
+    <ToolBarItem name="infl_viewopencampaigns"/>
+    <ToolBarSeparator name="toolbarseparator1" style="myiosseparator"/>
+    <ToolBarItem name="infl_viewappliedcampaigns"/>
+    <ToolBarSeparator name="toolbarseparator2" style="myiosseparator"/>
+    <ToolBarItem name="infl_viewworkablecampaigns"/>
+  </ToolBar>
+  <Grid name="grid1" width="27" height="15">
+    <Label name="label8" width="25" text=" " posY="1" posX="1" gridWidth="25">
+      <LStr text=" "/>
+    </Label>
+    <Label name="label9" width="25" text=" " posY="2" posX="1" gridWidth="25">
+      <LStr text=" "/>
+    </Label>
+    <Label name="label2" width="25" text=" " posY="3" posX="1" gridWidth="25">
+      <LStr text=" "/>
+    </Label>
+    <Label name="label1" width="25" text=" " posY="4" posX="1" gridWidth="25">
+      <LStr text=" "/>
+    </Label>
+    <Label name="label4" width="25" text=" " posY="5" posX="1" gridWidth="25">
+      <LStr text=" "/>
+    </Label>
+    <FormField name="formonly.ffimage1" colName="ffimage1" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Image width="3" posY="6" posX="1" gridWidth="3"/>
+    </FormField>
+    <Label name="label7" width="17" text="Nothing available here yet." justify="center" sizePolicy="dynamic" posY="6" posX="5" gridWidth="17">
+      <LStr text="Nothing available here yet."/>
+    </Label>
+    <FormField name="formonly.ffimage2" colName="ffimage2" fieldId="1" sqlTabName="formonly" noEntry="1" tabIndex="2">
+      <Image width="3" posY="6" posX="23" gridWidth="3"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="ffimage1" fieldIdRef="0"/>
+    <Link colName="ffimage2" fieldIdRef="1"/>
+  </RecordView>
+  <RecordView tabName="undefined">
+    <Link colName="ffimage1" fieldIdRef="0"/>
+    <Link colName="ffimage2" fieldIdRef="1"/>
+  </RecordView>
+</Form>
